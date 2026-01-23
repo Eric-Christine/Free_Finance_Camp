@@ -1,16 +1,58 @@
-# React + Vite
+# Free Finance Camp 🏕️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A gamified, interactive web application designed to teach personal finance concepts for free. Think "Duolingo for Finance."
 
-Currently, two official plugins are available:
+![App Demo](https://via.placeholder.com/800x400?text=Free+Finance+Camp+Preview)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+*   **Interactive Curriculum**: 9 Modules covering everything from Budgeting 101 to Crypto & Options.
+*   **Gamified Learning**: Earn XP, level up, and unlock new content as you progress.
+*   **Simulations**:
+    *   **Market Timer Game**: Try to beat the market (and learn why you probably can't).
+    *   **Compound Interest Calculator**: See how your money grows.
+    *   **Car Buying Calculator**: Lease vs. Buy vs. Cash.
+*   **Vocabulary Review**: Unlock flashcards for key financial terms (ETF, APR, Deductible, etc.) as you complete lessons.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
+- Node.js installed.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/Eric-Christine/Free_Finance_Camp.git
+    ```
+2.  Navigate to the directory:
+    ```bash
+    cd Free_Finance_Camp
+    ```
+3.  Install dependencies:
+    ```bash
+    npm install
+    ```
+4.  Run the development server:
+    ```bash
+    npm run dev
+    ```
+
+## Curriculum Overview
+
+1.  **Money Mindset**: Psychology of saving.
+2.  **Budgeting Basics**: The 50/30/20 Rule.
+3.  **Compound Interest**: The 8th Wonder of the World.
+4.  **Investing 101**: Stocks & Index Funds.
+5.  **Risk Management**: Insurance & Safety Nets.
+6.  **Credit & Debt**: Good Debt vs. Bad Debt.
+7.  **Investing 201**: ETFs, Options, & Volatility.
+8.  **The Economic Machine**: The Fed, Interest Rates, & Bonds.
+9.  **Future Finance**: Crypto, Prediction Markets, & Hard Assets.
+
+## Tech Stack
+
+-   React + Vite
+-   Recharts (Data Visualization)
+-   Lucide React (Icons)
+-   Tailwind-inspired CSS Variables
