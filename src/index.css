@@ -1,0 +1,149 @@
+:root {
+  /* Brand Colors - Modern Finance (Emerald & Slate) */
+  --primary: #10b981;
+  --primary-hover: #059669;
+  --secondary: #3b82f6;
+  --accent: #f59e0b;
+
+  /* Backgrounds */
+  --bg-main: #0f172a;
+  /* Slate 900 */
+  --bg-card: #1e293b;
+  /* Slate 800 */
+  --bg-hover: #334155;
+  /* Slate 700 */
+
+  /* Text */
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-light: #e2e8f0;
+
+  /* UI Elements */
+  --border: #334155;
+  --radius: 8px;
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--primary-hover);
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Utilities */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  font-weight: 500;
+  transition: all 0.2s;
+  border: none;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-main);
+}
+
+.btn-outline:hover {
+  background-color: var(--bg-hover);
+}
+
+/* Responsive Lesson Layout */
+.lesson-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.lesson-content-wrapper {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.lesson-text-column {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  border-right: 1px solid var(--border);
+  max-width: 50%;
+}
+
+.lesson-widget-column {
+  flex: 1;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+@media (max-width: 900px) {
+  .lesson-container {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .lesson-content-wrapper {
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  .lesson-text-column {
+    max-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    overflow-y: visible;
+  }
+
+  .lesson-widget-column {
+    overflow-y: visible;
+    /* Ensure widget has space but doesn't trap scroll weirdly */
+  }
+}
