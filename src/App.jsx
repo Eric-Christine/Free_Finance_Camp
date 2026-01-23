@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Login from './components/auth/Login';
 import Map from './components/Map';
 import Lesson from './components/Lesson';
+import VocabReview from './components/VocabReview';
 import LandingPage from './components/LandingPage';
 import { useAuth } from './context/AuthContext';
 
@@ -23,6 +24,11 @@ function App() {
       <Route path="/learn/:lessonId" element={
         <PrivateRoute>
           <Lesson />
+        </PrivateRoute>
+      } />
+      <Route path="/vocab" element={
+        <PrivateRoute>
+          <VocabReview />
         </PrivateRoute>
       } />
     </Routes>

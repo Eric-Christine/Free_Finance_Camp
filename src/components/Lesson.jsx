@@ -5,13 +5,15 @@ import CompoundInterest from './interactive/CompoundInterest';
 import BudgetAllocator from './interactive/BudgetAllocator';
 import CarCalculator from './interactive/CarCalculator';
 import InsuranceCompare from './interactive/InsuranceCompare';
+import MarketTimer from './interactive/MarketTimer';
 
 // Map of widget names to components
 const WIDGETS = {
   CompoundInterest: CompoundInterest,
   BudgetAllocator: BudgetAllocator,
   CarCalculator: CarCalculator,
-  InsuranceCompare: InsuranceCompare
+  InsuranceCompare: InsuranceCompare,
+  MarketTimer: MarketTimer
 };
 
 export default function Lesson() {
@@ -81,9 +83,10 @@ export default function Lesson() {
       </header>
 
       {/* Content */}
+      {/* Content */}
       <div className="lesson-content-wrapper">
         {/* Left Side: Lesson Content */}
-        <div className="lesson-text-column">
+        <div className={WidgetComponent ? "lesson-text-column" : "lesson-text-full"}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
             <h1 style={{ fontSize: '1.75rem' }}>{currentLesson.title}</h1>
             {currentLesson.xpReward && (
@@ -120,15 +123,25 @@ export default function Lesson() {
 
           <div style={{ lineHeight: '1.7', color: 'var(--text-light)', marginBottom: '3rem' }}>
             <p style={{ marginBottom: '1rem', color: 'var(--text-muted)' }}>{currentLesson.description}</p>
-            {currentLesson.content && currentLesson.content.map((paragraph, idx) => (
-              <p key={idx} style={{
-                marginBottom: paragraph === '' ? '0.5rem' : '1rem',
-                fontWeight: paragraph.startsWith('OPTION') || paragraph.startsWith('•') || paragraph.endsWith(':') ? 'bold' : 'normal',
-                color: paragraph.startsWith('Pro tip') ? 'var(--primary)' : 'inherit'
-              }}>
-                {paragraph}
-              </p>
-            ))}
+            {currentLesson.content && currentLesson.content.map((paragraph, idx) => {
+              // Helper to parse bold markdown **text**
+              const parts = paragraph.split(/(\*\*.*?\*\*)/g);
+
+              return (
+                <p key={idx} style={{
+                  marginBottom: paragraph === '' ? '0.5rem' : '1rem',
+                  fontWeight: paragraph.startsWith('OPTION') || paragraph.startsWith('•') || paragraph.endsWith(':') ? 'bold' : 'normal',
+                  color: paragraph.startsWith('Pro tip') ? 'var(--primary)' : 'inherit'
+                }}>
+                  {parts.map((part, i) => {
+                    if (part.startsWith('**') && part.endsWith('**')) {
+                      return <strong key={i}>{part.slice(2, -2)}</strong>;
+                    }
+                    return <span key={i}>{part}</span>;
+                  })}
+                </p>
+              );
+            })}
           </div>
 
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 'auto' }}>
@@ -147,24 +160,12 @@ export default function Lesson() {
           </div>
         </div>
 
-        {/* Right Side: Interactive Widget */}
-        <div className="lesson-widget-column">
-          {WidgetComponent ? (
+        {/* Right Side: Interactive Widget (Only if exists) */}
+        {WidgetComponent && (
+          <div className="lesson-widget-column">
             <WidgetComponent />
-          ) : (
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              height: '100%',
-              color: 'var(--text-muted)',
-              border: '2px dashed var(--border)',
-              borderRadius: 'var(--radius)'
-            }}>
-              📚 Reading-only lesson. No interactive widget.
-            </div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </div>
   );

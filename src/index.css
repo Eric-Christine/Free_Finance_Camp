@@ -115,6 +115,14 @@ button {
   max-width: 50%;
 }
 
+.lesson-text-full {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  max-width: 100%;
+  border-right: none;
+}
+
 .lesson-widget-column {
   flex: 1;
   padding: 2rem;

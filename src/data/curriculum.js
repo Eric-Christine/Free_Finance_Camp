@@ -78,6 +78,24 @@ export const curriculum = [
             },
             {
                 id: 'lesson-3-2',
+                title: 'Timing the Market vs. Time in the Market',
+                description: 'Can you beat the stock market?',
+                xpReward: 35,
+                story: {
+                    character: 'Sarah',
+                    scenario: "Sarah thinks she can predict when stocks will go up or down. She wants to trade frequently. Her friend Jen just buys and holds. Who wins?"
+                },
+                content: [
+                    "Many people think investing is about guessing when to buy low and sell high.",
+                    "This is called 'Timing the Market', and even professionals fail at it.",
+                    "The alternative is 'Time IN the Market'—buying and holding for the long term.",
+                    "Play the game on the right. Try to buy when the line dips and sell when it peaks. Can you beat the simple strategy of just holding?"
+                ],
+                type: 'interactive',
+                widget: 'MarketTimer'
+            },
+            {
+                id: 'lesson-3-3',
                 title: 'Index Funds: The Beginner\'s Best Friend',
                 description: 'Why diversification matters.',
                 xpReward: 25,
@@ -153,10 +171,10 @@ export const curriculum = [
                 description: 'Premiums, deductibles, and copays explained.',
                 xpReward: 35,
                 content: [
-                    "PREMIUM: The amount you pay every month, whether you use the insurance or not.",
-                    "DEDUCTIBLE: The amount you pay out-of-pocket BEFORE insurance starts covering costs.",
-                    "COPAY: A fixed amount you pay for a service (e.g., $20 for a doctor visit).",
-                    "OUT-OF-POCKET MAXIMUM: The most you'll ever pay in a year. After this, insurance covers 100%.",
+                    "**PREMIUM**: The amount you pay every month, whether you use the insurance or not.",
+                    "**DEDUCTIBLE**: The amount you pay out-of-pocket BEFORE insurance starts covering costs.",
+                    "**COPAY**: A fixed amount you pay for a service (e.g., $20 for a doctor visit).",
+                    "**OUT-OF-POCKET MAXIMUM**: The most you'll ever pay in a year. After this, insurance covers 100%.",
                     "",
                     "Generally: High Premium = Low Deductible. Low Premium = High Deductible.",
                     "If you're young and healthy, a high-deductible plan might save you money.",
@@ -218,17 +236,164 @@ export const curriculum = [
                     scenario: "Jordan has $10,000. Should they pay off their 20% credit card or invest in the stock market?"
                 },
                 content: [
-                    "GOOD DEBT makes you money or increases your earning potential.",
+                    "**GOOD DEBT** makes you money or increases your earning potential.",
                     "• Student loans (if they lead to higher income)",
                     "• Mortgage (you build equity, home may appreciate)",
                     "• Business loan (if the business is profitable)",
                     "",
-                    "BAD DEBT costs you money on things that lose value.",
+                    "**BAD DEBT** costs you money on things that lose value.",
                     "• Credit card debt (high interest, often for consumption)",
                     "• Car loans (cars depreciate rapidly)",
                     "• Payday loans (predatory interest rates)",
                     "",
                     "Rule: Always pay off high-interest debt before investing."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-6-3',
+                title: 'The Trap of Buy Now, Pay Later',
+                description: 'Why splitting payments is dangerous.',
+                xpReward: 30,
+                content: [
+                    "**Buy Now, Pay Later (BNPL)** services let you split a purchase into 4 small payments.",
+                    "It feels like you're spending less money, but you aren't.",
+                    "The Danger: It encourages you to buy things you can't actually afford today.",
+                    "It decouples the 'pain of paying' from the 'pleasure of buying'.",
+                    "If you miss a payment, the fees can be massive. Treat BNPL like credit card debt."
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-7',
+        title: 'Investing 201: The Deep End',
+        description: 'Advanced concepts: ETFs, Meme Stocks, and Options.',
+        xpReward: 150,
+        lessons: [
+            {
+                id: 'lesson-7-1',
+                title: 'ETFs vs. Mutual Funds',
+                description: 'Understanding modern investment vehicles.',
+                xpReward: 40,
+                content: [
+                    "We've talked about Index Funds. Most Index Funds today are **ETFs** (Exchange Traded Funds).",
+                    "**ETF**: Trades like a stock. You can buy 1 share instantly during the day. Usually has lower fees.",
+                    "**Mutual Fund**: Trades once per day at closing price. Often has higher minimums.",
+                    "For most beginners, **ETFs** are the easiest way to start building a diversified portfolio."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-7-2',
+                title: 'Meme Stocks & Volatility',
+                description: 'When investing becomes gambling.',
+                xpReward: 40,
+                story: {
+                    character: 'Kevin',
+                    scenario: "Kevin sees a GameStore stock soaring 500% in a week. Everyone on the internet is buying it. He puts his tuition money in, hoping to double it."
+                },
+                content: [
+                    "**Meme Stocks** are companies whose price is driven by social media hype rather than business performance.",
+                    "This creates extreme **Volatility** (wild price swings).",
+                    "While some people make millions, many lose everything when the hype dies down.",
+                    "This is closer to gambling than investing. Never invest money you can't afford to lose in these assets."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-7-3',
+                title: 'Intro to Options: High Risk, High Reward',
+                description: 'The casino of the stock market.',
+                xpReward: 50,
+                content: [
+                    "**Options** are contracts that let you bet on the future price of a stock.",
+                    "**Call Option**: A bet that the price will go UP.",
+                    "**Put Option**: A bet that the price will go DOWN.",
+                    "Options use 'Leaverage'. A small move in the stock price can mean a 100% gain or 100% loss in your option.",
+                    "WARNING: Most retail traders lose money on options. It is an advanced strategy."
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-8',
+        title: 'The Economic Machine',
+        description: 'How the big picture affects your wallet.',
+        xpReward: 150,
+        lessons: [
+            {
+                id: 'lesson-8-1',
+                title: 'Interest Rates & The Fed',
+                description: 'The gas pedal and brake of the economy.',
+                xpReward: 40,
+                content: [
+                    "The Federal Reserve ('The Fed') manages the economy using **Monetary Policy**.",
+                    "Think of **Interest Rates** as the cost of money.",
+                    "**Loose Policy** (Low Rates): Cheap to borrow. Encourages spending and investing. Stocks usually go UP. Risk of Inflation.",
+                    "**Tight Policy** (High Rates): Expensive to borrow. Slows down spending to fight inflation. Stocks often go DOWN. Risk of Recession."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-8-2',
+                title: 'Bonds: The Boring But Safe Bet?',
+                description: 'Lending money to governments and companies.',
+                xpReward: 40,
+                content: [
+                    "When you buy a **Bond**, you are lending money to an entity for a fixed period of time.",
+                    "In return, they pay you interest. It's an I.O.U.",
+                    "**The Seesaw Rule**: Bond prices and Interest Rates move in OPPOSITE directions.",
+                    "If new rates go UP, your old low-rate bonds become less valuable (Price DOWN).",
+                    "Government bonds (Treasuries) are considered the safest investment."
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-9',
+        title: 'Future Finance',
+        description: 'Crypto, Prediction Markets, and Alternative Assets.',
+        xpReward: 200,
+        lessons: [
+            {
+                id: 'lesson-9-1',
+                title: 'Stocks vs. Real Estate vs. Hard Assets',
+                description: 'Where should you put your money?',
+                xpReward: 50,
+                content: [
+                    "**Stocks**: Ownership in companies. High liquidty, high long-term growth, volatile.",
+                    "**Real Estate**: Tangible land/buildings. Can use leverage (mortgage). High maintenance costs, hard to sell quickly.",
+                    "**Hard Assets** (Gold, Art, Commodities): Physical items with intrinsic value. Often used as a hedge against inflation. Usually don't produce cash flow (dividends/rent)."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-9-2',
+                title: 'Cryptocurrency: Digital Gold?',
+                description: 'Understanding Bitcoin and the Blockchain.',
+                xpReward: 50,
+                content: [
+                    "**Cryptocurrency** (like Bitcoin) is digital money that isn't controlled by any government.",
+                    "It runs on **Blockchain** technology—a public ledger that everyone can see but no one can cheat.",
+                    "Proponents call Bitcoin 'Digital Gold' because it has a fixed supply.",
+                    "Risks: Extremely volatile, regulatory uncertainty, and irreversible transactions."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-9-3',
+                title: 'Prediction Markets',
+                description: 'Betting on the future.',
+                xpReward: 50,
+                content: [
+                    "**Prediction Markets** let people bet on the outcome of real-world events (elections, sports, scientific breakthroughs).",
+                    "The price of a 'share' (e.g., 60 cents) represents the market's estimated probability (60%) of that event happening.",
+                    "Many economists believe these markets are more accurate than polls or experts because participants have 'skin in the game'.",
+                    "It's a way to use the 'Wisdom of the Crowd' to forecast the future."
                 ],
                 type: 'reading'
             }
