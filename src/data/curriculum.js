@@ -14,6 +14,8 @@ export const curriculum = [
                     "Money is a finite resource. To make the most of it, you need to distinguish between what you NEED and what you WANT.",
                     "Needs are essentials: shelter, food, basic clothing, utilities.",
                     "Wants are extras: dining out, new gadgets, designer clothes, entertainment.",
+                    "",
+                    "Pro tip: Use the **72-Hour Rule** for wants. If you see something you want, wait 72 hours before buying it. Usually, the 'urge' fades and you save your money.",
                     "The first step to wealth is prioritizing needs, then smartly managing wants."
                 ],
                 type: 'interactive',
@@ -27,6 +29,8 @@ export const curriculum = [
                 content: [
                     "Compound interest is often called the 'eighth wonder of the world'.",
                     "It's when you earn interest NOT ONLY on your initial investment, but also on the interest that investment has already earned.",
+                    "",
+                    "Pro tip: Use the **Rule of 72** to estimate how long it takes to double your money. Divide 72 by your interest rate. (e.g., At 10% interest, your money doubles in 7.2 years).",
                     "Use the calculator on the right to see how a small investment can grow into millions over time."
                 ],
                 type: 'interactive',
@@ -72,6 +76,9 @@ export const curriculum = [
                     "The stock market is where people buy and sell shares (tiny pieces) of companies.",
                     "When you buy a stock, you own a small part of that company.",
                     "If the company does well, your stock becomes more valuable. If it does poorly, you could lose money.",
+                    "",
+                    "The **S&P 500** is a list of the 500 biggest companies in the US. It is often used as a benchmark for how 'the market' is doing.",
+                    "Many stocks also pay **Dividends**—a portion of the company's profit paid out to you just for owning the share.",
                     "Historically, the stock market has returned about 10% per year on average."
                 ],
                 type: 'reading'
@@ -89,6 +96,8 @@ export const curriculum = [
                     "Many people think investing is about guessing when to buy low and sell high.",
                     "This is called 'Timing the Market', and even professionals fail at it.",
                     "The alternative is 'Time IN the Market'—buying and holding for the long term.",
+                    "",
+                    "Myth Buster: You don't need a perfect entry. **Dollar Cost Averaging (DCA)**—investing a set amount every month regardless of price—is historically more successful than trying to wait for a 'dip'.",
                     "Play the game on the right. Try to buy when the line dips and sell when it peaks. Can you beat the simple strategy of just holding?"
                 ],
                 type: 'interactive',
@@ -217,9 +226,11 @@ export const curriculum = [
                     "Your credit score is a number from 300-850 that tells lenders how risky you are.",
                     "750+ = Excellent. 700-749 = Good. 650-699 = Fair. Below 650 = Poor.",
                     "",
+                    "Pro tip: Avoid 'Hard Pulls' (checking for new loans) too often, as they can temporarily drop your score. 'Soft Pulls' (checking your own score) do NOT hurt it.",
+                    "",
                     "WHAT AFFECTS YOUR SCORE:",
                     "• Payment History (35%): Pay bills on time!",
-                    "• Credit Utilization (30%): Use less than 30% of your credit limit.",
+                    "• Credit Utilization (30%): Use less than 30% of your credit limit (ideally under 10% for the best score).",
                     "• Length of History (15%): Older accounts help.",
                     "• Credit Mix (10%): Having different types of credit helps.",
                     "• New Credit (10%): Don't open too many accounts at once."
@@ -332,6 +343,7 @@ export const curriculum = [
                 content: [
                     "The Federal Reserve ('The Fed') manages the economy using **Monetary Policy**.",
                     "Think of **Interest Rates** as the cost of money.",
+                    "The Fed usually has a **2% Inflation Target**. They adjust rates to try and keep prices stable while keeping employment high.",
                     "**Loose Policy** (Low Rates): Cheap to borrow. Encourages spending and investing. Stocks usually go UP. Risk of Inflation.",
                     "**Tight Policy** (High Rates): Expensive to borrow. Slows down spending to fight inflation. Stocks often go DOWN. Risk of Recession."
                 ],
@@ -379,6 +391,7 @@ export const curriculum = [
                 content: [
                     "**Cryptocurrency** (like Bitcoin) is digital money that isn't controlled by any government.",
                     "It runs on **Blockchain** technology—a public ledger that everyone can see but no one can cheat.",
+                    "Pro tip: If you buy crypto, you need a **Wallet**. Remember: 'Not your keys, not your coins'. If you don't control the private keys, you don't truly own the assets.",
                     "Proponents call Bitcoin 'Digital Gold' because it has a fixed supply.",
                     "Risks: Extremely volatile, regulatory uncertainty, and irreversible transactions."
                 ],

@@ -17,24 +17,48 @@ export function ProgressProvider({ children }) {
     const { user } = useAuth();
     const [completedLessons, setCompletedLessons] = useState([]);
     const [xp, setXp] = useState(0);
+    const [quizScores, setQuizScores] = useState({});
 
     // Load progress when user changes
     useEffect(() => {
         if (user) {
             const savedProgress = localStorage.getItem(`ffc_progress_${user.id}`);
             if (savedProgress) {
-                const { completed, userXp } = JSON.parse(savedProgress);
+                const { completed, userXp, quizzes } = JSON.parse(savedProgress);
                 setCompletedLessons(completed || []);
                 setXp(userXp || 0);
+                setQuizScores(quizzes || {});
             } else {
                 setCompletedLessons([]);
                 setXp(0);
+                setQuizScores({});
             }
         } else {
             setCompletedLessons([]);
             setXp(0);
+            setQuizScores({});
         }
     }, [user]);
+
+    // Save quiz score (keep best score)
+    const saveQuizScore = (lessonId, score) => {
+        const currentBest = quizScores[lessonId] || 0;
+        if (score > currentBest) {
+            const newScores = { ...quizScores, [lessonId]: score };
+            setQuizScores(newScores);
+
+            if (user) {
+                const savedProgress = localStorage.getItem(`ffc_progress_${user.id}`);
+                const parsed = savedProgress ? JSON.parse(savedProgress) : {};
+                localStorage.setItem(`ffc_progress_${user.id}`, JSON.stringify({
+                    ...parsed,
+                    quizzes: newScores
+                }));
+            }
+        }
+    };
+
+    const getQuizScore = (lessonId) => quizScores[lessonId] || 0;
 
     const completeLesson = (lessonId, xpReward = 10) => {
         if (!completedLessons.includes(lessonId)) {
@@ -47,7 +71,8 @@ export function ProgressProvider({ children }) {
             if (user) {
                 localStorage.setItem(`ffc_progress_${user.id}`, JSON.stringify({
                     completed: newCompleted,
-                    userXp: newXp
+                    userXp: newXp,
+                    quizzes: quizScores
                 }));
             }
         }
@@ -91,7 +116,9 @@ export function ProgressProvider({ children }) {
             isLessonCompleted,
             getCurrentLevel,
             getNextLevel,
-            getProgressToNextLevel
+            getProgressToNextLevel,
+            saveQuizScore,
+            getQuizScore
         }}>
             {children}
         </ProgressContext.Provider>

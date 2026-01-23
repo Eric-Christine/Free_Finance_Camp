@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import { Link } from 'react-router-dom';
 
 export default function Map() {
-    const { isLessonCompleted, xp, getCurrentLevel, getNextLevel, getProgressToNextLevel } = useProgress();
+    const { isLessonCompleted, xp, getCurrentLevel, getNextLevel, getProgressToNextLevel, getQuizScore } = useProgress();
     const { signOut } = useAuth();
     const currentLevel = getCurrentLevel();
     const nextLevel = getNextLevel();
@@ -204,55 +204,80 @@ export default function Map() {
                                 </div>
 
                                 <div>
-                                    {module.lessons.map((lesson) => (
-                                        <Link
-                                            to={`/learn/${lesson.id}`}
-                                            key={lesson.id}
-                                            style={{
-                                                display: 'flex',
-                                                alignItems: 'center',
-                                                padding: '0.85rem 1.5rem',
-                                                borderBottom: '1px solid var(--border)',
-                                                color: 'var(--text-main)',
-                                                transition: 'background-color 0.2s'
-                                            }}
-                                            onMouseEnter={e => e.currentTarget.style.backgroundColor = 'var(--bg-hover)'}
-                                            onMouseLeave={e => e.currentTarget.style.backgroundColor = 'transparent'}
-                                        >
-                                            <div style={{
-                                                width: '22px',
-                                                height: '22px',
-                                                borderRadius: '50%',
-                                                border: '2px solid ' + (isLessonCompleted(lesson.id) ? 'var(--primary)' : 'var(--text-muted)'),
-                                                backgroundColor: isLessonCompleted(lesson.id) ? 'var(--primary)' : 'transparent',
-                                                marginRight: '1rem',
-                                                display: 'flex',
-                                                alignItems: 'center',
-                                                justifyContent: 'center',
-                                                color: 'white',
-                                                fontSize: '0.7rem',
-                                                flexShrink: 0
-                                            }}>
-                                                {isLessonCompleted(lesson.id) && '✓'}
-                                            </div>
-                                            <div style={{ flex: 1 }}>
-                                                <h3 style={{ fontSize: '0.95rem', marginBottom: '0.15rem' }}>{lesson.title}</h3>
-                                                <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{lesson.description}</p>
-                                            </div>
-                                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                                                {lesson.xpReward && (
-                                                    <span style={{
-                                                        fontSize: '0.7rem',
-                                                        color: 'var(--accent)',
-                                                        fontWeight: 'bold'
-                                                    }}>
-                                                        +{lesson.xpReward} XP
+                                    {module.lessons.map((lesson, lessonIndex) => {
+                                        // Determine if lesson is locked
+                                        // Lesson is locked if the previous lesson's quiz hasn't been passed
+                                        let isLocked = false;
+
+                                        if (lessonIndex === 0) {
+                                            // First lesson of a module: check if previous module's last lesson was passed
+                                            const moduleIndex = curriculum.indexOf(module);
+                                            if (moduleIndex > 0) {
+                                                const prevModule = curriculum[moduleIndex - 1];
+                                                const prevLesson = prevModule.lessons[prevModule.lessons.length - 1];
+                                                isLocked = getQuizScore(prevLesson.id) < 2;
+                                            }
+                                        } else {
+                                            // Check the previous lesson in this module
+                                            const prevLesson = module.lessons[lessonIndex - 1];
+                                            isLocked = getQuizScore(prevLesson.id) < 2;
+                                        }
+
+                                        return (
+                                            <Link
+                                                to={isLocked ? '#' : `/learn/${lesson.id}`}
+                                                key={lesson.id}
+                                                onClick={e => isLocked && e.preventDefault()}
+                                                style={{
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    padding: '0.85rem 1.5rem',
+                                                    borderBottom: '1px solid var(--border)',
+                                                    color: isLocked ? 'var(--text-muted)' : 'var(--text-main)',
+                                                    transition: 'background-color 0.2s',
+                                                    opacity: isLocked ? 0.5 : 1,
+                                                    cursor: isLocked ? 'not-allowed' : 'pointer'
+                                                }}
+                                                onMouseEnter={e => !isLocked && (e.currentTarget.style.backgroundColor = 'var(--bg-hover)')}
+                                                onMouseLeave={e => e.currentTarget.style.backgroundColor = 'transparent'}
+                                            >
+                                                <div style={{
+                                                    width: '22px',
+                                                    height: '22px',
+                                                    borderRadius: '50%',
+                                                    border: '2px solid ' + (isLessonCompleted(lesson.id) ? 'var(--primary)' : isLocked ? 'var(--bg-hover)' : 'var(--text-muted)'),
+                                                    backgroundColor: isLessonCompleted(lesson.id) ? 'var(--primary)' : 'transparent',
+                                                    marginRight: '1rem',
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                    color: 'white',
+                                                    fontSize: '0.7rem',
+                                                    flexShrink: 0
+                                                }}>
+                                                    {isLocked ? '🔒' : isLessonCompleted(lesson.id) && '✓'}
+                                                </div>
+                                                <div style={{ flex: 1 }}>
+                                                    <h3 style={{ fontSize: '0.95rem', marginBottom: '0.15rem' }}>{lesson.title}</h3>
+                                                    <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{lesson.description}</p>
+                                                </div>
+                                                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                                    {lesson.xpReward && (
+                                                        <span style={{
+                                                            fontSize: '0.7rem',
+                                                            color: isLocked ? 'var(--text-muted)' : 'var(--accent)',
+                                                            fontWeight: 'bold'
+                                                        }}>
+                                                            +{lesson.xpReward} XP
+                                                        </span>
+                                                    )}
+                                                    <span style={{ fontSize: '1rem', color: 'var(--text-muted)' }}>
+                                                        {isLocked ? '' : '→'}
                                                     </span>
-                                                )}
-                                                <span style={{ fontSize: '1rem', color: 'var(--text-muted)' }}>→</span>
-                                            </div>
-                                        </Link>
-                                    ))}
+                                                </div>
+                                            </Link>
+                                        );
+                                    })}
                                 </div>
                             </div>
                         </div>

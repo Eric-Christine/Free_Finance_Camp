@@ -6,6 +6,7 @@ import BudgetAllocator from './interactive/BudgetAllocator';
 import CarCalculator from './interactive/CarCalculator';
 import InsuranceCompare from './interactive/InsuranceCompare';
 import MarketTimer from './interactive/MarketTimer';
+import Quiz from './Quiz';
 
 // Map of widget names to components
 const WIDGETS = {
@@ -144,20 +145,17 @@ export default function Lesson() {
             })}
           </div>
 
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 'auto' }}>
-            <button
-              className={isLessonCompleted(currentLesson.id) ? "btn btn-outline" : "btn btn-primary"}
-              onClick={() => completeLesson(currentLesson.id, currentLesson.xpReward || 10)}
-            >
-              {isLessonCompleted(currentLesson.id) ? 'Completed ✓' : 'Mark as Complete'}
-            </button>
+          {/* Quiz Section */}
+          <Quiz lessonId={currentLesson.id} xpReward={currentLesson.xpReward || 10} />
 
-            {isLessonCompleted(currentLesson.id) && (
-              <Link to={nextLessonUrl} className="btn btn-primary" style={{ marginLeft: '1rem' }}>
+          {/* Navigation */}
+          {isLessonCompleted(currentLesson.id) && (
+            <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '1.5rem' }}>
+              <Link to={nextLessonUrl} className="btn btn-primary">
                 Next Lesson →
               </Link>
-            )}
-          </div>
+            </div>
+          )}
         </div>
 
         {/* Right Side: Interactive Widget (Only if exists) */}
