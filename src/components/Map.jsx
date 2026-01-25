@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import { Link } from 'react-router-dom';
 
 export default function Map() {
-    const { isLessonCompleted, xp, getCurrentLevel, getNextLevel, getProgressToNextLevel, getQuizScore } = useProgress();
+    const { isLessonCompleted, xp, getCurrentLevel, getNextLevel, getProgressToNextLevel, getQuizScore, streakCount } = useProgress();
     const { signOut } = useAuth();
     const currentLevel = getCurrentLevel();
     const nextLevel = getNextLevel();
@@ -71,6 +71,31 @@ export default function Map() {
                             borderRadius: '999px',
                             transition: 'width 0.3s'
                         }} />
+                    </div>
+                </div>
+
+                {/* Streak Counter */}
+                <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.5rem',
+                    backgroundColor: streakCount > 0 ? 'rgba(249, 115, 22, 0.15)' : 'var(--bg-hover)',
+                    padding: '0.5rem 1rem',
+                    borderRadius: 'var(--radius)',
+                    border: streakCount > 0 ? '1px solid rgba(249, 115, 22, 0.3)' : '1px solid var(--border)'
+                }}>
+                    <span style={{ fontSize: '1.25rem' }}>🔥</span>
+                    <div>
+                        <div style={{
+                            fontWeight: 'bold',
+                            fontSize: '1.1rem',
+                            color: streakCount > 0 ? '#f97316' : 'var(--text-muted)'
+                        }}>
+                            {streakCount}
+                        </div>
+                        <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>
+                            day streak
+                        </div>
                     </div>
                 </div>
 

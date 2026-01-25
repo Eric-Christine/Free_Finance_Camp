@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { curriculum } from '../data/curriculum';
 import { useProgress } from '../context/ProgressContext';
@@ -20,6 +21,7 @@ const WIDGETS = {
 export default function Lesson() {
   const { lessonId } = useParams();
   const { completeLesson, isLessonCompleted, xp } = useProgress();
+  const [currentScreen, setCurrentScreen] = useState(0);
 
   // Find current lesson and module
   let currentLesson = null;
@@ -122,33 +124,127 @@ export default function Lesson() {
             </div>
           )}
 
-          <div style={{ lineHeight: '1.7', color: 'var(--text-light)', marginBottom: '3rem' }}>
-            <p style={{ marginBottom: '1rem', color: 'var(--text-muted)' }}>{currentLesson.description}</p>
-            {currentLesson.content && currentLesson.content.map((paragraph, idx) => {
-              // Helper to parse bold markdown **text**
-              const parts = paragraph.split(/(\*\*.*?\*\*)/g);
+          {/* Content - supports both screens array and legacy content array */}
+          {(() => {
+            // Determine if using screens or legacy content
+            const hasScreens = currentLesson.screens && currentLesson.screens.length > 0;
+            const screens = hasScreens ? currentLesson.screens : [{ content: currentLesson.content || [] }];
+            const totalScreens = screens.length;
+            const screen = screens[currentScreen] || screens[0];
+            const isLastScreen = currentScreen >= totalScreens - 1;
+            const isFirstScreen = currentScreen === 0;
 
-              return (
-                <p key={idx} style={{
-                  marginBottom: paragraph === '' ? '0.5rem' : '1rem',
-                  fontWeight: paragraph.startsWith('OPTION') || paragraph.startsWith('•') || paragraph.endsWith(':') ? 'bold' : 'normal',
-                  color: paragraph.startsWith('Pro tip') ? 'var(--primary)' : 'inherit'
-                }}>
-                  {parts.map((part, i) => {
-                    if (part.startsWith('**') && part.endsWith('**')) {
-                      return <strong key={i}>{part.slice(2, -2)}</strong>;
-                    }
-                    return <span key={i}>{part}</span>;
-                  })}
-                </p>
-              );
-            })}
-          </div>
+            const renderContent = (contentArray) => {
+              return contentArray.map((paragraph, idx) => {
+                const parts = paragraph.split(/(\*\*.*?\*\*)/g);
+                return (
+                  <p key={idx} style={{
+                    marginBottom: paragraph === '' ? '0.5rem' : '1rem',
+                    fontWeight: paragraph.startsWith('OPTION') || paragraph.endsWith(':') ? 'bold' : 'normal',
+                    color: paragraph.startsWith('Pro tip') ? 'var(--primary)' : 'inherit',
+                    paddingLeft: paragraph.startsWith('•') ? '0.5rem' : '0'
+                  }}>
+                    {parts.map((part, i) => {
+                      if (part.startsWith('**') && part.endsWith('**')) {
+                        return <strong key={i}>{part.slice(2, -2)}</strong>;
+                      }
+                      return <span key={i}>{part}</span>;
+                    })}
+                  </p>
+                );
+              });
+            };
 
-          {/* Quiz Section */}
-          <Quiz lessonId={currentLesson.id} xpReward={currentLesson.xpReward || 10} />
+            return (
+              <div style={{ lineHeight: '1.7', color: 'var(--text-light)', marginBottom: '2rem' }}>
+                {/* Screen progress indicator */}
+                {hasScreens && totalScreens > 1 && (
+                  <div style={{
+                    display: 'flex',
+                    gap: '0.5rem',
+                    marginBottom: '1.5rem',
+                    alignItems: 'center'
+                  }}>
+                    {screens.map((_, idx) => (
+                      <div
+                        key={idx}
+                        style={{
+                          width: idx === currentScreen ? '2rem' : '0.5rem',
+                          height: '0.5rem',
+                          borderRadius: '999px',
+                          backgroundColor: idx <= currentScreen ? 'var(--primary)' : 'var(--bg-hover)',
+                          transition: 'all 0.3s ease'
+                        }}
+                      />
+                    ))}
+                    <span style={{ marginLeft: '0.5rem', fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+                      {currentScreen + 1} / {totalScreens}
+                    </span>
+                  </div>
+                )}
 
-          {/* Navigation */}
+                {/* Screen title if available */}
+                {screen.title && (
+                  <h2 style={{
+                    fontSize: '1.25rem',
+                    color: 'var(--primary)',
+                    marginBottom: '1rem',
+                    fontWeight: '600'
+                  }}>
+                    {screen.title}
+                  </h2>
+                )}
+
+                {/* First screen shows description */}
+                {isFirstScreen && (
+                  <p style={{ marginBottom: '1rem', color: 'var(--text-muted)' }}>
+                    {currentLesson.description}
+                  </p>
+                )}
+
+                {/* Content */}
+                {renderContent(screen.content || [])}
+
+                {/* Screen navigation buttons */}
+                {hasScreens && totalScreens > 1 && (
+                  <div style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    marginTop: '2rem',
+                    paddingTop: '1rem',
+                    borderTop: '1px solid var(--border)'
+                  }}>
+                    <button
+                      onClick={() => setCurrentScreen(prev => prev - 1)}
+                      disabled={isFirstScreen}
+                      className="btn"
+                      style={{
+                        opacity: isFirstScreen ? 0.3 : 1,
+                        cursor: isFirstScreen ? 'not-allowed' : 'pointer'
+                      }}
+                    >
+                      ← Back
+                    </button>
+                    {!isLastScreen && (
+                      <button
+                        onClick={() => setCurrentScreen(prev => prev + 1)}
+                        className="btn btn-primary"
+                      >
+                        Next →
+                      </button>
+                    )}
+                  </div>
+                )}
+              </div>
+            );
+          })()}
+
+          {/* Quiz Section - only show on last screen */}
+          {(!currentLesson.screens || currentScreen >= currentLesson.screens.length - 1) && (
+            <Quiz lessonId={currentLesson.id} xpReward={currentLesson.xpReward || 10} />
+          )}
+
+          {/* Navigation to next lesson */}
           {isLessonCompleted(currentLesson.id) && (
             <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '1.5rem' }}>
               <Link to={nextLessonUrl} className="btn btn-primary">

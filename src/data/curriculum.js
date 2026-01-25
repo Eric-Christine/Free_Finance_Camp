@@ -10,13 +10,64 @@ export const curriculum = [
                 title: 'Needs vs. Wants',
                 description: 'The foundation of all financial decisions.',
                 xpReward: 15,
-                content: [
-                    "Money is a finite resource. To make the most of it, you need to distinguish between what you NEED and what you WANT.",
-                    "Needs are essentials: shelter, food, basic clothing, utilities.",
-                    "Wants are extras: dining out, new gadgets, designer clothes, entertainment.",
-                    "",
-                    "Pro tip: Use the **72-Hour Rule** for wants. If you see something you want, wait 72 hours before buying it. Usually, the 'urge' fades and you save your money.",
-                    "The first step to wealth is prioritizing needs, then smartly managing wants."
+                screens: [
+                    {
+                        title: 'The Core Principle',
+                        content: [
+                            "Money is a finite resource. To make the most of it, you need to distinguish between what you NEED and what you WANT.",
+                            "",
+                            "**Needs** are essentials:",
+                            "• Shelter (rent, mortgage)",
+                            "• Food & water",
+                            "• Basic clothing",
+                            "• Utilities & transportation",
+                            "",
+                            "**Wants** are extras:",
+                            "• Dining out & entertainment",
+                            "• New gadgets & upgrades",
+                            "• Designer clothes & luxury items"
+                        ]
+                    },
+                    {
+                        title: 'The 72-Hour Rule',
+                        content: [
+                            "Pro tip: Use the **72-Hour Rule** for wants.",
+                            "",
+                            "See something you want? Wait 72 hours before buying it.",
+                            "",
+                            "Usually, the 'urge' fades and you save your money.",
+                            "",
+                            "The first step to wealth is prioritizing needs, then smartly managing wants."
+                        ]
+                    },
+                    {
+                        title: 'Global Savings Rates',
+                        content: [
+                            "How does your country compare? Personal savings rates vary dramatically around the world.",
+                            "",
+                            "**TOP SAVERS:**",
+                            "• China: ~35% — Cultural emphasis on saving",
+                            "• Singapore: ~30% — Government-mandated CPF program",
+                            "• Germany: ~11% — Fiscal discipline culture",
+                            "",
+                            "**MIDDLE OF THE PACK:**",
+                            "• France: ~15% — Social programs reduce need",
+                            "• Japan: ~10% — Aging population drawing down"
+                        ]
+                    },
+                    {
+                        title: 'Where Does the US Stand?',
+                        content: [
+                            "**LOWER SAVERS:**",
+                            "• United States: ~4-8%",
+                            "• United Kingdom: ~5-7%",
+                            "• Australia: ~3-5%",
+                            "",
+                            "Why so low? Consumer culture, easy credit access, and reliance on social programs.",
+                            "",
+                            "**The Takeaway:** Even small increases in your savings rate can dramatically impact your wealth over time. Try to save at least 20% of your income!"
+                        ]
+                    }
                 ],
                 type: 'interactive',
                 widget: 'BudgetAllocator'

@@ -10,9 +10,9 @@ export const quizzes = {
             correctIndex: 1
         },
         {
-            question: "How long should you wait before buying a 'want' according to the 72-Hour Rule?",
-            options: ["24 hours", "48 hours", "72 hours", "1 week"],
-            correctIndex: 2
+            question: "You see an expensive 'want' that wasn't in your budget. What is the best strategy to avoid an impulse buy?",
+            options: ["Wait 24 hours", "Wait 72 hours", "Wait 1 week", "Buy it immediately"],
+            correctIndex: 1
         },
         {
             question: "What is the first step to building wealth?",

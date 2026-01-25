@@ -11,32 +11,47 @@ import {
 } from 'recharts';
 
 export default function CompoundInterest() {
-  const [principal, setPrincipal] = useState(1000);
+  const [monthlyAmount, setMonthlyAmount] = useState(100);
   const [stockRate, setStockRate] = useState(7);
   const [years, setYears] = useState(20);
   const [data, setData] = useState([]);
 
   useEffect(() => {
     const newData = [];
-    for (let i = 0; i <= years; i++) {
-      // Cash: Loses 2% value per year (Inflation) => Val = P * (0.98)^i
-      const cashVal = principal * Math.pow(0.98, i);
 
-      // High Yield Savings: Gains 1% real value => Val = P * (1.01)^i
-      const hysaVal = principal * Math.pow(1.01, i);
+    // Monthly rates
+    const stockMonthlyRate = stockRate / 100 / 12;
+    const hysaMonthlyRate = 0.01 / 12;
+    const inflationMonthlyRate = -0.02 / 12;
 
-      // Stock Market: Gains user-defined % value => Val = P * (1 + r/100)^i
-      const stockVal = principal * Math.pow(1 + stockRate / 100, i);
+    let totalCash = 0;
+    let totalHysa = 0;
+    let totalStock = 0;
+
+    newData.push({
+      year: 0,
+      Cash: 0,
+      Savings: 0,
+      Invested: 0
+    });
+
+    for (let y = 1; y <= years; y++) {
+      // Calculate month by month for accuracy
+      for (let m = 1; m <= 12; m++) {
+        totalCash = (totalCash + monthlyAmount) * (1 + inflationMonthlyRate);
+        totalHysa = (totalHysa + monthlyAmount) * (1 + hysaMonthlyRate);
+        totalStock = (totalStock + monthlyAmount) * (1 + stockMonthlyRate);
+      }
 
       newData.push({
-        year: i,
-        Cash: Math.round(cashVal),
-        Savings: Math.round(hysaVal),
-        Invested: Math.round(stockVal)
+        year: y,
+        Cash: Math.round(totalCash),
+        Savings: Math.round(totalHysa),
+        Invested: Math.round(totalStock)
       });
     }
     setData(newData);
-  }, [principal, stockRate, years]);
+  }, [monthlyAmount, stockRate, years]);
 
   return (
     <div style={{
@@ -49,7 +64,7 @@ export default function CompoundInterest() {
       flexDirection: 'column',
       overflowY: 'auto'
     }}>
-      <h3 style={{ marginBottom: '1rem', color: 'var(--primary)' }}>Purchasing Power Over Time</h3>
+      <h3 style={{ marginBottom: '1rem', color: 'var(--primary)' }}>Purchasing Power with Monthly Saving</h3>
 
       {/* Graph Area */}
       <div style={{ flex: 1, minHeight: '300px', marginBottom: '1.5rem' }}>
@@ -66,8 +81,8 @@ export default function CompoundInterest() {
             />
             <YAxis
               stroke="var(--text-muted)"
-              tickFormatter={(value) => `$${value.toLocaleString()}`}
-              width={80} // Give space for dollar values
+              tickFormatter={(value) => `$${(value / 1000).toFixed(0)}k`}
+              width={60}
             />
             <Tooltip
               contentStyle={{ backgroundColor: 'var(--bg-main)', border: '1px solid var(--border)' }}
@@ -82,32 +97,32 @@ export default function CompoundInterest() {
       </div>
 
       {/* Controls */}
-      <div style={{ display: 'grid', gap: '1.5rem', padding: '1rem', backgroundColor: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius)' }}>
+      <div style={{ display: 'grid', gap: '1.25rem', padding: '1rem', backgroundColor: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius)' }}>
         <div>
-          <label style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', fontSize: '0.9rem' }}>
-            <span>Initial Amount</span>
-            <span style={{ fontWeight: 'bold' }}>${principal.toLocaleString()}</span>
+          <label style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.4rem', fontSize: '0.85rem' }}>
+            <span>Monthly Contribution</span>
+            <span style={{ fontWeight: 'bold' }}>${monthlyAmount.toLocaleString()} / mo</span>
           </label>
           <input
             type="range"
-            min="100"
-            max="10000"
-            step="100"
-            value={principal}
-            onChange={(e) => setPrincipal(Number(e.target.value))}
+            min="50"
+            max="2000"
+            step="50"
+            value={monthlyAmount}
+            onChange={(e) => setMonthlyAmount(Number(e.target.value))}
             style={{ width: '100%', accentColor: 'var(--text-main)' }}
           />
         </div>
 
         <div>
-          <label style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', fontSize: '0.9rem' }}>
+          <label style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.4rem', fontSize: '0.85rem' }}>
             <span>Stock Return Rate</span>
             <span style={{ fontWeight: 'bold', color: 'var(--primary)' }}>{stockRate}%</span>
           </label>
           <input
             type="range"
             min="1"
-            max="8" // Max 8% as requested
+            max="12"
             step="0.5"
             value={stockRate}
             onChange={(e) => setStockRate(Number(e.target.value))}
@@ -116,7 +131,7 @@ export default function CompoundInterest() {
         </div>
 
         <div>
-          <label style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', fontSize: '0.9rem' }}>
+          <label style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.4rem', fontSize: '0.85rem' }}>
             <span>Time Horizon</span>
             <span style={{ fontWeight: 'bold' }}>{years} Years</span>
           </label>
@@ -132,10 +147,10 @@ export default function CompoundInterest() {
         </div>
       </div>
 
-      <div style={{ marginTop: '1rem', fontSize: '0.85rem', color: 'var(--text-muted)', textAlign: 'center' }}>
-        * Cash loses ~2% purchasing power/year due to inflation. <br />
-        * High Yield Savings keeps up with inflation +1%. <br />
-        * Investing grows your wealth exponentially.
+      <div style={{ marginTop: '0.75rem', fontSize: '0.75rem', color: 'var(--text-muted)', textAlign: 'center', lineHeight: '1.4' }}>
+        Save ${monthlyAmount}/mo for {years} years. <br />
+        Cash loses ~2% purchasing power/year. <br />
+        Total Invested Value: <strong>${data[years]?.Invested?.toLocaleString()}</strong>
       </div>
     </div>
   );

@@ -5,8 +5,8 @@ import { useNavigate } from 'react-router-dom';
 export default function Login() {
     const [email, setEmail] = useState('');
     const [otp, setOtp] = useState('');
-    const [step, setStep] = useState('email'); // 'email' or 'otp'
-    const { signInWithOtp, verifyOtp } = useAuth();
+    const [step, setStep] = useState('email'); // 'email', 'otp', or 'check-email'
+    const { signInWithOtp, verifyOtp, isRealAuth } = useAuth();
     const navigate = useNavigate();
     const [error, setError] = useState('');
 
@@ -17,7 +17,8 @@ export default function Login() {
         if (error) {
             setError(error.message);
         } else {
-            setStep('otp');
+            // Real auth uses magic link (email), mock uses OTP code
+            setStep(isRealAuth ? 'check-email' : 'otp');
         }
     };
 
@@ -52,7 +53,7 @@ export default function Login() {
                     Free Finance Camp
                 </h1>
 
-                {step === 'email' ? (
+                {step === 'email' && (
                     <form onSubmit={handleSendOtp} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                         <div>
                             <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>Email</label>
@@ -61,7 +62,7 @@ export default function Login() {
                                 required
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
-                                placeholder="you@school.edu"
+                                placeholder="you@example.com"
                                 style={{
                                     width: '100%',
                                     padding: '0.75rem',
@@ -72,11 +73,31 @@ export default function Login() {
                                 }}
                             />
                         </div>
+                        {error && <p style={{ color: 'red', fontSize: '0.9rem', textAlign: 'center' }}>{error}</p>}
                         <button type="submit" className="btn btn-primary">
-                            Send Login Code
+                            {isRealAuth ? 'Send Magic Link' : 'Send Login Code'}
                         </button>
                     </form>
-                ) : (
+                )}
+
+                {step === 'check-email' && (
+                    <div style={{ textAlign: 'center' }}>
+                        <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📧</div>
+                        <h2 style={{ marginBottom: '0.5rem' }}>Check Your Email</h2>
+                        <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
+                            We sent a magic link to <strong>{email}</strong>.<br />
+                            Click the link to sign in.
+                        </p>
+                        <button
+                            onClick={() => setStep('email')}
+                            className="btn btn-outline"
+                        >
+                            Use a Different Email
+                        </button>
+                    </div>
+                )}
+
+                {step === 'otp' && (
                     <form onSubmit={handleVerify} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                         <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
                             <p>Enter the code sent to <strong>{email}</strong></p>
