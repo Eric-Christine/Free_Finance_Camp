@@ -235,13 +235,8 @@ export default function Map() {
                                         let isLocked = false;
 
                                         if (lessonIndex === 0) {
-                                            // First lesson of a module: check if previous module's last lesson was passed
-                                            const moduleIndex = curriculum.indexOf(module);
-                                            if (moduleIndex > 0) {
-                                                const prevModule = curriculum[moduleIndex - 1];
-                                                const prevLesson = prevModule.lessons[prevModule.lessons.length - 1];
-                                                isLocked = getQuizScore(prevLesson.id) < 2;
-                                            }
+                                            // First lesson of a module is always unlocked
+                                            isLocked = false;
                                         } else {
                                             // Check the previous lesson in this module
                                             const prevLesson = module.lessons[lessonIndex - 1];
