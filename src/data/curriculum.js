@@ -6,6 +6,106 @@ export const curriculum = [
         xpReward: 50,
         lessons: [
             {
+                id: 'lesson-1-0',
+                title: 'Intro to Financial Literacy',
+                description: 'Why understanding money is no longer optional.',
+                xpReward: 20,
+                screens: [
+                    {
+                        title: 'Why This Matters',
+                        content: [
+                            "Welcome to Free Finance Camp. Before we dive in, let's talk about WHY this knowledge is essential.",
+                            "",
+                            "The modern economy doesn't just reward hard work—it rewards **ownership**.",
+                            "",
+                            "Those who own assets (stocks, real estate, businesses, co-ops) see their wealth grow alongside the economy. Those who only earn wages often fall behind as the cost of living rises faster than their paychecks.",
+                            "",
+                            "This isn't about blame—it's about understanding the rules of the game so you can play it."
+                        ]
+                    },
+                    {
+                        title: 'The K-Shaped Economy',
+                        content: [
+                            "You may have heard of the **K-Shaped Recovery**. Here's what it means:",
+                            "",
+                            "Imagine the letter 'K'. After an economic shock (like a recession or pandemic), the economy doesn't recover equally for everyone:",
+                            "",
+                            "**The Upper Arm (going up):** Asset owners, tech workers, and investors see their wealth SOAR. Stock markets hit new highs. Home values skyrocket.",
+                            "",
+                            "**The Lower Arm (going down):** Hourly workers, renters, and those without savings fall further behind. Jobs disappear. Rent keeps rising.",
+                            "",
+                            "The gap between these two groups is widening every year."
+                        ]
+                    },
+                    {
+                        title: 'Where the Wealthy Keep Their Money',
+                        content: [
+                            "Want to know the secret of the ultra-wealthy? It's not in their bank accounts.",
+                            "",
+                            "**The top 1% hold their wealth in:**",
+                            "• **Stocks & Business Equity** (~50-60%) — Ownership in companies, both public and private.",
+                            "• **Real Estate** (~10-15%) — Land, commercial properties, and rental income.",
+                            "• **Other Investments** (~20%) — Bonds, private equity, hedge funds.",
+                            "",
+                            "Meanwhile, the bottom 50% hold most of their 'wealth' in:",
+                            "• **Their primary home** (if they own one)",
+                            "• **Cars** (which depreciate)",
+                            "• **Cash in checking/savings** (losing value to inflation)",
+                            "",
+                            "Here's the key insight: **When the stock market goes up 20%, the wealthy get 20% richer. When wages go up 3%, workers barely keep pace with inflation.**"
+                        ]
+                    },
+                    {
+                        title: 'The Wealth Gap in Numbers',
+                        content: [
+                            "The numbers are staggering:",
+                            "",
+                            "• The **top 10%** of Americans own **93%** of all stocks.",
+                            "• The **bottom 50%** own just **1%** of stocks.",
+                            "",
+                            "This means when the S&P 500 doubles (as it did from 2019-2024), almost all of those gains went to people who were already wealthy.",
+                            "",
+                            "**The rich get richer** because their assets (stocks, real estate) appreciate faster than wages grow.",
+                            "",
+                            "**The poor stay poor** because they have no assets that grow—only expenses that increase.",
+                            "",
+                            "Breaking this cycle starts with one decision: **becoming an owner, not just an earner.**"
+                        ]
+                    },
+                    {
+                        title: 'The Path to Ownership',
+                        content: [
+                            "The good news? **You can move from the bottom arm to the top.**",
+                            "",
+                            "It starts with financial literacy: understanding how money works, how to save, and most importantly, how to **own assets**.",
+                            "",
+                            "Assets come in many forms:",
+                            "• **Stocks & ETFs** — Own a piece of publicly traded companies.",
+                            "• **Real Estate** — From your first home to rental properties.",
+                            "• **Co-ops & Credit Unions** — Member-owned organizations that share profits.",
+                            "• **Starting a Business** — Build equity in something you control.",
+                            "",
+                            "This course will teach you how to get started—no matter your current income level."
+                        ]
+                    },
+                    {
+                        title: 'The Stakes Are Real',
+                        content: [
+                            "Consider this: Over the last 40 years, the S&P 500 has returned an average of ~10% per year.",
+                            "",
+                            "Meanwhile, average wages have barely kept pace with inflation.",
+                            "",
+                            "If you had invested just $100/month starting at age 25, by age 65 you'd have over **$500,000**. If you only saved it in a bank account? Around **$48,000**.",
+                            "",
+                            "The difference isn't luck. It's knowledge. And that's exactly what you're here to learn.",
+                            "",
+                            "Let's get started."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
                 id: 'lesson-1-1',
                 title: 'Needs vs. Wants',
                 description: 'The foundation of all financial decisions.',
@@ -166,6 +266,27 @@ export const curriculum = [
                     "Famous investor Warren Buffett recommends index funds for most people."
                 ],
                 type: 'reading'
+            },
+            {
+                id: 'lesson-3-4',
+                title: 'The Opportunity Cost of Not Investing',
+                description: 'What are you giving up by staying on the sidelines?',
+                xpReward: 30,
+                content: [
+                    "**Opportunity Cost** is the value of the next best alternative you give up when you make a choice.",
+                    "",
+                    "In investing, the biggest opportunity cost is often **doing nothing**.",
+                    "",
+                    "If you keep $10,000 in a standard savings account earning 0.1%, you might feel 'safe'. But if the stock market returns 10%, your opportunity cost is **$990 per year**.",
+                    "",
+                    "Over 40 years, that 'safe' choice could cost you over **$400,000** in lost growth.",
+                    "",
+                    "**Inflation** is another hidden cost. If prices rise by 3% and your money grows by 0%, you are actually losing purchasing power. Every day your money isn't invested, it buys slightly less.",
+                    "",
+                    "Pro tip: Don't just ask 'What if I lose money?' Ask 'What if I lose the chance to build wealth?'"
+                ],
+                type: 'interactive',
+                widget: 'CompoundInterest'
             }
         ]
     },
@@ -257,6 +378,43 @@ export const curriculum = [
                     "The payout from insurance can't exceed the car's value.",
                     "",
                     "DEDUCTIBLE matters here too! Higher deductible = lower premium."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-5-3',
+                title: 'Home Insurance: Protecting Your Castle',
+                description: 'What does your policy actually cover?',
+                xpReward: 30,
+                content: [
+                    "**Homeowner's Insurance** protects your property and belongings from damage, theft, and liability claims.",
+                    "",
+                    "**DWELLING COVERAGE**: Pays to rebuild or repair your home's structure if damaged by covered events (fire, storms, vandalism).",
+                    "**PERSONAL PROPERTY**: Covers your belongings—furniture, electronics, clothes—if stolen or destroyed.",
+                    "**LIABILITY PROTECTION**: Covers legal bills if someone is injured on your property and sues you.",
+                    "",
+                    "**What's NOT covered?** Floods and earthquakes require separate policies. Standard policies also exclude 'maintenance issues' like mold or pest damage.",
+                    "",
+                    "Pro tip: Create a **home inventory** (photos/video of your belongings). If disaster strikes, you'll have proof for your claim."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-5-4',
+                title: 'Life Insurance: Planning for the Unexpected',
+                description: 'Protect your loved ones financially.',
+                xpReward: 35,
+                content: [
+                    "**Life Insurance** pays a lump sum to your beneficiaries (usually family) if you pass away.",
+                    "",
+                    "**TERM LIFE**: Coverage for a set period (e.g., 20 years). Cheapest option. If you outlive the term, the policy expires worthless.",
+                    "**WHOLE LIFE**: Permanent coverage that also builds 'cash value' over time. Much more expensive than term.",
+                    "",
+                    "**Who needs it?** Anyone with dependents (spouse, children) who rely on your income. If you're single with no dependents, you likely don't need it yet.",
+                    "",
+                    "**Rule of Thumb**: Get coverage worth 10-12x your annual income. A $60k earner should aim for $600k-$720k in coverage.",
+                    "",
+                    "Pro tip: Buy term insurance when you're young and healthy—premiums are locked in and stay low."
                 ],
                 type: 'reading'
             }
@@ -458,6 +616,62 @@ export const curriculum = [
                     "The price of a 'share' (e.g., 60 cents) represents the market's estimated probability (60%) of that event happening.",
                     "Many economists believe these markets are more accurate than polls or experts because participants have 'skin in the game'.",
                     "It's a way to use the 'Wisdom of the Crowd' to forecast the future."
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-10',
+        title: 'Banking & Financial Institutions',
+        description: 'Understand the entities that move the world\'s money.',
+        xpReward: 150,
+        lessons: [
+            {
+                id: 'lesson-10-1',
+                title: 'Financial Pillars: Banks & Credit Unions',
+                description: 'Where should you keep your cash?',
+                xpReward: 40,
+                content: [
+                    "**Traditional Banks** are for-profit corporations owned by shareholders. They offer convenience, many branches, and advanced tech, but often have higher fees.",
+                    "",
+                    "**Credit Unions** are non-profit cooperatives owned by their members. They usually offer better interest rates and lower fees, but membership is often restricted to certain groups (e.g., teachers, military).",
+                    "",
+                    "**Online-Only Banks** have no physical branches. Because they have lower overhead, they often offer the highest savings rates (**HYSA**) in the market.",
+                    "",
+                    "Pro tip: Always ensure your bank is insured by the **FDIC** (for banks) or **NCUA** (for credit unions). This protects your money up to $250,000 if the institution fails."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-10-2',
+                title: 'Green Banks: Financing the Future',
+                description: 'Using finance to fight climate change.',
+                xpReward: 50,
+                content: [
+                    "A **Green Bank** is a mission-driven institution that uses public funds to 'de-risk' and attract private investment into clean energy projects.",
+                    "",
+                    "**Why do we need them?** Traditional banks are often hesitant to fund new green technologies (like community solar or building retrofits) because they lack historical data to predict risk.",
+                    "",
+                    "**How they work**: For every $1 of public money a Green Bank invests, it typically attracts $3 to $10 of private capital from institutional investors.",
+                    "",
+                    "Examples include the **Connecticut Green Bank** (the first in the US) and the new federal **Greenhouse Gas Reduction Fund**, which is deploying $27 billion to green projects across America."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-10-3',
+                title: 'Global Stability: IMF & World Bank',
+                description: 'The lenders of last resort.',
+                xpReward: 60,
+                content: [
+                    "The **International Monetary Fund (IMF)** acts as a global monitor and 'lender of last resort.' It provides loans to countries facing economic crises to prevent global contagion.",
+                    "",
+                    "The **World Bank** focuses on long-term economic development and poverty reduction. It funds infrastructure projects like schools, bridges, and power plants in developing nations.",
+                    "",
+                    "**Common Criticism**: Both institutions are often criticized for the 'conditions' they attach to loans, which may require countries to make painful cuts to social programs.",
+                    "",
+                    "Despite controversies, these institutions are the backbone of global financial stability during times of war or total economic collapse."
                 ],
                 type: 'reading'
             }

@@ -71,6 +71,29 @@ export function AuthProvider({ children }) {
     }
   };
 
+  const signInWithOAuth = async (provider) => {
+    if (supabase) {
+      const { data, error } = await supabase.auth.signInWithOAuth({
+        provider: provider,
+        options: {
+          redirectTo: window.location.origin + '/map'
+        }
+      });
+      return { data, error };
+    } else {
+      // Mock OAuth - instant login
+      console.log(`[Mock] Signing in with ${provider}`);
+      const mockUser = {
+        id: `user_${provider}`,
+        email: `test@${provider}.com`,
+        app_metadata: { provider: provider }
+      };
+      setUser(mockUser);
+      localStorage.setItem('ffc_user', JSON.stringify(mockUser));
+      return { data: { user: mockUser }, error: null };
+    }
+  };
+
   const signOut = async () => {
     if (supabase) {
       await supabase.auth.signOut();
@@ -88,6 +111,7 @@ export function AuthProvider({ children }) {
       loading,
       signInWithOtp,
       verifyOtp,
+      signInWithOAuth,
       signOut,
       isRealAuth
     }}>

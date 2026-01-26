@@ -3,6 +3,23 @@
 
 export const quizzes = {
     // Module 1: The Wealth Mindset
+    'lesson-1-0': [
+        {
+            question: "According to the lesson, what does the modern economy primarily reward?",
+            options: ["Hard work alone", "Ownership of assets", "Government jobs", "Lottery winners"],
+            correctIndex: 1
+        },
+        {
+            question: "In a K-Shaped Economy, who tends to see their wealth grow after an economic shock?",
+            options: ["Hourly workers", "Renters", "Asset owners and investors", "Everyone equally"],
+            correctIndex: 2
+        },
+        {
+            question: "Which of the following is NOT an example of an asset you can own?",
+            options: ["Stocks & ETFs", "Real Estate", "A credit card balance", "A small business"],
+            correctIndex: 2
+        }
+    ],
     'lesson-1-1': [
         {
             question: "Which of the following is a 'Need' vs. a 'Want'?",
@@ -109,6 +126,23 @@ export const quizzes = {
             correctIndex: 1
         }
     ],
+    'lesson-3-4': [
+        {
+            question: "What is 'Opportunity Cost' in the context of investing?",
+            options: ["The fee you pay to a broker", "The value of the growth you give up by not investing", "The price of a single stock share", "The tax on your investment gains"],
+            correctIndex: 1
+        },
+        {
+            question: "If you keep $10,000 in a savings account earning 0.1% while the market returns 10%, what is your approximate annual opportunity cost?",
+            options: ["$10", "$100", "$990", "$1,000"],
+            correctIndex: 2
+        },
+        {
+            question: "Why is inflation considered a hidden cost of not investing?",
+            options: ["It makes the stock market go down", "It decreases the purchasing power of your idle cash", "It increases your bank's interest rates", "It eliminates the need for savings"],
+            correctIndex: 1
+        }
+    ],
 
     // Module 4: Big Purchases: Cars
     'lesson-4-1': [
@@ -179,6 +213,40 @@ export const quizzes = {
             question: "Higher auto insurance deductible means:",
             options: ["Higher premium", "Lower premium", "No coverage", "More claims"],
             correctIndex: 1
+        }
+    ],
+    'lesson-5-3': [
+        {
+            question: "What does 'Dwelling Coverage' in a homeowner's policy protect?",
+            options: ["Your car", "Your home's structure", "Your health", "Your investments"],
+            correctIndex: 1
+        },
+        {
+            question: "Which type of damage typically requires a SEPARATE policy from standard homeowner's insurance?",
+            options: ["Fire damage", "Vandalism", "Flood damage", "Theft"],
+            correctIndex: 2
+        },
+        {
+            question: "What is a smart way to prepare for a potential insurance claim?",
+            options: ["Hope nothing happens", "Create a home inventory with photos/video", "Never file claims", "Cancel your policy"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-5-4': [
+        {
+            question: "What is the main difference between Term Life and Whole Life insurance?",
+            options: ["Term is permanent, Whole expires", "Term expires after a set period, Whole is permanent", "They are the same", "Whole Life is cheaper"],
+            correctIndex: 1
+        },
+        {
+            question: "Who needs life insurance the most?",
+            options: ["Single people with no dependents", "People with dependents relying on their income", "Retirees with no debt", "Children"],
+            correctIndex: 1
+        },
+        {
+            question: "A common rule of thumb is that life insurance coverage should be how many times your annual income?",
+            options: ["1-2x", "5x", "10-12x", "50x"],
+            correctIndex: 2
         }
     ],
 
@@ -373,6 +441,58 @@ export const quizzes = {
         {
             question: "Why are prediction markets considered accurate?",
             options: ["They are run by the government", "Participants have 'skin in the game'", "They use AI", "They are free"],
+            correctIndex: 1
+        }
+    ],
+    // Module 10: Banking & Financial Institutions
+    'lesson-10-1': [
+        {
+            question: "What is the primary difference between a Bank and a Credit Union?",
+            options: ["Banks are non-profit, Credit Unions are for-profit", "Banks are shareholder-owned, Credit Unions are member-owned", "Banks don't have physical branches", "Credit Unions are not insured"],
+            correctIndex: 1
+        },
+        {
+            question: "What does FDIC insurance protect?",
+            options: ["Your stock portfolio", "Your bank deposits up to $250,000", "Your credit score", "Your car insurance premium"],
+            correctIndex: 1
+        },
+        {
+            question: "Why do online-only banks often offer higher interest rates (HYSA)?",
+            options: ["They are less safe", "They have lower overhead costs", "They don't use the FDIC", "They only lend to billionaires"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-10-2': [
+        {
+            question: "What is the main goal of a Green Bank?",
+            options: ["To print green-colored money", "To use public funds to attract private investment in clean energy", "To only lend to organic farmers", "To replace the Federal Reserve"],
+            correctIndex: 1
+        },
+        {
+            question: "Why might a traditional bank refuse to fund a green project?",
+            options: ["They hate the environment", "They lack historical data to accurately predict the risk", "Green projects are illegal", "They only fund oil companies"],
+            correctIndex: 1
+        },
+        {
+            question: "For every $1 of public money, how much private capital do Green Banks typically attract?",
+            options: ["None", "$3 to $10", "$500", "$1"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-10-3': [
+        {
+            question: "What is the primary role of the International Monetary Fund (IMF)?",
+            options: ["Building schools in poor villages", "Acting as a global 'lender of last resort' for countries in crisis", "Managing individual credit scores", "Investing in the S&P 500"],
+            correctIndex: 1
+        },
+        {
+            question: "Which institution focuses on long-term development projects like infrastructure?",
+            options: ["The IMF", "The World Bank", "The Fed", "NASDAQ"],
+            correctIndex: 1
+        },
+        {
+            question: "What is a common criticism of global financial institutions?",
+            options: ["They give away too much free money", "They attach painful 'conditions' to their loans", "They are too small to matter", "They only operate in the US"],
             correctIndex: 1
         }
     ]
