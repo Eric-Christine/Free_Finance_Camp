@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect } from 'react';
-import { supabase } from '../lib/supabase';
+import { supabase, isMockAuth, isAuthAvailable } from '../lib/supabase';
 
 const AuthContext = createContext();
 
@@ -47,11 +47,12 @@ export function AuthProvider({ children }) {
         }
       });
       return { error };
-    } else {
+    } else if (isMockAuth) {
       // Mock - simulate sending OTP
       console.log(`[Mock] Sending OTP to ${email}`);
       return { error: null };
     }
+    return { error: { message: 'Authentication is currently unavailable. Please contact support.' } };
   };
 
   const verifyOtp = async (email, token) => {
@@ -59,7 +60,7 @@ export function AuthProvider({ children }) {
       // With magic links, verification happens automatically via the link
       // This is only used for mock mode now
       return { error: { message: 'Use the magic link sent to your email' } };
-    } else {
+    } else if (isMockAuth) {
       // Mock verification
       if (token === '123456') {
         const mockUser = { id: 'user_123', email };
@@ -69,6 +70,7 @@ export function AuthProvider({ children }) {
       }
       return { error: { message: 'Invalid token' } };
     }
+    return { error: { message: 'Authentication is currently unavailable. Please contact support.' } };
   };
 
   const signInWithOAuth = async (provider) => {
@@ -80,7 +82,7 @@ export function AuthProvider({ children }) {
         }
       });
       return { data, error };
-    } else {
+    } else if (isMockAuth) {
       // Mock OAuth - instant login
       console.log(`[Mock] Signing in with ${provider}`);
       const mockUser = {
@@ -92,6 +94,7 @@ export function AuthProvider({ children }) {
       localStorage.setItem('ffc_user', JSON.stringify(mockUser));
       return { data: { user: mockUser }, error: null };
     }
+    return { error: { message: 'Authentication is currently unavailable. Please contact support.' } };
   };
 
   const signOut = async () => {
@@ -102,7 +105,7 @@ export function AuthProvider({ children }) {
     localStorage.removeItem('ffc_user');
   };
 
-  // Check if we're using real or mock auth
+  // Check if we're using real auth
   const isRealAuth = !!supabase;
 
   return (
@@ -113,7 +116,9 @@ export function AuthProvider({ children }) {
       verifyOtp,
       signInWithOAuth,
       signOut,
-      isRealAuth
+      isRealAuth,
+      isMockAuth,
+      isAuthAvailable
     }}>
       {!loading && children}
     </AuthContext.Provider>

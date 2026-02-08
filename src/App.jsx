@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, useParams } from 'react-router-dom';
 import Login from './components/auth/Login';
 import Map from './components/Map';
 import Lesson from './components/Lesson';
@@ -9,6 +9,11 @@ import { useAuth } from './context/AuthContext';
 function PrivateRoute({ children }) {
   const { user } = useAuth();
   return user ? children : <Navigate to="/login" />;
+}
+
+function LessonRoute() {
+  const { lessonId } = useParams();
+  return <Lesson key={lessonId} />;
 }
 
 function App() {
@@ -23,7 +28,7 @@ function App() {
       } />
       <Route path="/learn/:lessonId" element={
         <PrivateRoute>
-          <Lesson />
+          <LessonRoute />
         </PrivateRoute>
       } />
       <Route path="/vocab" element={

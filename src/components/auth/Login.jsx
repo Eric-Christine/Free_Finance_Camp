@@ -6,7 +6,7 @@ export default function Login() {
     const [email, setEmail] = useState('');
     const [otp, setOtp] = useState('');
     const [step, setStep] = useState('email'); // 'email', 'otp', or 'check-email'
-    const { signInWithOtp, verifyOtp, signInWithOAuth, isRealAuth } = useAuth();
+    const { signInWithOtp, verifyOtp, signInWithOAuth, isRealAuth, isMockAuth, isAuthAvailable } = useAuth();
     const navigate = useNavigate();
     const [error, setError] = useState('');
 
@@ -24,6 +24,10 @@ export default function Login() {
     const handleSendOtp = async (e) => {
         e.preventDefault();
         setError('');
+        if (!isAuthAvailable) {
+            setError('Authentication is currently unavailable. Please contact support.');
+            return;
+        }
         const { error } = await signInWithOtp(email);
         if (error) {
             setError(error.message);
@@ -63,6 +67,11 @@ export default function Login() {
                 <h1 style={{ marginBottom: '1.5rem', textAlign: 'center', color: 'var(--primary)' }}>
                     Free Finance Camp
                 </h1>
+                {!isAuthAvailable && (
+                    <p style={{ color: '#ef4444', fontSize: '0.9rem', textAlign: 'center', marginBottom: '1rem' }}>
+                        Authentication is temporarily unavailable.
+                    </p>
+                )}
 
                 {step === 'email' && (
                     <>
@@ -148,7 +157,9 @@ export default function Login() {
                     <form onSubmit={handleVerify} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                         <div style={{ textAlign: 'center', marginBottom: '1rem' }}>
                             <p>Enter the code sent to <strong>{email}</strong></p>
-                            <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>(Hint: use 123456)</p>
+                            {isMockAuth && (
+                                <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>(Dev mode test code: 123456)</p>
+                            )}
                         </div>
                         <div>
                             <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>Verification Code</label>

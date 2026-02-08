@@ -20,7 +20,7 @@ const WIDGETS = {
 
 export default function Lesson() {
   const { lessonId } = useParams();
-  const { completeLesson, isLessonCompleted, xp } = useProgress();
+  const { isLessonCompleted, xp } = useProgress();
   const [currentScreen, setCurrentScreen] = useState(0);
 
   // Find current lesson and module
