@@ -129,16 +129,6 @@ export default function MarketTimer() {
         }
     };
 
-    const reset = () => {
-        clearInterval(timerRef.current);
-        setDay(0);
-        setVisibleData([{ day: 0, price: 100 }]);
-        setMoney(1000);
-        setShares(0);
-        setGameStatus('idle');
-        setMessage('Can you beat the market?');
-    };
-
     useEffect(() => {
         return () => clearInterval(timerRef.current);
     }, []);

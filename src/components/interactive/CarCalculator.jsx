@@ -4,9 +4,9 @@ export default function CarCalculator() {
     const [carPrice, setCarPrice] = useState(30000);
     const [downPayment, setDownPayment] = useState(5000);
     const [loanRate, setLoanRate] = useState(6);
-    const [loanTerm, setLoanTerm] = useState(60); // months
+    const [loanTerm] = useState(60); // months
     const [leaseMonthly, setLeaseMonthly] = useState(350);
-    const [investmentReturn, setInvestmentReturn] = useState(10);
+    const [investmentReturn] = useState(10);
 
     const [results, setResults] = useState({ cash: 0, finance: 0, lease: 0 });
 
