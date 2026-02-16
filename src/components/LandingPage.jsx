@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import CompoundInterest from './interactive/CompoundInterest';
+import { curriculum } from '../data/curriculum';
 
 export default function LandingPage() {
     return (
@@ -166,7 +167,7 @@ export default function LandingPage() {
                         <FeatureCard
                             iconLetter="C"
                             title="Curated Curriculum"
-                            description="9 precise modules covering the modern financial landscape, from basic budgeting to complex economic theories."
+                            description={`${curriculum.length} precise modules covering the modern financial landscape, from basic budgeting to complex economic theories.`}
                         />
                         <FeatureCard
                             iconLetter="O"
@@ -210,15 +211,14 @@ export default function LandingPage() {
                     </div>
 
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '1.25rem' }}>
-                        <ModulePreview num={1} title="The Wealth Mindset" desc="Psychology of money, Needs vs. Wants, and Compounding" />
-                        <ModulePreview num={2} title="Budgeting Foundations" desc="Systemic saving and the 50/30/20 framework" />
-                        <ModulePreview num={3} title="Investing Fundamentals" desc="Market dynamics, index funds, and risk management" />
-                        <ModulePreview num={4} title="Critical Purchases" desc="Analyzing major lifecycle expenses and debt structures" />
-                        <ModulePreview num={5} title="Risk Management" desc="Understanding insurance, deductibles, and protection" />
-                        <ModulePreview num={6} title="Credit & Debt" desc="Managing credit hygiene and navigating debt types" />
-                        <ModulePreview num={7} title="Advanced Investing" desc="ETFs, options theory, and market anomalies" />
-                        <ModulePreview num={8} title="Macro Economics" desc="The Federal Reserve, interest rates, and bond markets" />
-                        <ModulePreview num={9} title="Future of Finance" desc="Evolving assets, blockchain, and new markets" />
+                        {curriculum.map((module, index) => (
+                            <ModulePreview
+                                key={module.id}
+                                num={index + 1}
+                                title={module.title}
+                                desc={module.description}
+                            />
+                        ))}
                     </div>
                 </div>
             </section>

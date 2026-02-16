@@ -676,5 +676,982 @@ export const curriculum = [
                 type: 'reading'
             }
         ]
+    },
+    {
+        id: 'module-11',
+        title: 'Homebuying & Mortgages',
+        description: 'Navigate the biggest purchase of your life.',
+        xpReward: 150,
+        lessons: [
+            {
+                id: 'lesson-11-1',
+                title: 'How Mortgages Work',
+                description: 'Fixed vs. adjustable, amortization, and pre-approval.',
+                xpReward: 35,
+                screens: [
+                    {
+                        title: 'What Is a Mortgage?',
+                        content: [
+                            "A **mortgage** is a loan specifically for buying property. The property itself serves as **collateral**—if you stop paying, the bank can take your home (foreclosure).",
+                            "",
+                            "Most mortgages last **15 or 30 years**. You pay monthly, and each payment covers two things:",
+                            "• **Principal**: Paying down the actual loan amount.",
+                            "• **Interest**: The cost of borrowing the money.",
+                            "",
+                            "In the early years, most of your payment goes toward **interest**. Over time, more goes toward **principal**. This is called **amortization**."
+                        ]
+                    },
+                    {
+                        title: 'Fixed-Rate vs. Adjustable-Rate',
+                        content: [
+                            "**Fixed-Rate Mortgage (FRM)**:",
+                            "• Your interest rate NEVER changes for the life of the loan.",
+                            "• Your monthly payment stays the same. Predictable and safe.",
+                            "• Most popular choice: the **30-year fixed**.",
+                            "",
+                            "**Adjustable-Rate Mortgage (ARM)**:",
+                            "• Starts with a lower 'teaser' rate for 5-7 years.",
+                            "• After that, the rate adjusts based on market conditions—it can go UP significantly.",
+                            "• Example: A **5/1 ARM** has a fixed rate for 5 years, then adjusts every 1 year.",
+                            "",
+                            "**Rule of Thumb**: If you plan to stay in the home long-term, go fixed. If you'll sell within 5-7 years, an ARM might save you money."
+                        ]
+                    },
+                    {
+                        title: 'Getting Pre-Approved',
+                        content: [
+                            "Before you shop for a home, get **pre-approved** by a lender.",
+                            "",
+                            "Pre-approval tells you exactly how much you can borrow. It also shows sellers you're a serious buyer.",
+                            "",
+                            "**What lenders look at:**",
+                            "• **Credit Score**: 740+ gets the best rates.",
+                            "• **Debt-to-Income Ratio (DTI)**: Your monthly debts divided by your gross income. Lenders want this below 43%.",
+                            "• **Employment History**: Stable income for at least 2 years.",
+                            "• **Assets**: Savings for down payment and reserves.",
+                            "",
+                            "Pro tip: Get pre-approved by 2-3 lenders and compare offers. Even a 0.25% rate difference saves thousands over 30 years."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-11-2',
+                title: 'Down Payments, PMI & Closing Costs',
+                description: 'The upfront costs most people underestimate.',
+                xpReward: 30,
+                screens: [
+                    {
+                        title: 'The Down Payment Myth',
+                        content: [
+                            "Many people think you need **20% down** to buy a home. That's a myth.",
+                            "",
+                            "• **Conventional loans**: As low as 3% down.",
+                            "• **FHA loans**: 3.5% down (popular for first-time buyers).",
+                            "• **VA loans**: 0% down for eligible veterans.",
+                            "• **USDA loans**: 0% down for rural areas.",
+                            "",
+                            "On a $300,000 home:",
+                            "• 20% down = $60,000",
+                            "• 3% down = $9,000",
+                            "",
+                            "The catch? If you put less than 20% down, you'll likely pay **PMI**."
+                        ]
+                    },
+                    {
+                        title: 'What Is PMI?',
+                        content: [
+                            "**Private Mortgage Insurance (PMI)** protects the LENDER (not you) if you default on the loan.",
+                            "",
+                            "PMI typically costs **0.5% to 1%** of the loan amount per year.",
+                            "",
+                            "On a $285,000 loan (after 5% down on a $300k home):",
+                            "• PMI ≈ $120-$240/month on top of your mortgage payment.",
+                            "",
+                            "**The good news**: PMI goes away once you reach 20% equity in your home. You can request removal at that point.",
+                            "",
+                            "Pro tip: Some lenders offer **lender-paid PMI** in exchange for a slightly higher interest rate. Do the math to see which is cheaper over your expected time in the home."
+                        ]
+                    },
+                    {
+                        title: 'Closing Costs: The Hidden Bill',
+                        content: [
+                            "On top of the down payment, you'll pay **closing costs** — typically **2-5% of the home price**.",
+                            "",
+                            "On a $300,000 home, that's $6,000-$15,000.",
+                            "",
+                            "**What's included:**",
+                            "• Loan origination fees",
+                            "• Appraisal fee ($300-$500)",
+                            "• Title insurance and search",
+                            "• Attorney fees",
+                            "• Prepaid property taxes and homeowner's insurance",
+                            "• Recording fees",
+                            "",
+                            "Pro tip: You can negotiate with the seller to cover some closing costs (a 'seller concession'). This is more common in buyer's markets."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-11-3',
+                title: 'Rent vs. Buy: The Real Math',
+                description: 'It\'s not as simple as "renting is throwing money away."',
+                xpReward: 40,
+                screens: [
+                    {
+                        title: 'The Renting Myth',
+                        content: [
+                            "You've probably heard: **'Renting is throwing money away.'** This is an oversimplification.",
+                            "",
+                            "When you rent, you pay for a place to live and that's it. No maintenance, no property taxes, no surprise repairs.",
+                            "",
+                            "When you own, your mortgage payment builds equity—but you ALSO pay:",
+                            "• Property taxes (1-2% of home value/year)",
+                            "• Homeowner's insurance",
+                            "• Maintenance (budget 1-2% of home value/year)",
+                            "• PMI (if less than 20% down)",
+                            "• HOA fees (if applicable)",
+                            "",
+                            "The 'hidden' costs of ownership are significant."
+                        ]
+                    },
+                    {
+                        title: 'The Break-Even Calculation',
+                        content: [
+                            "The key question is: **How long do you plan to stay?**",
+                            "",
+                            "Buying has high upfront costs (down payment, closing costs). It usually takes **5-7 years** to break even compared to renting.",
+                            "",
+                            "**If you'll move within 3 years**: Renting almost always wins.",
+                            "**If you'll stay 7+ years**: Buying usually wins.",
+                            "**4-6 years**: It depends on your local market.",
+                            "",
+                            "Other factors:",
+                            "• Is your local rent increasing fast? Buying locks in your housing cost.",
+                            "• Could you invest the down payment instead? At 10% returns, $60,000 becomes ~$97,000 in 5 years.",
+                            "",
+                            "There's no universal answer. Run the numbers for YOUR situation."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-11-4',
+                title: 'Hidden Costs of Homeownership',
+                description: 'What the listing price doesn\'t tell you.',
+                xpReward: 30,
+                screens: [
+                    {
+                        title: 'The 1% Rule',
+                        content: [
+                            "A common rule: budget **1-2% of your home's value per year** for maintenance and repairs.",
+                            "",
+                            "On a $300,000 home, that's $3,000-$6,000/year ($250-$500/month).",
+                            "",
+                            "**Common surprise costs:**",
+                            "• New roof: $8,000-$15,000",
+                            "• HVAC replacement: $5,000-$10,000",
+                            "• Foundation repair: $5,000-$30,000",
+                            "• Water heater: $1,000-$3,000",
+                            "• Plumbing emergency: $500-$5,000",
+                            "",
+                            "These costs don't ask if it's a good time. They just happen."
+                        ]
+                    },
+                    {
+                        title: 'Property Taxes, HOA & Insurance',
+                        content: [
+                            "**Property Taxes** vary wildly by location:",
+                            "• New Jersey: ~2.2% of home value/year",
+                            "• Texas: ~1.7%",
+                            "• Hawaii: ~0.3%",
+                            "",
+                            "On a $300,000 home in Texas, that's ~$5,100/year ($425/month).",
+                            "",
+                            "**HOA Fees** (if in a community with one):",
+                            "• Typically $200-$500/month",
+                            "• Can include landscaping, pool, exterior maintenance",
+                            "• HOA can restrict what you do with YOUR property",
+                            "",
+                            "**Homeowner's Insurance**: $1,500-$3,000/year depending on location and coverage.",
+                            "",
+                            "Pro tip: Add up ALL these costs before deciding what you can 'afford'. A home that fits your mortgage budget might not fit your TOTAL budget."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-12',
+        title: 'Taxes: What You Need to Know',
+        description: 'Demystifying the tax system for young earners.',
+        xpReward: 150,
+        lessons: [
+            {
+                id: 'lesson-12-1',
+                title: 'How Tax Brackets Actually Work',
+                description: 'Marginal vs. effective rates — the #1 misunderstanding.',
+                xpReward: 35,
+                screens: [
+                    {
+                        title: 'The Biggest Tax Myth',
+                        content: [
+                            "**MYTH**: 'If I earn more, I'll move into a higher tax bracket and take home LESS money.'",
+                            "",
+                            "**FACT**: That's NOT how it works. The US uses a **marginal tax system**.",
+                            "",
+                            "This means only the income WITHIN each bracket is taxed at that rate. Earning more ALWAYS means more take-home pay.",
+                            "",
+                            "Example (2024 brackets for single filers):",
+                            "• $0 - $11,600: taxed at **10%**",
+                            "• $11,601 - $47,150: taxed at **12%**",
+                            "• $47,151 - $100,525: taxed at **22%**",
+                            "• $100,526 - $191,950: taxed at **24%**"
+                        ]
+                    },
+                    {
+                        title: 'Marginal vs. Effective Rate',
+                        content: [
+                            "If you earn **$60,000**:",
+                            "",
+                            "• First $11,600 × 10% = $1,160",
+                            "• Next $35,550 × 12% = $4,266",
+                            "• Last $12,850 × 22% = $2,827",
+                            "",
+                            "**Total tax: $8,253**",
+                            "",
+                            "Your **marginal rate** is 22% (the highest bracket you touch).",
+                            "Your **effective rate** is ~13.8% ($8,253 ÷ $60,000).",
+                            "",
+                            "You're NOT paying 22% on all $60,000 — only on the portion above $47,150.",
+                            "",
+                            "Never turn down a raise because of tax brackets!"
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-12-2',
+                title: 'W-2 vs. 1099 Income',
+                description: 'Employee vs. contractor — know the difference.',
+                xpReward: 30,
+                screens: [
+                    {
+                        title: 'W-2: Traditional Employment',
+                        content: [
+                            "If you work for a company as an **employee**, you receive a **W-2** form.",
+                            "",
+                            "**What your employer handles for you:**",
+                            "• Withholds federal and state income taxes",
+                            "• Pays half of your Social Security and Medicare taxes (7.65%)",
+                            "• May offer benefits: health insurance, 401k match, PTO",
+                            "",
+                            "You pay the other half of Social Security/Medicare (7.65%), which is automatically deducted from your paycheck.",
+                            "",
+                            "**Total FICA tax burden as W-2: 7.65%**"
+                        ]
+                    },
+                    {
+                        title: '1099: Independent Contractor',
+                        content: [
+                            "If you freelance or contract, you receive a **1099** form.",
+                            "",
+                            "**Key differences:**",
+                            "• No taxes are withheld — YOU must pay quarterly estimated taxes.",
+                            "• You pay BOTH halves of Social Security/Medicare = **15.3%** (self-employment tax).",
+                            "• No employer-provided benefits.",
+                            "",
+                            "**The upside:**",
+                            "• You can deduct business expenses (home office, equipment, mileage).",
+                            "• You can use a **SEP IRA** or **Solo 401k** — often with higher contribution limits.",
+                            "• More control over your schedule and rates.",
+                            "",
+                            "Pro tip: If you're 1099, set aside **25-30%** of every payment for taxes. Open a separate savings account just for this."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-12-3',
+                title: 'Deductions & Credits',
+                description: 'Legal ways to reduce your tax bill.',
+                xpReward: 35,
+                screens: [
+                    {
+                        title: 'Standard vs. Itemized Deductions',
+                        content: [
+                            "A **deduction** reduces your **taxable income**. Less taxable income = lower tax bill.",
+                            "",
+                            "You choose ONE:",
+                            "• **Standard Deduction** (2024): $14,600 for single filers, $29,200 for married filing jointly.",
+                            "• **Itemized Deductions**: Add up specific expenses (mortgage interest, state/local taxes, charitable donations).",
+                            "",
+                            "**Most people take the standard deduction.** It's simpler and usually larger after the 2017 tax law changes.",
+                            "",
+                            "You should itemize if your deductible expenses exceed the standard deduction — common for homeowners with big mortgages."
+                        ]
+                    },
+                    {
+                        title: 'Credits: Even Better Than Deductions',
+                        content: [
+                            "A **tax credit** reduces your actual tax bill dollar-for-dollar. Credits are more valuable than deductions.",
+                            "",
+                            "**Common credits:**",
+                            "• **Earned Income Tax Credit (EITC)**: Up to $7,430 for low-to-moderate income workers.",
+                            "• **American Opportunity Credit**: Up to $2,500/year for college expenses (first 4 years).",
+                            "• **Child Tax Credit**: $2,000 per qualifying child.",
+                            "• **Saver's Credit**: Up to $1,000 for contributing to a retirement account (low income).",
+                            "• **EV Tax Credit**: Up to $7,500 for buying a qualifying electric vehicle.",
+                            "",
+                            "A $1,000 deduction in the 22% bracket saves you $220.",
+                            "A $1,000 credit saves you **$1,000**.",
+                            "",
+                            "Always claim every credit you qualify for!"
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-12-4',
+                title: 'Tax-Advantaged Accounts',
+                description: '401k, IRA, Roth, HSA — free money from the government.',
+                xpReward: 40,
+                screens: [
+                    {
+                        title: 'Pre-Tax Accounts: 401k & Traditional IRA',
+                        content: [
+                            "**Pre-tax** accounts let you contribute money BEFORE it's taxed. Your taxable income drops immediately.",
+                            "",
+                            "**401k** (through your employer):",
+                            "• 2024 contribution limit: $23,000/year.",
+                            "• Many employers **match** your contributions (e.g., 50% match up to 6% of salary).",
+                            "• Employer match = **FREE MONEY**. Always contribute enough to get the full match.",
+                            "",
+                            "**Traditional IRA** (on your own):",
+                            "• 2024 limit: $7,000/year ($8,000 if 50+).",
+                            "• Tax-deductible if you meet income requirements.",
+                            "",
+                            "**The catch**: You pay income tax when you withdraw in retirement."
+                        ]
+                    },
+                    {
+                        title: 'Roth Accounts & the HSA Triple Tax Advantage',
+                        content: [
+                            "**Roth IRA / Roth 401k:**",
+                            "• You contribute AFTER-TAX money (no immediate tax break).",
+                            "• But all growth and withdrawals in retirement are **100% TAX-FREE**.",
+                            "• Best for young earners who expect higher income later.",
+                            "",
+                            "**Health Savings Account (HSA)** — the ULTIMATE tax hack:",
+                            "• ✅ Contributions are tax-deductible (pre-tax).",
+                            "• ✅ Growth is tax-free.",
+                            "• ✅ Withdrawals for medical expenses are tax-free.",
+                            "• 2024 limit: $4,150 (individual) / $8,300 (family).",
+                            "",
+                            "After age 65, you can withdraw HSA funds for ANY purpose (taxed like a Traditional IRA). It's basically a **super IRA**.",
+                            "",
+                            "**Priority order**: 1) 401k up to employer match → 2) Max HSA → 3) Max Roth IRA → 4) Max remaining 401k."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-13',
+        title: 'Student Loans & Education ROI',
+        description: 'Navigate the $1.7 trillion student debt crisis.',
+        xpReward: 150,
+        lessons: [
+            {
+                id: 'lesson-13-1',
+                title: 'Federal vs. Private Loans',
+                description: 'Know your protections before you borrow.',
+                xpReward: 35,
+                screens: [
+                    {
+                        title: 'Federal Student Loans',
+                        content: [
+                            "**Federal loans** come from the U.S. government and offer critical protections that private loans don't.",
+                            "",
+                            "**Types of Federal Loans:**",
+                            "• **Direct Subsidized**: For undergrads with financial need. The government pays interest while you're in school.",
+                            "• **Direct Unsubsidized**: Available to all students. Interest accrues immediately.",
+                            "• **PLUS Loans**: For parents or grad students. Higher rates, fewer protections.",
+                            "",
+                            "**Key protections:**",
+                            "• Income-driven repayment plans",
+                            "• Loan forgiveness programs (PSLF)",
+                            "• Deferment and forbearance options",
+                            "• No credit check for most loans (except PLUS)",
+                            "",
+                            "**Current rates (2024):** ~5.5% for undergrad, ~7% for grad, ~8.5% for PLUS."
+                        ]
+                    },
+                    {
+                        title: 'Private Student Loans',
+                        content: [
+                            "**Private loans** come from banks, credit unions, or online lenders.",
+                            "",
+                            "**Key differences from federal:**",
+                            "• Interest rates vary: 4-14% depending on credit score.",
+                            "• Require a credit check (often need a cosigner as a student).",
+                            "• NO income-driven repayment plans.",
+                            "• NO loan forgiveness programs.",
+                            "• Limited hardship options.",
+                            "",
+                            "**When to consider private loans:**",
+                            "• Only AFTER maxing out federal loans.",
+                            "• If you have excellent credit and can get a lower rate.",
+                            "",
+                            "**FAFSA first!** Always fill out the Free Application for Federal Student Aid before considering private loans. It's free and determines your eligibility for grants, scholarships, and federal loans.",
+                            "",
+                            "Pro tip: Grants and scholarships are free money. Exhaust those before borrowing anything."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-13-2',
+                title: 'Repayment Strategies',
+                description: 'Standard, income-driven, avalanche vs. snowball.',
+                xpReward: 35,
+                screens: [
+                    {
+                        title: 'Federal Repayment Plans',
+                        content: [
+                            "**Standard Repayment**: Fixed payments over 10 years. Highest monthly payment but lowest total interest.",
+                            "",
+                            "**Income-Driven Repayment (IDR)**:",
+                            "• Payments capped at 10-20% of your discretionary income.",
+                            "• Remaining balance forgiven after 20-25 years.",
+                            "• **SAVE Plan** (newest): Often the lowest payments for most borrowers.",
+                            "",
+                            "**Public Service Loan Forgiveness (PSLF)**:",
+                            "• Work for a government or non-profit employer.",
+                            "• Make 120 qualifying payments (10 years) on an IDR plan.",
+                            "• Remaining balance forgiven TAX-FREE.",
+                            "",
+                            "**Important**: IDR forgiveness (non-PSLF) may be taxed as income. PSLF forgiveness is not."
+                        ]
+                    },
+                    {
+                        title: 'Avalanche vs. Snowball Method',
+                        content: [
+                            "If you have multiple loans, which do you pay off first?",
+                            "",
+                            "**Avalanche Method** (mathematically optimal):",
+                            "• Pay minimums on all loans.",
+                            "• Put extra money toward the loan with the HIGHEST interest rate.",
+                            "• Saves the most money overall.",
+                            "",
+                            "**Snowball Method** (psychologically effective):",
+                            "• Pay minimums on all loans.",
+                            "• Put extra money toward the SMALLEST balance first.",
+                            "• Eliminates individual loans faster, giving you motivational 'wins'.",
+                            "",
+                            "**Which is better?** Avalanche saves more money. Snowball keeps you motivated. Pick the one you'll actually stick with.",
+                            "",
+                            "Pro tip: Either method beats making only minimum payments."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-13-3',
+                title: 'To Refinance or Not?',
+                description: 'When refinancing helps — and when it hurts.',
+                xpReward: 30,
+                screens: [
+                    {
+                        title: 'What Is Refinancing?',
+                        content: [
+                            "**Refinancing** means replacing your current loan(s) with a new private loan at a different interest rate.",
+                            "",
+                            "**When it makes sense:**",
+                            "• You have high-interest private loans and your credit has improved.",
+                            "• You can get a significantly lower rate (1%+ reduction).",
+                            "• You have stable income and an emergency fund.",
+                            "",
+                            "**When it's a BAD idea:**",
+                            "• You have **federal loans** and would lose IDR plans, PSLF eligibility, and forbearance options.",
+                            "• You're pursuing Public Service Loan Forgiveness.",
+                            "• Your income is unstable.",
+                            "",
+                            "⚠️ **Critical warning**: Refinancing federal loans into a private loan is IRREVERSIBLE. You permanently lose all federal protections.",
+                            "",
+                            "Pro tip: Only refinance federal loans if you have a very high income, strong job security, and no interest in forgiveness programs."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-13-4',
+                title: 'Is College Worth It?',
+                description: 'ROI by major, alternatives, and the real math.',
+                xpReward: 40,
+                screens: [
+                    {
+                        title: 'The Numbers',
+                        content: [
+                            "On average, college graduates earn **$1.2 million more** over a lifetime than high school graduates.",
+                            "",
+                            "But that's an AVERAGE. The ROI varies enormously by major and school:",
+                            "",
+                            "**High ROI majors:**",
+                            "• Computer Science: ~$1.1M lifetime earnings premium",
+                            "• Engineering: ~$950K premium",
+                            "• Nursing: ~$700K premium",
+                            "• Business/Finance: ~$650K premium",
+                            "",
+                            "**Lower ROI majors:**",
+                            "• Fine Arts: ~$200K premium",
+                            "• Education: ~$250K premium",
+                            "• Social Work: ~$225K premium",
+                            "",
+                            "These are averages — individual outcomes vary wildly."
+                        ]
+                    },
+                    {
+                        title: 'Alternatives to 4-Year Degrees',
+                        content: [
+                            "College isn't the only path to a good career:",
+                            "",
+                            "**Trade Schools** (6 months - 2 years):",
+                            "• Electricians, plumbers, HVAC techs earn $50-$90k+",
+                            "• Much lower tuition ($5k-$15k vs. $100k+)",
+                            "• High demand, aging workforce = job security",
+                            "",
+                            "**Coding Bootcamps** (3-6 months):",
+                            "• Cost: $10k-$20k",
+                            "• Entry-level developer salaries: $60k-$90k",
+                            "• Quality varies widely — research outcomes carefully",
+                            "",
+                            "**Community College → Transfer**:",
+                            "• Complete 2 years at ~$3,500/year",
+                            "• Transfer to a 4-year university for the same degree",
+                            "• Save $30,000-$60,000+ in total tuition",
+                            "",
+                            "**The bottom line**: The question isn't 'Is college worth it?' It's 'Is THIS degree at THIS cost worth it for MY career goals?'"
+                        ]
+                    }
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-14',
+        title: 'Salary Negotiation & Career Finance',
+        description: 'Your career is your biggest asset — maximize it.',
+        xpReward: 150,
+        lessons: [
+            {
+                id: 'lesson-14-1',
+                title: 'Know Your Market Value',
+                description: 'Research tools, salary ranges, and leveling.',
+                xpReward: 35,
+                screens: [
+                    {
+                        title: 'You Are Underpaid (Probably)',
+                        content: [
+                            "Most people have NO IDEA what they're worth in the job market. This is by design — salary secrecy benefits employers.",
+                            "",
+                            "**How to research your market value:**",
+                            "• **Levels.fyi** — Best for tech. Shows total compensation by company and level.",
+                            "• **Glassdoor** — Broad salary data across industries.",
+                            "• **LinkedIn Salary** — Uses real member data.",
+                            "• **Bureau of Labor Statistics** — Government data on wages by occupation and location.",
+                            "• **H1B Salary Database** — Publicly available salaries companies pay visa holders.",
+                            "",
+                            "**Key concept: Leveling**",
+                            "Companies have internal 'levels' (e.g., Junior, Mid, Senior, Staff). Your title might be the same, but your level determines your pay band.",
+                            "",
+                            "Pro tip: Always ask about the 'pay band' for your level during negotiations. It tells you the floor and ceiling."
+                        ]
+                    },
+                    {
+                        title: 'Location & Industry Premium',
+                        content: [
+                            "The same job can pay VERY differently depending on where and who you work for.",
+                            "",
+                            "**Software Engineer (mid-level) salaries:**",
+                            "• San Francisco (Big Tech): $180k-$300k total comp",
+                            "• Austin, TX (Mid-size tech): $120k-$180k",
+                            "• Omaha, NE (Non-tech company): $80k-$120k",
+                            "• Remote (varies by company policy): $100k-$250k",
+                            "",
+                            "**Industry premiums:**",
+                            "• Finance/Trading: Often 2x other industries",
+                            "• Big Tech (FAANG): 1.5-2x average",
+                            "• Government/Non-profit: 0.7-0.9x average",
+                            "",
+                            "**Cost of living matters**: A $150k salary in San Francisco ≈ $90k in Dallas in terms of purchasing power.",
+                            "",
+                            "Pro tip: Remote roles at companies that DON'T adjust for location are often the best deal."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-14-2',
+                title: 'Negotiation Frameworks',
+                description: 'Anchoring, BATNA, and scripts that work.',
+                xpReward: 40,
+                story: {
+                    character: 'Maya',
+                    scenario: "Maya receives a job offer for $75,000. She's excited but nervous about negotiating. She doesn't want them to rescind the offer."
+                },
+                screens: [
+                    {
+                        title: 'The Golden Rules',
+                        content: [
+                            "**Rule #1**: Almost every offer is negotiable. Companies EXPECT you to negotiate.",
+                            "",
+                            "**Rule #2**: They will almost NEVER rescind an offer because you negotiated professionally. They've already invested thousands in hiring you.",
+                            "",
+                            "**Rule #3**: The best time to negotiate is BEFORE you accept. Your leverage disappears after you say yes.",
+                            "",
+                            "**Key concepts:**",
+                            "• **Anchoring**: The first number sets the reference point. Always let them make the first offer.",
+                            "• **BATNA** (Best Alternative to a Negotiated Agreement): Your backup plan. Having another offer dramatically increases your leverage.",
+                            "• **The Flinch**: When they name a number, pause. Let there be silence. They may improve the offer on their own."
+                        ]
+                    },
+                    {
+                        title: 'Scripts That Work',
+                        content: [
+                            "**The Counter-Offer Script:**",
+                            "\"I'm very excited about this opportunity. Based on my research and the value I'll bring, I was hoping for something closer to $[target]. Is there flexibility here?\"",
+                            "",
+                            "**The Competing Offer Script:**",
+                            "\"I have another offer at $[amount]. I'd prefer to join your team, but I want to make sure the compensation is competitive. Can you match or improve on this?\"",
+                            "",
+                            "**The 'What Else' Script:**",
+                            "\"If the base salary is firm, are there other areas with flexibility? I'm thinking about signing bonus, equity, PTO, or remote work options.\"",
+                            "",
+                            "**Pro tips:**",
+                            "• Always negotiate via email (gives you time to think).",
+                            "• Never say your current salary — it anchors you low.",
+                            "• Ask for 10-20% more than you'd be happy with.",
+                            "• Be warm, enthusiastic, and professional throughout."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-14-3',
+                title: 'Total Compensation',
+                description: 'Base salary is only part of the picture.',
+                xpReward: 35,
+                screens: [
+                    {
+                        title: 'Beyond the Base',
+                        content: [
+                            "Your **total compensation** includes much more than your base salary:",
+                            "",
+                            "**Cash Compensation:**",
+                            "• Base salary (guaranteed)",
+                            "• Annual bonus (often 10-30% of base, not always guaranteed)",
+                            "• Signing bonus (one-time, often with a clawback if you leave early)",
+                            "",
+                            "**Equity:**",
+                            "• Stock options (right to buy shares at a set price)",
+                            "• RSUs (Restricted Stock Units — actual shares granted over time)",
+                            "• Equity typically vests over 4 years with a 1-year 'cliff'",
+                            "",
+                            "**Benefits (real dollar value):**",
+                            "• Health insurance (employer share: $5k-$15k/year)",
+                            "• 401k match (if 50% match on 6%, that's 3% of your salary FREE)",
+                            "• PTO/vacation days (each day ≈ salary / 260)"
+                        ]
+                    },
+                    {
+                        title: 'Comparing Two Offers',
+                        content: [
+                            "**Offer A**: $90k base, no equity, 5% bonus, basic insurance, 15 PTO days",
+                            "**Offer B**: $80k base, $40k RSUs/year, 10% bonus, premium insurance, 25 PTO days",
+                            "",
+                            "At first glance, Offer A looks better ($90k vs $80k).",
+                            "",
+                            "**Total comp calculation:**",
+                            "• Offer A: $90k + $4.5k bonus + $6k insurance = ~$100,500",
+                            "• Offer B: $80k + $40k RSUs + $8k bonus + $12k insurance = ~$140,000",
+                            "",
+                            "Offer B is worth **$40,000 more** per year.",
+                            "",
+                            "**Always compare TOTAL compensation**, not just base salary.",
+                            "",
+                            "Pro tip: Ask recruiters for the 'total compensation summary' or 'offer breakdown'. Most big companies provide one."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-14-4',
+                title: 'The Lifetime Cost of a Low Offer',
+                description: 'How a $5k raise compounds into a fortune.',
+                xpReward: 35,
+                screens: [
+                    {
+                        title: 'The $5,000 Raise You Didn\'t Ask For',
+                        content: [
+                            "Imagine two people with identical jobs. One negotiated $5,000 more in their first offer.",
+                            "",
+                            "Assuming **3% annual raises** for both:",
+                            "",
+                            "After 5 years: $5,000 gap becomes ~$28,000 in cumulative extra earnings.",
+                            "After 10 years: ~$60,000 cumulative difference.",
+                            "After 20 years: ~$140,000 cumulative difference.",
+                            "After 30 years: ~$250,000+ cumulative difference.",
+                            "",
+                            "And that's just salary. If you invest the difference at 10%/year, the gap grows to **$500,000+** over a career.",
+                            "",
+                            "One conversation. Five minutes of discomfort. Half a million dollars."
+                        ]
+                    },
+                    {
+                        title: 'Never Stop Negotiating',
+                        content: [
+                            "Negotiation isn't just for job offers. Apply these skills to:",
+                            "",
+                            "• **Annual reviews**: Document your wins. Ask for raises proactively, don't wait.",
+                            "• **Promotions**: Ask your manager 'What specifically do I need to do to get promoted?' Then do it and follow up.",
+                            "• **Medical bills**: Hospitals often discount 20-50% if you ask.",
+                            "• **Rent**: Landlords would rather discount than find new tenants.",
+                            "• **Cable/internet/phone**: Call and say 'I'm considering switching.' They'll often offer retention deals.",
+                            "• **Car purchases**: Get quotes from 3+ dealers. Use them against each other.",
+                            "",
+                            "**The uncomfortable truth**: People who negotiate earn $1M+ more over their lifetime than those who don't.",
+                            "",
+                            "The skill of asking for what you're worth is the highest-ROI skill you'll ever develop."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-15',
+        title: 'Emergency Funds & Financial Resilience',
+        description: 'Build a safety net before things go wrong.',
+        xpReward: 150,
+        lessons: [
+            {
+                id: 'lesson-15-1',
+                title: 'Why 3-6 Months Matters',
+                description: 'Emergency stats and the safety net math.',
+                xpReward: 30,
+                screens: [
+                    {
+                        title: 'The Fragility Problem',
+                        content: [
+                            "**56% of Americans** cannot cover a $1,000 emergency expense with savings.",
+                            "",
+                            "That means a single car repair, medical bill, or job loss can trigger a financial spiral: credit card debt → high interest → more debt → stress → poor decisions.",
+                            "",
+                            "An **emergency fund** breaks this cycle. It's cash set aside ONLY for true emergencies:",
+                            "• Job loss",
+                            "• Medical emergencies",
+                            "• Major car or home repairs",
+                            "• Unexpected travel (family emergency)",
+                            "",
+                            "**NOT emergencies:** Sales, vacations, new gadgets, concert tickets."
+                        ]
+                    },
+                    {
+                        title: 'How Much Do You Need?',
+                        content: [
+                            "The standard advice: **3-6 months of essential expenses.**",
+                            "",
+                            "Not 3-6 months of INCOME — 3-6 months of EXPENSES (rent, food, utilities, insurance, minimum debt payments).",
+                            "",
+                            "**Example:**",
+                            "• Monthly expenses: $3,000",
+                            "• 3-month fund: $9,000",
+                            "• 6-month fund: $18,000",
+                            "",
+                            "**Who needs more (6+ months)?**",
+                            "• Freelancers and self-employed",
+                            "• Single-income households",
+                            "• People in volatile industries",
+                            "• Those with dependents",
+                            "",
+                            "**Who can start with less (3 months)?**",
+                            "• Dual-income households",
+                            "• People with very stable employment",
+                            "• Those with strong family support networks",
+                            "",
+                            "Pro tip: Start with a $1,000 'starter' emergency fund. Then build to 1 month, then 3, then 6."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-15-2',
+                title: 'Where to Keep Your Emergency Fund',
+                description: 'HYSA, money market, and T-bills.',
+                xpReward: 30,
+                screens: [
+                    {
+                        title: 'The Rules of Emergency Fund Placement',
+                        content: [
+                            "Your emergency fund has THREE requirements:",
+                            "1. **Liquid** — You can access it within 1-2 business days.",
+                            "2. **Safe** — It cannot lose value (no stocks!).",
+                            "3. **Earning something** — Don't let inflation eat it alive.",
+                            "",
+                            "**Where NOT to keep it:**",
+                            "• ❌ Checking account (earns 0.01%, easy to accidentally spend)",
+                            "• ❌ Stock market (could drop 30% right when you need it)",
+                            "• ❌ Under your mattress (inflation + theft risk)",
+                            "• ❌ Crypto (too volatile)"
+                        ]
+                    },
+                    {
+                        title: 'Best Options',
+                        content: [
+                            "**High-Yield Savings Account (HYSA):**",
+                            "• Currently earning 4-5% APY (as of 2024)",
+                            "• FDIC insured up to $250,000",
+                            "• Instant or 1-day transfers",
+                            "• Best option for most people",
+                            "• Top picks: Marcus, Ally, Discover, SoFi",
+                            "",
+                            "**Money Market Account:**",
+                            "• Similar rates to HYSA",
+                            "• May come with check-writing ability",
+                            "• Also FDIC insured",
+                            "",
+                            "**Treasury Bills (T-Bills):**",
+                            "• Government-backed securities (4-5% as of 2024)",
+                            "• Exempt from state/local taxes",
+                            "• Can buy through TreasuryDirect.gov",
+                            "• Slightly less liquid (must wait for maturity, 4-52 weeks)",
+                            "",
+                            "Pro tip: Keep 1-2 months in HYSA for quick access, and the rest in T-Bills for a slightly higher effective yield."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-15-3',
+                title: 'Recovering from Financial Setbacks',
+                description: 'Job loss, medical bills, and rebuilding.',
+                xpReward: 35,
+                screens: [
+                    {
+                        title: 'When Disaster Strikes',
+                        content: [
+                            "Financial setbacks happen to everyone. What matters is your response.",
+                            "",
+                            "**If you lose your job:**",
+                            "1. File for unemployment IMMEDIATELY (don't wait).",
+                            "2. Cut all non-essential spending within 48 hours.",
+                            "3. Contact lenders to request hardship forbearance.",
+                            "4. Review COBRA vs. marketplace health insurance options.",
+                            "5. Start job searching on day 1, but don't panic-accept a bad offer.",
+                            "",
+                            "**If hit with medical debt:**",
+                            "1. Audit every bill for errors (up to 80% of medical bills contain mistakes).",
+                            "2. Ask for an itemized bill — charges often 'disappear' when you request details.",
+                            "3. Negotiate! Hospitals routinely reduce bills by 20-50%.",
+                            "4. Ask about financial assistance programs (most hospitals have them).",
+                            "5. Set up a payment plan (usually 0% interest)."
+                        ]
+                    },
+                    {
+                        title: 'The Rebuilding Playbook',
+                        content: [
+                            "After the crisis passes, rebuild methodically:",
+                            "",
+                            "**Phase 1 — Stabilize (Month 1-2):**",
+                            "• Create a bare-bones budget (essentials only)",
+                            "• Stop all non-essential subscriptions",
+                            "• Build a mini emergency fund ($500-$1,000)",
+                            "",
+                            "**Phase 2 — Recover (Month 3-6):**",
+                            "• Resume minimum debt payments",
+                            "• Rebuild emergency fund to 1 month of expenses",
+                            "• Start investing again (even $25/month matters)",
+                            "",
+                            "**Phase 3 — Strengthen (Month 6+):**",
+                            "• Aggressively rebuild to 3-6 months reserves",
+                            "• Review and update insurance coverage",
+                            "• Create systems to prevent future crises",
+                            "",
+                            "**Remember**: Financial setbacks are setbacks, not endings. Most wealthy people have faced multiple financial crises. The difference is they rebuilt each time."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-15-4',
+                title: 'Building Multiple Income Streams',
+                description: 'Don\'t put all your eggs in one paycheck.',
+                xpReward: 40,
+                screens: [
+                    {
+                        title: 'Why One Income Is Risky',
+                        content: [
+                            "Relying on a single income source is like owning just one stock — all your risk is concentrated.",
+                            "",
+                            "**The average millionaire has 7 income streams.** You don't need 7, but having 2-3 dramatically improves your financial resilience.",
+                            "",
+                            "**Types of income:**",
+                            "• **Active income**: Trading time for money (your job, freelancing, consulting).",
+                            "• **Portfolio income**: Returns from investments (dividends, capital gains).",
+                            "• **Passive income**: Money earned with minimal ongoing effort (rental income, royalties, digital products).",
+                            "",
+                            "True 'passive' income usually requires significant upfront work or capital. But the payoff is income that doesn't stop when you stop working."
+                        ]
+                    },
+                    {
+                        title: 'Realistic Side Income Ideas',
+                        content: [
+                            "**Low Barrier (start this week):**",
+                            "• Freelancing your existing skills (writing, design, coding, tutoring)",
+                            "• Selling unused items (eBay, Facebook Marketplace)",
+                            "• Pet sitting / dog walking (Rover, Wag)",
+                            "• Delivery driving (in a pinch, but low ROI long-term)",
+                            "",
+                            "**Medium Effort (build over months):**",
+                            "• Creating and selling digital products (templates, courses, ebooks)",
+                            "• Starting a niche blog or YouTube channel",
+                            "• Consulting in your area of expertise",
+                            "• Reselling/arbitrage (buy low at clearance, sell on Amazon)",
+                            "",
+                            "**Capital Required (invest to earn):**",
+                            "• Dividend-paying index funds ($100+ invested → regular payouts)",
+                            "• Real estate (house hacking: rent out spare rooms)",
+                            "• REITs (Real Estate Investment Trusts — like a real estate ETF)",
+                            "",
+                            "**The key**: Pick ONE side income and give it 6 months of consistent effort before judging results. Most people quit too early."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            }
+        ]
     }
 ];
