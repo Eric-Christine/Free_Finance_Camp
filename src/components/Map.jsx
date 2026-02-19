@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import SEO from './SEO';
 
 export default function Map() {
-    const { isLessonCompleted, xp, getCurrentLevel, getNextLevel, getProgressToNextLevel, getQuizScore, streakCount } = useProgress();
+    const { isLessonCompleted, xp, getCurrentLevel, getNextLevel, getProgressToNextLevel, getQuizScore, streakCount, isLoading } = useProgress();
     const { signOut } = useAuth();
     const currentLevel = getCurrentLevel();
     const nextLevel = getNextLevel();
@@ -16,6 +16,22 @@ export default function Map() {
     const completedCount = curriculum.reduce((acc, m) =>
         acc + m.lessons.filter(l => isLessonCompleted(l.id)).length, 0);
     const overallProgress = Math.round((completedCount / totalLessons) * 100);
+
+    if (isLoading) {
+        return (
+            <div className="container" style={{ padding: '2rem 1rem' }}>
+                <div style={{
+                    backgroundColor: 'var(--bg-card)',
+                    border: '1px solid var(--border)',
+                    borderRadius: 'var(--radius)',
+                    padding: '1.25rem',
+                    color: 'var(--text-muted)'
+                }}>
+                    Loading your progress...
+                </div>
+            </div>
+        );
+    }
 
     return (
         <div className="container" style={{ padding: '2rem 1rem' }}>
@@ -238,16 +254,20 @@ export default function Map() {
                                 <div>
                                     {module.lessons.map((lesson, lessonIndex) => {
                                         // Determine if lesson is locked
-                                        // Lesson is locked if the previous lesson's quiz hasn't been passed
+                                        // A completed lesson should never be locked.
+                                        // For progression, accept either a passed previous quiz or a completed previous lesson.
                                         let isLocked = false;
+                                        const lessonCompleted = isLessonCompleted(lesson.id);
 
-                                        if (lessonIndex === 0) {
+                                        if (lessonCompleted || lessonIndex === 0) {
                                             // First lesson of a module is always unlocked
                                             isLocked = false;
                                         } else {
                                             // Check the previous lesson in this module
                                             const prevLesson = module.lessons[lessonIndex - 1];
-                                            isLocked = getQuizScore(prevLesson.id) < 2;
+                                            const prevCompleted = isLessonCompleted(prevLesson.id);
+                                            const prevPassedQuiz = getQuizScore(prevLesson.id) >= 2;
+                                            isLocked = !prevCompleted && !prevPassedQuiz;
                                         }
 
                                         return (
@@ -272,8 +292,8 @@ export default function Map() {
                                                     width: '22px',
                                                     height: '22px',
                                                     borderRadius: '50%',
-                                                    border: '2px solid ' + (isLessonCompleted(lesson.id) ? 'var(--primary)' : isLocked ? 'var(--bg-hover)' : 'var(--text-muted)'),
-                                                    backgroundColor: isLessonCompleted(lesson.id) ? 'var(--primary)' : 'transparent',
+                                                    border: '2px solid ' + (lessonCompleted ? 'var(--primary)' : isLocked ? 'var(--bg-hover)' : 'var(--text-muted)'),
+                                                    backgroundColor: lessonCompleted ? 'var(--primary)' : 'transparent',
                                                     marginRight: '1rem',
                                                     display: 'flex',
                                                     alignItems: 'center',
@@ -282,7 +302,7 @@ export default function Map() {
                                                     fontSize: '0.7rem',
                                                     flexShrink: 0
                                                 }}>
-                                                    {isLocked ? '🔒' : isLessonCompleted(lesson.id) && '✓'}
+                                                    {isLocked ? '🔒' : lessonCompleted && '✓'}
                                                 </div>
                                                 <div style={{ flex: 1 }}>
                                                     <h3 style={{ fontSize: '0.95rem', marginBottom: '0.15rem' }}>{lesson.title}</h3>

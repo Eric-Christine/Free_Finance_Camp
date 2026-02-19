@@ -18,6 +18,12 @@ export default function EmployerMatchCalculator() {
   const [returnRate, setReturnRate] = useState(7);
   const [years, setYears] = useState(30);
   const [data, setData] = useState([]);
+  const [summary, setSummary] = useState({
+    annualEmployee: 0,
+    annualEmployer: 0,
+    finalEmployeeOnly: 0,
+    finalWithMatch: 0
+  });
 
   useEffect(() => {
     const monthlyReturn = returnRate / 100 / 12;
@@ -53,13 +59,6 @@ export default function EmployerMatchCalculator() {
       finalWithMatch: Math.round(withMatchValue)
     });
   }, [salary, employeeRate, matchRate, matchCap, returnRate, years]);
-
-  const [summary, setSummary] = useState({
-    annualEmployee: 0,
-    annualEmployer: 0,
-    finalEmployeeOnly: 0,
-    finalWithMatch: 0
-  });
 
   const missedMatch = useMemo(() => {
     const shortfallRate = Math.max(matchCap - employeeRate, 0);
