@@ -1,7 +1,6 @@
 import { useMemo, useState } from 'react';
 import {
     CartesianGrid,
-    Legend,
     Line,
     LineChart,
     ResponsiveContainer,
@@ -72,6 +71,16 @@ export default function MoneyMultiplier() {
 
     const earlyContribTotal = monthlyContribution * monthsEarly;
     const lateCatchupContribTotal = requiredLateMonthly * monthsLate;
+    const recurringSeries = [
+        { dataKey: 'earlyRecurring', stroke: '#3b82f6', name: 'Early Start (Auto-Invest)' },
+        { dataKey: 'lateRecurringCatchup', stroke: '#10b981', name: 'Late Start (Catch-Up Monthly)', strokeDasharray: '6 4' },
+        { dataKey: 'lateRecurringSame', stroke: '#f59e0b', name: 'Late Start (Same Monthly)' }
+    ];
+    const lumpSeries = [
+        { dataKey: 'earlyLump', stroke: '#8b5cf6', name: 'Early Lump Sum' },
+        { dataKey: 'lateLumpSame', stroke: '#f97316', name: 'Late Lump (Same Amount)' },
+        { dataKey: 'lateLumpCatchup', stroke: '#ef4444', name: 'Late Lump (Required Catch-Up)', strokeDasharray: '6 4' }
+    ];
 
     return (
         <div style={{
@@ -82,7 +91,9 @@ export default function MoneyMultiplier() {
             height: '100%',
             display: 'flex',
             flexDirection: 'column',
-            overflowY: 'auto'
+            minWidth: 0,
+            overflowY: 'auto',
+            overflowX: 'hidden'
         }}>
             <h3 style={{ marginBottom: '0.4rem', color: 'var(--primary)' }}>Money Multiplier: Start Age Advantage</h3>
             <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
@@ -154,7 +165,7 @@ export default function MoneyMultiplier() {
 
             <div style={{
                 display: 'grid',
-                gridTemplateColumns: '1fr 1fr',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
                 gap: '0.75rem',
                 marginBottom: '1rem'
             }}>
@@ -170,54 +181,76 @@ export default function MoneyMultiplier() {
                 />
             </div>
 
-            <div style={{ height: '290px', marginBottom: '1rem' }}>
+            <div style={{ marginBottom: '1rem' }}>
                 <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.3rem' }}>
                     Recurring Investing Comparison
                 </div>
-                <ResponsiveContainer width="100%" height="100%">
-                    <LineChart data={data} margin={{ top: 8, right: 8, left: 0, bottom: 8 }}>
-                        <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
-                        <XAxis dataKey="age" stroke="var(--text-muted)" tick={{ fontSize: 10 }} />
-                        <YAxis
-                            stroke="var(--text-muted)"
-                            width={56}
-                            tickFormatter={(v) => `$${Math.round(v / 1000)}k`}
-                        />
-                        <Tooltip
-                            contentStyle={{ backgroundColor: 'var(--bg-main)', border: '1px solid var(--border)' }}
-                            formatter={(value) => [money(value), '']}
-                        />
-                        <Legend />
-                        <Line type="monotone" dataKey="earlyRecurring" stroke="#3b82f6" strokeWidth={2.5} dot={false} name="Early Start (Auto-Invest)" />
-                        <Line type="monotone" dataKey="lateRecurringSame" stroke="#f59e0b" strokeWidth={2.5} dot={false} name="Late Start (Same Monthly)" />
-                        <Line type="monotone" dataKey="lateRecurringCatchup" stroke="#10b981" strokeWidth={2.5} strokeDasharray="6 4" dot={false} name="Late Start (Catch-Up Monthly)" />
-                    </LineChart>
-                </ResponsiveContainer>
+                <div style={{ height: 'clamp(220px, 34vh, 290px)' }}>
+                    <ResponsiveContainer width="100%" height="100%">
+                        <LineChart data={data} margin={{ top: 8, right: 8, left: 0, bottom: 8 }}>
+                            <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
+                            <XAxis dataKey="age" stroke="var(--text-muted)" tick={{ fontSize: 10 }} />
+                            <YAxis
+                                stroke="var(--text-muted)"
+                                width={56}
+                                tickFormatter={(v) => `$${Math.round(v / 1000)}k`}
+                            />
+                            <Tooltip
+                                contentStyle={{ backgroundColor: 'var(--bg-main)', border: '1px solid var(--border)' }}
+                                formatter={(value) => [money(value), '']}
+                            />
+                            {recurringSeries.map((series) => (
+                                <Line
+                                    key={series.dataKey}
+                                    type="monotone"
+                                    dataKey={series.dataKey}
+                                    stroke={series.stroke}
+                                    strokeWidth={2.5}
+                                    strokeDasharray={series.strokeDasharray}
+                                    dot={false}
+                                    name={series.name}
+                                />
+                            ))}
+                        </LineChart>
+                    </ResponsiveContainer>
+                </div>
+                <ChartLegend items={recurringSeries} />
             </div>
 
-            <div style={{ height: '250px', marginBottom: '0.9rem' }}>
+            <div style={{ marginBottom: '0.9rem' }}>
                 <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.3rem' }}>
                     Lump Sum Early vs Later
                 </div>
-                <ResponsiveContainer width="100%" height="100%">
-                    <LineChart data={data} margin={{ top: 8, right: 8, left: 0, bottom: 8 }}>
-                        <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
-                        <XAxis dataKey="age" stroke="var(--text-muted)" tick={{ fontSize: 10 }} />
-                        <YAxis
-                            stroke="var(--text-muted)"
-                            width={56}
-                            tickFormatter={(v) => `$${Math.round(v / 1000)}k`}
-                        />
-                        <Tooltip
-                            contentStyle={{ backgroundColor: 'var(--bg-main)', border: '1px solid var(--border)' }}
-                            formatter={(value) => [money(value), '']}
-                        />
-                        <Legend />
-                        <Line type="monotone" dataKey="earlyLump" stroke="#8b5cf6" strokeWidth={2.5} dot={false} name="Early Lump Sum" />
-                        <Line type="monotone" dataKey="lateLumpSame" stroke="#f97316" strokeWidth={2.5} dot={false} name="Late Lump (Same Amount)" />
-                        <Line type="monotone" dataKey="lateLumpCatchup" stroke="#ef4444" strokeWidth={2.5} strokeDasharray="6 4" dot={false} name="Late Lump (Required Catch-Up)" />
-                    </LineChart>
-                </ResponsiveContainer>
+                <div style={{ height: 'clamp(210px, 30vh, 250px)' }}>
+                    <ResponsiveContainer width="100%" height="100%">
+                        <LineChart data={data} margin={{ top: 8, right: 8, left: 0, bottom: 8 }}>
+                            <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
+                            <XAxis dataKey="age" stroke="var(--text-muted)" tick={{ fontSize: 10 }} />
+                            <YAxis
+                                stroke="var(--text-muted)"
+                                width={56}
+                                tickFormatter={(v) => `$${Math.round(v / 1000)}k`}
+                            />
+                            <Tooltip
+                                contentStyle={{ backgroundColor: 'var(--bg-main)', border: '1px solid var(--border)' }}
+                                formatter={(value) => [money(value), '']}
+                            />
+                            {lumpSeries.map((series) => (
+                                <Line
+                                    key={series.dataKey}
+                                    type="monotone"
+                                    dataKey={series.dataKey}
+                                    stroke={series.stroke}
+                                    strokeWidth={2.5}
+                                    strokeDasharray={series.strokeDasharray}
+                                    dot={false}
+                                    name={series.name}
+                                />
+                            ))}
+                        </LineChart>
+                    </ResponsiveContainer>
+                </div>
+                <ChartLegend items={lumpSeries} />
             </div>
 
             <div style={{
@@ -240,9 +273,9 @@ export default function MoneyMultiplier() {
 function Slider({ label, value, min, max, step, display, onChange }) {
     return (
         <div>
-            <label style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', marginBottom: '0.25rem' }}>
-                <span>{label}</span>
-                <span>{display}</span>
+            <label style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', marginBottom: '0.25rem', gap: '0.5rem' }}>
+                <span style={{ minWidth: 0 }}>{label}</span>
+                <span style={{ whiteSpace: 'nowrap' }}>{display}</span>
             </label>
             <input
                 type="range"
@@ -263,10 +296,38 @@ function SummaryCard({ title, body, color }) {
             border: `1px solid ${color}`,
             borderRadius: '10px',
             padding: '0.7rem',
-            whiteSpace: 'pre-line'
+            minWidth: 0,
+            whiteSpace: 'pre-line',
+            overflowWrap: 'anywhere'
         }}>
             <div style={{ fontSize: '0.76rem', fontWeight: '600', color, marginBottom: '0.3rem' }}>{title}</div>
-            <div style={{ fontSize: '0.78rem' }}>{body}</div>
+            <div style={{ fontSize: '0.78rem', lineHeight: '1.45' }}>{body}</div>
+        </div>
+    );
+}
+
+function ChartLegend({ items }) {
+    return (
+        <div style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: '0.35rem 0.95rem',
+            marginTop: '0.45rem',
+            fontSize: '0.78rem',
+            color: 'var(--text-muted)',
+            lineHeight: 1.35
+        }}>
+            {items.map((item) => (
+                <div key={item.dataKey} style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', minWidth: 0 }}>
+                    <span style={{
+                        width: '13px',
+                        height: 0,
+                        borderRadius: '999px',
+                        borderTop: item.strokeDasharray ? `2px dashed ${item.stroke}` : `2px solid ${item.stroke}`
+                    }} />
+                    <span>{item.name}</span>
+                </div>
+            ))}
         </div>
     );
 }
