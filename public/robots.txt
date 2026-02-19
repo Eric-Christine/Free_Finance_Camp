@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /login
+Disallow: /map
+Disallow: /learn/
+Disallow: /vocab
+
+Host: freefinancecamp.com
+Sitemap: https://freefinancecamp.com/sitemap.xml

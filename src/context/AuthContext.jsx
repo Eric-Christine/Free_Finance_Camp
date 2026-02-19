@@ -3,6 +3,16 @@ import { supabase, isMockAuth, isAuthAvailable } from '../lib/supabase';
 
 const AuthContext = createContext();
 
+const PROD_AUTH_REDIRECT_BASE = 'https://freefinancecamp.com';
+
+function getAuthRedirectUrl() {
+  if (typeof window === 'undefined') return `${PROD_AUTH_REDIRECT_BASE}/map`;
+  const origin = window.location.origin;
+  const isLocalhost = origin.includes('localhost') || origin.includes('127.0.0.1');
+  const base = isLocalhost ? origin : PROD_AUTH_REDIRECT_BASE;
+  return `${base}/map`;
+}
+
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -43,7 +53,7 @@ export function AuthProvider({ children }) {
       const { error } = await supabase.auth.signInWithOtp({
         email,
         options: {
-          emailRedirectTo: window.location.origin + '/map'
+          emailRedirectTo: getAuthRedirectUrl()
         }
       });
       return { error };
@@ -78,7 +88,7 @@ export function AuthProvider({ children }) {
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: provider,
         options: {
-          redirectTo: window.location.origin + '/map'
+          redirectTo: getAuthRedirectUrl()
         }
       });
       return { data, error };

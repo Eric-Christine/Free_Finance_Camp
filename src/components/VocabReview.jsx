@@ -2,18 +2,25 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useProgress } from '../context/ProgressContext';
 import { vocabulary } from '../data/vocabulary';
+import SEO from './SEO';
 
 export default function VocabReview() {
-    const { isLessonCompleted } = useProgress();
+    const { completedLessons } = useProgress();
     const [unlockedVocab, setUnlockedVocab] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isFlipped, setIsFlipped] = useState(false);
 
     // Filter vocab based on completed lessons
     useEffect(() => {
-        const available = vocabulary.filter(item => isLessonCompleted(item.lessonId));
+        const completedSet = new Set(completedLessons);
+        const available = vocabulary.filter(item => completedSet.has(item.lessonId));
         setUnlockedVocab(available);
-    }, [isLessonCompleted]);
+        setCurrentIndex((prev) => {
+            if (available.length === 0) return 0;
+            return Math.min(prev, available.length - 1);
+        });
+        setIsFlipped(false);
+    }, [completedLessons]);
 
     const handleNext = () => {
         if (currentIndex < unlockedVocab.length - 1) {
@@ -36,6 +43,12 @@ export default function VocabReview() {
     if (unlockedVocab.length === 0) {
         return (
             <div className="container" style={{ padding: '4rem 2rem', textAlign: 'center' }}>
+                <SEO
+                    title="Vocabulary Review"
+                    description="Review unlocked financial terms."
+                    path="/vocab"
+                    noindex={true}
+                />
                 <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🔒</div>
                 <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>No Vocabulary Unlocked Yet</h2>
                 <p style={{ color: 'var(--text-muted)', marginBottom: '2rem' }}>
@@ -50,6 +63,12 @@ export default function VocabReview() {
 
     return (
         <div className="container" style={{ padding: '2rem', maxWidth: '800px', display: 'flex', flexDirection: 'column', height: '100vh' }}>
+            <SEO
+                title="Vocabulary Review"
+                description="Review unlocked financial terms."
+                path="/vocab"
+                noindex={true}
+            />
             {/* Header */}
             <header style={{ marginBottom: '2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                 <Link to="/map" style={{ color: 'var(--text-muted)' }}>← Back to Map</Link>

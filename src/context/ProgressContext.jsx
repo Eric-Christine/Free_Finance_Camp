@@ -1,8 +1,26 @@
 import { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import { useAuth } from './AuthContext';
 import { supabase, isRealAuth } from '../lib/supabase';
+import { logGoalCompletion } from '../lib/analytics';
 
 const ProgressContext = createContext();
+const PROGRESS_TABLE = 'user_progress';
+
+function getLocalDateString(date = new Date()) {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+}
+
+function daysBetweenDateStrings(start, end) {
+    const [sy, sm, sd] = String(start).split('-').map(Number);
+    const [ey, em, ed] = String(end).split('-').map(Number);
+    if (!sy || !sm || !sd || !ey || !em || !ed) return Number.POSITIVE_INFINITY;
+    const startUtc = Date.UTC(sy, sm - 1, sd);
+    const endUtc = Date.UTC(ey, em - 1, ed);
+    return Math.round((endUtc - startUtc) / (1000 * 60 * 60 * 24));
+}
 
 // Level thresholds
 const LEVELS = [
@@ -33,16 +51,13 @@ export function ProgressProvider({ children }) {
 
     // Streak Logic
     const updateStreak = useCallback(() => {
-        const today = new Date().toISOString().split('T')[0];
+        const today = getLocalDateString();
 
         if (lastActiveDate === today) return; // Already active today
 
         let newStreak = 1;
         if (lastActiveDate) {
-            const lastDate = new Date(lastActiveDate);
-            const currentDate = new Date(today);
-            const diffTime = Math.abs(currentDate - lastDate);
-            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+            const diffDays = daysBetweenDateStrings(lastActiveDate, today);
 
             if (diffDays === 1) {
                 newStreak = streakCount + 1;
@@ -75,17 +90,20 @@ export function ProgressProvider({ children }) {
         if (!user || !isRealAuth) return;
 
         try {
-            await supabase
-                .from('profiles')
-                .update({
+            const { error } = await supabase
+                .from(PROGRESS_TABLE)
+                .upsert({
+                    user_id: user.id,
                     completed_lessons: completed,
                     xp: userXp,
                     quiz_scores: quizzes,
                     streak_count: streak,
-                    last_active_date: lastActive,
-                    updated_at: new Date().toISOString()
-                })
-                .eq('id', user.id);
+                    last_active_date: lastActive
+                }, { onConflict: 'user_id' });
+
+            if (error) {
+                throw error;
+            }
         } catch (error) {
             console.error('Failed to sync to Supabase:', error);
         }
@@ -110,10 +128,10 @@ export function ProgressProvider({ children }) {
             if (isRealAuth) {
                 try {
                     const { data, error } = await supabase
-                        .from('profiles')
+                        .from(PROGRESS_TABLE)
                         .select('xp, completed_lessons, quiz_scores, streak_count, last_active_date')
-                        .eq('id', user.id)
-                        .single();
+                        .eq('user_id', user.id)
+                        .maybeSingle();
 
                     if (data && !error) {
                         setCompletedLessons(data.completed_lessons || []);
@@ -154,14 +172,18 @@ export function ProgressProvider({ children }) {
     // Save quiz score (keep best score)
     const saveQuizScore = (lessonId, score) => {
         const currentBest = quizScores[lessonId] || 0;
+        const bestScore = Math.max(score, currentBest);
         const newStreak = updateStreak();
 
-        if (score > currentBest || newStreak) {
-            const newScores = { ...quizScores, [lessonId]: score };
-            setQuizScores(newScores);
+        if (bestScore > currentBest || newStreak) {
+            const shouldUpdateScore = bestScore > currentBest;
+            const newScores = shouldUpdateScore ? { ...quizScores, [lessonId]: bestScore } : quizScores;
+            if (shouldUpdateScore) {
+                setQuizScores(newScores);
+            }
 
             const finalStreak = newStreak || streakCount;
-            const finalDate = newStreak ? new Date().toISOString().split('T')[0] : lastActiveDate;
+            const finalDate = newStreak ? getLocalDateString() : lastActiveDate;
 
             saveToLocalStorage(completedLessons, xp, newScores, finalStreak, finalDate);
             syncToSupabase(completedLessons, xp, newScores, finalStreak, finalDate);
@@ -179,12 +201,21 @@ export function ProgressProvider({ children }) {
             const newXp = isNewLesson ? xp + xpReward : xp;
 
             const finalStreak = newStreak || streakCount;
-            const finalDate = newStreak ? new Date().toISOString().split('T')[0] : lastActiveDate;
+            const finalDate = newStreak ? getLocalDateString() : lastActiveDate;
 
             setCompletedLessons(newCompleted);
             setXp(newXp);
             saveToLocalStorage(newCompleted, newXp, quizScores, finalStreak, finalDate);
             syncToSupabase(newCompleted, newXp, quizScores, finalStreak, finalDate);
+
+            if (isNewLesson) {
+                void logGoalCompletion('lesson_completion', {
+                    lesson_id: lessonId,
+                    xp_awarded: xpReward,
+                    total_xp: newXp,
+                    streak_count: finalStreak
+                });
+            }
         }
     };
 

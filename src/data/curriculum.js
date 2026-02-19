@@ -186,6 +186,141 @@ export const curriculum = [
                 ],
                 type: 'interactive',
                 widget: 'CompoundInterest'
+            },
+            {
+                id: 'lesson-1-3',
+                title: 'Wages vs Inflation: Why Idle Cash Falls Behind',
+                description: 'Track U.S. wage growth and inflation from 2000 to present, and see why idle cash loses purchasing power.',
+                xpReward: 25,
+                screens: [
+                    {
+                        title: 'The Big Picture',
+                        content: [
+                            "Many people feel financially squeezed even when their paycheck rises.",
+                            "",
+                            "Why? Because what matters is not just dollars earned, but what those dollars can BUY.",
+                            "",
+                            "If wages rise slower than inflation, your real purchasing power declines."
+                        ]
+                    },
+                    {
+                        title: '2000 to Present Trend',
+                        content: [
+                            "Use the chart to compare U.S. wage growth and inflation indexed to 2000.",
+                            "",
+                            "When the inflation line rises faster than wage growth, costs are outrunning pay.",
+                            "",
+                            "This is one reason many households feel like they are working harder but not getting ahead."
+                        ]
+                    },
+                    {
+                        title: 'Idle Cash Loses Value',
+                        content: [
+                            "Holding cash in a checking account is useful for bills and emergencies.",
+                            "",
+                            "But cash that sits idle long-term usually loses purchasing power to inflation.",
+                            "",
+                            "In other words: even if your account balance is unchanged, what it can buy keeps shrinking."
+                        ]
+                    },
+                    {
+                        title: 'Action Rule',
+                        content: [
+                            "Practical approach:",
+                            "1) Keep emergency money liquid.",
+                            "2) Move excess idle cash to higher-yield savings or suitable long-term investments.",
+                            "3) Focus on growing income and ownership of assets over time.",
+                            "",
+                            "Goal: make sure your money's growth can outpace inflation."
+                        ]
+                    }
+                ],
+                type: 'interactive',
+                widget: 'WageInflationGapChart'
+            },
+            {
+                id: 'lesson-1-4',
+                title: 'Wealth = Optionality',
+                description: 'Why building wealth creates freedom, lowers stress, and supports long-term intentional living.',
+                xpReward: 25,
+                screens: [
+                    {
+                        title: 'The Point of Wealth Is Optionality',
+                        content: [
+                            "The goal of wealth is not just luxury. It is **optionality**.",
+                            "",
+                            "Optionality means having choices:",
+                            "• Where you want to work",
+                            "• When you want to take time off",
+                            "• Whether you can walk away from bad environments",
+                            "",
+                            "Money gives you negotiating power over your life."
+                        ]
+                    },
+                    {
+                        title: 'Freedom and an Economic Safety Net',
+                        content: [
+                            "A strong financial base acts like an economic shock absorber.",
+                            "",
+                            "With savings and assets, setbacks become manageable instead of catastrophic:",
+                            "• Job loss",
+                            "• Medical costs",
+                            "• Family emergencies",
+                            "",
+                            "That safety net can reduce chronic stress and decision panic."
+                        ]
+                    },
+                    {
+                        title: 'Escaping the Hedonic Treadmill',
+                        content: [
+                            "The **hedonic treadmill** is when income rises but spending rises just as fast.",
+                            "",
+                            "You work harder, earn more, and still feel financially stuck.",
+                            "",
+                            "Wealth-building breaks that cycle by prioritizing:",
+                            "• Ownership over consumption",
+                            "• Savings rate over status spending",
+                            "• Long-term freedom over short-term dopamine purchases"
+                        ]
+                    },
+                    {
+                        title: 'The Mindshift: Short-Term to Long-Term',
+                        content: [
+                            "Short-term mindset asks: 'What feels good today?'",
+                            "Long-term mindset asks: 'What gives me more options in 5-10 years?'",
+                            "",
+                            "This shift changes behavior:",
+                            "• Budget decisions become values-based",
+                            "• Debt decisions become strategic",
+                            "• Investing becomes consistent, not emotional"
+                        ]
+                    },
+                    {
+                        title: 'Mental Health and Intentionality',
+                        content: [
+                            "Financial stability can improve mental bandwidth.",
+                            "",
+                            "Less money stress often means:",
+                            "• Better sleep",
+                            "• Better focus at work and school",
+                            "• Better relationships",
+                            "",
+                            "Intentional money habits are a form of self-respect: you are designing your future instead of reacting to emergencies."
+                        ]
+                    },
+                    {
+                        title: 'Action Prompt',
+                        content: [
+                            "Ask yourself:",
+                            "1) What options do I want money to buy me in the next 3 years?",
+                            "2) What one habit this month increases my optionality?",
+                            "3) What spending pattern keeps me on the hedonic treadmill?",
+                            "",
+                            "Wealth is not only about net worth. It is about owning your time."
+                        ]
+                    }
+                ],
+                type: 'reading'
             }
         ]
     },
@@ -287,6 +422,569 @@ export const curriculum = [
                 ],
                 type: 'interactive',
                 widget: 'CompoundInterest'
+            },
+            {
+                id: 'lesson-3-5',
+                title: 'Choosing Your First Investments (After Opening Accounts)',
+                description: 'Pick investments using allocation, fund types, and strategy.',
+                xpReward: 35,
+                screens: [
+                    {
+                        title: 'Starter Framework: Core + Explore',
+                        content: [
+                            "Once your accounts are open, use a simple structure:",
+                            "",
+                            "• **Core (80-90%)**: diversified, long-term investments (usually passive index funds)",
+                            "• **Explore (10-20%)**: specific ideas you want to research (single stocks, sector funds, etc.)",
+                            "",
+                            "Example allocation (moderate risk):",
+                            "• 50% U.S. stock index fund (passive)",
+                            "• 20% International stock index fund (passive)",
+                            "• 20% Bond fund (passive)",
+                            "• 10% Explore bucket (active fund or individual stocks)"
+                        ]
+                    },
+                    {
+                        title: 'Active vs Passive Funds',
+                        content: [
+                            "• **Passive funds**: Track an index (like the S&P 500), usually with lower fees and broad diversification.",
+                            "• **Active funds**: A manager picks investments to try to beat the market, usually with higher fees.",
+                            "",
+                            "Teaching point:",
+                            "Passive is often the default core.",
+                            "Active can be a smaller satellite position."
+                        ]
+                    },
+                    {
+                        title: 'Mutual Funds and ETFs',
+                        content: [
+                            "• **Mutual fund**: a pool of investments bought and sold at the end-of-day price.",
+                            "• **ETF**: a similar basket that trades during the day like a stock.",
+                            "• Both can be active or passive.",
+                            "",
+                            "Pros of mutual funds:",
+                            "• Easy diversification",
+                            "• Automatic investing options",
+                            "",
+                            "Watch for:",
+                            "• Expense ratio",
+                            "• Turnover",
+                            "• Load fees"
+                        ]
+                    },
+                    {
+                        title: 'Public vs Private Companies',
+                        content: [
+                            "• **Public companies**: trade on stock exchanges, with easier access, more transparency, and more liquidity.",
+                            "• **Private companies**: not exchange-traded; access may come through private equity, venture funds, angel investing, or crowdfunding.",
+                            "",
+                            "Private markets are usually less liquid and higher risk.",
+                            "",
+                            "Teaching point:",
+                            "Most beginners start with public markets first."
+                        ]
+                    },
+                    {
+                        title: 'Growth vs Dividend Investing',
+                        content: [
+                            "**Growth**",
+                            "• Focus: companies reinvesting profits to expand",
+                            "• Typical goal: higher long-term appreciation",
+                            "• Key risk: more volatility and valuation risk",
+                            "",
+                            "**Dividend**",
+                            "• Focus: companies paying regular cash dividends",
+                            "• Typical goal: income plus stability",
+                            "• Key risk: slower growth and possible dividend cuts",
+                            "",
+                            "Balanced approach:",
+                            "Hold both through broad index funds, then tilt toward growth or income based on your goals."
+                        ]
+                    },
+                    {
+                        title: 'Class Activity (15-20 Minutes)',
+                        content: [
+                            "Pick one investment idea and answer:",
+                            "1) Is it active or passive?",
+                            "2) Is it in a mutual fund/ETF or a single company?",
+                            "3) Is it public or private?",
+                            "4) Is it more growth or dividend?",
+                            "5) What allocation % would you give it, and why?"
+                        ]
+                    },
+                    {
+                        title: 'Quick Rules for Beginners',
+                        content: [
+                            "• Keep most money in diversified core funds.",
+                            "• Limit single-stock bets to a small percentage.",
+                            "• Review fees before buying.",
+                            "• Rebalance once or twice per year.",
+                            "• Invest based on goals and timeline, not hype."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-3-6',
+                title: 'Money Multiplier: Start Early vs Start Late',
+                description: 'Compare early investing, late catch-up, lump sums, and automatic recurring contributions.',
+                xpReward: 40,
+                screens: [
+                    {
+                        title: 'The Multiplier Effect',
+                        content: [
+                            "The biggest investing edge is often **time**, not perfect stock picks.",
+                            "",
+                            "Money invested young has more years to compound.",
+                            "",
+                            "That means a small automatic amount started early can beat much larger contributions started later."
+                        ]
+                    },
+                    {
+                        title: 'Recurring and Automatic Investing',
+                        content: [
+                            "Use recurring, automatic contributions to remove emotion and procrastination.",
+                            "",
+                            "Even if you start with a small monthly amount, consistency can create a large long-term result.",
+                            "",
+                            "Your future self benefits from habits you can sustain, not just occasional big deposits."
+                        ]
+                    },
+                    {
+                        title: 'Early Lump Sum vs Late Lump Sum',
+                        content: [
+                            "A lump sum invested early usually has a major advantage over the same lump sum invested later.",
+                            "",
+                            "The chart compares:",
+                            "• Early lump sum growth",
+                            "• Late lump sum with the same amount",
+                            "• How much larger the late lump sum must be just to catch up"
+                        ]
+                    },
+                    {
+                        title: 'Catch-Up Cost',
+                        content: [
+                            "Waiting often forces painful catch-up math:",
+                            "• Much higher monthly contributions",
+                            "• Larger total dollars invested",
+                            "• More pressure on future cash flow",
+                            "",
+                            "The goal is simple: start early, automate, and stay consistent."
+                        ]
+                    }
+                ],
+                type: 'interactive',
+                widget: 'MoneyMultiplier'
+            }
+        ]
+    },
+    {
+        id: 'module-roth-ira',
+        title: 'Roth IRA Mastery',
+        description: 'Build tax-free long-term wealth with a Roth IRA.',
+        xpReward: 125,
+        lessons: [
+            {
+                id: 'lesson-roth-1',
+                title: 'Roth IRA Fundamentals',
+                description: 'How a Roth IRA works and why it is powerful.',
+                xpReward: 30,
+                screens: [
+                    {
+                        title: 'What Is a Roth IRA?',
+                        content: [
+                            "A **Roth IRA** is an individual retirement account funded with after-tax dollars.",
+                            "",
+                            "You do **not** get a tax deduction today, but qualified withdrawals in retirement are generally **tax-free**.",
+                            "",
+                            "This creates a simple long-term bet: pay taxes now, avoid taxes later.",
+                            "",
+                            "For younger earners or anyone expecting higher future income, that tradeoff can be extremely valuable."
+                        ]
+                    },
+                    {
+                        title: 'Why Investors Love Roth Accounts',
+                        content: [
+                            "Roth IRAs have several advantages:",
+                            "• Tax-free growth over decades",
+                            "• No required minimum distributions (RMDs) during the original owner's lifetime",
+                            "• Broad investment flexibility (index funds, ETFs, bonds, etc.)",
+                            "",
+                            "Because there are no lifetime RMDs, Roth assets are useful for both retirement spending and estate planning."
+                        ]
+                    },
+                    {
+                        title: 'Roth IRA vs Traditional IRA',
+                        content: [
+                            "**Traditional IRA**: tax break now, taxes later.",
+                            "**Roth IRA**: taxes now, tax-free later.",
+                            "",
+                            "There is no universal winner. The best choice depends on your current tax bracket vs expected future bracket.",
+                            "",
+                            "If future tax rates or your future income are likely higher, Roth often becomes more attractive."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-roth-2',
+                title: 'Contribution Rules, Limits, and Eligibility',
+                description: 'Avoid common Roth IRA mistakes.',
+                xpReward: 30,
+                screens: [
+                    {
+                        title: 'Contribution Basics',
+                        content: [
+                            "Roth IRA contributions are limited each year by IRS rules.",
+                            "",
+                            "Core rules:",
+                            "• You must have eligible earned income.",
+                            "• Annual contribution caps apply.",
+                            "• Income-based phaseouts can reduce or eliminate direct Roth eligibility.",
+                            "",
+                            "Always verify current-year IRS limits before contributing."
+                        ]
+                    },
+                    {
+                        title: 'Income Phaseouts and Backdoor Roth',
+                        content: [
+                            "If your income is above direct Roth IRA limits, you may still use a **Backdoor Roth** strategy:",
+                            "1) Contribute to a Traditional IRA (non-deductible if needed).",
+                            "2) Convert that amount to Roth IRA.",
+                            "",
+                            "Important: The **pro-rata rule** can create taxes if you hold other pre-tax IRA balances.",
+                            "",
+                            "This is where many high-income earners make errors. Track basis carefully and use tax forms correctly."
+                        ]
+                    },
+                    {
+                        title: 'Operational Checklist',
+                        content: [
+                            "Use this yearly checklist:",
+                            "• Confirm eligibility and current-year limits",
+                            "• Fund account early (more time in market)",
+                            "• Automate monthly contributions",
+                            "• Keep records for contributions and conversions",
+                            "",
+                            "Small, consistent contributions over many years usually beat sporadic large contributions."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-roth-3',
+                title: 'How to Invest Inside a Roth IRA',
+                description: 'Asset allocation and long-term execution.',
+                xpReward: 30,
+                screens: [
+                    {
+                        title: 'The Account Is a Container',
+                        content: [
+                            "A Roth IRA is the account type, not the investment itself.",
+                            "",
+                            "You still need an investment plan inside it.",
+                            "",
+                            "Common beginner-friendly structure:",
+                            "• Broad U.S. stock index fund",
+                            "• International index fund",
+                            "• Bond allocation based on risk tolerance and timeline"
+                        ]
+                    },
+                    {
+                        title: 'Tax-Efficient Placement Strategy',
+                        content: [
+                            "Because Roth growth can become tax-free, many investors place higher-growth assets in Roth accounts over long periods.",
+                            "",
+                            "That does NOT mean taking reckless risk.",
+                            "It means aligning risk level with your horizon and maintaining diversification.",
+                            "",
+                            "Core principles:",
+                            "• Keep costs low",
+                            "• Rebalance periodically",
+                            "• Stay invested through volatility"
+                        ]
+                    },
+                    {
+                        title: 'Behavioral Discipline',
+                        content: [
+                            "Most Roth IRA success comes from behavior, not prediction:",
+                            "• Invest consistently",
+                            "• Avoid panic-selling during downturns",
+                            "• Increase contributions when income rises",
+                            "",
+                            "The biggest edge is often simply contributing every year and not interrupting compounding."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-roth-4',
+                title: 'Withdrawals, Conversions, and Real-Life Use',
+                description: 'Use Roth rules correctly to avoid penalties.',
+                xpReward: 35,
+                screens: [
+                    {
+                        title: 'Withdrawal Ordering Rules',
+                        content: [
+                            "Roth IRA withdrawals generally follow this order:",
+                            "1) Contributions",
+                            "2) Conversions",
+                            "3) Earnings",
+                            "",
+                            "Because contributions come out first, many people view Roth contributions as more flexible than pre-tax retirement assets.",
+                            "",
+                            "Earnings typically require meeting qualified distribution rules to avoid taxes/penalties."
+                        ]
+                    },
+                    {
+                        title: 'Five-Year and Age Rules',
+                        content: [
+                            "Qualified Roth distributions generally depend on timing and age conditions.",
+                            "",
+                            "That is why planning matters:",
+                            "• Keep records for contribution and conversion years",
+                            "• Understand how the 5-year clock applies",
+                            "• Coordinate withdrawals with other accounts",
+                            "",
+                            "When used correctly, Roth can provide tax-free cash flow in retirement and reduce future tax uncertainty."
+                        ]
+                    },
+                    {
+                        title: 'Roth Decision Framework',
+                        content: [
+                            "Before taking action, ask:",
+                            "• Am I eligible for direct Roth contributions this year?",
+                            "• If not, does Backdoor Roth make sense given my IRA balances?",
+                            "• Is my asset mix appropriate for my horizon and risk profile?",
+                            "",
+                            "Your Roth IRA should be part of a full plan:",
+                            "401k match -> HSA (if eligible) -> Roth IRA -> additional tax-advantaged space."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-401k',
+        title: '401(k) Master Plan',
+        description: 'Use tax-advantaged retirement accounts and capture every dollar of employer match.',
+        xpReward: 140,
+        lessons: [
+            {
+                id: 'lesson-401k-1',
+                title: '401(k) Fundamentals',
+                description: 'How 401(k)s work, why they matter, and where they fit in your plan.',
+                xpReward: 25,
+                screens: [
+                    {
+                        title: 'What a 401(k) Actually Is',
+                        content: [
+                            "A **401(k)** is an employer-sponsored retirement account.",
+                            "",
+                            "You contribute directly from your paycheck, and the money can be invested for long-term growth.",
+                            "",
+                            "The two biggest advantages are:",
+                            "• Tax benefits",
+                            "• Potential employer matching contributions",
+                            "",
+                            "For most workers, this is the first place to start investing for retirement."
+                        ]
+                    },
+                    {
+                        title: 'Traditional vs Roth 401(k)',
+                        content: [
+                            "**Traditional 401(k):** contributions reduce taxable income now; withdrawals are taxed later.",
+                            "**Roth 401(k):** contributions are after-tax now; qualified withdrawals are tax-free later.",
+                            "",
+                            "Many plans allow both options.",
+                            "",
+                            "General rule: choose based on whether your tax rate is likely higher now or in retirement."
+                        ]
+                    },
+                    {
+                        title: 'Why Starting Early Changes Everything',
+                        content: [
+                            "A 401(k) combines payroll automation + compounding.",
+                            "",
+                            "That means you build wealth before money hits your checking account.",
+                            "",
+                            "Small early contributions often beat large delayed contributions because time is the biggest multiplier."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-401k-2',
+                title: 'Employer Match: The Highest-Return Move',
+                description: 'Visualize how much wealth you lose when you miss your employer match.',
+                xpReward: 35,
+                screens: [
+                    {
+                        title: 'Match Formula in Plain English',
+                        content: [
+                            "Typical offer: **50% match up to 6% of salary**.",
+                            "",
+                            "If you contribute 6%, your employer adds 3%.",
+                            "",
+                            "That is an immediate return before any market growth.",
+                            "",
+                            "Contributing below the match cap is usually equivalent to refusing part of your compensation."
+                        ]
+                    },
+                    {
+                        title: 'Use the Simulator',
+                        content: [
+                            "Adjust salary, contribution rate, employer match, and years.",
+                            "",
+                            "Compare:",
+                            "• Employee contributions only",
+                            "• Employee + employer match",
+                            "",
+                            "Focus on the long-term gap. The match compounds for decades."
+                        ]
+                    },
+                    {
+                        title: 'Action Rule',
+                        content: [
+                            "At minimum, contribute enough to earn the **full employer match**.",
+                            "",
+                            "Then increase your savings rate 1% each year or whenever you get a raise.",
+                            "",
+                            "This approach improves retirement outcomes without requiring perfect market timing."
+                        ]
+                    }
+                ],
+                type: 'interactive',
+                widget: 'EmployerMatchCalculator'
+            },
+            {
+                id: 'lesson-401k-3',
+                title: 'Contribution Strategy and Limits',
+                description: 'Build a practical system you can run every year.',
+                xpReward: 25,
+                screens: [
+                    {
+                        title: 'Core Priority Stack',
+                        content: [
+                            "A common order for many workers:",
+                            "1) 401(k) to full match",
+                            "2) HSA (if eligible)",
+                            "3) IRA (Roth or Traditional)",
+                            "4) Increase 401(k) toward annual limit",
+                            "",
+                            "This sequence balances tax savings, flexibility, and employer benefits."
+                        ]
+                    },
+                    {
+                        title: 'Rate Targets',
+                        content: [
+                            "If possible, aim for **10-15% total retirement savings** (your money + match), then progress toward 15-20% over time.",
+                            "",
+                            "Automate increases so your savings rate rises with income.",
+                            "",
+                            "Even a 1% annual increase can produce major long-term gains."
+                        ]
+                    },
+                    {
+                        title: 'Avoid Common Errors',
+                        content: [
+                            "Frequent mistakes:",
+                            "• Contributing below full match",
+                            "• Remaining 100% in stable value/cash for decades",
+                            "• Ignoring fees in fund choices",
+                            "• Stopping contributions after market downturns",
+                            "",
+                            "Treat your 401(k) as a long game, not a short-term account."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-401k-4',
+                title: 'How to Invest Inside Your 401(k)',
+                description: 'Choose funds with a simple, durable allocation.',
+                xpReward: 25,
+                screens: [
+                    {
+                        title: 'Pick a Default You Can Stick With',
+                        content: [
+                            "Good options for many beginners:",
+                            "• A low-cost target-date fund",
+                            "• Or a diversified mix of U.S. stocks, international stocks, and bonds",
+                            "",
+                            "Perfection is not required. Consistency and cost control matter more."
+                        ]
+                    },
+                    {
+                        title: 'Fee Awareness',
+                        content: [
+                            "Expense ratios directly reduce your returns.",
+                            "",
+                            "A fund charging 0.80% can materially underperform a similar 0.05% index fund over decades.",
+                            "",
+                            "When choices are similar, lower-cost funds are usually better."
+                        ]
+                    },
+                    {
+                        title: 'Rebalancing Discipline',
+                        content: [
+                            "Over time, market moves can drift your allocation away from target risk.",
+                            "",
+                            "Rebalance periodically (or use target-date funds that auto-rebalance).",
+                            "",
+                            "Goal: keep risk appropriate without making emotional decisions."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-401k-5',
+                title: 'Vesting, Job Changes, and Withdrawals',
+                description: 'Protect your retirement money when life changes.',
+                xpReward: 30,
+                screens: [
+                    {
+                        title: 'Vesting Basics',
+                        content: [
+                            "Your contributions are always yours.",
+                            "",
+                            "Employer contributions may follow a **vesting schedule**.",
+                            "",
+                            "If you leave early, you might forfeit part of the employer match. Read your plan document before switching jobs."
+                        ]
+                    },
+                    {
+                        title: 'When You Change Jobs',
+                        content: [
+                            "Common options:",
+                            "• Leave money in old 401(k) (if allowed)",
+                            "• Roll into new employer 401(k)",
+                            "• Roll to an IRA",
+                            "",
+                            "Avoid cashing out unless absolutely necessary. Taxes and penalties can erase years of progress."
+                        ]
+                    },
+                    {
+                        title: 'Loans and Early Withdrawals',
+                        content: [
+                            "401(k) loans and early withdrawals should be last-resort tools.",
+                            "",
+                            "They can trigger taxes, penalties, and long-term opportunity cost from lost compounding.",
+                            "",
+                            "Build an emergency fund so retirement savings stay invested."
+                        ]
+                    }
+                ],
+                type: 'reading'
             }
         ]
     },
@@ -337,6 +1035,67 @@ export const curriculum = [
                 ],
                 type: 'interactive',
                 widget: 'CompoundInterest'
+            },
+            {
+                id: 'lesson-4-3',
+                title: 'The "Lower Monthly Payment" Sales Tactic',
+                description: 'How longer loan terms can quietly cost you thousands.',
+                xpReward: 35,
+                screens: [
+                    {
+                        title: 'The Pitch You Will Hear',
+                        content: [
+                            "In dealerships and loan offices, one tactic is very common:",
+                            "",
+                            "\"Don't worry about total cost, we can get your payment down to what you want.\"",
+                            "",
+                            "They often lower the monthly payment by stretching the loan from 48 or 60 months out to 72 or 84 months.",
+                            "",
+                            "Lower payment does NOT automatically mean a better deal."
+                        ]
+                    },
+                    {
+                        title: 'Why It Works on Buyers',
+                        content: [
+                            "Most people shop by monthly payment because it feels affordable.",
+                            "",
+                            "But payment-focused shopping hides:",
+                            "• More months of interest",
+                            "• Higher total amount paid",
+                            "• Slower equity build",
+                            "• Greater chance of being underwater",
+                            "",
+                            "You can feel short-term relief while creating long-term cost."
+                        ]
+                    },
+                    {
+                        title: 'The Real Comparison',
+                        content: [
+                            "Always compare offers using all three numbers:",
+                            "1) Monthly payment",
+                            "2) Total interest paid",
+                            "3) Total paid over full term",
+                            "",
+                            "Use the simulator to compare the same loan amount at 48, 60, 72, and 84 months.",
+                            "",
+                            "Then decide if the monthly savings are worth the extra interest."
+                        ]
+                    },
+                    {
+                        title: 'Protect Yourself',
+                        content: [
+                            "Before signing, ask the seller/lender:",
+                            "• Show me the out-the-door price",
+                            "• Show me total interest by term length",
+                            "• Show me any add-ons rolled into the loan",
+                            "",
+                            "Rule: Choose the shortest term that fits your budget comfortably.",
+                            "If the payment is still too high, lower the purchase price instead of extending the term."
+                        ]
+                    }
+                ],
+                type: 'interactive',
+                widget: 'LoanTermTrapCalculator'
             }
         ]
     },
@@ -483,6 +1242,62 @@ export const curriculum = [
                     "If you miss a payment, the fees can be massive. Treat BNPL like credit card debt."
                 ],
                 type: 'reading'
+            },
+            {
+                id: 'lesson-6-4',
+                title: 'Credit Cards + BNPL: The Double-Debt Trap',
+                description: 'How minimum payments and split plans can quietly snowball.',
+                xpReward: 35,
+                screens: [
+                    {
+                        title: 'The Minimum Payment Illusion',
+                        content: [
+                            "Credit card issuers show a low **minimum payment** to keep your account current.",
+                            "",
+                            "But minimum payments mostly cover interest at high APRs.",
+                            "",
+                            "That means your balance can shrink very slowly while interest keeps compounding month after month.",
+                            "",
+                            "A payment that feels manageable can keep you in debt for years."
+                        ]
+                    },
+                    {
+                        title: 'How BNPL Stacks on Top',
+                        content: [
+                            "BNPL feels separate from credit cards, but it often piles on top of existing debt.",
+                            "",
+                            "Example pattern:",
+                            "• 4-pay shoes",
+                            "• 4-pay headphones",
+                            "• 4-pay travel booking",
+                            "",
+                            "Each payment looks small alone, but together they can crush cash flow and trigger missed due dates."
+                        ]
+                    },
+                    {
+                        title: 'Why This Becomes a Trap',
+                        content: [
+                            "When cash gets tight, people often:",
+                            "• Put essentials on a credit card",
+                            "• Use new BNPL plans to avoid paying full price now",
+                            "• Pay only minimums on everything",
+                            "",
+                            "That cycle can turn short-term spending into long-term high-interest debt."
+                        ]
+                    },
+                    {
+                        title: 'Escape Plan',
+                        content: [
+                            "Use this playbook:",
+                            "1) List every card and BNPL plan with balance, APR/fees, and due date.",
+                            "2) Stop new BNPL purchases until all existing plans are cleared.",
+                            "3) Pay at least minimums on everything, then send extra to the highest APR balance.",
+                            "4) Turn on autopay + payment reminders to avoid late fees.",
+                            "5) If needed, call issuers and request hardship plans or APR reductions."
+                        ]
+                    }
+                ],
+                type: 'reading'
             }
         ]
     },
@@ -571,6 +1386,119 @@ export const curriculum = [
                     "Government bonds (Treasuries) are considered the safest investment."
                 ],
                 type: 'reading'
+            },
+            {
+                id: 'lesson-8-3',
+                title: 'S&P 500 in Dollars vs Gold',
+                description: 'See nominal returns, dollar depreciation, and why currency strength matters.',
+                xpReward: 45,
+                screens: [
+                    {
+                        title: 'Nominal Returns vs Real Value',
+                        content: [
+                            "The S&P 500 can rise strongly in dollar terms while the dollar itself loses purchasing power over time.",
+                            "",
+                            "That is why investors compare:",
+                            "• Asset returns in USD (nominal view)",
+                            "• Asset returns in hard assets like gold",
+                            "• Dollar purchasing power over time"
+                        ]
+                    },
+                    {
+                        title: 'Read the Chart',
+                        content: [
+                            "This chart shows 2000-2024 trends:",
+                            "• **S&P in USD** (indexed)",
+                            "• **S&P in gold terms** (indexed)",
+                            "• **Dollar purchasing power** (indexed)",
+                            "",
+                            "If the dollar-power line trends down, idle cash buys less over time."
+                        ]
+                    },
+                    {
+                        title: 'High-Value vs Low-Value Currency',
+                        content: [
+                            "**High-value currency (relative strength):**",
+                            "• Imports are cheaper",
+                            "• Consumers gain global purchasing power",
+                            "• Inflation pressure from imports may ease",
+                            "• Export competitiveness can weaken",
+                            "",
+                            "**Low-value currency (relative weakness):**",
+                            "• Exports can become more competitive",
+                            "• Domestic tourism/export industries may benefit",
+                            "• Imports become more expensive",
+                            "• Inflation pressure can rise"
+                        ]
+                    },
+                    {
+                        title: 'Practical Takeaway',
+                        content: [
+                            "Hold enough cash for near-term needs and emergencies.",
+                            "",
+                            "But long-term idle cash usually loses ground to inflation.",
+                            "",
+                            "For long horizons, pair cash management with assets that have the potential to outpace inflation."
+                        ]
+                    }
+                ],
+                type: 'interactive',
+                widget: 'Sp500DollarVsGoldChart'
+            },
+            {
+                id: 'lesson-8-4',
+                title: 'China\'s Economic Rise: Export-First Model',
+                description: 'How China scaled through exports and high savings compared with U.S. consumers.',
+                xpReward: 45,
+                screens: [
+                    {
+                        title: 'Export-First Strategy',
+                        content: [
+                            "China's growth model leaned heavily on manufacturing and exports for decades.",
+                            "",
+                            "Core idea:",
+                            "• Build industrial capacity",
+                            "• Keep production costs competitive",
+                            "• Sell large volumes to global markets",
+                            "",
+                            "This export-first approach helped China move from low-cost manufacturing into higher-value sectors over time."
+                        ]
+                    },
+                    {
+                        title: 'Exports: China vs U.S.',
+                        content: [
+                            "Use the chart to compare exports as a share of GDP.",
+                            "",
+                            "China generally ran a higher export share than the U.S., reflecting a more production-and-trade oriented model.",
+                            "",
+                            "The U.S. has historically been more consumption-led, with household spending playing a larger role in growth."
+                        ]
+                    },
+                    {
+                        title: 'Savings Rate Gap',
+                        content: [
+                            "China's households have typically saved a much larger share of income than U.S. consumers.",
+                            "",
+                            "Why this matters:",
+                            "• Higher savings can support higher domestic investment",
+                            "• Lower savings can support stronger near-term consumption",
+                            "",
+                            "Different savings behavior tends to produce different economic structures."
+                        ]
+                    },
+                    {
+                        title: 'Tradeoffs and Takeaways',
+                        content: [
+                            "Export-first + high savings can accelerate industrial growth, but may rely more on external demand.",
+                            "",
+                            "Consumer-first + lower savings can boost domestic demand, but may reduce investment buffer over time.",
+                            "",
+                            "For learners: national strategy affects jobs, wages, exchange rates, and investment opportunities."
+                        ]
+                    }
+                ],
+                type: 'interactive',
+                widget: 'ChinaEconomicRiseChart'
             }
         ]
     },
@@ -884,6 +1812,88 @@ export const curriculum = [
                     }
                 ],
                 type: 'reading'
+            },
+            {
+                id: 'lesson-11-5',
+                title: 'Condo vs Townhouse: The True Monthly Cost',
+                description: 'Compare HOAs, taxes, insurance, repairs, and market differences across the U.S.',
+                xpReward: 40,
+                screens: [
+                    {
+                        title: 'Condo vs Townhouse Basics',
+                        content: [
+                            "**Condo**:",
+                            "• You typically own the interior of your unit.",
+                            "• Shared areas (roof, exterior, hallways, amenities) are managed by an HOA/association.",
+                            "• Usually higher HOA fees, often lower individual exterior maintenance burden.",
+                            "",
+                            "**Townhouse**:",
+                            "• You usually own the unit plus some land footprint.",
+                            "• More responsibility for structure/exterior, depending on the HOA rules.",
+                            "• Often lower HOA than condos, but potentially higher repair responsibility.",
+                            "",
+                            "Key point: The mortgage payment alone does NOT tell you which option is cheaper."
+                        ]
+                    },
+                    {
+                        title: 'HOA Fees: Help or Headache?',
+                        content: [
+                            "HOA fees can pay for useful services:",
+                            "• Exterior maintenance",
+                            "• Landscaping and snow removal",
+                            "• Shared amenities (pool, gym, security)",
+                            "",
+                            "But HOAs can also create risks:",
+                            "• Fee increases",
+                            "• Special assessments for major repairs",
+                            "• Rules and restrictions (rentals, renovations, use of space)",
+                            "",
+                            "Always review HOA financial statements, reserve levels, and meeting notes before buying."
+                        ]
+                    },
+                    {
+                        title: 'Why Non-Mortgage Costs Matter',
+                        content: [
+                            "Your total monthly housing cost includes:",
+                            "• Principal + interest (mortgage)",
+                            "• Property taxes",
+                            "• Homeowner's insurance",
+                            "• Routine repair budget",
+                            "• HOA dues",
+                            "",
+                            "In some markets, taxes + insurance + repairs + HOA can rival or even exceed your principal+interest payment.",
+                            "",
+                            "Use the calculator to test scenarios and see where the hidden costs overtake the mortgage."
+                        ]
+                    },
+                    {
+                        title: 'Property Markets Are Not the Same',
+                        content: [
+                            "Home markets vary across the U.S. because of:",
+                            "• Home prices",
+                            "• Property tax rates",
+                            "• Insurance risk (storms, wildfire, flood)",
+                            "• HOA prevalence and fee levels",
+                            "",
+                            "A payment that works in one city may fail in another, even for a similar home price.",
+                            "",
+                            "Use market presets in the calculator to compare how cost structure changes by region."
+                        ]
+                    },
+                    {
+                        title: 'Buyer Checklist',
+                        content: [
+                            "Before making an offer:",
+                            "1) Compare condo and townhouse total monthly cost, not just P+I.",
+                            "2) Stress-test for HOA increases and large repair years.",
+                            "3) Estimate taxes and insurance with local quotes, not national averages.",
+                            "4) Keep a repair reserve even after closing.",
+                            "5) Buy based on a sustainable monthly budget, not lender maximum."
+                        ]
+                    }
+                ],
+                type: 'interactive',
+                widget: 'HomeBuyingCostExplorer'
             }
         ]
     },
@@ -1060,6 +2070,72 @@ export const curriculum = [
                             "After age 65, you can withdraw HSA funds for ANY purpose (taxed like a Traditional IRA). It's basically a **super IRA**.",
                             "",
                             "**Priority order**: 1) 401k up to employer match → 2) Max HSA → 3) Max Roth IRA → 4) Max remaining 401k."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-12-5',
+                title: 'HSA Deep Dive: The Triple Tax Advantage',
+                description: 'How Health Savings Accounts can function as both healthcare and long-term wealth tools.',
+                xpReward: 45,
+                screens: [
+                    {
+                        title: 'Who Can Use an HSA?',
+                        content: [
+                            "An **HSA (Health Savings Account)** is available if you're enrolled in a qualifying **High Deductible Health Plan (HDHP)**.",
+                            "",
+                            "General eligibility rules:",
+                            "• You must be covered by an HSA-qualified HDHP.",
+                            "• You typically cannot be claimed as someone else's tax dependent.",
+                            "• Once enrolled in Medicare, new HSA contributions are no longer allowed.",
+                            "",
+                            "Think of an HSA as a long-term account designed for healthcare costs, but with powerful tax treatment that can make it useful far beyond annual doctor visits."
+                        ]
+                    },
+                    {
+                        title: 'The Triple Tax Advantage (Why It Matters)',
+                        content: [
+                            "HSAs are one of the few accounts with **three tax benefits**:",
+                            "",
+                            "1) **Contributions are tax-advantaged** (pre-tax via payroll or deductible if contributed directly).",
+                            "2) **Growth is tax-free** (interest, dividends, and gains are not taxed while inside the account).",
+                            "3) **Qualified medical withdrawals are tax-free**.",
+                            "",
+                            "Most accounts only give you one or two of these benefits. HSA gives all three, which is why many investors treat it as a 'stealth retirement account' for future healthcare expenses."
+                        ]
+                    },
+                    {
+                        title: 'Two Practical HSA Strategies',
+                        content: [
+                            "**Strategy A: Spend-Now**",
+                            "• Use the HSA for current medical costs.",
+                            "• Helpful when cash flow is tight.",
+                            "",
+                            "**Strategy B: Invest-and-Reimburse-Later**",
+                            "• Pay current medical bills out of pocket.",
+                            "• Keep receipts.",
+                            "• Leave HSA funds invested to compound.",
+                            "• Reimburse yourself later for qualified expenses (with proper documentation).",
+                            "",
+                            "If you can afford Strategy B, it can significantly increase long-term tax-efficient growth."
+                        ]
+                    },
+                    {
+                        title: 'Best Practices and Pitfalls',
+                        content: [
+                            "HSA best practices:",
+                            "• Contribute consistently (limits are adjusted by the IRS each year).",
+                            "• Invest HSA balances above your short-term medical cash buffer.",
+                            "• Track and store medical receipts carefully.",
+                            "",
+                            "Common pitfalls:",
+                            "• Using HSA funds for non-qualified expenses before age 65 (taxes + penalty can apply).",
+                            "• Leaving large balances in near-zero-interest cash when investing is available.",
+                            "• Missing employer HSA contributions that are part of your compensation package.",
+                            "",
+                            "Action step: Review your health plan type and HSA contribution setup this week. Even small contributions can compound meaningfully over time."
                         ]
                     }
                 ],
@@ -1651,6 +2727,260 @@ export const curriculum = [
                     }
                 ],
                 type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-16',
+        title: 'The Fed, Rates, and the Real Economy',
+        description: 'Learn how policy rates move mortgages, car loans, credit cards, and Treasury yields.',
+        xpReward: 175,
+        lessons: [
+            {
+                id: 'lesson-16-1',
+                title: 'What the Fed Actually Controls',
+                description: 'The federal funds rate, the dual mandate, and the policy toolkit.',
+                xpReward: 35,
+                screens: [
+                    {
+                        title: 'The Fed in Plain English',
+                        content: [
+                            "The Federal Reserve is the U.S. central bank. Its two legal goals are called the **dual mandate**:",
+                            "• Maximum employment",
+                            "• Stable prices (low, predictable inflation)",
+                            "",
+                            "The Fed does NOT set your mortgage rate directly.",
+                            "What it does set is the **price of short-term money** in the banking system, primarily through its target for the federal funds rate."
+                        ]
+                    },
+                    {
+                        title: 'How Policy Decisions Are Made',
+                        content: [
+                            "The Federal Open Market Committee (FOMC) meets regularly to decide whether to raise, hold, or cut rates.",
+                            "",
+                            "They watch:",
+                            "• Inflation data (CPI, PCE)",
+                            "• Labor market data (jobs, wages, unemployment)",
+                            "• Financial conditions (credit availability, market stress)",
+                            "",
+                            "In modern operations, the Fed also uses tools like **interest on reserve balances (IORB)** and **open market operations** to keep short rates near its target."
+                        ]
+                    },
+                    {
+                        title: 'Why This Hits Your Wallet',
+                        content: [
+                            "When the policy rate rises, borrowing gets more expensive across the economy:",
+                            "• Credit cards reprice quickly",
+                            "• Auto loans and new mortgages get more expensive",
+                            "• Business loans tighten",
+                            "",
+                            "When policy rates fall, the opposite tends to happen.",
+                            "",
+                            "Your job is to understand where you have **variable-rate risk** and how to protect cash flow before your payments jump."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-16-2',
+                title: 'From Fed Rate to Mortgage, Auto, and Card APRs',
+                description: 'How monetary policy passes through to household debt.',
+                xpReward: 40,
+                screens: [
+                    {
+                        title: 'The Transmission Chain',
+                        content: [
+                            "A simple chain looks like this:",
+                            "**Fed policy rate -> money-market rates -> bank funding costs -> consumer loan rates**",
+                            "",
+                            "Different products move at different speeds:",
+                            "• **Credit cards**: often reprice fastest",
+                            "• **Auto loans**: reset with market conditions for new loans",
+                            "• **Fixed mortgages**: tied more to longer-term Treasury yields than overnight rates",
+                            "",
+                            "Translation: not all debt reacts the same way to a Fed hike."
+                        ]
+                    },
+                    {
+                        title: 'Mortgage Math That Matters',
+                        content: [
+                            "For a fixed mortgage, your payment is locked after closing.",
+                            "For an ARM, your payment can reset higher later.",
+                            "",
+                            "Even a 1% rate difference can add large lifetime cost.",
+                            "Example: a $350,000 loan at 6% vs 7% can mean hundreds more per month and tens of thousands more in total interest.",
+                            "",
+                            "Key habit: shop rate + points + fees together. A 'lower rate' with high fees can still be worse."
+                        ]
+                    },
+                    {
+                        title: 'Auto Loans and Credit Cards',
+                        content: [
+                            "Auto loans are usually fixed for that loan term, but new-car financing offers rise/fall with market rates and credit conditions.",
+                            "",
+                            "Credit cards are usually variable APR tied to prime rate, so hikes can hit quickly.",
+                            "",
+                            "High-impact actions:",
+                            "• Attack variable-rate balances first",
+                            "• Request APR reductions with issuers",
+                            "• Refinance auto debt only when total cost improves after fees",
+                            "• Avoid stretching loan terms just to lower monthly payments"
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-16-3',
+                title: 'Treasury Bills, Bond Yields, and Government Debt',
+                description: 'How rates affect Treasury yields and federal interest costs.',
+                xpReward: 45,
+                screens: [
+                    {
+                        title: 'Why T-Bills Matter',
+                        content: [
+                            "U.S. Treasury bills are short-term government debt (typically 4 to 52 weeks).",
+                            "",
+                            "Their yields are strongly influenced by Fed policy and money-market expectations.",
+                            "As short rates rise, T-bill yields usually rise too; when rates fall, yields often decline.",
+                            "",
+                            "For savers, T-bills can be a low-risk parking spot for cash with competitive yield."
+                        ]
+                    },
+                    {
+                        title: 'Yield Curve Basics',
+                        content: [
+                            "The **yield curve** plots yields across maturities (3-month, 2-year, 10-year, etc.).",
+                            "",
+                            "Normal curve: long-term yields > short-term yields.",
+                            "Inverted curve: short-term yields > long-term yields, often signaling slower growth expectations.",
+                            "",
+                            "Household relevance:",
+                            "• Mortgage rates lean on longer-term yields",
+                            "• Savings products react more to short-term yields",
+                            "• Refinance timing depends on where your rate sits vs current long-term rates"
+                        ]
+                    },
+                    {
+                        title: 'Federal Debt Service and You',
+                        content: [
+                            "When Treasury yields rise, new government borrowing becomes more expensive.",
+                            "As old debt rolls over at higher rates, total federal interest expense rises.",
+                            "",
+                            "That doesn't create an immediate household bill, but it can shape future policy choices:",
+                            "• Taxes and spending tradeoffs",
+                            "• Fiscal room during recessions",
+                            "• Political pressure around deficits",
+                            "",
+                            "Macro takeaway: rates don't just change personal loans; they also change the government's financing burden."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-16-4',
+                title: 'A Household Playbook for Rate Cycles',
+                description: 'What to do when rates are rising, high, or falling.',
+                xpReward: 55,
+                screens: [
+                    {
+                        title: 'If Rates Are Rising',
+                        content: [
+                            "Priority is protecting monthly cash flow.",
+                            "",
+                            "Checklist:",
+                            "• Pay down variable-rate debt aggressively",
+                            "• Build or top up emergency savings",
+                            "• Delay non-essential financed purchases",
+                            "• Stress-test your budget with +10% higher required debt payments",
+                            "",
+                            "Goal: reduce exposure before resets and repricing hit."
+                        ]
+                    },
+                    {
+                        title: 'If Rates Are High but Stable',
+                        content: [
+                            "This is optimization mode.",
+                            "",
+                            "Checklist:",
+                            "• Lock in guaranteed returns on idle cash (HYSA, T-bills)",
+                            "• Compare refinance offers carefully (APR + fees + break-even months)",
+                            "• Keep investing systematically so you don't freeze waiting for perfect timing",
+                            "• Avoid 'payment-only' decisions that increase total interest cost"
+                        ]
+                    },
+                    {
+                        title: 'If Rates Are Falling',
+                        content: [
+                            "Falling rates create opportunities, but not every refinance is good.",
+                            "",
+                            "Use a break-even rule:",
+                            "Break-even months = total refinance costs / monthly savings",
+                            "",
+                            "If you won't stay in the loan long enough to pass break-even, skip it.",
+                            "",
+                            "Final framework: build a simple debt dashboard with balance, rate type (fixed/variable), APR, and monthly payment so you can act quickly when rate conditions change."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-16-5',
+                title: 'US Debt Crisis',
+                description: 'Compare U.S. debt levels globally, review bipartisan overspending, and map out possible outcomes.',
+                xpReward: 55,
+                screens: [
+                    {
+                        title: 'Debt Is a Long-Running, Bipartisan Issue',
+                        content: [
+                            "U.S. debt did not appear overnight and it is not a one-party problem.",
+                            "",
+                            "Across Republican and Democratic administrations, the federal government has run repeated deficits.",
+                            "",
+                            "Wars, recessions, tax cuts, demographic spending pressure, stimulus programs, and rising interest costs have all contributed."
+                        ]
+                    },
+                    {
+                        title: 'How the U.S. Compares Globally',
+                        content: [
+                            "The dashboard compares U.S. debt-to-GDP to major peers.",
+                            "",
+                            "At a high level, the U.S. debt burden is elevated, lower than Japan in this comparison, and above some other advanced economies.",
+                            "",
+                            "Interpretation matters: debt levels, borrowing currency strength, growth, and interest costs all shape risk."
+                        ]
+                    },
+                    {
+                        title: 'Three Possible Paths From Overspending',
+                        content: [
+                            "1) **Grow the economy faster than debt**",
+                            "Higher nominal GDP can reduce debt burden relative to output.",
+                            "",
+                            "2) **Lower rates / lower borrowing costs**",
+                            "If rates fall, debt-service pressure on tax revenue can ease.",
+                            "",
+                            "3) **Default on debt obligations**",
+                            "This is the worst-case path and would likely trigger major market and economic disruption."
+                        ]
+                    },
+                    {
+                        title: 'What to Watch as a Household',
+                        content: [
+                            "Debt headlines matter because they can influence taxes, rates, inflation pressure, and public spending choices.",
+                            "",
+                            "Practical moves:",
+                            "• Keep your own debt manageable",
+                            "• Build emergency reserves",
+                            "• Avoid relying on one policy outcome",
+                            "• Focus on resilient long-term plans"
+                        ]
+                    }
+                ],
+                type: 'interactive',
+                widget: 'USDebtCrisisChart'
             }
         ]
     }

@@ -54,6 +54,40 @@ export const quizzes = {
             correctIndex: 1
         }
     ],
+    'lesson-1-3': [
+        {
+            question: "If inflation rises faster than wages, what usually happens to purchasing power?",
+            options: ["It increases", "It stays the same", "It declines", "It doubles"],
+            correctIndex: 2
+        },
+        {
+            question: "Why can idle cash be risky over long periods?",
+            options: ["Banks delete unused balances", "Inflation can reduce what that cash can buy", "Cash automatically turns into debt", "It earns guaranteed high returns"],
+            correctIndex: 1
+        },
+        {
+            question: "What is a practical strategy from this lesson?",
+            options: ["Keep all money in a non-interest checking account forever", "Ignore inflation and focus only on nominal dollars", "Keep emergency cash liquid, but move excess idle cash to higher-yield or long-term growth options", "Spend quickly before prices change"],
+            correctIndex: 2
+        }
+    ],
+    'lesson-1-4': [
+        {
+            question: "In this lesson, what is the core purpose of building wealth?",
+            options: ["Buying status symbols", "Optionality and life choices", "Avoiding all work forever", "Keeping all money in cash"],
+            correctIndex: 1
+        },
+        {
+            question: "How does an economic safety net typically help mental health?",
+            options: ["It increases uncertainty", "It reduces stress from financial shocks", "It guarantees happiness", "It removes all life problems"],
+            correctIndex: 1
+        },
+        {
+            question: "What best describes the long-term money mindset?",
+            options: ["Spend now, figure it out later", "Optimize for appearance and status", "Make choices that increase options in 5-10 years", "Avoid all planning"],
+            correctIndex: 2
+        }
+    ],
 
     // Module 2: Budgeting & Saving
     'lesson-2-1': [
@@ -143,6 +177,197 @@ export const quizzes = {
             correctIndex: 1
         }
     ],
+    'lesson-3-5': [
+        {
+            question: "In the 'Core + Explore' framework, what is the typical core allocation range?",
+            options: ["20-30%", "40-50%", "60-70%", "80-90%"],
+            correctIndex: 3
+        },
+        {
+            question: "Which statement best describes a passive fund?",
+            options: ["A manager actively trades to beat the market", "It tracks an index and usually has lower fees", "It only invests in private companies", "It guarantees market outperformance"],
+            correctIndex: 1
+        },
+        {
+            question: "For most beginners, which market is usually the better starting point?",
+            options: ["Private markets", "Public markets", "Angel investing only", "Venture capital only"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-3-6': [
+        {
+            question: "What is usually the biggest advantage in long-term investing?",
+            options: ["Perfect market timing", "Starting early and giving compounding more time", "Switching strategies every month", "Only investing when markets are at all-time highs"],
+            correctIndex: 1
+        },
+        {
+            question: "Why is automatic recurring investing useful?",
+            options: ["It guarantees returns", "It removes emotion and builds consistency", "It eliminates risk completely", "It works only for large incomes"],
+            correctIndex: 1
+        },
+        {
+            question: "If you start later, what is often required to hit the same goal?",
+            options: ["Lower monthly contributions", "Less total money invested", "Higher catch-up contributions or a larger lump sum", "No behavior change at all"],
+            correctIndex: 2
+        }
+    ],
+
+    // Module: Roth IRA Mastery
+    'lesson-roth-1': [
+        {
+            question: "What is the core tax structure of a Roth IRA?",
+            options: ["Tax deduction now, taxed withdrawals later", "After-tax contributions, tax-free qualified withdrawals later", "Pre-tax contributions only, penalty-free anytime", "No taxes ever under any condition"],
+            correctIndex: 1
+        },
+        {
+            question: "Which statement is true about required minimum distributions (RMDs) for original Roth IRA owners?",
+            options: ["RMDs begin at age 59.5", "RMDs begin at age 65", "No lifetime RMDs for the original owner", "RMDs are required every year after first contribution"],
+            correctIndex: 2
+        },
+        {
+            question: "Roth IRAs are often most attractive when:",
+            options: ["You expect lower future tax rates and lower future income", "You expect higher future tax rates or higher future income", "You never plan to retire", "You only invest in cash"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-roth-2': [
+        {
+            question: "What can reduce or eliminate direct Roth IRA contribution eligibility?",
+            options: ["Owning ETFs", "Income-based phaseout limits", "Having a checking account", "Being under age 40"],
+            correctIndex: 1
+        },
+        {
+            question: "What is a common two-step Backdoor Roth approach?",
+            options: ["Contribute directly to Roth, then move to 401k", "Contribute to Traditional IRA, then convert to Roth IRA", "Sell stocks, then buy CDs", "Open an HSA, then convert it to Roth"],
+            correctIndex: 1
+        },
+        {
+            question: "Why must high-income investors watch the pro-rata rule?",
+            options: ["It controls stock market returns", "It can create unexpected taxes when converting if other pre-tax IRA balances exist", "It eliminates contribution limits", "It guarantees tax-free conversions"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-roth-3': [
+        {
+            question: "A Roth IRA is best described as:",
+            options: ["A stock market prediction tool", "An account wrapper that holds investments", "A guaranteed bond product", "A type of checking account"],
+            correctIndex: 1
+        },
+        {
+            question: "Which is generally a sound long-term Roth IRA approach?",
+            options: ["Concentrate in one stock", "Use diversified low-cost funds and rebalance periodically", "Only hold cash forever", "Trade options weekly"],
+            correctIndex: 1
+        },
+        {
+            question: "What behavior most improves Roth outcomes over decades?",
+            options: ["Trying to time every market move", "Contributing consistently and staying invested", "Withdrawing at every downturn", "Changing strategy every month"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-roth-4': [
+        {
+            question: "Roth IRA withdrawal ordering generally starts with:",
+            options: ["Earnings", "Contributions", "Employer match", "Bond interest"],
+            correctIndex: 1
+        },
+        {
+            question: "Why is good record-keeping important for Roth contributions and conversions?",
+            options: ["To predict interest rates", "To avoid confusion about tax/penalty treatment", "To increase contribution limits", "To skip tax filing entirely"],
+            correctIndex: 1
+        },
+        {
+            question: "Which sequence is commonly recommended for many savers?",
+            options: ["Roth IRA first, ignore employer match", "401k match -> HSA (if eligible) -> Roth IRA", "Credit card debt first, then nothing else", "Treasury bills only"],
+            correctIndex: 1
+        }
+    ],
+
+    // Module: 401(k) Master Plan
+    'lesson-401k-1': [
+        {
+            question: "What is a 401(k)?",
+            options: ["A personal checking account", "An employer-sponsored retirement account", "A government bond", "A credit score model"],
+            correctIndex: 1
+        },
+        {
+            question: "Which statement best describes a Traditional 401(k)?",
+            options: ["After-tax contributions and tax-free qualified withdrawals", "Pre-tax contributions with taxes paid at withdrawal", "No taxes at contribution or withdrawal", "Only employer contributes"],
+            correctIndex: 1
+        },
+        {
+            question: "Why does starting contributions earlier usually help?",
+            options: ["It lowers your salary", "It gives compounding more time", "It avoids all investment risk", "It removes all taxes forever"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-401k-2': [
+        {
+            question: "If a company matches 50% up to 6% of salary, contributing 6% usually gets you:",
+            options: ["An extra 6% from employer", "An extra 3% from employer", "No employer contribution", "A one-time bonus only"],
+            correctIndex: 1
+        },
+        {
+            question: "Contributing below your plan's match cap usually means:",
+            options: ["Higher tax deductions", "You are leaving compensation on the table", "You are guaranteed higher returns", "Your account gets locked"],
+            correctIndex: 1
+        },
+        {
+            question: "What does the simulator primarily show?",
+            options: ["How to day-trade inside a 401(k)", "The long-term wealth gap with vs. without employer match", "Your exact future Social Security check", "How to avoid all market losses"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-401k-3': [
+        {
+            question: "What is a common first priority in retirement saving?",
+            options: ["Max taxable brokerage first", "Contribute enough to get full 401(k) match", "Hold all money in cash forever", "Wait until age 50 to begin"],
+            correctIndex: 1
+        },
+        {
+            question: "A practical long-term target for many workers is roughly:",
+            options: ["1-2% retirement savings", "10-15% total retirement savings, then higher over time", "100% of income to retirement", "Only save in years markets go up"],
+            correctIndex: 1
+        },
+        {
+            question: "Which is a common 401(k) mistake?",
+            options: ["Using low-cost diversified funds", "Ignoring fees and staying below full match", "Increasing contributions with raises", "Staying consistent during volatility"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-401k-4': [
+        {
+            question: "A target-date fund is often used because it:",
+            options: ["Guarantees returns", "Automatically adjusts allocation over time", "Avoids all stock exposure", "Has no fees ever"],
+            correctIndex: 1
+        },
+        {
+            question: "Why do expense ratios matter?",
+            options: ["They are unrelated to returns", "Higher fees can significantly reduce long-term growth", "They only affect bonds", "They only matter for day traders"],
+            correctIndex: 1
+        },
+        {
+            question: "What is rebalancing?",
+            options: ["Borrowing against your 401(k)", "Bringing portfolio weights back to target allocation", "Selling everything during downturns", "Switching to cash every month"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-401k-5': [
+        {
+            question: "Which money in a 401(k) is always yours immediately?",
+            options: ["Only employer match", "Your own contributions", "None until age 59.5", "Only profits from bonds"],
+            correctIndex: 1
+        },
+        {
+            question: "What does vesting usually apply to?",
+            options: ["Your own payroll contributions", "Employer contributions", "Tax forms", "Stock market indexes"],
+            correctIndex: 1
+        },
+        {
+            question: "When changing jobs, what is generally safer than cashing out?",
+            options: ["Withdrawing everything for spending", "Rolling funds into a new 401(k) or IRA", "Closing all retirement accounts", "Moving all assets to checking"],
+            correctIndex: 1
+        }
+    ],
 
     // Module 4: Big Purchases: Cars
     'lesson-4-1': [
@@ -177,6 +402,23 @@ export const quizzes = {
             question: "Before making a big purchase, you should ask:",
             options: ["What's the best use of this money?", "What's the trendiest option?", "What will impress my friends?", "What color is best?"],
             correctIndex: 0
+        }
+    ],
+    'lesson-4-3': [
+        {
+            question: "What is the common sales tactic in auto financing discussed in this lesson?",
+            options: ["Raise your down payment after signing", "Lower monthly payment by extending loan term", "Remove all interest charges", "Offer unlimited free maintenance"],
+            correctIndex: 1
+        },
+        {
+            question: "When comparing loan offers, which metric is most often hidden when people focus only on monthly payment?",
+            options: ["Vehicle color options", "Dealer business hours", "Total interest and total paid", "Registration state"],
+            correctIndex: 2
+        },
+        {
+            question: "If the payment is still too high, what is usually better than stretching to a much longer term?",
+            options: ["Increase the purchase price", "Lower the purchase price", "Ignore the APR", "Add more optional products to the loan"],
+            correctIndex: 1
         }
     ],
 
@@ -302,6 +544,23 @@ export const quizzes = {
             correctIndex: 2
         }
     ],
+    'lesson-6-4': [
+        {
+            question: "Why is paying only the minimum on a high-APR credit card risky?",
+            options: ["It always hurts your credit score immediately", "Most of the payment can go to interest, slowing balance payoff", "It cancels your card rewards automatically", "It removes all late fees"],
+            correctIndex: 1
+        },
+        {
+            question: "What is a key risk of using multiple BNPL plans at once?",
+            options: ["Your paycheck always increases", "Small payments can stack and strain monthly cash flow", "Interest rates become fixed forever", "Your rent is automatically reduced"],
+            correctIndex: 1
+        },
+        {
+            question: "What is a strong first step to escape the credit card + BNPL trap?",
+            options: ["Open more cards for flexibility", "Stop tracking due dates", "List all balances/APRs/due dates and stop new BNPL purchases", "Pay only whichever bill has the smallest minimum"],
+            correctIndex: 2
+        }
+    ],
 
     // Module 7: Investing 201
     'lesson-7-1': [
@@ -389,6 +648,40 @@ export const quizzes = {
             question: "Which type of bond is considered the safest?",
             options: ["Corporate bonds", "Junk bonds", "Government bonds (Treasuries)", "Meme bonds"],
             correctIndex: 2
+        }
+    ],
+    'lesson-8-3': [
+        {
+            question: "Why compare S&P 500 returns in gold terms as well as dollar terms?",
+            options: ["Because gold always outperforms stocks", "To view performance in a different denominator, not only nominal dollars", "Because dollar prices are always wrong", "To avoid tracking inflation"],
+            correctIndex: 1
+        },
+        {
+            question: "What does a long-term decline in dollar purchasing-power index suggest?",
+            options: ["Idle cash buys more over time", "Inflation has eroded cash purchasing power", "Stocks become risk-free", "Imports always get cheaper"],
+            correctIndex: 1
+        },
+        {
+            question: "A relatively strong (high-value) currency typically does what?",
+            options: ["Makes exports more competitive automatically", "Makes imports cheaper but can pressure exporters", "Eliminates inflation permanently", "Guarantees higher GDP growth"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-8-4': [
+        {
+            question: "What does 'export-first' generally mean in the context of China's rise?",
+            options: ["Growth led primarily by foreign demand and manufactured exports", "Growth led mostly by tourism only", "No role for manufacturing", "Avoiding global trade"],
+            correctIndex: 0
+        },
+        {
+            question: "Compared with U.S. consumers, China's household savings behavior is typically:",
+            options: ["Much lower", "About the same", "Higher", "Always zero"],
+            correctIndex: 2
+        },
+        {
+            question: "A key tradeoff of an export-first model is:",
+            options: ["Less dependence on external demand", "Potential vulnerability when global demand slows", "No need for domestic investment", "Guaranteed higher wages every year"],
+            correctIndex: 1
         }
     ],
 
@@ -566,6 +859,23 @@ export const quizzes = {
             correctIndex: 1
         }
     ],
+    'lesson-11-5': [
+        {
+            question: "Which home type usually has HIGHER HOA fees but lower direct exterior maintenance responsibility for the owner?",
+            options: ["Condo", "Townhouse", "Single-family with no HOA", "All are always equal"],
+            correctIndex: 0
+        },
+        {
+            question: "Which statement is most accurate about monthly homeownership costs?",
+            options: ["Mortgage principal+interest is the only cost that matters", "Taxes, insurance, repairs, and HOA can rival or exceed principal+interest in some markets", "HOA dues are optional after closing", "Property taxes are the same in every U.S. market"],
+            correctIndex: 1
+        },
+        {
+            question: "Why do property markets differ across the U.S.?",
+            options: ["Only because mortgage rates are different", "Only because of home size", "Because prices, taxes, insurance risk, and HOA structures vary by region", "They do not differ much in practice"],
+            correctIndex: 2
+        }
+    ],
 
     // Module 12: Taxes
     'lesson-12-1': [
@@ -634,6 +944,23 @@ export const quizzes = {
             question: "An employer 401k match is best described as:",
             options: ["A loan", "Free money", "A tax penalty", "An insurance benefit"],
             correctIndex: 1
+        }
+    ],
+    'lesson-12-5': [
+        {
+            question: "What is the core reason HSAs are considered powerful wealth-building tools?",
+            options: ["They guarantee stock market returns", "They offer triple tax advantage", "They have unlimited contributions", "They replace health insurance"],
+            correctIndex: 1
+        },
+        {
+            question: "Which strategy maximizes long-term HSA compounding for many people?",
+            options: ["Spend all HSA dollars immediately", "Keep HSA funds in cash forever", "Pay medical expenses out-of-pocket, keep receipts, and let HSA stay invested", "Withdraw HSA funds for non-medical spending before 65"],
+            correctIndex: 2
+        },
+        {
+            question: "Which is a common HSA pitfall?",
+            options: ["Tracking medical receipts", "Contributing through payroll", "Using funds for non-qualified expenses before age 65", "Investing a portion for long-term growth"],
+            correctIndex: 2
         }
     ],
 
@@ -844,6 +1171,93 @@ export const quizzes = {
             question: "How long should you give a new side income before judging results?",
             options: ["1 week", "1 month", "6 months", "5 years"],
             correctIndex: 2
+        }
+    ],
+
+    // Module 16: The Fed, Rates, and the Real Economy
+    'lesson-16-1': [
+        {
+            question: "What are the Fed's two primary goals under the dual mandate?",
+            options: ["Strong dollar and low taxes", "Maximum employment and stable prices", "High stock prices and low unemployment", "Balanced budget and trade surplus"],
+            correctIndex: 1
+        },
+        {
+            question: "Which rate does the Fed target most directly?",
+            options: ["30-year mortgage rate", "Credit card APR", "Federal funds rate", "10-year Treasury yield"],
+            correctIndex: 2
+        },
+        {
+            question: "A Fed rate hike usually does what first?",
+            options: ["Immediately lowers all consumer rates", "Makes short-term borrowing more expensive", "Eliminates inflation instantly", "Raises wages automatically"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-16-2': [
+        {
+            question: "Which debt product usually reprices the fastest when rates move?",
+            options: ["Fixed-rate mortgage", "Auto lease residual value", "Variable APR credit card balance", "Paid-off car loan"],
+            correctIndex: 2
+        },
+        {
+            question: "What is a key risk of an adjustable-rate mortgage (ARM)?",
+            options: ["Your loan balance automatically disappears", "Monthly payment can reset higher later", "You cannot refinance ever", "Your rate is fixed forever"],
+            correctIndex: 1
+        },
+        {
+            question: "When comparing refinance offers, what should you compare together?",
+            options: ["Rate only", "Rate, points, and fees", "Loan term only", "Lender logo and online reviews only"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-16-3': [
+        {
+            question: "Treasury bill yields are most closely linked to which part of the market?",
+            options: ["Short-term rate expectations", "Home prices only", "Corporate dividends", "Used car prices"],
+            correctIndex: 0
+        },
+        {
+            question: "An inverted yield curve means:",
+            options: ["Long-term yields are higher than short-term yields", "Short-term yields are higher than long-term yields", "All Treasury yields are zero", "Only T-bills have positive yields"],
+            correctIndex: 1
+        },
+        {
+            question: "When government debt rolls over at higher rates, federal interest expense generally:",
+            options: ["Falls", "Stays fixed forever", "Rises", "Becomes irrelevant"],
+            correctIndex: 2
+        }
+    ],
+    'lesson-16-4': [
+        {
+            question: "In a rising-rate cycle, what is usually the highest-priority household action?",
+            options: ["Increase variable-rate debt", "Pay down variable-rate balances", "Ignore your budget", "Finance more discretionary purchases"],
+            correctIndex: 1
+        },
+        {
+            question: "Which formula helps decide if refinancing is worth it?",
+            options: ["APR x income", "Break-even months = total refi costs / monthly savings", "Savings / current balance", "Rate spread x 12"],
+            correctIndex: 1
+        },
+        {
+            question: "A practical rate-cycle dashboard should include:",
+            options: ["Balance, fixed/variable type, APR, and monthly payment", "Only your credit score", "Only your income", "Only your bank account balance"],
+            correctIndex: 0
+        }
+    ],
+    'lesson-16-5': [
+        {
+            question: "According to the lesson, U.S. overspending is best described as:",
+            options: ["Only one party's issue", "A bipartisan, multi-decade pattern", "A problem that started this year only", "Completely unrelated to deficits"],
+            correctIndex: 1
+        },
+        {
+            question: "Which is generally considered the most severe outcome among the three scenarios discussed?",
+            options: ["Growing GDP faster than debt", "Lower borrowing costs", "Default on debt obligations", "Maintaining stable tax revenue"],
+            correctIndex: 2
+        },
+        {
+            question: "Why does federal debt matter for households?",
+            options: ["It only affects foreign governments", "It can influence rates, inflation pressure, taxes, and policy choices", "It determines your exact paycheck next week", "It has no connection to personal finance"],
+            correctIndex: 1
         }
     ]
 };

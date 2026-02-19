@@ -38,6 +38,16 @@ A gamified, interactive web application designed to teach personal finance conce
     npm run dev
     ```
 
+### Environment Variables
+
+Copy `.env.example` to `.env` and fill in:
+
+- Supabase keys (`VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`)
+- Firebase web config values for Analytics (`VITE_FIREBASE_*`)
+
+Analytics emits:
+- `goal_completion` when a lesson is newly completed
+
 ## Curriculum Overview
 
 1.  **Money Mindset**: Psychology of saving.

@@ -2,6 +2,7 @@ import { curriculum } from '../data/curriculum';
 import { useProgress } from '../context/ProgressContext';
 import { useAuth } from '../context/AuthContext';
 import { Link } from 'react-router-dom';
+import SEO from './SEO';
 
 export default function Map() {
     const { isLessonCompleted, xp, getCurrentLevel, getNextLevel, getProgressToNextLevel, getQuizScore, streakCount } = useProgress();
@@ -18,6 +19,12 @@ export default function Map() {
 
     return (
         <div className="container" style={{ padding: '2rem 1rem' }}>
+            <SEO
+                title="Learning Map"
+                description="Track your Free Finance Camp progress."
+                path="/map"
+                noindex={true}
+            />
             {/* User Stats Bar */}
             <div style={{
                 backgroundColor: 'var(--bg-card)',

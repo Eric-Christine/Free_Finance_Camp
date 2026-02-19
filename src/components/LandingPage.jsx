@@ -1,10 +1,71 @@
 import { Link } from 'react-router-dom';
 import CompoundInterest from './interactive/CompoundInterest';
 import { curriculum } from '../data/curriculum';
+import SEO from './SEO';
+import SiteFooter from './SiteFooter';
 
 export default function LandingPage() {
+    const jsonLd = [
+        {
+            '@context': 'https://schema.org',
+            '@type': 'EducationalOrganization',
+            name: 'Free Finance Camp',
+            url: 'https://freefinancecamp.com',
+            description: 'Free and practical financial education with interactive lessons and simulations.',
+            educationalUse: 'self-study',
+            audience: {
+                '@type': 'EducationalAudience',
+                educationalRole: 'student'
+            }
+        },
+        {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+                {
+                    '@type': 'Question',
+                    name: 'Is Free Finance Camp really free?',
+                    acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Yes. Lessons, guides, and tools are available at no cost.'
+                    }
+                },
+                {
+                    '@type': 'Question',
+                    name: 'Do I need finance experience before starting?',
+                    acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'No. The curriculum starts with fundamentals and builds progressively.'
+                    }
+                },
+                {
+                    '@type': 'Question',
+                    name: 'What topics are covered?',
+                    acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Budgeting, debt, investing, home buying, inflation, and macroeconomics.'
+                    }
+                },
+                {
+                    '@type': 'Question',
+                    name: 'How do I ask a question or suggest a lesson?',
+                    acceptedAnswer: {
+                        '@type': 'Answer',
+                        text: 'Use the Questions / Comments email link in the site footer.'
+                    }
+                }
+            ]
+        }
+    ];
+
     return (
         <div style={{ minHeight: '100vh', backgroundColor: 'var(--bg-main)' }}>
+            <SEO
+                title="Free Financial Literacy Courses"
+                description="Learn budgeting, investing, debt management, and macroeconomics with free interactive lessons."
+                path="/"
+                jsonLd={jsonLd}
+            />
             {/* Hero Section */}
             <section style={{
                 minHeight: '80vh',
@@ -84,6 +145,25 @@ export default function LandingPage() {
                     >
                         View Curriculum
                     </a>
+                    <Link
+                        to="/lessons"
+                        style={{
+                            padding: '0.9rem 2.2rem',
+                            fontSize: '1.05rem',
+                            fontWeight: '600',
+                            color: 'var(--text-main)',
+                            textDecoration: 'none',
+                            border: '1px solid var(--border)',
+                            borderRadius: 'var(--radius)'
+                        }}
+                    >
+                        Read Free Guides
+                    </Link>
+                </div>
+                <div style={{ marginTop: '0.9rem' }}>
+                    <Link to="/resources" style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
+                        Trusted Resources (Gov + Investopedia)
+                    </Link>
                 </div>
 
                 {/* Live Widget Preview */}
@@ -223,6 +303,32 @@ export default function LandingPage() {
                 </div>
             </section>
 
+            <section style={{ padding: '5rem 2rem', borderTop: '1px solid var(--border)' }}>
+                <div style={{ maxWidth: '850px', margin: '0 auto' }}>
+                    <h2 style={{ fontSize: '2rem', marginBottom: '1rem', color: 'var(--text-main)', fontWeight: '700' }}>
+                        Frequently Asked Questions
+                    </h2>
+                    <div style={{ display: 'grid', gap: '1rem' }}>
+                        <FaqItem
+                            question="Is Free Finance Camp really free?"
+                            answer="Yes. Lessons, guides, and tools are available at no cost."
+                        />
+                        <FaqItem
+                            question="Do I need finance experience before starting?"
+                            answer="No. The curriculum starts with fundamentals and builds progressively."
+                        />
+                        <FaqItem
+                            question="What topics are covered?"
+                            answer="Budgeting, debt, investing, home buying, inflation, and macroeconomics."
+                        />
+                        <FaqItem
+                            question="How do I ask a question or suggest a lesson?"
+                            answer="Use the Questions / Comments email link in the footer."
+                        />
+                    </div>
+                </div>
+            </section>
+
             {/* CTA Section */}
             <section style={{
                 padding: '6rem 2rem',
@@ -245,23 +351,7 @@ export default function LandingPage() {
                 </Link>
             </section>
 
-            {/* Footer */}
-            <footer style={{
-                padding: '3rem 2rem',
-                textAlign: 'center',
-                color: 'var(--text-muted)',
-                fontSize: '0.9rem',
-                borderTop: '1px solid var(--border)'
-            }}>
-                <div style={{ marginBottom: '1rem' }}>
-                    © 2025 Free Finance Camp · An Open Educational Project
-                </div>
-                <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', fontSize: '0.8rem' }}>
-                    <Link to="/about" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>About the Mission</Link>
-                    <Link to="/privacy" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Privacy Policy</Link>
-                    <Link to="/curriculum" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Full Syllabus</Link>
-                </div>
-            </footer>
+            <SiteFooter />
         </div>
     );
 }
@@ -338,3 +428,16 @@ function ModulePreview({ num, title, desc }) {
     );
 }
 
+function FaqItem({ question, answer }) {
+    return (
+        <article style={{
+            border: '1px solid var(--border)',
+            borderRadius: '12px',
+            padding: '1rem 1.1rem',
+            backgroundColor: 'var(--bg-card)'
+        }}>
+            <h3 style={{ marginBottom: '0.4rem', fontSize: '1.05rem' }}>{question}</h3>
+            <p style={{ color: 'var(--text-muted)', margin: 0 }}>{answer}</p>
+        </article>
+    );
+}

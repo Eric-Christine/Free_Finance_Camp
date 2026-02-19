@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useAuth } from '../../context/AuthContext';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import SEO from '../SEO';
 
 export default function Login() {
     const [email, setEmail] = useState('');
@@ -56,6 +57,12 @@ export default function Login() {
             minHeight: '100vh',
             padding: '1rem'
         }}>
+            <SEO
+                title="Sign In"
+                description="Sign in to Free Finance Camp to save your lesson progress."
+                path="/login"
+                noindex={true}
+            />
             <div style={{
                 backgroundColor: 'var(--bg-card)',
                 padding: '2rem',
@@ -64,6 +71,9 @@ export default function Login() {
                 maxWidth: '400px',
                 boxShadow: 'var(--shadow)'
             }}>
+                <Link to="/" style={{ color: 'var(--text-muted)', fontSize: '0.85rem', textDecoration: 'none' }}>
+                    ← Back to Home
+                </Link>
                 <h1 style={{ marginBottom: '1.5rem', textAlign: 'center', color: 'var(--primary)' }}>
                     Free Finance Camp
                 </h1>

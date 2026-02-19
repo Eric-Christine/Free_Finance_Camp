@@ -7,7 +7,16 @@ import BudgetAllocator from './interactive/BudgetAllocator';
 import CarCalculator from './interactive/CarCalculator';
 import InsuranceCompare from './interactive/InsuranceCompare';
 import MarketTimer from './interactive/MarketTimer';
+import EmployerMatchCalculator from './interactive/EmployerMatchCalculator';
+import HomeBuyingCostExplorer from './interactive/HomeBuyingCostExplorer';
+import LoanTermTrapCalculator from './interactive/LoanTermTrapCalculator';
+import WageInflationGapChart from './interactive/WageInflationGapChart';
+import USDebtCrisisChart from './interactive/USDebtCrisisChart';
+import Sp500DollarVsGoldChart from './interactive/Sp500DollarVsGoldChart';
+import ChinaEconomicRiseChart from './interactive/ChinaEconomicRiseChart';
+import MoneyMultiplier from './interactive/MoneyMultiplier';
 import Quiz from './Quiz';
+import SEO from './SEO';
 
 // Map of widget names to components
 const WIDGETS = {
@@ -15,8 +24,50 @@ const WIDGETS = {
   BudgetAllocator: BudgetAllocator,
   CarCalculator: CarCalculator,
   InsuranceCompare: InsuranceCompare,
-  MarketTimer: MarketTimer
+  MarketTimer: MarketTimer,
+  EmployerMatchCalculator: EmployerMatchCalculator,
+  HomeBuyingCostExplorer: HomeBuyingCostExplorer,
+  LoanTermTrapCalculator: LoanTermTrapCalculator,
+  WageInflationGapChart: WageInflationGapChart,
+  USDebtCrisisChart: USDebtCrisisChart,
+  Sp500DollarVsGoldChart: Sp500DollarVsGoldChart,
+  ChinaEconomicRiseChart: ChinaEconomicRiseChart,
+  MoneyMultiplier: MoneyMultiplier
 };
+
+const STORY_PROFILES = [
+  { character: 'Maya', context: 'a first-generation college grad' },
+  { character: 'Andre', context: 'a new parent balancing bills and career goals' },
+  { character: 'Janelle', context: 'a nurse working rotating shifts' },
+  { character: 'Luis', context: 'an apprentice trying to build savings early' },
+  { character: 'Nia', context: 'a freelancer with variable monthly income' },
+  { character: 'Ethan', context: 'a new manager learning long-term planning' }
+];
+
+function stableHash(input) {
+  let hash = 0;
+  for (let i = 0; i < input.length; i += 1) {
+    hash = ((hash << 5) - hash) + input.charCodeAt(i);
+    hash |= 0;
+  }
+  return Math.abs(hash);
+}
+
+function buildAutoStory(lesson) {
+  const profile = STORY_PROFILES[stableHash(lesson.id) % STORY_PROFILES.length];
+  return {
+    character: profile.character,
+    scenario: `${profile.character} is ${profile.context}. In this lesson on "${lesson.title}", ${profile.character} has to choose a practical next step instead of reacting short-term. The goal is to make one smart move this week that builds long-term options.`
+  };
+}
+
+function buildActionPrompts(lesson, module) {
+  return [
+    `Pick one decision this week connected to "${lesson.title}".`,
+    `Automate one behavior that supports ${module.title} (transfer, contribution, reminder, or rule).`,
+    'Book a 15-minute money check-in for next week and track what changed.'
+  ];
+}
 
 export default function Lesson() {
   const { lessonId } = useParams();
@@ -54,9 +105,19 @@ export default function Lesson() {
   }
 
   const WidgetComponent = currentLesson.widget ? WIDGETS[currentLesson.widget] : null;
+  const lessonPosition = currentModule.lessons.findIndex(l => l.id === currentLesson.id) + 1;
+  const moduleLessonCount = currentModule.lessons.length;
+  const displayStory = currentLesson.story || buildAutoStory(currentLesson);
+  const actionPrompts = buildActionPrompts(currentLesson, currentModule);
 
   return (
     <div className="lesson-container">
+      <SEO
+        title={currentLesson.title}
+        description={currentLesson.description || `Lesson from ${currentModule.title}.`}
+        path={`/learn/${lessonId}`}
+        noindex={true}
+      />
       {/* Header */}
       <header style={{
         padding: '1rem',
@@ -106,8 +167,26 @@ export default function Lesson() {
             )}
           </div>
 
+          <div style={{
+            backgroundColor: 'rgba(16, 185, 129, 0.1)',
+            border: '1px solid rgba(16, 185, 129, 0.35)',
+            borderRadius: 'var(--radius)',
+            padding: '0.85rem 1rem',
+            marginBottom: '1.25rem'
+          }}>
+            <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', marginBottom: '0.25rem' }}>
+              Module Context
+            </div>
+            <div style={{ fontWeight: '600', marginBottom: '0.3rem' }}>
+              Lesson {lessonPosition} of {moduleLessonCount} in {currentModule.title}
+            </div>
+            <p style={{ fontSize: '0.86rem', color: 'var(--text-light)', margin: 0 }}>
+              {currentModule.description}
+            </p>
+          </div>
+
           {/* Story Section */}
-          {currentLesson.story && (
+          {displayStory && (
             <div style={{
               backgroundColor: 'rgba(59, 130, 246, 0.1)',
               border: '1px solid var(--secondary)',
@@ -116,10 +195,10 @@ export default function Lesson() {
               marginBottom: '1.5rem'
             }}>
               <div style={{ fontWeight: 'bold', color: 'var(--secondary)', marginBottom: '0.5rem' }}>
-                📖 Story: Meet {currentLesson.story.character}
+                📖 Story: Meet {displayStory.character}
               </div>
               <p style={{ fontSize: '0.9rem', color: 'var(--text-light)' }}>
-                {currentLesson.story.scenario}
+                {displayStory.scenario}
               </p>
             </div>
           )}
@@ -241,7 +320,23 @@ export default function Lesson() {
 
           {/* Quiz Section - only show on last screen */}
           {(!currentLesson.screens || currentScreen >= currentLesson.screens.length - 1) && (
-            <Quiz lessonId={currentLesson.id} xpReward={currentLesson.xpReward || 10} />
+            <>
+              <div style={{
+                backgroundColor: 'rgba(245, 158, 11, 0.12)',
+                border: '1px solid rgba(245, 158, 11, 0.35)',
+                borderRadius: 'var(--radius)',
+                padding: '1rem',
+                marginTop: '1.2rem'
+              }}>
+                <h3 style={{ marginBottom: '0.6rem', fontSize: '1rem' }}>Apply This Lesson This Week</h3>
+                {actionPrompts.map((prompt, idx) => (
+                  <p key={idx} style={{ marginBottom: idx === actionPrompts.length - 1 ? 0 : '0.55rem', fontSize: '0.87rem' }}>
+                    {idx + 1}. {prompt}
+                  </p>
+                ))}
+              </div>
+              <Quiz lessonId={currentLesson.id} xpReward={currentLesson.xpReward || 10} />
+            </>
           )}
 
           {/* Navigation to next lesson */}
