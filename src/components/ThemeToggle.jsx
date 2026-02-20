@@ -32,10 +32,10 @@ export default function ThemeToggle() {
         } catch { /* ignore */ }
 
         if (!posRef.current) posRef.current = getDefaultPos();
-        applyPos(posRef.current);
+        applyPos(posRef.current, true);
     }, []);
 
-    const applyPos = (pos) => {
+    const applyPos = (pos, reveal = false) => {
         if (!btnRef.current) return;
         const maxX = window.innerWidth - BTN_SIZE;
         const maxY = window.innerHeight - BTN_SIZE;
@@ -43,6 +43,7 @@ export default function ThemeToggle() {
         const y = clamp(pos.y, 0, maxY);
         btnRef.current.style.left = `${x}px`;
         btnRef.current.style.top = `${y}px`;
+        if (reveal) btnRef.current.style.opacity = '1';
     };
 
     const savePos = (pos) => {

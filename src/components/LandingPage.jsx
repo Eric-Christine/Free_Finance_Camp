@@ -8,6 +8,17 @@ export default function LandingPage() {
     const jsonLd = [
         {
             '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            name: 'Free Finance Camp',
+            url: 'https://freefinancecamp.com/',
+            potentialAction: {
+                '@type': 'SearchAction',
+                target: 'https://freefinancecamp.com/lessons?q={search_term_string}',
+                'query-input': 'required name=search_term_string'
+            }
+        },
+        {
+            '@context': 'https://schema.org',
             '@type': 'EducationalOrganization',
             name: 'Free Finance Camp',
             url: 'https://freefinancecamp.com',

@@ -32,14 +32,6 @@ function buildAutoStory(lesson) {
   };
 }
 
-function buildActionPrompts(lesson, module) {
-  return [
-    `Pick one decision this week connected to "${lesson.title}".`,
-    `Automate one behavior that supports ${module.title} (transfer, contribution, reminder, or rule).`,
-    'Book a 15-minute money check-in for next week and track what changed.'
-  ];
-}
-
 export default function Lesson() {
   const { lessonId } = useParams();
   const { isLessonCompleted, xp } = useProgress();
@@ -79,7 +71,6 @@ export default function Lesson() {
   const lessonPosition = currentModule.lessons.findIndex(l => l.id === currentLesson.id) + 1;
   const moduleLessonCount = currentModule.lessons.length;
   const displayStory = currentLesson.story || buildAutoStory(currentLesson);
-  const actionPrompts = buildActionPrompts(currentLesson, currentModule);
 
   return (
     <div className="lesson-container">
@@ -293,20 +284,6 @@ export default function Lesson() {
           {/* Quiz Section - only show on last screen */}
           {(!currentLesson.screens || currentScreen >= currentLesson.screens.length - 1) && (
             <>
-              <div style={{
-                backgroundColor: 'rgba(245, 158, 11, 0.12)',
-                border: '1px solid rgba(245, 158, 11, 0.35)',
-                borderRadius: 'var(--radius)',
-                padding: '1rem',
-                marginTop: '1.2rem'
-              }}>
-                <h3 style={{ marginBottom: '0.6rem', fontSize: '1rem' }}>Apply This Lesson This Week</h3>
-                {actionPrompts.map((prompt, idx) => (
-                  <p key={idx} style={{ marginBottom: idx === actionPrompts.length - 1 ? 0 : '0.55rem', fontSize: '0.87rem' }}>
-                    {idx + 1}. {prompt}
-                  </p>
-                ))}
-              </div>
               <Quiz lessonId={currentLesson.id} xpReward={currentLesson.xpReward || 10} />
             </>
           )}

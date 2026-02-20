@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import SEO from './SEO';
 import SiteFooter from './SiteFooter';
 import { curriculum } from '../data/curriculum';
@@ -17,7 +16,8 @@ function flattenLessons() {
 }
 
 export default function LessonsHubPage() {
-    const [searchQuery, setSearchQuery] = useState('');
+    const [searchParams, setSearchParams] = useSearchParams();
+    const searchQuery = searchParams.get('q') || '';
     const lessons = flattenLessons();
     const jsonLd = {
         '@context': 'https://schema.org',
@@ -107,7 +107,16 @@ export default function LessonsHubPage() {
                     type="text"
                     placeholder="Search for a lesson, topic, or keyword..."
                     value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
+                    onChange={(e) => {
+                        const nextQuery = e.target.value;
+                        const nextParams = new URLSearchParams(searchParams);
+                        if (nextQuery.trim()) {
+                            nextParams.set('q', nextQuery);
+                        } else {
+                            nextParams.delete('q');
+                        }
+                        setSearchParams(nextParams, { replace: true });
+                    }}
                     style={{
                         width: '100%',
                         padding: '0.9rem 1.25rem',
