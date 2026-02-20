@@ -25,11 +25,6 @@ export function CompoundInterestCore({ compact = false }) {
   useEffect(() => {
     const newData = [];
 
-    // Calculate absolute max possible y-value for current years/amount so Y-scale doesn't jump
-    // when dragging the return rate slider. (Max slider value is 12%)
-    const maxStockMonthlyRate = 12 / 100 / 12;
-    let maxPossibleStock = 0;
-
     // Monthly rates
     const stockMonthlyRate = stockRate / 100 / 12;
     const hysaMonthlyRate = 0.01 / 12;
@@ -52,7 +47,6 @@ export function CompoundInterestCore({ compact = false }) {
         totalCash = (totalCash + monthlyAmount) * (1 + inflationMonthlyRate);
         totalHysa = (totalHysa + monthlyAmount) * (1 + hysaMonthlyRate);
         totalStock = (totalStock + monthlyAmount) * (1 + stockMonthlyRate);
-        maxPossibleStock = (maxPossibleStock + monthlyAmount) * (1 + maxStockMonthlyRate);
       }
 
       newData.push({
@@ -64,28 +58,23 @@ export function CompoundInterestCore({ compact = false }) {
     }
     setData(newData);
 
-    // Round the max possible stock up to a nice clean boundary
-    const rawMax = maxPossibleStock;
-    let cleanMax = 100000;
-    if (rawMax > 10000000) cleanMax = Math.ceil(rawMax / 5000000) * 5000000;
-    else if (rawMax > 5000000) cleanMax = Math.ceil(rawMax / 1000000) * 1000000;
-    else if (rawMax > 2000000) cleanMax = Math.ceil(rawMax / 500000) * 500000;
-    else if (rawMax > 1000000) cleanMax = Math.ceil(rawMax / 250000) * 250000;
-    else if (rawMax > 500000) cleanMax = Math.ceil(rawMax / 100000) * 100000;
-    else if (rawMax > 100000) cleanMax = Math.ceil(rawMax / 50000) * 50000;
-    else cleanMax = Math.ceil(rawMax / 25000) * 25000;
+    // Make the upper bound exactly the final invested amount
+    const cleanMax = totalStock;
 
     setMaxY(cleanMax);
 
-    // Generate 5 even ticks
-    const step = cleanMax / 4;
-    setYTicks([0, step, step * 2, step * 3, cleanMax]);
+    // Generate 4 even ticks so at least 3 labeled points exist between 0 and max
+    const step = cleanMax / 3;
+    setYTicks([0, step, step * 2, cleanMax]);
   }, [monthlyAmount, stockRate, years]);
+
+  const monthlyProgress = ((monthlyAmount - 50) / (2000 - 50)) * 100;
+  const yearsProgress = ((years - 5) / (50 - 5)) * 100;
 
   return (
     <div style={{
       backgroundColor: 'var(--bg-card)',
-      padding: compact ? '1rem' : '1.5rem',
+      padding: compact ? '1.2rem' : '2rem',
       borderRadius: 'var(--radius)',
       border: '1px solid var(--border)',
       height: '100%',
@@ -95,10 +84,22 @@ export function CompoundInterestCore({ compact = false }) {
       overflowY: compact ? 'hidden' : 'auto',
       overflowX: 'hidden'
     }}>
-      <h3 style={{ marginBottom: compact ? '0.7rem' : '1rem', color: 'var(--primary)' }}>Purchasing Power with Monthly Saving</h3>
+      <h3 style={{
+        marginBottom: compact ? '1rem' : '1.5rem',
+        color: 'var(--primary)',
+        fontSize: compact ? '1.2rem' : '1.5rem',
+        fontWeight: '700',
+        letterSpacing: '-0.01em'
+      }}>
+        Purchasing Power with Monthly Saving
+      </h3>
 
       {/* Graph Area */}
-      <div style={{ height: compact ? 'clamp(150px, 23vh, 220px)' : 'clamp(220px, 34vh, 320px)', marginBottom: compact ? '0.9rem' : '1.5rem', minWidth: 0 }}>
+      <div style={{
+        height: compact ? 'clamp(250px, 35vh, 320px)' : 'clamp(350px, 45vh, 480px)',
+        marginBottom: compact ? '1.5rem' : '2rem',
+        minWidth: 0
+      }}>
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart
             data={data}
@@ -114,10 +115,10 @@ export function CompoundInterestCore({ compact = false }) {
             <XAxis
               dataKey="year"
               stroke="var(--text-muted)"
-              tick={{ fill: 'var(--text-muted)', fontSize: 12 }}
+              tick={{ fill: 'var(--text-muted)', fontSize: compact ? 12 : 14 }}
               tickLine={false}
               axisLine={false}
-              label={{ value: 'Years', position: 'insideBottomRight', offset: -5, fill: 'var(--text-muted)' }}
+              label={{ value: 'Years', position: 'insideBottomRight', offset: -10, fill: 'var(--text-muted)', fontSize: compact ? 12 : 14 }}
             />
             <YAxis
               stroke="var(--text-muted)"
@@ -126,10 +127,10 @@ export function CompoundInterestCore({ compact = false }) {
                 if (value >= 1000) return `$${(value / 1000).toFixed(0)}k`;
                 return `$${value}`;
               }}
-              width={60}
+              width={50}
               domain={[0, maxY]}
               ticks={yTicks}
-              tick={{ fill: 'var(--text-muted)', fontSize: 12 }}
+              tick={{ fill: 'var(--text-muted)', fontSize: compact ? 12 : 14 }}
               tickLine={false}
               axisLine={false}
             />
@@ -139,56 +140,80 @@ export function CompoundInterestCore({ compact = false }) {
               formatter={(value) => [`$${value.toLocaleString()}`, '']}
               labelStyle={{ color: 'var(--text-muted)', marginBottom: '4px', fontWeight: '500' }}
             />
-            <Legend verticalAlign="top" iconType="circle" wrapperStyle={{ paddingBottom: '15px' }} />
+            <Legend verticalAlign="top" iconType="circle" wrapperStyle={{ paddingBottom: '20px', fontSize: compact ? '0.9rem' : '1.05rem' }} />
             <Area type="monotone" dataKey="Cash" stroke="#ef4444" fill="none" strokeWidth={2} name="Cash (Inflation -2%)" />
-            <Area type="monotone" dataKey="Savings" stroke="#3b82f6" fill="none" strokeWidth={2} name="High Yield (+1%)" />
+            <Area type="monotone" dataKey="Savings" stroke="#3b82f6" fill="none" strokeWidth={2} name="High Yield Savings (+1%)" />
             <Area type="monotone" dataKey="Invested" stroke="#10b981" fillOpacity={1} fill="url(#colorInvested)" strokeWidth={3} name={`Invested (+${stockRate}%)`} />
           </AreaChart>
         </ResponsiveContainer>
       </div>
 
       {/* Controls */}
-      <div style={{ display: 'grid', gap: compact ? '0.8rem' : '1.25rem', padding: compact ? '0.8rem' : '1rem', backgroundColor: 'rgba(255,255,255,0.03)', borderRadius: 'var(--radius)' }}>
+      <div style={{
+        display: 'grid',
+        gap: compact ? '1.5rem' : '2rem',
+        padding: compact ? '1.2rem' : '1.8rem',
+        backgroundColor: 'rgba(255, 255, 255, 0.04)',
+        borderRadius: 'var(--radius)',
+        border: '1px solid rgba(255, 255, 255, 0.05)'
+      }}>
         <div>
-          <label style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.4rem', fontSize: compact ? '0.8rem' : '0.85rem' }}>
+          <label style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.8rem', fontSize: compact ? '0.9rem' : '1rem', color: 'var(--text-light)' }}>
             <span>Monthly Contribution</span>
-            <span style={{ fontWeight: 'bold' }}>${monthlyAmount.toLocaleString()} / mo</span>
+            <span style={{ fontWeight: '700', color: 'var(--text-main)' }}>${monthlyAmount.toLocaleString()} / mo</span>
           </label>
           <input
             type="range"
+            className="landing-slider"
             min="50"
             max="2000"
             step="50"
             value={monthlyAmount}
             onChange={(e) => setMonthlyAmount(Number(e.target.value))}
-            style={{ width: '100%', accentColor: 'var(--text-main)' }}
+            style={{
+              background: `linear-gradient(to right, white ${monthlyProgress}%, rgba(255, 255, 255, 0.1) ${monthlyProgress}%)`
+            }}
           />
         </div>
 
         <div>
-          <label style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.4rem', fontSize: compact ? '0.8rem' : '0.85rem' }}>
+          <label style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.8rem', fontSize: compact ? '0.9rem' : '1rem', color: 'var(--text-light)' }}>
             <span>Time Horizon</span>
-            <span style={{ fontWeight: 'bold', color: 'var(--secondary)' }}>{years} Years</span>
+            <span style={{ fontWeight: '700', color: 'var(--secondary)' }}>{years} Years</span>
           </label>
           <input
             type="range"
+            className="landing-slider landing-slider-years"
             min="5"
             max="50"
             step="5"
             value={years}
             onChange={(e) => setYears(Number(e.target.value))}
-            style={{ width: '100%', accentColor: 'var(--secondary)' }}
+            style={{
+              background: `linear-gradient(to right, var(--secondary) ${yearsProgress}%, rgba(255, 255, 255, 0.1) ${yearsProgress}%)`
+            }}
           />
         </div>
-
       </div>
 
-      <div style={{ marginTop: compact ? '0.55rem' : '0.75rem', fontSize: compact ? '0.75rem' : '0.85rem', color: 'var(--text-main)', textAlign: 'center', lineHeight: '1.5', display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-        <p style={{ margin: 0, color: 'var(--text-muted)' }}>Save ${monthlyAmount.toLocaleString()}/mo for {years} years:</p>
-        <div style={{ display: 'flex', justifyContent: 'center', gap: compact ? '0.8rem' : '1.5rem', flexWrap: 'wrap' }}>
-          <span style={{ color: '#ef4444' }}>Cash: <strong style={{ color: 'var(--text-main)' }}>${data[years]?.Cash?.toLocaleString()}</strong></span>
-          <span style={{ color: '#3b82f6' }}>HYSA: <strong style={{ color: 'var(--text-main)' }}>${data[years]?.Savings?.toLocaleString()}</strong></span>
-          <span style={{ color: '#10b981' }}>Invested: <strong style={{ color: 'var(--text-main)' }}>${data[years]?.Invested?.toLocaleString()}</strong></span>
+      <div style={{
+        marginTop: compact ? '1rem' : '1.5rem',
+        fontSize: compact ? '0.9rem' : '1rem',
+        textAlign: 'center',
+        lineHeight: '1.6',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '0.5rem'
+      }}>
+        <p style={{ margin: 0, color: 'var(--text-muted)' }}>
+          Save ${monthlyAmount.toLocaleString()}/mo for {years} years.
+          <br />
+          <span style={{ fontSize: '0.9em' }}>Total Contributed: <strong>${(monthlyAmount * 12 * years).toLocaleString()}</strong></span>
+        </p>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: compact ? '1rem' : '1.5rem', flexWrap: 'wrap' }}>
+          <span style={{ color: '#ef4444' }}>Cash: <strong style={{ color: 'var(--text-main)', marginLeft: '4px' }}>${data[years]?.Cash?.toLocaleString()}</strong></span>
+          <span style={{ color: '#3b82f6' }}>HYSA: <strong style={{ color: 'var(--text-main)', marginLeft: '4px' }}>${data[years]?.Savings?.toLocaleString()}</strong></span>
+          <span style={{ color: '#10b981' }}>Invested: <strong style={{ color: 'var(--text-main)', marginLeft: '4px' }}>${data[years]?.Invested?.toLocaleString()}</strong></span>
         </div>
       </div>
     </div>
