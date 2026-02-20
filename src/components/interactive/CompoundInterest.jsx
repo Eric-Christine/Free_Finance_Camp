@@ -14,10 +14,95 @@ export default function CompoundInterest() {
   return <CompoundInterestCore compact={false} />;
 }
 
+const MONTHLY_MIN = 50;
+const MONTHLY_MAX = 2000;
+const YEARS_MIN = 5;
+const YEARS_MAX = 50;
+const COMPOUND_INTEREST_STORAGE_KEY = 'compound-interest-last-graph';
+
+function clamp(value, min, max) {
+  return Math.min(Math.max(value, min), max);
+}
+
+function getDefaultInputs(compact) {
+  return {
+    monthlyAmount: compact ? 350 : 100,
+    years: 30
+  };
+}
+
+function getSavedInputs(compact) {
+  const fallback = getDefaultInputs(compact);
+  if (typeof window === 'undefined') return fallback;
+
+  try {
+    const raw = window.localStorage.getItem(COMPOUND_INTEREST_STORAGE_KEY);
+    if (!raw) return fallback;
+
+    const parsed = JSON.parse(raw);
+    const monthlyAmount = Number(parsed.monthlyAmount);
+    const years = Number(parsed.years);
+
+    if (!Number.isFinite(monthlyAmount) || !Number.isFinite(years)) {
+      return fallback;
+    }
+
+    return {
+      monthlyAmount: clamp(Math.round(monthlyAmount / 50) * 50, MONTHLY_MIN, MONTHLY_MAX),
+      years: clamp(Math.round(years / 5) * 5, YEARS_MIN, YEARS_MAX)
+    };
+  } catch {
+    return fallback;
+  }
+}
+
+function niceStep(rawStep) {
+  if (!Number.isFinite(rawStep) || rawStep <= 0) return 1;
+  const magnitude = 10 ** Math.floor(Math.log10(rawStep));
+  const normalized = rawStep / magnitude;
+
+  if (normalized <= 1.5) return 1 * magnitude;
+  if (normalized <= 3) return 2 * magnitude;
+  if (normalized <= 4) return 2.5 * magnitude;
+  if (normalized <= 7) return 5 * magnitude;
+  return 10 * magnitude;
+}
+
+function buildYAxis(maxValue, targetTicks = 5) {
+  if (!Number.isFinite(maxValue) || maxValue <= 0) {
+    return { maxY: 1000000, ticks: [0, 250000, 500000, 750000, 1000000] };
+  }
+
+  const roughStep = maxValue / Math.max(targetTicks - 1, 1);
+  const step = niceStep(roughStep);
+  const roundedMax = Math.ceil(maxValue / step) * step;
+  const ticks = [];
+
+  for (let tick = 0; tick <= roundedMax + step * 0.001; tick += step) {
+    ticks.push(tick);
+  }
+
+  return { maxY: roundedMax, ticks };
+}
+
+function formatYAxisTick(value) {
+  if (value >= 1000000) {
+    const inMillions = value / 1000000;
+    return `$${Number.isInteger(inMillions) ? inMillions : inMillions.toFixed(1)}M`;
+  }
+
+  if (value >= 1000) {
+    const inThousands = value / 1000;
+    return `$${Number.isInteger(inThousands) ? inThousands : inThousands.toFixed(1)}k`;
+  }
+
+  return `$${value}`;
+}
+
 export function CompoundInterestCore({ compact = false }) {
-  const [monthlyAmount, setMonthlyAmount] = useState(100);
+  const [monthlyAmount, setMonthlyAmount] = useState(() => getSavedInputs(compact).monthlyAmount);
   const stockRate = 8;
-  const [years, setYears] = useState(30);
+  const [years, setYears] = useState(() => getSavedInputs(compact).years);
   const [data, setData] = useState([]);
   const [maxY, setMaxY] = useState(1000000);
   const [yTicks, setYTicks] = useState([0, 250000, 500000, 750000, 1000000]);
@@ -58,18 +143,26 @@ export function CompoundInterestCore({ compact = false }) {
     }
     setData(newData);
 
-    // Make the upper bound exactly the final invested amount
-    const cleanMax = totalStock;
+    const { maxY: roundedMaxY, ticks } = buildYAxis(totalStock, compact ? 5 : 6);
+    setMaxY(roundedMaxY);
+    setYTicks(ticks);
+  }, [compact, monthlyAmount, stockRate, years]);
 
-    setMaxY(cleanMax);
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    try {
+      window.localStorage.setItem(COMPOUND_INTEREST_STORAGE_KEY, JSON.stringify({
+        monthlyAmount,
+        years,
+        savedAt: new Date().toISOString()
+      }));
+    } catch {
+      // Ignore storage failures.
+    }
+  }, [monthlyAmount, years]);
 
-    // Generate 4 even ticks so at least 3 labeled points exist between 0 and max
-    const step = cleanMax / 3;
-    setYTicks([0, step, step * 2, cleanMax]);
-  }, [monthlyAmount, stockRate, years]);
-
-  const monthlyProgress = ((monthlyAmount - 50) / (2000 - 50)) * 100;
-  const yearsProgress = ((years - 5) / (50 - 5)) * 100;
+  const monthlyProgress = ((monthlyAmount - MONTHLY_MIN) / (MONTHLY_MAX - MONTHLY_MIN)) * 100;
+  const yearsProgress = ((years - YEARS_MIN) / (YEARS_MAX - YEARS_MIN)) * 100;
 
   return (
     <div style={{
@@ -96,14 +189,14 @@ export function CompoundInterestCore({ compact = false }) {
 
       {/* Graph Area */}
       <div style={{
-        height: compact ? 'clamp(250px, 35vh, 320px)' : 'clamp(350px, 45vh, 480px)',
+        height: compact ? 'clamp(320px, 44vh, 420px)' : 'clamp(390px, 52vh, 560px)',
         marginBottom: compact ? '1.5rem' : '2rem',
         minWidth: 0
       }}>
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart
             data={data}
-            margin={{ top: 10, right: 10, left: 0, bottom: 5 }}
+            margin={{ top: 8, right: compact ? 12 : 16, left: compact ? 8 : 14, bottom: 18 }}
           >
             <defs>
               <linearGradient id="colorInvested" x1="0" y1="0" x2="0" y2="1">
@@ -118,19 +211,17 @@ export function CompoundInterestCore({ compact = false }) {
               tick={{ fill: 'var(--text-muted)', fontSize: compact ? 12 : 14 }}
               tickLine={false}
               axisLine={false}
-              label={{ value: 'Years', position: 'insideBottomRight', offset: -10, fill: 'var(--text-muted)', fontSize: compact ? 12 : 14 }}
+              label={{ value: 'Years', position: 'insideBottomRight', offset: -4, fill: 'var(--text-muted)', fontSize: compact ? 12 : 14 }}
             />
             <YAxis
               stroke="var(--text-muted)"
-              tickFormatter={(value) => {
-                if (value >= 1000000) return `$${(value / 1000000).toFixed(value % 1000000 === 0 ? 0 : 1)}M`;
-                if (value >= 1000) return `$${(value / 1000).toFixed(0)}k`;
-                return `$${value}`;
-              }}
-              width={50}
+              tickFormatter={formatYAxisTick}
+              width={compact ? 60 : 66}
               domain={[0, maxY]}
               ticks={yTicks}
               tick={{ fill: 'var(--text-muted)', fontSize: compact ? 12 : 14 }}
+              interval={0}
+              tickMargin={8}
               tickLine={false}
               axisLine={false}
             />
@@ -165,8 +256,8 @@ export function CompoundInterestCore({ compact = false }) {
           <input
             type="range"
             className="landing-slider"
-            min="50"
-            max="2000"
+            min={MONTHLY_MIN}
+            max={MONTHLY_MAX}
             step="50"
             value={monthlyAmount}
             onChange={(e) => setMonthlyAmount(Number(e.target.value))}
@@ -184,8 +275,8 @@ export function CompoundInterestCore({ compact = false }) {
           <input
             type="range"
             className="landing-slider landing-slider-years"
-            min="5"
-            max="50"
+            min={YEARS_MIN}
+            max={YEARS_MAX}
             step="5"
             value={years}
             onChange={(e) => setYears(Number(e.target.value))}

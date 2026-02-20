@@ -194,7 +194,7 @@ button {
 }
 
 .landing-hero-widget {
-  height: min(500px, calc(100svh - 150px));
+  height: min(700px, calc(100svh - 80px));
 }
 
 /* Responsive Lesson Layout */
@@ -282,7 +282,7 @@ button {
   }
 
   .landing-hero-widget {
-    height: clamp(330px, 53vh, 460px);
+    height: clamp(520px, 72vh, 640px);
   }
 
   .lesson-container {
@@ -314,7 +314,7 @@ button {
   }
 
   .landing-hero-widget {
-    height: clamp(310px, 52vh, 420px);
+    height: clamp(500px, 76vh, 600px);
   }
 
   .container {
