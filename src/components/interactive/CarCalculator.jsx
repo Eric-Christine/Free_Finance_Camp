@@ -52,7 +52,9 @@ export default function CarCalculator() {
             height: '100%',
             display: 'flex',
             flexDirection: 'column',
-            overflowY: 'auto'
+            minWidth: 0,
+            overflowY: 'auto',
+            overflowX: 'hidden'
         }}>
             <h3 style={{ marginBottom: '1rem', color: 'var(--primary)' }}>Car Cost Calculator (5 Year)</h3>
 
@@ -91,7 +93,7 @@ export default function CarCalculator() {
                 </div>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.75rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))', gap: '0.75rem' }}>
                 <ResultCard
                     title="PAY CASH"
                     total={results.cash}
@@ -126,13 +128,14 @@ function ResultCard({ title, total, subtitle, isWinner }) {
             backgroundColor: isWinner ? 'rgba(16, 185, 129, 0.15)' : 'rgba(255,255,255,0.03)',
             borderRadius: 'var(--radius)',
             border: isWinner ? '2px solid var(--primary)' : '1px solid var(--border)',
+            minWidth: 0,
             textAlign: 'center'
         }}>
             <div style={{ fontSize: '0.75rem', fontWeight: 'bold', marginBottom: '0.5rem', color: isWinner ? 'var(--primary)' : 'var(--text-muted)' }}>
                 {title} {isWinner && '✓'}
             </div>
             <div style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>${total.toLocaleString()}</div>
-            <div style={{ fontSize: '0.65rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>{subtitle}</div>
+            <div style={{ fontSize: '0.65rem', color: 'var(--text-muted)', marginTop: '0.25rem', overflowWrap: 'anywhere' }}>{subtitle}</div>
         </div>
     );
 }

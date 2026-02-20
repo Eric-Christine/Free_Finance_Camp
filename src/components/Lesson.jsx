@@ -2,38 +2,9 @@ import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { curriculum } from '../data/curriculum';
 import { useProgress } from '../context/ProgressContext';
-import CompoundInterest from './interactive/CompoundInterest';
-import BudgetAllocator from './interactive/BudgetAllocator';
-import CarCalculator from './interactive/CarCalculator';
-import InsuranceCompare from './interactive/InsuranceCompare';
-import MarketTimer from './interactive/MarketTimer';
-import EmployerMatchCalculator from './interactive/EmployerMatchCalculator';
-import HomeBuyingCostExplorer from './interactive/HomeBuyingCostExplorer';
-import LoanTermTrapCalculator from './interactive/LoanTermTrapCalculator';
-import WageInflationGapChart from './interactive/WageInflationGapChart';
-import USDebtCrisisChart from './interactive/USDebtCrisisChart';
-import Sp500DollarVsGoldChart from './interactive/Sp500DollarVsGoldChart';
-import ChinaEconomicRiseChart from './interactive/ChinaEconomicRiseChart';
-import MoneyMultiplier from './interactive/MoneyMultiplier';
+import { WIDGET_COMPONENTS } from './interactive/widgetRegistry';
 import Quiz from './Quiz';
 import SEO from './SEO';
-
-// Map of widget names to components
-const WIDGETS = {
-  CompoundInterest: CompoundInterest,
-  BudgetAllocator: BudgetAllocator,
-  CarCalculator: CarCalculator,
-  InsuranceCompare: InsuranceCompare,
-  MarketTimer: MarketTimer,
-  EmployerMatchCalculator: EmployerMatchCalculator,
-  HomeBuyingCostExplorer: HomeBuyingCostExplorer,
-  LoanTermTrapCalculator: LoanTermTrapCalculator,
-  WageInflationGapChart: WageInflationGapChart,
-  USDebtCrisisChart: USDebtCrisisChart,
-  Sp500DollarVsGoldChart: Sp500DollarVsGoldChart,
-  ChinaEconomicRiseChart: ChinaEconomicRiseChart,
-  MoneyMultiplier: MoneyMultiplier
-};
 
 const STORY_PROFILES = [
   { character: 'Maya', context: 'a first-generation college grad' },
@@ -104,7 +75,7 @@ export default function Lesson() {
     return <div style={{ padding: '2rem' }}>Lesson not found</div>;
   }
 
-  const WidgetComponent = currentLesson.widget ? WIDGETS[currentLesson.widget] : null;
+  const WidgetComponent = currentLesson.widget ? WIDGET_COMPONENTS[currentLesson.widget] : null;
   const lessonPosition = currentModule.lessons.findIndex(l => l.id === currentLesson.id) + 1;
   const moduleLessonCount = currentModule.lessons.length;
   const displayStory = currentLesson.story || buildAutoStory(currentLesson);
@@ -129,6 +100,7 @@ export default function Lesson() {
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
           <Link to="/map" style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>← Curriculum</Link>
+          <Link to="/tools" style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>Tools</Link>
           <span style={{ color: 'var(--text-muted)' }}>/</span>
           <span style={{ fontWeight: '500' }}>{currentModule.title}</span>
         </div>

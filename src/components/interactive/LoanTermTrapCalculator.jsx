@@ -54,7 +54,9 @@ export default function LoanTermTrapCalculator() {
             height: '100%',
             display: 'flex',
             flexDirection: 'column',
-            overflowY: 'auto'
+            minWidth: 0,
+            overflowY: 'auto',
+            overflowX: 'hidden'
         }}>
             <h3 style={{ marginBottom: '0.5rem', color: 'var(--primary)' }}>Monthly Payment Trap Simulator</h3>
             <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
@@ -115,7 +117,7 @@ export default function LoanTermTrapCalculator() {
                 {comparisons.map((row) => (
                     <div key={row.term} style={{
                         display: 'grid',
-                        gridTemplateColumns: '0.9fr 1fr 1fr',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))',
                         gap: '0.5rem',
                         alignItems: 'center',
                         padding: '0.7rem',
@@ -158,9 +160,9 @@ export default function LoanTermTrapCalculator() {
 function Slider({ label, value, min, max, step, display, onChange }) {
     return (
         <div>
-            <label style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.8rem', marginBottom: '0.3rem' }}>
-                <span>{label}</span>
-                <span>{display}</span>
+            <label style={{ display: 'flex', justifyContent: 'space-between', gap: '0.45rem', fontSize: '0.8rem', marginBottom: '0.3rem' }}>
+                <span style={{ minWidth: 0 }}>{label}</span>
+                <span style={{ whiteSpace: 'nowrap' }}>{display}</span>
             </label>
             <input
                 type="range"

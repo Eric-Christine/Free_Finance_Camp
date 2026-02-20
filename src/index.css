@@ -5,7 +5,33 @@
   --secondary: #3b82f6;
   --accent: #f59e0b;
 
-  /* Backgrounds */
+  /* Backgrounds - Default Light Mode */
+  --bg-main: #f8fafc;
+  /* Slate 50 */
+  --bg-card: #ffffff;
+  --bg-hover: #f1f5f9;
+  /* Slate 100 */
+
+  /* Text - Default Light Mode */
+  --text-main: #020617;
+  /* Slate 950 (high contrast) */
+  --text-muted: #475569;
+  /* Slate 600 (better readability) */
+  --text-light: #1e293b;
+  /* Slate 800 */
+
+  /* UI Elements - Default Light Mode */
+  --border: #cbd5e1;
+  /* Slate 300 (crisper borders) */
+  --radius: 8px;
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+[data-theme='dark'] {
+  /* Backgrounds - Refined Dark Mode (improving readability) */
   --bg-main: #0f172a;
   /* Slate 900 */
   --bg-card: #1e293b;
@@ -13,18 +39,18 @@
   --bg-hover: #334155;
   /* Slate 700 */
 
-  /* Text */
+  /* Text - Refined Dark Mode */
   --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --text-light: #e2e8f0;
+  /* Slate 50 */
+  --text-muted: #cbd5e1;
+  /* Slate 300 (lightened for better readability) */
+  --text-light: #f1f5f9;
+  /* Slate 100 */
 
   /* UI Elements */
   --border: #334155;
-  --radius: 8px;
-  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-
-  /* Typography */
-  --font-sans: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* Slate 700 */
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
 }
 
 * {
@@ -39,6 +65,44 @@ body {
   color: var(--text-main);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Theme Toggle Button — position (top/left) is set by JS drag logic */
+.theme-toggle {
+  position: fixed;
+  z-index: 9999;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  transition: box-shadow 0.2s ease, transform 0.15s ease;
+}
+
+.theme-toggle:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.15), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transform: scale(1.06);
+}
+
+.theme-toggle:active {
+  cursor: grabbing;
+  transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  .theme-toggle {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 
 a {
@@ -94,6 +158,44 @@ button {
   background-color: var(--bg-hover);
 }
 
+/* Landing Hero */
+.landing-hero {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.5rem 1.1rem;
+  background: radial-gradient(ellipse at top, rgba(16, 185, 129, 0.1) 0%, transparent 60%);
+}
+
+.landing-hero-inner {
+  width: 100%;
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.landing-hero-copy {
+  min-width: 0;
+  text-align: left;
+}
+
+.landing-hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.landing-hero-preview {
+  min-width: 0;
+}
+
+.landing-hero-widget {
+  height: min(500px, calc(100svh - 150px));
+}
+
 /* Responsive Lesson Layout */
 .lesson-container {
   display: flex;
@@ -130,9 +232,58 @@ button {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  min-width: 0;
+}
+
+.lesson-widget-column>* {
+  min-width: 0;
+}
+
+.lesson-widget-column .recharts-legend-wrapper {
+  width: 100% !important;
+}
+
+.lesson-widget-column .recharts-default-legend {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem 0.8rem;
+  margin-top: 0.2rem;
+  white-space: normal;
+}
+
+.lesson-widget-column .recharts-legend-item {
+  margin-right: 0 !important;
+}
+
+.lesson-widget-column .recharts-legend-item-text {
+  font-size: 0.76rem;
 }
 
 @media (max-width: 900px) {
+  .landing-hero {
+    min-height: auto;
+    padding: 1.5rem 1rem 2.25rem;
+  }
+
+  .landing-hero-inner {
+    grid-template-columns: 1fr;
+    max-width: 940px;
+    gap: 1rem;
+  }
+
+  .landing-hero-copy {
+    text-align: center;
+  }
+
+  .landing-hero-actions {
+    justify-content: center;
+  }
+
+  .landing-hero-widget {
+    height: clamp(330px, 53vh, 460px);
+  }
+
   .lesson-container {
     height: auto;
     min-height: 100vh;
@@ -157,6 +308,14 @@ button {
 
 /* Mobile-specific styles */
 @media (max-width: 480px) {
+  .landing-hero {
+    padding: 1.2rem 0.75rem 1.6rem;
+  }
+
+  .landing-hero-widget {
+    height: clamp(310px, 52vh, 420px);
+  }
+
   .container {
     padding: 0 0.75rem;
   }
@@ -168,6 +327,10 @@ button {
 
   .lesson-widget-column {
     padding: 1rem;
+  }
+
+  .lesson-widget-column .recharts-legend-item-text {
+    font-size: 0.72rem;
   }
 }
 

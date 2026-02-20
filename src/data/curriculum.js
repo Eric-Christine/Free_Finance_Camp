@@ -1522,15 +1522,15 @@ export const curriculum = [
             },
             {
                 id: 'lesson-9-2',
-                title: 'Cryptocurrency: Digital Gold?',
-                description: 'Understanding Bitcoin and the Blockchain.',
+                title: 'Cryptocurrency: The Reality of Financialization',
+                description: 'The shift from decentralized money to speculative asset.',
                 xpReward: 50,
                 content: [
-                    "**Cryptocurrency** (like Bitcoin) is digital money that isn't controlled by any government.",
-                    "It runs on **Blockchain** technology—a public ledger that everyone can see but no one can cheat.",
-                    "Pro tip: If you buy crypto, you need a **Wallet**. Remember: 'Not your keys, not your coins'. If you don't control the private keys, you don't truly own the assets.",
-                    "Proponents call Bitcoin 'Digital Gold' because it has a fixed supply.",
-                    "Risks: Extremely volatile, regulatory uncertainty, and irreversible transactions."
+                    "**Cryptocurrency** (like Bitcoin) originally promised a decentralized alternative to the traditional financial system.",
+                    "The vision was a trustless, peer-to-peer network free from banks and governments.",
+                    "However, the current reality of crypto in 2026 is heavily **financialized**. The introduction of Spot ETFs, massive institutional buying, and centralized exchanges have largely defeated its original decentralized purpose.",
+                    "Instead of acting as an independent currency, crypto has largely become another highly volatile, speculative asset class heavily tied to traditional markets and centralized platforms.",
+                    "Pro tip: If you buy crypto, you need a **Wallet**. Remember: 'Not your keys, not your coins'. If you don't control the private keys, you don't truly own the assets."
                 ],
                 type: 'reading'
             },
@@ -1540,10 +1540,23 @@ export const curriculum = [
                 description: 'Betting on the future.',
                 xpReward: 50,
                 content: [
-                    "**Prediction Markets** let people bet on the outcome of real-world events (elections, sports, scientific breakthroughs).",
+                    "**Prediction Markets** let people bet on the outcome of real-world events (elections, sports, scientific breakthrough).",
                     "The price of a 'share' (e.g., 60 cents) represents the market's estimated probability (60%) of that event happening.",
                     "Many economists believe these markets are more accurate than polls or experts because participants have 'skin in the game'.",
                     "It's a way to use the 'Wisdom of the Crowd' to forecast the future."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-9-4',
+                title: 'Tokenization of Assets',
+                description: 'The real-world utility of blockchain in traditional finance.',
+                xpReward: 60,
+                content: [
+                    "**Tokenization** is the process of representing a real-world asset (like real estate, art, Treasury bills, or private equity) as a digital token on a blockchain.",
+                    "By 2026, while the speculative frenzy of early crypto has waned, the underlying technology has been heavily adopted by **Traditional Finance (TradFi)**.",
+                    "Major financial institutions use tokenization for its massive utility: faster settlement times, 24/7 trading, fractional ownership, and automated compliance through smart contracts.",
+                    "Unlike early cryptocurrencies that tried to replace the financial system, tokenization is upgrading the plumbing of the existing financial system, bringing trillions of dollars of traditional assets on-chain."
                 ],
                 type: 'reading'
             }
@@ -2981,6 +2994,355 @@ export const curriculum = [
                 ],
                 type: 'interactive',
                 widget: 'USDebtCrisisChart'
+            }
+        ]
+    },
+    {
+        id: 'module-17',
+        title: 'Wealth & Impact',
+        description: 'Giving, legacy, and the economics of philanthropy.',
+        xpReward: 100,
+        lessons: [
+            {
+                id: 'lesson-17-1',
+                title: 'Giving and Legacy',
+                description: 'Understand non-profits, Donor Advised Funds, and how to maximize your charitable impact.',
+                xpReward: 40,
+                screens: [
+                    {
+                        title: 'The Scale of Giving',
+                        content: [
+                            "Generosity has a massive economic footprint. In the United States, charitable giving consistently hovers around **2% of the total Gross Domestic Product (GDP)** every single year.",
+                            "",
+                            "This equates to hundreds of billions of dollars voluntarily transferred from private citizens and corporations to organizations trying to solve problems.",
+                            "",
+                            "This drive to give isn't just modern philanthropy. Many religions and cultures have built-in systems of giving. For example, **tithing** is the practice of giving 10% of one's income to a religious or charitable organization—a standard that dates back millennia."
+                        ]
+                    },
+                    {
+                        title: 'How Non-Profits Work',
+                        content: [
+                            "When you donate, your money usually goes to a **501(c)(3) non-profit organization**.",
+                            "",
+                            "\"Non-profit\" doesn't mean no one gets paid. It means the organization has no *owners* or *shareholders* who receive the profits. Any surplus revenue MUST be reinvested back into the organization's mission.",
+                            "",
+                            "A healthy non-profit needs to spend money on:",
+                            "• **Program Expenses:** The actual goods and services supporting the mission.",
+                            "• **Administrative & Overhead:** Paying staff, renting office space, running the accounting.",
+                            "• **Fundraising:** Marketing to bring in the next round of donations.",
+                            "",
+                            "While you want overhead to be reasonable, starving a non-profit of administrative funds prevents them from hiring talented leaders to actually solve the problem."
+                        ]
+                    },
+                    {
+                        title: 'Donor Advised Funds (DAFs)',
+                        content: [
+                            "For those looking to structure their giving, **Donor Advised Funds (DAFs)** have become incredibly popular.",
+                            "",
+                            "Think of a DAF like a personal charitable savings account:",
+                            "1) You contribute cash or stock into the DAF and get an **immediate tax deduction** for that year.",
+                            "2) The money in the DAF is invested and grows tax-free.",
+                            "3) Whenever you're ready (months or years later), you \"advise\" the fund to send grants out to your favorite charities.",
+                            "",
+                            "They are beloved by donors because they simplify giving (one tax receipt) and allow you to separate the *timing* of the tax benefit from the *timing* of the actual charitable payout."
+                        ]
+                    },
+                    {
+                        title: 'The Tax Angle for the Wealthy',
+                        content: [
+                            "While most people give purely out of generosity, the wealthy pair giving with a highly efficient tax strategy.",
+                            "",
+                            "Instead of donating cash, wealthy individuals often donate **highly appreciated assets** (like stocks that have gone up 300% in value) directly to a charity or a DAF.",
+                            "",
+                            "By doing this, they score a double benefit:",
+                            "• They get an income tax deduction for the *full current market value* of the stock.",
+                            "• They **never have to pay capital gains tax** on the 300% growth.",
+                            "",
+                            "The charity gets the full value to sell tax-free, and the donor wiped out a massive tax liability. It's a win-win."
+                        ]
+                    },
+                    {
+                        title: 'Effective Altruism',
+                        content: [
+                            "With thousands of charities asking for money, how do you know yours is actually helping?",
+                            "",
+                            "A movement called **Effective Altruism** focuses on using evidence and careful reasoning to figure out how to benefit others as much as possible.",
+                            "",
+                            "Organizations like **GiveWell** spend thousands of hours researching charities to find the ones that save or improve lives the most per dollar spent.",
+                            "",
+                            "Instead of giving based on an emotional commercial, effective altruists seek out independently verified data—often discovering that a dollar sent to fund malaria medication or vitamin A supplements overseas prevents far more suffering than a dollar spent locally."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-kids-finances',
+        title: 'Investing in Your Kids',
+        description: 'Secure your child\'s financial future through smart educational investments and tax-advantaged accounts.',
+        xpReward: 120,
+        lessons: [
+            {
+                id: 'lesson-kids-1',
+                title: 'ROI of Education: Public vs Private, Degrees vs Trades',
+                description: 'A high-level look at the return on investment of different educational paths for your children.',
+                xpReward: 35,
+                screens: [
+                    {
+                        title: 'First Things First: Secure Your Own Oxygen Mask',
+                        content: [
+                            "**Before you invest a single dollar in your child's future, make sure your own financial house is in order.**",
+                            "",
+                            "Just like on an airplane, you put your own oxygen mask on first. That means:",
+                            "• Your own retirement accounts (401k, Roth IRA) are being funded consistently.",
+                            "• You have an emergency fund covering 3-6 months of expenses.",
+                            "• High-interest debt (credit cards, personal loans) is paid off or under control.",
+                            "",
+                            "Why? Because your children can borrow for college—but you **cannot** borrow for retirement. If you sacrifice your retirement to fund their education, you may become a financial burden on them later. The best gift you can give your kids is parents who are financially stable.",
+                            "",
+                            "Once your foundation is solid, THEN it's time to build for your kids. Let's explore how."
+                        ]
+                    },
+                    {
+                        title: 'Public vs Private K-12: The Real Math',
+                        content: [
+                            "The average cost of **private K-12 school** in the U.S. is roughly **$12,000-$16,000/year** for elementary and **$16,000-$25,000+/year** for high school.",
+                            "",
+                            "Over 13 years (K-12), a family could spend **$150,000 to $300,000+** on private school tuition alone.",
+                            "",
+                            "Now consider the alternative: what if that money were **invested** instead?",
+                            "",
+                            "If you invested $15,000/year for 13 years at an average 8% annual return, you'd have roughly **$340,000** at the end.",
+                            "",
+                            "**Public school** is funded by your tax dollars and is free at the point of entry. Many public schools deliver excellent outcomes, especially in well-funded districts.",
+                            "",
+                            "The ROI question isn't 'Is private school better?' It's: **'Is private school $150,000-$300,000 better?'** For most families, the data suggests the answer is nuanced. A child's success depends far more on parental involvement, reading at home, and mentorship than on the name on the school building."
+                        ]
+                    },
+                    {
+                        title: 'Bachelor\'s Degree vs The Trades',
+                        content: [
+                            "A **4-year bachelor's degree** costs an average of **$100,000-$200,000+** when you factor in tuition, room, board, and fees. On top of that, you lose **4 years of potential earnings**.",
+                            "",
+                            "Meanwhile, **trade school** (electrician, plumber, welder, HVAC tech) typically costs **$5,000-$15,000/year** for 1-2 years, and many programs offer **paid apprenticeships** where you earn while you learn.",
+                            "",
+                            "By age 22, a tradesperson may have:",
+                            "• **4+ years of work experience**",
+                            "• **$0 in student debt**",
+                            "• **$50,000-$80,000+ annual income**",
+                            "",
+                            "A college graduate at 22 may have:",
+                            "• **$30,000-$100,000+ in student loans**",
+                            "• **No work experience in their field**",
+                            "• **Entry-level salary of $40,000-$55,000**",
+                            "",
+                            "Over a lifetime, college grads earn roughly **$1.2 million more** on average—but averages hide enormous variation. An electrician earning $85K with no debt may build more wealth than a communications major earning $45K with $80K in loans.",
+                            "",
+                            "The right path depends on the individual child's strengths, interests, and the specific programs available."
+                        ]
+                    },
+                    {
+                        title: 'Master\'s Programs: When Do They Pay Off?',
+                        content: [
+                            "A **master's degree** adds another **$30,000-$120,000** in costs and 1-3 years of time.",
+                            "",
+                            "**High-ROI master's programs:**",
+                            "• MBA from a top-20 school (avg salary jump of $50,000+/year)",
+                            "• Computer Science or Engineering MS (salary premiums of $15,000-$30,000+)",
+                            "• Nurse Practitioner / Physician Assistant (required for the role, high demand)",
+                            "",
+                            "**Low-ROI master's programs (on average):**",
+                            "• General humanities MA programs",
+                            "• Degrees from unaccredited or low-ranked programs",
+                            "• Any program funded entirely by high-interest private loans",
+                            "",
+                            "The key question to ask: **'Will the salary increase I get from this degree pay back the cost within 3-5 years?'**",
+                            "",
+                            "If the answer is yes, it's likely a smart investment. If the math doesn't work, your child may be better off gaining work experience and letting an employer pay for the degree later."
+                        ]
+                    },
+                    {
+                        title: 'The Bottom Line on Education ROI',
+                        content: [
+                            "Education is one of the largest investments a family will ever make. Treat it like one.",
+                            "",
+                            "**Key takeaways:**",
+                            "• Private K-12 can be valuable, but run the numbers against investing that tuition money.",
+                            "• A bachelor's degree is not automatically the best path—trades offer excellent ROI for many careers.",
+                            "• Master's programs should be evaluated on a cold cost-vs-salary-increase basis.",
+                            "• The most expensive option is not always the best option.",
+                            "",
+                            "Teach your children to think about education as an **investment with a return**, not just a checkbox on the path to adulthood."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-kids-2',
+                title: 'The Power of Starting at Birth',
+                description: 'See how a small monthly investment from age 0 to 18 can transform your child\'s financial future.',
+                xpReward: 40,
+                screens: [
+                    {
+                        title: 'Small Amounts, Massive Results',
+                        content: [
+                            "What if you set aside just **$50 per month** for your child from the day they were born?",
+                            "",
+                            "At an average annual return of 8%:",
+                            "• **$50/month for 18 years** = ~**$24,000** (vs $10,800 if you just saved cash)",
+                            "• **$100/month for 18 years** = ~**$48,000**",
+                            "• **$200/month for 18 years** = ~**$96,000**",
+                            "• **$300/month for 18 years** = ~**$144,000**",
+                            "",
+                            "That $48,000 from just $100/month could cover **two full years** of in-state public university tuition, dramatically reducing or eliminating the need for student loans.",
+                            "",
+                            "The secret isn't a large paycheck. It's **time + consistency + compound growth**."
+                        ]
+                    },
+                    {
+                        title: 'Relieving the Burden of Student Loans',
+                        content: [
+                            "The average student loan debt for a bachelor's degree is roughly **$30,000-$40,000**.",
+                            "",
+                            "Monthly payments on $35,000 in student loans at 5.5% over 10 years = roughly **$380/month** for a decade after graduation.",
+                            "",
+                            "Now imagine if a parent had invested **$100/month** from birth. That ~$48,000 nest egg could:",
+                            "• **Eliminate** the need for student loans entirely at many state schools",
+                            "• **Cut loan amounts in half** at more expensive institutions",
+                            "• **Cover living expenses** so the student can focus on academics instead of working 30+ hours/week",
+                            "",
+                            "Instead of your child starting adulthood $35,000 in the hole, they start with a **head start**. That changes the trajectory of their entire financial life."
+                        ]
+                    },
+                    {
+                        title: 'The Compounding Head Start',
+                        content: [
+                            "Here's what makes this so powerful: if your child doesn't need all the money for school, the remainder keeps compounding.",
+                            "",
+                            "Let's say you invested $100/month for 18 years (~$48,000 balance), and your child only uses $20,000 for school. The remaining **$28,000** left invested at 8% could grow to:",
+                            "",
+                            "• **$60,000** by age 28",
+                            "• **$130,000** by age 38",
+                            "• **$600,000+** by age 58",
+                            "",
+                            "You didn't just help with college. You potentially seeded your child's **retirement fund** with a gift that cost you less than a daily coffee.",
+                            "",
+                            "This is generational wealth in action—not from a trust fund, but from **consistent small actions over time**."
+                        ]
+                    },
+                    {
+                        title: 'Getting Started: Practical Steps',
+                        content: [
+                            "You don't need to be wealthy to do this. Here's how to start:",
+                            "",
+                            "1) **Open a dedicated account** (a 529 plan or custodial brokerage account—we'll cover these in the next lesson).",
+                            "2) **Set up automatic monthly transfers** of whatever you can afford—even $25/month matters.",
+                            "3) **Invest in a diversified, low-cost index fund** (like a total stock market ETF).",
+                            "4) **Increase contributions** when you get raises, tax refunds, or birthday money from family.",
+                            "5) **Don't touch it.** Let compound interest do the heavy lifting.",
+                            "",
+                            "Remember: the best time to plant a tree was 20 years ago. The second-best time is today."
+                        ]
+                    }
+                ],
+                type: 'interactive',
+                widget: 'CompoundInterest'
+            },
+            {
+                id: 'lesson-kids-3',
+                title: '529 Plans, College Savings & Proposed Trump Accounts',
+                description: 'Tax-advantaged ways to save for your child\'s education and financial future.',
+                xpReward: 45,
+                screens: [
+                    {
+                        title: 'What Is a 529 Plan?',
+                        content: [
+                            "A **529 Plan** is a tax-advantaged savings account specifically designed for education expenses.",
+                            "",
+                            "Key benefits:",
+                            "• **Tax-free growth**: Your investments grow without being taxed.",
+                            "• **Tax-free withdrawals**: When used for qualified education expenses (tuition, books, room & board).",
+                            "• **State tax deductions**: Many states offer a tax deduction or credit for contributions.",
+                            "• **High contribution limits**: Most plans allow total contributions of $300,000+ over the life of the account.",
+                            "",
+                            "Unlike a retirement account, **anyone** can contribute—parents, grandparents, aunts, uncles, friends. Instead of toys for birthdays, ask family to contribute to the 529. Those gifts compound for years."
+                        ]
+                    },
+                    {
+                        title: '529 Flexibility: It\'s Not Just for College Anymore',
+                        content: [
+                            "529 plans have expanded significantly in recent years:",
+                            "",
+                            "• **K-12 tuition**: Up to $10,000/year can be used for private elementary and high school.",
+                            "• **Trade and vocational schools**: Qualified programs are covered.",
+                            "• **Apprenticeship programs**: Registered apprenticeships count as qualified expenses.",
+                            "• **Student loan repayment**: Up to $10,000 lifetime can be used to pay off student loans.",
+                            "",
+                            "**NEW (Starting 2024):** Unused 529 funds can now be **rolled into a Roth IRA** for the beneficiary (subject to rules like a 15-year account minimum and annual Roth contribution limits).",
+                            "",
+                            "This eliminates the old fear of 'What if my kid doesn't go to college?' Now, unused education savings can become **tax-free retirement savings**."
+                        ]
+                    },
+                    {
+                        title: 'Preparing Children for College Expenses',
+                        content: [
+                            "Beyond saving money, prepare your child to **understand** the financial side of college:",
+                            "",
+                            "**Conversations to have before they apply:**",
+                            "• 'Here's what we've saved and what we can contribute.'",
+                            "• 'Here's what student loans actually cost over 10-20 years.'",
+                            "• 'Let's compare the total cost of different schools vs. expected starting salaries.'",
+                            "",
+                            "**Smart strategies:**",
+                            "• Apply for FAFSA every year—even if you think you won't qualify.",
+                            "• Target schools where your child will be in the top 25% of applicants (they'll get better aid packages).",
+                            "• Consider community college for the first 2 years, then transfer to a 4-year school.",
+                            "• Have your child work part-time or do co-ops—not just for money, but for résumé building.",
+                            "",
+                            "The goal is a child who sees college as a **strategic investment**, not an entitlement."
+                        ]
+                    },
+                    {
+                        title: 'Proposed Trump Accounts: Free Kickstarter Money',
+                        content: [
+                            "In recent years, there has been a proposal for government-seeded investment accounts for children, sometimes referred to as **'Trump Accounts'** or similar initiatives.",
+                            "",
+                            "The basic concept:",
+                            "• The government deposits a set amount (proposals have ranged from **$1,000 to $5,000**) into an investment account for every child born in the U.S.",
+                            "• The money is invested and grows tax-free until the child reaches adulthood.",
+                            "• Funds could potentially be used for education, homeownership, or starting a business.",
+                            "",
+                            "**A note on the politics:**",
+                            "These types of proposals often carry political branding, and that can make people dismiss them based on party affiliation. **That is a mistake.**",
+                            "",
+                            "Regardless of who proposes it or what it's called, if the government is offering to put **free seed money** into a compounding investment account for your child, you should take it. Period.",
+                            "",
+                            "Political feelings should never override financial common sense. **Free money that compounds for 18+ years is free money that compounds for 18+ years**, no matter whose name is on the policy."
+                        ]
+                    },
+                    {
+                        title: 'Putting It All Together',
+                        content: [
+                            "Here's the action plan for investing in your kids:",
+                            "",
+                            "**Step 1: Secure your own finances first.** Fund your retirement, build your emergency fund, eliminate high-interest debt.",
+                            "",
+                            "**Step 2: Open a 529 Plan.** Start with whatever you can—even $25/month. Set it on autopilot.",
+                            "",
+                            "**Step 3: Enroll in any government-seeded programs** if and when they become available. Don't let politics leave money on the table.",
+                            "",
+                            "**Step 4: Have honest conversations** with your kids about the cost of education and the ROI of different paths.",
+                            "",
+                            "**Step 5: Let time do the work.** Small, consistent investments from birth can eliminate or dramatically reduce the burden of student loans and give your child a financial head start that lasts a lifetime.",
+                            "",
+                            "You don't need to be rich to build generational wealth. You just need to **start early and stay consistent**."
+                        ]
+                    }
+                ],
+                type: 'reading'
             }
         ]
     }

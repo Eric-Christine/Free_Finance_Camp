@@ -66,14 +66,16 @@ export default function ChinaEconomicRiseChart() {
             height: '100%',
             display: 'flex',
             flexDirection: 'column',
-            overflowY: 'auto'
+            minWidth: 0,
+            overflowY: 'auto',
+            overflowX: 'hidden'
         }}>
             <h3 style={{ marginBottom: '0.45rem', color: 'var(--primary)' }}>China's Export-First Rise</h3>
             <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
                 Compare exports and household savings behavior between China and U.S. consumers.
             </p>
 
-            <div style={{ height: '250px', marginBottom: '0.9rem' }}>
+            <div style={{ height: 'clamp(220px, 30vh, 250px)', marginBottom: '0.9rem' }}>
                 <ResponsiveContainer width="100%" height="100%">
                     <LineChart data={EXPORT_SHARE_DATA} margin={{ top: 8, right: 8, left: 0, bottom: 8 }}>
                         <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
@@ -90,7 +92,7 @@ export default function ChinaEconomicRiseChart() {
                 </ResponsiveContainer>
             </div>
 
-            <div style={{ height: '220px', marginBottom: '1rem' }}>
+            <div style={{ height: 'clamp(200px, 28vh, 220px)', marginBottom: '1rem' }}>
                 <ResponsiveContainer width="100%" height="100%">
                     <LineChart data={SAVINGS_RATE_DATA} margin={{ top: 8, right: 8, left: 0, bottom: 8 }}>
                         <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
@@ -109,7 +111,7 @@ export default function ChinaEconomicRiseChart() {
 
             <div style={{
                 display: 'grid',
-                gridTemplateColumns: '1fr 1fr 1fr',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
                 gap: '0.55rem',
                 marginBottom: '0.9rem'
             }}>

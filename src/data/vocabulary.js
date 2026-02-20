@@ -165,13 +165,39 @@ export const vocabulary = [
     {
         id: 'cryptocurrency',
         term: 'Cryptocurrency',
-        definition: 'A digital or virtual currency that is secured by cryptography and typically uses a decentralized network (blockchain).',
+        definition: 'Originally intended as a decentralized digital currency, it is now primarily a highly financialized speculative asset class largely integrated with traditional markets.',
         lessonId: 'lesson-9-2'
+    },
+    {
+        id: 'tokenization',
+        term: 'Tokenization',
+        definition: 'The process of representing a real-world asset (like real estate or Treasury bills) as a digital token on a blockchain to improve settlement speed, trading access, and efficiency.',
+        lessonId: 'lesson-9-4'
     },
     {
         id: 'prediction-market',
         term: 'Prediction Market',
         definition: 'Exchange-traded markets created for the purpose of trading the outcome of future events.',
         lessonId: 'lesson-9-3'
+    },
+
+    // Module: Investing in Your Kids
+    {
+        id: '529-plan',
+        term: '529 Plan',
+        definition: 'A tax-advantaged savings plan designed to encourage saving for future education costs, offering tax-free growth and tax-free withdrawals for qualified expenses.',
+        lessonId: 'lesson-kids-3'
+    },
+    {
+        id: 'return-on-investment',
+        term: 'Return on Investment (ROI)',
+        definition: 'A performance measure used to evaluate the efficiency or profitability of an investment, calculated as the gain from an investment relative to its cost.',
+        lessonId: 'lesson-kids-1'
+    },
+    {
+        id: 'trade-school',
+        term: 'Trade School / Vocational School',
+        definition: 'A post-secondary educational institution designed to give students the technical skills needed to perform a specific job, such as electrician, plumber, or HVAC technician.',
+        lessonId: 'lesson-kids-1'
     }
 ];

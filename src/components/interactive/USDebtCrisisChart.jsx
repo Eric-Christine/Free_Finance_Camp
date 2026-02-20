@@ -63,14 +63,16 @@ export default function USDebtCrisisChart() {
             height: '100%',
             display: 'flex',
             flexDirection: 'column',
-            overflowY: 'auto'
+            minWidth: 0,
+            overflowY: 'auto',
+            overflowX: 'hidden'
         }}>
             <h3 style={{ marginBottom: '0.4rem', color: 'var(--primary)' }}>US Debt Crisis Dashboard</h3>
             <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
                 Debt has risen for decades, and fiscal deficits have occurred under both Republican and Democratic administrations.
             </p>
 
-            <div style={{ height: '250px', marginBottom: '1rem' }}>
+            <div style={{ height: 'clamp(220px, 30vh, 250px)', marginBottom: '1rem' }}>
                 <ResponsiveContainer width="100%" height="100%">
                     <LineChart data={US_DEBT_TREND} margin={{ top: 8, right: 8, left: 0, bottom: 8 }}>
                         <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
@@ -93,11 +95,11 @@ export default function USDebtCrisisChart() {
 
             <div style={{
                 display: 'grid',
-                gridTemplateColumns: '1fr 1fr',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
                 gap: '0.9rem',
                 marginBottom: '1rem'
             }}>
-                <div style={{ height: '220px' }}>
+                <div style={{ height: '220px', minWidth: 0 }}>
                     <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.25rem' }}>
                         Debt / GDP Comparison (2022)
                     </div>
@@ -115,7 +117,7 @@ export default function USDebtCrisisChart() {
                     </ResponsiveContainer>
                 </div>
 
-                <div style={{ height: '220px' }}>
+                <div style={{ height: '220px', minWidth: 0 }}>
                     <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.25rem' }}>
                         Avg Fiscal Deficit by Administration (% GDP)
                     </div>

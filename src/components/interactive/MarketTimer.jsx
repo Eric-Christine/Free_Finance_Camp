@@ -141,7 +141,10 @@ export default function MarketTimer() {
             border: '1px solid var(--border)',
             height: '100%',
             display: 'flex',
-            flexDirection: 'column'
+            flexDirection: 'column',
+            minWidth: 0,
+            overflowY: 'auto',
+            overflowX: 'hidden'
         }}>
             <h3 style={{ marginBottom: '0.5rem', color: 'var(--primary)' }}>Market Timing Challenge</h3>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
@@ -149,7 +152,7 @@ export default function MarketTimer() {
             </p>
 
             {/* Stats Bar */}
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '1rem', backgroundColor: 'rgba(0,0,0,0.2)', padding: '0.5rem', borderRadius: 'var(--radius)' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem 0.9rem', marginBottom: '1rem', backgroundColor: 'rgba(0,0,0,0.2)', padding: '0.5rem', borderRadius: 'var(--radius)' }}>
                 <div>
                     <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Portfolio Value</div>
                     <div style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>${Math.round(portfolioValue).toLocaleString()}</div>
@@ -165,7 +168,7 @@ export default function MarketTimer() {
             </div>
 
             {/* Chart */}
-            <div style={{ flex: 1, minHeight: '200px', marginBottom: '1rem' }}>
+            <div style={{ height: 'clamp(200px, 30vh, 280px)', marginBottom: '1rem', minWidth: 0 }}>
                 <ResponsiveContainer width="100%" height="100%">
                     <LineChart data={visibleData}>
                         <YAxis domain={['auto', 'auto']} hide />
@@ -185,9 +188,9 @@ export default function MarketTimer() {
             </div>
 
             {/* Controls */}
-            <div style={{ display: 'flex', gap: '1rem' }}>
+            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 {gameStatus === 'idle' || gameStatus === 'finished' ? (
-                    <button onClick={startGame} className="btn btn-primary" style={{ width: '100%' }}>
+                    <button onClick={startGame} className="btn btn-primary" style={{ width: '100%', minHeight: '42px' }}>
                         {gameStatus === 'finished' ? 'Play Again (New Market)' : 'Start Simulation'}
                     </button>
                 ) : (
@@ -196,7 +199,7 @@ export default function MarketTimer() {
                             onClick={buy}
                             disabled={shares > 0 || money < currentPrice}
                             className="btn"
-                            style={{ flex: 1, backgroundColor: '#10b981', color: 'white', opacity: shares > 0 ? 0.5 : 1 }}
+                            style={{ flex: 1, minWidth: '140px', backgroundColor: '#10b981', color: 'white', opacity: shares > 0 ? 0.5 : 1 }}
                         >
                             BUY
                         </button>
@@ -204,7 +207,7 @@ export default function MarketTimer() {
                             onClick={sell}
                             disabled={shares === 0}
                             className="btn"
-                            style={{ flex: 1, backgroundColor: '#ef4444', color: 'white', opacity: shares === 0 ? 0.5 : 1 }}
+                            style={{ flex: 1, minWidth: '140px', backgroundColor: '#ef4444', color: 'white', opacity: shares === 0 ? 0.5 : 1 }}
                         >
                             SELL
                         </button>

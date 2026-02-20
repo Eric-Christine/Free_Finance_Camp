@@ -188,7 +188,9 @@ export default function HomeBuyingCostExplorer() {
             height: '100%',
             display: 'flex',
             flexDirection: 'column',
-            overflowY: 'auto'
+            minWidth: 0,
+            overflowY: 'auto',
+            overflowX: 'hidden'
         }}>
             <h3 style={{ marginBottom: '0.5rem', color: 'var(--primary)' }}>Home Cost Reality Check</h3>
             <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
@@ -197,7 +199,7 @@ export default function HomeBuyingCostExplorer() {
 
             <div style={{
                 display: 'grid',
-                gridTemplateColumns: '1fr 1fr',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
                 gap: '0.75rem',
                 marginBottom: '1rem'
             }}>
@@ -325,7 +327,7 @@ export default function HomeBuyingCostExplorer() {
 
             <div style={{
                 display: 'grid',
-                gridTemplateColumns: '1fr 1fr',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
                 gap: '0.75rem',
                 marginBottom: '1rem'
             }}>
@@ -390,7 +392,7 @@ export default function HomeBuyingCostExplorer() {
                         <div key={market.name} style={{
                             fontSize: '0.76rem',
                             display: 'grid',
-                            gridTemplateColumns: '1.5fr 1fr 1fr',
+                            gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))',
                             gap: '0.5rem',
                             alignItems: 'center',
                             padding: '0.4rem 0.5rem',
@@ -415,9 +417,9 @@ export default function HomeBuyingCostExplorer() {
 function Slider({ label, value, min, max, step, display, onChange }) {
     return (
         <div>
-            <label style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.78rem', marginBottom: '0.25rem' }}>
-                <span>{label}</span>
-                <span>{display}</span>
+            <label style={{ display: 'flex', justifyContent: 'space-between', gap: '0.45rem', fontSize: '0.78rem', marginBottom: '0.25rem' }}>
+                <span style={{ minWidth: 0 }}>{label}</span>
+                <span style={{ whiteSpace: 'nowrap' }}>{display}</span>
             </label>
             <input
                 type="range"
@@ -437,7 +439,8 @@ function CostCard({ label, amount, accent }) {
         <div style={{
             border: `1px solid ${accent}`,
             borderRadius: 'var(--radius)',
-            padding: '0.75rem'
+            padding: '0.75rem',
+            minWidth: 0
         }}>
             <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>{label}</div>
             <div style={{ fontSize: '1.2rem', fontWeight: 'bold', color: accent }}>{money(amount)}</div>

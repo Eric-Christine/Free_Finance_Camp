@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "finance-camp",
     "public": "dist",
     "ignore": [
       "firebase.json",

@@ -18,7 +18,10 @@ export default function BudgetAllocator() {
             border: '1px solid var(--border)',
             height: '100%',
             display: 'flex',
-            flexDirection: 'column'
+            flexDirection: 'column',
+            minWidth: 0,
+            overflowY: 'auto',
+            overflowX: 'hidden'
         }}>
             <h3 style={{ marginBottom: '1.5rem', color: 'var(--primary)' }}>Monthly Budget Builder</h3>
 

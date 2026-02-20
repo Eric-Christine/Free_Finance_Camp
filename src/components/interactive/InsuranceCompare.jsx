@@ -41,7 +41,10 @@ export default function InsuranceCompare() {
             border: '1px solid var(--border)',
             height: '100%',
             display: 'flex',
-            flexDirection: 'column'
+            flexDirection: 'column',
+            minWidth: 0,
+            overflowY: 'auto',
+            overflowX: 'hidden'
         }}>
             <h3 style={{ marginBottom: '1rem', color: 'var(--primary)' }}>Health Insurance Comparison</h3>
 
@@ -83,9 +86,11 @@ export default function InsuranceCompare() {
                         border: plan.name === cheapest.name ? '2px solid var(--primary)' : '1px solid var(--border)',
                         display: 'flex',
                         justifyContent: 'space-between',
-                        alignItems: 'center'
+                        alignItems: 'center',
+                        flexWrap: 'wrap',
+                        gap: '0.55rem'
                     }}>
-                        <div>
+                        <div style={{ minWidth: 0 }}>
                             <div style={{ fontWeight: 'bold', fontSize: '0.9rem' }}>
                                 {plan.name} {plan.name === cheapest.name && <span style={{ color: 'var(--primary)' }}>← Best for You</span>}
                             </div>
@@ -93,7 +98,7 @@ export default function InsuranceCompare() {
                                 ${plan.premium}/mo premium • ${plan.deductible} deductible
                             </div>
                         </div>
-                        <div style={{ textAlign: 'right' }}>
+                        <div style={{ textAlign: 'right', marginLeft: 'auto' }}>
                             <div style={{ fontSize: '1.25rem', fontWeight: 'bold', color: plan.name === cheapest.name ? 'var(--primary)' : 'inherit' }}>
                                 ${plan.total.toLocaleString()}
                             </div>

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import CompoundInterest from './interactive/CompoundInterest';
+import { CompoundInterestCore } from './interactive/CompoundInterest';
 import { curriculum } from '../data/curriculum';
 import SEO from './SEO';
 import SiteFooter from './SiteFooter';
@@ -67,142 +67,134 @@ export default function LandingPage() {
                 jsonLd={jsonLd}
             />
             {/* Hero Section */}
-            <section style={{
-                minHeight: '80vh',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                textAlign: 'center',
-                padding: '1rem 2rem 4rem',
-                background: 'radial-gradient(ellipse at top, rgba(16, 185, 129, 0.1) 0%, transparent 60%)'
-            }}>
-                <div style={{
-                    display: 'inline-block',
-                    padding: '0.4rem 1rem',
-                    backgroundColor: 'rgba(255, 255, 255, 0.05)',
-                    border: '1px solid var(--border)',
-                    borderRadius: '999px',
-                    fontSize: '0.85rem',
-                    color: 'var(--text-muted)',
-                    marginBottom: '1.5rem'
-                }}>
-                    A Free & Open Educational Resource
-                </div>
-
-                <h1 style={{
-                    fontSize: 'clamp(2.5rem, 6vw, 3.5rem)',
-                    marginBottom: '1.5rem',
-                    color: 'var(--text-main)',
-                    fontWeight: '800',
-                    lineHeight: '1.1',
-                    letterSpacing: '-0.02em'
-                }}>
-                    Practical Finance<br />
-                    <span style={{
-                        background: 'linear-gradient(135deg, var(--primary), var(--secondary))',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent',
-                    }}>For Everyone</span>
-                </h1>
-
-                <p style={{
-                    fontSize: 'clamp(1rem, 2vw, 1.15rem)',
-                    color: 'var(--text-muted)',
-                    maxWidth: '650px',
-                    marginBottom: '2.5rem',
-                    lineHeight: '1.7',
-                    fontWeight: '400'
-                }}>
-                    Free Finance Camp is a nonprofit-spirited initiative providing
-                    accessible, high-quality financial education. Master the fundamentals
-                    of budgeting, investing, and economic systems through
-                    unbiased, open-source curriculum.
-                </p>
-
-                <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-                    <Link
-                        to="/login"
-                        className="btn btn-primary"
-                        style={{ padding: '0.9rem 2.2rem', fontSize: '1.05rem', fontWeight: '600' }}
-                    >
-                        Start Learning
-                    </Link>
-                    <a
-                        href="#curriculum"
-                        style={{
-                            padding: '0.9rem 2.2rem',
-                            fontSize: '1.05rem',
-                            fontWeight: '600',
-                            color: 'var(--text-main)',
-                            textDecoration: 'none',
-                            border: '1px solid var(--border)',
-                            borderRadius: 'var(--radius)',
-                            transition: 'background-color 0.2s'
-                        }}
-                        onMouseEnter={e => e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.05)'}
-                        onMouseLeave={e => e.currentTarget.style.backgroundColor = 'transparent'}
-                    >
-                        View Curriculum
-                    </a>
-                    <Link
-                        to="/lessons"
-                        style={{
-                            padding: '0.9rem 2.2rem',
-                            fontSize: '1.05rem',
-                            fontWeight: '600',
-                            color: 'var(--text-main)',
-                            textDecoration: 'none',
-                            border: '1px solid var(--border)',
-                            borderRadius: 'var(--radius)'
-                        }}
-                    >
-                        Read Free Guides
-                    </Link>
-                </div>
-                <div style={{ marginTop: '0.9rem' }}>
-                    <Link to="/resources" style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
-                        Trusted Resources (Gov + Investopedia)
-                    </Link>
-                </div>
-
-                {/* Live Widget Preview */}
-                <div style={{
-                    marginTop: '5rem',
-                    width: '100%',
-                    maxWidth: '850px',
-                }}>
-                    <div style={{
-                        backgroundColor: 'var(--bg-card)',
-                        borderRadius: 'var(--radius)',
-                        border: '1px solid var(--border)',
-                        boxShadow: '0 30px 60px rgba(0,0,0,0.4)',
-                        overflow: 'hidden',
-                    }}>
+            <section className="landing-hero">
+                <div className="landing-hero-inner">
+                    <div className="landing-hero-copy">
                         <div style={{
-                            padding: '0.8rem 1.2rem',
-                            borderBottom: '1px solid var(--border)',
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '8px',
-                            backgroundColor: 'rgba(255,255,255,0.01)'
+                            display: 'inline-block',
+                            padding: '0.4rem 1rem',
+                            backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                            border: '1px solid var(--border)',
+                            borderRadius: '999px',
+                            fontSize: '0.85rem',
+                            color: 'var(--text-muted)',
+                            marginBottom: '1rem'
                         }}>
-                            <div style={{ width: '10px', height: '10px', borderRadius: '50%', border: '1px solid var(--border)' }}></div>
-                            <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: '500', letterSpacing: '0.05em', textTransform: 'uppercase' }}>Demo: Compound Interest Simulation</span>
+                            A Free & Open Educational Resource
                         </div>
-                        <div style={{ height: '480px', textAlign: 'left' }}>
-                            <CompoundInterest />
+
+                        <h1 style={{
+                            fontSize: 'clamp(2.2rem, 4.8vw, 3.3rem)',
+                            marginBottom: '1rem',
+                            color: 'var(--text-main)',
+                            fontWeight: '800',
+                            lineHeight: '1.08',
+                            letterSpacing: '-0.02em'
+                        }}>
+                            Practical Finance<br />
+                            <span style={{
+                                background: 'linear-gradient(135deg, var(--primary), var(--secondary))',
+                                WebkitBackgroundClip: 'text',
+                                WebkitTextFillColor: 'transparent',
+                            }}>For Everyone</span>
+                        </h1>
+
+                        <p style={{
+                            fontSize: 'clamp(0.96rem, 1.35vw, 1.1rem)',
+                            color: 'var(--text-muted)',
+                            maxWidth: '620px',
+                            marginBottom: '1.35rem',
+                            lineHeight: '1.58',
+                            fontWeight: '400'
+                        }}>
+                            Free Finance Camp is a nonprofit-spirited initiative providing
+                            accessible, high-quality financial education. Master the fundamentals
+                            of budgeting, investing, and economic systems through
+                            unbiased, open-source curriculum.
+                        </p>
+
+                        <div className="landing-hero-actions">
+                            <Link
+                                to="/login"
+                                className="btn btn-primary"
+                                style={{ padding: '0.85rem 1.45rem', fontSize: '0.97rem', fontWeight: '600' }}
+                            >
+                                Start Learning
+                            </Link>
+                            <a
+                                href="#curriculum"
+                                style={{
+                                    padding: '0.85rem 1.45rem',
+                                    fontSize: '0.97rem',
+                                    fontWeight: '600',
+                                    color: 'var(--text-main)',
+                                    textDecoration: 'none',
+                                    border: '1px solid var(--border)',
+                                    borderRadius: 'var(--radius)',
+                                    transition: 'background-color 0.2s'
+                                }}
+                                onMouseEnter={e => e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.05)'}
+                                onMouseLeave={e => e.currentTarget.style.backgroundColor = 'transparent'}
+                            >
+                                View Curriculum
+                            </a>
+                            <Link
+                                to="/lessons"
+                                style={{
+                                    padding: '0.85rem 1.45rem',
+                                    fontSize: '0.97rem',
+                                    fontWeight: '600',
+                                    color: 'var(--text-main)',
+                                    textDecoration: 'none',
+                                    border: '1px solid var(--border)',
+                                    borderRadius: 'var(--radius)'
+                                }}
+                            >
+                                Read Free Guides
+                            </Link>
+                        </div>
+
+                        <div style={{ marginTop: '0.75rem' }}>
+                            <Link to="/resources" style={{ color: 'var(--text-muted)', fontSize: '0.88rem' }}>
+                                Trusted Resources (Gov + Investopedia)
+                            </Link>
+                        </div>
+
+                        <div style={{
+                            marginTop: '1rem',
+                            color: 'var(--text-muted)',
+                            fontSize: '0.88rem',
+                            fontWeight: '500'
+                        }}>
+                            Support open financial education. Always free.
                         </div>
                     </div>
-                </div>
 
-                <div style={{
-                    marginTop: '3.5rem',
-                    color: 'var(--text-muted)',
-                    fontSize: '0.9rem',
-                    fontWeight: '500'
-                }}>
-                    Support open financial education. Always free.
+                    {/* Live Widget Preview */}
+                    <div className="landing-hero-preview">
+                        <div style={{
+                            backgroundColor: 'var(--bg-card)',
+                            borderRadius: 'var(--radius)',
+                            border: '1px solid var(--border)',
+                            boxShadow: '0 30px 60px rgba(0,0,0,0.4)',
+                            overflow: 'hidden',
+                        }}>
+                            <div style={{
+                                padding: '0.8rem 1.2rem',
+                                borderBottom: '1px solid var(--border)',
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '8px',
+                                backgroundColor: 'rgba(255,255,255,0.01)'
+                            }}>
+                                <div style={{ width: '10px', height: '10px', borderRadius: '50%', border: '1px solid var(--border)' }}></div>
+                                <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: '500', letterSpacing: '0.05em', textTransform: 'uppercase' }}>Demo: Compound Interest Simulation</span>
+                            </div>
+                            <div className="landing-hero-widget">
+                                <CompoundInterestCore compact={true} />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 

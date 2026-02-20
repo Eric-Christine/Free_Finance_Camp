@@ -125,6 +125,9 @@ export default function Map() {
                 <Link to="/vocab" className="btn btn-primary" style={{ fontSize: '0.85rem' }}>
                     📖 Review Vocab
                 </Link>
+                <Link to="/tools" className="btn btn-outline" style={{ fontSize: '0.85rem' }}>
+                    🧰 Interactive Tools
+                </Link>
                 <button onClick={signOut} className="btn btn-outline" style={{ fontSize: '0.85rem' }}>
                     Sign Out
                 </button>

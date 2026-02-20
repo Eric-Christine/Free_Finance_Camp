@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import {
   LineChart,
   Line,
@@ -17,15 +17,7 @@ export default function EmployerMatchCalculator() {
   const [matchCap, setMatchCap] = useState(6);
   const [returnRate, setReturnRate] = useState(7);
   const [years, setYears] = useState(30);
-  const [data, setData] = useState([]);
-  const [summary, setSummary] = useState({
-    annualEmployee: 0,
-    annualEmployer: 0,
-    finalEmployeeOnly: 0,
-    finalWithMatch: 0
-  });
-
-  useEffect(() => {
+  const { data, summary } = useMemo(() => {
     const monthlyReturn = returnRate / 100 / 12;
     const salaryMonthly = salary / 12;
     const employeeMonthly = salaryMonthly * (employeeRate / 100);
@@ -51,13 +43,15 @@ export default function EmployerMatchCalculator() {
       });
     }
 
-    setData(graph);
-    setSummary({
-      annualEmployee: Math.round(annualEmployee),
-      annualEmployer: Math.round(annualEmployer),
-      finalEmployeeOnly: Math.round(employeeOnlyValue),
-      finalWithMatch: Math.round(withMatchValue)
-    });
+    return {
+      data: graph,
+      summary: {
+        annualEmployee: Math.round(annualEmployee),
+        annualEmployer: Math.round(annualEmployer),
+        finalEmployeeOnly: Math.round(employeeOnlyValue),
+        finalWithMatch: Math.round(withMatchValue)
+      }
+    };
   }, [salary, employeeRate, matchRate, matchCap, returnRate, years]);
 
   const missedMatch = useMemo(() => {
@@ -76,14 +70,16 @@ export default function EmployerMatchCalculator() {
       height: '100%',
       display: 'flex',
       flexDirection: 'column',
-      overflowY: 'auto'
+      minWidth: 0,
+      overflowY: 'auto',
+      overflowX: 'hidden'
     }}>
       <h3 style={{ marginBottom: '0.5rem', color: 'var(--primary)' }}>401(k) Employer Match Simulator</h3>
       <p style={{ marginBottom: '1rem', color: 'var(--text-muted)', fontSize: '0.85rem' }}>
         See how much wealth is created by contributing enough to capture your full employer match.
       </p>
 
-      <div style={{ flex: 1, minHeight: '300px', marginBottom: '1rem' }}>
+      <div style={{ height: 'clamp(220px, 32vh, 320px)', marginBottom: '1rem', minWidth: 0 }}>
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={data} margin={{ top: 5, right: 10, left: 10, bottom: 5 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />

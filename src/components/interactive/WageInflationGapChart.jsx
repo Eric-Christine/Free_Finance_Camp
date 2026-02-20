@@ -74,7 +74,9 @@ export default function WageInflationGapChart() {
             height: '100%',
             display: 'flex',
             flexDirection: 'column',
-            overflowY: 'auto'
+            minWidth: 0,
+            overflowY: 'auto',
+            overflowX: 'hidden'
         }}>
             <h3 style={{ marginBottom: '0.4rem', color: 'var(--primary)' }}>
                 Wage Growth vs Inflation (2000-Present Trend)
@@ -83,7 +85,7 @@ export default function WageInflationGapChart() {
                 Indexed to 100 in 2000. When inflation rises faster than wages, purchasing power falls.
             </p>
 
-            <div style={{ height: '320px', marginBottom: '1rem' }}>
+            <div style={{ height: 'clamp(230px, 34vh, 320px)', marginBottom: '1rem' }}>
                 <ResponsiveContainer width="100%" height="100%">
                     <LineChart data={data} margin={{ top: 10, right: 10, left: 0, bottom: 10 }}>
                         <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
@@ -125,7 +127,7 @@ export default function WageInflationGapChart() {
 
             <div style={{
                 display: 'grid',
-                gridTemplateColumns: '1fr 1fr 1fr',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(145px, 1fr))',
                 gap: '0.6rem',
                 marginBottom: '1rem'
             }}>

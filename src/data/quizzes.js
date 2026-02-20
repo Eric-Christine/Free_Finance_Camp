@@ -705,18 +705,18 @@ export const quizzes = {
     ],
     'lesson-9-2': [
         {
-            question: "What technology does cryptocurrency run on?",
-            options: ["Email", "Blockchain", "Social media", "Cloud storage"],
+            question: "What was the original vision for cryptocurrency?",
+            options: ["To be controlled by the government", "To be a decentralized alternative to traditional finance", "To become a heavily financialized asset class", "To be exclusively traded by institutions"],
             correctIndex: 1
         },
         {
-            question: "Why is Bitcoin called 'Digital Gold'?",
-            options: ["It's the same color as gold", "It has a fixed supply", "It's controlled by the government", "It pays dividends"],
+            question: "Which of the following describes the reality of crypto in 2026?",
+            options: ["It has completely replaced traditional banks", "It is heavily financialized and tied to traditional markets", "It is only used for illegal activities", "It is entirely stable and risk-free"],
             correctIndex: 1
         },
         {
-            question: "What does 'Not your keys, not your coins' mean?",
-            options: ["You need physical keys to access crypto", "If you don't control private keys, you don't truly own the assets", "Crypto is stored in a bank", "Keys are expensive"],
+            question: "What does 'Not your keys, not your coins' mean in the context of crypto wallets?",
+            options: ["You need physical keys to access crypto", "If you don't control the private keys, you don't truly own the assets", "Keys must be registered with the government", "You must lock your computer to trade"],
             correctIndex: 1
         }
     ],
@@ -735,6 +735,23 @@ export const quizzes = {
             question: "Why are prediction markets considered accurate?",
             options: ["They are run by the government", "Participants have 'skin in the game'", "They use AI", "They are free"],
             correctIndex: 1
+        }
+    ],
+    'lesson-9-4': [
+        {
+            question: "What is tokenization?",
+            options: ["A new type of physical cryptocurrency coin", "Representing a real-world asset as a digital token on a blockchain", "A tax placed on digital transfers", "A password used for banking"],
+            correctIndex: 1
+        },
+        {
+            question: "How has Traditional Finance (TradFi) responded to tokenization by 2026?",
+            options: ["They have banned its use completely", "They have heavily adopted it for massive utility like faster settlement and 24/7 trading", "They ignored it as a fad", "They only use it for meme stocks"],
+            correctIndex: 1
+        },
+        {
+            question: "Unlike early cryptocurrencies that aimed to replace the financial system, tokenization is primarily:",
+            options: ["Upgrading the plumbing of the existing financial system", "Replacing all government currencies", "Making all financial transactions anonymous", "Eliminating the need for any smart contracts"],
+            correctIndex: 0
         }
     ],
     // Module 10: Banking & Financial Institutions
@@ -1257,6 +1274,59 @@ export const quizzes = {
         {
             question: "Why does federal debt matter for households?",
             options: ["It only affects foreign governments", "It can influence rates, inflation pressure, taxes, and policy choices", "It determines your exact paycheck next week", "It has no connection to personal finance"],
+            correctIndex: 1
+        }
+    ],
+
+    // Module: Investing in Your Kids
+    'lesson-kids-1': [
+        {
+            question: "According to this lesson, what should parents prioritize BEFORE investing for their children?",
+            options: ["Buying a bigger house", "Their own retirement and financial stability", "Opening a 529 plan", "Paying for private school"],
+            correctIndex: 1
+        },
+        {
+            question: "What is the key ROI question when comparing private vs public K-12 schooling?",
+            options: ["Which school has better uniforms?", "Is private school $150K-$300K better?", "Which school is closer to home?", "Which school has more students?"],
+            correctIndex: 1
+        },
+        {
+            question: "When evaluating a master's degree, what is the critical financial question?",
+            options: ["Is the campus beautiful?", "Will the salary increase pay back the cost within 3-5 years?", "Is the program prestigious?", "Can I defer payments?"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-kids-2': [
+        {
+            question: "Investing $100/month from birth to age 18 at 8% return yields approximately:",
+            options: ["$21,600", "$30,000", "$48,000", "$100,000"],
+            correctIndex: 2
+        },
+        {
+            question: "What is the primary 'secret' behind building wealth for your child from birth?",
+            options: ["A large initial deposit", "Time + consistency + compound growth", "Picking the right stocks", "Waiting until they're teenagers to start"],
+            correctIndex: 1
+        },
+        {
+            question: "If your child doesn't use all the money saved for education, what can happen to the remainder?",
+            options: ["It must be returned to the government", "It disappears", "It continues to compound and grow", "It gets taxed at 50%"],
+            correctIndex: 2
+        }
+    ],
+    'lesson-kids-3': [
+        {
+            question: "What makes 529 Plans attractive for education savings?",
+            options: ["They guarantee admission to college", "Tax-free growth and tax-free withdrawals for qualified education expenses", "They are only available to wealthy families", "They can only be used at private universities"],
+            correctIndex: 1
+        },
+        {
+            question: "Starting in 2024, unused 529 funds can be:",
+            options: ["Donated to the government", "Rolled into a Roth IRA for the beneficiary", "Used only for K-12 tuition", "Invested only in bonds"],
+            correctIndex: 1
+        },
+        {
+            question: "Why does the lesson say you should NOT dismiss government-seeded children's accounts based on politics?",
+            options: ["Because politics don't exist in finance", "Because free money that compounds for 18+ years should never be left on the table", "Because the government requires enrollment", "Because only one party supports them"],
             correctIndex: 1
         }
     ]
