@@ -25,6 +25,9 @@
   /* Slate 300 (crisper borders) */
   --radius: 8px;
   --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --slider-track-empty: rgba(71, 85, 105, 0.22);
+  --slider-thumb: #ffffff;
+  --slider-thumb-border: rgba(15, 23, 42, 0.14);
 
   /* Typography */
   --font-sans: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -51,6 +54,8 @@
   --border: #334155;
   /* Slate 700 */
   --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --slider-track-empty: rgba(148, 163, 184, 0.32);
+  --slider-thumb-border: rgba(15, 23, 42, 0.45);
 }
 
 * {
@@ -68,41 +73,58 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Theme Toggle Button — position (top/left) is set by JS drag logic */
-.theme-toggle {
-  position: fixed;
-  z-index: 9999;
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 50%;
+/* Static theme toggle used in footer (no overlay on content) */
+.theme-toggle-static {
+  border-radius: 999px;
   background-color: var(--bg-card);
   color: var(--text-main);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  cursor: grab;
-  touch-action: none;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.48rem 0.78rem;
+  min-height: 2rem;
+  cursor: pointer;
   user-select: none;
-  opacity: 0;
-  transition: box-shadow 0.2s ease, transform 0.15s ease, opacity 0.2s ease;
+  transition: box-shadow 0.2s ease, transform 0.15s ease, background-color 0.2s ease;
 }
 
-.theme-toggle:hover {
+.theme-toggle-bar {
+  width: 1.2rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: var(--toggle-bar-color);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.35);
+}
+
+.theme-toggle-static-light {
+  --toggle-bar-color: linear-gradient(90deg, #f59e0b, #f97316);
+  background-color: rgb(245 158 11 / 0.08);
+  border-color: rgb(245 158 11 / 0.35);
+}
+
+.theme-toggle-static-dark {
+  --toggle-bar-color: linear-gradient(90deg, #60a5fa, #2563eb);
+}
+
+.theme-toggle-static:hover {
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.15), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  transform: scale(1.06);
+  transform: translateY(-1px);
 }
 
-.theme-toggle:active {
-  cursor: grabbing;
-  transform: scale(0.95);
+.theme-toggle-static:active {
+  transform: translateY(0);
 }
 
 @media (max-width: 768px) {
-  .theme-toggle {
-    width: 3rem;
-    height: 3rem;
+  .theme-toggle-static {
+    font-size: 0.78rem;
+    padding: 0.45rem 0.72rem;
   }
 }
 
@@ -282,7 +304,7 @@ button {
   }
 
   .landing-hero-widget {
-    height: clamp(520px, 72vh, 640px);
+    height: min(760px, calc(100svh - 24px));
   }
 
   .lesson-container {
@@ -314,7 +336,7 @@ button {
   }
 
   .landing-hero-widget {
-    height: clamp(500px, 76vh, 600px);
+    height: min(740px, calc(100svh - 16px));
   }
 
   .container {
@@ -356,7 +378,8 @@ button {
   height: 8px;
   border-radius: 999px;
   outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border);
+  background-color: var(--slider-track-empty);
 }
 
 .landing-slider::-webkit-slider-thumb {
@@ -365,7 +388,8 @@ button {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: white;
+  background: var(--slider-thumb);
+  border: 2px solid var(--slider-thumb-border);
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
@@ -374,10 +398,10 @@ button {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: white;
+  background: var(--slider-thumb);
+  border: 2px solid var(--slider-thumb-border);
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  border: none;
 }
 
 .landing-slider-years::-webkit-slider-thumb {

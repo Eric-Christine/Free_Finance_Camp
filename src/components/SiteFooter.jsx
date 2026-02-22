@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ThemeToggle from './ThemeToggle';
 
 const MAIN_SITE_URL = 'https://ericchristine.com';
 const CONTACT_EMAIL = 'ejcdevs@gmail.com';
@@ -15,6 +16,9 @@ export default function SiteFooter() {
             borderTop: '1px solid var(--border)',
             marginTop: '2.5rem'
         }}>
+            <div style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center' }}>
+                <ThemeToggle />
+            </div>
             <div style={{ marginBottom: '0.75rem' }}>
                 © {year} Free Finance Camp · Built by{' '}
                 <a

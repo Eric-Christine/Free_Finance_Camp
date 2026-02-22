@@ -15,7 +15,6 @@ const LessonPreviewPage = lazy(() => import('./components/LessonPreviewPage'));
 const ResourcesPage = lazy(() => import('./components/ResourcesPage'));
 const InteractiveToolsPage = lazy(() => import('./components/InteractiveToolsPage'));
 import InteractiveToolPlayer from './components/InteractiveToolPlayer';
-import ThemeToggle from './components/ThemeToggle'; // Added ThemeToggle import
 
 function PrivateRoute({ children }) {
   const { user } = useAuth();
@@ -30,7 +29,6 @@ function LessonRoute() {
 function App() {
   return (
     <Suspense fallback={<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>Loading...</div>}>
-      <ThemeToggle />
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<LandingPage />} />

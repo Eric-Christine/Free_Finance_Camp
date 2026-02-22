@@ -38,6 +38,14 @@ A gamified, interactive web application designed to teach personal finance conce
     npm run dev
     ```
 
+### Lesson Content Export (Word Copy Helper)
+
+- Run `npm run lessons:export` to generate `/Users/ericchristine/Desktop/code_projects/Free_Finance_Camp/lesson-content-export.md`.
+- Run `npm run lessons:watch` to keep that file auto-updated whenever lesson data changes in:
+  - `src/data/curriculum.js`
+  - `src/data/quizzes.js`
+- `npm run dev` and `npm run build` also regenerate this export automatically.
+
 ### Environment Variables
 
 Copy `.env.example` to `.env` and fill in:

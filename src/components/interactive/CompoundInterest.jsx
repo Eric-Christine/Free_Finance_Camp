@@ -174,7 +174,7 @@ export function CompoundInterestCore({ compact = false }) {
       display: 'flex',
       flexDirection: 'column',
       minWidth: 0,
-      overflowY: compact ? 'hidden' : 'auto',
+      overflowY: 'auto',
       overflowX: 'hidden'
     }}>
       <h3 style={{
@@ -262,7 +262,7 @@ export function CompoundInterestCore({ compact = false }) {
             value={monthlyAmount}
             onChange={(e) => setMonthlyAmount(Number(e.target.value))}
             style={{
-              background: `linear-gradient(to right, white ${monthlyProgress}%, rgba(255, 255, 255, 0.1) ${monthlyProgress}%)`
+              background: `linear-gradient(to right, var(--primary) ${monthlyProgress}%, var(--slider-track-empty) ${monthlyProgress}%)`
             }}
           />
         </div>
@@ -281,7 +281,7 @@ export function CompoundInterestCore({ compact = false }) {
             value={years}
             onChange={(e) => setYears(Number(e.target.value))}
             style={{
-              background: `linear-gradient(to right, var(--secondary) ${yearsProgress}%, rgba(255, 255, 255, 0.1) ${yearsProgress}%)`
+              background: `linear-gradient(to right, var(--secondary) ${yearsProgress}%, var(--slider-track-empty) ${yearsProgress}%)`
             }}
           />
         </div>

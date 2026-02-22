@@ -4,9 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "npm run lessons:export && vite",
     "seo:sitemap": "node scripts/generate-sitemap.mjs",
-    "build": "npm run seo:sitemap && vite build",
+    "lessons:export": "node scripts/export-lesson-content.mjs",
+    "lessons:watch": "node scripts/export-lesson-content.mjs --watch",
+    "build": "npm run lessons:export && npm run seo:sitemap && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "npm run build && firebase deploy"

@@ -1313,6 +1313,23 @@ export const quizzes = {
             correctIndex: 2
         }
     ],
+    'lesson-17-1': [
+        {
+            question: "What does 'non-profit' actually mean for an organization?",
+            options: ["Nobody gets paid", "There are no owners or shareholders who receive profits", "They cannot charge for services", "They are run entirely by volunteers"],
+            correctIndex: 1
+        },
+        {
+            question: "What is the main advantage of donating appreciated stock instead of cash to a charity or DAF?",
+            options: ["The stock becomes more valuable after donation", "You avoid capital gains tax and still get a deduction for the full market value", "The charity pays you interest on the donation", "It counts as double the deduction"],
+            correctIndex: 1
+        },
+        {
+            question: "What does the Effective Altruism movement emphasize when choosing where to donate?",
+            options: ["Giving to the most well-known charities", "Using evidence and data to maximize impact per dollar", "Donating only to local organizations", "Giving equal amounts to every charity"],
+            correctIndex: 1
+        }
+    ],
     'lesson-kids-3': [
         {
             question: "What makes 529 Plans attractive for education savings?",

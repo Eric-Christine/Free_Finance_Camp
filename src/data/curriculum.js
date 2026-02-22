@@ -177,12 +177,62 @@ export const curriculum = [
                 title: 'The Magic of Compound Interest',
                 description: 'See how your money can work for you.',
                 xpReward: 20,
-                content: [
-                    "Compound interest is often called the 'eighth wonder of the world'.",
-                    "It's when you earn interest NOT ONLY on your initial investment, but also on the interest that investment has already earned.",
-                    "",
-                    "Pro tip: Use the **Rule of 72** to estimate how long it takes to double your money. Divide 72 by your interest rate. (e.g., At 10% interest, your money doubles in 7.2 years).",
-                    "Use the calculator on the right to see how a small investment can grow into millions over time."
+                screens: [
+                    {
+                        title: 'Simple vs Compound Interest',
+                        content: [
+                            "There are two ways your money can earn interest:",
+                            "",
+                            "**Simple Interest** only pays you on your original deposit. If you invest $1,000 at 10% simple interest, you earn $100 every year—forever based on that original $1,000.",
+                            "",
+                            "**Compound Interest** pays you on your original deposit AND on the interest you have already earned. That means your interest earns interest, which earns more interest.",
+                            "",
+                            "This is why compound interest is often called the 'eighth wonder of the world.' Over time, the difference between simple and compound interest becomes enormous."
+                        ]
+                    },
+                    {
+                        title: 'Watch It Grow: Year by Year',
+                        content: [
+                            "Here is what $1,000 looks like at 10% annual compound interest:",
+                            "",
+                            "• **Year 1:** $1,000 → $1,100 (you earned $100)",
+                            "• **Year 2:** $1,100 → $1,210 (you earned $110—interest on interest)",
+                            "• **Year 5:** → $1,611",
+                            "• **Year 10:** → $2,594",
+                            "• **Year 20:** → $6,727",
+                            "• **Year 30:** → $17,449",
+                            "",
+                            "Notice how the growth accelerates. In the first 10 years you gained ~$1,600. In the last 10 years alone you gained over $10,700. That is the compounding snowball effect."
+                        ]
+                    },
+                    {
+                        title: 'The Rule of 72',
+                        content: [
+                            "Want a quick shortcut? Use the **Rule of 72** to estimate how long it takes to double your money.",
+                            "",
+                            "Just divide 72 by your annual interest rate:",
+                            "• At **6%** → 72 ÷ 6 = **12 years** to double",
+                            "• At **8%** → 72 ÷ 8 = **9 years** to double",
+                            "• At **10%** → 72 ÷ 10 = **7.2 years** to double",
+                            "• At **12%** → 72 ÷ 12 = **6 years** to double",
+                            "",
+                            "This means at 10%, $10,000 becomes $20,000 in about 7 years, $40,000 in 14 years, and $80,000 in 21 years—without adding a single extra dollar."
+                        ]
+                    },
+                    {
+                        title: 'Why Starting Early Matters',
+                        content: [
+                            "Compounding rewards patience. The earlier you start, the more time your money has to snowball.",
+                            "",
+                            "Consider two people who each invest $200/month at 10% average return:",
+                            "• **Person A** starts at age 20 and stops at 30 (invests for 10 years, then lets it grow).",
+                            "• **Person B** starts at age 30 and invests until 60 (invests for 30 years).",
+                            "",
+                            "By age 60, Person A—who invested for only 10 years—often ends up with MORE money than Person B, because those extra years of compounding are incredibly powerful.",
+                            "",
+                            "Use the calculator to see how a small investment can grow into a fortune over time."
+                        ]
+                    }
                 ],
                 type: 'interactive',
                 widget: 'CompoundInterest'
@@ -335,12 +385,67 @@ export const curriculum = [
                 title: 'The 50/30/20 Rule',
                 description: 'A simple framework for budgeting.',
                 xpReward: 25,
-                content: [
-                    "The 50/30/20 rule is a popular way to budget.",
-                    "50% of income goes to Needs (Rent, Bills).",
-                    "30% of income goes to Wants (Fun, Hobbies).",
-                    "20% of income goes to Savings & Debt Repayment.",
-                    "Try to adjust your budget to fit this model."
+                screens: [
+                    {
+                        title: 'The Framework',
+                        content: [
+                            "The **50/30/20 rule** is one of the most popular budgeting frameworks. It was popularized by Senator Elizabeth Warren in her book *All Your Worth*.",
+                            "",
+                            "The idea is simple—divide your **after-tax (take-home) income** into three buckets:",
+                            "",
+                            "• **50% → Needs**: Rent/mortgage, groceries, utilities, insurance, minimum debt payments, transportation to work.",
+                            "• **30% → Wants**: Dining out, streaming services, hobbies, vacations, new clothes beyond basics.",
+                            "• **20% → Savings & Debt Repayment**: Emergency fund, retirement contributions, extra debt payments beyond minimums.",
+                            "",
+                            "This is a starting point, not a rigid law. The goal is awareness of where your money actually goes."
+                        ]
+                    },
+                    {
+                        title: 'Applying It to Real Income',
+                        content: [
+                            "Here is what 50/30/20 looks like at different take-home pay levels:",
+                            "",
+                            "**$3,000/month take-home:**",
+                            "• Needs: $1,500 • Wants: $900 • Savings: $600",
+                            "",
+                            "**$4,500/month take-home:**",
+                            "• Needs: $2,250 • Wants: $1,350 • Savings: $900",
+                            "",
+                            "**$6,000/month take-home:**",
+                            "• Needs: $3,000 • Wants: $1,800 • Savings: $1,200",
+                            "",
+                            "If your needs already eat more than 50%, that is a signal—not a failure. It means you should focus on either increasing income or reducing fixed costs before worrying about the other buckets."
+                        ]
+                    },
+                    {
+                        title: 'When 50/30/20 Does Not Fit',
+                        content: [
+                            "This rule does not work perfectly for everyone. Common situations where you may need to adjust:",
+                            "",
+                            "**High cost-of-living areas:** Rent alone may consume 40%+ of income. You might need a 60/20/20 or 70/20/10 split temporarily while you work on increasing income.",
+                            "",
+                            "**Aggressive debt payoff:** If you are attacking high-interest debt, you might flip to 50/20/30—putting 30% toward debt repayment and limiting wants to 20%.",
+                            "",
+                            "**High earners:** If you earn well above your needs, consider 40/20/40—saving and investing 40% to accelerate wealth building.",
+                            "",
+                            "The framework is a guide. Adapt it to your reality."
+                        ]
+                    },
+                    {
+                        title: 'How to Actually Track It',
+                        content: [
+                            "A budget only works if you know where your money goes. Here is how to start:",
+                            "",
+                            "**Step 1:** Pull your last 3 months of bank and credit card statements.",
+                            "**Step 2:** Categorize every transaction as a Need, Want, or Savings/Debt payment.",
+                            "**Step 3:** Calculate the actual percentages. Most people are shocked by how much goes to wants.",
+                            "**Step 4:** Set a target split and track monthly.",
+                            "",
+                            "Free tools that help: your bank's spending categories, spreadsheet templates, or budgeting apps.",
+                            "",
+                            "Use the budget allocator to practice adjusting your own income into the 50/30/20 framework."
+                        ]
+                    }
                 ],
                 type: 'interactive',
                 widget: 'BudgetAllocator'
@@ -358,14 +463,64 @@ export const curriculum = [
                 title: 'What is the Stock Market?',
                 description: 'The basics of buying and selling stocks.',
                 xpReward: 20,
-                content: [
-                    "The stock market is where people buy and sell shares (tiny pieces) of companies.",
-                    "When you buy a stock, you own a small part of that company.",
-                    "If the company does well, your stock becomes more valuable. If it does poorly, you could lose money.",
-                    "",
-                    "The **S&P 500** is a list of the 500 biggest companies in the US. It is often used as a benchmark for how 'the market' is doing.",
-                    "Many stocks also pay **Dividends**—a portion of the company's profit paid out to you just for owning the share.",
-                    "Historically, the stock market has returned about 10% per year on average."
+                screens: [
+                    {
+                        title: 'Ownership in Pieces',
+                        content: [
+                            "The stock market is where people buy and sell **shares** (tiny pieces of ownership) in companies.",
+                            "",
+                            "When you buy a share of stock, you become a part-owner of that company. If the company earns more money and grows, your share becomes more valuable. If the company struggles, your share can lose value.",
+                            "",
+                            "Stocks are traded on **exchanges**—organized marketplaces where buyers and sellers meet. The two largest in the U.S. are:",
+                            "• **NYSE (New York Stock Exchange):** The oldest and largest exchange. Home to many established companies.",
+                            "• **NASDAQ:** Known for technology companies. Home to names like Apple, Microsoft, and Amazon.",
+                            "",
+                            "When people say 'the market is up today,' they usually mean one of the major stock indexes went up."
+                        ]
+                    },
+                    {
+                        title: 'Key Benchmarks',
+                        content: [
+                            "A **stock index** tracks the performance of a group of stocks to represent the broader market:",
+                            "",
+                            "• **S&P 500:** The 500 largest U.S. companies by market value. This is the most commonly cited benchmark. When people say 'the market,' they usually mean this.",
+                            "• **Dow Jones Industrial Average:** 30 large, well-known U.S. companies. Older and narrower than the S&P 500.",
+                            "• **NASDAQ Composite:** Heavily weighted toward technology companies.",
+                            "",
+                            "Historically, the S&P 500 has returned about **10% per year on average** before inflation (roughly **7% after inflation**). That average includes crashes, recessions, and recoveries—it is a long-term number, not a guarantee for any single year."
+                        ]
+                    },
+                    {
+                        title: 'How You Make Money',
+                        content: [
+                            "There are two main ways stocks can make you money:",
+                            "",
+                            "**1. Price Appreciation (Capital Gains)**",
+                            "You buy a stock at $50. It rises to $75. If you sell, your $25 profit is a capital gain.",
+                            "",
+                            "**2. Dividends**",
+                            "Some companies pay a portion of their profits directly to shareholders. This is called a **dividend**. You get paid just for owning the stock—even if you never sell it.",
+                            "",
+                            "Not all stocks pay dividends. Growth companies (like many tech firms) reinvest profits instead of paying them out. Established companies (like utilities and consumer goods) are more likely to pay regular dividends.",
+                            "",
+                            "Many long-term investors benefit from both: steady dividends plus price growth over time."
+                        ]
+                    },
+                    {
+                        title: 'How to Actually Buy a Stock',
+                        content: [
+                            "To buy stocks, you need a **brokerage account**. This is like a bank account, but for investments.",
+                            "",
+                            "**Popular brokerages for beginners:**",
+                            "• Fidelity — No minimums, strong research tools, excellent customer service.",
+                            "• Charles Schwab — Full-service broker, good for beginners and advanced investors.",
+                            "• Vanguard — Known for low-cost index funds. Great for long-term, buy-and-hold investors.",
+                            "",
+                            "Opening an account is free at most brokerages and takes about 15 minutes online. You link your bank account, transfer money in, and you can start investing.",
+                            "",
+                            "Most brokerages now offer **commission-free trading** on stocks and ETFs, and allow you to buy **fractional shares**—meaning you can invest $10 in a stock that costs $500 per share."
+                        ]
+                    }
                 ],
                 type: 'reading'
             },
@@ -394,11 +549,68 @@ export const curriculum = [
                 title: 'Index Funds: The Beginner\'s Best Friend',
                 description: 'Why diversification matters.',
                 xpReward: 25,
-                content: [
-                    "An index fund is a collection of many stocks bundled together.",
-                    "Instead of buying one company's stock, you buy a tiny piece of hundreds of companies.",
-                    "This 'diversification' reduces your risk. If one company fails, the others can make up for it.",
-                    "Famous investor Warren Buffett recommends index funds for most people."
+                screens: [
+                    {
+                        title: 'What Is an Index Fund?',
+                        content: [
+                            "An **index fund** is a single investment that holds hundreds or thousands of stocks bundled together. Instead of picking one company, you buy a tiny piece of an entire market.",
+                            "",
+                            "The fund automatically mirrors a stock index—like the S&P 500. If the S&P 500 goes up 12% in a year, your S&P 500 index fund goes up roughly 12% too (minus a small fee).",
+                            "",
+                            "This is called **passive investing** because no manager is trying to pick winners. The fund just holds everything in the index.",
+                            "",
+                            "Warren Buffett—one of the greatest investors of all time—has repeatedly said that a low-cost S&P 500 index fund is the best investment most people can make."
+                        ]
+                    },
+                    {
+                        title: 'Why Diversification Protects You',
+                        content: [
+                            "If you put all your money in one stock and that company fails, you lose everything.",
+                            "",
+                            "If you own an index fund with 500 companies and one goes bankrupt, it barely dents your portfolio. The other 499 companies absorb the loss.",
+                            "",
+                            "This is **diversification**—spreading your money across many investments so no single failure can wipe you out.",
+                            "",
+                            "Real example: When Enron collapsed in 2001, employees who had their retirement savings entirely in Enron stock lost everything. Investors who held a diversified index fund barely noticed—Enron was just one small piece of the index."
+                        ]
+                    },
+                    {
+                        title: 'Popular Index Funds to Know',
+                        content: [
+                            "You do not need to research hundreds of funds. Here are the most common starting points:",
+                            "",
+                            "**U.S. Total Stock Market:**",
+                            "• VTI (Vanguard) or ITOT (iShares) — Holds virtually every U.S. publicly traded stock.",
+                            "",
+                            "**S&P 500:**",
+                            "• VOO (Vanguard), SPY (State Street), or IVV (iShares) — The 500 largest U.S. companies.",
+                            "",
+                            "**International Stocks:**",
+                            "• VXUS (Vanguard) or IXUS (iShares) — Companies outside the U.S.",
+                            "",
+                            "**Total World:**",
+                            "• VT (Vanguard) — U.S. and international combined in one fund.",
+                            "",
+                            "Any of these can serve as the core of a beginner portfolio."
+                        ]
+                    },
+                    {
+                        title: 'What They Cost',
+                        content: [
+                            "Every fund charges a small annual fee called an **expense ratio**. This is a percentage of your investment taken each year to run the fund.",
+                            "",
+                            "• A typical index fund charges **0.03% to 0.20%** per year.",
+                            "• An actively managed fund might charge **0.50% to 1.50%** per year.",
+                            "",
+                            "That difference sounds small, but it compounds. On a $100,000 portfolio over 30 years at 10% growth:",
+                            "• 0.03% fee → you keep ~$1,720,000",
+                            "• 1.00% fee → you keep ~$1,400,000",
+                            "",
+                            "That is a **$320,000 difference** just from fees. This is why low-cost index funds are so powerful—you keep more of your own returns.",
+                            "",
+                            "When choosing a fund, always check the expense ratio. Lower is almost always better for index funds."
+                        ]
+                    }
                 ],
                 type: 'reading'
             },
@@ -1026,12 +1238,53 @@ export const curriculum = [
                 title: 'Opportunity Cost: The Hidden Factor',
                 description: 'What else could your money be doing?',
                 xpReward: 30,
-                content: [
-                    "Opportunity cost is what you give up when you choose one option over another.",
-                    "If you spend $30,000 on a car, you can't invest that $30,000.",
-                    "At a 10% return, $30,000 invested would become $48,000 in 5 years.",
-                    "That $18,000 difference is the 'opportunity cost' of buying the car.",
-                    "Always ask: 'What's the best use of this money?'"
+                screens: [
+                    {
+                        title: 'Cars Depreciate. Investments Appreciate.',
+                        content: [
+                            "Here is the core problem with spending big on a car: cars lose value while investments gain value. That gap is your **opportunity cost**.",
+                            "",
+                            "A new car loses roughly **20% of its value in the first year** and about **60% over five years**.",
+                            "",
+                            "That means a $30,000 new car is worth roughly $12,000 after 5 years. You lost $18,000 in value just by owning it.",
+                            "",
+                            "Meanwhile, $30,000 invested at a 10% average return would grow to roughly $48,000 over the same 5 years.",
+                            "",
+                            "The total gap: your $30,000 turned into $12,000 (car) instead of $48,000 (investment). That is a **$36,000 swing** in just five years."
+                        ]
+                    },
+                    {
+                        title: 'The Used Car Advantage',
+                        content: [
+                            "Because depreciation is steepest in the first 2-3 years, buying a **2-3 year old used car** lets someone else absorb the biggest loss.",
+                            "",
+                            "Example: A car with an MSRP of $35,000 might sell for $22,000 at 3 years old with 30,000 miles. Same car, most of its useful life ahead of it, $13,000 cheaper.",
+                            "",
+                            "If you invest that $13,000 difference instead of spending it:",
+                            "• After 10 years at 10%: ~$33,700",
+                            "• After 20 years at 10%: ~$87,500",
+                            "• After 30 years at 10%: ~$226,800",
+                            "",
+                            "One car purchase decision, made wisely, can be worth a quarter-million dollars over your lifetime."
+                        ]
+                    },
+                    {
+                        title: 'The Real Cost per Year',
+                        content: [
+                            "A better way to compare vehicles is **total cost per year of ownership**—not sticker price or monthly payment.",
+                            "",
+                            "Total cost includes:",
+                            "• Purchase price minus resale value (depreciation)",
+                            "• Interest paid on any loan",
+                            "• Insurance premiums",
+                            "• Fuel and maintenance",
+                            "• Opportunity cost of money tied up in the car",
+                            "",
+                            "A $15,000 used car you drive for 8 years may cost $3,000/year total. A $40,000 new car you trade in after 4 years may cost $12,000/year total. The 'cheap' monthly payment on the new car hides the real math.",
+                            "",
+                            "Use the calculator to compare what your car money could be doing if it were invested instead."
+                        ]
+                    }
                 ],
                 type: 'interactive',
                 widget: 'CompoundInterest'
@@ -1312,11 +1565,56 @@ export const curriculum = [
                 title: 'ETFs vs. Mutual Funds',
                 description: 'Understanding modern investment vehicles.',
                 xpReward: 40,
-                content: [
-                    "We've talked about Index Funds. Most Index Funds today are **ETFs** (Exchange Traded Funds).",
-                    "**ETF**: Trades like a stock. You can buy 1 share instantly during the day. Usually has lower fees.",
-                    "**Mutual Fund**: Trades once per day at closing price. Often has higher minimums.",
-                    "For most beginners, **ETFs** are the easiest way to start building a diversified portfolio."
+                screens: [
+                    {
+                        title: 'Two Wrappers, Same Idea',
+                        content: [
+                            "Both **ETFs** and **Mutual Funds** are baskets that hold many investments inside a single product. The difference is how they are bought, sold, and priced.",
+                            "",
+                            "**ETF (Exchange Traded Fund):**",
+                            "• Trades on a stock exchange throughout the day, just like a stock.",
+                            "• You can buy or sell at any time the market is open.",
+                            "• Price changes in real time as the market moves.",
+                            "• You can buy as little as 1 share (or fractional shares at many brokerages).",
+                            "",
+                            "**Mutual Fund:**",
+                            "• Does NOT trade during the day. All buy/sell orders execute once, at the closing price.",
+                            "• Often has minimum investment requirements ($1,000-$3,000 to start at some firms).",
+                            "• Price is calculated once per day after markets close (called the NAV—Net Asset Value)."
+                        ]
+                    },
+                    {
+                        title: 'Fees and Tax Efficiency',
+                        content: [
+                            "**Expense Ratios:**",
+                            "ETFs tend to have lower expense ratios. Popular index ETFs charge as low as 0.03%. Mutual fund versions of the same index may charge 0.10-0.50% or more.",
+                            "",
+                            "**Tax Efficiency:**",
+                            "ETFs are generally more tax-efficient in taxable accounts. Their structure allows investors to buy and sell without triggering taxable events for other holders. Mutual funds can distribute capital gains to all shareholders—even if you did not sell anything—creating a surprise tax bill at year end.",
+                            "",
+                            "**Trading Costs:**",
+                            "Most brokerages charge $0 commission on ETFs. Mutual funds are also commission-free at many firms, but some charge transaction fees for funds outside their own family.",
+                            "",
+                            "In tax-advantaged accounts (401k, IRA), the tax difference matters less—so mutual funds work just fine."
+                        ]
+                    },
+                    {
+                        title: 'When Each One Wins',
+                        content: [
+                            "**ETFs are usually better when:**",
+                            "• You want to start with a small amount (no minimums).",
+                            "• You are investing in a taxable brokerage account.",
+                            "• You want real-time pricing and flexibility.",
+                            "• You want the lowest possible expense ratio.",
+                            "",
+                            "**Mutual funds are usually better when:**",
+                            "• Your 401(k) only offers mutual fund options (this is common).",
+                            "• You want automatic recurring investments on a set schedule (many mutual funds handle this seamlessly).",
+                            "• You prefer to invest exact dollar amounts ($200/month) rather than buying whole shares.",
+                            "",
+                            "For most beginners starting in a personal brokerage account, **ETFs are the easiest and cheapest entry point** to build a diversified portfolio."
+                        ]
+                    }
                 ],
                 type: 'reading'
             },
@@ -1329,11 +1627,60 @@ export const curriculum = [
                     character: 'Kevin',
                     scenario: "Kevin sees a GameStore stock soaring 500% in a week. Everyone on the internet is buying it. He puts his tuition money in, hoping to double it."
                 },
-                content: [
-                    "**Meme Stocks** are companies whose price is driven by social media hype rather than business performance.",
-                    "This creates extreme **Volatility** (wild price swings).",
-                    "While some people make millions, many lose everything when the hype dies down.",
-                    "This is closer to gambling than investing. Never invest money you can't afford to lose in these assets."
+                screens: [
+                    {
+                        title: 'What Makes a Stock a Meme Stock',
+                        content: [
+                            "**Meme Stocks** are companies whose stock price is driven primarily by social media hype, viral momentum, and crowd psychology—not by the company's actual business performance.",
+                            "",
+                            "Classic pattern:",
+                            "1. A stock gets popular on social media (Reddit, Twitter/X, TikTok, Discord).",
+                            "2. Viral posts create FOMO (Fear Of Missing Out). People pile in.",
+                            "3. Price spikes 100-1000% in days or weeks.",
+                            "4. Early buyers sell for huge profits. Late buyers are left holding the loss.",
+                            "5. Price crashes back down. The hype moves to the next stock.",
+                            "",
+                            "The company itself may not have changed at all. No new product, no new revenue, no new plan. The only thing that changed was the story people told each other online."
+                        ]
+                    },
+                    {
+                        title: 'FOMO and the Psychology Trap',
+                        content: [
+                            "The reason meme stocks are so dangerous is that they exploit powerful psychological biases:",
+                            "",
+                            "• **FOMO (Fear Of Missing Out):** Seeing others post gains makes you feel like you are losing by not participating.",
+                            "• **Survivorship Bias:** You see the screenshots of people who made $50,000—but not the thousands who lost quietly.",
+                            "• **Herd Mentality:** If everyone is buying, it must be safe—right? No. Crowds can be spectacularly wrong.",
+                            "• **Sunk Cost Fallacy:** After the price drops, people hold on hoping to break even instead of cutting losses.",
+                            "",
+                            "Social media amplifies all of these. Gains are celebrated publicly. Losses are hidden. This creates a distorted picture of reality."
+                        ]
+                    },
+                    {
+                        title: 'Volatility: The Measure of Risk',
+                        content: [
+                            "**Volatility** means how wildly and unpredictably a price swings. Meme stocks have extreme volatility.",
+                            "",
+                            "A typical S&P 500 index fund might move 1-2% in a day. A meme stock can move **20-50% in a single day**—in either direction.",
+                            "",
+                            "That means you could invest $1,000 Monday morning and have $500 by Friday. Or $2,000. You have no reliable way to predict which.",
+                            "",
+                            "This is why meme stock trading is closer to **gambling** than investing. In gambling, the house has an edge. With meme stocks, the early insiders and large players have the edge."
+                        ]
+                    },
+                    {
+                        title: 'How to Protect Yourself',
+                        content: [
+                            "Meme stocks are not inherently evil—but you need rules if you engage with them:",
+                            "",
+                            "• **Never invest money you cannot afford to lose.** Tuition money, rent money, and emergency funds are off limits.",
+                            "• **Set a hard cap.** Some investors allocate 5% or less of their portfolio to speculative bets. The other 95% stays in diversified index funds.",
+                            "• **Decide your exit before you enter.** Set a price where you will sell—both on the upside and downside—before you buy.",
+                            "• **Turn off the noise.** Unfollow hype accounts. The people hyping a stock online may be selling while telling you to buy.",
+                            "",
+                            "The vast majority of your wealth should be built through boring, consistent, diversified investing. Meme stocks are entertainment—not a financial plan."
+                        ]
+                    }
                 ],
                 type: 'reading'
             },
@@ -1342,12 +1689,70 @@ export const curriculum = [
                 title: 'Intro to Options: High Risk, High Reward',
                 description: 'The casino of the stock market.',
                 xpReward: 50,
-                content: [
-                    "**Options** are contracts that let you bet on the future price of a stock.",
-                    "**Call Option**: A bet that the price will go UP.",
-                    "**Put Option**: A bet that the price will go DOWN.",
-                    "Options use 'Leaverage'. A small move in the stock price can mean a 100% gain or 100% loss in your option.",
-                    "WARNING: Most retail traders lose money on options. It is an advanced strategy."
+                screens: [
+                    {
+                        title: 'What Is an Option?',
+                        content: [
+                            "An **option** is a contract that gives you the right—but not the obligation—to buy or sell a stock at a specific price before a specific date.",
+                            "",
+                            "There are two types:",
+                            "• **Call Option:** A bet that the stock price will go UP. It gives you the right to BUY the stock at a set price.",
+                            "• **Put Option:** A bet that the stock price will go DOWN. It gives you the right to SELL the stock at a set price.",
+                            "",
+                            "Every option contract has three key terms:",
+                            "• **Strike Price:** The price at which you can buy/sell the stock.",
+                            "• **Expiration Date:** The deadline by which the stock must move in your favor.",
+                            "• **Premium:** The price you pay to purchase the option contract."
+                        ]
+                    },
+                    {
+                        title: 'How Leverage Multiplies Gains and Losses',
+                        content: [
+                            "Options use **leverage**—a small amount of money controls a much larger position.",
+                            "",
+                            "Each option contract typically controls **100 shares** of the underlying stock.",
+                            "",
+                            "**Example:**",
+                            "A stock trades at $100. You buy a call option with a $105 strike price for a $3 premium. Your total cost: $300 (100 shares × $3).",
+                            "",
+                            "• If the stock rises to $115, your option is worth $10 per share ($1,000 total). You paid $300, so your profit is **$700—a 233% return**.",
+                            "• If the stock stays below $105 by expiration, your option expires worthless. You lose the entire **$300—a 100% loss**.",
+                            "",
+                            "The same stock move that earns a shareholder 15% could earn an options trader 233%—or lose them everything. That is leverage."
+                        ]
+                    },
+                    {
+                        title: 'Why Most Retail Traders Lose',
+                        content: [
+                            "Studies consistently show that the majority of retail options traders lose money. Here is why:",
+                            "",
+                            "• **Time Decay:** Options lose value every single day as expiration approaches. You are not just betting on direction—you are racing a clock.",
+                            "• **The House Edge:** Market makers and institutional traders have better data, faster execution, and mathematical models. You are playing against professionals.",
+                            "• **Overconfidence:** Options profits feel so large that traders size up their bets and eventually take a catastrophic loss that wipes out months of gains.",
+                            "• **Complexity:** Implied volatility, Greeks (delta, gamma, theta, vega), and spread strategies add layers most beginners do not understand.",
+                            "",
+                            "The options market transfers money from overconfident beginners to patient, disciplined professionals."
+                        ]
+                    },
+                    {
+                        title: 'The Bottom Line',
+                        content: [
+                            "Options are a legitimate financial tool used by professionals for hedging and income strategies. But for beginners, they are extremely risky.",
+                            "",
+                            "**If you are still building your investment foundation:**",
+                            "• Focus on index funds and long-term compounding first.",
+                            "• Do not trade options until you have a fully funded emergency fund and a solid core portfolio.",
+                            "• If you do explore options, start only with money you can afford to lose completely.",
+                            "",
+                            "**Never trade options with:**",
+                            "• Rent or bill money",
+                            "• Emergency fund money",
+                            "• Student loan or borrowed money",
+                            "• Money you need within the next 1-2 years",
+                            "",
+                            "WARNING: Most retail traders lose money on options. Treat it as an advanced strategy, not a shortcut to wealth."
+                        ]
+                    }
                 ],
                 type: 'reading'
             }
@@ -1514,7 +1919,7 @@ export const curriculum = [
                 description: 'Where should you put your money?',
                 xpReward: 50,
                 content: [
-                    "**Stocks**: Ownership in companies. High liquidty, high long-term growth, volatile.",
+                    "**Stocks**: Ownership in companies. High liquidity, high long-term growth, volatile.",
                     "**Real Estate**: Tangible land/buildings. Can use leverage (mortgage). High maintenance costs, hard to sell quickly.",
                     "**Hard Assets** (Gold, Art, Commodities): Physical items with intrinsic value. Often used as a hedge against inflation. Usually don't produce cash flow (dividends/rent)."
                 ],
