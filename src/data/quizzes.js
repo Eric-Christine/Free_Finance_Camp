@@ -1356,7 +1356,7 @@ export const quizzes = {
             correctIndex: 1
         },
         {
-            question: "Which framework is commonly strongest for detailed control but higher maintenance?",
+            question: "Which framework offers the most detailed control but requires the most maintenance?",
             options: ["Zero-based budgeting", "50/30/20 only", "No-budget method", "Cash stuffing only"],
             correctIndex: 0
         },
@@ -1390,7 +1390,7 @@ export const quizzes = {
             correctIndex: 2
         },
         {
-            question: "According to the lesson, platforms like Robinhood helped trigger what broader trend?",
+            question: "What broader industry change did platforms like Robinhood help trigger?",
             options: ["Broker shutdowns", "Mainstream incumbents lowering stock/ETF commissions", "Elimination of all investing risk", "End of retirement accounts"],
             correctIndex: 1
         },
@@ -1460,8 +1460,8 @@ export const quizzes = {
             correctIndex: 1
         },
         {
-            question: "What is inventory loading?",
-            options: ["Buying only what customers already ordered", "Pressure to purchase excess product to stay 'active' or rank up", "Running out of product", "Selling digital-only services"],
+            question: "In the context of MLMs, what does inventory loading mean?",
+            options: ["Ordering only what customers have already bought", "Being pressured to purchase excess product to stay 'active' or rank up", "Running out of product", "Selling digital-only services"],
             correctIndex: 1
         },
         {
@@ -1646,8 +1646,8 @@ export const quizzes = {
     ],
     'lesson-24-3': [
         {
-            question: "Effective hourly rate (EHR) should include:",
-            options: ["Billable delivery hours only", "All true hours including admin and revisions", "Only meeting time", "Only invoicing time"],
+            question: "When calculating your effective hourly rate (EHR), which hours should you count?",
+            options: ["Billable delivery hours only", "All hours including admin, revisions, and client communication", "Only meeting time", "Only invoicing time"],
             correctIndex: 1
         },
         {
@@ -1722,7 +1722,7 @@ export const quizzes = {
         },
         {
             question: "A higher withdrawal rate generally means:",
-            options: ["Lower depletion risk", "Higher portfolio depletion risk", "No change in risk", "Guaranteed portfolio growth"],
+            options: ["Lower risk of running out of money", "Greater risk of running out of money", "No change in risk", "Guaranteed portfolio growth"],
             correctIndex: 1
         },
         {
@@ -1739,7 +1739,7 @@ export const quizzes = {
         },
         {
             question: "Required minimum distributions (RMDs) matter because they can:",
-            options: ["Reduce all taxable income", "Force taxable withdrawals later", "Eliminate Medicare costs", "Replace Social Security"],
+            options: ["Reduce all taxable income", "Force taxable withdrawals that increase your tax bill", "Eliminate Medicare costs", "Replace Social Security"],
             correctIndex: 1
         },
         {
@@ -1779,6 +1779,93 @@ export const quizzes = {
         {
             question: "A strong annual retirement review should include:",
             options: ["Only market headlines", "Spending, withdrawal rate, taxes, healthcare assumptions, and estate updates", "Only last month's returns", "Only Social Security statements"],
+            correctIndex: 1
+        }
+    ],
+
+    // Module 26: Investing 301: Evaluating What You Buy
+    'lesson-26-1': [
+        {
+            question: "Over a 10-15 year period, roughly what percentage of actively managed U.S. large-cap funds underperform the S&P 500?",
+            options: ["About 25%", "About 50%", "About 70%", "About 85-90%"],
+            correctIndex: 3
+        },
+        {
+            question: "Before buying an individual stock, what should you compare your expected return against?",
+            options: ["Your friend's portfolio returns", "The S&P 500 as a benchmark", "The stock's 52-week high", "Your savings account interest rate"],
+            correctIndex: 1
+        },
+        {
+            question: "Why is the S&P 500 considered the default benchmark for U.S. investors?",
+            options: ["It is guaranteed to go up every year", "It represents the 500 largest U.S. companies and has strong long-term average returns", "It has no risk", "It is the only index that exists"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-26-2': [
+        {
+            question: "A P/E ratio of 25 means you are paying $25 for every:",
+            options: ["$25 of revenue", "$1 of annual earnings", "$25 of dividends", "$1 of stock price"],
+            correctIndex: 1
+        },
+        {
+            question: "Around 2016, Apple traded at a low P/E because the market believed:",
+            options: ["Apple was going bankrupt", "iPhone cycles were peaking and the services growth was not yet priced in", "Apple had no revenue", "The S&P 500 was crashing"],
+            correctIndex: 1
+        },
+        {
+            question: "A stock has a low P/E but declining revenue and shrinking margins. This is likely a:",
+            options: ["Growth stock", "Value trap", "Guaranteed bargain", "Meme stock"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-26-3': [
+        {
+            question: "Which ETF metric represents the annual fee you pay for holding the fund?",
+            options: ["Tracking error", "Expense ratio", "Bid-ask spread", "Assets under management"],
+            correctIndex: 1
+        },
+        {
+            question: "Before buying a sector ETF, what should you have?",
+            options: ["A social media recommendation", "A clear thesis for why the sector will outperform or diversify your portfolio", "At least $50,000 to invest", "A guarantee it will go up"],
+            correctIndex: 1
+        },
+        {
+            question: "What does tracking error measure?",
+            options: ["A mistake in your brokerage account", "How closely an ETF follows its target index", "The cost of selling an ETF", "The ETF's total return"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-26-4': [
+        {
+            question: "Morningstar's star rating is primarily based on:",
+            options: ["Future price predictions", "Past risk-adjusted performance relative to category peers", "The CEO's reputation", "Social media sentiment"],
+            correctIndex: 1
+        },
+        {
+            question: "A fund with 5 stars in a niche category could still:",
+            options: ["Never lose money", "Underperform the S&P 500", "Guarantee future returns", "Eliminate all investment risk"],
+            correctIndex: 1
+        },
+        {
+            question: "The Morningstar Style Box helps you understand:",
+            options: ["The fund's star rating", "What size and style of stocks the fund holds", "How much the fund costs", "The fund manager's salary"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-26-5': [
+        {
+            question: "Two companies earn the same profit, but one trades at a much higher P/E. The most likely explanation is:",
+            options: ["A data error", "The market values them differently based on growth expectations and narrative", "Higher profit always means higher P/E", "The cheaper one is always the better buy"],
+            correctIndex: 1
+        },
+        {
+            question: "Peloton's stock crashed over 95% primarily because:",
+            options: ["The company had no revenue", "The COVID-era narrative collapsed when demand returned to normal", "Interest rates went to zero", "The company was delisted"],
+            correctIndex: 1
+        },
+        {
+            question: "The three forces that drive stock pricing are:",
+            options: ["Supply, demand, and luck", "Valuation, growth, and narrative", "Revenue, profit, and dividends", "News, social media, and analyst calls"],
             correctIndex: 1
         }
     ]

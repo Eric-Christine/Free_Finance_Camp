@@ -3835,7 +3835,7 @@ export const curriculum = [
                         content: [
                             "Manual systems break when life gets busy.",
                             "",
-                            "Automation turns financial goals into default behavior. You remove dozens of weekly decisions and reduce avoidable errors."
+                            "Automation turns your financial goals into default behavior — things that happen without you deciding each time. This removes dozens of weekly decisions and cuts down on avoidable mistakes."
                         ]
                     },
                     {
@@ -3847,7 +3847,7 @@ export const curriculum = [
                             "• **Sinking Funds (savings buckets)**: annual and irregular costs",
                             "• **Long-Term Investing**: recurring brokerage or retirement contributions",
                             "",
-                            "Name each account by purpose so transfer rules are obvious."
+                            "Give each account a clear name based on its purpose (like 'Bills' or 'Travel Fund') so your transfer rules are easy to follow."
                         ]
                     },
                     {
@@ -3902,11 +3902,11 @@ export const curriculum = [
                     {
                         title: 'Before vs After: Fee Friction',
                         content: [
-                            "Before the 2010s commission wars, many brokers charged per-trade fees that made small, frequent purchases inefficient.",
+                            "Before brokers began competing to lower fees in the 2010s, many charged $5-$10 or more per trade.",
                             "",
-                            "A recurring $25 or $50 buy could lose a meaningful share to trading costs.",
+                            "A recurring $25 or $50 buy could lose a significant chunk just to trading costs.",
                             "",
-                            "That friction discouraged beginner investors from automating small contributions."
+                            "That friction made it impractical for beginners to automate small, frequent contributions."
                         ]
                     },
                     {
@@ -3969,7 +3969,7 @@ export const curriculum = [
                             "4) Retirement or brokerage investing",
                             "5) Discretionary spending",
                             "",
-                            "Same order every paycheck removes guesswork."
+                            "Following the same order every paycheck removes guesswork."
                         ]
                     },
                     {
@@ -3992,7 +3992,7 @@ export const curriculum = [
                             "• Increase transfer by 1% of pay after each raise, or",
                             "• Increase a fixed dollar amount every quarter",
                             "",
-                            "Tiny increases compound into large long-run changes."
+                            "Small, steady increases add up to surprisingly large results over time."
                         ]
                     },
                     {
@@ -4059,7 +4059,7 @@ export const curriculum = [
                             "• Is debt interest rate now higher than expected investment return?",
                             "• Do I need to reroute transfers?",
                             "",
-                            "Automation is not set-and-forget forever. It is set, monitor, and refine."
+                            "Automation is not set-and-forget. Think of it as: set it up, check in regularly, and adjust as your life changes."
                         ]
                     }
                 ],
@@ -4098,7 +4098,7 @@ export const curriculum = [
                             "2) **Authority**: fake bank, IRS, employer, police, or court identity.",
                             "3) **Scarcity**: limited-time offer or one remaining slot.",
                             "4) **Social proof**: fake testimonials, fake group chat success stories.",
-                            "5) **Reciprocity**: small favor first, larger ask next."
+                            "5) **Reciprocity**: small favor or 'gift' first, then a larger ask for money or access."
                         ]
                     },
                     {
@@ -4150,7 +4150,7 @@ export const curriculum = [
                             "• **Recruitment-first compensation** ('build a team' over product value)",
                             "• **Starter kit or inventory loading** requirements",
                             "• **Income screenshots without audited net profit data**",
-                            "• **Lifestyle theater** (cars, trips, staged success)",
+                            "• **Lifestyle theater** — flashy photos of cars, trips, and luxury meant to recruit, not reflect real earnings",
                             "• **Blame shifting** ('you failed because you did not grind hard enough')"
                         ]
                     },
@@ -4204,9 +4204,9 @@ export const curriculum = [
                     {
                         title: 'Credential and Code Theft',
                         content: [
-                            "Scammers increasingly want your login plus your second-factor code.",
+                            "Scammers increasingly want both your login password and your second-factor code.",
                             "",
-                            "If someone asks for a one-time passcode, assume account takeover attempt.",
+                            "If anyone asks for a one-time passcode, treat it as an account takeover attempt.",
                             "",
                             "No legitimate support team needs your verification code."
                         ]
@@ -4229,7 +4229,7 @@ export const curriculum = [
                             "Set this baseline:",
                             "• Unique passwords via password manager",
                             "• Multi-factor authentication on email, bank, brokerage, payroll",
-                            "• SIM-swap protections with mobile carrier",
+                            "• SIM-swap protection through your mobile carrier (prevents someone from hijacking your phone number)",
                             "• Transaction alerts on all financial accounts"
                         ]
                     }
@@ -4243,7 +4243,7 @@ export const curriculum = [
                 xpReward: 55,
                 story: {
                     character: 'Tori',
-                    scenario: 'Tori wakes up to three unfamiliar credit card approvals and a bank transfer she never authorized. Panic is natural, but speed and order matter more than panic.'
+                    scenario: 'Tori wakes up to three unfamiliar credit card approvals and a bank transfer she never authorized. Panic is natural, but a quick, organized response will protect her more than fear will.'
                 },
                 screens: [
                     {
@@ -4373,7 +4373,7 @@ export const curriculum = [
                     {
                         title: 'What a Will Actually Controls',
                         content: [
-                            "A will states how you want probate assets distributed and who should administer your estate.",
+                            "A will states how you want your assets distributed after death and who should manage the process (called your executor).",
                             "",
                             "For parents, naming guardians is one of the highest-impact decisions."
                         ]
@@ -4383,7 +4383,7 @@ export const curriculum = [
                         content: [
                             "Dying without a will means state intestacy law determines asset distribution.",
                             "",
-                            "That default may not match your preferences, family dynamics, or dependency realities."
+                            "That default may not match your wishes, your family situation, or who actually depends on you financially."
                         ]
                     },
                     {
@@ -4403,7 +4403,7 @@ export const curriculum = [
                         content: [
                             "Estate documents are useful only if valid and findable.",
                             "",
-                            "Follow state signing and witness rules, store originals securely, and ensure trusted people know where they are."
+                            "Follow your state's signing and witness requirements, store originals in a secure location, and make sure trusted people know where to find them."
                         ]
                     }
                 ],
@@ -4473,9 +4473,9 @@ export const curriculum = [
                     {
                         title: 'Capacity Risk Is a Planning Issue',
                         content: [
-                            "Estate planning is not only about death. It is also about incapacity.",
+                            "Estate planning is not just about what happens after death — it also covers what happens if you become unable to make decisions for yourself.",
                             "",
-                            "Without documents, families may need court intervention to manage finances or medical decisions."
+                            "Without the right documents in place, your family may need to go through a court process just to pay your bills or make medical choices on your behalf."
                         ]
                     },
                     {
@@ -4550,7 +4550,7 @@ export const curriculum = [
                         content: [
                             "A trust only controls assets that are properly retitled or assigned to it.",
                             "",
-                            "Creating a trust document without funding steps leaves much of the benefit unrealized."
+                            "Creating a trust document without actually transferring assets into it is like buying a safe but never putting anything inside — most of the benefit goes unrealized."
                         ]
                     }
                 ],
@@ -4663,7 +4663,7 @@ export const curriculum = [
                         content: [
                             "As complexity grows, evaluate entity structure, contracts, and insurance with qualified professionals.",
                             "",
-                            "Regardless of structure, documentation quality is what protects cash flow."
+                            "No matter what entity type you choose, keeping clean records is what actually protects your cash flow."
                         ]
                     }
                 ],
@@ -4694,7 +4694,7 @@ export const curriculum = [
                             "",
                             "Track runway in months, not just dollars.",
                             "",
-                            "Many operators target a minimum runway floor before increasing discretionary spending."
+                            "Many freelancers and small business owners set a minimum runway threshold (e.g., 3-6 months of expenses) before allowing themselves to increase spending."
                         ]
                     },
                     {
@@ -4748,7 +4748,7 @@ export const curriculum = [
                             "",
                             "Include admin, revision rounds, and client communication time.",
                             "",
-                            "If EHR is below target, your pricing model needs redesign."
+                            "If your EHR is consistently below your target, it is time to rethink your pricing, scope boundaries, or both."
                         ]
                     },
                     {
@@ -4811,7 +4811,7 @@ export const curriculum = [
                             "• Receipt or documentation hygiene",
                             "• Clear business-purpose notes for gray-area expenses",
                             "",
-                            "Messy records create stress and audit risk."
+                            "Messy records lead to missed deductions, year-end stress, and higher audit risk."
                         ]
                     },
                     {
@@ -4866,7 +4866,7 @@ export const curriculum = [
                             "• Milestone billing for larger projects",
                             "• No final handoff before final payment",
                             "",
-                            "Collections discipline prevents avoidable financing stress."
+                            "Staying disciplined about getting paid on time prevents the kind of cash crunches that force bad decisions."
                         ]
                     },
                     {
@@ -4928,7 +4928,7 @@ export const curriculum = [
                             "• Annuity or bond ladder cash flow",
                             "• Portfolio withdrawals",
                             "",
-                            "Gaps between essentials and guaranteed income define portfolio burden."
+                            "The gap between your essential expenses and your guaranteed income is what your investment portfolio must cover."
                         ]
                     },
                     {
@@ -4955,9 +4955,9 @@ export const curriculum = [
                     {
                         title: 'Withdrawal Rate Basics',
                         content: [
-                            "Withdrawal rate = annual portfolio withdrawals / starting or current portfolio value (depending on method).",
+                            "Your withdrawal rate is the percentage of your portfolio you take out each year. For example, withdrawing $40,000 from a $1,000,000 portfolio is a 4% withdrawal rate.",
                             "",
-                            "Higher withdrawal rates increase the risk of depletion."
+                            "The higher your withdrawal rate, the greater the risk of running out of money."
                         ]
                     },
                     {
@@ -4965,7 +4965,7 @@ export const curriculum = [
                         content: [
                             "Poor market returns early in retirement can hurt more than poor returns later.",
                             "",
-                            "Why: withdrawals during early declines reduce the asset base that could have recovered."
+                            "Why: if you withdraw money while your portfolio is down, you lock in losses and leave fewer dollars to recover when markets bounce back."
                         ]
                     },
                     {
@@ -5022,7 +5022,7 @@ export const curriculum = [
                         content: [
                             "Required minimum distributions from certain tax-deferred accounts can force taxable income later.",
                             "",
-                            "Proactive multi-year planning can smooth taxable income and reduce future pressure."
+                            "Planning ahead across multiple years can help smooth out your taxable income and avoid a big tax spike later."
                         ]
                     },
                     {
@@ -5030,7 +5030,7 @@ export const curriculum = [
                         content: [
                             "Withdrawal choices can ripple into other costs.",
                             "",
-                            "Plan annually with your tax picture, benefit thresholds, and expected spending needs in one view."
+                            "Each year, review your tax situation, benefit thresholds (like Medicare premiums), and expected spending together in one planning session."
                         ]
                     }
                 ],
@@ -5107,7 +5107,7 @@ export const curriculum = [
                     {
                         title: 'Sample Guardrail Framework',
                         content: [
-                            "Illustrative rules:",
+                            "Example rules:",
                             "• If withdrawal rate rises above upper threshold -> trim flexible spending",
                             "• If withdrawal rate falls below lower threshold -> consider modest raise or gifting",
                             "• If inflation spikes -> prioritize essentials and delay large discretionary upgrades"
@@ -5130,6 +5130,332 @@ export const curriculum = [
                             "No retirement plan is perfect.",
                             "",
                             "The goal is a plan that can adapt without panic, preserve dignity, and keep essentials funded through multiple market environments."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-26',
+        title: 'Investing 301: Evaluating What You Buy',
+        description: 'Learn to evaluate individual stocks and ETFs using valuation, growth metrics, and research tools like Morningstar — with the S&P 500 as your benchmark.',
+        xpReward: 155,
+        lessons: [
+            {
+                id: 'lesson-26-1',
+                title: 'The S&P 500 Benchmark — Your Starting Line',
+                description: 'Understand why the S&P 500 is the standard benchmark for every investment decision and why most professionals fail to beat it.',
+                xpReward: 40,
+                story: {
+                    character: 'Dante',
+                    scenario: 'Dante has been picking individual stocks for two years and thinks he is doing well. When he finally compares his results to the S&P 500, he realizes the index beat him both years — and charged almost nothing in fees.'
+                },
+                screens: [
+                    {
+                        title: 'Why Every Investment Needs a Benchmark',
+                        content: [
+                            "The S&P 500 tracks the 500 largest U.S. companies by market capitalization. It is the default scoreboard for U.S. investing.",
+                            "",
+                            "If you buy an individual stock or a sector ETF, the first question is always: **will this beat what I could earn by simply owning the whole S&P 500?**",
+                            "",
+                            "The S&P 500 has returned roughly **10% per year on average** over the long term (before inflation). That is your hurdle rate — the minimum return any alternative investment should aim to match or beat over your time horizon.",
+                            "",
+                            "This does not mean everything must beat the index every single year. It means you should have a clear reason for choosing something instead of the index."
+                        ]
+                    },
+                    {
+                        title: 'Most Stock Pickers Lose to the Index',
+                        content: [
+                            "The SPIVA scorecard (S&P Indices Versus Active) tracks how professional fund managers perform against the S&P 500.",
+                            "",
+                            "Key finding: over any rolling 10-15 year period, roughly **85-90% of actively managed U.S. large-cap funds underperform the S&P 500.** That includes full-time professionals with research teams, data terminals, and decades of experience.",
+                            "",
+                            "If most professionals cannot beat the index consistently, a casual retail investor faces even steeper odds.",
+                            "",
+                            "This is not a reason to never pick stocks. It is a reason to be honest about the difficulty and to keep most of your portfolio in a diversified core."
+                        ]
+                    },
+                    {
+                        title: 'The Benchmark Mindset',
+                        content: [
+                            "Before buying any individual stock or specialty ETF, answer three questions:",
+                            "",
+                            "**1. What is my thesis?** Why will this specific investment outperform or serve a purpose that the S&P 500 does not?",
+                            "**2. What is my time horizon?** Am I willing to hold this for 3-5 years or longer while it plays out?",
+                            "**3. What is my exit condition?** What would need to change for me to sell and rotate back into the index?",
+                            "",
+                            "If you cannot answer all three clearly, the S&P 500 index fund is probably the better choice. There is no shame in that — it beats most professionals."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-26-2',
+                title: 'Evaluating an Individual Stock',
+                description: 'Learn the key valuation and growth metrics that help you decide if a stock is worth buying at its current price.',
+                xpReward: 45,
+                story: {
+                    character: 'Priya',
+                    scenario: 'Priya keeps hearing coworkers hype a popular tech stock. The price has doubled this year and everyone says it is going higher. Before buying, she wants to understand what the numbers actually say about the company — not just what the hype says.'
+                },
+                screens: [
+                    {
+                        title: 'Valuation — What Are You Paying?',
+                        content: [
+                            "Valuation metrics tell you how much you are paying relative to what the company actually earns or sells.",
+                            "",
+                            "**P/E Ratio (Price-to-Earnings):** Stock price divided by earnings per share. A P/E of 20 means you pay $20 for every $1 of annual earnings. Lower P/E suggests cheaper; higher P/E suggests the market expects big future growth.",
+                            "",
+                            "**P/S Ratio (Price-to-Sales):** Stock price divided by revenue per share. Useful for companies that are not yet profitable — you can still see what you are paying relative to their sales.",
+                            "",
+                            "**PEG Ratio (Price/Earnings to Growth):** P/E divided by expected earnings growth rate. A PEG near 1.0 suggests the price is in line with growth expectations. Below 1.0 may be undervalued; above 2.0 may be expensive relative to growth.",
+                            "",
+                            "None of these numbers tell the full story alone. They are starting points for comparison."
+                        ]
+                    },
+                    {
+                        title: 'Growth — What Are You Buying Into?',
+                        content: [
+                            "Growth metrics tell you whether the company is expanding its business.",
+                            "",
+                            "**Revenue Growth:** Is the company selling more year over year? Look at the trend over 3-5 years, not just one quarter. Decelerating growth (going from 40% to 20% to 10%) is a warning sign even if the number is still positive.",
+                            "",
+                            "**Earnings Growth:** Is the company turning more of its revenue into profit? Revenue growth without improving margins can mean the company is spending faster than it earns.",
+                            "",
+                            "**Free Cash Flow:** Cash left over after running the business and investing in growth. Companies with strong free cash flow have options: pay dividends, buy back stock, invest in new products, or build a war chest. Companies burning cash need to keep raising money or cutting costs."
+                        ]
+                    },
+                    {
+                        title: 'Real Example: Apple in 2016 — Hiding in Plain Sight',
+                        content: [
+                            "Around 2016, Apple traded at a P/E of roughly 10-12. The market treated it as a hardware company stuck in iPhone upgrade cycles — cheap but 'boring.'",
+                            "",
+                            "But underneath the headline numbers, **Services revenue** (App Store, iCloud, Apple Music) was quietly compounding. The ecosystem lock-in was underpriced because the old narrative — 'peak iPhone' — overshadowed the new growth engine.",
+                            "",
+                            "Investors who looked past the stale story and saw the services shift bought at a discount. Apple went from roughly $25 (split-adjusted) to over $150+ in the following years.",
+                            "",
+                            "**The lesson:** A low P/E with slowing headline growth can mask a business that is transforming underneath. Valuation said 'cheap.' Growth said 'look deeper.' The market's outdated narrative created the opportunity."
+                        ]
+                    },
+                    {
+                        title: 'The Trap of Cheap vs. Expensive',
+                        content: [
+                            "A stock with a low P/E is not automatically a bargain. It may be cheap because the business is declining, the industry is shrinking, or management is poor. This is called a **value trap.**",
+                            "",
+                            "A stock with a high P/E is not automatically overpriced. It may be expensive because the company is growing rapidly and the market expects that growth to continue.",
+                            "",
+                            "The key question is not 'is this stock cheap or expensive?' The key question is: **is this stock priced fairly relative to its actual growth and risk?**",
+                            "",
+                            "A quick checklist before buying any stock:",
+                            "• Is the valuation reasonable compared to industry peers and the stock's own history?",
+                            "• Is revenue and earnings growth strong, stable, and accelerating — or slowing?",
+                            "• Is the company generating free cash flow or burning cash?",
+                            "• Does the company carry manageable debt?",
+                            "• Does it have a durable competitive advantage?"
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-26-3',
+                title: 'Evaluating an ETF to Buy',
+                description: 'Learn what separates a good ETF from a bad one — expense ratio, tracking error, holdings — and when a sector ETF deserves a spot in your portfolio.',
+                xpReward: 45,
+                story: {
+                    character: 'Tomás',
+                    scenario: 'Tomás wants to invest in clean energy but finds six different clean energy ETFs. They all sound similar but have wildly different expense ratios, holdings, and performance. He needs a framework for picking the right one — or deciding if the sector bet is worth it at all.'
+                },
+                screens: [
+                    {
+                        title: 'The Four Things That Separate ETFs',
+                        content: [
+                            "Not all ETFs are created equal, even within the same category. When comparing ETFs, evaluate four factors:",
+                            "",
+                            "**Expense Ratio:** The annual fee expressed as a percentage. A broad S&P 500 ETF charges as low as 0.03%. A specialty sector ETF might charge 0.30-0.75%. Over decades, that gap compounds into real money lost.",
+                            "",
+                            "**Tracking Error:** How closely the ETF follows its target index. Lower is better. If an ETF claims to track the S&P 500 but consistently lags by 0.5% per year, that is a hidden cost on top of the expense ratio.",
+                            "",
+                            "**Holdings and Concentration:** How many stocks does the ETF hold, and how much weight is in the top 10? A sector ETF with 70% in five companies is not truly diversified — you are making a concentrated bet on those names.",
+                            "",
+                            "**Liquidity and Spread:** How easily can you buy and sell? Low-volume ETFs can have wide bid-ask spreads, meaning you pay more to get in and receive less when you sell."
+                        ]
+                    },
+                    {
+                        title: 'Sector ETFs — Concentrated Bets Need a Thesis',
+                        content: [
+                            "A sector ETF focuses on one industry: technology, healthcare, energy, financials, real estate, etc.",
+                            "",
+                            "The appeal is simple: if you believe a sector will outperform the broad market, a sector ETF gives you focused exposure.",
+                            "",
+                            "The risk is equally simple: **you are giving up diversification.** If that sector underperforms, your entire position suffers — and there is no basket of other industries to cushion the blow.",
+                            "",
+                            "Before buying a sector ETF, you need a thesis that answers: **why will this sector outperform the S&P 500 over my time horizon, or what diversification benefit does it provide that the S&P 500 already lacks?**",
+                            "",
+                            "If you do not have a clear thesis, the broad index is the safer default."
+                        ]
+                    },
+                    {
+                        title: 'ETF Due Diligence Checklist',
+                        content: [
+                            "When evaluating any ETF:",
+                            "",
+                            "**1. Expense ratio:** Compare against similar funds. Broad index ETFs should be under 0.10%. Sector or thematic ETFs under 0.50% is reasonable.",
+                            "**2. AUM (Assets Under Management):** Larger AUM generally means better liquidity and tighter spreads. Be cautious with very small, new ETFs.",
+                            "**3. Top holdings:** Check if the ETF is truly diversified or if a few mega-cap stocks dominate the weight.",
+                            "**4. Track record:** How long has the ETF existed? New ETFs have no performance history to evaluate.",
+                            "**5. Compare to the benchmark:** Over the same period, did this ETF beat, match, or trail the S&P 500? If it consistently trails, you need a strong reason to own it."
+                        ]
+                    },
+                    {
+                        title: 'When a Sector ETF Makes Sense — and When It Does Not',
+                        content: [
+                            "Sector ETFs earn a spot in your portfolio when:",
+                            "• You have a specific, evidence-based thesis (e.g., demographic trends favoring healthcare, or a structural shift toward renewable energy)",
+                            "• You are using the sector as a **satellite position** (10-20% of portfolio), not replacing your diversified core",
+                            "• You understand the concentration risk and have a time horizon of 3-5+ years",
+                            "",
+                            "Sector ETFs do **NOT** make sense when:",
+                            "• You are chasing last year's best-performing sector (performance chasing is a reliable way to underperform)",
+                            "• You cannot explain why the sector will outperform or diversify beyond what the S&P 500 already provides",
+                            "• You are replacing your diversified core rather than adding to it"
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-26-4',
+                title: 'Morningstar as a Research Starting Point',
+                description: 'Use Morningstar star ratings, style boxes, and analyst reports to kick-start your research — while understanding what they cannot tell you.',
+                xpReward: 50,
+                story: {
+                    character: 'Simone',
+                    scenario: 'Simone opens a Morningstar page and sees a 5-star rating on a fund. She is about to buy it immediately. Her cousin who works in finance tells her the stars are a useful starting filter, not a buy signal. She wants to understand what Morningstar actually measures and where its blind spots are.'
+                },
+                screens: [
+                    {
+                        title: 'What Morningstar Star Ratings Actually Measure',
+                        content: [
+                            "Morningstar rates funds and ETFs on a 1-to-5 star scale. Five stars is the highest. But what do those stars actually mean?",
+                            "",
+                            "The rating is **backward-looking.** It measures how a fund has performed relative to similar funds in its category over the past 3, 5, and 10 years, adjusted for risk and fees.",
+                            "",
+                            "A 5-star fund delivered strong risk-adjusted returns compared to its peers **in the past.** It does NOT mean the fund will perform well in the future.",
+                            "",
+                            "Think of it like a restaurant review: a 5-star rating tells you diners enjoyed the food before you arrived. It does not guarantee your meal will be perfect."
+                        ]
+                    },
+                    {
+                        title: 'The Style Box and Analyst Reports',
+                        content: [
+                            "**The Morningstar Style Box** is a 3x3 grid. One axis is company size (Large, Mid, Small cap). The other is investment style (Value, Blend, Growth). It tells you what kind of stocks a fund actually holds.",
+                            "",
+                            "Why it matters: if you think you own a large-cap value fund but the style box shows large-cap growth, your portfolio may have more growth exposure than you planned.",
+                            "",
+                            "**Analyst Reports** are written by Morningstar's research team. They assign a medal rating (Gold, Silver, Bronze, Neutral, Negative) that is **forward-looking** — the analyst's opinion on whether the fund will outperform its peers in the future.",
+                            "",
+                            "The medal rating is more useful than the star rating for buy decisions because it looks ahead. But it is still one analyst's opinion, not a guarantee."
+                        ]
+                    },
+                    {
+                        title: 'What Morningstar Cannot Tell You',
+                        content: [
+                            "Morningstar is a research tool, not an oracle. Important limitations:",
+                            "",
+                            "**Past performance bias:** Star ratings reward past performance. Funds that did well before may not do well next, especially if market conditions shift.",
+                            "",
+                            "**Category comparison only:** A 5-star fund in a weak category can still underperform the S&P 500. The stars compare within category, not against the broad market.",
+                            "",
+                            "**No context for your goals:** Morningstar does not know your risk tolerance, time horizon, tax situation, or existing holdings. A 5-star fund might be wrong for your specific portfolio.",
+                            "",
+                            "Use Morningstar to narrow your options. Then do your own evaluation using the metrics from previous lessons."
+                        ]
+                    },
+                    {
+                        title: 'A Practical Morningstar Workflow',
+                        content: [
+                            "**Step 1:** Use star ratings and category to filter down to a short list (e.g., 4-5 star large-cap blend funds with expense ratios under 0.20%).",
+                            "**Step 2:** Read the analyst report and medal rating to understand the forward-looking thesis.",
+                            "**Step 3:** Check the style box to confirm it matches the role you want it to play in your portfolio.",
+                            "**Step 4:** Compare expense ratio, holdings, and performance against the S&P 500 benchmark.",
+                            "**Step 5:** Make your own decision. Morningstar gives you starting data. The final call is yours.",
+                            "",
+                            "The best investors use Morningstar as a filter, not a decision-maker."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-26-5',
+                title: 'Valuation vs. Growth vs. Narrative — The Three Forces Behind Price',
+                description: 'Understand why two companies with similar numbers can trade at wildly different prices, and how to spot when narrative has gone too far.',
+                xpReward: 55,
+                story: {
+                    character: 'Nia',
+                    scenario: 'Nia compares two companies: both earn about $5 billion per year, but one trades at a P/E of 15 and the other at a P/E of 45. She cannot figure out why the market values them so differently. The answer is not in the spreadsheet — it is in the story the market tells about each company\'s future.'
+                },
+                screens: [
+                    {
+                        title: 'The Three Forces',
+                        content: [
+                            "Every stock price is shaped by three forces pulling at the same time:",
+                            "",
+                            "**Valuation:** What the numbers say the company is worth today. P/E, P/S, cash flow, book value — the spreadsheet analysis. Valuation answers: 'What am I paying?'",
+                            "",
+                            "**Growth:** What the numbers say about the company's trajectory. Revenue growth, earnings growth, market expansion. Growth answers: 'What am I buying into?'",
+                            "",
+                            "**Narrative:** The story the market tells about the company's future. Vision, leadership, industry trends, cultural relevance. Narrative answers: 'Why does the market believe?'",
+                            "",
+                            "When all three forces align — reasonable valuation, strong growth, and a compelling narrative — a stock can surge. When they conflict, prices become volatile and unpredictable."
+                        ]
+                    },
+                    {
+                        title: 'Real Example: Peloton — When Narrative Collapses',
+                        content: [
+                            "During COVID, Peloton's narrative was irresistible: 'the future of fitness is at home forever.' Revenue surged, the stock hit roughly $170, and the P/S ratio exceeded 25x.",
+                            "",
+                            "But the growth was pulled forward by lockdowns, not by a permanent behavior shift. When gyms reopened, demand collapsed. Revenue decelerated sharply, inventory piled up, and the stock crashed over **95% from its peak.**",
+                            "",
+                            "**What went wrong:** The valuation only made sense if COVID-era demand was the new permanent baseline — and it was not. The narrative required the world to change forever, and when normalcy returned, the premium evaporated.",
+                            "",
+                            "**The lesson:** When a stock is priced for a story that requires the world to permanently change, any return to normal is devastating. Always ask: what happens to this price if the narrative does not play out?"
+                        ]
+                    },
+                    {
+                        title: 'Recognizing When Narrative Overrides Fundamentals',
+                        content: [
+                            "Warning signs that narrative has gone too far:",
+                            "",
+                            "**Sky-high P/E with decelerating growth:** The story says the future is amazing, but the numbers are slowing down. The gap between belief and reality is widening.",
+                            "",
+                            "**'This time is different' language:** When people argue that traditional valuation metrics no longer apply to a company or sector, be cautious. Metrics always matter eventually.",
+                            "",
+                            "**Price driven by a single catalyst:** If the entire investment thesis depends on one product launch, one regulatory decision, or one partnership, that is narrative concentration risk.",
+                            "",
+                            "Consider Cisco at the dot-com peak: P/E over 200, narrative that internet infrastructure would grow forever. Cisco was and is a real business — but the narrative premium was so extreme that even 25 years of real growth could not justify what people paid. The stock still has not recovered its 2000 peak price."
+                        ]
+                    },
+                    {
+                        title: 'Using the Framework as an Investor',
+                        content: [
+                            "For every stock you evaluate, score it on all three dimensions:",
+                            "",
+                            "**Valuation:** Is the price reasonable given current earnings and cash flow? Compare P/E and P/S to industry peers and the stock's own history.",
+                            "**Growth:** Are revenue and earnings growing? Is growth accelerating or decelerating?",
+                            "**Narrative:** What story is the market telling? Is it grounded in evidence, or is it hype?",
+                            "",
+                            "The goal is to find investments where at least two of the three forces are working in your favor.",
+                            "",
+                            "If valuation and growth are strong but narrative is weak (boring company, no hype), you may have found a hidden gem — like Apple in 2016. Or you may have a value trap. Dig deeper.",
+                            "",
+                            "If narrative is strong but valuation is stretched and growth is slowing, proceed with extreme caution — you may be buying at the peak of a story, like Peloton in 2020.",
+                            "",
+                            "The market is a voting machine in the short run and a weighing machine in the long run. Narrative wins votes. Fundamentals win the weigh-in."
                         ]
                     }
                 ],

@@ -1,7 +1,7 @@
 # Free Finance Camp Lesson Content Export
 
 Auto-generated from `src/data/curriculum.js` and `src/data/quizzes.js`.
-Generated at: 2026-02-23T18:15:05.402Z
+Generated at: 2026-02-23T22:50:25.994Z
 
 Use this file to copy lesson material into Word and edit.
 
@@ -4575,7 +4575,7 @@ If your rules fit on one page, you will actually use them.
    - C. Your tax refund month
    - D. Your best month from last year
 
-2. Which framework is commonly strongest for detailed control but higher maintenance?
+2. Which framework offers the most detailed control but requires the most maintenance?
    - A. Zero-based budgeting [Correct]
    - B. 50/30/20 only
    - C. No-budget method
@@ -4602,7 +4602,7 @@ Camila and her partner both get paid on different schedules and keep missing due
 #### Screen 1: Automation Beats Willpower
 Manual systems break when life gets busy.
 
-Automation turns financial goals into default behavior. You remove dozens of weekly decisions and reduce avoidable errors.
+Automation turns your financial goals into default behavior — things that happen without you deciding each time. This removes dozens of weekly decisions and cuts down on avoidable mistakes.
 
 #### Screen 2: Account Architecture
 A clean setup:
@@ -4611,7 +4611,7 @@ A clean setup:
 • **Sinking Funds (savings buckets)**: annual and irregular costs
 • **Long-Term Investing**: recurring brokerage or retirement contributions
 
-Name each account by purpose so transfer rules are obvious.
+Give each account a clear name based on its purpose (like 'Bills' or 'Travel Fund') so your transfer rules are easy to follow.
 
 #### Screen 3: Autopay Tiers
 Tier 1: Non-negotiable bills (housing, insurance, utilities, minimum debt)
@@ -4672,11 +4672,11 @@ Character: Renee
 In 2012, Renee avoided investing because each trade felt like paying a toll. Years later she can automate small weekly buys with almost no transaction friction. She wants to understand what changed and how to use it responsibly.
 
 #### Screen 1: Before vs After: Fee Friction
-Before the 2010s commission wars, many brokers charged per-trade fees that made small, frequent purchases inefficient.
+Before brokers began competing to lower fees in the 2010s, many charged $5-$10 or more per trade.
 
-A recurring $25 or $50 buy could lose a meaningful share to trading costs.
+A recurring $25 or $50 buy could lose a significant chunk just to trading costs.
 
-That friction discouraged beginner investors from automating small contributions.
+That friction made it impractical for beginners to automate small, frequent contributions.
 
 #### Screen 2: Pioneers and Industry Response
 A major inflection point came when mobile-first platforms like **Robinhood** pushed commission-free U.S. stock and ETF trading into mainstream awareness.
@@ -4711,7 +4711,7 @@ Guardrails:
    - C. Normalization of low/zero-commission trading [Correct]
    - D. Ban on fractional shares
 
-2. According to the lesson, platforms like Robinhood helped trigger what broader trend?
+2. What broader industry change did platforms like Robinhood help trigger?
    - A. Broker shutdowns
    - B. Mainstream incumbents lowering stock/ETF commissions [Correct]
    - C. Elimination of all investing risk
@@ -4745,7 +4745,7 @@ Example order:
 4) Retirement or brokerage investing
 5) Discretionary spending
 
-Same order every paycheck removes guesswork.
+Following the same order every paycheck removes guesswork.
 
 #### Screen 2: Set Frequency by Income Pattern
 Match transfer timing to when money arrives:
@@ -4762,7 +4762,7 @@ Then use an automatic ratchet:
 • Increase transfer by 1% of pay after each raise, or
 • Increase a fixed dollar amount every quarter
 
-Tiny increases compound into large long-run changes.
+Small, steady increases add up to surprisingly large results over time.
 
 #### Screen 4: Transfer Rules for Volatile Months
 Define fallback rules in advance:
@@ -4832,7 +4832,7 @@ Ask every quarter:
 • Is debt interest rate now higher than expected investment return?
 • Do I need to reroute transfers?
 
-Automation is not set-and-forget forever. It is set, monitor, and refine.
+Automation is not set-and-forget. Think of it as: set it up, check in regularly, and adjust as your life changes.
 
 #### Quiz
 1. Which is a common automation failure mode?
@@ -4879,7 +4879,7 @@ Scammers often trigger fear, excitement, guilt, or scarcity before asking for mo
 2) **Authority**: fake bank, IRS, employer, police, or court identity.
 3) **Scarcity**: limited-time offer or one remaining slot.
 4) **Social proof**: fake testimonials, fake group chat success stories.
-5) **Reciprocity**: small favor first, larger ask next.
+5) **Reciprocity**: small favor or 'gift' first, then a larger ask for money or access.
 
 #### Screen 3: Your 90-Second Pause Rule
 Before sending money or sharing account data:
@@ -4937,7 +4937,7 @@ Watch for these patterns:
 • **Recruitment-first compensation** ('build a team' over product value)
 • **Starter kit or inventory loading** requirements
 • **Income screenshots without audited net profit data**
-• **Lifestyle theater** (cars, trips, staged success)
+• **Lifestyle theater** — flashy photos of cars, trips, and luxury meant to recruit, not reflect real earnings
 • **Blame shifting** ('you failed because you did not grind hard enough')
 
 #### Screen 3: Income Claim Reality Check
@@ -4964,9 +4964,9 @@ Protect cash first, then repair social trust.
    - C. Transparent audited net-income data
    - D. Low-pressure sales practices
 
-2. What is inventory loading?
-   - A. Buying only what customers already ordered
-   - B. Pressure to purchase excess product to stay 'active' or rank up [Correct]
+2. In the context of MLMs, what does inventory loading mean?
+   - A. Ordering only what customers have already bought
+   - B. Being pressured to purchase excess product to stay 'active' or rank up [Correct]
    - C. Running out of product
    - D. Selling digital-only services
 
@@ -4997,9 +4997,9 @@ Most financial scams arrive through:
 • Fake recruiter and fake employer workflows
 
 #### Screen 2: Credential and Code Theft
-Scammers increasingly want your login plus your second-factor code.
+Scammers increasingly want both your login password and your second-factor code.
 
-If someone asks for a one-time passcode, assume account takeover attempt.
+If anyone asks for a one-time passcode, treat it as an account takeover attempt.
 
 No legitimate support team needs your verification code.
 
@@ -5016,7 +5016,7 @@ Never front money for employer purchases from personal accounts.
 Set this baseline:
 • Unique passwords via password manager
 • Multi-factor authentication on email, bank, brokerage, payroll
-• SIM-swap protections with mobile carrier
+• SIM-swap protection through your mobile carrier (prevents someone from hijacking your phone number)
 • Transaction alerts on all financial accounts
 
 #### Quiz
@@ -5048,7 +5048,7 @@ Description: Follow a prioritized incident response process when identity theft 
 
 #### Story
 Character: Tori
-Tori wakes up to three unfamiliar credit card approvals and a bank transfer she never authorized. Panic is natural, but speed and order matter more than panic.
+Tori wakes up to three unfamiliar credit card approvals and a bank transfer she never authorized. Panic is natural, but a quick, organized response will protect her more than fear will.
 
 #### Screen 1: Golden Rule: Contain First
 Your first objective is to stop further damage.
@@ -5183,14 +5183,14 @@ Character: Lena
 Lena and her spouse have two young kids and a house, but no will. After a health scare, she realizes that if both parents die unexpectedly, courts and state default rules will decide major outcomes unless they document their wishes.
 
 #### Screen 1: What a Will Actually Controls
-A will states how you want probate assets distributed and who should administer your estate.
+A will states how you want your assets distributed after death and who should manage the process (called your executor).
 
 For parents, naming guardians is one of the highest-impact decisions.
 
 #### Screen 2: What Happens Without a Will
 Dying without a will means state intestacy law determines asset distribution.
 
-That default may not match your preferences, family dynamics, or dependency realities.
+That default may not match your wishes, your family situation, or who actually depends on you financially.
 
 #### Screen 3: Guardianship Considerations
 When naming guardians, evaluate:
@@ -5204,7 +5204,7 @@ Always have a primary and backup guardian.
 #### Screen 4: Execution and Storage
 Estate documents are useful only if valid and findable.
 
-Follow state signing and witness rules, store originals securely, and ensure trusted people know where they are.
+Follow your state's signing and witness requirements, store originals in a secure location, and make sure trusted people know where to find them.
 
 #### Quiz
 1. If someone dies without a valid will, asset distribution is generally decided by:
@@ -5295,9 +5295,9 @@ Character: Sonia
 After a sudden stroke in her family, Sonia learns that even spouses can face delays accessing accounts or making medical choices without proper documents. She wants decision authority clarified before an emergency.
 
 #### Screen 1: Capacity Risk Is a Planning Issue
-Estate planning is not only about death. It is also about incapacity.
+Estate planning is not just about what happens after death — it also covers what happens if you become unable to make decisions for yourself.
 
-Without documents, families may need court intervention to manage finances or medical decisions.
+Without the right documents in place, your family may need to go through a court process just to pay your bills or make medical choices on your behalf.
 
 #### Screen 2: Financial Power of Attorney
 A financial POA authorizes someone to handle defined financial actions on your behalf.
@@ -5369,7 +5369,7 @@ Common reasons:
 #### Screen 4: Funding the Trust Is Critical
 A trust only controls assets that are properly retitled or assigned to it.
 
-Creating a trust document without funding steps leaves much of the benefit unrealized.
+Creating a trust document without actually transferring assets into it is like buying a safe but never putting anything inside — most of the benefit goes unrealized.
 
 #### Quiz
 1. A trust is best described as:
@@ -5490,7 +5490,7 @@ This prevents accidental under-saving for taxes.
 #### Screen 4: Entity Basics and Documentation
 As complexity grows, evaluate entity structure, contracts, and insurance with qualified professionals.
 
-Regardless of structure, documentation quality is what protects cash flow.
+No matter what entity type you choose, keeping clean records is what actually protects your cash flow.
 
 #### Quiz
 1. Why separate personal and business finances?
@@ -5533,7 +5533,7 @@ Business runway = cash reserves / monthly core business burn.
 
 Track runway in months, not just dollars.
 
-Many operators target a minimum runway floor before increasing discretionary spending.
+Many freelancers and small business owners set a minimum runway threshold (e.g., 3-6 months of expenses) before allowing themselves to increase spending.
 
 #### Screen 3: Revenue Smoothing Rules
 When revenue is strong:
@@ -5593,7 +5593,7 @@ EHR = (project revenue - direct costs) / true hours worked.
 
 Include admin, revision rounds, and client communication time.
 
-If EHR is below target, your pricing model needs redesign.
+If your EHR is consistently below your target, it is time to rethink your pricing, scope boundaries, or both.
 
 #### Screen 3: Pricing Structures
 Common structures:
@@ -5613,9 +5613,9 @@ Use explicit terms for:
 Pricing is strategy. Boundaries are enforcement.
 
 #### Quiz
-1. Effective hourly rate (EHR) should include:
+1. When calculating your effective hourly rate (EHR), which hours should you count?
    - A. Billable delivery hours only
-   - B. All true hours including admin and revisions [Correct]
+   - B. All hours including admin, revisions, and client communication [Correct]
    - C. Only meeting time
    - D. Only invoicing time
 
@@ -5659,7 +5659,7 @@ Good deduction capture requires:
 • Receipt or documentation hygiene
 • Clear business-purpose notes for gray-area expenses
 
-Messy records create stress and audit risk.
+Messy records lead to missed deductions, year-end stress, and higher audit risk.
 
 #### Screen 4: Your Quarterly Finance Meeting
 Review each quarter:
@@ -5720,7 +5720,7 @@ Use cash-flow-friendly defaults:
 • Milestone billing for larger projects
 • No final handoff before final payment
 
-Collections discipline prevents avoidable financing stress.
+Staying disciplined about getting paid on time prevents the kind of cash crunches that force bad decisions.
 
 #### Screen 4: Insurance and Continuity
 Depending on business type, consider professional and general liability coverage.
@@ -5784,7 +5784,7 @@ List recurring income sources and start dates:
 • Annuity or bond ladder cash flow
 • Portfolio withdrawals
 
-Gaps between essentials and guaranteed income define portfolio burden.
+The gap between your essential expenses and your guaranteed income is what your investment portfolio must cover.
 
 #### Screen 4: Define a Monthly Paycheck Rule
 Set a planned monthly transfer from investment accounts into spending accounts.
@@ -5823,14 +5823,14 @@ Character: Victor
 Victor retired right before a market drawdown. His portfolio value dropped while he was still withdrawing the same amount, and now he worries he retired at the wrong time.
 
 #### Screen 1: Withdrawal Rate Basics
-Withdrawal rate = annual portfolio withdrawals / starting or current portfolio value (depending on method).
+Your withdrawal rate is the percentage of your portfolio you take out each year. For example, withdrawing $40,000 from a $1,000,000 portfolio is a 4% withdrawal rate.
 
-Higher withdrawal rates increase the risk of depletion.
+The higher your withdrawal rate, the greater the risk of running out of money.
 
 #### Screen 2: Sequence-of-Returns Risk
 Poor market returns early in retirement can hurt more than poor returns later.
 
-Why: withdrawals during early declines reduce the asset base that could have recovered.
+Why: if you withdraw money while your portfolio is down, you lock in losses and leave fewer dollars to recover when markets bounce back.
 
 #### Screen 3: Mitigation Strategies
 Common mitigations:
@@ -5851,8 +5851,8 @@ A robust plan is one you can stick with when markets are uncomfortable.
    - D. You are in accumulation mode
 
 2. A higher withdrawal rate generally means:
-   - A. Lower depletion risk
-   - B. Higher portfolio depletion risk [Correct]
+   - A. Lower risk of running out of money
+   - B. Greater risk of running out of money [Correct]
    - C. No change in risk
    - D. Guaranteed portfolio growth
 
@@ -5890,12 +5890,12 @@ Goals:
 #### Screen 3: RMD and Bracket Management
 Required minimum distributions from certain tax-deferred accounts can force taxable income later.
 
-Proactive multi-year planning can smooth taxable income and reduce future pressure.
+Planning ahead across multiple years can help smooth out your taxable income and avoid a big tax spike later.
 
 #### Screen 4: Coordinate With Filing and Medicare Effects
 Withdrawal choices can ripple into other costs.
 
-Plan annually with your tax picture, benefit thresholds, and expected spending needs in one view.
+Each year, review your tax situation, benefit thresholds (like Medicare premiums), and expected spending together in one planning session.
 
 #### Quiz
 1. Tax-aware withdrawal planning is important because:
@@ -5906,7 +5906,7 @@ Plan annually with your tax picture, benefit thresholds, and expected spending n
 
 2. Required minimum distributions (RMDs) matter because they can:
    - A. Reduce all taxable income
-   - B. Force taxable withdrawals later [Correct]
+   - B. Force taxable withdrawals that increase your tax bill [Correct]
    - C. Eliminate Medicare costs
    - D. Replace Social Security
 
@@ -5990,7 +5990,7 @@ Guardrails are predefined spending rules tied to portfolio and inflation conditi
 They reduce emotional decision-making during stress.
 
 #### Screen 2: Sample Guardrail Framework
-Illustrative rules:
+Example rules:
 • If withdrawal rate rises above upper threshold -> trim flexible spending
 • If withdrawal rate falls below lower threshold -> consider modest raise or gifting
 • If inflation spikes -> prioritize essentials and delay large discretionary upgrades
@@ -6026,5 +6026,360 @@ The goal is a plan that can adapt without panic, preserve dignity, and keep esse
    - B. Spending, withdrawal rate, taxes, healthcare assumptions, and estate updates [Correct]
    - C. Only last month's returns
    - D. Only Social Security statements
+
+---
+
+## Module 26: Investing 301: Evaluating What You Buy
+Module ID: `module-26`
+Description: Learn to evaluate individual stocks and ETFs using valuation, growth metrics, and research tools like Morningstar — with the S&P 500 as your benchmark.
+
+### Lesson 1: The S&P 500 Benchmark — Your Starting Line
+Lesson ID: `lesson-26-1`
+Type: reading
+XP Reward: 40
+Description: Understand why the S&P 500 is the standard benchmark for every investment decision and why most professionals fail to beat it.
+
+#### Story
+Character: Dante
+Dante has been picking individual stocks for two years and thinks he is doing well. When he finally compares his results to the S&P 500, he realizes the index beat him both years — and charged almost nothing in fees.
+
+#### Screen 1: Why Every Investment Needs a Benchmark
+The S&P 500 tracks the 500 largest U.S. companies by market capitalization. It is the default scoreboard for U.S. investing.
+
+If you buy an individual stock or a sector ETF, the first question is always: **will this beat what I could earn by simply owning the whole S&P 500?**
+
+The S&P 500 has returned roughly **10% per year on average** over the long term (before inflation). That is your hurdle rate — the minimum return any alternative investment should aim to match or beat over your time horizon.
+
+This does not mean everything must beat the index every single year. It means you should have a clear reason for choosing something instead of the index.
+
+#### Screen 2: Most Stock Pickers Lose to the Index
+The SPIVA scorecard (S&P Indices Versus Active) tracks how professional fund managers perform against the S&P 500.
+
+Key finding: over any rolling 10-15 year period, roughly **85-90% of actively managed U.S. large-cap funds underperform the S&P 500.** That includes full-time professionals with research teams, data terminals, and decades of experience.
+
+If most professionals cannot beat the index consistently, a casual retail investor faces even steeper odds.
+
+This is not a reason to never pick stocks. It is a reason to be honest about the difficulty and to keep most of your portfolio in a diversified core.
+
+#### Screen 3: The Benchmark Mindset
+Before buying any individual stock or specialty ETF, answer three questions:
+
+**1. What is my thesis?** Why will this specific investment outperform or serve a purpose that the S&P 500 does not?
+**2. What is my time horizon?** Am I willing to hold this for 3-5 years or longer while it plays out?
+**3. What is my exit condition?** What would need to change for me to sell and rotate back into the index?
+
+If you cannot answer all three clearly, the S&P 500 index fund is probably the better choice. There is no shame in that — it beats most professionals.
+
+#### Quiz
+1. Over a 10-15 year period, roughly what percentage of actively managed U.S. large-cap funds underperform the S&P 500?
+   - A. About 25%
+   - B. About 50%
+   - C. About 70%
+   - D. About 85-90% [Correct]
+
+2. Before buying an individual stock, what should you compare your expected return against?
+   - A. Your friend's portfolio returns
+   - B. The S&P 500 as a benchmark [Correct]
+   - C. The stock's 52-week high
+   - D. Your savings account interest rate
+
+3. Why is the S&P 500 considered the default benchmark for U.S. investors?
+   - A. It is guaranteed to go up every year
+   - B. It represents the 500 largest U.S. companies and has strong long-term average returns [Correct]
+   - C. It has no risk
+   - D. It is the only index that exists
+
+---
+
+### Lesson 2: Evaluating an Individual Stock
+Lesson ID: `lesson-26-2`
+Type: reading
+XP Reward: 45
+Description: Learn the key valuation and growth metrics that help you decide if a stock is worth buying at its current price.
+
+#### Story
+Character: Priya
+Priya keeps hearing coworkers hype a popular tech stock. The price has doubled this year and everyone says it is going higher. Before buying, she wants to understand what the numbers actually say about the company — not just what the hype says.
+
+#### Screen 1: Valuation — What Are You Paying?
+Valuation metrics tell you how much you are paying relative to what the company actually earns or sells.
+
+**P/E Ratio (Price-to-Earnings):** Stock price divided by earnings per share. A P/E of 20 means you pay $20 for every $1 of annual earnings. Lower P/E suggests cheaper; higher P/E suggests the market expects big future growth.
+
+**P/S Ratio (Price-to-Sales):** Stock price divided by revenue per share. Useful for companies that are not yet profitable — you can still see what you are paying relative to their sales.
+
+**PEG Ratio (Price/Earnings to Growth):** P/E divided by expected earnings growth rate. A PEG near 1.0 suggests the price is in line with growth expectations. Below 1.0 may be undervalued; above 2.0 may be expensive relative to growth.
+
+None of these numbers tell the full story alone. They are starting points for comparison.
+
+#### Screen 2: Growth — What Are You Buying Into?
+Growth metrics tell you whether the company is expanding its business.
+
+**Revenue Growth:** Is the company selling more year over year? Look at the trend over 3-5 years, not just one quarter. Decelerating growth (going from 40% to 20% to 10%) is a warning sign even if the number is still positive.
+
+**Earnings Growth:** Is the company turning more of its revenue into profit? Revenue growth without improving margins can mean the company is spending faster than it earns.
+
+**Free Cash Flow:** Cash left over after running the business and investing in growth. Companies with strong free cash flow have options: pay dividends, buy back stock, invest in new products, or build a war chest. Companies burning cash need to keep raising money or cutting costs.
+
+#### Screen 3: Real Example: Apple in 2016 — Hiding in Plain Sight
+Around 2016, Apple traded at a P/E of roughly 10-12. The market treated it as a hardware company stuck in iPhone upgrade cycles — cheap but 'boring.'
+
+But underneath the headline numbers, **Services revenue** (App Store, iCloud, Apple Music) was quietly compounding. The ecosystem lock-in was underpriced because the old narrative — 'peak iPhone' — overshadowed the new growth engine.
+
+Investors who looked past the stale story and saw the services shift bought at a discount. Apple went from roughly $25 (split-adjusted) to over $150+ in the following years.
+
+**The lesson:** A low P/E with slowing headline growth can mask a business that is transforming underneath. Valuation said 'cheap.' Growth said 'look deeper.' The market's outdated narrative created the opportunity.
+
+#### Screen 4: The Trap of Cheap vs. Expensive
+A stock with a low P/E is not automatically a bargain. It may be cheap because the business is declining, the industry is shrinking, or management is poor. This is called a **value trap.**
+
+A stock with a high P/E is not automatically overpriced. It may be expensive because the company is growing rapidly and the market expects that growth to continue.
+
+The key question is not 'is this stock cheap or expensive?' The key question is: **is this stock priced fairly relative to its actual growth and risk?**
+
+A quick checklist before buying any stock:
+• Is the valuation reasonable compared to industry peers and the stock's own history?
+• Is revenue and earnings growth strong, stable, and accelerating — or slowing?
+• Is the company generating free cash flow or burning cash?
+• Does the company carry manageable debt?
+• Does it have a durable competitive advantage?
+
+#### Quiz
+1. A P/E ratio of 25 means you are paying $25 for every:
+   - A. $25 of revenue
+   - B. $1 of annual earnings [Correct]
+   - C. $25 of dividends
+   - D. $1 of stock price
+
+2. Around 2016, Apple traded at a low P/E because the market believed:
+   - A. Apple was going bankrupt
+   - B. iPhone cycles were peaking and the services growth was not yet priced in [Correct]
+   - C. Apple had no revenue
+   - D. The S&P 500 was crashing
+
+3. A stock has a low P/E but declining revenue and shrinking margins. This is likely a:
+   - A. Growth stock
+   - B. Value trap [Correct]
+   - C. Guaranteed bargain
+   - D. Meme stock
+
+---
+
+### Lesson 3: Evaluating an ETF to Buy
+Lesson ID: `lesson-26-3`
+Type: reading
+XP Reward: 45
+Description: Learn what separates a good ETF from a bad one — expense ratio, tracking error, holdings — and when a sector ETF deserves a spot in your portfolio.
+
+#### Story
+Character: Tomás
+Tomás wants to invest in clean energy but finds six different clean energy ETFs. They all sound similar but have wildly different expense ratios, holdings, and performance. He needs a framework for picking the right one — or deciding if the sector bet is worth it at all.
+
+#### Screen 1: The Four Things That Separate ETFs
+Not all ETFs are created equal, even within the same category. When comparing ETFs, evaluate four factors:
+
+**Expense Ratio:** The annual fee expressed as a percentage. A broad S&P 500 ETF charges as low as 0.03%. A specialty sector ETF might charge 0.30-0.75%. Over decades, that gap compounds into real money lost.
+
+**Tracking Error:** How closely the ETF follows its target index. Lower is better. If an ETF claims to track the S&P 500 but consistently lags by 0.5% per year, that is a hidden cost on top of the expense ratio.
+
+**Holdings and Concentration:** How many stocks does the ETF hold, and how much weight is in the top 10? A sector ETF with 70% in five companies is not truly diversified — you are making a concentrated bet on those names.
+
+**Liquidity and Spread:** How easily can you buy and sell? Low-volume ETFs can have wide bid-ask spreads, meaning you pay more to get in and receive less when you sell.
+
+#### Screen 2: Sector ETFs — Concentrated Bets Need a Thesis
+A sector ETF focuses on one industry: technology, healthcare, energy, financials, real estate, etc.
+
+The appeal is simple: if you believe a sector will outperform the broad market, a sector ETF gives you focused exposure.
+
+The risk is equally simple: **you are giving up diversification.** If that sector underperforms, your entire position suffers — and there is no basket of other industries to cushion the blow.
+
+Before buying a sector ETF, you need a thesis that answers: **why will this sector outperform the S&P 500 over my time horizon, or what diversification benefit does it provide that the S&P 500 already lacks?**
+
+If you do not have a clear thesis, the broad index is the safer default.
+
+#### Screen 3: ETF Due Diligence Checklist
+When evaluating any ETF:
+
+**1. Expense ratio:** Compare against similar funds. Broad index ETFs should be under 0.10%. Sector or thematic ETFs under 0.50% is reasonable.
+**2. AUM (Assets Under Management):** Larger AUM generally means better liquidity and tighter spreads. Be cautious with very small, new ETFs.
+**3. Top holdings:** Check if the ETF is truly diversified or if a few mega-cap stocks dominate the weight.
+**4. Track record:** How long has the ETF existed? New ETFs have no performance history to evaluate.
+**5. Compare to the benchmark:** Over the same period, did this ETF beat, match, or trail the S&P 500? If it consistently trails, you need a strong reason to own it.
+
+#### Screen 4: When a Sector ETF Makes Sense — and When It Does Not
+Sector ETFs earn a spot in your portfolio when:
+• You have a specific, evidence-based thesis (e.g., demographic trends favoring healthcare, or a structural shift toward renewable energy)
+• You are using the sector as a **satellite position** (10-20% of portfolio), not replacing your diversified core
+• You understand the concentration risk and have a time horizon of 3-5+ years
+
+Sector ETFs do **NOT** make sense when:
+• You are chasing last year's best-performing sector (performance chasing is a reliable way to underperform)
+• You cannot explain why the sector will outperform or diversify beyond what the S&P 500 already provides
+• You are replacing your diversified core rather than adding to it
+
+#### Quiz
+1. Which ETF metric represents the annual fee you pay for holding the fund?
+   - A. Tracking error
+   - B. Expense ratio [Correct]
+   - C. Bid-ask spread
+   - D. Assets under management
+
+2. Before buying a sector ETF, what should you have?
+   - A. A social media recommendation
+   - B. A clear thesis for why the sector will outperform or diversify your portfolio [Correct]
+   - C. At least $50,000 to invest
+   - D. A guarantee it will go up
+
+3. What does tracking error measure?
+   - A. A mistake in your brokerage account
+   - B. How closely an ETF follows its target index [Correct]
+   - C. The cost of selling an ETF
+   - D. The ETF's total return
+
+---
+
+### Lesson 4: Morningstar as a Research Starting Point
+Lesson ID: `lesson-26-4`
+Type: reading
+XP Reward: 50
+Description: Use Morningstar star ratings, style boxes, and analyst reports to kick-start your research — while understanding what they cannot tell you.
+
+#### Story
+Character: Simone
+Simone opens a Morningstar page and sees a 5-star rating on a fund. She is about to buy it immediately. Her cousin who works in finance tells her the stars are a useful starting filter, not a buy signal. She wants to understand what Morningstar actually measures and where its blind spots are.
+
+#### Screen 1: What Morningstar Star Ratings Actually Measure
+Morningstar rates funds and ETFs on a 1-to-5 star scale. Five stars is the highest. But what do those stars actually mean?
+
+The rating is **backward-looking.** It measures how a fund has performed relative to similar funds in its category over the past 3, 5, and 10 years, adjusted for risk and fees.
+
+A 5-star fund delivered strong risk-adjusted returns compared to its peers **in the past.** It does NOT mean the fund will perform well in the future.
+
+Think of it like a restaurant review: a 5-star rating tells you diners enjoyed the food before you arrived. It does not guarantee your meal will be perfect.
+
+#### Screen 2: The Style Box and Analyst Reports
+**The Morningstar Style Box** is a 3x3 grid. One axis is company size (Large, Mid, Small cap). The other is investment style (Value, Blend, Growth). It tells you what kind of stocks a fund actually holds.
+
+Why it matters: if you think you own a large-cap value fund but the style box shows large-cap growth, your portfolio may have more growth exposure than you planned.
+
+**Analyst Reports** are written by Morningstar's research team. They assign a medal rating (Gold, Silver, Bronze, Neutral, Negative) that is **forward-looking** — the analyst's opinion on whether the fund will outperform its peers in the future.
+
+The medal rating is more useful than the star rating for buy decisions because it looks ahead. But it is still one analyst's opinion, not a guarantee.
+
+#### Screen 3: What Morningstar Cannot Tell You
+Morningstar is a research tool, not an oracle. Important limitations:
+
+**Past performance bias:** Star ratings reward past performance. Funds that did well before may not do well next, especially if market conditions shift.
+
+**Category comparison only:** A 5-star fund in a weak category can still underperform the S&P 500. The stars compare within category, not against the broad market.
+
+**No context for your goals:** Morningstar does not know your risk tolerance, time horizon, tax situation, or existing holdings. A 5-star fund might be wrong for your specific portfolio.
+
+Use Morningstar to narrow your options. Then do your own evaluation using the metrics from previous lessons.
+
+#### Screen 4: A Practical Morningstar Workflow
+**Step 1:** Use star ratings and category to filter down to a short list (e.g., 4-5 star large-cap blend funds with expense ratios under 0.20%).
+**Step 2:** Read the analyst report and medal rating to understand the forward-looking thesis.
+**Step 3:** Check the style box to confirm it matches the role you want it to play in your portfolio.
+**Step 4:** Compare expense ratio, holdings, and performance against the S&P 500 benchmark.
+**Step 5:** Make your own decision. Morningstar gives you starting data. The final call is yours.
+
+The best investors use Morningstar as a filter, not a decision-maker.
+
+#### Quiz
+1. Morningstar's star rating is primarily based on:
+   - A. Future price predictions
+   - B. Past risk-adjusted performance relative to category peers [Correct]
+   - C. The CEO's reputation
+   - D. Social media sentiment
+
+2. A fund with 5 stars in a niche category could still:
+   - A. Never lose money
+   - B. Underperform the S&P 500 [Correct]
+   - C. Guarantee future returns
+   - D. Eliminate all investment risk
+
+3. The Morningstar Style Box helps you understand:
+   - A. The fund's star rating
+   - B. What size and style of stocks the fund holds [Correct]
+   - C. How much the fund costs
+   - D. The fund manager's salary
+
+---
+
+### Lesson 5: Valuation vs. Growth vs. Narrative — The Three Forces Behind Price
+Lesson ID: `lesson-26-5`
+Type: reading
+XP Reward: 55
+Description: Understand why two companies with similar numbers can trade at wildly different prices, and how to spot when narrative has gone too far.
+
+#### Story
+Character: Nia
+Nia compares two companies: both earn about $5 billion per year, but one trades at a P/E of 15 and the other at a P/E of 45. She cannot figure out why the market values them so differently. The answer is not in the spreadsheet — it is in the story the market tells about each company's future.
+
+#### Screen 1: The Three Forces
+Every stock price is shaped by three forces pulling at the same time:
+
+**Valuation:** What the numbers say the company is worth today. P/E, P/S, cash flow, book value — the spreadsheet analysis. Valuation answers: 'What am I paying?'
+
+**Growth:** What the numbers say about the company's trajectory. Revenue growth, earnings growth, market expansion. Growth answers: 'What am I buying into?'
+
+**Narrative:** The story the market tells about the company's future. Vision, leadership, industry trends, cultural relevance. Narrative answers: 'Why does the market believe?'
+
+When all three forces align — reasonable valuation, strong growth, and a compelling narrative — a stock can surge. When they conflict, prices become volatile and unpredictable.
+
+#### Screen 2: Real Example: Peloton — When Narrative Collapses
+During COVID, Peloton's narrative was irresistible: 'the future of fitness is at home forever.' Revenue surged, the stock hit roughly $170, and the P/S ratio exceeded 25x.
+
+But the growth was pulled forward by lockdowns, not by a permanent behavior shift. When gyms reopened, demand collapsed. Revenue decelerated sharply, inventory piled up, and the stock crashed over **95% from its peak.**
+
+**What went wrong:** The valuation only made sense if COVID-era demand was the new permanent baseline — and it was not. The narrative required the world to change forever, and when normalcy returned, the premium evaporated.
+
+**The lesson:** When a stock is priced for a story that requires the world to permanently change, any return to normal is devastating. Always ask: what happens to this price if the narrative does not play out?
+
+#### Screen 3: Recognizing When Narrative Overrides Fundamentals
+Warning signs that narrative has gone too far:
+
+**Sky-high P/E with decelerating growth:** The story says the future is amazing, but the numbers are slowing down. The gap between belief and reality is widening.
+
+**'This time is different' language:** When people argue that traditional valuation metrics no longer apply to a company or sector, be cautious. Metrics always matter eventually.
+
+**Price driven by a single catalyst:** If the entire investment thesis depends on one product launch, one regulatory decision, or one partnership, that is narrative concentration risk.
+
+Consider Cisco at the dot-com peak: P/E over 200, narrative that internet infrastructure would grow forever. Cisco was and is a real business — but the narrative premium was so extreme that even 25 years of real growth could not justify what people paid. The stock still has not recovered its 2000 peak price.
+
+#### Screen 4: Using the Framework as an Investor
+For every stock you evaluate, score it on all three dimensions:
+
+**Valuation:** Is the price reasonable given current earnings and cash flow? Compare P/E and P/S to industry peers and the stock's own history.
+**Growth:** Are revenue and earnings growing? Is growth accelerating or decelerating?
+**Narrative:** What story is the market telling? Is it grounded in evidence, or is it hype?
+
+The goal is to find investments where at least two of the three forces are working in your favor.
+
+If valuation and growth are strong but narrative is weak (boring company, no hype), you may have found a hidden gem — like Apple in 2016. Or you may have a value trap. Dig deeper.
+
+If narrative is strong but valuation is stretched and growth is slowing, proceed with extreme caution — you may be buying at the peak of a story, like Peloton in 2020.
+
+The market is a voting machine in the short run and a weighing machine in the long run. Narrative wins votes. Fundamentals win the weigh-in.
+
+#### Quiz
+1. Two companies earn the same profit, but one trades at a much higher P/E. The most likely explanation is:
+   - A. A data error
+   - B. The market values them differently based on growth expectations and narrative [Correct]
+   - C. Higher profit always means higher P/E
+   - D. The cheaper one is always the better buy
+
+2. Peloton's stock crashed over 95% primarily because:
+   - A. The company had no revenue
+   - B. The COVID-era narrative collapsed when demand returned to normal [Correct]
+   - C. Interest rates went to zero
+   - D. The company was delisted
+
+3. The three forces that drive stock pricing are:
+   - A. Supply, demand, and luck
+   - B. Valuation, growth, and narrative [Correct]
+   - C. Revenue, profit, and dividends
+   - D. News, social media, and analyst calls
 
 ---

@@ -261,7 +261,7 @@ export const vocabulary = [
     {
         id: 'fraud-escalation-tree',
         term: 'Fraud Escalation Tree',
-        definition: 'A predefined sequence of who to contact and what to do first during a suspected scam or account-compromise incident.',
+        definition: 'A step-by-step emergency plan listing who to contact and what actions to take when you suspect a scam or account compromise.',
         lessonId: 'lesson-22-5'
     },
 
@@ -287,7 +287,7 @@ export const vocabulary = [
     {
         id: 'revocable-living-trust',
         term: 'Revocable Living Trust',
-        definition: 'A trust you can modify during your lifetime that can help with continuity and transfer administration when properly funded.',
+        definition: 'A trust you can change or cancel during your lifetime, often used to simplify asset transfer and avoid probate when properly funded.',
         lessonId: 'lesson-23-4'
     },
     {
@@ -313,7 +313,7 @@ export const vocabulary = [
     {
         id: 'effective-hourly-rate',
         term: 'Effective Hourly Rate (EHR)',
-        definition: 'Actual earnings per hour after accounting for total time worked and direct project costs.',
+        definition: 'What you actually earn per hour after counting all time spent (including admin and revisions) and subtracting direct project costs.',
         lessonId: 'lesson-24-3'
     },
     {
@@ -345,7 +345,7 @@ export const vocabulary = [
     {
         id: 'withdrawal-sequencing',
         term: 'Withdrawal Sequencing',
-        definition: 'The strategy of choosing which account types to withdraw from and when to manage taxes and long-term portfolio durability.',
+        definition: 'The strategy of choosing which account types (taxable, tax-deferred, Roth) to withdraw from and in what order to minimize taxes and extend portfolio life.',
         lessonId: 'lesson-25-3'
     },
     {
@@ -359,5 +359,37 @@ export const vocabulary = [
         term: 'Withdrawal Guardrails',
         definition: 'Predefined spending-adjustment rules triggered by portfolio or withdrawal-rate thresholds.',
         lessonId: 'lesson-25-5'
+    },
+
+    // Module 26: Investing 301: Evaluating What You Buy
+    {
+        id: 'benchmark',
+        term: 'Benchmark',
+        definition: 'A standard index (like the S&P 500) used to measure whether an investment is outperforming, matching, or underperforming the broader market.',
+        lessonId: 'lesson-26-1'
+    },
+    {
+        id: 'pe-ratio',
+        term: 'P/E Ratio (Price-to-Earnings)',
+        definition: 'A valuation metric calculated by dividing a stock\'s price by its earnings per share, showing how much investors pay for each dollar of annual profit.',
+        lessonId: 'lesson-26-2'
+    },
+    {
+        id: 'expense-ratio',
+        term: 'Expense Ratio',
+        definition: 'The annual percentage fee an ETF or mutual fund charges to cover operating costs, deducted automatically from the fund\'s returns.',
+        lessonId: 'lesson-26-3'
+    },
+    {
+        id: 'morningstar-style-box',
+        term: 'Morningstar Style Box',
+        definition: 'A 3x3 grid classifying funds by company size (large, mid, small) and investment style (value, blend, growth) to help investors understand what a fund actually holds.',
+        lessonId: 'lesson-26-4'
+    },
+    {
+        id: 'narrative-premium',
+        term: 'Narrative Premium',
+        definition: 'The extra valuation the market assigns to a stock based on its story, vision, or perceived future potential — beyond what current financial metrics alone would justify.',
+        lessonId: 'lesson-26-5'
     }
 ];

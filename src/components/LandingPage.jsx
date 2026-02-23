@@ -102,7 +102,7 @@ export default function LandingPage() {
                             lineHeight: '1.08',
                             letterSpacing: '-0.02em'
                         }}>
-                            Practical Finance<br />
+                            Free Financial Literacy Courses<br />
                             <span style={{
                                 background: 'linear-gradient(135deg, var(--primary), var(--secondary))',
                                 WebkitBackgroundClip: 'text',
