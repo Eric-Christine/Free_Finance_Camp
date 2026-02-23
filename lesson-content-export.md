@@ -1,7 +1,7 @@
 # Free Finance Camp Lesson Content Export
 
 Auto-generated from `src/data/curriculum.js` and `src/data/quizzes.js`.
-Generated at: 2026-02-22T21:07:42.541Z
+Generated at: 2026-02-23T18:15:05.402Z
 
 Use this file to copy lesson material into Word and edit.
 
@@ -4514,5 +4514,1517 @@ You don't need to be rich to build generational wealth. You just need to **start
    - B. Because free money that compounds for 18+ years should never be left on the table [Correct]
    - C. Because the government requires enrollment
    - D. Because only one party supports them
+
+---
+
+## Module 21: Budgeting Systems & Cash-Flow Automation
+Module ID: `module-21`
+Description: Build a personal cash-flow machine with recurring transfers, autopay guardrails, and zero-fee recurring investing workflows.
+
+### Lesson 1: Choose a Budget System That Survives Real Life
+Lesson ID: `lesson-21-1`
+Type: interactive
+XP Reward: 40
+Description: Compare 50/30/20, zero-based, and pay-yourself-first systems and choose one that fits your income pattern.
+
+#### Story
+Character: Jared
+Jared is a restaurant manager whose monthly pay swings with overtime and tips. He keeps rewriting his spreadsheet but still feels behind. He needs a budgeting system that works in both high-income and low-income months without restarting every time.
+
+#### Screen 1: Why Most Budgets Fail
+Budget failure is usually a system problem, not a discipline problem.
+
+Most people fail because their process is too rigid for real life: variable paychecks, irregular bills, and surprise expenses.
+
+You need a framework that is easy to run in 10-15 minutes each week.
+
+#### Screen 2: Three Practical Frameworks
+1) **50/30/20**: Fast setup, good starting point, less precise.
+2) **Zero-based**: Every dollar gets a job, great control, higher maintenance.
+3) **Pay-yourself-first**: Automate saving/investing first, spend the rest intentionally.
+
+Rule of thumb:
+• Stable paycheck -> zero-based can work well.
+• Variable income -> pay-yourself-first + baseline expense plan is often easier.
+• Brand new to budgeting -> start with 50/30/20, then tighten later.
+
+#### Screen 3: Design Around a Baseline Month
+For variable income, build your budget off your **low but realistic month**, not your best month.
+
+Split categories into:
+• **Core bills** (rent, utilities, groceries, insurance, minimum debt)
+• **Flex spending** (eating out, hobbies, upgrades)
+• **Future you** (emergency fund, investing, sinking funds)
+
+When income is above baseline, route the excess by rule instead of by emotion.
+
+#### Screen 4: One-Page Budget Rules
+Write your system on one page:
+• Baseline income target
+• Core bills total
+• Weekly flex cap
+• Automatic transfer amounts
+• What happens when income is above or below baseline
+
+If your rules fit on one page, you will actually use them.
+
+#### Quiz
+1. For variable income, which budgeting baseline is usually most practical?
+   - A. Your highest-earning month
+   - B. A low but realistic month [Correct]
+   - C. Your tax refund month
+   - D. Your best month from last year
+
+2. Which framework is commonly strongest for detailed control but higher maintenance?
+   - A. Zero-based budgeting [Correct]
+   - B. 50/30/20 only
+   - C. No-budget method
+   - D. Cash stuffing only
+
+3. What is a key sign your budgeting system is usable long-term?
+   - A. It takes hours every day
+   - B. It fits on one page and can be run weekly [Correct]
+   - C. It changes every month
+   - D. It requires perfect income consistency
+
+---
+
+### Lesson 2: Build Your Automation Stack
+Lesson ID: `lesson-21-2`
+Type: reading
+XP Reward: 45
+Description: Use direct-deposit splits, autopay tiers, and sinking funds to reduce money mistakes and decision fatigue.
+
+#### Story
+Character: Camila
+Camila and her partner both get paid on different schedules and keep missing due dates even though they earn enough. Late fees are eating their progress. They need a cash-flow system that runs automatically.
+
+#### Screen 1: Automation Beats Willpower
+Manual systems break when life gets busy.
+
+Automation turns financial goals into default behavior. You remove dozens of weekly decisions and reduce avoidable errors.
+
+#### Screen 2: Account Architecture
+A clean setup:
+• **Income Hub (checking)**: paychecks land here
+• **Bills Account**: fixed obligations and autopays
+• **Sinking Funds (savings buckets)**: annual and irregular costs
+• **Long-Term Investing**: recurring brokerage or retirement contributions
+
+Name each account by purpose so transfer rules are obvious.
+
+#### Screen 3: Autopay Tiers
+Tier 1: Non-negotiable bills (housing, insurance, utilities, minimum debt)
+Tier 2: Goal transfers (emergency fund, investing, debt acceleration)
+Tier 3: Lifestyle subscriptions and optional spending
+
+If cash gets tight, pause Tier 3 first, then Tier 2. Protect Tier 1.
+
+#### Screen 4: Sinking Funds Prevent Setback Cycles
+Sinking funds convert known future costs into manageable monthly amounts.
+
+Examples:
+• Car repairs
+• Annual insurance premiums
+• Travel and holidays
+• Professional licenses
+
+Formula: target amount / months until due = monthly transfer.
+
+#### Screen 5: Weekly 10-Minute Automation Review
+Once a week, check:
+• Upcoming autopays in next 7 days
+• Bills-account buffer
+• Failed or skipped transfers
+• Credit card utilization trend
+
+Automation works best with light supervision, not daily micromanagement.
+
+#### Quiz
+1. In an automation setup, which tier should be protected first during cash stress?
+   - A. Optional subscriptions
+   - B. Goal transfers
+   - C. Non-negotiable bills [Correct]
+   - D. Travel spending
+
+2. What is the main purpose of a sinking fund?
+   - A. To speculate in markets
+   - B. To pre-fund known irregular expenses [Correct]
+   - C. To hide spending from your budget
+   - D. To replace an emergency fund entirely
+
+3. Automation is most effective when combined with:
+   - A. No monitoring at all
+   - B. A brief weekly review process [Correct]
+   - C. Daily manual re-entry of all bills
+   - D. Random transfer changes
+
+---
+
+### Lesson 3: The Zero-Fee Investing Shift and Why It Matters
+Lesson ID: `lesson-21-3`
+Type: reading
+XP Reward: 50
+Description: Understand how commission-free trading changed small recurring investing and why that benefits automated cash-flow plans.
+
+#### Story
+Character: Renee
+In 2012, Renee avoided investing because each trade felt like paying a toll. Years later she can automate small weekly buys with almost no transaction friction. She wants to understand what changed and how to use it responsibly.
+
+#### Screen 1: Before vs After: Fee Friction
+Before the 2010s commission wars, many brokers charged per-trade fees that made small, frequent purchases inefficient.
+
+A recurring $25 or $50 buy could lose a meaningful share to trading costs.
+
+That friction discouraged beginner investors from automating small contributions.
+
+#### Screen 2: Pioneers and Industry Response
+A major inflection point came when mobile-first platforms like **Robinhood** pushed commission-free U.S. stock and ETF trading into mainstream awareness.
+
+Large incumbents then cut fees aggressively. By the late 2010s, major platforms, including firms like **Fidelity** and **Chase/J.P. Morgan**, had normalized low- or zero-commission access for many self-directed investors.
+
+The result: recurring investing became practical for much smaller dollar amounts.
+
+#### Screen 3: Why This Helps Budget Automation
+Zero-fee trading + fractional shares unlocked a powerful behavior loop:
+• Payday arrives
+• Rules-based transfer executes
+• Small recurring investment is placed automatically
+
+You no longer need to wait for a large lump sum to avoid fee drag.
+
+That consistency often matters more than trying to find the perfect entry price.
+
+#### Screen 4: Use the Advantage, Avoid New Risks
+Lower fees removed one barrier, but they did not remove risk.
+
+Guardrails:
+• Automate diversified funds before speculative picks
+• Keep an emergency fund so you are not forced to sell
+• Do not confuse easy trading with easy profits
+• Review tax implications of frequent taxable trades
+
+#### Quiz
+1. What major change in the late 2010s improved recurring small-dollar investing?
+   - A. Higher account minimums
+   - B. Return of fixed trade commissions
+   - C. Normalization of low/zero-commission trading [Correct]
+   - D. Ban on fractional shares
+
+2. According to the lesson, platforms like Robinhood helped trigger what broader trend?
+   - A. Broker shutdowns
+   - B. Mainstream incumbents lowering stock/ETF commissions [Correct]
+   - C. Elimination of all investing risk
+   - D. End of retirement accounts
+
+3. What is the core behavior advantage of zero-fee recurring investing?
+   - A. Perfect market timing
+   - B. Consistent automation with less fee drag on small buys [Correct]
+   - C. Guaranteed outperformance
+   - D. No need for diversification
+
+---
+
+### Lesson 4: Recurring Transfers for Wealth Building
+Lesson ID: `lesson-21-4`
+Type: reading
+XP Reward: 50
+Description: Set fixed transfer rules for emergency reserves, debt payoff, and long-term investing without manual decision fatigue.
+
+#### Story
+Character: Darnell
+Darnell gets paid biweekly and usually invests only when he "feels flush," which means months pass with no progress. He needs rules that fire on schedule so momentum does not depend on mood.
+
+#### Screen 1: Build a Transfer Waterfall
+A transfer waterfall means each paycheck follows a fixed order.
+
+Example order:
+1) Core bills account
+2) Emergency fund target
+3) High-interest debt acceleration
+4) Retirement or brokerage investing
+5) Discretionary spending
+
+Same order every paycheck removes guesswork.
+
+#### Screen 2: Set Frequency by Income Pattern
+Match transfer timing to when money arrives:
+• Weekly pay -> weekly transfers
+• Biweekly pay -> every payday transfers
+• Irregular income -> trigger transfers after each deposit above threshold
+
+The best cadence is the one you can maintain year-round.
+
+#### Screen 3: Start Small, Then Ratchet Up
+Start with an amount that survives bad months.
+
+Then use an automatic ratchet:
+• Increase transfer by 1% of pay after each raise, or
+• Increase a fixed dollar amount every quarter
+
+Tiny increases compound into large long-run changes.
+
+#### Screen 4: Transfer Rules for Volatile Months
+Define fallback rules in advance:
+• If account buffer < minimum, pause non-essential transfers
+• If overtime/bonus month, send set percentage to goals
+• If emergency expense hits, rebuild emergency fund before increasing discretionary spend
+
+Rules written during calm periods protect you during stressful periods.
+
+#### Quiz
+1. What is a transfer waterfall?
+   - A. Moving money randomly each month
+   - B. A fixed paycheck order for routing cash [Correct]
+   - C. A strategy to avoid saving
+   - D. A method for tax filing
+
+2. Why should transfer frequency match income frequency?
+   - A. It increases app notifications
+   - B. It reduces cash-timing friction and missed goals [Correct]
+   - C. It eliminates all risk
+   - D. It lowers inflation
+
+3. What is a practical way to increase contributions over time?
+   - A. Wait for a perfect market dip
+   - B. Auto-ratchet contributions after raises or quarterly [Correct]
+   - C. Only invest annual bonuses
+   - D. Double contributions every week
+
+---
+
+### Lesson 5: Automation Guardrails and Failure Recovery
+Lesson ID: `lesson-21-5`
+Type: reading
+XP Reward: 55
+Description: Prevent overdrafts, duplicate transfers, and subscription drift with an automation audit system.
+
+#### Story
+Character: Kira
+Kira automated everything and then forgot about it. Three subscriptions renewed, two transfers bounced, and she paid avoidable fees. She needs an audit system that keeps automation efficient instead of fragile.
+
+#### Screen 1: Common Automation Failure Modes
+Automation can fail quietly.
+
+Most common issues:
+• Overdraft from timing mismatch
+• Old subscriptions and app renewals
+• Duplicate transfers after account changes
+• Credit card autopay set to minimum by mistake
+
+#### Screen 2: Create a Buffer Policy
+Set a non-negotiable bills-account buffer (example: one month of core bills or a fixed floor).
+
+Any time balance falls below the floor, discretionary transfers pause automatically until buffer is restored.
+
+#### Screen 3: Monthly Audit Checklist
+Once per month:
+• Export transactions and tag autopays
+• Cancel unused subscriptions
+• Verify transfer amounts still match goals
+• Re-price large bills (insurance, internet, phone)
+• Check for failed payments or duplicate charges
+
+#### Screen 4: Quarterly Reset Questions
+Ask every quarter:
+• Did my income change?
+• Did my fixed costs change?
+• Is debt interest rate now higher than expected investment return?
+• Do I need to reroute transfers?
+
+Automation is not set-and-forget forever. It is set, monitor, and refine.
+
+#### Quiz
+1. Which is a common automation failure mode?
+   - A. Lower stress
+   - B. Duplicate transfers after account changes [Correct]
+   - C. Higher savings rate
+   - D. Fewer missed due dates
+
+2. What is the purpose of a bills-account buffer floor?
+   - A. Maximize speculation
+   - B. Trigger pause rules before overdrafts [Correct]
+   - C. Increase subscription count
+   - D. Avoid tracking cash flow
+
+3. How often should you run a full automation audit?
+   - A. Never
+   - B. About monthly [Correct]
+   - C. Once every 10 years
+   - D. Only after a fraud incident
+
+---
+
+## Module 22: Consumer Protection, Scams & Identity Theft
+Module ID: `module-22`
+Description: Learn how fraud works, spot manipulation tactics early, and build a practical response plan.
+
+### Lesson 1: The Psychology of Financial Scams
+Lesson ID: `lesson-22-1`
+Type: reading
+XP Reward: 45
+Description: Understand the persuasion patterns scammers use so you can slow down and verify before acting.
+
+#### Story
+Character: Mina
+Mina gets a call saying her bank account is under attack and she must verify her PIN in 10 minutes. The urgency feels real, and that is exactly why she pauses to break down the tactic before responding.
+
+#### Screen 1: Scams Target Emotion, Not Intelligence
+Fraud succeeds when people are rushed, isolated, and emotionally activated.
+
+Scammers often trigger fear, excitement, guilt, or scarcity before asking for money or credentials.
+
+#### Screen 2: Five Core Manipulation Levers
+1) **Urgency**: 'Act now or lose everything.'
+2) **Authority**: fake bank, IRS, employer, police, or court identity.
+3) **Scarcity**: limited-time offer or one remaining slot.
+4) **Social proof**: fake testimonials, fake group chat success stories.
+5) **Reciprocity**: small favor first, larger ask next.
+
+#### Screen 3: Your 90-Second Pause Rule
+Before sending money or sharing account data:
+• Stop the live call or chat
+• Independently verify using an official number/site
+• Ask: who benefits if I rush?
+
+If a request is legitimate, it can survive verification.
+
+#### Screen 4: Verification Habits That Work
+Use these defaults:
+• Never trust contact info sent in the same message
+• Never share one-time passcodes
+• Prefer outbound calls you initiate
+• Confirm money requests through a second channel
+
+#### Quiz
+1. Financial scams typically succeed by targeting:
+   - A. Only low-income households
+   - B. Human emotion and urgency [Correct]
+   - C. Only retirees
+   - D. Only people without internet
+
+2. What is the best immediate response to a high-pressure money request?
+   - A. Comply quickly
+   - B. Pause and independently verify through official channels [Correct]
+   - C. Send half now and half later
+   - D. Ask for a better discount
+
+3. Which request is a major red flag?
+   - A. Asking you to verify a statement date
+   - B. Asking for your one-time authentication code [Correct]
+   - C. Asking you to log in through your own app
+   - D. Asking for your mailing address update
+
+---
+
+### Lesson 2: Pyramid Schemes and MLM Red Flags
+Lesson ID: `lesson-22-2`
+Type: reading
+XP Reward: 50
+Description: Identify recruitment-first income models, inventory loading pressure, and deceptive income claims.
+
+#### Story
+Character: Elijah
+Elijah is invited to a "wealth brunch" where everyone posts luxury photos and says he can earn six figures from home. The catch: buy a starter package and recruit three friends. He needs to test whether it is a product business or a recruiting machine.
+
+#### Screen 1: Pyramid vs Product Business
+A healthy business earns most revenue from real customers buying real products at sustainable prices.
+
+A pyramid-style system depends mainly on new recruits paying in.
+
+#### Screen 2: Common MLM/Pyramid Tactics
+Watch for these patterns:
+• **Recruitment-first compensation** ('build a team' over product value)
+• **Starter kit or inventory loading** requirements
+• **Income screenshots without audited net profit data**
+• **Lifestyle theater** (cars, trips, staged success)
+• **Blame shifting** ('you failed because you did not grind hard enough')
+
+#### Screen 3: Income Claim Reality Check
+Ask for:
+• Median participant net earnings after expenses
+• Percentage of participants who lose money
+• Required monthly purchases to stay 'active'
+
+If those numbers are hidden, assume downside risk is high.
+
+#### Screen 4: Exit and Protect Relationships
+If you are already in:
+• Stop new purchases
+• Document all payments and contracts
+• Review chargeback/refund options
+• Set boundaries with friends and family
+
+Protect cash first, then repair social trust.
+
+#### Quiz
+1. A key red flag for pyramid-style operations is:
+   - A. Revenue mostly from real retail customers
+   - B. Compensation focused on recruiting new members [Correct]
+   - C. Transparent audited net-income data
+   - D. Low-pressure sales practices
+
+2. What is inventory loading?
+   - A. Buying only what customers already ordered
+   - B. Pressure to purchase excess product to stay 'active' or rank up [Correct]
+   - C. Running out of product
+   - D. Selling digital-only services
+
+3. When evaluating a business opportunity, which metric is most important?
+   - A. Social media lifestyle posts
+   - B. Median net earnings after expenses [Correct]
+   - C. Speaker charisma
+   - D. Number of followers in the group chat
+
+---
+
+### Lesson 3: Modern Fraud Channels: From Phishing to Fake Jobs
+Lesson ID: `lesson-22-3`
+Type: reading
+XP Reward: 50
+Description: Recognize current scam channels and stop credential theft before financial accounts are compromised.
+
+#### Story
+Character: Noor
+Noor receives a remote job offer with high pay and no interview, then gets asked to buy equipment with a check the company sends. The offer looks professional, but the payment flow is the trap.
+
+#### Screen 1: Fraud Channels to Expect
+Most financial scams arrive through:
+• Email phishing
+• Text message smishing
+• Social media direct messages
+• Marketplace payment scams
+• Fake recruiter and fake employer workflows
+
+#### Screen 2: Credential and Code Theft
+Scammers increasingly want your login plus your second-factor code.
+
+If someone asks for a one-time passcode, assume account takeover attempt.
+
+No legitimate support team needs your verification code.
+
+#### Screen 3: Fake Job Offer Pattern
+Warning sequence:
+• Offer arrives with minimal vetting
+• Employer asks you to buy gear from a specific vendor
+• They send a check or transfer that later reverses
+• You are left with the loss
+
+Never front money for employer purchases from personal accounts.
+
+#### Screen 4: Account Hardening Defaults
+Set this baseline:
+• Unique passwords via password manager
+• Multi-factor authentication on email, bank, brokerage, payroll
+• SIM-swap protections with mobile carrier
+• Transaction alerts on all financial accounts
+
+#### Quiz
+1. Which pattern is common in fake job scams?
+   - A. Multiple technical interviews
+   - B. Asking you to front money for equipment with a reversible payment [Correct]
+   - C. Delayed response times
+   - D. Clear HR verification channels
+
+2. What does smishing refer to?
+   - A. Phone support from your bank
+   - B. Text-message phishing [Correct]
+   - C. Paper mail fraud
+   - D. Credit score reporting
+
+3. What is a high-impact account hardening move?
+   - A. Reuse one strong password everywhere
+   - B. Enable MFA on email and financial accounts [Correct]
+   - C. Turn off all transaction alerts
+   - D. Use only public Wi-Fi
+
+---
+
+### Lesson 4: Identity Theft Response: First 24 Hours
+Lesson ID: `lesson-22-4`
+Type: reading
+XP Reward: 55
+Description: Follow a prioritized incident response process when identity theft or account takeover happens.
+
+#### Story
+Character: Tori
+Tori wakes up to three unfamiliar credit card approvals and a bank transfer she never authorized. Panic is natural, but speed and order matter more than panic.
+
+#### Screen 1: Golden Rule: Contain First
+Your first objective is to stop further damage.
+
+Immediate actions:
+• Lock compromised cards/accounts
+• Change passwords from a clean device
+• Enable or reset multi-factor authentication
+• Contact financial institutions' fraud departments
+
+#### Screen 2: Credit Bureau Controls
+Place a credit freeze with all major bureaus to block new credit lines in your name.
+
+A freeze is one of the highest-leverage defenses after a breach.
+
+#### Screen 3: Documentation and Reporting
+Create one incident log with timestamps, case numbers, and agent names.
+
+Report identity theft through official channels and keep copies of all submissions.
+
+Good records accelerate disputes and reimbursement.
+
+#### Screen 4: 7-Day and 30-Day Follow Up
+Within 7 days:
+• Confirm freeze status and dispute submissions
+• Replace compromised cards
+• Update autopay mappings
+
+Within 30 days:
+• Review credit reports for new anomalies
+• Keep transaction alerts active
+• Document resolution outcomes
+
+#### Quiz
+1. After identity theft, what is the first objective?
+   - A. Apply for new credit cards
+   - B. Contain damage by locking accounts and changing credentials [Correct]
+   - C. Delete your email account
+   - D. Move all money to cash
+
+2. Why place a credit freeze after identity theft?
+   - A. To improve investment returns
+   - B. To block unauthorized new credit applications [Correct]
+   - C. To cancel existing debt
+   - D. To avoid filing reports
+
+3. What helps disputes and reimbursement move faster?
+   - A. Ignoring call records
+   - B. A timestamped incident log with case numbers [Correct]
+   - C. Posting on social media only
+   - D. Changing banks every month
+
+---
+
+### Lesson 5: Build a Household Fraud Defense Playbook
+Lesson ID: `lesson-22-5`
+Type: reading
+XP Reward: 55
+Description: Create a shared family-level prevention plan with verification rules, access controls, and escalation steps.
+
+#### Story
+Character: Marcus
+Marcus manages finances for himself, his partner, and an aging parent. Each person uses different apps and passwords. One weak link could compromise everyone, so he builds a shared defense playbook.
+
+#### Screen 1: Household Threat Model
+Map who has access to:
+• Bank and brokerage accounts
+• Credit cards and payment apps
+• Email and phone numbers used for reset links
+
+Your security level is only as strong as the least secure account holder.
+
+#### Screen 2: Shared Verification Rules
+Adopt family defaults:
+• No money transfers from message-only requests
+• Confirm urgent requests by voice/video on known numbers
+• No sharing of passcodes or backup codes
+• New app installs reviewed before linking bank accounts
+
+#### Screen 3: Aging Parent and Teen Protections
+For older adults:
+• Trusted contact on key accounts
+• Transaction alerts to a secondary family member
+
+For teens/young adults:
+• Spend limits on cards
+• Scam simulation training
+• Rules for marketplace and payment app usage
+
+#### Screen 4: Incident Escalation Tree
+Create a one-page emergency plan with:
+• Who to call first
+• Where account numbers are stored
+• How to freeze credit quickly
+• How to document and track disputes
+
+Prepared households recover faster and lose less.
+
+#### Quiz
+1. A household fraud playbook should include:
+   - A. No contact list
+   - B. Verification rules, escalation steps, and account access mapping [Correct]
+   - C. Only app download recommendations
+   - D. Only one person's passwords
+
+2. Why are shared verification rules important?
+   - A. They slow all spending
+   - B. They reduce social-engineering success across family members [Correct]
+   - C. They replace MFA
+   - D. They eliminate identity theft permanently
+
+3. What is a practical protection for aging parents?
+   - A. Disable all accounts
+   - B. Set trusted contacts and transaction alerts [Correct]
+   - C. Share one family password
+   - D. Use only cash
+
+---
+
+## Module 23: Estate Planning & Legacy Basics
+Module ID: `module-23`
+Description: Learn the core legal and financial building blocks that protect loved ones and transfer assets cleanly.
+
+### Lesson 1: Wills, Guardianship, and Intestacy
+Lesson ID: `lesson-23-1`
+Type: reading
+XP Reward: 45
+Description: Understand what a will does, what happens without one, and how guardianship decisions are handled.
+
+#### Story
+Character: Lena
+Lena and her spouse have two young kids and a house, but no will. After a health scare, she realizes that if both parents die unexpectedly, courts and state default rules will decide major outcomes unless they document their wishes.
+
+#### Screen 1: What a Will Actually Controls
+A will states how you want probate assets distributed and who should administer your estate.
+
+For parents, naming guardians is one of the highest-impact decisions.
+
+#### Screen 2: What Happens Without a Will
+Dying without a will means state intestacy law determines asset distribution.
+
+That default may not match your preferences, family dynamics, or dependency realities.
+
+#### Screen 3: Guardianship Considerations
+When naming guardians, evaluate:
+• Values and parenting approach
+• Physical and financial capacity
+• Geographic stability
+• Willingness to serve
+
+Always have a primary and backup guardian.
+
+#### Screen 4: Execution and Storage
+Estate documents are useful only if valid and findable.
+
+Follow state signing and witness rules, store originals securely, and ensure trusted people know where they are.
+
+#### Quiz
+1. If someone dies without a valid will, asset distribution is generally decided by:
+   - A. Their oldest child
+   - B. State intestacy law [Correct]
+   - C. Their employer
+   - D. Their bank branch manager
+
+2. For parents of minors, one of the highest-impact will decisions is:
+   - A. Choosing a credit card
+   - B. Naming guardians [Correct]
+   - C. Selecting a brokerage app
+   - D. Changing internet providers
+
+3. Why do document execution rules matter?
+   - A. They determine whether documents are legally valid [Correct]
+   - B. They increase account interest rates
+   - C. They reduce mortgage payments
+   - D. They replace beneficiary designations
+
+---
+
+### Lesson 2: Beneficiaries, POD/TOD, and Account Titling
+Lesson ID: `lesson-23-2`
+Type: reading
+XP Reward: 50
+Description: Avoid common transfer mistakes by aligning beneficiary forms, account titles, and estate documents.
+
+#### Story
+Character: Harold
+Harold updated his will after remarrying but never changed old beneficiary forms on retirement accounts. His estate plan says one thing, but his account designations say another.
+
+#### Screen 1: Beneficiary Forms Often Override Wills
+Retirement accounts and insurance policies typically transfer by beneficiary designation, not by will instructions.
+
+If forms are outdated, assets can go to unintended recipients.
+
+#### Screen 2: POD/TOD Basics
+POD (Payable on Death) and TOD (Transfer on Death) designations allow certain assets to transfer directly outside probate.
+
+They can simplify transfers, but they must be coordinated with your broader plan.
+
+#### Screen 3: Titling and Ownership Structures
+How an asset is titled affects who controls it now and who receives it later.
+
+Examples include individual ownership, joint ownership, and trust ownership.
+
+Inconsistent titling is a common source of disputes and delay.
+
+#### Screen 4: Annual Beneficiary Audit
+Review every year and after major life events:
+• Marriage or divorce
+• Birth or adoption
+• Death in the family
+• Job changes affecting retirement accounts
+
+One stale form can undo an otherwise solid estate plan.
+
+#### Quiz
+1. Which often controls transfers on retirement accounts and life insurance?
+   - A. Will language only
+   - B. Beneficiary designation forms [Correct]
+   - C. Tax return history
+   - D. Employer handbook
+
+2. POD/TOD designations are mainly used to:
+   - A. Increase portfolio risk
+   - B. Enable direct transfer outside probate on certain assets [Correct]
+   - C. Avoid all estate planning
+   - D. Eliminate taxes in all cases
+
+3. When should beneficiaries be reviewed?
+   - A. Never after setup
+   - B. After major life events and on a regular schedule [Correct]
+   - C. Only after retirement
+   - D. Only if account balances fall
+
+---
+
+### Lesson 3: Power of Attorney and Health Directives
+Lesson ID: `lesson-23-3`
+Type: reading
+XP Reward: 50
+Description: Set up financial and medical decision-makers so critical choices can be made if you become incapacitated.
+
+#### Story
+Character: Sonia
+After a sudden stroke in her family, Sonia learns that even spouses can face delays accessing accounts or making medical choices without proper documents. She wants decision authority clarified before an emergency.
+
+#### Screen 1: Capacity Risk Is a Planning Issue
+Estate planning is not only about death. It is also about incapacity.
+
+Without documents, families may need court intervention to manage finances or medical decisions.
+
+#### Screen 2: Financial Power of Attorney
+A financial POA authorizes someone to handle defined financial actions on your behalf.
+
+Scope can include paying bills, managing accounts, filing taxes, and handling property transactions.
+
+#### Screen 3: Medical POA and Advance Directive
+Medical documents identify who can make health decisions and communicate treatment preferences.
+
+This reduces family conflict and helps clinicians act according to your values.
+
+#### Screen 4: Choose Agents Carefully
+Pick people with:
+• Sound judgment under pressure
+• Integrity and reliability
+• Willingness to act
+• Ability to communicate with family and professionals
+
+Name backups in case your first choice is unavailable.
+
+#### Quiz
+1. Power of attorney planning primarily addresses the risk of:
+   - A. Low market returns
+   - B. Incapacity and inability to act [Correct]
+   - C. Inflation only
+   - D. Job loss only
+
+2. A financial POA can authorize an agent to:
+   - A. Set tax law
+   - B. Manage defined financial tasks on your behalf [Correct]
+   - C. Rewrite your will after death
+   - D. Change your credit score directly
+
+3. When selecting agents, a critical factor is:
+   - A. Social media popularity
+   - B. Judgment and reliability under pressure [Correct]
+   - C. Proximity to your office
+   - D. Investment returns last year
+
+---
+
+### Lesson 4: Trust Fundamentals: When and Why
+Lesson ID: `lesson-23-4`
+Type: reading
+XP Reward: 55
+Description: Learn the practical differences between common trust structures and when they can simplify administration.
+
+#### Story
+Character: Raj
+Raj owns rental property in two states and wants privacy plus easier transfer to his children. He hears trusts can help, but he needs to understand when a trust adds value and when it only adds complexity.
+
+#### Screen 1: What a Trust Does
+A trust is a legal structure where a trustee manages assets under written rules for beneficiaries.
+
+It can be used to control timing, conditions, and management of distributions.
+
+#### Screen 2: Revocable vs Irrevocable (High Level)
+**Revocable trust**: flexible during your lifetime, often used for administration efficiency and continuity.
+
+**Irrevocable trust**: generally less flexible, sometimes used for advanced asset, tax, or legacy goals.
+
+#### Screen 3: When Trusts Can Help
+Common reasons:
+• Blended family complexity
+• Minor or special-needs beneficiaries
+• Multi-state property holdings
+• Desire for private, structured distribution terms
+
+#### Screen 4: Funding the Trust Is Critical
+A trust only controls assets that are properly retitled or assigned to it.
+
+Creating a trust document without funding steps leaves much of the benefit unrealized.
+
+#### Quiz
+1. A trust is best described as:
+   - A. A checking account type
+   - B. A legal structure for managing assets under written rules [Correct]
+   - C. A tax return form
+   - D. A retirement withdrawal method
+
+2. What is a common reason people use trusts?
+   - A. To avoid all documentation
+   - B. To manage complex distributions and administration [Correct]
+   - C. To replace every financial account
+   - D. To guarantee investment gains
+
+3. Why is trust funding important?
+   - A. It is optional and usually unnecessary
+   - B. Only funded/retitled assets are controlled by the trust [Correct]
+   - C. It lowers inflation
+   - D. It changes federal reserve policy
+
+---
+
+### Lesson 5: Estate Plan Maintenance and Legacy Communication
+Lesson ID: `lesson-23-5`
+Type: reading
+XP Reward: 55
+Description: Keep documents current, organize access information, and communicate intent to reduce future conflict.
+
+#### Story
+Character: Daphne
+Daphne has a basic will but no one knows where anything is: account list, passwords, insurance, or final wishes. She wants a practical system her family can actually use during a hard week.
+
+#### Screen 1: Estate Planning Is a Living Process
+Your plan should evolve with life changes, not sit untouched for a decade.
+
+Trigger updates after marriage, divorce, births, deaths, relocation, and major asset changes.
+
+#### Screen 2: Build a Legacy Binder
+Organize:
+• Document index (will, POA, directives, trust)
+• Account and policy inventory
+• Contact list (attorney, CPA, advisors, executors)
+• Digital asset access instructions
+
+Store securely and share retrieval instructions with trusted people.
+
+#### Screen 3: Reduce Family Conflict Upfront
+Conflicts often come from surprise, not just money.
+
+Communicate key intentions in advance: guardianship choices, distribution logic, and role assignments.
+
+#### Screen 4: Annual 30-Minute Review
+Schedule one annual review date.
+
+Checklist:
+• Beneficiaries still correct
+• Agents and executors still appropriate
+• New accounts captured
+• Storage/access instructions still accurate
+
+#### Quiz
+1. Estate plans should generally be reviewed:
+   - A. Only once in a lifetime
+   - B. Regularly and after major life changes [Correct]
+   - C. Only when buying a car
+   - D. Only after age 80
+
+2. A legacy binder should include:
+   - A. Only inspirational quotes
+   - B. Documents, account inventory, and trusted contacts [Correct]
+   - C. Stock tips only
+   - D. No access instructions
+
+3. Why communicate core estate intentions in advance?
+   - A. To increase conflict
+   - B. To reduce surprise and family disputes [Correct]
+   - C. To avoid all legal work
+   - D. To bypass beneficiary forms
+
+---
+
+## Module 24: Small Business / Freelancer Finance
+Module ID: `module-24`
+Description: Build stable cash flow, resilient pricing, and tax-ready operations for independent income.
+
+### Lesson 1: Separate Business and Personal Money
+Lesson ID: `lesson-24-1`
+Type: reading
+XP Reward: 45
+Description: Set up clean account structures, payment flows, and entity basics so your business decisions stay measurable.
+
+#### Story
+Character: Owen
+Owen is a freelance video editor who mixes client payments and personal spending in one account. Tax season is chaos and he cannot tell if the business is actually profitable.
+
+#### Screen 1: Separation Is Step Zero
+If business and personal money are mixed, every report is noisy.
+
+Open dedicated business banking and route all client income through that account.
+
+#### Screen 2: Minimum Viable Finance Stack
+Core setup:
+• Business checking for revenue and expenses
+• Business savings for tax and reserve buckets
+• Business card for tracked spend
+• Simple bookkeeping system updated weekly
+
+#### Screen 3: Owner Pay System
+Pay yourself by rule, not randomly.
+
+Example:
+• Tax bucket: fixed percentage of revenue
+• Operating bucket: business expenses
+• Owner pay: planned transfer cadence
+
+This prevents accidental under-saving for taxes.
+
+#### Screen 4: Entity Basics and Documentation
+As complexity grows, evaluate entity structure, contracts, and insurance with qualified professionals.
+
+Regardless of structure, documentation quality is what protects cash flow.
+
+#### Quiz
+1. Why separate personal and business finances?
+   - A. To increase complexity
+   - B. To improve clarity, decisions, and record quality [Correct]
+   - C. To avoid invoicing
+   - D. To eliminate taxes
+
+2. Which setup is part of a minimum viable finance stack for freelancers?
+   - A. One mixed personal account
+   - B. Dedicated business banking and weekly bookkeeping [Correct]
+   - C. No receipts
+   - D. Cash-only payments
+
+3. Paying yourself by rule primarily helps prevent:
+   - A. Any market volatility
+   - B. Random owner draws that break tax and cash planning [Correct]
+   - C. Client churn
+   - D. Legal contracts
+
+---
+
+### Lesson 2: Manage Irregular Income and Build Runway
+Lesson ID: `lesson-24-2`
+Type: reading
+XP Reward: 50
+Description: Use a business runway model and revenue smoothing rules so variable months do not trigger financial stress.
+
+#### Story
+Character: Bianca
+Bianca runs a solo design studio with great quarters followed by dry spells. She keeps panicking in slow months and discounting her rates. She needs a runway system that absorbs volatility.
+
+#### Screen 1: Volatility Is Normal
+Freelance and small business income often arrives in lumpy cycles.
+
+The goal is not perfect monthly stability. The goal is resilience during low-revenue periods.
+
+#### Screen 2: Runway Math
+Business runway = cash reserves / monthly core business burn.
+
+Track runway in months, not just dollars.
+
+Many operators target a minimum runway floor before increasing discretionary spending.
+
+#### Screen 3: Revenue Smoothing Rules
+When revenue is strong:
+• Pre-fund tax and reserve buckets first
+• Avoid permanent cost increases until trend is durable
+
+When revenue drops:
+• Cut low-ROI expenses quickly
+• Protect lead-generation and core delivery capacity
+
+#### Screen 4: Pipeline Discipline
+Track three pipeline metrics weekly:
+• Qualified leads
+• Proposal value outstanding
+• Time-to-cash from signed contract
+
+Cash-flow problems often start as pipeline visibility problems.
+
+#### Quiz
+1. Business runway is calculated as:
+   - A. Annual revenue / monthly profit
+   - B. Cash reserves / monthly core burn [Correct]
+   - C. Accounts receivable / monthly payroll
+   - D. Pipeline value / expenses
+
+2. When revenue surges, which move is usually most resilient?
+   - A. Increase fixed lifestyle costs immediately
+   - B. Pre-fund taxes and reserves first [Correct]
+   - C. Stop marketing completely
+   - D. Ignore margin tracking
+
+3. Which metric helps forecast near-term cash stress?
+   - A. Number of social followers
+   - B. Proposal value outstanding and time-to-cash [Correct]
+   - C. Coffee spend
+   - D. Office square footage
+
+---
+
+### Lesson 3: Pricing, Margin, and Effective Hourly Rate
+Lesson ID: `lesson-24-3`
+Type: reading
+XP Reward: 50
+Description: Price offers based on delivery cost, risk, and value so the business can grow without hidden pay cuts.
+
+#### Story
+Character: Keon
+Keon wins a lot of projects but still struggles to save. He realizes many "profitable" jobs include unbilled revisions and weekend support that crush his effective hourly rate.
+
+#### Screen 1: Revenue Is Not Profit
+High sales can hide weak margins.
+
+You need unit-level clarity: price, delivery time, direct costs, and overhead allocation.
+
+#### Screen 2: Effective Hourly Rate (EHR)
+EHR = (project revenue - direct costs) / true hours worked.
+
+Include admin, revision rounds, and client communication time.
+
+If EHR is below target, your pricing model needs redesign.
+
+#### Screen 3: Pricing Structures
+Common structures:
+• Hourly: simple, but can cap upside
+• Fixed fee: good for repeatable scope with clear boundaries
+• Retainer: stabilizes cash flow for ongoing service
+
+Whichever model you use, scope control is non-negotiable.
+
+#### Screen 4: Margin Protection Levers
+Use explicit terms for:
+• Included deliverables
+• Revision limits
+• Rush fees
+• Late payment penalties
+
+Pricing is strategy. Boundaries are enforcement.
+
+#### Quiz
+1. Effective hourly rate (EHR) should include:
+   - A. Billable delivery hours only
+   - B. All true hours including admin and revisions [Correct]
+   - C. Only meeting time
+   - D. Only invoicing time
+
+2. High revenue with thin margins means:
+   - A. The business is automatically healthy
+   - B. Profitability may still be weak [Correct]
+   - C. Taxes are optional
+   - D. Pricing should always be lowered
+
+3. Which clause helps protect margin on custom work?
+   - A. Unlimited revisions by default
+   - B. Explicit revision limits and rush fees [Correct]
+   - C. No scope definition
+   - D. Payment after final handoff only
+
+---
+
+### Lesson 4: Freelancer Tax Ops Without Panic
+Lesson ID: `lesson-24-4`
+Type: reading
+XP Reward: 55
+Description: Create a tax-ready workflow for quarterly estimates, deductible expense tracking, and clean records.
+
+#### Story
+Character: Yasmin
+Yasmin had a strong year and then got surprised by a large tax bill with penalties. She now wants a repeatable quarterly system that prevents last-minute scrambling.
+
+#### Screen 1: Quarterly Rhythm Beats Annual Panic
+Independent earners generally need estimated tax payments during the year.
+
+A quarterly cadence reduces penalty risk and protects business cash.
+
+#### Screen 2: Tax Bucket Workflow
+Every client payment triggers an automatic transfer to a tax reserve account.
+
+Set your percentage conservatively, then adjust with professional guidance as real numbers come in.
+
+#### Screen 3: Deduction Tracking Quality
+Good deduction capture requires:
+• Real-time categorization
+• Receipt or documentation hygiene
+• Clear business-purpose notes for gray-area expenses
+
+Messy records create stress and audit risk.
+
+#### Screen 4: Your Quarterly Finance Meeting
+Review each quarter:
+• Revenue and margin trend
+• Tax reserve sufficiency
+• Top expense categories
+• Forecast for next quarter
+
+Treat taxes as an operating system, not a once-a-year event.
+
+#### Quiz
+1. Why use a quarterly tax workflow?
+   - A. To increase surprises
+   - B. To reduce penalty risk and cash-flow shocks [Correct]
+   - C. To avoid bookkeeping
+   - D. To skip documentation
+
+2. A tax reserve account is funded best by:
+   - A. Occasional guesses
+   - B. Automatic transfers from each client payment [Correct]
+   - C. Year-end borrowing
+   - D. Credit card advances
+
+3. High-quality deduction tracking requires:
+   - A. No records if expenses are small
+   - B. Real-time categorization and documentation [Correct]
+   - C. Only annual estimates
+   - D. Screenshots without context
+
+---
+
+### Lesson 5: Risk Management: Contracts, Insurance, and Contingency
+Lesson ID: `lesson-24-5`
+Type: reading
+XP Reward: 55
+Description: Protect income with clear contracts, payment controls, and risk transfer where appropriate.
+
+#### Story
+Character: Felix
+Felix delivered a large project, then the client disputed scope and delayed payment for two months. Without strong contract terms, he had little leverage and no cash cushion.
+
+#### Screen 1: Income Risk Is Business Risk
+Small operators can be damaged by one bad contract or one unpaid invoice.
+
+Risk controls are revenue protection, not bureaucracy.
+
+#### Screen 2: Contract Clauses That Matter
+At minimum define:
+• Scope and deliverables
+• Payment schedule and late terms
+• Revision boundaries
+• Ownership and licensing terms
+• Termination and dispute procedures
+
+#### Screen 3: Payment Controls
+Use cash-flow-friendly defaults:
+• Deposits before work starts
+• Milestone billing for larger projects
+• No final handoff before final payment
+
+Collections discipline prevents avoidable financing stress.
+
+#### Screen 4: Insurance and Continuity
+Depending on business type, consider professional and general liability coverage.
+
+Also build a continuity plan:
+• Emergency reserve target
+• Backup vendor network
+• Critical file and credential access map
+
+#### Quiz
+1. Which payment control improves freelancer cash protection?
+   - A. Start without a deposit
+   - B. Milestone billing and deposits before work [Correct]
+   - C. Deliver full assets before final payment
+   - D. No late fee terms
+
+2. Contracts should clearly define:
+   - A. Only project title
+   - B. Scope, payment schedule, and revision boundaries [Correct]
+   - C. Only hourly rate
+   - D. Only social media terms
+
+3. Why consider insurance and contingency planning?
+   - A. To increase fixed costs without benefit
+   - B. To transfer risk and maintain continuity after disruptions [Correct]
+   - C. To replace contracts
+   - D. To avoid having reserves
+
+---
+
+## Module 25: Retirement Drawdown & Decumulation
+Module ID: `module-25`
+Description: Convert savings into durable retirement income with withdrawal rules, tax sequencing, and guardrails.
+
+### Lesson 1: From Accumulation to Retirement Paycheck
+Lesson ID: `lesson-25-1`
+Type: reading
+XP Reward: 45
+Description: Shift from maximizing account balances to building reliable spendable income.
+
+#### Story
+Character: Gloria
+Gloria saved aggressively for 35 years and now has enough assets, but no clear paycheck plan. She needs to know how much she can spend each month without guessing.
+
+#### Screen 1: Decumulation Is a Different Game
+Accumulation asks: how do I grow assets?
+
+Decumulation asks: how do I turn assets into reliable income for an uncertain lifespan?
+
+#### Screen 2: Start With Spending Tiers
+Define:
+• **Essential spending** (housing, food, healthcare, insurance)
+• **Flexible spending** (travel, gifts, hobbies)
+
+Protect essentials first. Flex can adjust with market conditions.
+
+#### Screen 3: Build an Income Map
+List recurring income sources and start dates:
+• Social Security
+• Pension income
+• Annuity or bond ladder cash flow
+• Portfolio withdrawals
+
+Gaps between essentials and guaranteed income define portfolio burden.
+
+#### Screen 4: Define a Monthly Paycheck Rule
+Set a planned monthly transfer from investment accounts into spending accounts.
+
+Treat it as a paycheck system with periodic review, not ad hoc withdrawals.
+
+#### Quiz
+1. In retirement, the central planning question shifts to:
+   - A. How to maximize trading frequency
+   - B. How to convert assets into durable income [Correct]
+   - C. How to avoid all taxes forever
+   - D. How to keep every dollar in cash
+
+2. Why separate essential and flexible spending?
+   - A. To make the budget longer
+   - B. To protect core needs during volatility [Correct]
+   - C. To reduce guaranteed income
+   - D. To eliminate planning
+
+3. A retirement paycheck system means:
+   - A. Random withdrawals whenever needed
+   - B. Planned recurring transfers with periodic review [Correct]
+   - C. No spending controls
+   - D. Using only one account type
+
+---
+
+### Lesson 2: Withdrawal Rates and Sequence Risk
+Lesson ID: `lesson-25-2`
+Type: reading
+XP Reward: 50
+Description: Understand sustainable withdrawal concepts and why early retirement market losses can permanently damage plans.
+
+#### Story
+Character: Victor
+Victor retired right before a market drawdown. His portfolio value dropped while he was still withdrawing the same amount, and now he worries he retired at the wrong time.
+
+#### Screen 1: Withdrawal Rate Basics
+Withdrawal rate = annual portfolio withdrawals / starting or current portfolio value (depending on method).
+
+Higher withdrawal rates increase the risk of depletion.
+
+#### Screen 2: Sequence-of-Returns Risk
+Poor market returns early in retirement can hurt more than poor returns later.
+
+Why: withdrawals during early declines reduce the asset base that could have recovered.
+
+#### Screen 3: Mitigation Strategies
+Common mitigations:
+• Hold a near-term cash or short-duration buffer
+• Reduce flexible spending after large drawdowns
+• Use dynamic withdrawal guardrails instead of fixed inflation-only increases
+
+#### Screen 4: Stress Testing Mindset
+Run your plan against adverse scenarios, not just average returns.
+
+A robust plan is one you can stick with when markets are uncomfortable.
+
+#### Quiz
+1. Sequence-of-returns risk is most dangerous when:
+   - A. Market declines happen early in retirement while withdrawing [Correct]
+   - B. Markets rise steadily
+   - C. You have no withdrawals
+   - D. You are in accumulation mode
+
+2. A higher withdrawal rate generally means:
+   - A. Lower depletion risk
+   - B. Higher portfolio depletion risk [Correct]
+   - C. No change in risk
+   - D. Guaranteed portfolio growth
+
+3. Which action can help mitigate sequence risk?
+   - A. Increase spending after a large drawdown
+   - B. Use a near-term cash buffer and flexible spending cuts [Correct]
+   - C. Ignore allocation changes
+   - D. Withdraw only from equities
+
+---
+
+### Lesson 3: Tax-Aware Withdrawal Order
+Lesson ID: `lesson-25-3`
+Type: reading
+XP Reward: 55
+Description: Coordinate taxable, tax-deferred, and Roth withdrawals to manage taxes and preserve long-term flexibility.
+
+#### Story
+Character: Pam and Eli
+Pam and Eli have money in taxable brokerage, traditional retirement accounts, and Roth accounts. Their first retirement year triggered a larger tax bill than expected because they withdrew in the wrong sequence.
+
+#### Screen 1: Account Types Create Tax Strategy
+Retirement income planning is partly a tax-planning problem.
+
+Different account types are taxed differently, so withdrawal order affects net spendable income.
+
+#### Screen 2: Typical Withdrawal Sequencing Logic
+A common framework is to blend sources strategically rather than draining one account blindly.
+
+Goals:
+• Manage current tax bracket exposure
+• Preserve tax-free growth capacity
+• Avoid surprise premium/benefit cliffs
+
+#### Screen 3: RMD and Bracket Management
+Required minimum distributions from certain tax-deferred accounts can force taxable income later.
+
+Proactive multi-year planning can smooth taxable income and reduce future pressure.
+
+#### Screen 4: Coordinate With Filing and Medicare Effects
+Withdrawal choices can ripple into other costs.
+
+Plan annually with your tax picture, benefit thresholds, and expected spending needs in one view.
+
+#### Quiz
+1. Tax-aware withdrawal planning is important because:
+   - A. All account withdrawals are taxed the same way
+   - B. Different account types create different tax outcomes [Correct]
+   - C. Taxes stop in retirement
+   - D. Only Social Security is taxable
+
+2. Required minimum distributions (RMDs) matter because they can:
+   - A. Reduce all taxable income
+   - B. Force taxable withdrawals later [Correct]
+   - C. Eliminate Medicare costs
+   - D. Replace Social Security
+
+3. A practical withdrawal approach is usually to:
+   - A. Drain one account type blindly
+   - B. Coordinate sources to manage brackets and long-term flexibility [Correct]
+   - C. Use Roth first in all cases
+   - D. Use only taxable accounts forever
+
+---
+
+### Lesson 4: Income Floor and Bucket Strategies
+Lesson ID: `lesson-25-4`
+Type: reading
+XP Reward: 55
+Description: Design a retirement income floor for essentials and use portfolio buckets for stability and flexibility.
+
+#### Story
+Character: Anita
+Anita can cover about 70% of essentials with Social Security and a pension. She wants a simple bucket system for the remaining 30% so she can sleep at night during market volatility.
+
+#### Screen 1: Income Floor Concept
+Income floor = recurring cash flow intended to cover essential expenses with high reliability.
+
+The stronger your floor, the less pressure on growth assets during bad markets.
+
+#### Screen 2: Three-Bucket Example
+Bucket 1: 1-2 years of spending needs in cash/near-cash
+Bucket 2: intermediate horizon assets for refilling Bucket 1
+Bucket 3: long-term growth assets
+
+Buckets are a behavior tool as much as an allocation tool.
+
+#### Screen 3: Refill Rules
+Define objective refill triggers.
+
+Example:
+• In strong markets, harvest gains from Bucket 3 to refill Bucket 1
+• In weak markets, draw from Bucket 1 while reducing discretionary spend
+
+#### Screen 4: Avoid Common Bucket Mistakes
+Mistakes to avoid:
+• Leaving all buckets static for years
+• Overfunding cash and underfunding long-run growth
+• Ignoring inflation impact on spending needs
+
+#### Quiz
+1. An income floor in retirement is designed to cover:
+   - A. Only travel
+   - B. Essential spending with high reliability [Correct]
+   - C. Only taxes
+   - D. Only gifts
+
+2. In a three-bucket framework, Bucket 1 usually holds:
+   - A. High-volatility growth assets only
+   - B. Near-term spending cash or near-cash [Correct]
+   - C. Private equity only
+   - D. Real estate development capital
+
+3. Why define bucket refill rules in advance?
+   - A. To increase emotional reactions
+   - B. To guide actions objectively across market conditions [Correct]
+   - C. To avoid any portfolio growth
+   - D. To stop all rebalancing
+
+---
+
+### Lesson 5: Annual Guardrails and Spending Adjustments
+Lesson ID: `lesson-25-5`
+Type: reading
+XP Reward: 60
+Description: Use pre-set guardrails to adjust spending when markets or inflation shift, instead of reacting emotionally.
+
+#### Story
+Character: Martha and Joel
+Martha and Joel promised themselves they would not panic-sell in retirement, but a 20% portfolio drop made every decision feel emotional. They need objective guardrails that tell them when to cut, hold, or raise spending.
+
+#### Screen 1: Guardrails Create Decision Discipline
+Guardrails are predefined spending rules tied to portfolio and inflation conditions.
+
+They reduce emotional decision-making during stress.
+
+#### Screen 2: Sample Guardrail Framework
+Illustrative rules:
+• If withdrawal rate rises above upper threshold -> trim flexible spending
+• If withdrawal rate falls below lower threshold -> consider modest raise or gifting
+• If inflation spikes -> prioritize essentials and delay large discretionary upgrades
+
+#### Screen 3: Annual Retirement Review Agenda
+Review once per year:
+• Actual spending vs plan
+• Portfolio withdrawals and current withdrawal rate
+• Tax outcomes and next-year estimates
+• Healthcare and long-term care assumptions
+• Estate and beneficiary updates
+
+#### Screen 4: Resilience Over Precision
+No retirement plan is perfect.
+
+The goal is a plan that can adapt without panic, preserve dignity, and keep essentials funded through multiple market environments.
+
+#### Quiz
+1. Guardrails in retirement planning are:
+   - A. Random spending changes
+   - B. Predefined adjustment rules tied to portfolio/spending conditions [Correct]
+   - C. A type of annuity
+   - D. A tax deduction category
+
+2. If withdrawal pressure rises above a set upper threshold, a common guardrail action is to:
+   - A. Increase discretionary spending
+   - B. Trim flexible spending temporarily [Correct]
+   - C. Stop all income planning
+   - D. Sell all assets immediately
+
+3. A strong annual retirement review should include:
+   - A. Only market headlines
+   - B. Spending, withdrawal rate, taxes, healthcare assumptions, and estate updates [Correct]
+   - C. Only last month's returns
+   - D. Only Social Security statements
 
 ---

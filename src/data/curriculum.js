@@ -3750,5 +3750,1391 @@ export const curriculum = [
                 type: 'reading'
             }
         ]
+    },
+    {
+        id: 'module-21',
+        title: 'Budgeting Systems & Cash-Flow Automation',
+        description: 'Build a personal cash-flow machine with recurring transfers, autopay guardrails, and zero-fee recurring investing workflows.',
+        xpReward: 130,
+        lessons: [
+            {
+                id: 'lesson-21-1',
+                title: 'Choose a Budget System That Survives Real Life',
+                description: 'Compare 50/30/20, zero-based, and pay-yourself-first systems and choose one that fits your income pattern.',
+                xpReward: 40,
+                story: {
+                    character: 'Jared',
+                    scenario: 'Jared is a restaurant manager whose monthly pay swings with overtime and tips. He keeps rewriting his spreadsheet but still feels behind. He needs a budgeting system that works in both high-income and low-income months without restarting every time.'
+                },
+                screens: [
+                    {
+                        title: 'Why Most Budgets Fail',
+                        content: [
+                            "Budget failure is usually a system problem, not a discipline problem.",
+                            "",
+                            "Most people fail because their process is too rigid for real life: variable paychecks, irregular bills, and surprise expenses.",
+                            "",
+                            "You need a framework that is easy to run in 10-15 minutes each week."
+                        ]
+                    },
+                    {
+                        title: 'Three Practical Frameworks',
+                        content: [
+                            "1) **50/30/20**: Fast setup, good starting point, less precise.",
+                            "2) **Zero-based**: Every dollar gets a job, great control, higher maintenance.",
+                            "3) **Pay-yourself-first**: Automate saving/investing first, spend the rest intentionally.",
+                            "",
+                            "Rule of thumb:",
+                            "• Stable paycheck -> zero-based can work well.",
+                            "• Variable income -> pay-yourself-first + baseline expense plan is often easier.",
+                            "• Brand new to budgeting -> start with 50/30/20, then tighten later."
+                        ]
+                    },
+                    {
+                        title: 'Design Around a Baseline Month',
+                        content: [
+                            "For variable income, build your budget off your **low but realistic month**, not your best month.",
+                            "",
+                            "Split categories into:",
+                            "• **Core bills** (rent, utilities, groceries, insurance, minimum debt)",
+                            "• **Flex spending** (eating out, hobbies, upgrades)",
+                            "• **Future you** (emergency fund, investing, sinking funds)",
+                            "",
+                            "When income is above baseline, route the excess by rule instead of by emotion."
+                        ]
+                    },
+                    {
+                        title: 'One-Page Budget Rules',
+                        content: [
+                            "Write your system on one page:",
+                            "• Baseline income target",
+                            "• Core bills total",
+                            "• Weekly flex cap",
+                            "• Automatic transfer amounts",
+                            "• What happens when income is above or below baseline",
+                            "",
+                            "If your rules fit on one page, you will actually use them."
+                        ]
+                    }
+                ],
+                type: 'interactive',
+                widget: 'BudgetAllocator'
+            },
+            {
+                id: 'lesson-21-2',
+                title: 'Build Your Automation Stack',
+                description: 'Use direct-deposit splits, autopay tiers, and sinking funds to reduce money mistakes and decision fatigue.',
+                xpReward: 45,
+                story: {
+                    character: 'Camila',
+                    scenario: 'Camila and her partner both get paid on different schedules and keep missing due dates even though they earn enough. Late fees are eating their progress. They need a cash-flow system that runs automatically.'
+                },
+                screens: [
+                    {
+                        title: 'Automation Beats Willpower',
+                        content: [
+                            "Manual systems break when life gets busy.",
+                            "",
+                            "Automation turns financial goals into default behavior. You remove dozens of weekly decisions and reduce avoidable errors."
+                        ]
+                    },
+                    {
+                        title: 'Account Architecture',
+                        content: [
+                            "A clean setup:",
+                            "• **Income Hub (checking)**: paychecks land here",
+                            "• **Bills Account**: fixed obligations and autopays",
+                            "• **Sinking Funds (savings buckets)**: annual and irregular costs",
+                            "• **Long-Term Investing**: recurring brokerage or retirement contributions",
+                            "",
+                            "Name each account by purpose so transfer rules are obvious."
+                        ]
+                    },
+                    {
+                        title: 'Autopay Tiers',
+                        content: [
+                            "Tier 1: Non-negotiable bills (housing, insurance, utilities, minimum debt)",
+                            "Tier 2: Goal transfers (emergency fund, investing, debt acceleration)",
+                            "Tier 3: Lifestyle subscriptions and optional spending",
+                            "",
+                            "If cash gets tight, pause Tier 3 first, then Tier 2. Protect Tier 1."
+                        ]
+                    },
+                    {
+                        title: 'Sinking Funds Prevent Setback Cycles',
+                        content: [
+                            "Sinking funds convert known future costs into manageable monthly amounts.",
+                            "",
+                            "Examples:",
+                            "• Car repairs",
+                            "• Annual insurance premiums",
+                            "• Travel and holidays",
+                            "• Professional licenses",
+                            "",
+                            "Formula: target amount / months until due = monthly transfer."
+                        ]
+                    },
+                    {
+                        title: 'Weekly 10-Minute Automation Review',
+                        content: [
+                            "Once a week, check:",
+                            "• Upcoming autopays in next 7 days",
+                            "• Bills-account buffer",
+                            "• Failed or skipped transfers",
+                            "• Credit card utilization trend",
+                            "",
+                            "Automation works best with light supervision, not daily micromanagement."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-21-3',
+                title: 'The Zero-Fee Investing Shift and Why It Matters',
+                description: 'Understand how commission-free trading changed small recurring investing and why that benefits automated cash-flow plans.',
+                xpReward: 50,
+                story: {
+                    character: 'Renee',
+                    scenario: 'In 2012, Renee avoided investing because each trade felt like paying a toll. Years later she can automate small weekly buys with almost no transaction friction. She wants to understand what changed and how to use it responsibly.'
+                },
+                screens: [
+                    {
+                        title: 'Before vs After: Fee Friction',
+                        content: [
+                            "Before the 2010s commission wars, many brokers charged per-trade fees that made small, frequent purchases inefficient.",
+                            "",
+                            "A recurring $25 or $50 buy could lose a meaningful share to trading costs.",
+                            "",
+                            "That friction discouraged beginner investors from automating small contributions."
+                        ]
+                    },
+                    {
+                        title: 'Pioneers and Industry Response',
+                        content: [
+                            "A major inflection point came when mobile-first platforms like **Robinhood** pushed commission-free U.S. stock and ETF trading into mainstream awareness.",
+                            "",
+                            "Large incumbents then cut fees aggressively. By the late 2010s, major platforms, including firms like **Fidelity** and **Chase/J.P. Morgan**, had normalized low- or zero-commission access for many self-directed investors.",
+                            "",
+                            "The result: recurring investing became practical for much smaller dollar amounts."
+                        ]
+                    },
+                    {
+                        title: 'Why This Helps Budget Automation',
+                        content: [
+                            "Zero-fee trading + fractional shares unlocked a powerful behavior loop:",
+                            "• Payday arrives",
+                            "• Rules-based transfer executes",
+                            "• Small recurring investment is placed automatically",
+                            "",
+                            "You no longer need to wait for a large lump sum to avoid fee drag.",
+                            "",
+                            "That consistency often matters more than trying to find the perfect entry price."
+                        ]
+                    },
+                    {
+                        title: 'Use the Advantage, Avoid New Risks',
+                        content: [
+                            "Lower fees removed one barrier, but they did not remove risk.",
+                            "",
+                            "Guardrails:",
+                            "• Automate diversified funds before speculative picks",
+                            "• Keep an emergency fund so you are not forced to sell",
+                            "• Do not confuse easy trading with easy profits",
+                            "• Review tax implications of frequent taxable trades"
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-21-4',
+                title: 'Recurring Transfers for Wealth Building',
+                description: 'Set fixed transfer rules for emergency reserves, debt payoff, and long-term investing without manual decision fatigue.',
+                xpReward: 50,
+                story: {
+                    character: 'Darnell',
+                    scenario: 'Darnell gets paid biweekly and usually invests only when he "feels flush," which means months pass with no progress. He needs rules that fire on schedule so momentum does not depend on mood.'
+                },
+                screens: [
+                    {
+                        title: 'Build a Transfer Waterfall',
+                        content: [
+                            "A transfer waterfall means each paycheck follows a fixed order.",
+                            "",
+                            "Example order:",
+                            "1) Core bills account",
+                            "2) Emergency fund target",
+                            "3) High-interest debt acceleration",
+                            "4) Retirement or brokerage investing",
+                            "5) Discretionary spending",
+                            "",
+                            "Same order every paycheck removes guesswork."
+                        ]
+                    },
+                    {
+                        title: 'Set Frequency by Income Pattern',
+                        content: [
+                            "Match transfer timing to when money arrives:",
+                            "• Weekly pay -> weekly transfers",
+                            "• Biweekly pay -> every payday transfers",
+                            "• Irregular income -> trigger transfers after each deposit above threshold",
+                            "",
+                            "The best cadence is the one you can maintain year-round."
+                        ]
+                    },
+                    {
+                        title: 'Start Small, Then Ratchet Up',
+                        content: [
+                            "Start with an amount that survives bad months.",
+                            "",
+                            "Then use an automatic ratchet:",
+                            "• Increase transfer by 1% of pay after each raise, or",
+                            "• Increase a fixed dollar amount every quarter",
+                            "",
+                            "Tiny increases compound into large long-run changes."
+                        ]
+                    },
+                    {
+                        title: 'Transfer Rules for Volatile Months',
+                        content: [
+                            "Define fallback rules in advance:",
+                            "• If account buffer < minimum, pause non-essential transfers",
+                            "• If overtime/bonus month, send set percentage to goals",
+                            "• If emergency expense hits, rebuild emergency fund before increasing discretionary spend",
+                            "",
+                            "Rules written during calm periods protect you during stressful periods."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-21-5',
+                title: 'Automation Guardrails and Failure Recovery',
+                description: 'Prevent overdrafts, duplicate transfers, and subscription drift with an automation audit system.',
+                xpReward: 55,
+                story: {
+                    character: 'Kira',
+                    scenario: 'Kira automated everything and then forgot about it. Three subscriptions renewed, two transfers bounced, and she paid avoidable fees. She needs an audit system that keeps automation efficient instead of fragile.'
+                },
+                screens: [
+                    {
+                        title: 'Common Automation Failure Modes',
+                        content: [
+                            "Automation can fail quietly.",
+                            "",
+                            "Most common issues:",
+                            "• Overdraft from timing mismatch",
+                            "• Old subscriptions and app renewals",
+                            "• Duplicate transfers after account changes",
+                            "• Credit card autopay set to minimum by mistake"
+                        ]
+                    },
+                    {
+                        title: 'Create a Buffer Policy',
+                        content: [
+                            "Set a non-negotiable bills-account buffer (example: one month of core bills or a fixed floor).",
+                            "",
+                            "Any time balance falls below the floor, discretionary transfers pause automatically until buffer is restored."
+                        ]
+                    },
+                    {
+                        title: 'Monthly Audit Checklist',
+                        content: [
+                            "Once per month:",
+                            "• Export transactions and tag autopays",
+                            "• Cancel unused subscriptions",
+                            "• Verify transfer amounts still match goals",
+                            "• Re-price large bills (insurance, internet, phone)",
+                            "• Check for failed payments or duplicate charges"
+                        ]
+                    },
+                    {
+                        title: 'Quarterly Reset Questions',
+                        content: [
+                            "Ask every quarter:",
+                            "• Did my income change?",
+                            "• Did my fixed costs change?",
+                            "• Is debt interest rate now higher than expected investment return?",
+                            "• Do I need to reroute transfers?",
+                            "",
+                            "Automation is not set-and-forget forever. It is set, monitor, and refine."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-22',
+        title: 'Consumer Protection, Scams & Identity Theft',
+        description: 'Learn how fraud works, spot manipulation tactics early, and build a practical response plan.',
+        xpReward: 135,
+        lessons: [
+            {
+                id: 'lesson-22-1',
+                title: 'The Psychology of Financial Scams',
+                description: 'Understand the persuasion patterns scammers use so you can slow down and verify before acting.',
+                xpReward: 45,
+                story: {
+                    character: 'Mina',
+                    scenario: 'Mina gets a call saying her bank account is under attack and she must verify her PIN in 10 minutes. The urgency feels real, and that is exactly why she pauses to break down the tactic before responding.'
+                },
+                screens: [
+                    {
+                        title: 'Scams Target Emotion, Not Intelligence',
+                        content: [
+                            "Fraud succeeds when people are rushed, isolated, and emotionally activated.",
+                            "",
+                            "Scammers often trigger fear, excitement, guilt, or scarcity before asking for money or credentials."
+                        ]
+                    },
+                    {
+                        title: 'Five Core Manipulation Levers',
+                        content: [
+                            "1) **Urgency**: 'Act now or lose everything.'",
+                            "2) **Authority**: fake bank, IRS, employer, police, or court identity.",
+                            "3) **Scarcity**: limited-time offer or one remaining slot.",
+                            "4) **Social proof**: fake testimonials, fake group chat success stories.",
+                            "5) **Reciprocity**: small favor first, larger ask next."
+                        ]
+                    },
+                    {
+                        title: 'Your 90-Second Pause Rule',
+                        content: [
+                            "Before sending money or sharing account data:",
+                            "• Stop the live call or chat",
+                            "• Independently verify using an official number/site",
+                            "• Ask: who benefits if I rush?",
+                            "",
+                            "If a request is legitimate, it can survive verification."
+                        ]
+                    },
+                    {
+                        title: 'Verification Habits That Work',
+                        content: [
+                            "Use these defaults:",
+                            "• Never trust contact info sent in the same message",
+                            "• Never share one-time passcodes",
+                            "• Prefer outbound calls you initiate",
+                            "• Confirm money requests through a second channel"
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-22-2',
+                title: 'Pyramid Schemes and MLM Red Flags',
+                description: 'Identify recruitment-first income models, inventory loading pressure, and deceptive income claims.',
+                xpReward: 50,
+                story: {
+                    character: 'Elijah',
+                    scenario: 'Elijah is invited to a "wealth brunch" where everyone posts luxury photos and says he can earn six figures from home. The catch: buy a starter package and recruit three friends. He needs to test whether it is a product business or a recruiting machine.'
+                },
+                screens: [
+                    {
+                        title: 'Pyramid vs Product Business',
+                        content: [
+                            "A healthy business earns most revenue from real customers buying real products at sustainable prices.",
+                            "",
+                            "A pyramid-style system depends mainly on new recruits paying in."
+                        ]
+                    },
+                    {
+                        title: 'Common MLM/Pyramid Tactics',
+                        content: [
+                            "Watch for these patterns:",
+                            "• **Recruitment-first compensation** ('build a team' over product value)",
+                            "• **Starter kit or inventory loading** requirements",
+                            "• **Income screenshots without audited net profit data**",
+                            "• **Lifestyle theater** (cars, trips, staged success)",
+                            "• **Blame shifting** ('you failed because you did not grind hard enough')"
+                        ]
+                    },
+                    {
+                        title: 'Income Claim Reality Check',
+                        content: [
+                            "Ask for:",
+                            "• Median participant net earnings after expenses",
+                            "• Percentage of participants who lose money",
+                            "• Required monthly purchases to stay 'active'",
+                            "",
+                            "If those numbers are hidden, assume downside risk is high."
+                        ]
+                    },
+                    {
+                        title: 'Exit and Protect Relationships',
+                        content: [
+                            "If you are already in:",
+                            "• Stop new purchases",
+                            "• Document all payments and contracts",
+                            "• Review chargeback/refund options",
+                            "• Set boundaries with friends and family",
+                            "",
+                            "Protect cash first, then repair social trust."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-22-3',
+                title: 'Modern Fraud Channels: From Phishing to Fake Jobs',
+                description: 'Recognize current scam channels and stop credential theft before financial accounts are compromised.',
+                xpReward: 50,
+                story: {
+                    character: 'Noor',
+                    scenario: 'Noor receives a remote job offer with high pay and no interview, then gets asked to buy equipment with a check the company sends. The offer looks professional, but the payment flow is the trap.'
+                },
+                screens: [
+                    {
+                        title: 'Fraud Channels to Expect',
+                        content: [
+                            "Most financial scams arrive through:",
+                            "• Email phishing",
+                            "• Text message smishing",
+                            "• Social media direct messages",
+                            "• Marketplace payment scams",
+                            "• Fake recruiter and fake employer workflows"
+                        ]
+                    },
+                    {
+                        title: 'Credential and Code Theft',
+                        content: [
+                            "Scammers increasingly want your login plus your second-factor code.",
+                            "",
+                            "If someone asks for a one-time passcode, assume account takeover attempt.",
+                            "",
+                            "No legitimate support team needs your verification code."
+                        ]
+                    },
+                    {
+                        title: 'Fake Job Offer Pattern',
+                        content: [
+                            "Warning sequence:",
+                            "• Offer arrives with minimal vetting",
+                            "• Employer asks you to buy gear from a specific vendor",
+                            "• They send a check or transfer that later reverses",
+                            "• You are left with the loss",
+                            "",
+                            "Never front money for employer purchases from personal accounts."
+                        ]
+                    },
+                    {
+                        title: 'Account Hardening Defaults',
+                        content: [
+                            "Set this baseline:",
+                            "• Unique passwords via password manager",
+                            "• Multi-factor authentication on email, bank, brokerage, payroll",
+                            "• SIM-swap protections with mobile carrier",
+                            "• Transaction alerts on all financial accounts"
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-22-4',
+                title: 'Identity Theft Response: First 24 Hours',
+                description: 'Follow a prioritized incident response process when identity theft or account takeover happens.',
+                xpReward: 55,
+                story: {
+                    character: 'Tori',
+                    scenario: 'Tori wakes up to three unfamiliar credit card approvals and a bank transfer she never authorized. Panic is natural, but speed and order matter more than panic.'
+                },
+                screens: [
+                    {
+                        title: 'Golden Rule: Contain First',
+                        content: [
+                            "Your first objective is to stop further damage.",
+                            "",
+                            "Immediate actions:",
+                            "• Lock compromised cards/accounts",
+                            "• Change passwords from a clean device",
+                            "• Enable or reset multi-factor authentication",
+                            "• Contact financial institutions' fraud departments"
+                        ]
+                    },
+                    {
+                        title: 'Credit Bureau Controls',
+                        content: [
+                            "Place a credit freeze with all major bureaus to block new credit lines in your name.",
+                            "",
+                            "A freeze is one of the highest-leverage defenses after a breach."
+                        ]
+                    },
+                    {
+                        title: 'Documentation and Reporting',
+                        content: [
+                            "Create one incident log with timestamps, case numbers, and agent names.",
+                            "",
+                            "Report identity theft through official channels and keep copies of all submissions.",
+                            "",
+                            "Good records accelerate disputes and reimbursement."
+                        ]
+                    },
+                    {
+                        title: '7-Day and 30-Day Follow Up',
+                        content: [
+                            "Within 7 days:",
+                            "• Confirm freeze status and dispute submissions",
+                            "• Replace compromised cards",
+                            "• Update autopay mappings",
+                            "",
+                            "Within 30 days:",
+                            "• Review credit reports for new anomalies",
+                            "• Keep transaction alerts active",
+                            "• Document resolution outcomes"
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-22-5',
+                title: 'Build a Household Fraud Defense Playbook',
+                description: 'Create a shared family-level prevention plan with verification rules, access controls, and escalation steps.',
+                xpReward: 55,
+                story: {
+                    character: 'Marcus',
+                    scenario: 'Marcus manages finances for himself, his partner, and an aging parent. Each person uses different apps and passwords. One weak link could compromise everyone, so he builds a shared defense playbook.'
+                },
+                screens: [
+                    {
+                        title: 'Household Threat Model',
+                        content: [
+                            "Map who has access to:",
+                            "• Bank and brokerage accounts",
+                            "• Credit cards and payment apps",
+                            "• Email and phone numbers used for reset links",
+                            "",
+                            "Your security level is only as strong as the least secure account holder."
+                        ]
+                    },
+                    {
+                        title: 'Shared Verification Rules',
+                        content: [
+                            "Adopt family defaults:",
+                            "• No money transfers from message-only requests",
+                            "• Confirm urgent requests by voice/video on known numbers",
+                            "• No sharing of passcodes or backup codes",
+                            "• New app installs reviewed before linking bank accounts"
+                        ]
+                    },
+                    {
+                        title: 'Aging Parent and Teen Protections',
+                        content: [
+                            "For older adults:",
+                            "• Trusted contact on key accounts",
+                            "• Transaction alerts to a secondary family member",
+                            "",
+                            "For teens/young adults:",
+                            "• Spend limits on cards",
+                            "• Scam simulation training",
+                            "• Rules for marketplace and payment app usage"
+                        ]
+                    },
+                    {
+                        title: 'Incident Escalation Tree',
+                        content: [
+                            "Create a one-page emergency plan with:",
+                            "• Who to call first",
+                            "• Where account numbers are stored",
+                            "• How to freeze credit quickly",
+                            "• How to document and track disputes",
+                            "",
+                            "Prepared households recover faster and lose less."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-23',
+        title: 'Estate Planning & Legacy Basics',
+        description: 'Learn the core legal and financial building blocks that protect loved ones and transfer assets cleanly.',
+        xpReward: 140,
+        lessons: [
+            {
+                id: 'lesson-23-1',
+                title: 'Wills, Guardianship, and Intestacy',
+                description: 'Understand what a will does, what happens without one, and how guardianship decisions are handled.',
+                xpReward: 45,
+                story: {
+                    character: 'Lena',
+                    scenario: 'Lena and her spouse have two young kids and a house, but no will. After a health scare, she realizes that if both parents die unexpectedly, courts and state default rules will decide major outcomes unless they document their wishes.'
+                },
+                screens: [
+                    {
+                        title: 'What a Will Actually Controls',
+                        content: [
+                            "A will states how you want probate assets distributed and who should administer your estate.",
+                            "",
+                            "For parents, naming guardians is one of the highest-impact decisions."
+                        ]
+                    },
+                    {
+                        title: 'What Happens Without a Will',
+                        content: [
+                            "Dying without a will means state intestacy law determines asset distribution.",
+                            "",
+                            "That default may not match your preferences, family dynamics, or dependency realities."
+                        ]
+                    },
+                    {
+                        title: 'Guardianship Considerations',
+                        content: [
+                            "When naming guardians, evaluate:",
+                            "• Values and parenting approach",
+                            "• Physical and financial capacity",
+                            "• Geographic stability",
+                            "• Willingness to serve",
+                            "",
+                            "Always have a primary and backup guardian."
+                        ]
+                    },
+                    {
+                        title: 'Execution and Storage',
+                        content: [
+                            "Estate documents are useful only if valid and findable.",
+                            "",
+                            "Follow state signing and witness rules, store originals securely, and ensure trusted people know where they are."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-23-2',
+                title: 'Beneficiaries, POD/TOD, and Account Titling',
+                description: 'Avoid common transfer mistakes by aligning beneficiary forms, account titles, and estate documents.',
+                xpReward: 50,
+                story: {
+                    character: 'Harold',
+                    scenario: 'Harold updated his will after remarrying but never changed old beneficiary forms on retirement accounts. His estate plan says one thing, but his account designations say another.'
+                },
+                screens: [
+                    {
+                        title: 'Beneficiary Forms Often Override Wills',
+                        content: [
+                            "Retirement accounts and insurance policies typically transfer by beneficiary designation, not by will instructions.",
+                            "",
+                            "If forms are outdated, assets can go to unintended recipients."
+                        ]
+                    },
+                    {
+                        title: 'POD/TOD Basics',
+                        content: [
+                            "POD (Payable on Death) and TOD (Transfer on Death) designations allow certain assets to transfer directly outside probate.",
+                            "",
+                            "They can simplify transfers, but they must be coordinated with your broader plan."
+                        ]
+                    },
+                    {
+                        title: 'Titling and Ownership Structures',
+                        content: [
+                            "How an asset is titled affects who controls it now and who receives it later.",
+                            "",
+                            "Examples include individual ownership, joint ownership, and trust ownership.",
+                            "",
+                            "Inconsistent titling is a common source of disputes and delay."
+                        ]
+                    },
+                    {
+                        title: 'Annual Beneficiary Audit',
+                        content: [
+                            "Review every year and after major life events:",
+                            "• Marriage or divorce",
+                            "• Birth or adoption",
+                            "• Death in the family",
+                            "• Job changes affecting retirement accounts",
+                            "",
+                            "One stale form can undo an otherwise solid estate plan."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-23-3',
+                title: 'Power of Attorney and Health Directives',
+                description: 'Set up financial and medical decision-makers so critical choices can be made if you become incapacitated.',
+                xpReward: 50,
+                story: {
+                    character: 'Sonia',
+                    scenario: 'After a sudden stroke in her family, Sonia learns that even spouses can face delays accessing accounts or making medical choices without proper documents. She wants decision authority clarified before an emergency.'
+                },
+                screens: [
+                    {
+                        title: 'Capacity Risk Is a Planning Issue',
+                        content: [
+                            "Estate planning is not only about death. It is also about incapacity.",
+                            "",
+                            "Without documents, families may need court intervention to manage finances or medical decisions."
+                        ]
+                    },
+                    {
+                        title: 'Financial Power of Attorney',
+                        content: [
+                            "A financial POA authorizes someone to handle defined financial actions on your behalf.",
+                            "",
+                            "Scope can include paying bills, managing accounts, filing taxes, and handling property transactions."
+                        ]
+                    },
+                    {
+                        title: 'Medical POA and Advance Directive',
+                        content: [
+                            "Medical documents identify who can make health decisions and communicate treatment preferences.",
+                            "",
+                            "This reduces family conflict and helps clinicians act according to your values."
+                        ]
+                    },
+                    {
+                        title: 'Choose Agents Carefully',
+                        content: [
+                            "Pick people with:",
+                            "• Sound judgment under pressure",
+                            "• Integrity and reliability",
+                            "• Willingness to act",
+                            "• Ability to communicate with family and professionals",
+                            "",
+                            "Name backups in case your first choice is unavailable."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-23-4',
+                title: 'Trust Fundamentals: When and Why',
+                description: 'Learn the practical differences between common trust structures and when they can simplify administration.',
+                xpReward: 55,
+                story: {
+                    character: 'Raj',
+                    scenario: 'Raj owns rental property in two states and wants privacy plus easier transfer to his children. He hears trusts can help, but he needs to understand when a trust adds value and when it only adds complexity.'
+                },
+                screens: [
+                    {
+                        title: 'What a Trust Does',
+                        content: [
+                            "A trust is a legal structure where a trustee manages assets under written rules for beneficiaries.",
+                            "",
+                            "It can be used to control timing, conditions, and management of distributions."
+                        ]
+                    },
+                    {
+                        title: 'Revocable vs Irrevocable (High Level)',
+                        content: [
+                            "**Revocable trust**: flexible during your lifetime, often used for administration efficiency and continuity.",
+                            "",
+                            "**Irrevocable trust**: generally less flexible, sometimes used for advanced asset, tax, or legacy goals."
+                        ]
+                    },
+                    {
+                        title: 'When Trusts Can Help',
+                        content: [
+                            "Common reasons:",
+                            "• Blended family complexity",
+                            "• Minor or special-needs beneficiaries",
+                            "• Multi-state property holdings",
+                            "• Desire for private, structured distribution terms"
+                        ]
+                    },
+                    {
+                        title: 'Funding the Trust Is Critical',
+                        content: [
+                            "A trust only controls assets that are properly retitled or assigned to it.",
+                            "",
+                            "Creating a trust document without funding steps leaves much of the benefit unrealized."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-23-5',
+                title: 'Estate Plan Maintenance and Legacy Communication',
+                description: 'Keep documents current, organize access information, and communicate intent to reduce future conflict.',
+                xpReward: 55,
+                story: {
+                    character: 'Daphne',
+                    scenario: 'Daphne has a basic will but no one knows where anything is: account list, passwords, insurance, or final wishes. She wants a practical system her family can actually use during a hard week.'
+                },
+                screens: [
+                    {
+                        title: 'Estate Planning Is a Living Process',
+                        content: [
+                            "Your plan should evolve with life changes, not sit untouched for a decade.",
+                            "",
+                            "Trigger updates after marriage, divorce, births, deaths, relocation, and major asset changes."
+                        ]
+                    },
+                    {
+                        title: 'Build a Legacy Binder',
+                        content: [
+                            "Organize:",
+                            "• Document index (will, POA, directives, trust)",
+                            "• Account and policy inventory",
+                            "• Contact list (attorney, CPA, advisors, executors)",
+                            "• Digital asset access instructions",
+                            "",
+                            "Store securely and share retrieval instructions with trusted people."
+                        ]
+                    },
+                    {
+                        title: 'Reduce Family Conflict Upfront',
+                        content: [
+                            "Conflicts often come from surprise, not just money.",
+                            "",
+                            "Communicate key intentions in advance: guardianship choices, distribution logic, and role assignments."
+                        ]
+                    },
+                    {
+                        title: 'Annual 30-Minute Review',
+                        content: [
+                            "Schedule one annual review date.",
+                            "",
+                            "Checklist:",
+                            "• Beneficiaries still correct",
+                            "• Agents and executors still appropriate",
+                            "• New accounts captured",
+                            "• Storage/access instructions still accurate"
+                        ]
+                    }
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-24',
+        title: 'Small Business / Freelancer Finance',
+        description: 'Build stable cash flow, resilient pricing, and tax-ready operations for independent income.',
+        xpReward: 145,
+        lessons: [
+            {
+                id: 'lesson-24-1',
+                title: 'Separate Business and Personal Money',
+                description: 'Set up clean account structures, payment flows, and entity basics so your business decisions stay measurable.',
+                xpReward: 45,
+                story: {
+                    character: 'Owen',
+                    scenario: 'Owen is a freelance video editor who mixes client payments and personal spending in one account. Tax season is chaos and he cannot tell if the business is actually profitable.'
+                },
+                screens: [
+                    {
+                        title: 'Separation Is Step Zero',
+                        content: [
+                            "If business and personal money are mixed, every report is noisy.",
+                            "",
+                            "Open dedicated business banking and route all client income through that account."
+                        ]
+                    },
+                    {
+                        title: 'Minimum Viable Finance Stack',
+                        content: [
+                            "Core setup:",
+                            "• Business checking for revenue and expenses",
+                            "• Business savings for tax and reserve buckets",
+                            "• Business card for tracked spend",
+                            "• Simple bookkeeping system updated weekly"
+                        ]
+                    },
+                    {
+                        title: 'Owner Pay System',
+                        content: [
+                            "Pay yourself by rule, not randomly.",
+                            "",
+                            "Example:",
+                            "• Tax bucket: fixed percentage of revenue",
+                            "• Operating bucket: business expenses",
+                            "• Owner pay: planned transfer cadence",
+                            "",
+                            "This prevents accidental under-saving for taxes."
+                        ]
+                    },
+                    {
+                        title: 'Entity Basics and Documentation',
+                        content: [
+                            "As complexity grows, evaluate entity structure, contracts, and insurance with qualified professionals.",
+                            "",
+                            "Regardless of structure, documentation quality is what protects cash flow."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-24-2',
+                title: 'Manage Irregular Income and Build Runway',
+                description: 'Use a business runway model and revenue smoothing rules so variable months do not trigger financial stress.',
+                xpReward: 50,
+                story: {
+                    character: 'Bianca',
+                    scenario: 'Bianca runs a solo design studio with great quarters followed by dry spells. She keeps panicking in slow months and discounting her rates. She needs a runway system that absorbs volatility.'
+                },
+                screens: [
+                    {
+                        title: 'Volatility Is Normal',
+                        content: [
+                            "Freelance and small business income often arrives in lumpy cycles.",
+                            "",
+                            "The goal is not perfect monthly stability. The goal is resilience during low-revenue periods."
+                        ]
+                    },
+                    {
+                        title: 'Runway Math',
+                        content: [
+                            "Business runway = cash reserves / monthly core business burn.",
+                            "",
+                            "Track runway in months, not just dollars.",
+                            "",
+                            "Many operators target a minimum runway floor before increasing discretionary spending."
+                        ]
+                    },
+                    {
+                        title: 'Revenue Smoothing Rules',
+                        content: [
+                            "When revenue is strong:",
+                            "• Pre-fund tax and reserve buckets first",
+                            "• Avoid permanent cost increases until trend is durable",
+                            "",
+                            "When revenue drops:",
+                            "• Cut low-ROI expenses quickly",
+                            "• Protect lead-generation and core delivery capacity"
+                        ]
+                    },
+                    {
+                        title: 'Pipeline Discipline',
+                        content: [
+                            "Track three pipeline metrics weekly:",
+                            "• Qualified leads",
+                            "• Proposal value outstanding",
+                            "• Time-to-cash from signed contract",
+                            "",
+                            "Cash-flow problems often start as pipeline visibility problems."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-24-3',
+                title: 'Pricing, Margin, and Effective Hourly Rate',
+                description: 'Price offers based on delivery cost, risk, and value so the business can grow without hidden pay cuts.',
+                xpReward: 50,
+                story: {
+                    character: 'Keon',
+                    scenario: 'Keon wins a lot of projects but still struggles to save. He realizes many "profitable" jobs include unbilled revisions and weekend support that crush his effective hourly rate.'
+                },
+                screens: [
+                    {
+                        title: 'Revenue Is Not Profit',
+                        content: [
+                            "High sales can hide weak margins.",
+                            "",
+                            "You need unit-level clarity: price, delivery time, direct costs, and overhead allocation."
+                        ]
+                    },
+                    {
+                        title: 'Effective Hourly Rate (EHR)',
+                        content: [
+                            "EHR = (project revenue - direct costs) / true hours worked.",
+                            "",
+                            "Include admin, revision rounds, and client communication time.",
+                            "",
+                            "If EHR is below target, your pricing model needs redesign."
+                        ]
+                    },
+                    {
+                        title: 'Pricing Structures',
+                        content: [
+                            "Common structures:",
+                            "• Hourly: simple, but can cap upside",
+                            "• Fixed fee: good for repeatable scope with clear boundaries",
+                            "• Retainer: stabilizes cash flow for ongoing service",
+                            "",
+                            "Whichever model you use, scope control is non-negotiable."
+                        ]
+                    },
+                    {
+                        title: 'Margin Protection Levers',
+                        content: [
+                            "Use explicit terms for:",
+                            "• Included deliverables",
+                            "• Revision limits",
+                            "• Rush fees",
+                            "• Late payment penalties",
+                            "",
+                            "Pricing is strategy. Boundaries are enforcement."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-24-4',
+                title: 'Freelancer Tax Ops Without Panic',
+                description: 'Create a tax-ready workflow for quarterly estimates, deductible expense tracking, and clean records.',
+                xpReward: 55,
+                story: {
+                    character: 'Yasmin',
+                    scenario: 'Yasmin had a strong year and then got surprised by a large tax bill with penalties. She now wants a repeatable quarterly system that prevents last-minute scrambling.'
+                },
+                screens: [
+                    {
+                        title: 'Quarterly Rhythm Beats Annual Panic',
+                        content: [
+                            "Independent earners generally need estimated tax payments during the year.",
+                            "",
+                            "A quarterly cadence reduces penalty risk and protects business cash."
+                        ]
+                    },
+                    {
+                        title: 'Tax Bucket Workflow',
+                        content: [
+                            "Every client payment triggers an automatic transfer to a tax reserve account.",
+                            "",
+                            "Set your percentage conservatively, then adjust with professional guidance as real numbers come in."
+                        ]
+                    },
+                    {
+                        title: 'Deduction Tracking Quality',
+                        content: [
+                            "Good deduction capture requires:",
+                            "• Real-time categorization",
+                            "• Receipt or documentation hygiene",
+                            "• Clear business-purpose notes for gray-area expenses",
+                            "",
+                            "Messy records create stress and audit risk."
+                        ]
+                    },
+                    {
+                        title: 'Your Quarterly Finance Meeting',
+                        content: [
+                            "Review each quarter:",
+                            "• Revenue and margin trend",
+                            "• Tax reserve sufficiency",
+                            "• Top expense categories",
+                            "• Forecast for next quarter",
+                            "",
+                            "Treat taxes as an operating system, not a once-a-year event."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-24-5',
+                title: 'Risk Management: Contracts, Insurance, and Contingency',
+                description: 'Protect income with clear contracts, payment controls, and risk transfer where appropriate.',
+                xpReward: 55,
+                story: {
+                    character: 'Felix',
+                    scenario: 'Felix delivered a large project, then the client disputed scope and delayed payment for two months. Without strong contract terms, he had little leverage and no cash cushion.'
+                },
+                screens: [
+                    {
+                        title: 'Income Risk Is Business Risk',
+                        content: [
+                            "Small operators can be damaged by one bad contract or one unpaid invoice.",
+                            "",
+                            "Risk controls are revenue protection, not bureaucracy."
+                        ]
+                    },
+                    {
+                        title: 'Contract Clauses That Matter',
+                        content: [
+                            "At minimum define:",
+                            "• Scope and deliverables",
+                            "• Payment schedule and late terms",
+                            "• Revision boundaries",
+                            "• Ownership and licensing terms",
+                            "• Termination and dispute procedures"
+                        ]
+                    },
+                    {
+                        title: 'Payment Controls',
+                        content: [
+                            "Use cash-flow-friendly defaults:",
+                            "• Deposits before work starts",
+                            "• Milestone billing for larger projects",
+                            "• No final handoff before final payment",
+                            "",
+                            "Collections discipline prevents avoidable financing stress."
+                        ]
+                    },
+                    {
+                        title: 'Insurance and Continuity',
+                        content: [
+                            "Depending on business type, consider professional and general liability coverage.",
+                            "",
+                            "Also build a continuity plan:",
+                            "• Emergency reserve target",
+                            "• Backup vendor network",
+                            "• Critical file and credential access map"
+                        ]
+                    }
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-25',
+        title: 'Retirement Drawdown & Decumulation',
+        description: 'Convert savings into durable retirement income with withdrawal rules, tax sequencing, and guardrails.',
+        xpReward: 150,
+        lessons: [
+            {
+                id: 'lesson-25-1',
+                title: 'From Accumulation to Retirement Paycheck',
+                description: 'Shift from maximizing account balances to building reliable spendable income.',
+                xpReward: 45,
+                story: {
+                    character: 'Gloria',
+                    scenario: 'Gloria saved aggressively for 35 years and now has enough assets, but no clear paycheck plan. She needs to know how much she can spend each month without guessing.'
+                },
+                screens: [
+                    {
+                        title: 'Decumulation Is a Different Game',
+                        content: [
+                            "Accumulation asks: how do I grow assets?",
+                            "",
+                            "Decumulation asks: how do I turn assets into reliable income for an uncertain lifespan?"
+                        ]
+                    },
+                    {
+                        title: 'Start With Spending Tiers',
+                        content: [
+                            "Define:",
+                            "• **Essential spending** (housing, food, healthcare, insurance)",
+                            "• **Flexible spending** (travel, gifts, hobbies)",
+                            "",
+                            "Protect essentials first. Flex can adjust with market conditions."
+                        ]
+                    },
+                    {
+                        title: 'Build an Income Map',
+                        content: [
+                            "List recurring income sources and start dates:",
+                            "• Social Security",
+                            "• Pension income",
+                            "• Annuity or bond ladder cash flow",
+                            "• Portfolio withdrawals",
+                            "",
+                            "Gaps between essentials and guaranteed income define portfolio burden."
+                        ]
+                    },
+                    {
+                        title: 'Define a Monthly Paycheck Rule',
+                        content: [
+                            "Set a planned monthly transfer from investment accounts into spending accounts.",
+                            "",
+                            "Treat it as a paycheck system with periodic review, not ad hoc withdrawals."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-25-2',
+                title: 'Withdrawal Rates and Sequence Risk',
+                description: 'Understand sustainable withdrawal concepts and why early retirement market losses can permanently damage plans.',
+                xpReward: 50,
+                story: {
+                    character: 'Victor',
+                    scenario: 'Victor retired right before a market drawdown. His portfolio value dropped while he was still withdrawing the same amount, and now he worries he retired at the wrong time.'
+                },
+                screens: [
+                    {
+                        title: 'Withdrawal Rate Basics',
+                        content: [
+                            "Withdrawal rate = annual portfolio withdrawals / starting or current portfolio value (depending on method).",
+                            "",
+                            "Higher withdrawal rates increase the risk of depletion."
+                        ]
+                    },
+                    {
+                        title: 'Sequence-of-Returns Risk',
+                        content: [
+                            "Poor market returns early in retirement can hurt more than poor returns later.",
+                            "",
+                            "Why: withdrawals during early declines reduce the asset base that could have recovered."
+                        ]
+                    },
+                    {
+                        title: 'Mitigation Strategies',
+                        content: [
+                            "Common mitigations:",
+                            "• Hold a near-term cash or short-duration buffer",
+                            "• Reduce flexible spending after large drawdowns",
+                            "• Use dynamic withdrawal guardrails instead of fixed inflation-only increases"
+                        ]
+                    },
+                    {
+                        title: 'Stress Testing Mindset',
+                        content: [
+                            "Run your plan against adverse scenarios, not just average returns.",
+                            "",
+                            "A robust plan is one you can stick with when markets are uncomfortable."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-25-3',
+                title: 'Tax-Aware Withdrawal Order',
+                description: 'Coordinate taxable, tax-deferred, and Roth withdrawals to manage taxes and preserve long-term flexibility.',
+                xpReward: 55,
+                story: {
+                    character: 'Pam and Eli',
+                    scenario: 'Pam and Eli have money in taxable brokerage, traditional retirement accounts, and Roth accounts. Their first retirement year triggered a larger tax bill than expected because they withdrew in the wrong sequence.'
+                },
+                screens: [
+                    {
+                        title: 'Account Types Create Tax Strategy',
+                        content: [
+                            "Retirement income planning is partly a tax-planning problem.",
+                            "",
+                            "Different account types are taxed differently, so withdrawal order affects net spendable income."
+                        ]
+                    },
+                    {
+                        title: 'Typical Withdrawal Sequencing Logic',
+                        content: [
+                            "A common framework is to blend sources strategically rather than draining one account blindly.",
+                            "",
+                            "Goals:",
+                            "• Manage current tax bracket exposure",
+                            "• Preserve tax-free growth capacity",
+                            "• Avoid surprise premium/benefit cliffs"
+                        ]
+                    },
+                    {
+                        title: 'RMD and Bracket Management',
+                        content: [
+                            "Required minimum distributions from certain tax-deferred accounts can force taxable income later.",
+                            "",
+                            "Proactive multi-year planning can smooth taxable income and reduce future pressure."
+                        ]
+                    },
+                    {
+                        title: 'Coordinate With Filing and Medicare Effects',
+                        content: [
+                            "Withdrawal choices can ripple into other costs.",
+                            "",
+                            "Plan annually with your tax picture, benefit thresholds, and expected spending needs in one view."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-25-4',
+                title: 'Income Floor and Bucket Strategies',
+                description: 'Design a retirement income floor for essentials and use portfolio buckets for stability and flexibility.',
+                xpReward: 55,
+                story: {
+                    character: 'Anita',
+                    scenario: 'Anita can cover about 70% of essentials with Social Security and a pension. She wants a simple bucket system for the remaining 30% so she can sleep at night during market volatility.'
+                },
+                screens: [
+                    {
+                        title: 'Income Floor Concept',
+                        content: [
+                            "Income floor = recurring cash flow intended to cover essential expenses with high reliability.",
+                            "",
+                            "The stronger your floor, the less pressure on growth assets during bad markets."
+                        ]
+                    },
+                    {
+                        title: 'Three-Bucket Example',
+                        content: [
+                            "Bucket 1: 1-2 years of spending needs in cash/near-cash",
+                            "Bucket 2: intermediate horizon assets for refilling Bucket 1",
+                            "Bucket 3: long-term growth assets",
+                            "",
+                            "Buckets are a behavior tool as much as an allocation tool."
+                        ]
+                    },
+                    {
+                        title: 'Refill Rules',
+                        content: [
+                            "Define objective refill triggers.",
+                            "",
+                            "Example:",
+                            "• In strong markets, harvest gains from Bucket 3 to refill Bucket 1",
+                            "• In weak markets, draw from Bucket 1 while reducing discretionary spend"
+                        ]
+                    },
+                    {
+                        title: 'Avoid Common Bucket Mistakes',
+                        content: [
+                            "Mistakes to avoid:",
+                            "• Leaving all buckets static for years",
+                            "• Overfunding cash and underfunding long-run growth",
+                            "• Ignoring inflation impact on spending needs"
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-25-5',
+                title: 'Annual Guardrails and Spending Adjustments',
+                description: 'Use pre-set guardrails to adjust spending when markets or inflation shift, instead of reacting emotionally.',
+                xpReward: 60,
+                story: {
+                    character: 'Martha and Joel',
+                    scenario: 'Martha and Joel promised themselves they would not panic-sell in retirement, but a 20% portfolio drop made every decision feel emotional. They need objective guardrails that tell them when to cut, hold, or raise spending.'
+                },
+                screens: [
+                    {
+                        title: 'Guardrails Create Decision Discipline',
+                        content: [
+                            "Guardrails are predefined spending rules tied to portfolio and inflation conditions.",
+                            "",
+                            "They reduce emotional decision-making during stress."
+                        ]
+                    },
+                    {
+                        title: 'Sample Guardrail Framework',
+                        content: [
+                            "Illustrative rules:",
+                            "• If withdrawal rate rises above upper threshold -> trim flexible spending",
+                            "• If withdrawal rate falls below lower threshold -> consider modest raise or gifting",
+                            "• If inflation spikes -> prioritize essentials and delay large discretionary upgrades"
+                        ]
+                    },
+                    {
+                        title: 'Annual Retirement Review Agenda',
+                        content: [
+                            "Review once per year:",
+                            "• Actual spending vs plan",
+                            "• Portfolio withdrawals and current withdrawal rate",
+                            "• Tax outcomes and next-year estimates",
+                            "• Healthcare and long-term care assumptions",
+                            "• Estate and beneficiary updates"
+                        ]
+                    },
+                    {
+                        title: 'Resilience Over Precision',
+                        content: [
+                            "No retirement plan is perfect.",
+                            "",
+                            "The goal is a plan that can adapt without panic, preserve dignity, and keep essentials funded through multiple market environments."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            }
+        ]
     }
 ];

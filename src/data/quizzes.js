@@ -1346,5 +1346,440 @@ export const quizzes = {
             options: ["Because politics don't exist in finance", "Because free money that compounds for 18+ years should never be left on the table", "Because the government requires enrollment", "Because only one party supports them"],
             correctIndex: 1
         }
+    ],
+
+    // Module 21: Budgeting Systems & Cash-Flow Automation
+    'lesson-21-1': [
+        {
+            question: "For variable income, which budgeting baseline is usually most practical?",
+            options: ["Your highest-earning month", "A low but realistic month", "Your tax refund month", "Your best month from last year"],
+            correctIndex: 1
+        },
+        {
+            question: "Which framework is commonly strongest for detailed control but higher maintenance?",
+            options: ["Zero-based budgeting", "50/30/20 only", "No-budget method", "Cash stuffing only"],
+            correctIndex: 0
+        },
+        {
+            question: "What is a key sign your budgeting system is usable long-term?",
+            options: ["It takes hours every day", "It fits on one page and can be run weekly", "It changes every month", "It requires perfect income consistency"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-21-2': [
+        {
+            question: "In an automation setup, which tier should be protected first during cash stress?",
+            options: ["Optional subscriptions", "Goal transfers", "Non-negotiable bills", "Travel spending"],
+            correctIndex: 2
+        },
+        {
+            question: "What is the main purpose of a sinking fund?",
+            options: ["To speculate in markets", "To pre-fund known irregular expenses", "To hide spending from your budget", "To replace an emergency fund entirely"],
+            correctIndex: 1
+        },
+        {
+            question: "Automation is most effective when combined with:",
+            options: ["No monitoring at all", "A brief weekly review process", "Daily manual re-entry of all bills", "Random transfer changes"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-21-3': [
+        {
+            question: "What major change in the late 2010s improved recurring small-dollar investing?",
+            options: ["Higher account minimums", "Return of fixed trade commissions", "Normalization of low/zero-commission trading", "Ban on fractional shares"],
+            correctIndex: 2
+        },
+        {
+            question: "According to the lesson, platforms like Robinhood helped trigger what broader trend?",
+            options: ["Broker shutdowns", "Mainstream incumbents lowering stock/ETF commissions", "Elimination of all investing risk", "End of retirement accounts"],
+            correctIndex: 1
+        },
+        {
+            question: "What is the core behavior advantage of zero-fee recurring investing?",
+            options: ["Perfect market timing", "Consistent automation with less fee drag on small buys", "Guaranteed outperformance", "No need for diversification"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-21-4': [
+        {
+            question: "What is a transfer waterfall?",
+            options: ["Moving money randomly each month", "A fixed paycheck order for routing cash", "A strategy to avoid saving", "A method for tax filing"],
+            correctIndex: 1
+        },
+        {
+            question: "Why should transfer frequency match income frequency?",
+            options: ["It increases app notifications", "It reduces cash-timing friction and missed goals", "It eliminates all risk", "It lowers inflation"],
+            correctIndex: 1
+        },
+        {
+            question: "What is a practical way to increase contributions over time?",
+            options: ["Wait for a perfect market dip", "Auto-ratchet contributions after raises or quarterly", "Only invest annual bonuses", "Double contributions every week"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-21-5': [
+        {
+            question: "Which is a common automation failure mode?",
+            options: ["Lower stress", "Duplicate transfers after account changes", "Higher savings rate", "Fewer missed due dates"],
+            correctIndex: 1
+        },
+        {
+            question: "What is the purpose of a bills-account buffer floor?",
+            options: ["Maximize speculation", "Trigger pause rules before overdrafts", "Increase subscription count", "Avoid tracking cash flow"],
+            correctIndex: 1
+        },
+        {
+            question: "How often should you run a full automation audit?",
+            options: ["Never", "About monthly", "Once every 10 years", "Only after a fraud incident"],
+            correctIndex: 1
+        }
+    ],
+
+    // Module 22: Consumer Protection, Scams & Identity Theft
+    'lesson-22-1': [
+        {
+            question: "Financial scams typically succeed by targeting:",
+            options: ["Only low-income households", "Human emotion and urgency", "Only retirees", "Only people without internet"],
+            correctIndex: 1
+        },
+        {
+            question: "What is the best immediate response to a high-pressure money request?",
+            options: ["Comply quickly", "Pause and independently verify through official channels", "Send half now and half later", "Ask for a better discount"],
+            correctIndex: 1
+        },
+        {
+            question: "Which request is a major red flag?",
+            options: ["Asking you to verify a statement date", "Asking for your one-time authentication code", "Asking you to log in through your own app", "Asking for your mailing address update"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-22-2': [
+        {
+            question: "A key red flag for pyramid-style operations is:",
+            options: ["Revenue mostly from real retail customers", "Compensation focused on recruiting new members", "Transparent audited net-income data", "Low-pressure sales practices"],
+            correctIndex: 1
+        },
+        {
+            question: "What is inventory loading?",
+            options: ["Buying only what customers already ordered", "Pressure to purchase excess product to stay 'active' or rank up", "Running out of product", "Selling digital-only services"],
+            correctIndex: 1
+        },
+        {
+            question: "When evaluating a business opportunity, which metric is most important?",
+            options: ["Social media lifestyle posts", "Median net earnings after expenses", "Speaker charisma", "Number of followers in the group chat"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-22-3': [
+        {
+            question: "Which pattern is common in fake job scams?",
+            options: ["Multiple technical interviews", "Asking you to front money for equipment with a reversible payment", "Delayed response times", "Clear HR verification channels"],
+            correctIndex: 1
+        },
+        {
+            question: "What does smishing refer to?",
+            options: ["Phone support from your bank", "Text-message phishing", "Paper mail fraud", "Credit score reporting"],
+            correctIndex: 1
+        },
+        {
+            question: "What is a high-impact account hardening move?",
+            options: ["Reuse one strong password everywhere", "Enable MFA on email and financial accounts", "Turn off all transaction alerts", "Use only public Wi-Fi"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-22-4': [
+        {
+            question: "After identity theft, what is the first objective?",
+            options: ["Apply for new credit cards", "Contain damage by locking accounts and changing credentials", "Delete your email account", "Move all money to cash"],
+            correctIndex: 1
+        },
+        {
+            question: "Why place a credit freeze after identity theft?",
+            options: ["To improve investment returns", "To block unauthorized new credit applications", "To cancel existing debt", "To avoid filing reports"],
+            correctIndex: 1
+        },
+        {
+            question: "What helps disputes and reimbursement move faster?",
+            options: ["Ignoring call records", "A timestamped incident log with case numbers", "Posting on social media only", "Changing banks every month"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-22-5': [
+        {
+            question: "A household fraud playbook should include:",
+            options: ["No contact list", "Verification rules, escalation steps, and account access mapping", "Only app download recommendations", "Only one person's passwords"],
+            correctIndex: 1
+        },
+        {
+            question: "Why are shared verification rules important?",
+            options: ["They slow all spending", "They reduce social-engineering success across family members", "They replace MFA", "They eliminate identity theft permanently"],
+            correctIndex: 1
+        },
+        {
+            question: "What is a practical protection for aging parents?",
+            options: ["Disable all accounts", "Set trusted contacts and transaction alerts", "Share one family password", "Use only cash"],
+            correctIndex: 1
+        }
+    ],
+
+    // Module 23: Estate Planning & Legacy Basics
+    'lesson-23-1': [
+        {
+            question: "If someone dies without a valid will, asset distribution is generally decided by:",
+            options: ["Their oldest child", "State intestacy law", "Their employer", "Their bank branch manager"],
+            correctIndex: 1
+        },
+        {
+            question: "For parents of minors, one of the highest-impact will decisions is:",
+            options: ["Choosing a credit card", "Naming guardians", "Selecting a brokerage app", "Changing internet providers"],
+            correctIndex: 1
+        },
+        {
+            question: "Why do document execution rules matter?",
+            options: ["They determine whether documents are legally valid", "They increase account interest rates", "They reduce mortgage payments", "They replace beneficiary designations"],
+            correctIndex: 0
+        }
+    ],
+    'lesson-23-2': [
+        {
+            question: "Which often controls transfers on retirement accounts and life insurance?",
+            options: ["Will language only", "Beneficiary designation forms", "Tax return history", "Employer handbook"],
+            correctIndex: 1
+        },
+        {
+            question: "POD/TOD designations are mainly used to:",
+            options: ["Increase portfolio risk", "Enable direct transfer outside probate on certain assets", "Avoid all estate planning", "Eliminate taxes in all cases"],
+            correctIndex: 1
+        },
+        {
+            question: "When should beneficiaries be reviewed?",
+            options: ["Never after setup", "After major life events and on a regular schedule", "Only after retirement", "Only if account balances fall"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-23-3': [
+        {
+            question: "Power of attorney planning primarily addresses the risk of:",
+            options: ["Low market returns", "Incapacity and inability to act", "Inflation only", "Job loss only"],
+            correctIndex: 1
+        },
+        {
+            question: "A financial POA can authorize an agent to:",
+            options: ["Set tax law", "Manage defined financial tasks on your behalf", "Rewrite your will after death", "Change your credit score directly"],
+            correctIndex: 1
+        },
+        {
+            question: "When selecting agents, a critical factor is:",
+            options: ["Social media popularity", "Judgment and reliability under pressure", "Proximity to your office", "Investment returns last year"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-23-4': [
+        {
+            question: "A trust is best described as:",
+            options: ["A checking account type", "A legal structure for managing assets under written rules", "A tax return form", "A retirement withdrawal method"],
+            correctIndex: 1
+        },
+        {
+            question: "What is a common reason people use trusts?",
+            options: ["To avoid all documentation", "To manage complex distributions and administration", "To replace every financial account", "To guarantee investment gains"],
+            correctIndex: 1
+        },
+        {
+            question: "Why is trust funding important?",
+            options: ["It is optional and usually unnecessary", "Only funded/retitled assets are controlled by the trust", "It lowers inflation", "It changes federal reserve policy"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-23-5': [
+        {
+            question: "Estate plans should generally be reviewed:",
+            options: ["Only once in a lifetime", "Regularly and after major life changes", "Only when buying a car", "Only after age 80"],
+            correctIndex: 1
+        },
+        {
+            question: "A legacy binder should include:",
+            options: ["Only inspirational quotes", "Documents, account inventory, and trusted contacts", "Stock tips only", "No access instructions"],
+            correctIndex: 1
+        },
+        {
+            question: "Why communicate core estate intentions in advance?",
+            options: ["To increase conflict", "To reduce surprise and family disputes", "To avoid all legal work", "To bypass beneficiary forms"],
+            correctIndex: 1
+        }
+    ],
+
+    // Module 24: Small Business / Freelancer Finance
+    'lesson-24-1': [
+        {
+            question: "Why separate personal and business finances?",
+            options: ["To increase complexity", "To improve clarity, decisions, and record quality", "To avoid invoicing", "To eliminate taxes"],
+            correctIndex: 1
+        },
+        {
+            question: "Which setup is part of a minimum viable finance stack for freelancers?",
+            options: ["One mixed personal account", "Dedicated business banking and weekly bookkeeping", "No receipts", "Cash-only payments"],
+            correctIndex: 1
+        },
+        {
+            question: "Paying yourself by rule primarily helps prevent:",
+            options: ["Any market volatility", "Random owner draws that break tax and cash planning", "Client churn", "Legal contracts"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-24-2': [
+        {
+            question: "Business runway is calculated as:",
+            options: ["Annual revenue / monthly profit", "Cash reserves / monthly core burn", "Accounts receivable / monthly payroll", "Pipeline value / expenses"],
+            correctIndex: 1
+        },
+        {
+            question: "When revenue surges, which move is usually most resilient?",
+            options: ["Increase fixed lifestyle costs immediately", "Pre-fund taxes and reserves first", "Stop marketing completely", "Ignore margin tracking"],
+            correctIndex: 1
+        },
+        {
+            question: "Which metric helps forecast near-term cash stress?",
+            options: ["Number of social followers", "Proposal value outstanding and time-to-cash", "Coffee spend", "Office square footage"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-24-3': [
+        {
+            question: "Effective hourly rate (EHR) should include:",
+            options: ["Billable delivery hours only", "All true hours including admin and revisions", "Only meeting time", "Only invoicing time"],
+            correctIndex: 1
+        },
+        {
+            question: "High revenue with thin margins means:",
+            options: ["The business is automatically healthy", "Profitability may still be weak", "Taxes are optional", "Pricing should always be lowered"],
+            correctIndex: 1
+        },
+        {
+            question: "Which clause helps protect margin on custom work?",
+            options: ["Unlimited revisions by default", "Explicit revision limits and rush fees", "No scope definition", "Payment after final handoff only"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-24-4': [
+        {
+            question: "Why use a quarterly tax workflow?",
+            options: ["To increase surprises", "To reduce penalty risk and cash-flow shocks", "To avoid bookkeeping", "To skip documentation"],
+            correctIndex: 1
+        },
+        {
+            question: "A tax reserve account is funded best by:",
+            options: ["Occasional guesses", "Automatic transfers from each client payment", "Year-end borrowing", "Credit card advances"],
+            correctIndex: 1
+        },
+        {
+            question: "High-quality deduction tracking requires:",
+            options: ["No records if expenses are small", "Real-time categorization and documentation", "Only annual estimates", "Screenshots without context"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-24-5': [
+        {
+            question: "Which payment control improves freelancer cash protection?",
+            options: ["Start without a deposit", "Milestone billing and deposits before work", "Deliver full assets before final payment", "No late fee terms"],
+            correctIndex: 1
+        },
+        {
+            question: "Contracts should clearly define:",
+            options: ["Only project title", "Scope, payment schedule, and revision boundaries", "Only hourly rate", "Only social media terms"],
+            correctIndex: 1
+        },
+        {
+            question: "Why consider insurance and contingency planning?",
+            options: ["To increase fixed costs without benefit", "To transfer risk and maintain continuity after disruptions", "To replace contracts", "To avoid having reserves"],
+            correctIndex: 1
+        }
+    ],
+
+    // Module 25: Retirement Drawdown & Decumulation
+    'lesson-25-1': [
+        {
+            question: "In retirement, the central planning question shifts to:",
+            options: ["How to maximize trading frequency", "How to convert assets into durable income", "How to avoid all taxes forever", "How to keep every dollar in cash"],
+            correctIndex: 1
+        },
+        {
+            question: "Why separate essential and flexible spending?",
+            options: ["To make the budget longer", "To protect core needs during volatility", "To reduce guaranteed income", "To eliminate planning"],
+            correctIndex: 1
+        },
+        {
+            question: "A retirement paycheck system means:",
+            options: ["Random withdrawals whenever needed", "Planned recurring transfers with periodic review", "No spending controls", "Using only one account type"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-25-2': [
+        {
+            question: "Sequence-of-returns risk is most dangerous when:",
+            options: ["Market declines happen early in retirement while withdrawing", "Markets rise steadily", "You have no withdrawals", "You are in accumulation mode"],
+            correctIndex: 0
+        },
+        {
+            question: "A higher withdrawal rate generally means:",
+            options: ["Lower depletion risk", "Higher portfolio depletion risk", "No change in risk", "Guaranteed portfolio growth"],
+            correctIndex: 1
+        },
+        {
+            question: "Which action can help mitigate sequence risk?",
+            options: ["Increase spending after a large drawdown", "Use a near-term cash buffer and flexible spending cuts", "Ignore allocation changes", "Withdraw only from equities"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-25-3': [
+        {
+            question: "Tax-aware withdrawal planning is important because:",
+            options: ["All account withdrawals are taxed the same way", "Different account types create different tax outcomes", "Taxes stop in retirement", "Only Social Security is taxable"],
+            correctIndex: 1
+        },
+        {
+            question: "Required minimum distributions (RMDs) matter because they can:",
+            options: ["Reduce all taxable income", "Force taxable withdrawals later", "Eliminate Medicare costs", "Replace Social Security"],
+            correctIndex: 1
+        },
+        {
+            question: "A practical withdrawal approach is usually to:",
+            options: ["Drain one account type blindly", "Coordinate sources to manage brackets and long-term flexibility", "Use Roth first in all cases", "Use only taxable accounts forever"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-25-4': [
+        {
+            question: "An income floor in retirement is designed to cover:",
+            options: ["Only travel", "Essential spending with high reliability", "Only taxes", "Only gifts"],
+            correctIndex: 1
+        },
+        {
+            question: "In a three-bucket framework, Bucket 1 usually holds:",
+            options: ["High-volatility growth assets only", "Near-term spending cash or near-cash", "Private equity only", "Real estate development capital"],
+            correctIndex: 1
+        },
+        {
+            question: "Why define bucket refill rules in advance?",
+            options: ["To increase emotional reactions", "To guide actions objectively across market conditions", "To avoid any portfolio growth", "To stop all rebalancing"],
+            correctIndex: 1
+        }
+    ],
+    'lesson-25-5': [
+        {
+            question: "Guardrails in retirement planning are:",
+            options: ["Random spending changes", "Predefined adjustment rules tied to portfolio/spending conditions", "A type of annuity", "A tax deduction category"],
+            correctIndex: 1
+        },
+        {
+            question: "If withdrawal pressure rises above a set upper threshold, a common guardrail action is to:",
+            options: ["Increase discretionary spending", "Trim flexible spending temporarily", "Stop all income planning", "Sell all assets immediately"],
+            correctIndex: 1
+        },
+        {
+            question: "A strong annual retirement review should include:",
+            options: ["Only market headlines", "Spending, withdrawal rate, taxes, healthcare assumptions, and estate updates", "Only last month's returns", "Only Social Security statements"],
+            correctIndex: 1
+        }
     ]
 };
