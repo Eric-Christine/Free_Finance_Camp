@@ -199,5 +199,165 @@ export const vocabulary = [
         term: 'Trade School / Vocational School',
         definition: 'A post-secondary educational institution designed to give students the technical skills needed to perform a specific job, such as electrician, plumber, or HVAC technician.',
         lessonId: 'lesson-kids-1'
+    },
+
+    // Module 21: Budgeting Systems & Cash-Flow Automation
+    {
+        id: 'zero-based-budgeting',
+        term: 'Zero-Based Budgeting',
+        definition: 'A budgeting method where every dollar of income is assigned a job, so planned income minus planned allocations equals zero.',
+        lessonId: 'lesson-21-1'
+    },
+    {
+        id: 'direct-deposit-split',
+        term: 'Direct Deposit Split',
+        definition: 'A payroll setup that routes one paycheck into multiple accounts automatically (for bills, savings, and investing).',
+        lessonId: 'lesson-21-2'
+    },
+    {
+        id: 'commission-free-trading',
+        term: 'Commission-Free Trading',
+        definition: 'Buying and selling certain securities without a per-trade commission fee, which makes small recurring investments more practical.',
+        lessonId: 'lesson-21-3'
+    },
+    {
+        id: 'transfer-waterfall',
+        term: 'Transfer Waterfall',
+        definition: 'A fixed order for moving each paycheck into priorities like bills, emergency savings, debt payoff, and investing.',
+        lessonId: 'lesson-21-4'
+    },
+    {
+        id: 'cash-buffer-floor',
+        term: 'Cash Buffer Floor',
+        definition: 'A minimum account balance threshold that helps prevent overdrafts and triggers transfer pauses when cash gets tight.',
+        lessonId: 'lesson-21-5'
+    },
+
+    // Module 22: Consumer Protection, Scams & Identity Theft
+    {
+        id: 'social-engineering',
+        term: 'Social Engineering',
+        definition: 'Manipulating people into revealing information or taking actions that benefit an attacker, often through urgency or authority.',
+        lessonId: 'lesson-22-1'
+    },
+    {
+        id: 'pyramid-scheme',
+        term: 'Pyramid Scheme',
+        definition: 'An illegal model where participant earnings rely primarily on recruiting new members rather than selling real products to real customers.',
+        lessonId: 'lesson-22-2'
+    },
+    {
+        id: 'smishing',
+        term: 'Smishing',
+        definition: 'A text-message phishing attack designed to steal credentials, payment data, or account access codes.',
+        lessonId: 'lesson-22-3'
+    },
+    {
+        id: 'credit-freeze',
+        term: 'Credit Freeze',
+        definition: 'A security control that blocks most new credit applications in your name until you temporarily lift or remove the freeze.',
+        lessonId: 'lesson-22-4'
+    },
+    {
+        id: 'fraud-escalation-tree',
+        term: 'Fraud Escalation Tree',
+        definition: 'A predefined sequence of who to contact and what to do first during a suspected scam or account-compromise incident.',
+        lessonId: 'lesson-22-5'
+    },
+
+    // Module 23: Estate Planning & Legacy Basics
+    {
+        id: 'intestacy',
+        term: 'Intestacy',
+        definition: 'The legal condition of dying without a valid will, causing state law to determine asset distribution.',
+        lessonId: 'lesson-23-1'
+    },
+    {
+        id: 'beneficiary-designation',
+        term: 'Beneficiary Designation',
+        definition: 'A named recipient on financial accounts or insurance policies who receives assets at death, often outside the will process.',
+        lessonId: 'lesson-23-2'
+    },
+    {
+        id: 'durable-power-of-attorney',
+        term: 'Durable Power of Attorney',
+        definition: 'A legal document authorizing an agent to manage financial matters if you become incapacitated.',
+        lessonId: 'lesson-23-3'
+    },
+    {
+        id: 'revocable-living-trust',
+        term: 'Revocable Living Trust',
+        definition: 'A trust you can modify during your lifetime that can help with continuity and transfer administration when properly funded.',
+        lessonId: 'lesson-23-4'
+    },
+    {
+        id: 'legacy-binder',
+        term: 'Legacy Binder',
+        definition: 'A centralized packet of estate documents, account lists, contacts, and instructions for family members during emergencies.',
+        lessonId: 'lesson-23-5'
+    },
+
+    // Module 24: Small Business / Freelancer Finance
+    {
+        id: 'owner-pay',
+        term: 'Owner Pay',
+        definition: 'A planned transfer of money from business accounts to personal accounts using a consistent rule or schedule.',
+        lessonId: 'lesson-24-1'
+    },
+    {
+        id: 'cash-runway',
+        term: 'Cash Runway',
+        definition: 'How long a business can continue operating at its core burn rate using current cash reserves.',
+        lessonId: 'lesson-24-2'
+    },
+    {
+        id: 'effective-hourly-rate',
+        term: 'Effective Hourly Rate (EHR)',
+        definition: 'Actual earnings per hour after accounting for total time worked and direct project costs.',
+        lessonId: 'lesson-24-3'
+    },
+    {
+        id: 'estimated-tax-payments',
+        term: 'Estimated Tax Payments',
+        definition: 'Periodic tax payments made during the year, commonly required for freelancers and business owners with untaxed income.',
+        lessonId: 'lesson-24-4'
+    },
+    {
+        id: 'milestone-billing',
+        term: 'Milestone Billing',
+        definition: 'A payment structure where invoices are tied to predefined project phases instead of waiting until final delivery.',
+        lessonId: 'lesson-24-5'
+    },
+
+    // Module 25: Retirement Drawdown & Decumulation
+    {
+        id: 'decumulation',
+        term: 'Decumulation',
+        definition: 'The retirement phase focused on converting accumulated assets into sustainable income.',
+        lessonId: 'lesson-25-1'
+    },
+    {
+        id: 'sequence-of-returns-risk',
+        term: 'Sequence-of-Returns Risk',
+        definition: 'The danger that poor market returns early in retirement can permanently weaken a withdrawal plan.',
+        lessonId: 'lesson-25-2'
+    },
+    {
+        id: 'withdrawal-sequencing',
+        term: 'Withdrawal Sequencing',
+        definition: 'The strategy of choosing which account types to withdraw from and when to manage taxes and long-term portfolio durability.',
+        lessonId: 'lesson-25-3'
+    },
+    {
+        id: 'income-floor',
+        term: 'Income Floor',
+        definition: 'Reliable recurring cash flow intended to cover essential retirement expenses before discretionary spending.',
+        lessonId: 'lesson-25-4'
+    },
+    {
+        id: 'withdrawal-guardrails',
+        term: 'Withdrawal Guardrails',
+        definition: 'Predefined spending-adjustment rules triggered by portfolio or withdrawal-rate thresholds.',
+        lessonId: 'lesson-25-5'
     }
 ];
