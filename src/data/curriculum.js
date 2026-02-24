@@ -453,6 +453,677 @@ export const curriculum = [
         ]
     },
     {
+        id: 'module-10',
+        title: 'Banking & Financial Institutions',
+        description: 'Understand the entities that move the world\'s money.',
+        xpReward: 150,
+        lessons: [
+            {
+                id: 'lesson-10-1',
+                title: 'Financial Pillars: Banks & Credit Unions',
+                description: 'Where should you keep your cash?',
+                xpReward: 40,
+                content: [
+                    "**Traditional Banks** are for-profit corporations owned by shareholders. They offer convenience, many branches, and advanced tech, but often have higher fees.",
+                    "",
+                    "**Credit Unions** are non-profit cooperatives owned by their members. They usually offer better interest rates and lower fees, but membership is often restricted to certain groups (e.g., teachers, military).",
+                    "",
+                    "**Online-Only Banks** have no physical branches. Because they have lower overhead, they often offer the highest savings rates (**HYSA**) in the market.",
+                    "",
+                    "Pro tip: Always ensure your bank is insured by the **FDIC** (for banks) or **NCUA** (for credit unions). This protects your money up to $250,000 if the institution fails."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-10-2',
+                title: 'Green Banks: Financing the Future',
+                description: 'Using finance to fight climate change.',
+                xpReward: 50,
+                content: [
+                    "A **Green Bank** is a mission-driven institution that uses public funds to 'de-risk' and attract private investment into clean energy projects.",
+                    "",
+                    "**Why do we need them?** Traditional banks are often hesitant to fund new green technologies (like community solar or building retrofits) because they lack historical data to predict risk.",
+                    "",
+                    "**How they work**: For every $1 of public money a Green Bank invests, it typically attracts $3 to $10 of private capital from institutional investors.",
+                    "",
+                    "Examples include the **Connecticut Green Bank** (the first in the US) and the new federal **Greenhouse Gas Reduction Fund**, which is deploying $27 billion to green projects across America."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-10-3',
+                title: 'Global Stability: IMF & World Bank',
+                description: 'The lenders of last resort.',
+                xpReward: 60,
+                content: [
+                    "The **International Monetary Fund (IMF)** acts as a global monitor and 'lender of last resort.' It provides loans to countries facing economic crises to prevent global contagion.",
+                    "",
+                    "The **World Bank** focuses on long-term economic development and poverty reduction. It funds infrastructure projects like schools, bridges, and power plants in developing nations.",
+                    "",
+                    "**Common Criticism**: Both institutions are often criticized for the 'conditions' they attach to loans, which may require countries to make painful cuts to social programs.",
+                    "",
+                    "Despite controversies, these institutions are the backbone of global financial stability during times of war or total economic collapse."
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-15',
+        title: 'Emergency Funds & Financial Resilience',
+        description: 'Build a safety net before things go wrong.',
+        xpReward: 150,
+        lessons: [
+            {
+                id: 'lesson-15-1',
+                title: 'Why 3-6 Months Matters',
+                description: 'Emergency stats and the safety net math.',
+                xpReward: 30,
+                screens: [
+                    {
+                        title: 'The Fragility Problem',
+                        content: [
+                            "**56% of Americans** cannot cover a $1,000 emergency expense with savings.",
+                            "",
+                            "That means a single car repair, medical bill, or job loss can trigger a financial spiral: credit card debt → high interest → more debt → stress → poor decisions.",
+                            "",
+                            "An **emergency fund** breaks this cycle. It's cash set aside ONLY for true emergencies:",
+                            "• Job loss",
+                            "• Medical emergencies",
+                            "• Major car or home repairs",
+                            "• Unexpected travel (family emergency)",
+                            "",
+                            "**NOT emergencies:** Sales, vacations, new gadgets, concert tickets."
+                        ]
+                    },
+                    {
+                        title: 'How Much Do You Need?',
+                        content: [
+                            "The standard advice: **3-6 months of essential expenses.**",
+                            "",
+                            "Not 3-6 months of INCOME — 3-6 months of EXPENSES (rent, food, utilities, insurance, minimum debt payments).",
+                            "",
+                            "**Example:**",
+                            "• Monthly expenses: $3,000",
+                            "• 3-month fund: $9,000",
+                            "• 6-month fund: $18,000",
+                            "",
+                            "**Who needs more (6+ months)?**",
+                            "• Freelancers and self-employed",
+                            "• Single-income households",
+                            "• People in volatile industries",
+                            "• Those with dependents",
+                            "",
+                            "**Who can start with less (3 months)?**",
+                            "• Dual-income households",
+                            "• People with very stable employment",
+                            "• Those with strong family support networks",
+                            "",
+                            "Pro tip: Start with a $1,000 'starter' emergency fund. Then build to 1 month, then 3, then 6."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-15-2',
+                title: 'Where to Keep Your Emergency Fund',
+                description: 'HYSA, money market, and T-bills.',
+                xpReward: 30,
+                screens: [
+                    {
+                        title: 'The Rules of Emergency Fund Placement',
+                        content: [
+                            "Your emergency fund has THREE requirements:",
+                            "1. **Liquid** — You can access it within 1-2 business days.",
+                            "2. **Safe** — It cannot lose value (no stocks!).",
+                            "3. **Earning something** — Don't let inflation eat it alive.",
+                            "",
+                            "**Where NOT to keep it:**",
+                            "• ❌ Checking account (earns 0.01%, easy to accidentally spend)",
+                            "• ❌ Stock market (could drop 30% right when you need it)",
+                            "• ❌ Under your mattress (inflation + theft risk)",
+                            "• ❌ Crypto (too volatile)"
+                        ]
+                    },
+                    {
+                        title: 'Best Options',
+                        content: [
+                            "**High-Yield Savings Account (HYSA):**",
+                            "• Currently earning 4-5% APY (as of 2024)",
+                            "• FDIC insured up to $250,000",
+                            "• Instant or 1-day transfers",
+                            "• Best option for most people",
+                            "• Top picks: Marcus, Ally, Discover, SoFi",
+                            "",
+                            "**Money Market Account:**",
+                            "• Similar rates to HYSA",
+                            "• May come with check-writing ability",
+                            "• Also FDIC insured",
+                            "",
+                            "**Treasury Bills (T-Bills):**",
+                            "• Government-backed securities (4-5% as of 2024)",
+                            "• Exempt from state/local taxes",
+                            "• Can buy through TreasuryDirect.gov",
+                            "• Slightly less liquid (must wait for maturity, 4-52 weeks)",
+                            "",
+                            "Pro tip: Keep 1-2 months in HYSA for quick access, and the rest in T-Bills for a slightly higher effective yield."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-15-3',
+                title: 'Recovering from Financial Setbacks',
+                description: 'Job loss, medical bills, and rebuilding.',
+                xpReward: 35,
+                screens: [
+                    {
+                        title: 'When Disaster Strikes',
+                        content: [
+                            "Financial setbacks happen to everyone. What matters is your response.",
+                            "",
+                            "**If you lose your job:**",
+                            "1. File for unemployment IMMEDIATELY (don't wait).",
+                            "2. Cut all non-essential spending within 48 hours.",
+                            "3. Contact lenders to request hardship forbearance.",
+                            "4. Review COBRA vs. marketplace health insurance options.",
+                            "5. Start job searching on day 1, but don't panic-accept a bad offer.",
+                            "",
+                            "**If hit with medical debt:**",
+                            "1. Audit every bill for errors (up to 80% of medical bills contain mistakes).",
+                            "2. Ask for an itemized bill — charges often 'disappear' when you request details.",
+                            "3. Negotiate! Hospitals routinely reduce bills by 20-50%.",
+                            "4. Ask about financial assistance programs (most hospitals have them).",
+                            "5. Set up a payment plan (usually 0% interest)."
+                        ]
+                    },
+                    {
+                        title: 'The Rebuilding Playbook',
+                        content: [
+                            "After the crisis passes, rebuild methodically:",
+                            "",
+                            "**Phase 1 — Stabilize (Month 1-2):**",
+                            "• Create a bare-bones budget (essentials only)",
+                            "• Stop all non-essential subscriptions",
+                            "• Build a mini emergency fund ($500-$1,000)",
+                            "",
+                            "**Phase 2 — Recover (Month 3-6):**",
+                            "• Resume minimum debt payments",
+                            "• Rebuild emergency fund to 1 month of expenses",
+                            "• Start investing again (even $25/month matters)",
+                            "",
+                            "**Phase 3 — Strengthen (Month 6+):**",
+                            "• Aggressively rebuild to 3-6 months reserves",
+                            "• Review and update insurance coverage",
+                            "• Create systems to prevent future crises",
+                            "",
+                            "**Remember**: Financial setbacks are setbacks, not endings. Most wealthy people have faced multiple financial crises. The difference is they rebuilt each time."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-15-4',
+                title: 'Building Multiple Income Streams',
+                description: 'Don\'t put all your eggs in one paycheck.',
+                xpReward: 40,
+                screens: [
+                    {
+                        title: 'Why One Income Is Risky',
+                        content: [
+                            "Relying on a single income source is like owning just one stock — all your risk is concentrated.",
+                            "",
+                            "**The average millionaire has 7 income streams.** You don't need 7, but having 2-3 dramatically improves your financial resilience.",
+                            "",
+                            "**Types of income:**",
+                            "• **Active income**: Trading time for money (your job, freelancing, consulting).",
+                            "• **Portfolio income**: Returns from investments (dividends, capital gains).",
+                            "• **Passive income**: Money earned with minimal ongoing effort (rental income, royalties, digital products).",
+                            "",
+                            "True 'passive' income usually requires significant upfront work or capital. But the payoff is income that doesn't stop when you stop working."
+                        ]
+                    },
+                    {
+                        title: 'Realistic Side Income Ideas',
+                        content: [
+                            "**Low Barrier (start this week):**",
+                            "• Freelancing your existing skills (writing, design, coding, tutoring)",
+                            "• Selling unused items (eBay, Facebook Marketplace)",
+                            "• Pet sitting / dog walking (Rover, Wag)",
+                            "• Delivery driving (in a pinch, but low ROI long-term)",
+                            "",
+                            "**Medium Effort (build over months):**",
+                            "• Creating and selling digital products (templates, courses, ebooks)",
+                            "• Starting a niche blog or YouTube channel",
+                            "• Consulting in your area of expertise",
+                            "• Reselling/arbitrage (buy low at clearance, sell on Amazon)",
+                            "",
+                            "**Capital Required (invest to earn):**",
+                            "• Dividend-paying index funds ($100+ invested → regular payouts)",
+                            "• Real estate (house hacking: rent out spare rooms)",
+                            "• REITs (Real Estate Investment Trusts — like a real estate ETF)",
+                            "",
+                            "**The key**: Pick ONE side income and give it 6 months of consistent effort before judging results. Most people quit too early."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-6',
+        title: 'Credit & Debt',
+        description: 'Master the tools that can build or destroy wealth.',
+        xpReward: 125,
+        lessons: [
+            {
+                id: 'lesson-6-1',
+                title: 'Credit Scores: Your Financial Report Card',
+                description: 'How they work and why they matter.',
+                xpReward: 30,
+                content: [
+                    "Your credit score is a number from 300-850 that tells lenders how risky you are.",
+                    "750+ = Excellent. 700-749 = Good. 650-699 = Fair. Below 650 = Poor.",
+                    "",
+                    "Pro tip: Avoid 'Hard Pulls' (checking for new loans) too often, as they can temporarily drop your score. 'Soft Pulls' (checking your own score) do NOT hurt it.",
+                    "",
+                    "WHAT AFFECTS YOUR SCORE:",
+                    "• Payment History (35%): Pay bills on time!",
+                    "• Credit Utilization (30%): Use less than 30% of your credit limit (ideally under 10% for the best score).",
+                    "• Length of History (15%): Older accounts help.",
+                    "• Credit Mix (10%): Having different types of credit helps.",
+                    "• New Credit (10%): Don't open too many accounts at once."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-6-2',
+                title: 'Good Debt vs. Bad Debt',
+                description: 'Not all borrowing is created equal.',
+                xpReward: 25,
+                story: {
+                    character: 'Jordan',
+                    scenario: "Jordan has $10,000. Should they pay off their 20% credit card or invest in the stock market?"
+                },
+                content: [
+                    "**GOOD DEBT** makes you money or increases your earning potential.",
+                    "• Student loans (if they lead to higher income)",
+                    "• Mortgage (you build equity, home may appreciate)",
+                    "• Business loan (if the business is profitable)",
+                    "",
+                    "**BAD DEBT** costs you money on things that lose value.",
+                    "• Credit card debt (high interest, often for consumption)",
+                    "• Car loans (cars depreciate rapidly)",
+                    "• Payday loans (predatory interest rates)",
+                    "",
+                    "Rule: Always pay off high-interest debt before investing."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-6-3',
+                title: 'The Trap of Buy Now, Pay Later',
+                description: 'Why splitting payments is dangerous.',
+                xpReward: 30,
+                content: [
+                    "**Buy Now, Pay Later (BNPL)** services let you split a purchase into 4 small payments.",
+                    "It feels like you're spending less money, but you aren't.",
+                    "The Danger: It encourages you to buy things you can't actually afford today.",
+                    "It decouples the 'pain of paying' from the 'pleasure of buying'.",
+                    "If you miss a payment, the fees can be massive. Treat BNPL like credit card debt."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-6-4',
+                title: 'Credit Cards + BNPL: The Double-Debt Trap',
+                description: 'How minimum payments and split plans can quietly snowball.',
+                xpReward: 35,
+                screens: [
+                    {
+                        title: 'The Minimum Payment Illusion',
+                        content: [
+                            "Credit card issuers show a low **minimum payment** to keep your account current.",
+                            "",
+                            "But minimum payments mostly cover interest at high APRs.",
+                            "",
+                            "That means your balance can shrink very slowly while interest keeps compounding month after month.",
+                            "",
+                            "A payment that feels manageable can keep you in debt for years."
+                        ]
+                    },
+                    {
+                        title: 'How BNPL Stacks on Top',
+                        content: [
+                            "BNPL feels separate from credit cards, but it often piles on top of existing debt.",
+                            "",
+                            "Example pattern:",
+                            "• 4-pay shoes",
+                            "• 4-pay headphones",
+                            "• 4-pay travel booking",
+                            "",
+                            "Each payment looks small alone, but together they can crush cash flow and trigger missed due dates."
+                        ]
+                    },
+                    {
+                        title: 'Why This Becomes a Trap',
+                        content: [
+                            "When cash gets tight, people often:",
+                            "• Put essentials on a credit card",
+                            "• Use new BNPL plans to avoid paying full price now",
+                            "• Pay only minimums on everything",
+                            "",
+                            "That cycle can turn short-term spending into long-term high-interest debt."
+                        ]
+                    },
+                    {
+                        title: 'Escape Plan',
+                        content: [
+                            "Use this playbook:",
+                            "1) List every card and BNPL plan with balance, APR/fees, and due date.",
+                            "2) Stop new BNPL purchases until all existing plans are cleared.",
+                            "3) Pay at least minimums on everything, then send extra to the highest APR balance.",
+                            "4) Turn on autopay + payment reminders to avoid late fees.",
+                            "5) If needed, call issuers and request hardship plans or APR reductions."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-22',
+        title: 'Consumer Protection, Scams & Identity Theft',
+        description: 'Learn how fraud works, spot manipulation tactics early, and build a practical response plan.',
+        xpReward: 135,
+        lessons: [
+            {
+                id: 'lesson-22-1',
+                title: 'The Psychology of Financial Scams',
+                description: 'Understand the persuasion patterns scammers use so you can slow down and verify before acting.',
+                xpReward: 45,
+                story: {
+                    character: 'Mina',
+                    scenario: 'Mina gets a call saying her bank account is under attack and she must verify her PIN in 10 minutes. The urgency feels real, and that is exactly why she pauses to break down the tactic before responding.'
+                },
+                screens: [
+                    {
+                        title: 'Scams Target Emotion, Not Intelligence',
+                        content: [
+                            "Fraud succeeds when people are rushed, isolated, and emotionally activated.",
+                            "",
+                            "Scammers often trigger fear, excitement, guilt, or scarcity before asking for money or credentials."
+                        ]
+                    },
+                    {
+                        title: 'Five Core Manipulation Levers',
+                        content: [
+                            "1) **Urgency**: 'Act now or lose everything.'",
+                            "2) **Authority**: fake bank, IRS, employer, police, or court identity.",
+                            "3) **Scarcity**: limited-time offer or one remaining slot.",
+                            "4) **Social proof**: fake testimonials, fake group chat success stories.",
+                            "5) **Reciprocity**: small favor or 'gift' first, then a larger ask for money or access."
+                        ]
+                    },
+                    {
+                        title: 'Your 90-Second Pause Rule',
+                        content: [
+                            "Before sending money or sharing account data:",
+                            "• Stop the live call or chat",
+                            "• Independently verify using an official number/site",
+                            "• Ask: who benefits if I rush?",
+                            "",
+                            "If a request is legitimate, it can survive verification."
+                        ]
+                    },
+                    {
+                        title: 'Verification Habits That Work',
+                        content: [
+                            "Use these defaults:",
+                            "• Never trust contact info sent in the same message",
+                            "• Never share one-time passcodes",
+                            "• Prefer outbound calls you initiate",
+                            "• Confirm money requests through a second channel"
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-22-2',
+                title: 'Pyramid Schemes and MLM Red Flags',
+                description: 'Identify recruitment-first income models, inventory loading pressure, and deceptive income claims.',
+                xpReward: 50,
+                story: {
+                    character: 'Elijah',
+                    scenario: 'Elijah is invited to a "wealth brunch" where everyone posts luxury photos and says he can earn six figures from home. The catch: buy a starter package and recruit three friends. He needs to test whether it is a product business or a recruiting machine.'
+                },
+                screens: [
+                    {
+                        title: 'Pyramid vs Product Business',
+                        content: [
+                            "A healthy business earns most revenue from real customers buying real products at sustainable prices.",
+                            "",
+                            "A pyramid-style system depends mainly on new recruits paying in."
+                        ]
+                    },
+                    {
+                        title: 'Common MLM/Pyramid Tactics',
+                        content: [
+                            "Watch for these patterns:",
+                            "• **Recruitment-first compensation** ('build a team' over product value)",
+                            "• **Starter kit or inventory loading** requirements",
+                            "• **Income screenshots without audited net profit data**",
+                            "• **Lifestyle theater** — flashy photos of cars, trips, and luxury meant to recruit, not reflect real earnings",
+                            "• **Blame shifting** ('you failed because you did not grind hard enough')"
+                        ]
+                    },
+                    {
+                        title: 'Income Claim Reality Check',
+                        content: [
+                            "Ask for:",
+                            "• Median participant net earnings after expenses",
+                            "• Percentage of participants who lose money",
+                            "• Required monthly purchases to stay 'active'",
+                            "",
+                            "If those numbers are hidden, assume downside risk is high."
+                        ]
+                    },
+                    {
+                        title: 'Exit and Protect Relationships',
+                        content: [
+                            "If you are already in:",
+                            "• Stop new purchases",
+                            "• Document all payments and contracts",
+                            "• Review chargeback/refund options",
+                            "• Set boundaries with friends and family",
+                            "",
+                            "Protect cash first, then repair social trust."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-22-3',
+                title: 'Modern Fraud Channels: From Phishing to Fake Jobs',
+                description: 'Recognize current scam channels and stop credential theft before financial accounts are compromised.',
+                xpReward: 50,
+                story: {
+                    character: 'Noor',
+                    scenario: 'Noor receives a remote job offer with high pay and no interview, then gets asked to buy equipment with a check the company sends. The offer looks professional, but the payment flow is the trap.'
+                },
+                screens: [
+                    {
+                        title: 'Fraud Channels to Expect',
+                        content: [
+                            "Most financial scams arrive through:",
+                            "• Email phishing",
+                            "• Text message smishing",
+                            "• Social media direct messages",
+                            "• Marketplace payment scams",
+                            "• Fake recruiter and fake employer workflows"
+                        ]
+                    },
+                    {
+                        title: 'Credential and Code Theft',
+                        content: [
+                            "Scammers increasingly want both your login password and your second-factor code.",
+                            "",
+                            "If anyone asks for a one-time passcode, treat it as an account takeover attempt.",
+                            "",
+                            "No legitimate support team needs your verification code."
+                        ]
+                    },
+                    {
+                        title: 'Fake Job Offer Pattern',
+                        content: [
+                            "Warning sequence:",
+                            "• Offer arrives with minimal vetting",
+                            "• Employer asks you to buy gear from a specific vendor",
+                            "• They send a check or transfer that later reverses",
+                            "• You are left with the loss",
+                            "",
+                            "Never front money for employer purchases from personal accounts."
+                        ]
+                    },
+                    {
+                        title: 'Account Hardening Defaults',
+                        content: [
+                            "Set this baseline:",
+                            "• Unique passwords via password manager",
+                            "• Multi-factor authentication on email, bank, brokerage, payroll",
+                            "• SIM-swap protection through your mobile carrier (prevents someone from hijacking your phone number)",
+                            "• Transaction alerts on all financial accounts"
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-22-4',
+                title: 'Identity Theft Response: First 24 Hours',
+                description: 'Follow a prioritized incident response process when identity theft or account takeover happens.',
+                xpReward: 55,
+                story: {
+                    character: 'Tori',
+                    scenario: 'Tori wakes up to three unfamiliar credit card approvals and a bank transfer she never authorized. Panic is natural, but a quick, organized response will protect her more than fear will.'
+                },
+                screens: [
+                    {
+                        title: 'Golden Rule: Contain First',
+                        content: [
+                            "Your first objective is to stop further damage.",
+                            "",
+                            "Immediate actions:",
+                            "• Lock compromised cards/accounts",
+                            "• Change passwords from a clean device",
+                            "• Enable or reset multi-factor authentication",
+                            "• Contact financial institutions' fraud departments"
+                        ]
+                    },
+                    {
+                        title: 'Credit Bureau Controls',
+                        content: [
+                            "Place a credit freeze with all major bureaus to block new credit lines in your name.",
+                            "",
+                            "A freeze is one of the highest-leverage defenses after a breach."
+                        ]
+                    },
+                    {
+                        title: 'Documentation and Reporting',
+                        content: [
+                            "Create one incident log with timestamps, case numbers, and agent names.",
+                            "",
+                            "Report identity theft through official channels and keep copies of all submissions.",
+                            "",
+                            "Good records accelerate disputes and reimbursement."
+                        ]
+                    },
+                    {
+                        title: '7-Day and 30-Day Follow Up',
+                        content: [
+                            "Within 7 days:",
+                            "• Confirm freeze status and dispute submissions",
+                            "• Replace compromised cards",
+                            "• Update autopay mappings",
+                            "",
+                            "Within 30 days:",
+                            "• Review credit reports for new anomalies",
+                            "• Keep transaction alerts active",
+                            "• Document resolution outcomes"
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-22-5',
+                title: 'Build a Household Fraud Defense Playbook',
+                description: 'Create a shared family-level prevention plan with verification rules, access controls, and escalation steps.',
+                xpReward: 55,
+                story: {
+                    character: 'Marcus',
+                    scenario: 'Marcus manages finances for himself, his partner, and an aging parent. Each person uses different apps and passwords. One weak link could compromise everyone, so he builds a shared defense playbook.'
+                },
+                screens: [
+                    {
+                        title: 'Household Threat Model',
+                        content: [
+                            "Map who has access to:",
+                            "• Bank and brokerage accounts",
+                            "• Credit cards and payment apps",
+                            "• Email and phone numbers used for reset links",
+                            "",
+                            "Your security level is only as strong as the least secure account holder."
+                        ]
+                    },
+                    {
+                        title: 'Shared Verification Rules',
+                        content: [
+                            "Adopt family defaults:",
+                            "• No money transfers from message-only requests",
+                            "• Confirm urgent requests by voice/video on known numbers",
+                            "• No sharing of passcodes or backup codes",
+                            "• New app installs reviewed before linking bank accounts"
+                        ]
+                    },
+                    {
+                        title: 'Aging Parent and Teen Protections',
+                        content: [
+                            "For older adults:",
+                            "• Trusted contact on key accounts",
+                            "• Transaction alerts to a secondary family member",
+                            "",
+                            "For teens/young adults:",
+                            "• Spend limits on cards",
+                            "• Scam simulation training",
+                            "• Rules for marketplace and payment app usage"
+                        ]
+                    },
+                    {
+                        title: 'Incident Escalation Tree',
+                        content: [
+                            "Create a one-page emergency plan with:",
+                            "• Who to call first",
+                            "• Where account numbers are stored",
+                            "• How to freeze credit quickly",
+                            "• How to document and track disputes",
+                            "",
+                            "Prepared households recover faster and lose less."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
         id: 'module-3',
         title: 'Investing 101',
         description: 'Start building wealth for the future.',
@@ -1201,1117 +1872,513 @@ export const curriculum = [
         ]
     },
     {
-        id: 'module-4',
-        title: 'Big Purchases: Cars',
-        description: 'Make smart decisions on your biggest expenses.',
-        xpReward: 100,
+        id: 'module-21',
+        title: 'Budgeting Systems & Cash-Flow Automation',
+        description: 'Build a personal cash-flow machine with recurring transfers, autopay guardrails, and zero-fee recurring investing workflows.',
+        xpReward: 130,
         lessons: [
             {
-                id: 'lesson-4-1',
-                title: 'Buy vs. Lease vs. Cash: The Great Debate',
-                description: 'Understand the true cost of car ownership.',
-                xpReward: 35,
-                story: {
-                    character: 'Alex',
-                    scenario: "Alex just got their first job and needs a car. They have $10,000 saved. A new car costs $30,000. What should Alex do?"
-                },
-                content: [
-                    "OPTION 1: PAY CASH",
-                    "Pros: No monthly payments, no interest, you own the car outright.",
-                    "Cons: Ties up a lot of money that could be invested instead.",
-                    "",
-                    "OPTION 2: FINANCE (Loan)",
-                    "Pros: Keep your cash invested, build credit history.",
-                    "Cons: Pay interest over time, risk of being 'underwater' (owing more than the car is worth).",
-                    "",
-                    "OPTION 3: LEASE",
-                    "Pros: Lower monthly payments, always drive a newer car.",
-                    "Cons: Never own the car, mileage limits, fees for wear and tear.",
-                    "",
-                    "Use the calculator to compare the TRUE COST of each option over 5 years."
-                ],
-                type: 'interactive',
-                widget: 'CarCalculator'
-            },
-            {
-                id: 'lesson-4-2',
-                title: 'Opportunity Cost: The Hidden Factor',
-                description: 'What else could your money be doing?',
-                xpReward: 30,
-                screens: [
-                    {
-                        title: 'Cars Depreciate. Investments Appreciate.',
-                        content: [
-                            "Here is the core problem with spending big on a car: cars lose value while investments gain value. That gap is your **opportunity cost**.",
-                            "",
-                            "A new car loses roughly **20% of its value in the first year** and about **60% over five years**.",
-                            "",
-                            "That means a $30,000 new car is worth roughly $12,000 after 5 years. You lost $18,000 in value just by owning it.",
-                            "",
-                            "Meanwhile, $30,000 invested at a 10% average return would grow to roughly $48,000 over the same 5 years.",
-                            "",
-                            "The total gap: your $30,000 turned into $12,000 (car) instead of $48,000 (investment). That is a **$36,000 swing** in just five years."
-                        ]
-                    },
-                    {
-                        title: 'The Used Car Advantage',
-                        content: [
-                            "Because depreciation is steepest in the first 2-3 years, buying a **2-3 year old used car** lets someone else absorb the biggest loss.",
-                            "",
-                            "Example: A car with an MSRP of $35,000 might sell for $22,000 at 3 years old with 30,000 miles. Same car, most of its useful life ahead of it, $13,000 cheaper.",
-                            "",
-                            "If you invest that $13,000 difference instead of spending it:",
-                            "• After 10 years at 10%: ~$33,700",
-                            "• After 20 years at 10%: ~$87,500",
-                            "• After 30 years at 10%: ~$226,800",
-                            "",
-                            "One car purchase decision, made wisely, can be worth a quarter-million dollars over your lifetime."
-                        ]
-                    },
-                    {
-                        title: 'The Real Cost per Year',
-                        content: [
-                            "A better way to compare vehicles is **total cost per year of ownership**—not sticker price or monthly payment.",
-                            "",
-                            "Total cost includes:",
-                            "• Purchase price minus resale value (depreciation)",
-                            "• Interest paid on any loan",
-                            "• Insurance premiums",
-                            "• Fuel and maintenance",
-                            "• Opportunity cost of money tied up in the car",
-                            "",
-                            "A $15,000 used car you drive for 8 years may cost $3,000/year total. A $40,000 new car you trade in after 4 years may cost $12,000/year total. The 'cheap' monthly payment on the new car hides the real math.",
-                            "",
-                            "Use the calculator to compare what your car money could be doing if it were invested instead."
-                        ]
-                    }
-                ],
-                type: 'interactive',
-                widget: 'CompoundInterest'
-            },
-            {
-                id: 'lesson-4-3',
-                title: 'The "Lower Monthly Payment" Sales Tactic',
-                description: 'How longer loan terms can quietly cost you thousands.',
-                xpReward: 35,
-                screens: [
-                    {
-                        title: 'The Pitch You Will Hear',
-                        content: [
-                            "In dealerships and loan offices, one tactic is very common:",
-                            "",
-                            "\"Don't worry about total cost, we can get your payment down to what you want.\"",
-                            "",
-                            "They often lower the monthly payment by stretching the loan from 48 or 60 months out to 72 or 84 months.",
-                            "",
-                            "Lower payment does NOT automatically mean a better deal."
-                        ]
-                    },
-                    {
-                        title: 'Why It Works on Buyers',
-                        content: [
-                            "Most people shop by monthly payment because it feels affordable.",
-                            "",
-                            "But payment-focused shopping hides:",
-                            "• More months of interest",
-                            "• Higher total amount paid",
-                            "• Slower equity build",
-                            "• Greater chance of being underwater",
-                            "",
-                            "You can feel short-term relief while creating long-term cost."
-                        ]
-                    },
-                    {
-                        title: 'The Real Comparison',
-                        content: [
-                            "Always compare offers using all three numbers:",
-                            "1) Monthly payment",
-                            "2) Total interest paid",
-                            "3) Total paid over full term",
-                            "",
-                            "Use the simulator to compare the same loan amount at 48, 60, 72, and 84 months.",
-                            "",
-                            "Then decide if the monthly savings are worth the extra interest."
-                        ]
-                    },
-                    {
-                        title: 'Protect Yourself',
-                        content: [
-                            "Before signing, ask the seller/lender:",
-                            "• Show me the out-the-door price",
-                            "• Show me total interest by term length",
-                            "• Show me any add-ons rolled into the loan",
-                            "",
-                            "Rule: Choose the shortest term that fits your budget comfortably.",
-                            "If the payment is still too high, lower the purchase price instead of extending the term."
-                        ]
-                    }
-                ],
-                type: 'interactive',
-                widget: 'LoanTermTrapCalculator'
-            }
-        ]
-    },
-    {
-        id: 'module-5',
-        title: 'Insurance Essentials',
-        description: 'Protect yourself without overpaying.',
-        xpReward: 100,
-        lessons: [
-            {
-                id: 'lesson-5-1',
-                title: 'Health Insurance: Decoding the Jargon',
-                description: 'Premiums, deductibles, and copays explained.',
-                xpReward: 35,
-                content: [
-                    "**PREMIUM**: The amount you pay every month, whether you use the insurance or not.",
-                    "**DEDUCTIBLE**: The amount you pay out-of-pocket BEFORE insurance starts covering costs.",
-                    "**COPAY**: A fixed amount you pay for a service (e.g., $20 for a doctor visit).",
-                    "**OUT-OF-POCKET MAXIMUM**: The most you'll ever pay in a year. After this, insurance covers 100%.",
-                    "",
-                    "Generally: High Premium = Low Deductible. Low Premium = High Deductible.",
-                    "If you're young and healthy, a high-deductible plan might save you money.",
-                    "If you have regular medical needs, a low-deductible plan could be better."
-                ],
-                type: 'interactive',
-                widget: 'InsuranceCompare'
-            },
-            {
-                id: 'lesson-5-2',
-                title: 'Auto Insurance: What You Actually Need',
-                description: 'Don\'t overpay for coverage you don\'t need.',
-                xpReward: 25,
-                content: [
-                    "LIABILITY: Covers damage YOU cause to others. Required by law in most states.",
-                    "COLLISION: Covers damage to YOUR car from accidents.",
-                    "COMPREHENSIVE: Covers theft, weather damage, hitting an animal, etc.",
-                    "",
-                    "Pro tip: If your car is old and not worth much, you might skip collision/comprehensive.",
-                    "The payout from insurance can't exceed the car's value.",
-                    "",
-                    "DEDUCTIBLE matters here too! Higher deductible = lower premium."
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-5-3',
-                title: 'Home Insurance: Protecting Your Castle',
-                description: 'What does your policy actually cover?',
-                xpReward: 30,
-                content: [
-                    "**Homeowner's Insurance** protects your property and belongings from damage, theft, and liability claims.",
-                    "",
-                    "**DWELLING COVERAGE**: Pays to rebuild or repair your home's structure if damaged by covered events (fire, storms, vandalism).",
-                    "**PERSONAL PROPERTY**: Covers your belongings—furniture, electronics, clothes—if stolen or destroyed.",
-                    "**LIABILITY PROTECTION**: Covers legal bills if someone is injured on your property and sues you.",
-                    "",
-                    "**What's NOT covered?** Floods and earthquakes require separate policies. Standard policies also exclude 'maintenance issues' like mold or pest damage.",
-                    "",
-                    "Pro tip: Create a **home inventory** (photos/video of your belongings). If disaster strikes, you'll have proof for your claim."
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-5-4',
-                title: 'Life Insurance: Planning for the Unexpected',
-                description: 'Protect your loved ones financially.',
-                xpReward: 35,
-                content: [
-                    "**Life Insurance** pays a lump sum to your beneficiaries (usually family) if you pass away.",
-                    "",
-                    "**TERM LIFE**: Coverage for a set period (e.g., 20 years). Cheapest option. If you outlive the term, the policy expires worthless.",
-                    "**WHOLE LIFE**: Permanent coverage that also builds 'cash value' over time. Much more expensive than term.",
-                    "",
-                    "**Who needs it?** Anyone with dependents (spouse, children) who rely on your income. If you're single with no dependents, you likely don't need it yet.",
-                    "",
-                    "**Rule of Thumb**: Get coverage worth 10-12x your annual income. A $60k earner should aim for $600k-$720k in coverage.",
-                    "",
-                    "Pro tip: Buy term insurance when you're young and healthy—premiums are locked in and stay low."
-                ],
-                type: 'reading'
-            }
-        ]
-    },
-    {
-        id: 'module-6',
-        title: 'Credit & Debt',
-        description: 'Master the tools that can build or destroy wealth.',
-        xpReward: 125,
-        lessons: [
-            {
-                id: 'lesson-6-1',
-                title: 'Credit Scores: Your Financial Report Card',
-                description: 'How they work and why they matter.',
-                xpReward: 30,
-                content: [
-                    "Your credit score is a number from 300-850 that tells lenders how risky you are.",
-                    "750+ = Excellent. 700-749 = Good. 650-699 = Fair. Below 650 = Poor.",
-                    "",
-                    "Pro tip: Avoid 'Hard Pulls' (checking for new loans) too often, as they can temporarily drop your score. 'Soft Pulls' (checking your own score) do NOT hurt it.",
-                    "",
-                    "WHAT AFFECTS YOUR SCORE:",
-                    "• Payment History (35%): Pay bills on time!",
-                    "• Credit Utilization (30%): Use less than 30% of your credit limit (ideally under 10% for the best score).",
-                    "• Length of History (15%): Older accounts help.",
-                    "• Credit Mix (10%): Having different types of credit helps.",
-                    "• New Credit (10%): Don't open too many accounts at once."
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-6-2',
-                title: 'Good Debt vs. Bad Debt',
-                description: 'Not all borrowing is created equal.',
-                xpReward: 25,
-                story: {
-                    character: 'Jordan',
-                    scenario: "Jordan has $10,000. Should they pay off their 20% credit card or invest in the stock market?"
-                },
-                content: [
-                    "**GOOD DEBT** makes you money or increases your earning potential.",
-                    "• Student loans (if they lead to higher income)",
-                    "• Mortgage (you build equity, home may appreciate)",
-                    "• Business loan (if the business is profitable)",
-                    "",
-                    "**BAD DEBT** costs you money on things that lose value.",
-                    "• Credit card debt (high interest, often for consumption)",
-                    "• Car loans (cars depreciate rapidly)",
-                    "• Payday loans (predatory interest rates)",
-                    "",
-                    "Rule: Always pay off high-interest debt before investing."
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-6-3',
-                title: 'The Trap of Buy Now, Pay Later',
-                description: 'Why splitting payments is dangerous.',
-                xpReward: 30,
-                content: [
-                    "**Buy Now, Pay Later (BNPL)** services let you split a purchase into 4 small payments.",
-                    "It feels like you're spending less money, but you aren't.",
-                    "The Danger: It encourages you to buy things you can't actually afford today.",
-                    "It decouples the 'pain of paying' from the 'pleasure of buying'.",
-                    "If you miss a payment, the fees can be massive. Treat BNPL like credit card debt."
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-6-4',
-                title: 'Credit Cards + BNPL: The Double-Debt Trap',
-                description: 'How minimum payments and split plans can quietly snowball.',
-                xpReward: 35,
-                screens: [
-                    {
-                        title: 'The Minimum Payment Illusion',
-                        content: [
-                            "Credit card issuers show a low **minimum payment** to keep your account current.",
-                            "",
-                            "But minimum payments mostly cover interest at high APRs.",
-                            "",
-                            "That means your balance can shrink very slowly while interest keeps compounding month after month.",
-                            "",
-                            "A payment that feels manageable can keep you in debt for years."
-                        ]
-                    },
-                    {
-                        title: 'How BNPL Stacks on Top',
-                        content: [
-                            "BNPL feels separate from credit cards, but it often piles on top of existing debt.",
-                            "",
-                            "Example pattern:",
-                            "• 4-pay shoes",
-                            "• 4-pay headphones",
-                            "• 4-pay travel booking",
-                            "",
-                            "Each payment looks small alone, but together they can crush cash flow and trigger missed due dates."
-                        ]
-                    },
-                    {
-                        title: 'Why This Becomes a Trap',
-                        content: [
-                            "When cash gets tight, people often:",
-                            "• Put essentials on a credit card",
-                            "• Use new BNPL plans to avoid paying full price now",
-                            "• Pay only minimums on everything",
-                            "",
-                            "That cycle can turn short-term spending into long-term high-interest debt."
-                        ]
-                    },
-                    {
-                        title: 'Escape Plan',
-                        content: [
-                            "Use this playbook:",
-                            "1) List every card and BNPL plan with balance, APR/fees, and due date.",
-                            "2) Stop new BNPL purchases until all existing plans are cleared.",
-                            "3) Pay at least minimums on everything, then send extra to the highest APR balance.",
-                            "4) Turn on autopay + payment reminders to avoid late fees.",
-                            "5) If needed, call issuers and request hardship plans or APR reductions."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            }
-        ]
-    },
-    {
-        id: 'module-7',
-        title: 'Investing 201: The Deep End',
-        description: 'Advanced concepts: ETFs, Meme Stocks, and Options.',
-        xpReward: 150,
-        lessons: [
-            {
-                id: 'lesson-7-1',
-                title: 'ETFs vs. Mutual Funds',
-                description: 'Understanding modern investment vehicles.',
-                xpReward: 40,
-                screens: [
-                    {
-                        title: 'Two Wrappers, Same Idea',
-                        content: [
-                            "Both **ETFs** and **Mutual Funds** are baskets that hold many investments inside a single product. The difference is how they are bought, sold, and priced.",
-                            "",
-                            "**ETF (Exchange Traded Fund):**",
-                            "• Trades on a stock exchange throughout the day, just like a stock.",
-                            "• You can buy or sell at any time the market is open.",
-                            "• Price changes in real time as the market moves.",
-                            "• You can buy as little as 1 share (or fractional shares at many brokerages).",
-                            "",
-                            "**Mutual Fund:**",
-                            "• Does NOT trade during the day. All buy/sell orders execute once, at the closing price.",
-                            "• Often has minimum investment requirements ($1,000-$3,000 to start at some firms).",
-                            "• Price is calculated once per day after markets close (called the NAV—Net Asset Value)."
-                        ]
-                    },
-                    {
-                        title: 'Fees and Tax Efficiency',
-                        content: [
-                            "**Expense Ratios:**",
-                            "ETFs tend to have lower expense ratios. Popular index ETFs charge as low as 0.03%. Mutual fund versions of the same index may charge 0.10-0.50% or more.",
-                            "",
-                            "**Tax Efficiency:**",
-                            "ETFs are generally more tax-efficient in taxable accounts. Their structure allows investors to buy and sell without triggering taxable events for other holders. Mutual funds can distribute capital gains to all shareholders—even if you did not sell anything—creating a surprise tax bill at year end.",
-                            "",
-                            "**Trading Costs:**",
-                            "Most brokerages charge $0 commission on ETFs. Mutual funds are also commission-free at many firms, but some charge transaction fees for funds outside their own family.",
-                            "",
-                            "In tax-advantaged accounts (401k, IRA), the tax difference matters less—so mutual funds work just fine."
-                        ]
-                    },
-                    {
-                        title: 'When Each One Wins',
-                        content: [
-                            "**ETFs are usually better when:**",
-                            "• You want to start with a small amount (no minimums).",
-                            "• You are investing in a taxable brokerage account.",
-                            "• You want real-time pricing and flexibility.",
-                            "• You want the lowest possible expense ratio.",
-                            "",
-                            "**Mutual funds are usually better when:**",
-                            "• Your 401(k) only offers mutual fund options (this is common).",
-                            "• You want automatic recurring investments on a set schedule (many mutual funds handle this seamlessly).",
-                            "• You prefer to invest exact dollar amounts ($200/month) rather than buying whole shares.",
-                            "",
-                            "For most beginners starting in a personal brokerage account, **ETFs are the easiest and cheapest entry point** to build a diversified portfolio."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-7-2',
-                title: 'Meme Stocks & Volatility',
-                description: 'When investing becomes gambling.',
+                id: 'lesson-21-1',
+                title: 'Choose a Budget System That Survives Real Life',
+                description: 'Compare 50/30/20, zero-based, and pay-yourself-first systems and choose one that fits your income pattern.',
                 xpReward: 40,
                 story: {
-                    character: 'Kevin',
-                    scenario: "Kevin sees a GameStore stock soaring 500% in a week. Everyone on the internet is buying it. He puts his tuition money in, hoping to double it."
+                    character: 'Jared',
+                    scenario: 'Jared is a restaurant manager whose monthly pay swings with overtime and tips. He keeps rewriting his spreadsheet but still feels behind. He needs a budgeting system that works in both high-income and low-income months without restarting every time.'
                 },
                 screens: [
                     {
-                        title: 'What Makes a Stock a Meme Stock',
+                        title: 'Why Most Budgets Fail',
                         content: [
-                            "**Meme Stocks** are companies whose stock price is driven primarily by social media hype, viral momentum, and crowd psychology—not by the company's actual business performance.",
+                            "Budget failure is usually a system problem, not a discipline problem.",
                             "",
-                            "Classic pattern:",
-                            "1. A stock gets popular on social media (Reddit, Twitter/X, TikTok, Discord).",
-                            "2. Viral posts create FOMO (Fear Of Missing Out). People pile in.",
-                            "3. Price spikes 100-1000% in days or weeks.",
-                            "4. Early buyers sell for huge profits. Late buyers are left holding the loss.",
-                            "5. Price crashes back down. The hype moves to the next stock.",
+                            "Most people fail because their process is too rigid for real life: variable paychecks, irregular bills, and surprise expenses.",
                             "",
-                            "The company itself may not have changed at all. No new product, no new revenue, no new plan. The only thing that changed was the story people told each other online."
+                            "You need a framework that is easy to run in 10-15 minutes each week."
                         ]
                     },
                     {
-                        title: 'FOMO and the Psychology Trap',
+                        title: 'Three Practical Frameworks',
                         content: [
-                            "The reason meme stocks are so dangerous is that they exploit powerful psychological biases:",
+                            "1) **50/30/20**: Fast setup, good starting point, less precise.",
+                            "2) **Zero-based**: Every dollar gets a job, great control, higher maintenance.",
+                            "3) **Pay-yourself-first**: Automate saving/investing first, spend the rest intentionally.",
                             "",
-                            "• **FOMO (Fear Of Missing Out):** Seeing others post gains makes you feel like you are losing by not participating.",
-                            "• **Survivorship Bias:** You see the screenshots of people who made $50,000—but not the thousands who lost quietly.",
-                            "• **Herd Mentality:** If everyone is buying, it must be safe—right? No. Crowds can be spectacularly wrong.",
-                            "• **Sunk Cost Fallacy:** After the price drops, people hold on hoping to break even instead of cutting losses.",
-                            "",
-                            "Social media amplifies all of these. Gains are celebrated publicly. Losses are hidden. This creates a distorted picture of reality."
+                            "Rule of thumb:",
+                            "• Stable paycheck -> zero-based can work well.",
+                            "• Variable income -> pay-yourself-first + baseline expense plan is often easier.",
+                            "• Brand new to budgeting -> start with 50/30/20, then tighten later."
                         ]
                     },
                     {
-                        title: 'Volatility: The Measure of Risk',
+                        title: 'Design Around a Baseline Month',
                         content: [
-                            "**Volatility** means how wildly and unpredictably a price swings. Meme stocks have extreme volatility.",
+                            "For variable income, build your budget off your **low but realistic month**, not your best month.",
                             "",
-                            "A typical S&P 500 index fund might move 1-2% in a day. A meme stock can move **20-50% in a single day**—in either direction.",
+                            "Split categories into:",
+                            "• **Core bills** (rent, utilities, groceries, insurance, minimum debt)",
+                            "• **Flex spending** (eating out, hobbies, upgrades)",
+                            "• **Future you** (emergency fund, investing, sinking funds)",
                             "",
-                            "That means you could invest $1,000 Monday morning and have $500 by Friday. Or $2,000. You have no reliable way to predict which.",
-                            "",
-                            "This is why meme stock trading is closer to **gambling** than investing. In gambling, the house has an edge. With meme stocks, the early insiders and large players have the edge."
+                            "When income is above baseline, route the excess by rule instead of by emotion."
                         ]
                     },
                     {
-                        title: 'How to Protect Yourself',
+                        title: 'One-Page Budget Rules',
                         content: [
-                            "Meme stocks are not inherently evil—but you need rules if you engage with them:",
+                            "Write your system on one page:",
+                            "• Baseline income target",
+                            "• Core bills total",
+                            "• Weekly flex cap",
+                            "• Automatic transfer amounts",
+                            "• What happens when income is above or below baseline",
                             "",
-                            "• **Never invest money you cannot afford to lose.** Tuition money, rent money, and emergency funds are off limits.",
-                            "• **Set a hard cap.** Some investors allocate 5% or less of their portfolio to speculative bets. The other 95% stays in diversified index funds.",
-                            "• **Decide your exit before you enter.** Set a price where you will sell—both on the upside and downside—before you buy.",
-                            "• **Turn off the noise.** Unfollow hype accounts. The people hyping a stock online may be selling while telling you to buy.",
-                            "",
-                            "The vast majority of your wealth should be built through boring, consistent, diversified investing. Meme stocks are entertainment—not a financial plan."
+                            "If your rules fit on one page, you will actually use them."
                         ]
                     }
                 ],
-                type: 'reading'
+                type: 'interactive',
+                widget: 'BudgetAllocator'
             },
             {
-                id: 'lesson-7-3',
-                title: 'Intro to Options: High Risk, High Reward',
-                description: 'The casino of the stock market.',
-                xpReward: 50,
-                screens: [
-                    {
-                        title: 'What Is an Option?',
-                        content: [
-                            "An **option** is a contract that gives you the right—but not the obligation—to buy or sell a stock at a specific price before a specific date.",
-                            "",
-                            "There are two types:",
-                            "• **Call Option:** A bet that the stock price will go UP. It gives you the right to BUY the stock at a set price.",
-                            "• **Put Option:** A bet that the stock price will go DOWN. It gives you the right to SELL the stock at a set price.",
-                            "",
-                            "Every option contract has three key terms:",
-                            "• **Strike Price:** The price at which you can buy/sell the stock.",
-                            "• **Expiration Date:** The deadline by which the stock must move in your favor.",
-                            "• **Premium:** The price you pay to purchase the option contract."
-                        ]
-                    },
-                    {
-                        title: 'How Leverage Multiplies Gains and Losses',
-                        content: [
-                            "Options use **leverage**—a small amount of money controls a much larger position.",
-                            "",
-                            "Each option contract typically controls **100 shares** of the underlying stock.",
-                            "",
-                            "**Example:**",
-                            "A stock trades at $100. You buy a call option with a $105 strike price for a $3 premium. Your total cost: $300 (100 shares × $3).",
-                            "",
-                            "• If the stock rises to $115, your option is worth $10 per share ($1,000 total). You paid $300, so your profit is **$700—a 233% return**.",
-                            "• If the stock stays below $105 by expiration, your option expires worthless. You lose the entire **$300—a 100% loss**.",
-                            "",
-                            "The same stock move that earns a shareholder 15% could earn an options trader 233%—or lose them everything. That is leverage."
-                        ]
-                    },
-                    {
-                        title: 'Why Most Retail Traders Lose',
-                        content: [
-                            "Studies consistently show that the majority of retail options traders lose money. Here is why:",
-                            "",
-                            "• **Time Decay:** Options lose value every single day as expiration approaches. You are not just betting on direction—you are racing a clock.",
-                            "• **The House Edge:** Market makers and institutional traders have better data, faster execution, and mathematical models. You are playing against professionals.",
-                            "• **Overconfidence:** Options profits feel so large that traders size up their bets and eventually take a catastrophic loss that wipes out months of gains.",
-                            "• **Complexity:** Implied volatility, Greeks (delta, gamma, theta, vega), and spread strategies add layers most beginners do not understand.",
-                            "",
-                            "The options market transfers money from overconfident beginners to patient, disciplined professionals."
-                        ]
-                    },
-                    {
-                        title: 'The Bottom Line',
-                        content: [
-                            "Options are a legitimate financial tool used by professionals for hedging and income strategies. But for beginners, they are extremely risky.",
-                            "",
-                            "**If you are still building your investment foundation:**",
-                            "• Focus on index funds and long-term compounding first.",
-                            "• Do not trade options until you have a fully funded emergency fund and a solid core portfolio.",
-                            "• If you do explore options, start only with money you can afford to lose completely.",
-                            "",
-                            "**Never trade options with:**",
-                            "• Rent or bill money",
-                            "• Emergency fund money",
-                            "• Student loan or borrowed money",
-                            "• Money you need within the next 1-2 years",
-                            "",
-                            "WARNING: Most retail traders lose money on options. Treat it as an advanced strategy, not a shortcut to wealth."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            }
-        ]
-    },
-    {
-        id: 'module-8',
-        title: 'The Economic Machine',
-        description: 'How the big picture affects your wallet.',
-        xpReward: 150,
-        lessons: [
-            {
-                id: 'lesson-8-1',
-                title: 'Interest Rates & The Fed',
-                description: 'The gas pedal and brake of the economy.',
-                xpReward: 40,
-                content: [
-                    "The Federal Reserve ('The Fed') manages the economy using **Monetary Policy**.",
-                    "Think of **Interest Rates** as the cost of money.",
-                    "The Fed usually has a **2% Inflation Target**. They adjust rates to try and keep prices stable while keeping employment high.",
-                    "**Loose Policy** (Low Rates): Cheap to borrow. Encourages spending and investing. Stocks usually go UP. Risk of Inflation.",
-                    "**Tight Policy** (High Rates): Expensive to borrow. Slows down spending to fight inflation. Stocks often go DOWN. Risk of Recession."
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-8-2',
-                title: 'Bonds: The Boring But Safe Bet?',
-                description: 'Lending money to governments and companies.',
-                xpReward: 40,
-                content: [
-                    "When you buy a **Bond**, you are lending money to an entity for a fixed period of time.",
-                    "In return, they pay you interest. It's an I.O.U.",
-                    "**The Seesaw Rule**: Bond prices and Interest Rates move in OPPOSITE directions.",
-                    "If new rates go UP, your old low-rate bonds become less valuable (Price DOWN).",
-                    "Government bonds (Treasuries) are considered the safest investment."
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-8-3',
-                title: 'S&P 500 in Dollars vs Gold',
-                description: 'See nominal returns, dollar depreciation, and why currency strength matters.',
+                id: 'lesson-21-2',
+                title: 'Build Your Automation Stack',
+                description: 'Use direct-deposit splits, autopay tiers, and sinking funds to reduce money mistakes and decision fatigue.',
                 xpReward: 45,
+                story: {
+                    character: 'Camila',
+                    scenario: 'Camila and her partner both get paid on different schedules and keep missing due dates even though they earn enough. Late fees are eating their progress. They need a cash-flow system that runs automatically.'
+                },
                 screens: [
                     {
-                        title: 'Nominal Returns vs Real Value',
+                        title: 'Automation Beats Willpower',
                         content: [
-                            "The S&P 500 can rise strongly in dollar terms while the dollar itself loses purchasing power over time.",
+                            "Manual systems break when life gets busy.",
                             "",
-                            "That is why investors compare:",
-                            "• Asset returns in USD (nominal view)",
-                            "• Asset returns in hard assets like gold",
-                            "• Dollar purchasing power over time"
+                            "Automation turns your financial goals into default behavior — things that happen without you deciding each time. This removes dozens of weekly decisions and cuts down on avoidable mistakes."
                         ]
                     },
                     {
-                        title: 'Read the Chart',
+                        title: 'Account Architecture',
                         content: [
-                            "This chart shows 2000-2024 trends:",
-                            "• **S&P in USD** (indexed)",
-                            "• **S&P in gold terms** (indexed)",
-                            "• **Dollar purchasing power** (indexed)",
+                            "A clean setup:",
+                            "• **Income Hub (checking)**: paychecks land here",
+                            "• **Bills Account**: fixed obligations and autopays",
+                            "• **Sinking Funds (savings buckets)**: annual and irregular costs",
+                            "• **Long-Term Investing**: recurring brokerage or retirement contributions",
                             "",
-                            "If the dollar-power line trends down, idle cash buys less over time."
+                            "Give each account a clear name based on its purpose (like 'Bills' or 'Travel Fund') so your transfer rules are easy to follow."
                         ]
                     },
                     {
-                        title: 'High-Value vs Low-Value Currency',
+                        title: 'Autopay Tiers',
                         content: [
-                            "**High-value currency (relative strength):**",
-                            "• Imports are cheaper",
-                            "• Consumers gain global purchasing power",
-                            "• Inflation pressure from imports may ease",
-                            "• Export competitiveness can weaken",
+                            "Tier 1: Non-negotiable bills (housing, insurance, utilities, minimum debt)",
+                            "Tier 2: Goal transfers (emergency fund, investing, debt acceleration)",
+                            "Tier 3: Lifestyle subscriptions and optional spending",
                             "",
-                            "**Low-value currency (relative weakness):**",
-                            "• Exports can become more competitive",
-                            "• Domestic tourism/export industries may benefit",
-                            "• Imports become more expensive",
-                            "• Inflation pressure can rise"
+                            "If cash gets tight, pause Tier 3 first, then Tier 2. Protect Tier 1."
                         ]
                     },
                     {
-                        title: 'Practical Takeaway',
+                        title: 'Sinking Funds Prevent Setback Cycles',
                         content: [
-                            "Hold enough cash for near-term needs and emergencies.",
+                            "Sinking funds convert known future costs into manageable monthly amounts.",
                             "",
-                            "But long-term idle cash usually loses ground to inflation.",
+                            "Examples:",
+                            "• Car repairs",
+                            "• Annual insurance premiums",
+                            "• Travel and holidays",
+                            "• Professional licenses",
                             "",
-                            "For long horizons, pair cash management with assets that have the potential to outpace inflation."
+                            "Formula: target amount / months until due = monthly transfer."
+                        ]
+                    },
+                    {
+                        title: 'Weekly 10-Minute Automation Review',
+                        content: [
+                            "Once a week, check:",
+                            "• Upcoming autopays in next 7 days",
+                            "• Bills-account buffer",
+                            "• Failed or skipped transfers",
+                            "• Credit card utilization trend",
+                            "",
+                            "Automation works best with light supervision, not daily micromanagement."
                         ]
                     }
                 ],
-                type: 'interactive',
-                widget: 'Sp500DollarVsGoldChart'
+                type: 'reading'
             },
             {
-                id: 'lesson-8-4',
-                title: 'China\'s Economic Rise: Export-First Model',
-                description: 'How China scaled through exports and high savings compared with U.S. consumers.',
-                xpReward: 45,
+                id: 'lesson-21-3',
+                title: 'The Zero-Fee Investing Shift and Why It Matters',
+                description: 'Understand how commission-free trading changed small recurring investing and why that benefits automated cash-flow plans.',
+                xpReward: 50,
+                story: {
+                    character: 'Renee',
+                    scenario: 'In 2012, Renee avoided investing because each trade felt like paying a toll. Years later she can automate small weekly buys with almost no transaction friction. She wants to understand what changed and how to use it responsibly.'
+                },
                 screens: [
                     {
-                        title: 'Export-First Strategy',
+                        title: 'Before vs After: Fee Friction',
                         content: [
-                            "China's growth model leaned heavily on manufacturing and exports for decades.",
+                            "Before brokers began competing to lower fees in the 2010s, many charged $5-$10 or more per trade.",
                             "",
-                            "Core idea:",
-                            "• Build industrial capacity",
-                            "• Keep production costs competitive",
-                            "• Sell large volumes to global markets",
+                            "A recurring $25 or $50 buy could lose a significant chunk just to trading costs.",
                             "",
-                            "This export-first approach helped China move from low-cost manufacturing into higher-value sectors over time."
+                            "That friction made it impractical for beginners to automate small, frequent contributions."
                         ]
                     },
                     {
-                        title: 'Exports: China vs U.S.',
+                        title: 'Pioneers and Industry Response',
                         content: [
-                            "Use the chart to compare exports as a share of GDP.",
+                            "A major inflection point came when mobile-first platforms like **Robinhood** pushed commission-free U.S. stock and ETF trading into mainstream awareness.",
                             "",
-                            "China generally ran a higher export share than the U.S., reflecting a more production-and-trade oriented model.",
+                            "Large incumbents then cut fees aggressively. By the late 2010s, major platforms, including firms like **Fidelity** and **Chase/J.P. Morgan**, had normalized low- or zero-commission access for many self-directed investors.",
                             "",
-                            "The U.S. has historically been more consumption-led, with household spending playing a larger role in growth."
+                            "The result: recurring investing became practical for much smaller dollar amounts."
                         ]
                     },
                     {
-                        title: 'Savings Rate Gap',
+                        title: 'Why This Helps Budget Automation',
                         content: [
-                            "China's households have typically saved a much larger share of income than U.S. consumers.",
+                            "Zero-fee trading + fractional shares unlocked a powerful behavior loop:",
+                            "• Payday arrives",
+                            "• Rules-based transfer executes",
+                            "• Small recurring investment is placed automatically",
                             "",
-                            "Why this matters:",
-                            "• Higher savings can support higher domestic investment",
-                            "• Lower savings can support stronger near-term consumption",
+                            "You no longer need to wait for a large lump sum to avoid fee drag.",
                             "",
-                            "Different savings behavior tends to produce different economic structures."
+                            "That consistency often matters more than trying to find the perfect entry price."
                         ]
                     },
                     {
-                        title: 'Tradeoffs and Takeaways',
+                        title: 'Use the Advantage, Avoid New Risks',
                         content: [
-                            "Export-first + high savings can accelerate industrial growth, but may rely more on external demand.",
+                            "Lower fees removed one barrier, but they did not remove risk.",
                             "",
-                            "Consumer-first + lower savings can boost domestic demand, but may reduce investment buffer over time.",
-                            "",
-                            "For learners: national strategy affects jobs, wages, exchange rates, and investment opportunities."
+                            "Guardrails:",
+                            "• Automate diversified funds before speculative picks",
+                            "• Keep an emergency fund so you are not forced to sell",
+                            "• Do not confuse easy trading with easy profits",
+                            "• Review tax implications of frequent taxable trades"
                         ]
                     }
                 ],
-                type: 'interactive',
-                widget: 'ChinaEconomicRiseChart'
+                type: 'reading'
+            },
+            {
+                id: 'lesson-21-4',
+                title: 'Recurring Transfers for Wealth Building',
+                description: 'Set fixed transfer rules for emergency reserves, debt payoff, and long-term investing without manual decision fatigue.',
+                xpReward: 50,
+                story: {
+                    character: 'Darnell',
+                    scenario: 'Darnell gets paid biweekly and usually invests only when he "feels flush," which means months pass with no progress. He needs rules that fire on schedule so momentum does not depend on mood.'
+                },
+                screens: [
+                    {
+                        title: 'Build a Transfer Waterfall',
+                        content: [
+                            "A transfer waterfall means each paycheck follows a fixed order.",
+                            "",
+                            "Example order:",
+                            "1) Core bills account",
+                            "2) Emergency fund target",
+                            "3) High-interest debt acceleration",
+                            "4) Retirement or brokerage investing",
+                            "5) Discretionary spending",
+                            "",
+                            "Following the same order every paycheck removes guesswork."
+                        ]
+                    },
+                    {
+                        title: 'Set Frequency by Income Pattern',
+                        content: [
+                            "Match transfer timing to when money arrives:",
+                            "• Weekly pay -> weekly transfers",
+                            "• Biweekly pay -> every payday transfers",
+                            "• Irregular income -> trigger transfers after each deposit above threshold",
+                            "",
+                            "The best cadence is the one you can maintain year-round."
+                        ]
+                    },
+                    {
+                        title: 'Start Small, Then Ratchet Up',
+                        content: [
+                            "Start with an amount that survives bad months.",
+                            "",
+                            "Then use an automatic ratchet:",
+                            "• Increase transfer by 1% of pay after each raise, or",
+                            "• Increase a fixed dollar amount every quarter",
+                            "",
+                            "Small, steady increases add up to surprisingly large results over time."
+                        ]
+                    },
+                    {
+                        title: 'Transfer Rules for Volatile Months',
+                        content: [
+                            "Define fallback rules in advance:",
+                            "• If account buffer < minimum, pause non-essential transfers",
+                            "• If overtime/bonus month, send set percentage to goals",
+                            "• If emergency expense hits, rebuild emergency fund before increasing discretionary spend",
+                            "",
+                            "Rules written during calm periods protect you during stressful periods."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-21-5',
+                title: 'Automation Guardrails and Failure Recovery',
+                description: 'Prevent overdrafts, duplicate transfers, and subscription drift with an automation audit system.',
+                xpReward: 55,
+                story: {
+                    character: 'Kira',
+                    scenario: 'Kira automated everything and then forgot about it. Three subscriptions renewed, two transfers bounced, and she paid avoidable fees. She needs an audit system that keeps automation efficient instead of fragile.'
+                },
+                screens: [
+                    {
+                        title: 'Common Automation Failure Modes',
+                        content: [
+                            "Automation can fail quietly.",
+                            "",
+                            "Most common issues:",
+                            "• Overdraft from timing mismatch",
+                            "• Old subscriptions and app renewals",
+                            "• Duplicate transfers after account changes",
+                            "• Credit card autopay set to minimum by mistake"
+                        ]
+                    },
+                    {
+                        title: 'Create a Buffer Policy',
+                        content: [
+                            "Set a non-negotiable bills-account buffer (example: one month of core bills or a fixed floor).",
+                            "",
+                            "Any time balance falls below the floor, discretionary transfers pause automatically until buffer is restored."
+                        ]
+                    },
+                    {
+                        title: 'Monthly Audit Checklist',
+                        content: [
+                            "Once per month:",
+                            "• Export transactions and tag autopays",
+                            "• Cancel unused subscriptions",
+                            "• Verify transfer amounts still match goals",
+                            "• Re-price large bills (insurance, internet, phone)",
+                            "• Check for failed payments or duplicate charges"
+                        ]
+                    },
+                    {
+                        title: 'Quarterly Reset Questions',
+                        content: [
+                            "Ask every quarter:",
+                            "• Did my income change?",
+                            "• Did my fixed costs change?",
+                            "• Is debt interest rate now higher than expected investment return?",
+                            "• Do I need to reroute transfers?",
+                            "",
+                            "Automation is not set-and-forget. Think of it as: set it up, check in regularly, and adjust as your life changes."
+                        ]
+                    }
+                ],
+                type: 'reading'
             }
         ]
     },
     {
-        id: 'module-9',
-        title: 'Future Finance',
-        description: 'Crypto, Prediction Markets, and Alternative Assets.',
-        xpReward: 200,
-        lessons: [
-            {
-                id: 'lesson-9-1',
-                title: 'Stocks vs. Real Estate vs. Hard Assets',
-                description: 'Where should you put your money?',
-                xpReward: 50,
-                content: [
-                    "**Stocks**: Ownership in companies. High liquidity, high long-term growth, volatile.",
-                    "**Real Estate**: Tangible land/buildings. Can use leverage (mortgage). High maintenance costs, hard to sell quickly.",
-                    "**Hard Assets** (Gold, Art, Commodities): Physical items with intrinsic value. Often used as a hedge against inflation. Usually don't produce cash flow (dividends/rent)."
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-9-2',
-                title: 'Cryptocurrency: The Reality of Financialization',
-                description: 'The shift from decentralized money to speculative asset.',
-                xpReward: 50,
-                content: [
-                    "**Cryptocurrency** (like Bitcoin) originally promised a decentralized alternative to the traditional financial system.",
-                    "The vision was a trustless, peer-to-peer network free from banks and governments.",
-                    "However, the current reality of crypto in 2026 is heavily **financialized**. The introduction of Spot ETFs, massive institutional buying, and centralized exchanges have largely defeated its original decentralized purpose.",
-                    "Instead of acting as an independent currency, crypto has largely become another highly volatile, speculative asset class heavily tied to traditional markets and centralized platforms.",
-                    "Pro tip: If you buy crypto, you need a **Wallet**. Remember: 'Not your keys, not your coins'. If you don't control the private keys, you don't truly own the assets."
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-9-3',
-                title: 'Prediction Markets',
-                description: 'Betting on the future.',
-                xpReward: 50,
-                content: [
-                    "**Prediction Markets** let people bet on the outcome of real-world events (elections, sports, scientific breakthrough).",
-                    "The price of a 'share' (e.g., 60 cents) represents the market's estimated probability (60%) of that event happening.",
-                    "Many economists believe these markets are more accurate than polls or experts because participants have 'skin in the game'.",
-                    "It's a way to use the 'Wisdom of the Crowd' to forecast the future."
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-9-4',
-                title: 'Tokenization of Assets',
-                description: 'The real-world utility of blockchain in traditional finance.',
-                xpReward: 60,
-                content: [
-                    "**Tokenization** is the process of representing a real-world asset (like real estate, art, Treasury bills, or private equity) as a digital token on a blockchain.",
-                    "By 2026, while the speculative frenzy of early crypto has waned, the underlying technology has been heavily adopted by **Traditional Finance (TradFi)**.",
-                    "Major financial institutions use tokenization for its massive utility: faster settlement times, 24/7 trading, fractional ownership, and automated compliance through smart contracts.",
-                    "Unlike early cryptocurrencies that tried to replace the financial system, tokenization is upgrading the plumbing of the existing financial system, bringing trillions of dollars of traditional assets on-chain."
-                ],
-                type: 'reading'
-            }
-        ]
-    },
-    {
-        id: 'module-10',
-        title: 'Banking & Financial Institutions',
-        description: 'Understand the entities that move the world\'s money.',
+        id: 'module-14',
+        title: 'Salary Negotiation & Career Finance',
+        description: 'Your career is your biggest asset — maximize it.',
         xpReward: 150,
         lessons: [
             {
-                id: 'lesson-10-1',
-                title: 'Financial Pillars: Banks & Credit Unions',
-                description: 'Where should you keep your cash?',
-                xpReward: 40,
-                content: [
-                    "**Traditional Banks** are for-profit corporations owned by shareholders. They offer convenience, many branches, and advanced tech, but often have higher fees.",
-                    "",
-                    "**Credit Unions** are non-profit cooperatives owned by their members. They usually offer better interest rates and lower fees, but membership is often restricted to certain groups (e.g., teachers, military).",
-                    "",
-                    "**Online-Only Banks** have no physical branches. Because they have lower overhead, they often offer the highest savings rates (**HYSA**) in the market.",
-                    "",
-                    "Pro tip: Always ensure your bank is insured by the **FDIC** (for banks) or **NCUA** (for credit unions). This protects your money up to $250,000 if the institution fails."
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-10-2',
-                title: 'Green Banks: Financing the Future',
-                description: 'Using finance to fight climate change.',
-                xpReward: 50,
-                content: [
-                    "A **Green Bank** is a mission-driven institution that uses public funds to 'de-risk' and attract private investment into clean energy projects.",
-                    "",
-                    "**Why do we need them?** Traditional banks are often hesitant to fund new green technologies (like community solar or building retrofits) because they lack historical data to predict risk.",
-                    "",
-                    "**How they work**: For every $1 of public money a Green Bank invests, it typically attracts $3 to $10 of private capital from institutional investors.",
-                    "",
-                    "Examples include the **Connecticut Green Bank** (the first in the US) and the new federal **Greenhouse Gas Reduction Fund**, which is deploying $27 billion to green projects across America."
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-10-3',
-                title: 'Global Stability: IMF & World Bank',
-                description: 'The lenders of last resort.',
-                xpReward: 60,
-                content: [
-                    "The **International Monetary Fund (IMF)** acts as a global monitor and 'lender of last resort.' It provides loans to countries facing economic crises to prevent global contagion.",
-                    "",
-                    "The **World Bank** focuses on long-term economic development and poverty reduction. It funds infrastructure projects like schools, bridges, and power plants in developing nations.",
-                    "",
-                    "**Common Criticism**: Both institutions are often criticized for the 'conditions' they attach to loans, which may require countries to make painful cuts to social programs.",
-                    "",
-                    "Despite controversies, these institutions are the backbone of global financial stability during times of war or total economic collapse."
-                ],
-                type: 'reading'
-            }
-        ]
-    },
-    {
-        id: 'module-11',
-        title: 'Homebuying & Mortgages',
-        description: 'Navigate the biggest purchase of your life.',
-        xpReward: 150,
-        lessons: [
-            {
-                id: 'lesson-11-1',
-                title: 'How Mortgages Work',
-                description: 'Fixed vs. adjustable, amortization, and pre-approval.',
+                id: 'lesson-14-1',
+                title: 'Know Your Market Value',
+                description: 'Research tools, salary ranges, and leveling.',
                 xpReward: 35,
                 screens: [
                     {
-                        title: 'What Is a Mortgage?',
+                        title: 'You Are Underpaid (Probably)',
                         content: [
-                            "A **mortgage** is a loan specifically for buying property. The property itself serves as **collateral**—if you stop paying, the bank can take your home (foreclosure).",
+                            "Most people have NO IDEA what they're worth in the job market. This is by design — salary secrecy benefits employers.",
                             "",
-                            "Most mortgages last **15 or 30 years**. You pay monthly, and each payment covers two things:",
-                            "• **Principal**: Paying down the actual loan amount.",
-                            "• **Interest**: The cost of borrowing the money.",
+                            "**How to research your market value:**",
+                            "• **Levels.fyi** — Best for tech. Shows total compensation by company and level.",
+                            "• **Glassdoor** — Broad salary data across industries.",
+                            "• **LinkedIn Salary** — Uses real member data.",
+                            "• **Bureau of Labor Statistics** — Government data on wages by occupation and location.",
+                            "• **H1B Salary Database** — Publicly available salaries companies pay visa holders.",
                             "",
-                            "In the early years, most of your payment goes toward **interest**. Over time, more goes toward **principal**. This is called **amortization**."
+                            "**Key concept: Leveling**",
+                            "Companies have internal 'levels' (e.g., Junior, Mid, Senior, Staff). Your title might be the same, but your level determines your pay band.",
+                            "",
+                            "Pro tip: Always ask about the 'pay band' for your level during negotiations. It tells you the floor and ceiling."
                         ]
                     },
                     {
-                        title: 'Fixed-Rate vs. Adjustable-Rate',
+                        title: 'Location & Industry Premium',
                         content: [
-                            "**Fixed-Rate Mortgage (FRM)**:",
-                            "• Your interest rate NEVER changes for the life of the loan.",
-                            "• Your monthly payment stays the same. Predictable and safe.",
-                            "• Most popular choice: the **30-year fixed**.",
+                            "The same job can pay VERY differently depending on where and who you work for.",
                             "",
-                            "**Adjustable-Rate Mortgage (ARM)**:",
-                            "• Starts with a lower 'teaser' rate for 5-7 years.",
-                            "• After that, the rate adjusts based on market conditions—it can go UP significantly.",
-                            "• Example: A **5/1 ARM** has a fixed rate for 5 years, then adjusts every 1 year.",
+                            "**Software Engineer (mid-level) salaries:**",
+                            "• San Francisco (Big Tech): $180k-$300k total comp",
+                            "• Austin, TX (Mid-size tech): $120k-$180k",
+                            "• Omaha, NE (Non-tech company): $80k-$120k",
+                            "• Remote (varies by company policy): $100k-$250k",
                             "",
-                            "**Rule of Thumb**: If you plan to stay in the home long-term, go fixed. If you'll sell within 5-7 years, an ARM might save you money."
-                        ]
-                    },
-                    {
-                        title: 'Getting Pre-Approved',
-                        content: [
-                            "Before you shop for a home, get **pre-approved** by a lender.",
+                            "**Industry premiums:**",
+                            "• Finance/Trading: Often 2x other industries",
+                            "• Big Tech (FAANG): 1.5-2x average",
+                            "• Government/Non-profit: 0.7-0.9x average",
                             "",
-                            "Pre-approval tells you exactly how much you can borrow. It also shows sellers you're a serious buyer.",
+                            "**Cost of living matters**: A $150k salary in San Francisco ≈ $90k in Dallas in terms of purchasing power.",
                             "",
-                            "**What lenders look at:**",
-                            "• **Credit Score**: 740+ gets the best rates.",
-                            "• **Debt-to-Income Ratio (DTI)**: Your monthly debts divided by your gross income. Lenders want this below 43%.",
-                            "• **Employment History**: Stable income for at least 2 years.",
-                            "• **Assets**: Savings for down payment and reserves.",
-                            "",
-                            "Pro tip: Get pre-approved by 2-3 lenders and compare offers. Even a 0.25% rate difference saves thousands over 30 years."
+                            "Pro tip: Remote roles at companies that DON'T adjust for location are often the best deal."
                         ]
                     }
                 ],
                 type: 'reading'
             },
             {
-                id: 'lesson-11-2',
-                title: 'Down Payments, PMI & Closing Costs',
-                description: 'The upfront costs most people underestimate.',
-                xpReward: 30,
-                screens: [
-                    {
-                        title: 'The Down Payment Myth',
-                        content: [
-                            "Many people think you need **20% down** to buy a home. That's a myth.",
-                            "",
-                            "• **Conventional loans**: As low as 3% down.",
-                            "• **FHA loans**: 3.5% down (popular for first-time buyers).",
-                            "• **VA loans**: 0% down for eligible veterans.",
-                            "• **USDA loans**: 0% down for rural areas.",
-                            "",
-                            "On a $300,000 home:",
-                            "• 20% down = $60,000",
-                            "• 3% down = $9,000",
-                            "",
-                            "The catch? If you put less than 20% down, you'll likely pay **PMI**."
-                        ]
-                    },
-                    {
-                        title: 'What Is PMI?',
-                        content: [
-                            "**Private Mortgage Insurance (PMI)** protects the LENDER (not you) if you default on the loan.",
-                            "",
-                            "PMI typically costs **0.5% to 1%** of the loan amount per year.",
-                            "",
-                            "On a $285,000 loan (after 5% down on a $300k home):",
-                            "• PMI ≈ $120-$240/month on top of your mortgage payment.",
-                            "",
-                            "**The good news**: PMI goes away once you reach 20% equity in your home. You can request removal at that point.",
-                            "",
-                            "Pro tip: Some lenders offer **lender-paid PMI** in exchange for a slightly higher interest rate. Do the math to see which is cheaper over your expected time in the home."
-                        ]
-                    },
-                    {
-                        title: 'Closing Costs: The Hidden Bill',
-                        content: [
-                            "On top of the down payment, you'll pay **closing costs** — typically **2-5% of the home price**.",
-                            "",
-                            "On a $300,000 home, that's $6,000-$15,000.",
-                            "",
-                            "**What's included:**",
-                            "• Loan origination fees",
-                            "• Appraisal fee ($300-$500)",
-                            "• Title insurance and search",
-                            "• Attorney fees",
-                            "• Prepaid property taxes and homeowner's insurance",
-                            "• Recording fees",
-                            "",
-                            "Pro tip: You can negotiate with the seller to cover some closing costs (a 'seller concession'). This is more common in buyer's markets."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-11-3',
-                title: 'Rent vs. Buy: The Real Math',
-                description: 'It\'s not as simple as "renting is throwing money away."',
+                id: 'lesson-14-2',
+                title: 'Negotiation Frameworks',
+                description: 'Anchoring, BATNA, and scripts that work.',
                 xpReward: 40,
+                story: {
+                    character: 'Maya',
+                    scenario: "Maya receives a job offer for $75,000. She's excited but nervous about negotiating. She doesn't want them to rescind the offer."
+                },
                 screens: [
                     {
-                        title: 'The Renting Myth',
+                        title: 'The Golden Rules',
                         content: [
-                            "You've probably heard: **'Renting is throwing money away.'** This is an oversimplification.",
+                            "**Rule #1**: Almost every offer is negotiable. Companies EXPECT you to negotiate.",
                             "",
-                            "When you rent, you pay for a place to live and that's it. No maintenance, no property taxes, no surprise repairs.",
+                            "**Rule #2**: They will almost NEVER rescind an offer because you negotiated professionally. They've already invested thousands in hiring you.",
                             "",
-                            "When you own, your mortgage payment builds equity—but you ALSO pay:",
-                            "• Property taxes (1-2% of home value/year)",
-                            "• Homeowner's insurance",
-                            "• Maintenance (budget 1-2% of home value/year)",
-                            "• PMI (if less than 20% down)",
-                            "• HOA fees (if applicable)",
+                            "**Rule #3**: The best time to negotiate is BEFORE you accept. Your leverage disappears after you say yes.",
                             "",
-                            "The 'hidden' costs of ownership are significant."
+                            "**Key concepts:**",
+                            "• **Anchoring**: The first number sets the reference point. Always let them make the first offer.",
+                            "• **BATNA** (Best Alternative to a Negotiated Agreement): Your backup plan. Having another offer dramatically increases your leverage.",
+                            "• **The Flinch**: When they name a number, pause. Let there be silence. They may improve the offer on their own."
                         ]
                     },
                     {
-                        title: 'The Break-Even Calculation',
+                        title: 'Scripts That Work',
                         content: [
-                            "The key question is: **How long do you plan to stay?**",
+                            "**The Counter-Offer Script:**",
+                            "\"I'm very excited about this opportunity. Based on my research and the value I'll bring, I was hoping for something closer to $[target]. Is there flexibility here?\"",
                             "",
-                            "Buying has high upfront costs (down payment, closing costs). It usually takes **5-7 years** to break even compared to renting.",
+                            "**The Competing Offer Script:**",
+                            "\"I have another offer at $[amount]. I'd prefer to join your team, but I want to make sure the compensation is competitive. Can you match or improve on this?\"",
                             "",
-                            "**If you'll move within 3 years**: Renting almost always wins.",
-                            "**If you'll stay 7+ years**: Buying usually wins.",
-                            "**4-6 years**: It depends on your local market.",
+                            "**The 'What Else' Script:**",
+                            "\"If the base salary is firm, are there other areas with flexibility? I'm thinking about signing bonus, equity, PTO, or remote work options.\"",
                             "",
-                            "Other factors:",
-                            "• Is your local rent increasing fast? Buying locks in your housing cost.",
-                            "• Could you invest the down payment instead? At 10% returns, $60,000 becomes ~$97,000 in 5 years.",
-                            "",
-                            "There's no universal answer. Run the numbers for YOUR situation."
+                            "**Pro tips:**",
+                            "• Always negotiate via email (gives you time to think).",
+                            "• Never say your current salary — it anchors you low.",
+                            "• Ask for 10-20% more than you'd be happy with.",
+                            "• Be warm, enthusiastic, and professional throughout."
                         ]
                     }
                 ],
                 type: 'reading'
             },
             {
-                id: 'lesson-11-4',
-                title: 'Hidden Costs of Homeownership',
-                description: 'What the listing price doesn\'t tell you.',
-                xpReward: 30,
+                id: 'lesson-14-3',
+                title: 'Total Compensation',
+                description: 'Base salary is only part of the picture.',
+                xpReward: 35,
                 screens: [
                     {
-                        title: 'The 1% Rule',
+                        title: 'Beyond the Base',
                         content: [
-                            "A common rule: budget **1-2% of your home's value per year** for maintenance and repairs.",
+                            "Your **total compensation** includes much more than your base salary:",
                             "",
-                            "On a $300,000 home, that's $3,000-$6,000/year ($250-$500/month).",
+                            "**Cash Compensation:**",
+                            "• Base salary (guaranteed)",
+                            "• Annual bonus (often 10-30% of base, not always guaranteed)",
+                            "• Signing bonus (one-time, often with a clawback if you leave early)",
                             "",
-                            "**Common surprise costs:**",
-                            "• New roof: $8,000-$15,000",
-                            "• HVAC replacement: $5,000-$10,000",
-                            "• Foundation repair: $5,000-$30,000",
-                            "• Water heater: $1,000-$3,000",
-                            "• Plumbing emergency: $500-$5,000",
+                            "**Equity:**",
+                            "• Stock options (right to buy shares at a set price)",
+                            "• RSUs (Restricted Stock Units — actual shares granted over time)",
+                            "• Equity typically vests over 4 years with a 1-year 'cliff'",
                             "",
-                            "These costs don't ask if it's a good time. They just happen."
+                            "**Benefits (real dollar value):**",
+                            "• Health insurance (employer share: $5k-$15k/year)",
+                            "• 401k match (if 50% match on 6%, that's 3% of your salary FREE)",
+                            "• PTO/vacation days (each day ≈ salary / 260)"
                         ]
                     },
                     {
-                        title: 'Property Taxes, HOA & Insurance',
+                        title: 'Comparing Two Offers',
                         content: [
-                            "**Property Taxes** vary wildly by location:",
-                            "• New Jersey: ~2.2% of home value/year",
-                            "• Texas: ~1.7%",
-                            "• Hawaii: ~0.3%",
+                            "**Offer A**: $90k base, no equity, 5% bonus, basic insurance, 15 PTO days",
+                            "**Offer B**: $80k base, $40k RSUs/year, 10% bonus, premium insurance, 25 PTO days",
                             "",
-                            "On a $300,000 home in Texas, that's ~$5,100/year ($425/month).",
+                            "At first glance, Offer A looks better ($90k vs $80k).",
                             "",
-                            "**HOA Fees** (if in a community with one):",
-                            "• Typically $200-$500/month",
-                            "• Can include landscaping, pool, exterior maintenance",
-                            "• HOA can restrict what you do with YOUR property",
+                            "**Total comp calculation:**",
+                            "• Offer A: $90k + $4.5k bonus + $6k insurance = ~$100,500",
+                            "• Offer B: $80k + $40k RSUs + $8k bonus + $12k insurance = ~$140,000",
                             "",
-                            "**Homeowner's Insurance**: $1,500-$3,000/year depending on location and coverage.",
+                            "Offer B is worth **$40,000 more** per year.",
                             "",
-                            "Pro tip: Add up ALL these costs before deciding what you can 'afford'. A home that fits your mortgage budget might not fit your TOTAL budget."
+                            "**Always compare TOTAL compensation**, not just base salary.",
+                            "",
+                            "Pro tip: Ask recruiters for the 'total compensation summary' or 'offer breakdown'. Most big companies provide one."
                         ]
                     }
                 ],
                 type: 'reading'
             },
             {
-                id: 'lesson-11-5',
-                title: 'Condo vs Townhouse: The True Monthly Cost',
-                description: 'Compare HOAs, taxes, insurance, repairs, and market differences across the U.S.',
-                xpReward: 40,
+                id: 'lesson-14-4',
+                title: 'The Lifetime Cost of a Low Offer',
+                description: 'How a $5k raise compounds into a fortune.',
+                xpReward: 35,
                 screens: [
                     {
-                        title: 'Condo vs Townhouse Basics',
+                        title: 'The $5,000 Raise You Didn\'t Ask For',
                         content: [
-                            "**Condo**:",
-                            "• You typically own the interior of your unit.",
-                            "• Shared areas (roof, exterior, hallways, amenities) are managed by an HOA/association.",
-                            "• Usually higher HOA fees, often lower individual exterior maintenance burden.",
+                            "Imagine two people with identical jobs. One negotiated $5,000 more in their first offer.",
                             "",
-                            "**Townhouse**:",
-                            "• You usually own the unit plus some land footprint.",
-                            "• More responsibility for structure/exterior, depending on the HOA rules.",
-                            "• Often lower HOA than condos, but potentially higher repair responsibility.",
+                            "Assuming **3% annual raises** for both:",
                             "",
-                            "Key point: The mortgage payment alone does NOT tell you which option is cheaper."
+                            "After 5 years: $5,000 gap becomes ~$28,000 in cumulative extra earnings.",
+                            "After 10 years: ~$60,000 cumulative difference.",
+                            "After 20 years: ~$140,000 cumulative difference.",
+                            "After 30 years: ~$250,000+ cumulative difference.",
+                            "",
+                            "And that's just salary. If you invest the difference at 10%/year, the gap grows to **$500,000+** over a career.",
+                            "",
+                            "One conversation. Five minutes of discomfort. Half a million dollars."
                         ]
                     },
                     {
-                        title: 'HOA Fees: Help or Headache?',
+                        title: 'Never Stop Negotiating',
                         content: [
-                            "HOA fees can pay for useful services:",
-                            "• Exterior maintenance",
-                            "• Landscaping and snow removal",
-                            "• Shared amenities (pool, gym, security)",
+                            "Negotiation isn't just for job offers. Apply these skills to:",
                             "",
-                            "But HOAs can also create risks:",
-                            "• Fee increases",
-                            "• Special assessments for major repairs",
-                            "• Rules and restrictions (rentals, renovations, use of space)",
+                            "• **Annual reviews**: Document your wins. Ask for raises proactively, don't wait.",
+                            "• **Promotions**: Ask your manager 'What specifically do I need to do to get promoted?' Then do it and follow up.",
+                            "• **Medical bills**: Hospitals often discount 20-50% if you ask.",
+                            "• **Rent**: Landlords would rather discount than find new tenants.",
+                            "• **Cable/internet/phone**: Call and say 'I'm considering switching.' They'll often offer retention deals.",
+                            "• **Car purchases**: Get quotes from 3+ dealers. Use them against each other.",
                             "",
-                            "Always review HOA financial statements, reserve levels, and meeting notes before buying."
-                        ]
-                    },
-                    {
-                        title: 'Why Non-Mortgage Costs Matter',
-                        content: [
-                            "Your total monthly housing cost includes:",
-                            "• Principal + interest (mortgage)",
-                            "• Property taxes",
-                            "• Homeowner's insurance",
-                            "• Routine repair budget",
-                            "• HOA dues",
+                            "**The uncomfortable truth**: People who negotiate earn $1M+ more over their lifetime than those who don't.",
                             "",
-                            "In some markets, taxes + insurance + repairs + HOA can rival or even exceed your principal+interest payment.",
-                            "",
-                            "Use the calculator to test scenarios and see where the hidden costs overtake the mortgage."
-                        ]
-                    },
-                    {
-                        title: 'Property Markets Are Not the Same',
-                        content: [
-                            "Home markets vary across the U.S. because of:",
-                            "• Home prices",
-                            "• Property tax rates",
-                            "• Insurance risk (storms, wildfire, flood)",
-                            "• HOA prevalence and fee levels",
-                            "",
-                            "A payment that works in one city may fail in another, even for a similar home price.",
-                            "",
-                            "Use market presets in the calculator to compare how cost structure changes by region."
-                        ]
-                    },
-                    {
-                        title: 'Buyer Checklist',
-                        content: [
-                            "Before making an offer:",
-                            "1) Compare condo and townhouse total monthly cost, not just P+I.",
-                            "2) Stress-test for HOA increases and large repair years.",
-                            "3) Estimate taxes and insurance with local quotes, not national averages.",
-                            "4) Keep a repair reserve even after closing.",
-                            "5) Buy based on a sustainable monthly budget, not lender maximum."
+                            "The skill of asking for what you're worth is the highest-ROI skill you'll ever develop."
                         ]
                     }
                 ],
-                type: 'interactive',
-                widget: 'HomeBuyingCostExplorer'
+                type: 'reading'
             }
         ]
     },
@@ -2748,908 +2815,168 @@ export const curriculum = [
         ]
     },
     {
-        id: 'module-14',
-        title: 'Salary Negotiation & Career Finance',
-        description: 'Your career is your biggest asset — maximize it.',
-        xpReward: 150,
-        lessons: [
-            {
-                id: 'lesson-14-1',
-                title: 'Know Your Market Value',
-                description: 'Research tools, salary ranges, and leveling.',
-                xpReward: 35,
-                screens: [
-                    {
-                        title: 'You Are Underpaid (Probably)',
-                        content: [
-                            "Most people have NO IDEA what they're worth in the job market. This is by design — salary secrecy benefits employers.",
-                            "",
-                            "**How to research your market value:**",
-                            "• **Levels.fyi** — Best for tech. Shows total compensation by company and level.",
-                            "• **Glassdoor** — Broad salary data across industries.",
-                            "• **LinkedIn Salary** — Uses real member data.",
-                            "• **Bureau of Labor Statistics** — Government data on wages by occupation and location.",
-                            "• **H1B Salary Database** — Publicly available salaries companies pay visa holders.",
-                            "",
-                            "**Key concept: Leveling**",
-                            "Companies have internal 'levels' (e.g., Junior, Mid, Senior, Staff). Your title might be the same, but your level determines your pay band.",
-                            "",
-                            "Pro tip: Always ask about the 'pay band' for your level during negotiations. It tells you the floor and ceiling."
-                        ]
-                    },
-                    {
-                        title: 'Location & Industry Premium',
-                        content: [
-                            "The same job can pay VERY differently depending on where and who you work for.",
-                            "",
-                            "**Software Engineer (mid-level) salaries:**",
-                            "• San Francisco (Big Tech): $180k-$300k total comp",
-                            "• Austin, TX (Mid-size tech): $120k-$180k",
-                            "• Omaha, NE (Non-tech company): $80k-$120k",
-                            "• Remote (varies by company policy): $100k-$250k",
-                            "",
-                            "**Industry premiums:**",
-                            "• Finance/Trading: Often 2x other industries",
-                            "• Big Tech (FAANG): 1.5-2x average",
-                            "• Government/Non-profit: 0.7-0.9x average",
-                            "",
-                            "**Cost of living matters**: A $150k salary in San Francisco ≈ $90k in Dallas in terms of purchasing power.",
-                            "",
-                            "Pro tip: Remote roles at companies that DON'T adjust for location are often the best deal."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-14-2',
-                title: 'Negotiation Frameworks',
-                description: 'Anchoring, BATNA, and scripts that work.',
-                xpReward: 40,
-                story: {
-                    character: 'Maya',
-                    scenario: "Maya receives a job offer for $75,000. She's excited but nervous about negotiating. She doesn't want them to rescind the offer."
-                },
-                screens: [
-                    {
-                        title: 'The Golden Rules',
-                        content: [
-                            "**Rule #1**: Almost every offer is negotiable. Companies EXPECT you to negotiate.",
-                            "",
-                            "**Rule #2**: They will almost NEVER rescind an offer because you negotiated professionally. They've already invested thousands in hiring you.",
-                            "",
-                            "**Rule #3**: The best time to negotiate is BEFORE you accept. Your leverage disappears after you say yes.",
-                            "",
-                            "**Key concepts:**",
-                            "• **Anchoring**: The first number sets the reference point. Always let them make the first offer.",
-                            "• **BATNA** (Best Alternative to a Negotiated Agreement): Your backup plan. Having another offer dramatically increases your leverage.",
-                            "• **The Flinch**: When they name a number, pause. Let there be silence. They may improve the offer on their own."
-                        ]
-                    },
-                    {
-                        title: 'Scripts That Work',
-                        content: [
-                            "**The Counter-Offer Script:**",
-                            "\"I'm very excited about this opportunity. Based on my research and the value I'll bring, I was hoping for something closer to $[target]. Is there flexibility here?\"",
-                            "",
-                            "**The Competing Offer Script:**",
-                            "\"I have another offer at $[amount]. I'd prefer to join your team, but I want to make sure the compensation is competitive. Can you match or improve on this?\"",
-                            "",
-                            "**The 'What Else' Script:**",
-                            "\"If the base salary is firm, are there other areas with flexibility? I'm thinking about signing bonus, equity, PTO, or remote work options.\"",
-                            "",
-                            "**Pro tips:**",
-                            "• Always negotiate via email (gives you time to think).",
-                            "• Never say your current salary — it anchors you low.",
-                            "• Ask for 10-20% more than you'd be happy with.",
-                            "• Be warm, enthusiastic, and professional throughout."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-14-3',
-                title: 'Total Compensation',
-                description: 'Base salary is only part of the picture.',
-                xpReward: 35,
-                screens: [
-                    {
-                        title: 'Beyond the Base',
-                        content: [
-                            "Your **total compensation** includes much more than your base salary:",
-                            "",
-                            "**Cash Compensation:**",
-                            "• Base salary (guaranteed)",
-                            "• Annual bonus (often 10-30% of base, not always guaranteed)",
-                            "• Signing bonus (one-time, often with a clawback if you leave early)",
-                            "",
-                            "**Equity:**",
-                            "• Stock options (right to buy shares at a set price)",
-                            "• RSUs (Restricted Stock Units — actual shares granted over time)",
-                            "• Equity typically vests over 4 years with a 1-year 'cliff'",
-                            "",
-                            "**Benefits (real dollar value):**",
-                            "• Health insurance (employer share: $5k-$15k/year)",
-                            "• 401k match (if 50% match on 6%, that's 3% of your salary FREE)",
-                            "• PTO/vacation days (each day ≈ salary / 260)"
-                        ]
-                    },
-                    {
-                        title: 'Comparing Two Offers',
-                        content: [
-                            "**Offer A**: $90k base, no equity, 5% bonus, basic insurance, 15 PTO days",
-                            "**Offer B**: $80k base, $40k RSUs/year, 10% bonus, premium insurance, 25 PTO days",
-                            "",
-                            "At first glance, Offer A looks better ($90k vs $80k).",
-                            "",
-                            "**Total comp calculation:**",
-                            "• Offer A: $90k + $4.5k bonus + $6k insurance = ~$100,500",
-                            "• Offer B: $80k + $40k RSUs + $8k bonus + $12k insurance = ~$140,000",
-                            "",
-                            "Offer B is worth **$40,000 more** per year.",
-                            "",
-                            "**Always compare TOTAL compensation**, not just base salary.",
-                            "",
-                            "Pro tip: Ask recruiters for the 'total compensation summary' or 'offer breakdown'. Most big companies provide one."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-14-4',
-                title: 'The Lifetime Cost of a Low Offer',
-                description: 'How a $5k raise compounds into a fortune.',
-                xpReward: 35,
-                screens: [
-                    {
-                        title: 'The $5,000 Raise You Didn\'t Ask For',
-                        content: [
-                            "Imagine two people with identical jobs. One negotiated $5,000 more in their first offer.",
-                            "",
-                            "Assuming **3% annual raises** for both:",
-                            "",
-                            "After 5 years: $5,000 gap becomes ~$28,000 in cumulative extra earnings.",
-                            "After 10 years: ~$60,000 cumulative difference.",
-                            "After 20 years: ~$140,000 cumulative difference.",
-                            "After 30 years: ~$250,000+ cumulative difference.",
-                            "",
-                            "And that's just salary. If you invest the difference at 10%/year, the gap grows to **$500,000+** over a career.",
-                            "",
-                            "One conversation. Five minutes of discomfort. Half a million dollars."
-                        ]
-                    },
-                    {
-                        title: 'Never Stop Negotiating',
-                        content: [
-                            "Negotiation isn't just for job offers. Apply these skills to:",
-                            "",
-                            "• **Annual reviews**: Document your wins. Ask for raises proactively, don't wait.",
-                            "• **Promotions**: Ask your manager 'What specifically do I need to do to get promoted?' Then do it and follow up.",
-                            "• **Medical bills**: Hospitals often discount 20-50% if you ask.",
-                            "• **Rent**: Landlords would rather discount than find new tenants.",
-                            "• **Cable/internet/phone**: Call and say 'I'm considering switching.' They'll often offer retention deals.",
-                            "• **Car purchases**: Get quotes from 3+ dealers. Use them against each other.",
-                            "",
-                            "**The uncomfortable truth**: People who negotiate earn $1M+ more over their lifetime than those who don't.",
-                            "",
-                            "The skill of asking for what you're worth is the highest-ROI skill you'll ever develop."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            }
-        ]
-    },
-    {
-        id: 'module-15',
-        title: 'Emergency Funds & Financial Resilience',
-        description: 'Build a safety net before things go wrong.',
-        xpReward: 150,
-        lessons: [
-            {
-                id: 'lesson-15-1',
-                title: 'Why 3-6 Months Matters',
-                description: 'Emergency stats and the safety net math.',
-                xpReward: 30,
-                screens: [
-                    {
-                        title: 'The Fragility Problem',
-                        content: [
-                            "**56% of Americans** cannot cover a $1,000 emergency expense with savings.",
-                            "",
-                            "That means a single car repair, medical bill, or job loss can trigger a financial spiral: credit card debt → high interest → more debt → stress → poor decisions.",
-                            "",
-                            "An **emergency fund** breaks this cycle. It's cash set aside ONLY for true emergencies:",
-                            "• Job loss",
-                            "• Medical emergencies",
-                            "• Major car or home repairs",
-                            "• Unexpected travel (family emergency)",
-                            "",
-                            "**NOT emergencies:** Sales, vacations, new gadgets, concert tickets."
-                        ]
-                    },
-                    {
-                        title: 'How Much Do You Need?',
-                        content: [
-                            "The standard advice: **3-6 months of essential expenses.**",
-                            "",
-                            "Not 3-6 months of INCOME — 3-6 months of EXPENSES (rent, food, utilities, insurance, minimum debt payments).",
-                            "",
-                            "**Example:**",
-                            "• Monthly expenses: $3,000",
-                            "• 3-month fund: $9,000",
-                            "• 6-month fund: $18,000",
-                            "",
-                            "**Who needs more (6+ months)?**",
-                            "• Freelancers and self-employed",
-                            "• Single-income households",
-                            "• People in volatile industries",
-                            "• Those with dependents",
-                            "",
-                            "**Who can start with less (3 months)?**",
-                            "• Dual-income households",
-                            "• People with very stable employment",
-                            "• Those with strong family support networks",
-                            "",
-                            "Pro tip: Start with a $1,000 'starter' emergency fund. Then build to 1 month, then 3, then 6."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-15-2',
-                title: 'Where to Keep Your Emergency Fund',
-                description: 'HYSA, money market, and T-bills.',
-                xpReward: 30,
-                screens: [
-                    {
-                        title: 'The Rules of Emergency Fund Placement',
-                        content: [
-                            "Your emergency fund has THREE requirements:",
-                            "1. **Liquid** — You can access it within 1-2 business days.",
-                            "2. **Safe** — It cannot lose value (no stocks!).",
-                            "3. **Earning something** — Don't let inflation eat it alive.",
-                            "",
-                            "**Where NOT to keep it:**",
-                            "• ❌ Checking account (earns 0.01%, easy to accidentally spend)",
-                            "• ❌ Stock market (could drop 30% right when you need it)",
-                            "• ❌ Under your mattress (inflation + theft risk)",
-                            "• ❌ Crypto (too volatile)"
-                        ]
-                    },
-                    {
-                        title: 'Best Options',
-                        content: [
-                            "**High-Yield Savings Account (HYSA):**",
-                            "• Currently earning 4-5% APY (as of 2024)",
-                            "• FDIC insured up to $250,000",
-                            "• Instant or 1-day transfers",
-                            "• Best option for most people",
-                            "• Top picks: Marcus, Ally, Discover, SoFi",
-                            "",
-                            "**Money Market Account:**",
-                            "• Similar rates to HYSA",
-                            "• May come with check-writing ability",
-                            "• Also FDIC insured",
-                            "",
-                            "**Treasury Bills (T-Bills):**",
-                            "• Government-backed securities (4-5% as of 2024)",
-                            "• Exempt from state/local taxes",
-                            "• Can buy through TreasuryDirect.gov",
-                            "• Slightly less liquid (must wait for maturity, 4-52 weeks)",
-                            "",
-                            "Pro tip: Keep 1-2 months in HYSA for quick access, and the rest in T-Bills for a slightly higher effective yield."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-15-3',
-                title: 'Recovering from Financial Setbacks',
-                description: 'Job loss, medical bills, and rebuilding.',
-                xpReward: 35,
-                screens: [
-                    {
-                        title: 'When Disaster Strikes',
-                        content: [
-                            "Financial setbacks happen to everyone. What matters is your response.",
-                            "",
-                            "**If you lose your job:**",
-                            "1. File for unemployment IMMEDIATELY (don't wait).",
-                            "2. Cut all non-essential spending within 48 hours.",
-                            "3. Contact lenders to request hardship forbearance.",
-                            "4. Review COBRA vs. marketplace health insurance options.",
-                            "5. Start job searching on day 1, but don't panic-accept a bad offer.",
-                            "",
-                            "**If hit with medical debt:**",
-                            "1. Audit every bill for errors (up to 80% of medical bills contain mistakes).",
-                            "2. Ask for an itemized bill — charges often 'disappear' when you request details.",
-                            "3. Negotiate! Hospitals routinely reduce bills by 20-50%.",
-                            "4. Ask about financial assistance programs (most hospitals have them).",
-                            "5. Set up a payment plan (usually 0% interest)."
-                        ]
-                    },
-                    {
-                        title: 'The Rebuilding Playbook',
-                        content: [
-                            "After the crisis passes, rebuild methodically:",
-                            "",
-                            "**Phase 1 — Stabilize (Month 1-2):**",
-                            "• Create a bare-bones budget (essentials only)",
-                            "• Stop all non-essential subscriptions",
-                            "• Build a mini emergency fund ($500-$1,000)",
-                            "",
-                            "**Phase 2 — Recover (Month 3-6):**",
-                            "• Resume minimum debt payments",
-                            "• Rebuild emergency fund to 1 month of expenses",
-                            "• Start investing again (even $25/month matters)",
-                            "",
-                            "**Phase 3 — Strengthen (Month 6+):**",
-                            "• Aggressively rebuild to 3-6 months reserves",
-                            "• Review and update insurance coverage",
-                            "• Create systems to prevent future crises",
-                            "",
-                            "**Remember**: Financial setbacks are setbacks, not endings. Most wealthy people have faced multiple financial crises. The difference is they rebuilt each time."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-15-4',
-                title: 'Building Multiple Income Streams',
-                description: 'Don\'t put all your eggs in one paycheck.',
-                xpReward: 40,
-                screens: [
-                    {
-                        title: 'Why One Income Is Risky',
-                        content: [
-                            "Relying on a single income source is like owning just one stock — all your risk is concentrated.",
-                            "",
-                            "**The average millionaire has 7 income streams.** You don't need 7, but having 2-3 dramatically improves your financial resilience.",
-                            "",
-                            "**Types of income:**",
-                            "• **Active income**: Trading time for money (your job, freelancing, consulting).",
-                            "• **Portfolio income**: Returns from investments (dividends, capital gains).",
-                            "• **Passive income**: Money earned with minimal ongoing effort (rental income, royalties, digital products).",
-                            "",
-                            "True 'passive' income usually requires significant upfront work or capital. But the payoff is income that doesn't stop when you stop working."
-                        ]
-                    },
-                    {
-                        title: 'Realistic Side Income Ideas',
-                        content: [
-                            "**Low Barrier (start this week):**",
-                            "• Freelancing your existing skills (writing, design, coding, tutoring)",
-                            "• Selling unused items (eBay, Facebook Marketplace)",
-                            "• Pet sitting / dog walking (Rover, Wag)",
-                            "• Delivery driving (in a pinch, but low ROI long-term)",
-                            "",
-                            "**Medium Effort (build over months):**",
-                            "• Creating and selling digital products (templates, courses, ebooks)",
-                            "• Starting a niche blog or YouTube channel",
-                            "• Consulting in your area of expertise",
-                            "• Reselling/arbitrage (buy low at clearance, sell on Amazon)",
-                            "",
-                            "**Capital Required (invest to earn):**",
-                            "• Dividend-paying index funds ($100+ invested → regular payouts)",
-                            "• Real estate (house hacking: rent out spare rooms)",
-                            "• REITs (Real Estate Investment Trusts — like a real estate ETF)",
-                            "",
-                            "**The key**: Pick ONE side income and give it 6 months of consistent effort before judging results. Most people quit too early."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            }
-        ]
-    },
-    {
-        id: 'module-16',
-        title: 'The Fed, Rates, and the Real Economy',
-        description: 'Learn how policy rates move mortgages, car loans, credit cards, and Treasury yields.',
-        xpReward: 175,
-        lessons: [
-            {
-                id: 'lesson-16-1',
-                title: 'What the Fed Actually Controls',
-                description: 'The federal funds rate, the dual mandate, and the policy toolkit.',
-                xpReward: 35,
-                screens: [
-                    {
-                        title: 'The Fed in Plain English',
-                        content: [
-                            "The Federal Reserve is the U.S. central bank. Its two legal goals are called the **dual mandate**:",
-                            "• Maximum employment",
-                            "• Stable prices (low, predictable inflation)",
-                            "",
-                            "The Fed does NOT set your mortgage rate directly.",
-                            "What it does set is the **price of short-term money** in the banking system, primarily through its target for the federal funds rate."
-                        ]
-                    },
-                    {
-                        title: 'How Policy Decisions Are Made',
-                        content: [
-                            "The Federal Open Market Committee (FOMC) meets regularly to decide whether to raise, hold, or cut rates.",
-                            "",
-                            "They watch:",
-                            "• Inflation data (CPI, PCE)",
-                            "• Labor market data (jobs, wages, unemployment)",
-                            "• Financial conditions (credit availability, market stress)",
-                            "",
-                            "In modern operations, the Fed also uses tools like **interest on reserve balances (IORB)** and **open market operations** to keep short rates near its target."
-                        ]
-                    },
-                    {
-                        title: 'Why This Hits Your Wallet',
-                        content: [
-                            "When the policy rate rises, borrowing gets more expensive across the economy:",
-                            "• Credit cards reprice quickly",
-                            "• Auto loans and new mortgages get more expensive",
-                            "• Business loans tighten",
-                            "",
-                            "When policy rates fall, the opposite tends to happen.",
-                            "",
-                            "Your job is to understand where you have **variable-rate risk** and how to protect cash flow before your payments jump."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-16-2',
-                title: 'From Fed Rate to Mortgage, Auto, and Card APRs',
-                description: 'How monetary policy passes through to household debt.',
-                xpReward: 40,
-                screens: [
-                    {
-                        title: 'The Transmission Chain',
-                        content: [
-                            "A simple chain looks like this:",
-                            "**Fed policy rate -> money-market rates -> bank funding costs -> consumer loan rates**",
-                            "",
-                            "Different products move at different speeds:",
-                            "• **Credit cards**: often reprice fastest",
-                            "• **Auto loans**: reset with market conditions for new loans",
-                            "• **Fixed mortgages**: tied more to longer-term Treasury yields than overnight rates",
-                            "",
-                            "Translation: not all debt reacts the same way to a Fed hike."
-                        ]
-                    },
-                    {
-                        title: 'Mortgage Math That Matters',
-                        content: [
-                            "For a fixed mortgage, your payment is locked after closing.",
-                            "For an ARM, your payment can reset higher later.",
-                            "",
-                            "Even a 1% rate difference can add large lifetime cost.",
-                            "Example: a $350,000 loan at 6% vs 7% can mean hundreds more per month and tens of thousands more in total interest.",
-                            "",
-                            "Key habit: shop rate + points + fees together. A 'lower rate' with high fees can still be worse."
-                        ]
-                    },
-                    {
-                        title: 'Auto Loans and Credit Cards',
-                        content: [
-                            "Auto loans are usually fixed for that loan term, but new-car financing offers rise/fall with market rates and credit conditions.",
-                            "",
-                            "Credit cards are usually variable APR tied to prime rate, so hikes can hit quickly.",
-                            "",
-                            "High-impact actions:",
-                            "• Attack variable-rate balances first",
-                            "• Request APR reductions with issuers",
-                            "• Refinance auto debt only when total cost improves after fees",
-                            "• Avoid stretching loan terms just to lower monthly payments"
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-16-3',
-                title: 'Treasury Bills, Bond Yields, and Government Debt',
-                description: 'How rates affect Treasury yields and federal interest costs.',
-                xpReward: 45,
-                screens: [
-                    {
-                        title: 'Why T-Bills Matter',
-                        content: [
-                            "U.S. Treasury bills are short-term government debt (typically 4 to 52 weeks).",
-                            "",
-                            "Their yields are strongly influenced by Fed policy and money-market expectations.",
-                            "As short rates rise, T-bill yields usually rise too; when rates fall, yields often decline.",
-                            "",
-                            "For savers, T-bills can be a low-risk parking spot for cash with competitive yield."
-                        ]
-                    },
-                    {
-                        title: 'Yield Curve Basics',
-                        content: [
-                            "The **yield curve** plots yields across maturities (3-month, 2-year, 10-year, etc.).",
-                            "",
-                            "Normal curve: long-term yields > short-term yields.",
-                            "Inverted curve: short-term yields > long-term yields, often signaling slower growth expectations.",
-                            "",
-                            "Household relevance:",
-                            "• Mortgage rates lean on longer-term yields",
-                            "• Savings products react more to short-term yields",
-                            "• Refinance timing depends on where your rate sits vs current long-term rates"
-                        ]
-                    },
-                    {
-                        title: 'Federal Debt Service and You',
-                        content: [
-                            "When Treasury yields rise, new government borrowing becomes more expensive.",
-                            "As old debt rolls over at higher rates, total federal interest expense rises.",
-                            "",
-                            "That doesn't create an immediate household bill, but it can shape future policy choices:",
-                            "• Taxes and spending tradeoffs",
-                            "• Fiscal room during recessions",
-                            "• Political pressure around deficits",
-                            "",
-                            "Macro takeaway: rates don't just change personal loans; they also change the government's financing burden."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-16-4',
-                title: 'A Household Playbook for Rate Cycles',
-                description: 'What to do when rates are rising, high, or falling.',
-                xpReward: 55,
-                screens: [
-                    {
-                        title: 'If Rates Are Rising',
-                        content: [
-                            "Priority is protecting monthly cash flow.",
-                            "",
-                            "Checklist:",
-                            "• Pay down variable-rate debt aggressively",
-                            "• Build or top up emergency savings",
-                            "• Delay non-essential financed purchases",
-                            "• Stress-test your budget with +10% higher required debt payments",
-                            "",
-                            "Goal: reduce exposure before resets and repricing hit."
-                        ]
-                    },
-                    {
-                        title: 'If Rates Are High but Stable',
-                        content: [
-                            "This is optimization mode.",
-                            "",
-                            "Checklist:",
-                            "• Lock in guaranteed returns on idle cash (HYSA, T-bills)",
-                            "• Compare refinance offers carefully (APR + fees + break-even months)",
-                            "• Keep investing systematically so you don't freeze waiting for perfect timing",
-                            "• Avoid 'payment-only' decisions that increase total interest cost"
-                        ]
-                    },
-                    {
-                        title: 'If Rates Are Falling',
-                        content: [
-                            "Falling rates create opportunities, but not every refinance is good.",
-                            "",
-                            "Use a break-even rule:",
-                            "Break-even months = total refinance costs / monthly savings",
-                            "",
-                            "If you won't stay in the loan long enough to pass break-even, skip it.",
-                            "",
-                            "Final framework: build a simple debt dashboard with balance, rate type (fixed/variable), APR, and monthly payment so you can act quickly when rate conditions change."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-16-5',
-                title: 'US Debt Crisis',
-                description: 'Compare U.S. debt levels globally, review bipartisan overspending, and map out possible outcomes.',
-                xpReward: 55,
-                screens: [
-                    {
-                        title: 'Debt Is a Long-Running, Bipartisan Issue',
-                        content: [
-                            "U.S. debt did not appear overnight and it is not a one-party problem.",
-                            "",
-                            "Across Republican and Democratic administrations, the federal government has run repeated deficits.",
-                            "",
-                            "Wars, recessions, tax cuts, demographic spending pressure, stimulus programs, and rising interest costs have all contributed."
-                        ]
-                    },
-                    {
-                        title: 'How the U.S. Compares Globally',
-                        content: [
-                            "The dashboard compares U.S. debt-to-GDP to major peers.",
-                            "",
-                            "At a high level, the U.S. debt burden is elevated, lower than Japan in this comparison, and above some other advanced economies.",
-                            "",
-                            "Interpretation matters: debt levels, borrowing currency strength, growth, and interest costs all shape risk."
-                        ]
-                    },
-                    {
-                        title: 'Three Possible Paths From Overspending',
-                        content: [
-                            "1) **Grow the economy faster than debt**",
-                            "Higher nominal GDP can reduce debt burden relative to output.",
-                            "",
-                            "2) **Lower rates / lower borrowing costs**",
-                            "If rates fall, debt-service pressure on tax revenue can ease.",
-                            "",
-                            "3) **Default on debt obligations**",
-                            "This is the worst-case path and would likely trigger major market and economic disruption."
-                        ]
-                    },
-                    {
-                        title: 'What to Watch as a Household',
-                        content: [
-                            "Debt headlines matter because they can influence taxes, rates, inflation pressure, and public spending choices.",
-                            "",
-                            "Practical moves:",
-                            "• Keep your own debt manageable",
-                            "• Build emergency reserves",
-                            "• Avoid relying on one policy outcome",
-                            "• Focus on resilient long-term plans"
-                        ]
-                    }
-                ],
-                type: 'interactive',
-                widget: 'USDebtCrisisChart'
-            }
-        ]
-    },
-    {
-        id: 'module-17',
-        title: 'Wealth & Impact',
-        description: 'Giving, legacy, and the economics of philanthropy.',
+        id: 'module-5',
+        title: 'Insurance Essentials',
+        description: 'Protect yourself without overpaying.',
         xpReward: 100,
         lessons: [
             {
-                id: 'lesson-17-1',
-                title: 'Giving and Legacy',
-                description: 'Understand non-profits, Donor Advised Funds, and how to maximize your charitable impact.',
-                xpReward: 40,
-                screens: [
-                    {
-                        title: 'The Scale of Giving',
-                        content: [
-                            "Generosity has a massive economic footprint. In the United States, charitable giving consistently hovers around **2% of the total Gross Domestic Product (GDP)** every single year.",
-                            "",
-                            "This equates to hundreds of billions of dollars voluntarily transferred from private citizens and corporations to organizations trying to solve problems.",
-                            "",
-                            "This drive to give isn't just modern philanthropy. Many religions and cultures have built-in systems of giving. For example, **tithing** is the practice of giving 10% of one's income to a religious or charitable organization—a standard that dates back millennia."
-                        ]
-                    },
-                    {
-                        title: 'How Non-Profits Work',
-                        content: [
-                            "When you donate, your money usually goes to a **501(c)(3) non-profit organization**.",
-                            "",
-                            "\"Non-profit\" doesn't mean no one gets paid. It means the organization has no *owners* or *shareholders* who receive the profits. Any surplus revenue MUST be reinvested back into the organization's mission.",
-                            "",
-                            "A healthy non-profit needs to spend money on:",
-                            "• **Program Expenses:** The actual goods and services supporting the mission.",
-                            "• **Administrative & Overhead:** Paying staff, renting office space, running the accounting.",
-                            "• **Fundraising:** Marketing to bring in the next round of donations.",
-                            "",
-                            "While you want overhead to be reasonable, starving a non-profit of administrative funds prevents them from hiring talented leaders to actually solve the problem."
-                        ]
-                    },
-                    {
-                        title: 'Donor Advised Funds (DAFs)',
-                        content: [
-                            "For those looking to structure their giving, **Donor Advised Funds (DAFs)** have become incredibly popular.",
-                            "",
-                            "Think of a DAF like a personal charitable savings account:",
-                            "1) You contribute cash or stock into the DAF and get an **immediate tax deduction** for that year.",
-                            "2) The money in the DAF is invested and grows tax-free.",
-                            "3) Whenever you're ready (months or years later), you \"advise\" the fund to send grants out to your favorite charities.",
-                            "",
-                            "They are beloved by donors because they simplify giving (one tax receipt) and allow you to separate the *timing* of the tax benefit from the *timing* of the actual charitable payout."
-                        ]
-                    },
-                    {
-                        title: 'The Tax Angle for the Wealthy',
-                        content: [
-                            "While most people give purely out of generosity, the wealthy pair giving with a highly efficient tax strategy.",
-                            "",
-                            "Instead of donating cash, wealthy individuals often donate **highly appreciated assets** (like stocks that have gone up 300% in value) directly to a charity or a DAF.",
-                            "",
-                            "By doing this, they score a double benefit:",
-                            "• They get an income tax deduction for the *full current market value* of the stock.",
-                            "• They **never have to pay capital gains tax** on the 300% growth.",
-                            "",
-                            "The charity gets the full value to sell tax-free, and the donor wiped out a massive tax liability. It's a win-win."
-                        ]
-                    },
-                    {
-                        title: 'Effective Altruism',
-                        content: [
-                            "With thousands of charities asking for money, how do you know yours is actually helping?",
-                            "",
-                            "A movement called **Effective Altruism** focuses on using evidence and careful reasoning to figure out how to benefit others as much as possible.",
-                            "",
-                            "Organizations like **GiveWell** spend thousands of hours researching charities to find the ones that save or improve lives the most per dollar spent.",
-                            "",
-                            "Instead of giving based on an emotional commercial, effective altruists seek out independently verified data—often discovering that a dollar sent to fund malaria medication or vitamin A supplements overseas prevents far more suffering than a dollar spent locally."
-                        ]
-                    }
+                id: 'lesson-5-1',
+                title: 'Health Insurance: Decoding the Jargon',
+                description: 'Premiums, deductibles, and copays explained.',
+                xpReward: 35,
+                content: [
+                    "**PREMIUM**: The amount you pay every month, whether you use the insurance or not.",
+                    "**DEDUCTIBLE**: The amount you pay out-of-pocket BEFORE insurance starts covering costs.",
+                    "**COPAY**: A fixed amount you pay for a service (e.g., $20 for a doctor visit).",
+                    "**OUT-OF-POCKET MAXIMUM**: The most you'll ever pay in a year. After this, insurance covers 100%.",
+                    "",
+                    "Generally: High Premium = Low Deductible. Low Premium = High Deductible.",
+                    "If you're young and healthy, a high-deductible plan might save you money.",
+                    "If you have regular medical needs, a low-deductible plan could be better."
+                ],
+                type: 'interactive',
+                widget: 'InsuranceCompare'
+            },
+            {
+                id: 'lesson-5-2',
+                title: 'Auto Insurance: What You Actually Need',
+                description: 'Don\'t overpay for coverage you don\'t need.',
+                xpReward: 25,
+                content: [
+                    "LIABILITY: Covers damage YOU cause to others. Required by law in most states.",
+                    "COLLISION: Covers damage to YOUR car from accidents.",
+                    "COMPREHENSIVE: Covers theft, weather damage, hitting an animal, etc.",
+                    "",
+                    "Pro tip: If your car is old and not worth much, you might skip collision/comprehensive.",
+                    "The payout from insurance can't exceed the car's value.",
+                    "",
+                    "DEDUCTIBLE matters here too! Higher deductible = lower premium."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-5-3',
+                title: 'Home Insurance: Protecting Your Castle',
+                description: 'What does your policy actually cover?',
+                xpReward: 30,
+                content: [
+                    "**Homeowner's Insurance** protects your property and belongings from damage, theft, and liability claims.",
+                    "",
+                    "**DWELLING COVERAGE**: Pays to rebuild or repair your home's structure if damaged by covered events (fire, storms, vandalism).",
+                    "**PERSONAL PROPERTY**: Covers your belongings—furniture, electronics, clothes—if stolen or destroyed.",
+                    "**LIABILITY PROTECTION**: Covers legal bills if someone is injured on your property and sues you.",
+                    "",
+                    "**What's NOT covered?** Floods and earthquakes require separate policies. Standard policies also exclude 'maintenance issues' like mold or pest damage.",
+                    "",
+                    "Pro tip: Create a **home inventory** (photos/video of your belongings). If disaster strikes, you'll have proof for your claim."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-5-4',
+                title: 'Life Insurance: Planning for the Unexpected',
+                description: 'Protect your loved ones financially.',
+                xpReward: 35,
+                content: [
+                    "**Life Insurance** pays a lump sum to your beneficiaries (usually family) if you pass away.",
+                    "",
+                    "**TERM LIFE**: Coverage for a set period (e.g., 20 years). Cheapest option. If you outlive the term, the policy expires worthless.",
+                    "**WHOLE LIFE**: Permanent coverage that also builds 'cash value' over time. Much more expensive than term.",
+                    "",
+                    "**Who needs it?** Anyone with dependents (spouse, children) who rely on your income. If you're single with no dependents, you likely don't need it yet.",
+                    "",
+                    "**Rule of Thumb**: Get coverage worth 10-12x your annual income. A $60k earner should aim for $600k-$720k in coverage.",
+                    "",
+                    "Pro tip: Buy term insurance when you're young and healthy—premiums are locked in and stay low."
                 ],
                 type: 'reading'
             }
         ]
     },
     {
-        id: 'module-kids-finances',
-        title: 'Investing in Your Kids',
-        description: 'Secure your child\'s financial future through smart educational investments and tax-advantaged accounts.',
-        xpReward: 120,
+        id: 'module-4',
+        title: 'Big Purchases: Cars',
+        description: 'Make smart decisions on your biggest expenses.',
+        xpReward: 100,
         lessons: [
             {
-                id: 'lesson-kids-1',
-                title: 'ROI of Education: Public vs Private, Degrees vs Trades',
-                description: 'A high-level look at the return on investment of different educational paths for your children.',
+                id: 'lesson-4-1',
+                title: 'Buy vs. Lease vs. Cash: The Great Debate',
+                description: 'Understand the true cost of car ownership.',
                 xpReward: 35,
-                screens: [
-                    {
-                        title: 'First Things First: Secure Your Own Oxygen Mask',
-                        content: [
-                            "**Before you invest a single dollar in your child's future, make sure your own financial house is in order.**",
-                            "",
-                            "Just like on an airplane, you put your own oxygen mask on first. That means:",
-                            "• Your own retirement accounts (401k, Roth IRA) are being funded consistently.",
-                            "• You have an emergency fund covering 3-6 months of expenses.",
-                            "• High-interest debt (credit cards, personal loans) is paid off or under control.",
-                            "",
-                            "Why? Because your children can borrow for college—but you **cannot** borrow for retirement. If you sacrifice your retirement to fund their education, you may become a financial burden on them later. The best gift you can give your kids is parents who are financially stable.",
-                            "",
-                            "Once your foundation is solid, THEN it's time to build for your kids. Let's explore how."
-                        ]
-                    },
-                    {
-                        title: 'Public vs Private K-12: The Real Math',
-                        content: [
-                            "The average cost of **private K-12 school** in the U.S. is roughly **$12,000-$16,000/year** for elementary and **$16,000-$25,000+/year** for high school.",
-                            "",
-                            "Over 13 years (K-12), a family could spend **$150,000 to $300,000+** on private school tuition alone.",
-                            "",
-                            "Now consider the alternative: what if that money were **invested** instead?",
-                            "",
-                            "If you invested $15,000/year for 13 years at an average 8% annual return, you'd have roughly **$340,000** at the end.",
-                            "",
-                            "**Public school** is funded by your tax dollars and is free at the point of entry. Many public schools deliver excellent outcomes, especially in well-funded districts.",
-                            "",
-                            "The ROI question isn't 'Is private school better?' It's: **'Is private school $150,000-$300,000 better?'** For most families, the data suggests the answer is nuanced. A child's success depends far more on parental involvement, reading at home, and mentorship than on the name on the school building."
-                        ]
-                    },
-                    {
-                        title: 'Bachelor\'s Degree vs The Trades',
-                        content: [
-                            "A **4-year bachelor's degree** costs an average of **$100,000-$200,000+** when you factor in tuition, room, board, and fees. On top of that, you lose **4 years of potential earnings**.",
-                            "",
-                            "Meanwhile, **trade school** (electrician, plumber, welder, HVAC tech) typically costs **$5,000-$15,000/year** for 1-2 years, and many programs offer **paid apprenticeships** where you earn while you learn.",
-                            "",
-                            "By age 22, a tradesperson may have:",
-                            "• **4+ years of work experience**",
-                            "• **$0 in student debt**",
-                            "• **$50,000-$80,000+ annual income**",
-                            "",
-                            "A college graduate at 22 may have:",
-                            "• **$30,000-$100,000+ in student loans**",
-                            "• **No work experience in their field**",
-                            "• **Entry-level salary of $40,000-$55,000**",
-                            "",
-                            "Over a lifetime, college grads earn roughly **$1.2 million more** on average—but averages hide enormous variation. An electrician earning $85K with no debt may build more wealth than a communications major earning $45K with $80K in loans.",
-                            "",
-                            "The right path depends on the individual child's strengths, interests, and the specific programs available."
-                        ]
-                    },
-                    {
-                        title: 'Master\'s Programs: When Do They Pay Off?',
-                        content: [
-                            "A **master's degree** adds another **$30,000-$120,000** in costs and 1-3 years of time.",
-                            "",
-                            "**High-ROI master's programs:**",
-                            "• MBA from a top-20 school (avg salary jump of $50,000+/year)",
-                            "• Computer Science or Engineering MS (salary premiums of $15,000-$30,000+)",
-                            "• Nurse Practitioner / Physician Assistant (required for the role, high demand)",
-                            "",
-                            "**Low-ROI master's programs (on average):**",
-                            "• General humanities MA programs",
-                            "• Degrees from unaccredited or low-ranked programs",
-                            "• Any program funded entirely by high-interest private loans",
-                            "",
-                            "The key question to ask: **'Will the salary increase I get from this degree pay back the cost within 3-5 years?'**",
-                            "",
-                            "If the answer is yes, it's likely a smart investment. If the math doesn't work, your child may be better off gaining work experience and letting an employer pay for the degree later."
-                        ]
-                    },
-                    {
-                        title: 'The Bottom Line on Education ROI',
-                        content: [
-                            "Education is one of the largest investments a family will ever make. Treat it like one.",
-                            "",
-                            "**Key takeaways:**",
-                            "• Private K-12 can be valuable, but run the numbers against investing that tuition money.",
-                            "• A bachelor's degree is not automatically the best path—trades offer excellent ROI for many careers.",
-                            "• Master's programs should be evaluated on a cold cost-vs-salary-increase basis.",
-                            "• The most expensive option is not always the best option.",
-                            "",
-                            "Teach your children to think about education as an **investment with a return**, not just a checkbox on the path to adulthood."
-                        ]
-                    }
+                story: {
+                    character: 'Alex',
+                    scenario: "Alex just got their first job and needs a car. They have $10,000 saved. A new car costs $30,000. What should Alex do?"
+                },
+                content: [
+                    "OPTION 1: PAY CASH",
+                    "Pros: No monthly payments, no interest, you own the car outright.",
+                    "Cons: Ties up a lot of money that could be invested instead.",
+                    "",
+                    "OPTION 2: FINANCE (Loan)",
+                    "Pros: Keep your cash invested, build credit history.",
+                    "Cons: Pay interest over time, risk of being 'underwater' (owing more than the car is worth).",
+                    "",
+                    "OPTION 3: LEASE",
+                    "Pros: Lower monthly payments, always drive a newer car.",
+                    "Cons: Never own the car, mileage limits, fees for wear and tear.",
+                    "",
+                    "Use the calculator to compare the TRUE COST of each option over 5 years."
                 ],
-                type: 'reading'
+                type: 'interactive',
+                widget: 'CarCalculator'
             },
             {
-                id: 'lesson-kids-2',
-                title: 'The Power of Starting at Birth',
-                description: 'See how a small monthly investment from age 0 to 18 can transform your child\'s financial future.',
-                xpReward: 40,
+                id: 'lesson-4-2',
+                title: 'Opportunity Cost: The Hidden Factor',
+                description: 'What else could your money be doing?',
+                xpReward: 30,
                 screens: [
                     {
-                        title: 'Small Amounts, Massive Results',
+                        title: 'Cars Depreciate. Investments Appreciate.',
                         content: [
-                            "What if you set aside just **$50 per month** for your child from the day they were born?",
+                            "Here is the core problem with spending big on a car: cars lose value while investments gain value. That gap is your **opportunity cost**.",
                             "",
-                            "At an average annual return of 8%:",
-                            "• **$50/month for 18 years** = ~**$24,000** (vs $10,800 if you just saved cash)",
-                            "• **$100/month for 18 years** = ~**$48,000**",
-                            "• **$200/month for 18 years** = ~**$96,000**",
-                            "• **$300/month for 18 years** = ~**$144,000**",
+                            "A new car loses roughly **20% of its value in the first year** and about **60% over five years**.",
                             "",
-                            "That $48,000 from just $100/month could cover **two full years** of in-state public university tuition, dramatically reducing or eliminating the need for student loans.",
+                            "That means a $30,000 new car is worth roughly $12,000 after 5 years. You lost $18,000 in value just by owning it.",
                             "",
-                            "The secret isn't a large paycheck. It's **time + consistency + compound growth**."
+                            "Meanwhile, $30,000 invested at a 10% average return would grow to roughly $48,000 over the same 5 years.",
+                            "",
+                            "The total gap: your $30,000 turned into $12,000 (car) instead of $48,000 (investment). That is a **$36,000 swing** in just five years."
                         ]
                     },
                     {
-                        title: 'Relieving the Burden of Student Loans',
+                        title: 'The Used Car Advantage',
                         content: [
-                            "The average student loan debt for a bachelor's degree is roughly **$30,000-$40,000**.",
+                            "Because depreciation is steepest in the first 2-3 years, buying a **2-3 year old used car** lets someone else absorb the biggest loss.",
                             "",
-                            "Monthly payments on $35,000 in student loans at 5.5% over 10 years = roughly **$380/month** for a decade after graduation.",
+                            "Example: A car with an MSRP of $35,000 might sell for $22,000 at 3 years old with 30,000 miles. Same car, most of its useful life ahead of it, $13,000 cheaper.",
                             "",
-                            "Now imagine if a parent had invested **$100/month** from birth. That ~$48,000 nest egg could:",
-                            "• **Eliminate** the need for student loans entirely at many state schools",
-                            "• **Cut loan amounts in half** at more expensive institutions",
-                            "• **Cover living expenses** so the student can focus on academics instead of working 30+ hours/week",
+                            "If you invest that $13,000 difference instead of spending it:",
+                            "• After 10 years at 10%: ~$33,700",
+                            "• After 20 years at 10%: ~$87,500",
+                            "• After 30 years at 10%: ~$226,800",
                             "",
-                            "Instead of your child starting adulthood $35,000 in the hole, they start with a **head start**. That changes the trajectory of their entire financial life."
+                            "One car purchase decision, made wisely, can be worth a quarter-million dollars over your lifetime."
                         ]
                     },
                     {
-                        title: 'The Compounding Head Start',
+                        title: 'The Real Cost per Year',
                         content: [
-                            "Here's what makes this so powerful: if your child doesn't need all the money for school, the remainder keeps compounding.",
+                            "A better way to compare vehicles is **total cost per year of ownership**—not sticker price or monthly payment.",
                             "",
-                            "Let's say you invested $100/month for 18 years (~$48,000 balance), and your child only uses $20,000 for school. The remaining **$28,000** left invested at 8% could grow to:",
+                            "Total cost includes:",
+                            "• Purchase price minus resale value (depreciation)",
+                            "• Interest paid on any loan",
+                            "• Insurance premiums",
+                            "• Fuel and maintenance",
+                            "• Opportunity cost of money tied up in the car",
                             "",
-                            "• **$60,000** by age 28",
-                            "• **$130,000** by age 38",
-                            "• **$600,000+** by age 58",
+                            "A $15,000 used car you drive for 8 years may cost $3,000/year total. A $40,000 new car you trade in after 4 years may cost $12,000/year total. The 'cheap' monthly payment on the new car hides the real math.",
                             "",
-                            "You didn't just help with college. You potentially seeded your child's **retirement fund** with a gift that cost you less than a daily coffee.",
-                            "",
-                            "This is generational wealth in action—not from a trust fund, but from **consistent small actions over time**."
-                        ]
-                    },
-                    {
-                        title: 'Getting Started: Practical Steps',
-                        content: [
-                            "You don't need to be wealthy to do this. Here's how to start:",
-                            "",
-                            "1) **Open a dedicated account** (a 529 plan or custodial brokerage account—we'll cover these in the next lesson).",
-                            "2) **Set up automatic monthly transfers** of whatever you can afford—even $25/month matters.",
-                            "3) **Invest in a diversified, low-cost index fund** (like a total stock market ETF).",
-                            "4) **Increase contributions** when you get raises, tax refunds, or birthday money from family.",
-                            "5) **Don't touch it.** Let compound interest do the heavy lifting.",
-                            "",
-                            "Remember: the best time to plant a tree was 20 years ago. The second-best time is today."
+                            "Use the calculator to compare what your car money could be doing if it were invested instead."
                         ]
                     }
                 ],
@@ -3657,1479 +2984,557 @@ export const curriculum = [
                 widget: 'CompoundInterest'
             },
             {
-                id: 'lesson-kids-3',
-                title: '529 Plans, College Savings & Proposed Trump Accounts',
-                description: 'Tax-advantaged ways to save for your child\'s education and financial future.',
-                xpReward: 45,
+                id: 'lesson-4-3',
+                title: 'The "Lower Monthly Payment" Sales Tactic',
+                description: 'How longer loan terms can quietly cost you thousands.',
+                xpReward: 35,
                 screens: [
                     {
-                        title: 'What Is a 529 Plan?',
+                        title: 'The Pitch You Will Hear',
                         content: [
-                            "A **529 Plan** is a tax-advantaged savings account specifically designed for education expenses.",
+                            "In dealerships and loan offices, one tactic is very common:",
                             "",
-                            "Key benefits:",
-                            "• **Tax-free growth**: Your investments grow without being taxed.",
-                            "• **Tax-free withdrawals**: When used for qualified education expenses (tuition, books, room & board).",
-                            "• **State tax deductions**: Many states offer a tax deduction or credit for contributions.",
-                            "• **High contribution limits**: Most plans allow total contributions of $300,000+ over the life of the account.",
+                            "\"Don't worry about total cost, we can get your payment down to what you want.\"",
                             "",
-                            "Unlike a retirement account, **anyone** can contribute—parents, grandparents, aunts, uncles, friends. Instead of toys for birthdays, ask family to contribute to the 529. Those gifts compound for years."
+                            "They often lower the monthly payment by stretching the loan from 48 or 60 months out to 72 or 84 months.",
+                            "",
+                            "Lower payment does NOT automatically mean a better deal."
                         ]
                     },
                     {
-                        title: '529 Flexibility: It\'s Not Just for College Anymore',
+                        title: 'Why It Works on Buyers',
                         content: [
-                            "529 plans have expanded significantly in recent years:",
+                            "Most people shop by monthly payment because it feels affordable.",
                             "",
-                            "• **K-12 tuition**: Up to $10,000/year can be used for private elementary and high school.",
-                            "• **Trade and vocational schools**: Qualified programs are covered.",
-                            "• **Apprenticeship programs**: Registered apprenticeships count as qualified expenses.",
-                            "• **Student loan repayment**: Up to $10,000 lifetime can be used to pay off student loans.",
+                            "But payment-focused shopping hides:",
+                            "• More months of interest",
+                            "• Higher total amount paid",
+                            "• Slower equity build",
+                            "• Greater chance of being underwater",
                             "",
-                            "**NEW (Starting 2024):** Unused 529 funds can now be **rolled into a Roth IRA** for the beneficiary (subject to rules like a 15-year account minimum and annual Roth contribution limits).",
-                            "",
-                            "This eliminates the old fear of 'What if my kid doesn't go to college?' Now, unused education savings can become **tax-free retirement savings**."
+                            "You can feel short-term relief while creating long-term cost."
                         ]
                     },
                     {
-                        title: 'Preparing Children for College Expenses',
+                        title: 'The Real Comparison',
                         content: [
-                            "Beyond saving money, prepare your child to **understand** the financial side of college:",
+                            "Always compare offers using all three numbers:",
+                            "1) Monthly payment",
+                            "2) Total interest paid",
+                            "3) Total paid over full term",
                             "",
-                            "**Conversations to have before they apply:**",
-                            "• 'Here's what we've saved and what we can contribute.'",
-                            "• 'Here's what student loans actually cost over 10-20 years.'",
-                            "• 'Let's compare the total cost of different schools vs. expected starting salaries.'",
+                            "Use the simulator to compare the same loan amount at 48, 60, 72, and 84 months.",
                             "",
-                            "**Smart strategies:**",
-                            "• Apply for FAFSA every year—even if you think you won't qualify.",
-                            "• Target schools where your child will be in the top 25% of applicants (they'll get better aid packages).",
-                            "• Consider community college for the first 2 years, then transfer to a 4-year school.",
-                            "• Have your child work part-time or do co-ops—not just for money, but for résumé building.",
-                            "",
-                            "The goal is a child who sees college as a **strategic investment**, not an entitlement."
+                            "Then decide if the monthly savings are worth the extra interest."
                         ]
                     },
                     {
-                        title: 'Proposed Trump Accounts: Free Kickstarter Money',
+                        title: 'Protect Yourself',
                         content: [
-                            "In recent years, there has been a proposal for government-seeded investment accounts for children, sometimes referred to as **'Trump Accounts'** or similar initiatives.",
+                            "Before signing, ask the seller/lender:",
+                            "• Show me the out-the-door price",
+                            "• Show me total interest by term length",
+                            "• Show me any add-ons rolled into the loan",
                             "",
-                            "The basic concept:",
-                            "• The government deposits a set amount (proposals have ranged from **$1,000 to $5,000**) into an investment account for every child born in the U.S.",
-                            "• The money is invested and grows tax-free until the child reaches adulthood.",
-                            "• Funds could potentially be used for education, homeownership, or starting a business.",
-                            "",
-                            "**A note on the politics:**",
-                            "These types of proposals often carry political branding, and that can make people dismiss them based on party affiliation. **That is a mistake.**",
-                            "",
-                            "Regardless of who proposes it or what it's called, if the government is offering to put **free seed money** into a compounding investment account for your child, you should take it. Period.",
-                            "",
-                            "Political feelings should never override financial common sense. **Free money that compounds for 18+ years is free money that compounds for 18+ years**, no matter whose name is on the policy."
-                        ]
-                    },
-                    {
-                        title: 'Putting It All Together',
-                        content: [
-                            "Here's the action plan for investing in your kids:",
-                            "",
-                            "**Step 1: Secure your own finances first.** Fund your retirement, build your emergency fund, eliminate high-interest debt.",
-                            "",
-                            "**Step 2: Open a 529 Plan.** Start with whatever you can—even $25/month. Set it on autopilot.",
-                            "",
-                            "**Step 3: Enroll in any government-seeded programs** if and when they become available. Don't let politics leave money on the table.",
-                            "",
-                            "**Step 4: Have honest conversations** with your kids about the cost of education and the ROI of different paths.",
-                            "",
-                            "**Step 5: Let time do the work.** Small, consistent investments from birth can eliminate or dramatically reduce the burden of student loans and give your child a financial head start that lasts a lifetime.",
-                            "",
-                            "You don't need to be rich to build generational wealth. You just need to **start early and stay consistent**."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            }
-        ]
-    },
-    {
-        id: 'module-21',
-        title: 'Budgeting Systems & Cash-Flow Automation',
-        description: 'Build a personal cash-flow machine with recurring transfers, autopay guardrails, and zero-fee recurring investing workflows.',
-        xpReward: 130,
-        lessons: [
-            {
-                id: 'lesson-21-1',
-                title: 'Choose a Budget System That Survives Real Life',
-                description: 'Compare 50/30/20, zero-based, and pay-yourself-first systems and choose one that fits your income pattern.',
-                xpReward: 40,
-                story: {
-                    character: 'Jared',
-                    scenario: 'Jared is a restaurant manager whose monthly pay swings with overtime and tips. He keeps rewriting his spreadsheet but still feels behind. He needs a budgeting system that works in both high-income and low-income months without restarting every time.'
-                },
-                screens: [
-                    {
-                        title: 'Why Most Budgets Fail',
-                        content: [
-                            "Budget failure is usually a system problem, not a discipline problem.",
-                            "",
-                            "Most people fail because their process is too rigid for real life: variable paychecks, irregular bills, and surprise expenses.",
-                            "",
-                            "You need a framework that is easy to run in 10-15 minutes each week."
-                        ]
-                    },
-                    {
-                        title: 'Three Practical Frameworks',
-                        content: [
-                            "1) **50/30/20**: Fast setup, good starting point, less precise.",
-                            "2) **Zero-based**: Every dollar gets a job, great control, higher maintenance.",
-                            "3) **Pay-yourself-first**: Automate saving/investing first, spend the rest intentionally.",
-                            "",
-                            "Rule of thumb:",
-                            "• Stable paycheck -> zero-based can work well.",
-                            "• Variable income -> pay-yourself-first + baseline expense plan is often easier.",
-                            "• Brand new to budgeting -> start with 50/30/20, then tighten later."
-                        ]
-                    },
-                    {
-                        title: 'Design Around a Baseline Month',
-                        content: [
-                            "For variable income, build your budget off your **low but realistic month**, not your best month.",
-                            "",
-                            "Split categories into:",
-                            "• **Core bills** (rent, utilities, groceries, insurance, minimum debt)",
-                            "• **Flex spending** (eating out, hobbies, upgrades)",
-                            "• **Future you** (emergency fund, investing, sinking funds)",
-                            "",
-                            "When income is above baseline, route the excess by rule instead of by emotion."
-                        ]
-                    },
-                    {
-                        title: 'One-Page Budget Rules',
-                        content: [
-                            "Write your system on one page:",
-                            "• Baseline income target",
-                            "• Core bills total",
-                            "• Weekly flex cap",
-                            "• Automatic transfer amounts",
-                            "• What happens when income is above or below baseline",
-                            "",
-                            "If your rules fit on one page, you will actually use them."
+                            "Rule: Choose the shortest term that fits your budget comfortably.",
+                            "If the payment is still too high, lower the purchase price instead of extending the term."
                         ]
                     }
                 ],
                 type: 'interactive',
-                widget: 'BudgetAllocator'
-            },
-            {
-                id: 'lesson-21-2',
-                title: 'Build Your Automation Stack',
-                description: 'Use direct-deposit splits, autopay tiers, and sinking funds to reduce money mistakes and decision fatigue.',
-                xpReward: 45,
-                story: {
-                    character: 'Camila',
-                    scenario: 'Camila and her partner both get paid on different schedules and keep missing due dates even though they earn enough. Late fees are eating their progress. They need a cash-flow system that runs automatically.'
-                },
-                screens: [
-                    {
-                        title: 'Automation Beats Willpower',
-                        content: [
-                            "Manual systems break when life gets busy.",
-                            "",
-                            "Automation turns your financial goals into default behavior — things that happen without you deciding each time. This removes dozens of weekly decisions and cuts down on avoidable mistakes."
-                        ]
-                    },
-                    {
-                        title: 'Account Architecture',
-                        content: [
-                            "A clean setup:",
-                            "• **Income Hub (checking)**: paychecks land here",
-                            "• **Bills Account**: fixed obligations and autopays",
-                            "• **Sinking Funds (savings buckets)**: annual and irregular costs",
-                            "• **Long-Term Investing**: recurring brokerage or retirement contributions",
-                            "",
-                            "Give each account a clear name based on its purpose (like 'Bills' or 'Travel Fund') so your transfer rules are easy to follow."
-                        ]
-                    },
-                    {
-                        title: 'Autopay Tiers',
-                        content: [
-                            "Tier 1: Non-negotiable bills (housing, insurance, utilities, minimum debt)",
-                            "Tier 2: Goal transfers (emergency fund, investing, debt acceleration)",
-                            "Tier 3: Lifestyle subscriptions and optional spending",
-                            "",
-                            "If cash gets tight, pause Tier 3 first, then Tier 2. Protect Tier 1."
-                        ]
-                    },
-                    {
-                        title: 'Sinking Funds Prevent Setback Cycles',
-                        content: [
-                            "Sinking funds convert known future costs into manageable monthly amounts.",
-                            "",
-                            "Examples:",
-                            "• Car repairs",
-                            "• Annual insurance premiums",
-                            "• Travel and holidays",
-                            "• Professional licenses",
-                            "",
-                            "Formula: target amount / months until due = monthly transfer."
-                        ]
-                    },
-                    {
-                        title: 'Weekly 10-Minute Automation Review',
-                        content: [
-                            "Once a week, check:",
-                            "• Upcoming autopays in next 7 days",
-                            "• Bills-account buffer",
-                            "• Failed or skipped transfers",
-                            "• Credit card utilization trend",
-                            "",
-                            "Automation works best with light supervision, not daily micromanagement."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-21-3',
-                title: 'The Zero-Fee Investing Shift and Why It Matters',
-                description: 'Understand how commission-free trading changed small recurring investing and why that benefits automated cash-flow plans.',
-                xpReward: 50,
-                story: {
-                    character: 'Renee',
-                    scenario: 'In 2012, Renee avoided investing because each trade felt like paying a toll. Years later she can automate small weekly buys with almost no transaction friction. She wants to understand what changed and how to use it responsibly.'
-                },
-                screens: [
-                    {
-                        title: 'Before vs After: Fee Friction',
-                        content: [
-                            "Before brokers began competing to lower fees in the 2010s, many charged $5-$10 or more per trade.",
-                            "",
-                            "A recurring $25 or $50 buy could lose a significant chunk just to trading costs.",
-                            "",
-                            "That friction made it impractical for beginners to automate small, frequent contributions."
-                        ]
-                    },
-                    {
-                        title: 'Pioneers and Industry Response',
-                        content: [
-                            "A major inflection point came when mobile-first platforms like **Robinhood** pushed commission-free U.S. stock and ETF trading into mainstream awareness.",
-                            "",
-                            "Large incumbents then cut fees aggressively. By the late 2010s, major platforms, including firms like **Fidelity** and **Chase/J.P. Morgan**, had normalized low- or zero-commission access for many self-directed investors.",
-                            "",
-                            "The result: recurring investing became practical for much smaller dollar amounts."
-                        ]
-                    },
-                    {
-                        title: 'Why This Helps Budget Automation',
-                        content: [
-                            "Zero-fee trading + fractional shares unlocked a powerful behavior loop:",
-                            "• Payday arrives",
-                            "• Rules-based transfer executes",
-                            "• Small recurring investment is placed automatically",
-                            "",
-                            "You no longer need to wait for a large lump sum to avoid fee drag.",
-                            "",
-                            "That consistency often matters more than trying to find the perfect entry price."
-                        ]
-                    },
-                    {
-                        title: 'Use the Advantage, Avoid New Risks',
-                        content: [
-                            "Lower fees removed one barrier, but they did not remove risk.",
-                            "",
-                            "Guardrails:",
-                            "• Automate diversified funds before speculative picks",
-                            "• Keep an emergency fund so you are not forced to sell",
-                            "• Do not confuse easy trading with easy profits",
-                            "• Review tax implications of frequent taxable trades"
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-21-4',
-                title: 'Recurring Transfers for Wealth Building',
-                description: 'Set fixed transfer rules for emergency reserves, debt payoff, and long-term investing without manual decision fatigue.',
-                xpReward: 50,
-                story: {
-                    character: 'Darnell',
-                    scenario: 'Darnell gets paid biweekly and usually invests only when he "feels flush," which means months pass with no progress. He needs rules that fire on schedule so momentum does not depend on mood.'
-                },
-                screens: [
-                    {
-                        title: 'Build a Transfer Waterfall',
-                        content: [
-                            "A transfer waterfall means each paycheck follows a fixed order.",
-                            "",
-                            "Example order:",
-                            "1) Core bills account",
-                            "2) Emergency fund target",
-                            "3) High-interest debt acceleration",
-                            "4) Retirement or brokerage investing",
-                            "5) Discretionary spending",
-                            "",
-                            "Following the same order every paycheck removes guesswork."
-                        ]
-                    },
-                    {
-                        title: 'Set Frequency by Income Pattern',
-                        content: [
-                            "Match transfer timing to when money arrives:",
-                            "• Weekly pay -> weekly transfers",
-                            "• Biweekly pay -> every payday transfers",
-                            "• Irregular income -> trigger transfers after each deposit above threshold",
-                            "",
-                            "The best cadence is the one you can maintain year-round."
-                        ]
-                    },
-                    {
-                        title: 'Start Small, Then Ratchet Up',
-                        content: [
-                            "Start with an amount that survives bad months.",
-                            "",
-                            "Then use an automatic ratchet:",
-                            "• Increase transfer by 1% of pay after each raise, or",
-                            "• Increase a fixed dollar amount every quarter",
-                            "",
-                            "Small, steady increases add up to surprisingly large results over time."
-                        ]
-                    },
-                    {
-                        title: 'Transfer Rules for Volatile Months',
-                        content: [
-                            "Define fallback rules in advance:",
-                            "• If account buffer < minimum, pause non-essential transfers",
-                            "• If overtime/bonus month, send set percentage to goals",
-                            "• If emergency expense hits, rebuild emergency fund before increasing discretionary spend",
-                            "",
-                            "Rules written during calm periods protect you during stressful periods."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-21-5',
-                title: 'Automation Guardrails and Failure Recovery',
-                description: 'Prevent overdrafts, duplicate transfers, and subscription drift with an automation audit system.',
-                xpReward: 55,
-                story: {
-                    character: 'Kira',
-                    scenario: 'Kira automated everything and then forgot about it. Three subscriptions renewed, two transfers bounced, and she paid avoidable fees. She needs an audit system that keeps automation efficient instead of fragile.'
-                },
-                screens: [
-                    {
-                        title: 'Common Automation Failure Modes',
-                        content: [
-                            "Automation can fail quietly.",
-                            "",
-                            "Most common issues:",
-                            "• Overdraft from timing mismatch",
-                            "• Old subscriptions and app renewals",
-                            "• Duplicate transfers after account changes",
-                            "• Credit card autopay set to minimum by mistake"
-                        ]
-                    },
-                    {
-                        title: 'Create a Buffer Policy',
-                        content: [
-                            "Set a non-negotiable bills-account buffer (example: one month of core bills or a fixed floor).",
-                            "",
-                            "Any time balance falls below the floor, discretionary transfers pause automatically until buffer is restored."
-                        ]
-                    },
-                    {
-                        title: 'Monthly Audit Checklist',
-                        content: [
-                            "Once per month:",
-                            "• Export transactions and tag autopays",
-                            "• Cancel unused subscriptions",
-                            "• Verify transfer amounts still match goals",
-                            "• Re-price large bills (insurance, internet, phone)",
-                            "• Check for failed payments or duplicate charges"
-                        ]
-                    },
-                    {
-                        title: 'Quarterly Reset Questions',
-                        content: [
-                            "Ask every quarter:",
-                            "• Did my income change?",
-                            "• Did my fixed costs change?",
-                            "• Is debt interest rate now higher than expected investment return?",
-                            "• Do I need to reroute transfers?",
-                            "",
-                            "Automation is not set-and-forget. Think of it as: set it up, check in regularly, and adjust as your life changes."
-                        ]
-                    }
-                ],
-                type: 'reading'
+                widget: 'LoanTermTrapCalculator'
             }
         ]
     },
     {
-        id: 'module-22',
-        title: 'Consumer Protection, Scams & Identity Theft',
-        description: 'Learn how fraud works, spot manipulation tactics early, and build a practical response plan.',
-        xpReward: 135,
-        lessons: [
-            {
-                id: 'lesson-22-1',
-                title: 'The Psychology of Financial Scams',
-                description: 'Understand the persuasion patterns scammers use so you can slow down and verify before acting.',
-                xpReward: 45,
-                story: {
-                    character: 'Mina',
-                    scenario: 'Mina gets a call saying her bank account is under attack and she must verify her PIN in 10 minutes. The urgency feels real, and that is exactly why she pauses to break down the tactic before responding.'
-                },
-                screens: [
-                    {
-                        title: 'Scams Target Emotion, Not Intelligence',
-                        content: [
-                            "Fraud succeeds when people are rushed, isolated, and emotionally activated.",
-                            "",
-                            "Scammers often trigger fear, excitement, guilt, or scarcity before asking for money or credentials."
-                        ]
-                    },
-                    {
-                        title: 'Five Core Manipulation Levers',
-                        content: [
-                            "1) **Urgency**: 'Act now or lose everything.'",
-                            "2) **Authority**: fake bank, IRS, employer, police, or court identity.",
-                            "3) **Scarcity**: limited-time offer or one remaining slot.",
-                            "4) **Social proof**: fake testimonials, fake group chat success stories.",
-                            "5) **Reciprocity**: small favor or 'gift' first, then a larger ask for money or access."
-                        ]
-                    },
-                    {
-                        title: 'Your 90-Second Pause Rule',
-                        content: [
-                            "Before sending money or sharing account data:",
-                            "• Stop the live call or chat",
-                            "• Independently verify using an official number/site",
-                            "• Ask: who benefits if I rush?",
-                            "",
-                            "If a request is legitimate, it can survive verification."
-                        ]
-                    },
-                    {
-                        title: 'Verification Habits That Work',
-                        content: [
-                            "Use these defaults:",
-                            "• Never trust contact info sent in the same message",
-                            "• Never share one-time passcodes",
-                            "• Prefer outbound calls you initiate",
-                            "• Confirm money requests through a second channel"
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-22-2',
-                title: 'Pyramid Schemes and MLM Red Flags',
-                description: 'Identify recruitment-first income models, inventory loading pressure, and deceptive income claims.',
-                xpReward: 50,
-                story: {
-                    character: 'Elijah',
-                    scenario: 'Elijah is invited to a "wealth brunch" where everyone posts luxury photos and says he can earn six figures from home. The catch: buy a starter package and recruit three friends. He needs to test whether it is a product business or a recruiting machine.'
-                },
-                screens: [
-                    {
-                        title: 'Pyramid vs Product Business',
-                        content: [
-                            "A healthy business earns most revenue from real customers buying real products at sustainable prices.",
-                            "",
-                            "A pyramid-style system depends mainly on new recruits paying in."
-                        ]
-                    },
-                    {
-                        title: 'Common MLM/Pyramid Tactics',
-                        content: [
-                            "Watch for these patterns:",
-                            "• **Recruitment-first compensation** ('build a team' over product value)",
-                            "• **Starter kit or inventory loading** requirements",
-                            "• **Income screenshots without audited net profit data**",
-                            "• **Lifestyle theater** — flashy photos of cars, trips, and luxury meant to recruit, not reflect real earnings",
-                            "• **Blame shifting** ('you failed because you did not grind hard enough')"
-                        ]
-                    },
-                    {
-                        title: 'Income Claim Reality Check',
-                        content: [
-                            "Ask for:",
-                            "• Median participant net earnings after expenses",
-                            "• Percentage of participants who lose money",
-                            "• Required monthly purchases to stay 'active'",
-                            "",
-                            "If those numbers are hidden, assume downside risk is high."
-                        ]
-                    },
-                    {
-                        title: 'Exit and Protect Relationships',
-                        content: [
-                            "If you are already in:",
-                            "• Stop new purchases",
-                            "• Document all payments and contracts",
-                            "• Review chargeback/refund options",
-                            "• Set boundaries with friends and family",
-                            "",
-                            "Protect cash first, then repair social trust."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-22-3',
-                title: 'Modern Fraud Channels: From Phishing to Fake Jobs',
-                description: 'Recognize current scam channels and stop credential theft before financial accounts are compromised.',
-                xpReward: 50,
-                story: {
-                    character: 'Noor',
-                    scenario: 'Noor receives a remote job offer with high pay and no interview, then gets asked to buy equipment with a check the company sends. The offer looks professional, but the payment flow is the trap.'
-                },
-                screens: [
-                    {
-                        title: 'Fraud Channels to Expect',
-                        content: [
-                            "Most financial scams arrive through:",
-                            "• Email phishing",
-                            "• Text message smishing",
-                            "• Social media direct messages",
-                            "• Marketplace payment scams",
-                            "• Fake recruiter and fake employer workflows"
-                        ]
-                    },
-                    {
-                        title: 'Credential and Code Theft',
-                        content: [
-                            "Scammers increasingly want both your login password and your second-factor code.",
-                            "",
-                            "If anyone asks for a one-time passcode, treat it as an account takeover attempt.",
-                            "",
-                            "No legitimate support team needs your verification code."
-                        ]
-                    },
-                    {
-                        title: 'Fake Job Offer Pattern',
-                        content: [
-                            "Warning sequence:",
-                            "• Offer arrives with minimal vetting",
-                            "• Employer asks you to buy gear from a specific vendor",
-                            "• They send a check or transfer that later reverses",
-                            "• You are left with the loss",
-                            "",
-                            "Never front money for employer purchases from personal accounts."
-                        ]
-                    },
-                    {
-                        title: 'Account Hardening Defaults',
-                        content: [
-                            "Set this baseline:",
-                            "• Unique passwords via password manager",
-                            "• Multi-factor authentication on email, bank, brokerage, payroll",
-                            "• SIM-swap protection through your mobile carrier (prevents someone from hijacking your phone number)",
-                            "• Transaction alerts on all financial accounts"
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-22-4',
-                title: 'Identity Theft Response: First 24 Hours',
-                description: 'Follow a prioritized incident response process when identity theft or account takeover happens.',
-                xpReward: 55,
-                story: {
-                    character: 'Tori',
-                    scenario: 'Tori wakes up to three unfamiliar credit card approvals and a bank transfer she never authorized. Panic is natural, but a quick, organized response will protect her more than fear will.'
-                },
-                screens: [
-                    {
-                        title: 'Golden Rule: Contain First',
-                        content: [
-                            "Your first objective is to stop further damage.",
-                            "",
-                            "Immediate actions:",
-                            "• Lock compromised cards/accounts",
-                            "• Change passwords from a clean device",
-                            "• Enable or reset multi-factor authentication",
-                            "• Contact financial institutions' fraud departments"
-                        ]
-                    },
-                    {
-                        title: 'Credit Bureau Controls',
-                        content: [
-                            "Place a credit freeze with all major bureaus to block new credit lines in your name.",
-                            "",
-                            "A freeze is one of the highest-leverage defenses after a breach."
-                        ]
-                    },
-                    {
-                        title: 'Documentation and Reporting',
-                        content: [
-                            "Create one incident log with timestamps, case numbers, and agent names.",
-                            "",
-                            "Report identity theft through official channels and keep copies of all submissions.",
-                            "",
-                            "Good records accelerate disputes and reimbursement."
-                        ]
-                    },
-                    {
-                        title: '7-Day and 30-Day Follow Up',
-                        content: [
-                            "Within 7 days:",
-                            "• Confirm freeze status and dispute submissions",
-                            "• Replace compromised cards",
-                            "• Update autopay mappings",
-                            "",
-                            "Within 30 days:",
-                            "• Review credit reports for new anomalies",
-                            "• Keep transaction alerts active",
-                            "• Document resolution outcomes"
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-22-5',
-                title: 'Build a Household Fraud Defense Playbook',
-                description: 'Create a shared family-level prevention plan with verification rules, access controls, and escalation steps.',
-                xpReward: 55,
-                story: {
-                    character: 'Marcus',
-                    scenario: 'Marcus manages finances for himself, his partner, and an aging parent. Each person uses different apps and passwords. One weak link could compromise everyone, so he builds a shared defense playbook.'
-                },
-                screens: [
-                    {
-                        title: 'Household Threat Model',
-                        content: [
-                            "Map who has access to:",
-                            "• Bank and brokerage accounts",
-                            "• Credit cards and payment apps",
-                            "• Email and phone numbers used for reset links",
-                            "",
-                            "Your security level is only as strong as the least secure account holder."
-                        ]
-                    },
-                    {
-                        title: 'Shared Verification Rules',
-                        content: [
-                            "Adopt family defaults:",
-                            "• No money transfers from message-only requests",
-                            "• Confirm urgent requests by voice/video on known numbers",
-                            "• No sharing of passcodes or backup codes",
-                            "• New app installs reviewed before linking bank accounts"
-                        ]
-                    },
-                    {
-                        title: 'Aging Parent and Teen Protections',
-                        content: [
-                            "For older adults:",
-                            "• Trusted contact on key accounts",
-                            "• Transaction alerts to a secondary family member",
-                            "",
-                            "For teens/young adults:",
-                            "• Spend limits on cards",
-                            "• Scam simulation training",
-                            "• Rules for marketplace and payment app usage"
-                        ]
-                    },
-                    {
-                        title: 'Incident Escalation Tree',
-                        content: [
-                            "Create a one-page emergency plan with:",
-                            "• Who to call first",
-                            "• Where account numbers are stored",
-                            "• How to freeze credit quickly",
-                            "• How to document and track disputes",
-                            "",
-                            "Prepared households recover faster and lose less."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            }
-        ]
-    },
-    {
-        id: 'module-23',
-        title: 'Estate Planning & Legacy Basics',
-        description: 'Learn the core legal and financial building blocks that protect loved ones and transfer assets cleanly.',
-        xpReward: 140,
-        lessons: [
-            {
-                id: 'lesson-23-1',
-                title: 'Wills, Guardianship, and Intestacy',
-                description: 'Understand what a will does, what happens without one, and how guardianship decisions are handled.',
-                xpReward: 45,
-                story: {
-                    character: 'Lena',
-                    scenario: 'Lena and her spouse have two young kids and a house, but no will. After a health scare, she realizes that if both parents die unexpectedly, courts and state default rules will decide major outcomes unless they document their wishes.'
-                },
-                screens: [
-                    {
-                        title: 'What a Will Actually Controls',
-                        content: [
-                            "A will states how you want your assets distributed after death and who should manage the process (called your executor).",
-                            "",
-                            "For parents, naming guardians is one of the highest-impact decisions."
-                        ]
-                    },
-                    {
-                        title: 'What Happens Without a Will',
-                        content: [
-                            "Dying without a will means state intestacy law determines asset distribution.",
-                            "",
-                            "That default may not match your wishes, your family situation, or who actually depends on you financially."
-                        ]
-                    },
-                    {
-                        title: 'Guardianship Considerations',
-                        content: [
-                            "When naming guardians, evaluate:",
-                            "• Values and parenting approach",
-                            "• Physical and financial capacity",
-                            "• Geographic stability",
-                            "• Willingness to serve",
-                            "",
-                            "Always have a primary and backup guardian."
-                        ]
-                    },
-                    {
-                        title: 'Execution and Storage',
-                        content: [
-                            "Estate documents are useful only if valid and findable.",
-                            "",
-                            "Follow your state's signing and witness requirements, store originals in a secure location, and make sure trusted people know where to find them."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-23-2',
-                title: 'Beneficiaries, POD/TOD, and Account Titling',
-                description: 'Avoid common transfer mistakes by aligning beneficiary forms, account titles, and estate documents.',
-                xpReward: 50,
-                story: {
-                    character: 'Harold',
-                    scenario: 'Harold updated his will after remarrying but never changed old beneficiary forms on retirement accounts. His estate plan says one thing, but his account designations say another.'
-                },
-                screens: [
-                    {
-                        title: 'Beneficiary Forms Often Override Wills',
-                        content: [
-                            "Retirement accounts and insurance policies typically transfer by beneficiary designation, not by will instructions.",
-                            "",
-                            "If forms are outdated, assets can go to unintended recipients."
-                        ]
-                    },
-                    {
-                        title: 'POD/TOD Basics',
-                        content: [
-                            "POD (Payable on Death) and TOD (Transfer on Death) designations allow certain assets to transfer directly outside probate.",
-                            "",
-                            "They can simplify transfers, but they must be coordinated with your broader plan."
-                        ]
-                    },
-                    {
-                        title: 'Titling and Ownership Structures',
-                        content: [
-                            "How an asset is titled affects who controls it now and who receives it later.",
-                            "",
-                            "Examples include individual ownership, joint ownership, and trust ownership.",
-                            "",
-                            "Inconsistent titling is a common source of disputes and delay."
-                        ]
-                    },
-                    {
-                        title: 'Annual Beneficiary Audit',
-                        content: [
-                            "Review every year and after major life events:",
-                            "• Marriage or divorce",
-                            "• Birth or adoption",
-                            "• Death in the family",
-                            "• Job changes affecting retirement accounts",
-                            "",
-                            "One stale form can undo an otherwise solid estate plan."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-23-3',
-                title: 'Power of Attorney and Health Directives',
-                description: 'Set up financial and medical decision-makers so critical choices can be made if you become incapacitated.',
-                xpReward: 50,
-                story: {
-                    character: 'Sonia',
-                    scenario: 'After a sudden stroke in her family, Sonia learns that even spouses can face delays accessing accounts or making medical choices without proper documents. She wants decision authority clarified before an emergency.'
-                },
-                screens: [
-                    {
-                        title: 'Capacity Risk Is a Planning Issue',
-                        content: [
-                            "Estate planning is not just about what happens after death — it also covers what happens if you become unable to make decisions for yourself.",
-                            "",
-                            "Without the right documents in place, your family may need to go through a court process just to pay your bills or make medical choices on your behalf."
-                        ]
-                    },
-                    {
-                        title: 'Financial Power of Attorney',
-                        content: [
-                            "A financial POA authorizes someone to handle defined financial actions on your behalf.",
-                            "",
-                            "Scope can include paying bills, managing accounts, filing taxes, and handling property transactions."
-                        ]
-                    },
-                    {
-                        title: 'Medical POA and Advance Directive',
-                        content: [
-                            "Medical documents identify who can make health decisions and communicate treatment preferences.",
-                            "",
-                            "This reduces family conflict and helps clinicians act according to your values."
-                        ]
-                    },
-                    {
-                        title: 'Choose Agents Carefully',
-                        content: [
-                            "Pick people with:",
-                            "• Sound judgment under pressure",
-                            "• Integrity and reliability",
-                            "• Willingness to act",
-                            "• Ability to communicate with family and professionals",
-                            "",
-                            "Name backups in case your first choice is unavailable."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-23-4',
-                title: 'Trust Fundamentals: When and Why',
-                description: 'Learn the practical differences between common trust structures and when they can simplify administration.',
-                xpReward: 55,
-                story: {
-                    character: 'Raj',
-                    scenario: 'Raj owns rental property in two states and wants privacy plus easier transfer to his children. He hears trusts can help, but he needs to understand when a trust adds value and when it only adds complexity.'
-                },
-                screens: [
-                    {
-                        title: 'What a Trust Does',
-                        content: [
-                            "A trust is a legal structure where a trustee manages assets under written rules for beneficiaries.",
-                            "",
-                            "It can be used to control timing, conditions, and management of distributions."
-                        ]
-                    },
-                    {
-                        title: 'Revocable vs Irrevocable (High Level)',
-                        content: [
-                            "**Revocable trust**: flexible during your lifetime, often used for administration efficiency and continuity.",
-                            "",
-                            "**Irrevocable trust**: generally less flexible, sometimes used for advanced asset, tax, or legacy goals."
-                        ]
-                    },
-                    {
-                        title: 'When Trusts Can Help',
-                        content: [
-                            "Common reasons:",
-                            "• Blended family complexity",
-                            "• Minor or special-needs beneficiaries",
-                            "• Multi-state property holdings",
-                            "• Desire for private, structured distribution terms"
-                        ]
-                    },
-                    {
-                        title: 'Funding the Trust Is Critical',
-                        content: [
-                            "A trust only controls assets that are properly retitled or assigned to it.",
-                            "",
-                            "Creating a trust document without actually transferring assets into it is like buying a safe but never putting anything inside — most of the benefit goes unrealized."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-23-5',
-                title: 'Estate Plan Maintenance and Legacy Communication',
-                description: 'Keep documents current, organize access information, and communicate intent to reduce future conflict.',
-                xpReward: 55,
-                story: {
-                    character: 'Daphne',
-                    scenario: 'Daphne has a basic will but no one knows where anything is: account list, passwords, insurance, or final wishes. She wants a practical system her family can actually use during a hard week.'
-                },
-                screens: [
-                    {
-                        title: 'Estate Planning Is a Living Process',
-                        content: [
-                            "Your plan should evolve with life changes, not sit untouched for a decade.",
-                            "",
-                            "Trigger updates after marriage, divorce, births, deaths, relocation, and major asset changes."
-                        ]
-                    },
-                    {
-                        title: 'Build a Legacy Binder',
-                        content: [
-                            "Organize:",
-                            "• Document index (will, POA, directives, trust)",
-                            "• Account and policy inventory",
-                            "• Contact list (attorney, CPA, advisors, executors)",
-                            "• Digital asset access instructions",
-                            "",
-                            "Store securely and share retrieval instructions with trusted people."
-                        ]
-                    },
-                    {
-                        title: 'Reduce Family Conflict Upfront',
-                        content: [
-                            "Conflicts often come from surprise, not just money.",
-                            "",
-                            "Communicate key intentions in advance: guardianship choices, distribution logic, and role assignments."
-                        ]
-                    },
-                    {
-                        title: 'Annual 30-Minute Review',
-                        content: [
-                            "Schedule one annual review date.",
-                            "",
-                            "Checklist:",
-                            "• Beneficiaries still correct",
-                            "• Agents and executors still appropriate",
-                            "• New accounts captured",
-                            "• Storage/access instructions still accurate"
-                        ]
-                    }
-                ],
-                type: 'reading'
-            }
-        ]
-    },
-    {
-        id: 'module-24',
-        title: 'Small Business / Freelancer Finance',
-        description: 'Build stable cash flow, resilient pricing, and tax-ready operations for independent income.',
-        xpReward: 145,
-        lessons: [
-            {
-                id: 'lesson-24-1',
-                title: 'Separate Business and Personal Money',
-                description: 'Set up clean account structures, payment flows, and entity basics so your business decisions stay measurable.',
-                xpReward: 45,
-                story: {
-                    character: 'Owen',
-                    scenario: 'Owen is a freelance video editor who mixes client payments and personal spending in one account. Tax season is chaos and he cannot tell if the business is actually profitable.'
-                },
-                screens: [
-                    {
-                        title: 'Separation Is Step Zero',
-                        content: [
-                            "If business and personal money are mixed, every report is noisy.",
-                            "",
-                            "Open dedicated business banking and route all client income through that account."
-                        ]
-                    },
-                    {
-                        title: 'Minimum Viable Finance Stack',
-                        content: [
-                            "Core setup:",
-                            "• Business checking for revenue and expenses",
-                            "• Business savings for tax and reserve buckets",
-                            "• Business card for tracked spend",
-                            "• Simple bookkeeping system updated weekly"
-                        ]
-                    },
-                    {
-                        title: 'Owner Pay System',
-                        content: [
-                            "Pay yourself by rule, not randomly.",
-                            "",
-                            "Example:",
-                            "• Tax bucket: fixed percentage of revenue",
-                            "• Operating bucket: business expenses",
-                            "• Owner pay: planned transfer cadence",
-                            "",
-                            "This prevents accidental under-saving for taxes."
-                        ]
-                    },
-                    {
-                        title: 'Entity Basics and Documentation',
-                        content: [
-                            "As complexity grows, evaluate entity structure, contracts, and insurance with qualified professionals.",
-                            "",
-                            "No matter what entity type you choose, keeping clean records is what actually protects your cash flow."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-24-2',
-                title: 'Manage Irregular Income and Build Runway',
-                description: 'Use a business runway model and revenue smoothing rules so variable months do not trigger financial stress.',
-                xpReward: 50,
-                story: {
-                    character: 'Bianca',
-                    scenario: 'Bianca runs a solo design studio with great quarters followed by dry spells. She keeps panicking in slow months and discounting her rates. She needs a runway system that absorbs volatility.'
-                },
-                screens: [
-                    {
-                        title: 'Volatility Is Normal',
-                        content: [
-                            "Freelance and small business income often arrives in lumpy cycles.",
-                            "",
-                            "The goal is not perfect monthly stability. The goal is resilience during low-revenue periods."
-                        ]
-                    },
-                    {
-                        title: 'Runway Math',
-                        content: [
-                            "Business runway = cash reserves / monthly core business burn.",
-                            "",
-                            "Track runway in months, not just dollars.",
-                            "",
-                            "Many freelancers and small business owners set a minimum runway threshold (e.g., 3-6 months of expenses) before allowing themselves to increase spending."
-                        ]
-                    },
-                    {
-                        title: 'Revenue Smoothing Rules',
-                        content: [
-                            "When revenue is strong:",
-                            "• Pre-fund tax and reserve buckets first",
-                            "• Avoid permanent cost increases until trend is durable",
-                            "",
-                            "When revenue drops:",
-                            "• Cut low-ROI expenses quickly",
-                            "• Protect lead-generation and core delivery capacity"
-                        ]
-                    },
-                    {
-                        title: 'Pipeline Discipline',
-                        content: [
-                            "Track three pipeline metrics weekly:",
-                            "• Qualified leads",
-                            "• Proposal value outstanding",
-                            "• Time-to-cash from signed contract",
-                            "",
-                            "Cash-flow problems often start as pipeline visibility problems."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-24-3',
-                title: 'Pricing, Margin, and Effective Hourly Rate',
-                description: 'Price offers based on delivery cost, risk, and value so the business can grow without hidden pay cuts.',
-                xpReward: 50,
-                story: {
-                    character: 'Keon',
-                    scenario: 'Keon wins a lot of projects but still struggles to save. He realizes many "profitable" jobs include unbilled revisions and weekend support that crush his effective hourly rate.'
-                },
-                screens: [
-                    {
-                        title: 'Revenue Is Not Profit',
-                        content: [
-                            "High sales can hide weak margins.",
-                            "",
-                            "You need unit-level clarity: price, delivery time, direct costs, and overhead allocation."
-                        ]
-                    },
-                    {
-                        title: 'Effective Hourly Rate (EHR)',
-                        content: [
-                            "EHR = (project revenue - direct costs) / true hours worked.",
-                            "",
-                            "Include admin, revision rounds, and client communication time.",
-                            "",
-                            "If your EHR is consistently below your target, it is time to rethink your pricing, scope boundaries, or both."
-                        ]
-                    },
-                    {
-                        title: 'Pricing Structures',
-                        content: [
-                            "Common structures:",
-                            "• Hourly: simple, but can cap upside",
-                            "• Fixed fee: good for repeatable scope with clear boundaries",
-                            "• Retainer: stabilizes cash flow for ongoing service",
-                            "",
-                            "Whichever model you use, scope control is non-negotiable."
-                        ]
-                    },
-                    {
-                        title: 'Margin Protection Levers',
-                        content: [
-                            "Use explicit terms for:",
-                            "• Included deliverables",
-                            "• Revision limits",
-                            "• Rush fees",
-                            "• Late payment penalties",
-                            "",
-                            "Pricing is strategy. Boundaries are enforcement."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-24-4',
-                title: 'Freelancer Tax Ops Without Panic',
-                description: 'Create a tax-ready workflow for quarterly estimates, deductible expense tracking, and clean records.',
-                xpReward: 55,
-                story: {
-                    character: 'Yasmin',
-                    scenario: 'Yasmin had a strong year and then got surprised by a large tax bill with penalties. She now wants a repeatable quarterly system that prevents last-minute scrambling.'
-                },
-                screens: [
-                    {
-                        title: 'Quarterly Rhythm Beats Annual Panic',
-                        content: [
-                            "Independent earners generally need estimated tax payments during the year.",
-                            "",
-                            "A quarterly cadence reduces penalty risk and protects business cash."
-                        ]
-                    },
-                    {
-                        title: 'Tax Bucket Workflow',
-                        content: [
-                            "Every client payment triggers an automatic transfer to a tax reserve account.",
-                            "",
-                            "Set your percentage conservatively, then adjust with professional guidance as real numbers come in."
-                        ]
-                    },
-                    {
-                        title: 'Deduction Tracking Quality',
-                        content: [
-                            "Good deduction capture requires:",
-                            "• Real-time categorization",
-                            "• Receipt or documentation hygiene",
-                            "• Clear business-purpose notes for gray-area expenses",
-                            "",
-                            "Messy records lead to missed deductions, year-end stress, and higher audit risk."
-                        ]
-                    },
-                    {
-                        title: 'Your Quarterly Finance Meeting',
-                        content: [
-                            "Review each quarter:",
-                            "• Revenue and margin trend",
-                            "• Tax reserve sufficiency",
-                            "• Top expense categories",
-                            "• Forecast for next quarter",
-                            "",
-                            "Treat taxes as an operating system, not a once-a-year event."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-24-5',
-                title: 'Risk Management: Contracts, Insurance, and Contingency',
-                description: 'Protect income with clear contracts, payment controls, and risk transfer where appropriate.',
-                xpReward: 55,
-                story: {
-                    character: 'Felix',
-                    scenario: 'Felix delivered a large project, then the client disputed scope and delayed payment for two months. Without strong contract terms, he had little leverage and no cash cushion.'
-                },
-                screens: [
-                    {
-                        title: 'Income Risk Is Business Risk',
-                        content: [
-                            "Small operators can be damaged by one bad contract or one unpaid invoice.",
-                            "",
-                            "Risk controls are revenue protection, not bureaucracy."
-                        ]
-                    },
-                    {
-                        title: 'Contract Clauses That Matter',
-                        content: [
-                            "At minimum define:",
-                            "• Scope and deliverables",
-                            "• Payment schedule and late terms",
-                            "• Revision boundaries",
-                            "• Ownership and licensing terms",
-                            "• Termination and dispute procedures"
-                        ]
-                    },
-                    {
-                        title: 'Payment Controls',
-                        content: [
-                            "Use cash-flow-friendly defaults:",
-                            "• Deposits before work starts",
-                            "• Milestone billing for larger projects",
-                            "• No final handoff before final payment",
-                            "",
-                            "Staying disciplined about getting paid on time prevents the kind of cash crunches that force bad decisions."
-                        ]
-                    },
-                    {
-                        title: 'Insurance and Continuity',
-                        content: [
-                            "Depending on business type, consider professional and general liability coverage.",
-                            "",
-                            "Also build a continuity plan:",
-                            "• Emergency reserve target",
-                            "• Backup vendor network",
-                            "• Critical file and credential access map"
-                        ]
-                    }
-                ],
-                type: 'reading'
-            }
-        ]
-    },
-    {
-        id: 'module-25',
-        title: 'Retirement Drawdown & Decumulation',
-        description: 'Convert savings into durable retirement income with withdrawal rules, tax sequencing, and guardrails.',
+        id: 'module-11',
+        title: 'Homebuying & Mortgages',
+        description: 'Navigate the biggest purchase of your life.',
         xpReward: 150,
         lessons: [
             {
-                id: 'lesson-25-1',
-                title: 'From Accumulation to Retirement Paycheck',
-                description: 'Shift from maximizing account balances to building reliable spendable income.',
-                xpReward: 45,
-                story: {
-                    character: 'Gloria',
-                    scenario: 'Gloria saved aggressively for 35 years and now has enough assets, but no clear paycheck plan. She needs to know how much she can spend each month without guessing.'
-                },
+                id: 'lesson-11-1',
+                title: 'How Mortgages Work',
+                description: 'Fixed vs. adjustable, amortization, and pre-approval.',
+                xpReward: 35,
                 screens: [
                     {
-                        title: 'Decumulation Is a Different Game',
+                        title: 'What Is a Mortgage?',
                         content: [
-                            "Accumulation asks: how do I grow assets?",
+                            "A **mortgage** is a loan specifically for buying property. The property itself serves as **collateral**—if you stop paying, the bank can take your home (foreclosure).",
                             "",
-                            "Decumulation asks: how do I turn assets into reliable income for an uncertain lifespan?"
+                            "Most mortgages last **15 or 30 years**. You pay monthly, and each payment covers two things:",
+                            "• **Principal**: Paying down the actual loan amount.",
+                            "• **Interest**: The cost of borrowing the money.",
+                            "",
+                            "In the early years, most of your payment goes toward **interest**. Over time, more goes toward **principal**. This is called **amortization**."
                         ]
                     },
                     {
-                        title: 'Start With Spending Tiers',
+                        title: 'Fixed-Rate vs. Adjustable-Rate',
                         content: [
-                            "Define:",
-                            "• **Essential spending** (housing, food, healthcare, insurance)",
-                            "• **Flexible spending** (travel, gifts, hobbies)",
+                            "**Fixed-Rate Mortgage (FRM)**:",
+                            "• Your interest rate NEVER changes for the life of the loan.",
+                            "• Your monthly payment stays the same. Predictable and safe.",
+                            "• Most popular choice: the **30-year fixed**.",
                             "",
-                            "Protect essentials first. Flex can adjust with market conditions."
+                            "**Adjustable-Rate Mortgage (ARM)**:",
+                            "• Starts with a lower 'teaser' rate for 5-7 years.",
+                            "• After that, the rate adjusts based on market conditions—it can go UP significantly.",
+                            "• Example: A **5/1 ARM** has a fixed rate for 5 years, then adjusts every 1 year.",
+                            "",
+                            "**Rule of Thumb**: If you plan to stay in the home long-term, go fixed. If you'll sell within 5-7 years, an ARM might save you money."
                         ]
                     },
                     {
-                        title: 'Build an Income Map',
+                        title: 'Getting Pre-Approved',
                         content: [
-                            "List recurring income sources and start dates:",
-                            "• Social Security",
-                            "• Pension income",
-                            "• Annuity or bond ladder cash flow",
-                            "• Portfolio withdrawals",
+                            "Before you shop for a home, get **pre-approved** by a lender.",
                             "",
-                            "The gap between your essential expenses and your guaranteed income is what your investment portfolio must cover."
-                        ]
-                    },
-                    {
-                        title: 'Define a Monthly Paycheck Rule',
-                        content: [
-                            "Set a planned monthly transfer from investment accounts into spending accounts.",
+                            "Pre-approval tells you exactly how much you can borrow. It also shows sellers you're a serious buyer.",
                             "",
-                            "Treat it as a paycheck system with periodic review, not ad hoc withdrawals."
+                            "**What lenders look at:**",
+                            "• **Credit Score**: 740+ gets the best rates.",
+                            "• **Debt-to-Income Ratio (DTI)**: Your monthly debts divided by your gross income. Lenders want this below 43%.",
+                            "• **Employment History**: Stable income for at least 2 years.",
+                            "• **Assets**: Savings for down payment and reserves.",
+                            "",
+                            "Pro tip: Get pre-approved by 2-3 lenders and compare offers. Even a 0.25% rate difference saves thousands over 30 years."
                         ]
                     }
                 ],
                 type: 'reading'
             },
             {
-                id: 'lesson-25-2',
-                title: 'Withdrawal Rates and Sequence Risk',
-                description: 'Understand sustainable withdrawal concepts and why early retirement market losses can permanently damage plans.',
+                id: 'lesson-11-2',
+                title: 'Down Payments, PMI & Closing Costs',
+                description: 'The upfront costs most people underestimate.',
+                xpReward: 30,
+                screens: [
+                    {
+                        title: 'The Down Payment Myth',
+                        content: [
+                            "Many people think you need **20% down** to buy a home. That's a myth.",
+                            "",
+                            "• **Conventional loans**: As low as 3% down.",
+                            "• **FHA loans**: 3.5% down (popular for first-time buyers).",
+                            "• **VA loans**: 0% down for eligible veterans.",
+                            "• **USDA loans**: 0% down for rural areas.",
+                            "",
+                            "On a $300,000 home:",
+                            "• 20% down = $60,000",
+                            "• 3% down = $9,000",
+                            "",
+                            "The catch? If you put less than 20% down, you'll likely pay **PMI**."
+                        ]
+                    },
+                    {
+                        title: 'What Is PMI?',
+                        content: [
+                            "**Private Mortgage Insurance (PMI)** protects the LENDER (not you) if you default on the loan.",
+                            "",
+                            "PMI typically costs **0.5% to 1%** of the loan amount per year.",
+                            "",
+                            "On a $285,000 loan (after 5% down on a $300k home):",
+                            "• PMI ≈ $120-$240/month on top of your mortgage payment.",
+                            "",
+                            "**The good news**: PMI goes away once you reach 20% equity in your home. You can request removal at that point.",
+                            "",
+                            "Pro tip: Some lenders offer **lender-paid PMI** in exchange for a slightly higher interest rate. Do the math to see which is cheaper over your expected time in the home."
+                        ]
+                    },
+                    {
+                        title: 'Closing Costs: The Hidden Bill',
+                        content: [
+                            "On top of the down payment, you'll pay **closing costs** — typically **2-5% of the home price**.",
+                            "",
+                            "On a $300,000 home, that's $6,000-$15,000.",
+                            "",
+                            "**What's included:**",
+                            "• Loan origination fees",
+                            "• Appraisal fee ($300-$500)",
+                            "• Title insurance and search",
+                            "• Attorney fees",
+                            "• Prepaid property taxes and homeowner's insurance",
+                            "• Recording fees",
+                            "",
+                            "Pro tip: You can negotiate with the seller to cover some closing costs (a 'seller concession'). This is more common in buyer's markets."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-11-3',
+                title: 'Rent vs. Buy: The Real Math',
+                description: 'It\'s not as simple as "renting is throwing money away."',
+                xpReward: 40,
+                screens: [
+                    {
+                        title: 'The Renting Myth',
+                        content: [
+                            "You've probably heard: **'Renting is throwing money away.'** This is an oversimplification.",
+                            "",
+                            "When you rent, you pay for a place to live and that's it. No maintenance, no property taxes, no surprise repairs.",
+                            "",
+                            "When you own, your mortgage payment builds equity—but you ALSO pay:",
+                            "• Property taxes (1-2% of home value/year)",
+                            "• Homeowner's insurance",
+                            "• Maintenance (budget 1-2% of home value/year)",
+                            "• PMI (if less than 20% down)",
+                            "• HOA fees (if applicable)",
+                            "",
+                            "The 'hidden' costs of ownership are significant."
+                        ]
+                    },
+                    {
+                        title: 'The Break-Even Calculation',
+                        content: [
+                            "The key question is: **How long do you plan to stay?**",
+                            "",
+                            "Buying has high upfront costs (down payment, closing costs). It usually takes **5-7 years** to break even compared to renting.",
+                            "",
+                            "**If you'll move within 3 years**: Renting almost always wins.",
+                            "**If you'll stay 7+ years**: Buying usually wins.",
+                            "**4-6 years**: It depends on your local market.",
+                            "",
+                            "Other factors:",
+                            "• Is your local rent increasing fast? Buying locks in your housing cost.",
+                            "• Could you invest the down payment instead? At 10% returns, $60,000 becomes ~$97,000 in 5 years.",
+                            "",
+                            "There's no universal answer. Run the numbers for YOUR situation."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-11-4',
+                title: 'Hidden Costs of Homeownership',
+                description: 'What the listing price doesn\'t tell you.',
+                xpReward: 30,
+                screens: [
+                    {
+                        title: 'The 1% Rule',
+                        content: [
+                            "A common rule: budget **1-2% of your home's value per year** for maintenance and repairs.",
+                            "",
+                            "On a $300,000 home, that's $3,000-$6,000/year ($250-$500/month).",
+                            "",
+                            "**Common surprise costs:**",
+                            "• New roof: $8,000-$15,000",
+                            "• HVAC replacement: $5,000-$10,000",
+                            "• Foundation repair: $5,000-$30,000",
+                            "• Water heater: $1,000-$3,000",
+                            "• Plumbing emergency: $500-$5,000",
+                            "",
+                            "These costs don't ask if it's a good time. They just happen."
+                        ]
+                    },
+                    {
+                        title: 'Property Taxes, HOA & Insurance',
+                        content: [
+                            "**Property Taxes** vary wildly by location:",
+                            "• New Jersey: ~2.2% of home value/year",
+                            "• Texas: ~1.7%",
+                            "• Hawaii: ~0.3%",
+                            "",
+                            "On a $300,000 home in Texas, that's ~$5,100/year ($425/month).",
+                            "",
+                            "**HOA Fees** (if in a community with one):",
+                            "• Typically $200-$500/month",
+                            "• Can include landscaping, pool, exterior maintenance",
+                            "• HOA can restrict what you do with YOUR property",
+                            "",
+                            "**Homeowner's Insurance**: $1,500-$3,000/year depending on location and coverage.",
+                            "",
+                            "Pro tip: Add up ALL these costs before deciding what you can 'afford'. A home that fits your mortgage budget might not fit your TOTAL budget."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-11-5',
+                title: 'Condo vs Townhouse: The True Monthly Cost',
+                description: 'Compare HOAs, taxes, insurance, repairs, and market differences across the U.S.',
+                xpReward: 40,
+                screens: [
+                    {
+                        title: 'Condo vs Townhouse Basics',
+                        content: [
+                            "**Condo**:",
+                            "• You typically own the interior of your unit.",
+                            "• Shared areas (roof, exterior, hallways, amenities) are managed by an HOA/association.",
+                            "• Usually higher HOA fees, often lower individual exterior maintenance burden.",
+                            "",
+                            "**Townhouse**:",
+                            "• You usually own the unit plus some land footprint.",
+                            "• More responsibility for structure/exterior, depending on the HOA rules.",
+                            "• Often lower HOA than condos, but potentially higher repair responsibility.",
+                            "",
+                            "Key point: The mortgage payment alone does NOT tell you which option is cheaper."
+                        ]
+                    },
+                    {
+                        title: 'HOA Fees: Help or Headache?',
+                        content: [
+                            "HOA fees can pay for useful services:",
+                            "• Exterior maintenance",
+                            "• Landscaping and snow removal",
+                            "• Shared amenities (pool, gym, security)",
+                            "",
+                            "But HOAs can also create risks:",
+                            "• Fee increases",
+                            "• Special assessments for major repairs",
+                            "• Rules and restrictions (rentals, renovations, use of space)",
+                            "",
+                            "Always review HOA financial statements, reserve levels, and meeting notes before buying."
+                        ]
+                    },
+                    {
+                        title: 'Why Non-Mortgage Costs Matter',
+                        content: [
+                            "Your total monthly housing cost includes:",
+                            "• Principal + interest (mortgage)",
+                            "• Property taxes",
+                            "• Homeowner's insurance",
+                            "• Routine repair budget",
+                            "• HOA dues",
+                            "",
+                            "In some markets, taxes + insurance + repairs + HOA can rival or even exceed your principal+interest payment.",
+                            "",
+                            "Use the calculator to test scenarios and see where the hidden costs overtake the mortgage."
+                        ]
+                    },
+                    {
+                        title: 'Property Markets Are Not the Same',
+                        content: [
+                            "Home markets vary across the U.S. because of:",
+                            "• Home prices",
+                            "• Property tax rates",
+                            "• Insurance risk (storms, wildfire, flood)",
+                            "• HOA prevalence and fee levels",
+                            "",
+                            "A payment that works in one city may fail in another, even for a similar home price.",
+                            "",
+                            "Use market presets in the calculator to compare how cost structure changes by region."
+                        ]
+                    },
+                    {
+                        title: 'Buyer Checklist',
+                        content: [
+                            "Before making an offer:",
+                            "1) Compare condo and townhouse total monthly cost, not just P+I.",
+                            "2) Stress-test for HOA increases and large repair years.",
+                            "3) Estimate taxes and insurance with local quotes, not national averages.",
+                            "4) Keep a repair reserve even after closing.",
+                            "5) Buy based on a sustainable monthly budget, not lender maximum."
+                        ]
+                    }
+                ],
+                type: 'interactive',
+                widget: 'HomeBuyingCostExplorer'
+            }
+        ]
+    },
+    {
+        id: 'module-7',
+        title: 'Investing 201: The Deep End',
+        description: 'Advanced concepts: ETFs, Meme Stocks, and Options.',
+        xpReward: 150,
+        lessons: [
+            {
+                id: 'lesson-7-1',
+                title: 'ETFs vs. Mutual Funds',
+                description: 'Understanding modern investment vehicles.',
+                xpReward: 40,
+                screens: [
+                    {
+                        title: 'Two Wrappers, Same Idea',
+                        content: [
+                            "Both **ETFs** and **Mutual Funds** are baskets that hold many investments inside a single product. The difference is how they are bought, sold, and priced.",
+                            "",
+                            "**ETF (Exchange Traded Fund):**",
+                            "• Trades on a stock exchange throughout the day, just like a stock.",
+                            "• You can buy or sell at any time the market is open.",
+                            "• Price changes in real time as the market moves.",
+                            "• You can buy as little as 1 share (or fractional shares at many brokerages).",
+                            "",
+                            "**Mutual Fund:**",
+                            "• Does NOT trade during the day. All buy/sell orders execute once, at the closing price.",
+                            "• Often has minimum investment requirements ($1,000-$3,000 to start at some firms).",
+                            "• Price is calculated once per day after markets close (called the NAV—Net Asset Value)."
+                        ]
+                    },
+                    {
+                        title: 'Fees and Tax Efficiency',
+                        content: [
+                            "**Expense Ratios:**",
+                            "ETFs tend to have lower expense ratios. Popular index ETFs charge as low as 0.03%. Mutual fund versions of the same index may charge 0.10-0.50% or more.",
+                            "",
+                            "**Tax Efficiency:**",
+                            "ETFs are generally more tax-efficient in taxable accounts. Their structure allows investors to buy and sell without triggering taxable events for other holders. Mutual funds can distribute capital gains to all shareholders—even if you did not sell anything—creating a surprise tax bill at year end.",
+                            "",
+                            "**Trading Costs:**",
+                            "Most brokerages charge $0 commission on ETFs. Mutual funds are also commission-free at many firms, but some charge transaction fees for funds outside their own family.",
+                            "",
+                            "In tax-advantaged accounts (401k, IRA), the tax difference matters less—so mutual funds work just fine."
+                        ]
+                    },
+                    {
+                        title: 'When Each One Wins',
+                        content: [
+                            "**ETFs are usually better when:**",
+                            "• You want to start with a small amount (no minimums).",
+                            "• You are investing in a taxable brokerage account.",
+                            "• You want real-time pricing and flexibility.",
+                            "• You want the lowest possible expense ratio.",
+                            "",
+                            "**Mutual funds are usually better when:**",
+                            "• Your 401(k) only offers mutual fund options (this is common).",
+                            "• You want automatic recurring investments on a set schedule (many mutual funds handle this seamlessly).",
+                            "• You prefer to invest exact dollar amounts ($200/month) rather than buying whole shares.",
+                            "",
+                            "For most beginners starting in a personal brokerage account, **ETFs are the easiest and cheapest entry point** to build a diversified portfolio."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-7-2',
+                title: 'Meme Stocks & Volatility',
+                description: 'When investing becomes gambling.',
+                xpReward: 40,
+                story: {
+                    character: 'Kevin',
+                    scenario: "Kevin sees a GameStore stock soaring 500% in a week. Everyone on the internet is buying it. He puts his tuition money in, hoping to double it."
+                },
+                screens: [
+                    {
+                        title: 'What Makes a Stock a Meme Stock',
+                        content: [
+                            "**Meme Stocks** are companies whose stock price is driven primarily by social media hype, viral momentum, and crowd psychology—not by the company's actual business performance.",
+                            "",
+                            "Classic pattern:",
+                            "1. A stock gets popular on social media (Reddit, Twitter/X, TikTok, Discord).",
+                            "2. Viral posts create FOMO (Fear Of Missing Out). People pile in.",
+                            "3. Price spikes 100-1000% in days or weeks.",
+                            "4. Early buyers sell for huge profits. Late buyers are left holding the loss.",
+                            "5. Price crashes back down. The hype moves to the next stock.",
+                            "",
+                            "The company itself may not have changed at all. No new product, no new revenue, no new plan. The only thing that changed was the story people told each other online."
+                        ]
+                    },
+                    {
+                        title: 'FOMO and the Psychology Trap',
+                        content: [
+                            "The reason meme stocks are so dangerous is that they exploit powerful psychological biases:",
+                            "",
+                            "• **FOMO (Fear Of Missing Out):** Seeing others post gains makes you feel like you are losing by not participating.",
+                            "• **Survivorship Bias:** You see the screenshots of people who made $50,000—but not the thousands who lost quietly.",
+                            "• **Herd Mentality:** If everyone is buying, it must be safe—right? No. Crowds can be spectacularly wrong.",
+                            "• **Sunk Cost Fallacy:** After the price drops, people hold on hoping to break even instead of cutting losses.",
+                            "",
+                            "Social media amplifies all of these. Gains are celebrated publicly. Losses are hidden. This creates a distorted picture of reality."
+                        ]
+                    },
+                    {
+                        title: 'Volatility: The Measure of Risk',
+                        content: [
+                            "**Volatility** means how wildly and unpredictably a price swings. Meme stocks have extreme volatility.",
+                            "",
+                            "A typical S&P 500 index fund might move 1-2% in a day. A meme stock can move **20-50% in a single day**—in either direction.",
+                            "",
+                            "That means you could invest $1,000 Monday morning and have $500 by Friday. Or $2,000. You have no reliable way to predict which.",
+                            "",
+                            "This is why meme stock trading is closer to **gambling** than investing. In gambling, the house has an edge. With meme stocks, the early insiders and large players have the edge."
+                        ]
+                    },
+                    {
+                        title: 'How to Protect Yourself',
+                        content: [
+                            "Meme stocks are not inherently evil—but you need rules if you engage with them:",
+                            "",
+                            "• **Never invest money you cannot afford to lose.** Tuition money, rent money, and emergency funds are off limits.",
+                            "• **Set a hard cap.** Some investors allocate 5% or less of their portfolio to speculative bets. The other 95% stays in diversified index funds.",
+                            "• **Decide your exit before you enter.** Set a price where you will sell—both on the upside and downside—before you buy.",
+                            "• **Turn off the noise.** Unfollow hype accounts. The people hyping a stock online may be selling while telling you to buy.",
+                            "",
+                            "The vast majority of your wealth should be built through boring, consistent, diversified investing. Meme stocks are entertainment—not a financial plan."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-7-3',
+                title: 'Intro to Options: High Risk, High Reward',
+                description: 'The casino of the stock market.',
                 xpReward: 50,
-                story: {
-                    character: 'Victor',
-                    scenario: 'Victor retired right before a market drawdown. His portfolio value dropped while he was still withdrawing the same amount, and now he worries he retired at the wrong time.'
-                },
                 screens: [
                     {
-                        title: 'Withdrawal Rate Basics',
+                        title: 'What Is an Option?',
                         content: [
-                            "Your withdrawal rate is the percentage of your portfolio you take out each year. For example, withdrawing $40,000 from a $1,000,000 portfolio is a 4% withdrawal rate.",
+                            "An **option** is a contract that gives you the right—but not the obligation—to buy or sell a stock at a specific price before a specific date.",
                             "",
-                            "The higher your withdrawal rate, the greater the risk of running out of money."
+                            "There are two types:",
+                            "• **Call Option:** A bet that the stock price will go UP. It gives you the right to BUY the stock at a set price.",
+                            "• **Put Option:** A bet that the stock price will go DOWN. It gives you the right to SELL the stock at a set price.",
+                            "",
+                            "Every option contract has three key terms:",
+                            "• **Strike Price:** The price at which you can buy/sell the stock.",
+                            "• **Expiration Date:** The deadline by which the stock must move in your favor.",
+                            "• **Premium:** The price you pay to purchase the option contract."
                         ]
                     },
                     {
-                        title: 'Sequence-of-Returns Risk',
+                        title: 'How Leverage Multiplies Gains and Losses',
                         content: [
-                            "Poor market returns early in retirement can hurt more than poor returns later.",
+                            "Options use **leverage**—a small amount of money controls a much larger position.",
                             "",
-                            "Why: if you withdraw money while your portfolio is down, you lock in losses and leave fewer dollars to recover when markets bounce back."
+                            "Each option contract typically controls **100 shares** of the underlying stock.",
+                            "",
+                            "**Example:**",
+                            "A stock trades at $100. You buy a call option with a $105 strike price for a $3 premium. Your total cost: $300 (100 shares × $3).",
+                            "",
+                            "• If the stock rises to $115, your option is worth $10 per share ($1,000 total). You paid $300, so your profit is **$700—a 233% return**.",
+                            "• If the stock stays below $105 by expiration, your option expires worthless. You lose the entire **$300—a 100% loss**.",
+                            "",
+                            "The same stock move that earns a shareholder 15% could earn an options trader 233%—or lose them everything. That is leverage."
                         ]
                     },
                     {
-                        title: 'Mitigation Strategies',
+                        title: 'Why Most Retail Traders Lose',
                         content: [
-                            "Common mitigations:",
-                            "• Hold a near-term cash or short-duration buffer",
-                            "• Reduce flexible spending after large drawdowns",
-                            "• Use dynamic withdrawal guardrails instead of fixed inflation-only increases"
+                            "Studies consistently show that the majority of retail options traders lose money. Here is why:",
+                            "",
+                            "• **Time Decay:** Options lose value every single day as expiration approaches. You are not just betting on direction—you are racing a clock.",
+                            "• **The House Edge:** Market makers and institutional traders have better data, faster execution, and mathematical models. You are playing against professionals.",
+                            "• **Overconfidence:** Options profits feel so large that traders size up their bets and eventually take a catastrophic loss that wipes out months of gains.",
+                            "• **Complexity:** Implied volatility, Greeks (delta, gamma, theta, vega), and spread strategies add layers most beginners do not understand.",
+                            "",
+                            "The options market transfers money from overconfident beginners to patient, disciplined professionals."
                         ]
                     },
                     {
-                        title: 'Stress Testing Mindset',
+                        title: 'The Bottom Line',
                         content: [
-                            "Run your plan against adverse scenarios, not just average returns.",
+                            "Options are a legitimate financial tool used by professionals for hedging and income strategies. But for beginners, they are extremely risky.",
                             "",
-                            "A robust plan is one you can stick with when markets are uncomfortable."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-25-3',
-                title: 'Tax-Aware Withdrawal Order',
-                description: 'Coordinate taxable, tax-deferred, and Roth withdrawals to manage taxes and preserve long-term flexibility.',
-                xpReward: 55,
-                story: {
-                    character: 'Pam and Eli',
-                    scenario: 'Pam and Eli have money in taxable brokerage, traditional retirement accounts, and Roth accounts. Their first retirement year triggered a larger tax bill than expected because they withdrew in the wrong sequence.'
-                },
-                screens: [
-                    {
-                        title: 'Account Types Create Tax Strategy',
-                        content: [
-                            "Retirement income planning is partly a tax-planning problem.",
+                            "**If you are still building your investment foundation:**",
+                            "• Focus on index funds and long-term compounding first.",
+                            "• Do not trade options until you have a fully funded emergency fund and a solid core portfolio.",
+                            "• If you do explore options, start only with money you can afford to lose completely.",
                             "",
-                            "Different account types are taxed differently, so withdrawal order affects net spendable income."
-                        ]
-                    },
-                    {
-                        title: 'Typical Withdrawal Sequencing Logic',
-                        content: [
-                            "A common framework is to blend sources strategically rather than draining one account blindly.",
+                            "**Never trade options with:**",
+                            "• Rent or bill money",
+                            "• Emergency fund money",
+                            "• Student loan or borrowed money",
+                            "• Money you need within the next 1-2 years",
                             "",
-                            "Goals:",
-                            "• Manage current tax bracket exposure",
-                            "• Preserve tax-free growth capacity",
-                            "• Avoid surprise premium/benefit cliffs"
-                        ]
-                    },
-                    {
-                        title: 'RMD and Bracket Management',
-                        content: [
-                            "Required minimum distributions from certain tax-deferred accounts can force taxable income later.",
-                            "",
-                            "Planning ahead across multiple years can help smooth out your taxable income and avoid a big tax spike later."
-                        ]
-                    },
-                    {
-                        title: 'Coordinate With Filing and Medicare Effects',
-                        content: [
-                            "Withdrawal choices can ripple into other costs.",
-                            "",
-                            "Each year, review your tax situation, benefit thresholds (like Medicare premiums), and expected spending together in one planning session."
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-25-4',
-                title: 'Income Floor and Bucket Strategies',
-                description: 'Design a retirement income floor for essentials and use portfolio buckets for stability and flexibility.',
-                xpReward: 55,
-                story: {
-                    character: 'Anita',
-                    scenario: 'Anita can cover about 70% of essentials with Social Security and a pension. She wants a simple bucket system for the remaining 30% so she can sleep at night during market volatility.'
-                },
-                screens: [
-                    {
-                        title: 'Income Floor Concept',
-                        content: [
-                            "Income floor = recurring cash flow intended to cover essential expenses with high reliability.",
-                            "",
-                            "The stronger your floor, the less pressure on growth assets during bad markets."
-                        ]
-                    },
-                    {
-                        title: 'Three-Bucket Example',
-                        content: [
-                            "Bucket 1: 1-2 years of spending needs in cash/near-cash",
-                            "Bucket 2: intermediate horizon assets for refilling Bucket 1",
-                            "Bucket 3: long-term growth assets",
-                            "",
-                            "Buckets are a behavior tool as much as an allocation tool."
-                        ]
-                    },
-                    {
-                        title: 'Refill Rules',
-                        content: [
-                            "Define objective refill triggers.",
-                            "",
-                            "Example:",
-                            "• In strong markets, harvest gains from Bucket 3 to refill Bucket 1",
-                            "• In weak markets, draw from Bucket 1 while reducing discretionary spend"
-                        ]
-                    },
-                    {
-                        title: 'Avoid Common Bucket Mistakes',
-                        content: [
-                            "Mistakes to avoid:",
-                            "• Leaving all buckets static for years",
-                            "• Overfunding cash and underfunding long-run growth",
-                            "• Ignoring inflation impact on spending needs"
-                        ]
-                    }
-                ],
-                type: 'reading'
-            },
-            {
-                id: 'lesson-25-5',
-                title: 'Annual Guardrails and Spending Adjustments',
-                description: 'Use pre-set guardrails to adjust spending when markets or inflation shift, instead of reacting emotionally.',
-                xpReward: 60,
-                story: {
-                    character: 'Martha and Joel',
-                    scenario: 'Martha and Joel promised themselves they would not panic-sell in retirement, but a 20% portfolio drop made every decision feel emotional. They need objective guardrails that tell them when to cut, hold, or raise spending.'
-                },
-                screens: [
-                    {
-                        title: 'Guardrails Create Decision Discipline',
-                        content: [
-                            "Guardrails are predefined spending rules tied to portfolio and inflation conditions.",
-                            "",
-                            "They reduce emotional decision-making during stress."
-                        ]
-                    },
-                    {
-                        title: 'Sample Guardrail Framework',
-                        content: [
-                            "Example rules:",
-                            "• If withdrawal rate rises above upper threshold -> trim flexible spending",
-                            "• If withdrawal rate falls below lower threshold -> consider modest raise or gifting",
-                            "• If inflation spikes -> prioritize essentials and delay large discretionary upgrades"
-                        ]
-                    },
-                    {
-                        title: 'Annual Retirement Review Agenda',
-                        content: [
-                            "Review once per year:",
-                            "• Actual spending vs plan",
-                            "• Portfolio withdrawals and current withdrawal rate",
-                            "• Tax outcomes and next-year estimates",
-                            "• Healthcare and long-term care assumptions",
-                            "• Estate and beneficiary updates"
-                        ]
-                    },
-                    {
-                        title: 'Resilience Over Precision',
-                        content: [
-                            "No retirement plan is perfect.",
-                            "",
-                            "The goal is a plan that can adapt without panic, preserve dignity, and keep essentials funded through multiple market environments."
+                            "WARNING: Most retail traders lose money on options. Treat it as an advanced strategy, not a shortcut to wealth."
                         ]
                     }
                 ],
@@ -5456,6 +3861,1601 @@ export const curriculum = [
                             "If narrative is strong but valuation is stretched and growth is slowing, proceed with extreme caution — you may be buying at the peak of a story, like Peloton in 2020.",
                             "",
                             "The market is a voting machine in the short run and a weighing machine in the long run. Narrative wins votes. Fundamentals win the weigh-in."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-8',
+        title: 'The Economic Machine',
+        description: 'How the big picture affects your wallet.',
+        xpReward: 150,
+        lessons: [
+            {
+                id: 'lesson-8-1',
+                title: 'Interest Rates & The Fed',
+                description: 'The gas pedal and brake of the economy.',
+                xpReward: 40,
+                content: [
+                    "The Federal Reserve ('The Fed') manages the economy using **Monetary Policy**.",
+                    "Think of **Interest Rates** as the cost of money.",
+                    "The Fed usually has a **2% Inflation Target**. They adjust rates to try and keep prices stable while keeping employment high.",
+                    "**Loose Policy** (Low Rates): Cheap to borrow. Encourages spending and investing. Stocks usually go UP. Risk of Inflation.",
+                    "**Tight Policy** (High Rates): Expensive to borrow. Slows down spending to fight inflation. Stocks often go DOWN. Risk of Recession."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-8-2',
+                title: 'Bonds: The Boring But Safe Bet?',
+                description: 'Lending money to governments and companies.',
+                xpReward: 40,
+                content: [
+                    "When you buy a **Bond**, you are lending money to an entity for a fixed period of time.",
+                    "In return, they pay you interest. It's an I.O.U.",
+                    "**The Seesaw Rule**: Bond prices and Interest Rates move in OPPOSITE directions.",
+                    "If new rates go UP, your old low-rate bonds become less valuable (Price DOWN).",
+                    "Government bonds (Treasuries) are considered the safest investment."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-8-3',
+                title: 'S&P 500 in Dollars vs Gold',
+                description: 'See nominal returns, dollar depreciation, and why currency strength matters.',
+                xpReward: 45,
+                screens: [
+                    {
+                        title: 'Nominal Returns vs Real Value',
+                        content: [
+                            "The S&P 500 can rise strongly in dollar terms while the dollar itself loses purchasing power over time.",
+                            "",
+                            "That is why investors compare:",
+                            "• Asset returns in USD (nominal view)",
+                            "• Asset returns in hard assets like gold",
+                            "• Dollar purchasing power over time"
+                        ]
+                    },
+                    {
+                        title: 'Read the Chart',
+                        content: [
+                            "This chart shows 2000-2024 trends:",
+                            "• **S&P in USD** (indexed)",
+                            "• **S&P in gold terms** (indexed)",
+                            "• **Dollar purchasing power** (indexed)",
+                            "",
+                            "If the dollar-power line trends down, idle cash buys less over time."
+                        ]
+                    },
+                    {
+                        title: 'High-Value vs Low-Value Currency',
+                        content: [
+                            "**High-value currency (relative strength):**",
+                            "• Imports are cheaper",
+                            "• Consumers gain global purchasing power",
+                            "• Inflation pressure from imports may ease",
+                            "• Export competitiveness can weaken",
+                            "",
+                            "**Low-value currency (relative weakness):**",
+                            "• Exports can become more competitive",
+                            "• Domestic tourism/export industries may benefit",
+                            "• Imports become more expensive",
+                            "• Inflation pressure can rise"
+                        ]
+                    },
+                    {
+                        title: 'Practical Takeaway',
+                        content: [
+                            "Hold enough cash for near-term needs and emergencies.",
+                            "",
+                            "But long-term idle cash usually loses ground to inflation.",
+                            "",
+                            "For long horizons, pair cash management with assets that have the potential to outpace inflation."
+                        ]
+                    }
+                ],
+                type: 'interactive',
+                widget: 'Sp500DollarVsGoldChart'
+            },
+            {
+                id: 'lesson-8-4',
+                title: 'China\'s Economic Rise: Export-First Model',
+                description: 'How China scaled through exports and high savings compared with U.S. consumers.',
+                xpReward: 45,
+                screens: [
+                    {
+                        title: 'Export-First Strategy',
+                        content: [
+                            "China's growth model leaned heavily on manufacturing and exports for decades.",
+                            "",
+                            "Core idea:",
+                            "• Build industrial capacity",
+                            "• Keep production costs competitive",
+                            "• Sell large volumes to global markets",
+                            "",
+                            "This export-first approach helped China move from low-cost manufacturing into higher-value sectors over time."
+                        ]
+                    },
+                    {
+                        title: 'Exports: China vs U.S.',
+                        content: [
+                            "Use the chart to compare exports as a share of GDP.",
+                            "",
+                            "China generally ran a higher export share than the U.S., reflecting a more production-and-trade oriented model.",
+                            "",
+                            "The U.S. has historically been more consumption-led, with household spending playing a larger role in growth."
+                        ]
+                    },
+                    {
+                        title: 'Savings Rate Gap',
+                        content: [
+                            "China's households have typically saved a much larger share of income than U.S. consumers.",
+                            "",
+                            "Why this matters:",
+                            "• Higher savings can support higher domestic investment",
+                            "• Lower savings can support stronger near-term consumption",
+                            "",
+                            "Different savings behavior tends to produce different economic structures."
+                        ]
+                    },
+                    {
+                        title: 'Tradeoffs and Takeaways',
+                        content: [
+                            "Export-first + high savings can accelerate industrial growth, but may rely more on external demand.",
+                            "",
+                            "Consumer-first + lower savings can boost domestic demand, but may reduce investment buffer over time.",
+                            "",
+                            "For learners: national strategy affects jobs, wages, exchange rates, and investment opportunities."
+                        ]
+                    }
+                ],
+                type: 'interactive',
+                widget: 'ChinaEconomicRiseChart'
+            }
+        ]
+    },
+    {
+        id: 'module-16',
+        title: 'The Fed, Rates, and the Real Economy',
+        description: 'Learn how policy rates move mortgages, car loans, credit cards, and Treasury yields.',
+        xpReward: 175,
+        lessons: [
+            {
+                id: 'lesson-16-1',
+                title: 'What the Fed Actually Controls',
+                description: 'The federal funds rate, the dual mandate, and the policy toolkit.',
+                xpReward: 35,
+                screens: [
+                    {
+                        title: 'The Fed in Plain English',
+                        content: [
+                            "The Federal Reserve is the U.S. central bank. Its two legal goals are called the **dual mandate**:",
+                            "• Maximum employment",
+                            "• Stable prices (low, predictable inflation)",
+                            "",
+                            "The Fed does NOT set your mortgage rate directly.",
+                            "What it does set is the **price of short-term money** in the banking system, primarily through its target for the federal funds rate."
+                        ]
+                    },
+                    {
+                        title: 'How Policy Decisions Are Made',
+                        content: [
+                            "The Federal Open Market Committee (FOMC) meets regularly to decide whether to raise, hold, or cut rates.",
+                            "",
+                            "They watch:",
+                            "• Inflation data (CPI, PCE)",
+                            "• Labor market data (jobs, wages, unemployment)",
+                            "• Financial conditions (credit availability, market stress)",
+                            "",
+                            "In modern operations, the Fed also uses tools like **interest on reserve balances (IORB)** and **open market operations** to keep short rates near its target."
+                        ]
+                    },
+                    {
+                        title: 'Why This Hits Your Wallet',
+                        content: [
+                            "When the policy rate rises, borrowing gets more expensive across the economy:",
+                            "• Credit cards reprice quickly",
+                            "• Auto loans and new mortgages get more expensive",
+                            "• Business loans tighten",
+                            "",
+                            "When policy rates fall, the opposite tends to happen.",
+                            "",
+                            "Your job is to understand where you have **variable-rate risk** and how to protect cash flow before your payments jump."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-16-2',
+                title: 'From Fed Rate to Mortgage, Auto, and Card APRs',
+                description: 'How monetary policy passes through to household debt.',
+                xpReward: 40,
+                screens: [
+                    {
+                        title: 'The Transmission Chain',
+                        content: [
+                            "A simple chain looks like this:",
+                            "**Fed policy rate -> money-market rates -> bank funding costs -> consumer loan rates**",
+                            "",
+                            "Different products move at different speeds:",
+                            "• **Credit cards**: often reprice fastest",
+                            "• **Auto loans**: reset with market conditions for new loans",
+                            "• **Fixed mortgages**: tied more to longer-term Treasury yields than overnight rates",
+                            "",
+                            "Translation: not all debt reacts the same way to a Fed hike."
+                        ]
+                    },
+                    {
+                        title: 'Mortgage Math That Matters',
+                        content: [
+                            "For a fixed mortgage, your payment is locked after closing.",
+                            "For an ARM, your payment can reset higher later.",
+                            "",
+                            "Even a 1% rate difference can add large lifetime cost.",
+                            "Example: a $350,000 loan at 6% vs 7% can mean hundreds more per month and tens of thousands more in total interest.",
+                            "",
+                            "Key habit: shop rate + points + fees together. A 'lower rate' with high fees can still be worse."
+                        ]
+                    },
+                    {
+                        title: 'Auto Loans and Credit Cards',
+                        content: [
+                            "Auto loans are usually fixed for that loan term, but new-car financing offers rise/fall with market rates and credit conditions.",
+                            "",
+                            "Credit cards are usually variable APR tied to prime rate, so hikes can hit quickly.",
+                            "",
+                            "High-impact actions:",
+                            "• Attack variable-rate balances first",
+                            "• Request APR reductions with issuers",
+                            "• Refinance auto debt only when total cost improves after fees",
+                            "• Avoid stretching loan terms just to lower monthly payments"
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-16-3',
+                title: 'Treasury Bills, Bond Yields, and Government Debt',
+                description: 'How rates affect Treasury yields and federal interest costs.',
+                xpReward: 45,
+                screens: [
+                    {
+                        title: 'Why T-Bills Matter',
+                        content: [
+                            "U.S. Treasury bills are short-term government debt (typically 4 to 52 weeks).",
+                            "",
+                            "Their yields are strongly influenced by Fed policy and money-market expectations.",
+                            "As short rates rise, T-bill yields usually rise too; when rates fall, yields often decline.",
+                            "",
+                            "For savers, T-bills can be a low-risk parking spot for cash with competitive yield."
+                        ]
+                    },
+                    {
+                        title: 'Yield Curve Basics',
+                        content: [
+                            "The **yield curve** plots yields across maturities (3-month, 2-year, 10-year, etc.).",
+                            "",
+                            "Normal curve: long-term yields > short-term yields.",
+                            "Inverted curve: short-term yields > long-term yields, often signaling slower growth expectations.",
+                            "",
+                            "Household relevance:",
+                            "• Mortgage rates lean on longer-term yields",
+                            "• Savings products react more to short-term yields",
+                            "• Refinance timing depends on where your rate sits vs current long-term rates"
+                        ]
+                    },
+                    {
+                        title: 'Federal Debt Service and You',
+                        content: [
+                            "When Treasury yields rise, new government borrowing becomes more expensive.",
+                            "As old debt rolls over at higher rates, total federal interest expense rises.",
+                            "",
+                            "That doesn't create an immediate household bill, but it can shape future policy choices:",
+                            "• Taxes and spending tradeoffs",
+                            "• Fiscal room during recessions",
+                            "• Political pressure around deficits",
+                            "",
+                            "Macro takeaway: rates don't just change personal loans; they also change the government's financing burden."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-16-4',
+                title: 'A Household Playbook for Rate Cycles',
+                description: 'What to do when rates are rising, high, or falling.',
+                xpReward: 55,
+                screens: [
+                    {
+                        title: 'If Rates Are Rising',
+                        content: [
+                            "Priority is protecting monthly cash flow.",
+                            "",
+                            "Checklist:",
+                            "• Pay down variable-rate debt aggressively",
+                            "• Build or top up emergency savings",
+                            "• Delay non-essential financed purchases",
+                            "• Stress-test your budget with +10% higher required debt payments",
+                            "",
+                            "Goal: reduce exposure before resets and repricing hit."
+                        ]
+                    },
+                    {
+                        title: 'If Rates Are High but Stable',
+                        content: [
+                            "This is optimization mode.",
+                            "",
+                            "Checklist:",
+                            "• Lock in guaranteed returns on idle cash (HYSA, T-bills)",
+                            "• Compare refinance offers carefully (APR + fees + break-even months)",
+                            "• Keep investing systematically so you don't freeze waiting for perfect timing",
+                            "• Avoid 'payment-only' decisions that increase total interest cost"
+                        ]
+                    },
+                    {
+                        title: 'If Rates Are Falling',
+                        content: [
+                            "Falling rates create opportunities, but not every refinance is good.",
+                            "",
+                            "Use a break-even rule:",
+                            "Break-even months = total refinance costs / monthly savings",
+                            "",
+                            "If you won't stay in the loan long enough to pass break-even, skip it.",
+                            "",
+                            "Final framework: build a simple debt dashboard with balance, rate type (fixed/variable), APR, and monthly payment so you can act quickly when rate conditions change."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-16-5',
+                title: 'US Debt Crisis',
+                description: 'Compare U.S. debt levels globally, review bipartisan overspending, and map out possible outcomes.',
+                xpReward: 55,
+                screens: [
+                    {
+                        title: 'Debt Is a Long-Running, Bipartisan Issue',
+                        content: [
+                            "U.S. debt did not appear overnight and it is not a one-party problem.",
+                            "",
+                            "Across Republican and Democratic administrations, the federal government has run repeated deficits.",
+                            "",
+                            "Wars, recessions, tax cuts, demographic spending pressure, stimulus programs, and rising interest costs have all contributed."
+                        ]
+                    },
+                    {
+                        title: 'How the U.S. Compares Globally',
+                        content: [
+                            "The dashboard compares U.S. debt-to-GDP to major peers.",
+                            "",
+                            "At a high level, the U.S. debt burden is elevated, lower than Japan in this comparison, and above some other advanced economies.",
+                            "",
+                            "Interpretation matters: debt levels, borrowing currency strength, growth, and interest costs all shape risk."
+                        ]
+                    },
+                    {
+                        title: 'Three Possible Paths From Overspending',
+                        content: [
+                            "1) **Grow the economy faster than debt**",
+                            "Higher nominal GDP can reduce debt burden relative to output.",
+                            "",
+                            "2) **Lower rates / lower borrowing costs**",
+                            "If rates fall, debt-service pressure on tax revenue can ease.",
+                            "",
+                            "3) **Default on debt obligations**",
+                            "This is the worst-case path and would likely trigger major market and economic disruption."
+                        ]
+                    },
+                    {
+                        title: 'What to Watch as a Household',
+                        content: [
+                            "Debt headlines matter because they can influence taxes, rates, inflation pressure, and public spending choices.",
+                            "",
+                            "Practical moves:",
+                            "• Keep your own debt manageable",
+                            "• Build emergency reserves",
+                            "• Avoid relying on one policy outcome",
+                            "• Focus on resilient long-term plans"
+                        ]
+                    }
+                ],
+                type: 'interactive',
+                widget: 'USDebtCrisisChart'
+            }
+        ]
+    },
+    {
+        id: 'module-9',
+        title: 'Future Finance',
+        description: 'Crypto, Prediction Markets, and Alternative Assets.',
+        xpReward: 200,
+        lessons: [
+            {
+                id: 'lesson-9-1',
+                title: 'Stocks vs. Real Estate vs. Hard Assets',
+                description: 'Where should you put your money?',
+                xpReward: 50,
+                content: [
+                    "**Stocks**: Ownership in companies. High liquidity, high long-term growth, volatile.",
+                    "**Real Estate**: Tangible land/buildings. Can use leverage (mortgage). High maintenance costs, hard to sell quickly.",
+                    "**Hard Assets** (Gold, Art, Commodities): Physical items with intrinsic value. Often used as a hedge against inflation. Usually don't produce cash flow (dividends/rent)."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-9-2',
+                title: 'Cryptocurrency: The Reality of Financialization',
+                description: 'The shift from decentralized money to speculative asset.',
+                xpReward: 50,
+                content: [
+                    "**Cryptocurrency** (like Bitcoin) originally promised a decentralized alternative to the traditional financial system.",
+                    "The vision was a trustless, peer-to-peer network free from banks and governments.",
+                    "However, the current reality of crypto in 2026 is heavily **financialized**. The introduction of Spot ETFs, massive institutional buying, and centralized exchanges have largely defeated its original decentralized purpose.",
+                    "Instead of acting as an independent currency, crypto has largely become another highly volatile, speculative asset class heavily tied to traditional markets and centralized platforms.",
+                    "Pro tip: If you buy crypto, you need a **Wallet**. Remember: 'Not your keys, not your coins'. If you don't control the private keys, you don't truly own the assets."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-9-3',
+                title: 'Prediction Markets',
+                description: 'Betting on the future.',
+                xpReward: 50,
+                content: [
+                    "**Prediction Markets** let people bet on the outcome of real-world events (elections, sports, scientific breakthrough).",
+                    "The price of a 'share' (e.g., 60 cents) represents the market's estimated probability (60%) of that event happening.",
+                    "Many economists believe these markets are more accurate than polls or experts because participants have 'skin in the game'.",
+                    "It's a way to use the 'Wisdom of the Crowd' to forecast the future."
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-9-4',
+                title: 'Tokenization of Assets',
+                description: 'The real-world utility of blockchain in traditional finance.',
+                xpReward: 60,
+                content: [
+                    "**Tokenization** is the process of representing a real-world asset (like real estate, art, Treasury bills, or private equity) as a digital token on a blockchain.",
+                    "By 2026, while the speculative frenzy of early crypto has waned, the underlying technology has been heavily adopted by **Traditional Finance (TradFi)**.",
+                    "Major financial institutions use tokenization for its massive utility: faster settlement times, 24/7 trading, fractional ownership, and automated compliance through smart contracts.",
+                    "Unlike early cryptocurrencies that tried to replace the financial system, tokenization is upgrading the plumbing of the existing financial system, bringing trillions of dollars of traditional assets on-chain."
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-24',
+        title: 'Small Business / Freelancer Finance',
+        description: 'Build stable cash flow, resilient pricing, and tax-ready operations for independent income.',
+        xpReward: 145,
+        lessons: [
+            {
+                id: 'lesson-24-1',
+                title: 'Separate Business and Personal Money',
+                description: 'Set up clean account structures, payment flows, and entity basics so your business decisions stay measurable.',
+                xpReward: 45,
+                story: {
+                    character: 'Owen',
+                    scenario: 'Owen is a freelance video editor who mixes client payments and personal spending in one account. Tax season is chaos and he cannot tell if the business is actually profitable.'
+                },
+                screens: [
+                    {
+                        title: 'Separation Is Step Zero',
+                        content: [
+                            "If business and personal money are mixed, every report is noisy.",
+                            "",
+                            "Open dedicated business banking and route all client income through that account."
+                        ]
+                    },
+                    {
+                        title: 'Minimum Viable Finance Stack',
+                        content: [
+                            "Core setup:",
+                            "• Business checking for revenue and expenses",
+                            "• Business savings for tax and reserve buckets",
+                            "• Business card for tracked spend",
+                            "• Simple bookkeeping system updated weekly"
+                        ]
+                    },
+                    {
+                        title: 'Owner Pay System',
+                        content: [
+                            "Pay yourself by rule, not randomly.",
+                            "",
+                            "Example:",
+                            "• Tax bucket: fixed percentage of revenue",
+                            "• Operating bucket: business expenses",
+                            "• Owner pay: planned transfer cadence",
+                            "",
+                            "This prevents accidental under-saving for taxes."
+                        ]
+                    },
+                    {
+                        title: 'Entity Basics and Documentation',
+                        content: [
+                            "As complexity grows, evaluate entity structure, contracts, and insurance with qualified professionals.",
+                            "",
+                            "No matter what entity type you choose, keeping clean records is what actually protects your cash flow."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-24-2',
+                title: 'Manage Irregular Income and Build Runway',
+                description: 'Use a business runway model and revenue smoothing rules so variable months do not trigger financial stress.',
+                xpReward: 50,
+                story: {
+                    character: 'Bianca',
+                    scenario: 'Bianca runs a solo design studio with great quarters followed by dry spells. She keeps panicking in slow months and discounting her rates. She needs a runway system that absorbs volatility.'
+                },
+                screens: [
+                    {
+                        title: 'Volatility Is Normal',
+                        content: [
+                            "Freelance and small business income often arrives in lumpy cycles.",
+                            "",
+                            "The goal is not perfect monthly stability. The goal is resilience during low-revenue periods."
+                        ]
+                    },
+                    {
+                        title: 'Runway Math',
+                        content: [
+                            "Business runway = cash reserves / monthly core business burn.",
+                            "",
+                            "Track runway in months, not just dollars.",
+                            "",
+                            "Many freelancers and small business owners set a minimum runway threshold (e.g., 3-6 months of expenses) before allowing themselves to increase spending."
+                        ]
+                    },
+                    {
+                        title: 'Revenue Smoothing Rules',
+                        content: [
+                            "When revenue is strong:",
+                            "• Pre-fund tax and reserve buckets first",
+                            "• Avoid permanent cost increases until trend is durable",
+                            "",
+                            "When revenue drops:",
+                            "• Cut low-ROI expenses quickly",
+                            "• Protect lead-generation and core delivery capacity"
+                        ]
+                    },
+                    {
+                        title: 'Pipeline Discipline',
+                        content: [
+                            "Track three pipeline metrics weekly:",
+                            "• Qualified leads",
+                            "• Proposal value outstanding",
+                            "• Time-to-cash from signed contract",
+                            "",
+                            "Cash-flow problems often start as pipeline visibility problems."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-24-3',
+                title: 'Pricing, Margin, and Effective Hourly Rate',
+                description: 'Price offers based on delivery cost, risk, and value so the business can grow without hidden pay cuts.',
+                xpReward: 50,
+                story: {
+                    character: 'Keon',
+                    scenario: 'Keon wins a lot of projects but still struggles to save. He realizes many "profitable" jobs include unbilled revisions and weekend support that crush his effective hourly rate.'
+                },
+                screens: [
+                    {
+                        title: 'Revenue Is Not Profit',
+                        content: [
+                            "High sales can hide weak margins.",
+                            "",
+                            "You need unit-level clarity: price, delivery time, direct costs, and overhead allocation."
+                        ]
+                    },
+                    {
+                        title: 'Effective Hourly Rate (EHR)',
+                        content: [
+                            "EHR = (project revenue - direct costs) / true hours worked.",
+                            "",
+                            "Include admin, revision rounds, and client communication time.",
+                            "",
+                            "If your EHR is consistently below your target, it is time to rethink your pricing, scope boundaries, or both."
+                        ]
+                    },
+                    {
+                        title: 'Pricing Structures',
+                        content: [
+                            "Common structures:",
+                            "• Hourly: simple, but can cap upside",
+                            "• Fixed fee: good for repeatable scope with clear boundaries",
+                            "• Retainer: stabilizes cash flow for ongoing service",
+                            "",
+                            "Whichever model you use, scope control is non-negotiable."
+                        ]
+                    },
+                    {
+                        title: 'Margin Protection Levers',
+                        content: [
+                            "Use explicit terms for:",
+                            "• Included deliverables",
+                            "• Revision limits",
+                            "• Rush fees",
+                            "• Late payment penalties",
+                            "",
+                            "Pricing is strategy. Boundaries are enforcement."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-24-4',
+                title: 'Freelancer Tax Ops Without Panic',
+                description: 'Create a tax-ready workflow for quarterly estimates, deductible expense tracking, and clean records.',
+                xpReward: 55,
+                story: {
+                    character: 'Yasmin',
+                    scenario: 'Yasmin had a strong year and then got surprised by a large tax bill with penalties. She now wants a repeatable quarterly system that prevents last-minute scrambling.'
+                },
+                screens: [
+                    {
+                        title: 'Quarterly Rhythm Beats Annual Panic',
+                        content: [
+                            "Independent earners generally need estimated tax payments during the year.",
+                            "",
+                            "A quarterly cadence reduces penalty risk and protects business cash."
+                        ]
+                    },
+                    {
+                        title: 'Tax Bucket Workflow',
+                        content: [
+                            "Every client payment triggers an automatic transfer to a tax reserve account.",
+                            "",
+                            "Set your percentage conservatively, then adjust with professional guidance as real numbers come in."
+                        ]
+                    },
+                    {
+                        title: 'Deduction Tracking Quality',
+                        content: [
+                            "Good deduction capture requires:",
+                            "• Real-time categorization",
+                            "• Receipt or documentation hygiene",
+                            "• Clear business-purpose notes for gray-area expenses",
+                            "",
+                            "Messy records lead to missed deductions, year-end stress, and higher audit risk."
+                        ]
+                    },
+                    {
+                        title: 'Your Quarterly Finance Meeting',
+                        content: [
+                            "Review each quarter:",
+                            "• Revenue and margin trend",
+                            "• Tax reserve sufficiency",
+                            "• Top expense categories",
+                            "• Forecast for next quarter",
+                            "",
+                            "Treat taxes as an operating system, not a once-a-year event."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-24-5',
+                title: 'Risk Management: Contracts, Insurance, and Contingency',
+                description: 'Protect income with clear contracts, payment controls, and risk transfer where appropriate.',
+                xpReward: 55,
+                story: {
+                    character: 'Felix',
+                    scenario: 'Felix delivered a large project, then the client disputed scope and delayed payment for two months. Without strong contract terms, he had little leverage and no cash cushion.'
+                },
+                screens: [
+                    {
+                        title: 'Income Risk Is Business Risk',
+                        content: [
+                            "Small operators can be damaged by one bad contract or one unpaid invoice.",
+                            "",
+                            "Risk controls are revenue protection, not bureaucracy."
+                        ]
+                    },
+                    {
+                        title: 'Contract Clauses That Matter',
+                        content: [
+                            "At minimum define:",
+                            "• Scope and deliverables",
+                            "• Payment schedule and late terms",
+                            "• Revision boundaries",
+                            "• Ownership and licensing terms",
+                            "• Termination and dispute procedures"
+                        ]
+                    },
+                    {
+                        title: 'Payment Controls',
+                        content: [
+                            "Use cash-flow-friendly defaults:",
+                            "• Deposits before work starts",
+                            "• Milestone billing for larger projects",
+                            "• No final handoff before final payment",
+                            "",
+                            "Staying disciplined about getting paid on time prevents the kind of cash crunches that force bad decisions."
+                        ]
+                    },
+                    {
+                        title: 'Insurance and Continuity',
+                        content: [
+                            "Depending on business type, consider professional and general liability coverage.",
+                            "",
+                            "Also build a continuity plan:",
+                            "• Emergency reserve target",
+                            "• Backup vendor network",
+                            "• Critical file and credential access map"
+                        ]
+                    }
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-kids-finances',
+        title: 'Investing in Your Kids',
+        description: 'Secure your child\'s financial future through smart educational investments and tax-advantaged accounts.',
+        xpReward: 120,
+        lessons: [
+            {
+                id: 'lesson-kids-1',
+                title: 'ROI of Education: Public vs Private, Degrees vs Trades',
+                description: 'A high-level look at the return on investment of different educational paths for your children.',
+                xpReward: 35,
+                screens: [
+                    {
+                        title: 'First Things First: Secure Your Own Oxygen Mask',
+                        content: [
+                            "**Before you invest a single dollar in your child's future, make sure your own financial house is in order.**",
+                            "",
+                            "Just like on an airplane, you put your own oxygen mask on first. That means:",
+                            "• Your own retirement accounts (401k, Roth IRA) are being funded consistently.",
+                            "• You have an emergency fund covering 3-6 months of expenses.",
+                            "• High-interest debt (credit cards, personal loans) is paid off or under control.",
+                            "",
+                            "Why? Because your children can borrow for college—but you **cannot** borrow for retirement. If you sacrifice your retirement to fund their education, you may become a financial burden on them later. The best gift you can give your kids is parents who are financially stable.",
+                            "",
+                            "Once your foundation is solid, THEN it's time to build for your kids. Let's explore how."
+                        ]
+                    },
+                    {
+                        title: 'Public vs Private K-12: The Real Math',
+                        content: [
+                            "The average cost of **private K-12 school** in the U.S. is roughly **$12,000-$16,000/year** for elementary and **$16,000-$25,000+/year** for high school.",
+                            "",
+                            "Over 13 years (K-12), a family could spend **$150,000 to $300,000+** on private school tuition alone.",
+                            "",
+                            "Now consider the alternative: what if that money were **invested** instead?",
+                            "",
+                            "If you invested $15,000/year for 13 years at an average 8% annual return, you'd have roughly **$340,000** at the end.",
+                            "",
+                            "**Public school** is funded by your tax dollars and is free at the point of entry. Many public schools deliver excellent outcomes, especially in well-funded districts.",
+                            "",
+                            "The ROI question isn't 'Is private school better?' It's: **'Is private school $150,000-$300,000 better?'** For most families, the data suggests the answer is nuanced. A child's success depends far more on parental involvement, reading at home, and mentorship than on the name on the school building."
+                        ]
+                    },
+                    {
+                        title: 'Bachelor\'s Degree vs The Trades',
+                        content: [
+                            "A **4-year bachelor's degree** costs an average of **$100,000-$200,000+** when you factor in tuition, room, board, and fees. On top of that, you lose **4 years of potential earnings**.",
+                            "",
+                            "Meanwhile, **trade school** (electrician, plumber, welder, HVAC tech) typically costs **$5,000-$15,000/year** for 1-2 years, and many programs offer **paid apprenticeships** where you earn while you learn.",
+                            "",
+                            "By age 22, a tradesperson may have:",
+                            "• **4+ years of work experience**",
+                            "• **$0 in student debt**",
+                            "• **$50,000-$80,000+ annual income**",
+                            "",
+                            "A college graduate at 22 may have:",
+                            "• **$30,000-$100,000+ in student loans**",
+                            "• **No work experience in their field**",
+                            "• **Entry-level salary of $40,000-$55,000**",
+                            "",
+                            "Over a lifetime, college grads earn roughly **$1.2 million more** on average—but averages hide enormous variation. An electrician earning $85K with no debt may build more wealth than a communications major earning $45K with $80K in loans.",
+                            "",
+                            "The right path depends on the individual child's strengths, interests, and the specific programs available."
+                        ]
+                    },
+                    {
+                        title: 'Master\'s Programs: When Do They Pay Off?',
+                        content: [
+                            "A **master's degree** adds another **$30,000-$120,000** in costs and 1-3 years of time.",
+                            "",
+                            "**High-ROI master's programs:**",
+                            "• MBA from a top-20 school (avg salary jump of $50,000+/year)",
+                            "• Computer Science or Engineering MS (salary premiums of $15,000-$30,000+)",
+                            "• Nurse Practitioner / Physician Assistant (required for the role, high demand)",
+                            "",
+                            "**Low-ROI master's programs (on average):**",
+                            "• General humanities MA programs",
+                            "• Degrees from unaccredited or low-ranked programs",
+                            "• Any program funded entirely by high-interest private loans",
+                            "",
+                            "The key question to ask: **'Will the salary increase I get from this degree pay back the cost within 3-5 years?'**",
+                            "",
+                            "If the answer is yes, it's likely a smart investment. If the math doesn't work, your child may be better off gaining work experience and letting an employer pay for the degree later."
+                        ]
+                    },
+                    {
+                        title: 'The Bottom Line on Education ROI',
+                        content: [
+                            "Education is one of the largest investments a family will ever make. Treat it like one.",
+                            "",
+                            "**Key takeaways:**",
+                            "• Private K-12 can be valuable, but run the numbers against investing that tuition money.",
+                            "• A bachelor's degree is not automatically the best path—trades offer excellent ROI for many careers.",
+                            "• Master's programs should be evaluated on a cold cost-vs-salary-increase basis.",
+                            "• The most expensive option is not always the best option.",
+                            "",
+                            "Teach your children to think about education as an **investment with a return**, not just a checkbox on the path to adulthood."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-kids-2',
+                title: 'The Power of Starting at Birth',
+                description: 'See how a small monthly investment from age 0 to 18 can transform your child\'s financial future.',
+                xpReward: 40,
+                screens: [
+                    {
+                        title: 'Small Amounts, Massive Results',
+                        content: [
+                            "What if you set aside just **$50 per month** for your child from the day they were born?",
+                            "",
+                            "At an average annual return of 8%:",
+                            "• **$50/month for 18 years** = ~**$24,000** (vs $10,800 if you just saved cash)",
+                            "• **$100/month for 18 years** = ~**$48,000**",
+                            "• **$200/month for 18 years** = ~**$96,000**",
+                            "• **$300/month for 18 years** = ~**$144,000**",
+                            "",
+                            "That $48,000 from just $100/month could cover **two full years** of in-state public university tuition, dramatically reducing or eliminating the need for student loans.",
+                            "",
+                            "The secret isn't a large paycheck. It's **time + consistency + compound growth**."
+                        ]
+                    },
+                    {
+                        title: 'Relieving the Burden of Student Loans',
+                        content: [
+                            "The average student loan debt for a bachelor's degree is roughly **$30,000-$40,000**.",
+                            "",
+                            "Monthly payments on $35,000 in student loans at 5.5% over 10 years = roughly **$380/month** for a decade after graduation.",
+                            "",
+                            "Now imagine if a parent had invested **$100/month** from birth. That ~$48,000 nest egg could:",
+                            "• **Eliminate** the need for student loans entirely at many state schools",
+                            "• **Cut loan amounts in half** at more expensive institutions",
+                            "• **Cover living expenses** so the student can focus on academics instead of working 30+ hours/week",
+                            "",
+                            "Instead of your child starting adulthood $35,000 in the hole, they start with a **head start**. That changes the trajectory of their entire financial life."
+                        ]
+                    },
+                    {
+                        title: 'The Compounding Head Start',
+                        content: [
+                            "Here's what makes this so powerful: if your child doesn't need all the money for school, the remainder keeps compounding.",
+                            "",
+                            "Let's say you invested $100/month for 18 years (~$48,000 balance), and your child only uses $20,000 for school. The remaining **$28,000** left invested at 8% could grow to:",
+                            "",
+                            "• **$60,000** by age 28",
+                            "• **$130,000** by age 38",
+                            "• **$600,000+** by age 58",
+                            "",
+                            "You didn't just help with college. You potentially seeded your child's **retirement fund** with a gift that cost you less than a daily coffee.",
+                            "",
+                            "This is generational wealth in action—not from a trust fund, but from **consistent small actions over time**."
+                        ]
+                    },
+                    {
+                        title: 'Getting Started: Practical Steps',
+                        content: [
+                            "You don't need to be wealthy to do this. Here's how to start:",
+                            "",
+                            "1) **Open a dedicated account** (a 529 plan or custodial brokerage account—we'll cover these in the next lesson).",
+                            "2) **Set up automatic monthly transfers** of whatever you can afford—even $25/month matters.",
+                            "3) **Invest in a diversified, low-cost index fund** (like a total stock market ETF).",
+                            "4) **Increase contributions** when you get raises, tax refunds, or birthday money from family.",
+                            "5) **Don't touch it.** Let compound interest do the heavy lifting.",
+                            "",
+                            "Remember: the best time to plant a tree was 20 years ago. The second-best time is today."
+                        ]
+                    }
+                ],
+                type: 'interactive',
+                widget: 'CompoundInterest'
+            },
+            {
+                id: 'lesson-kids-3',
+                title: '529 Plans, College Savings & Proposed Trump Accounts',
+                description: 'Tax-advantaged ways to save for your child\'s education and financial future.',
+                xpReward: 45,
+                screens: [
+                    {
+                        title: 'What Is a 529 Plan?',
+                        content: [
+                            "A **529 Plan** is a tax-advantaged savings account specifically designed for education expenses.",
+                            "",
+                            "Key benefits:",
+                            "• **Tax-free growth**: Your investments grow without being taxed.",
+                            "• **Tax-free withdrawals**: When used for qualified education expenses (tuition, books, room & board).",
+                            "• **State tax deductions**: Many states offer a tax deduction or credit for contributions.",
+                            "• **High contribution limits**: Most plans allow total contributions of $300,000+ over the life of the account.",
+                            "",
+                            "Unlike a retirement account, **anyone** can contribute—parents, grandparents, aunts, uncles, friends. Instead of toys for birthdays, ask family to contribute to the 529. Those gifts compound for years."
+                        ]
+                    },
+                    {
+                        title: '529 Flexibility: It\'s Not Just for College Anymore',
+                        content: [
+                            "529 plans have expanded significantly in recent years:",
+                            "",
+                            "• **K-12 tuition**: Up to $10,000/year can be used for private elementary and high school.",
+                            "• **Trade and vocational schools**: Qualified programs are covered.",
+                            "• **Apprenticeship programs**: Registered apprenticeships count as qualified expenses.",
+                            "• **Student loan repayment**: Up to $10,000 lifetime can be used to pay off student loans.",
+                            "",
+                            "**NEW (Starting 2024):** Unused 529 funds can now be **rolled into a Roth IRA** for the beneficiary (subject to rules like a 15-year account minimum and annual Roth contribution limits).",
+                            "",
+                            "This eliminates the old fear of 'What if my kid doesn't go to college?' Now, unused education savings can become **tax-free retirement savings**."
+                        ]
+                    },
+                    {
+                        title: 'Preparing Children for College Expenses',
+                        content: [
+                            "Beyond saving money, prepare your child to **understand** the financial side of college:",
+                            "",
+                            "**Conversations to have before they apply:**",
+                            "• 'Here's what we've saved and what we can contribute.'",
+                            "• 'Here's what student loans actually cost over 10-20 years.'",
+                            "• 'Let's compare the total cost of different schools vs. expected starting salaries.'",
+                            "",
+                            "**Smart strategies:**",
+                            "• Apply for FAFSA every year—even if you think you won't qualify.",
+                            "• Target schools where your child will be in the top 25% of applicants (they'll get better aid packages).",
+                            "• Consider community college for the first 2 years, then transfer to a 4-year school.",
+                            "• Have your child work part-time or do co-ops—not just for money, but for résumé building.",
+                            "",
+                            "The goal is a child who sees college as a **strategic investment**, not an entitlement."
+                        ]
+                    },
+                    {
+                        title: 'Proposed Trump Accounts: Free Kickstarter Money',
+                        content: [
+                            "In recent years, there has been a proposal for government-seeded investment accounts for children, sometimes referred to as **'Trump Accounts'** or similar initiatives.",
+                            "",
+                            "The basic concept:",
+                            "• The government deposits a set amount (proposals have ranged from **$1,000 to $5,000**) into an investment account for every child born in the U.S.",
+                            "• The money is invested and grows tax-free until the child reaches adulthood.",
+                            "• Funds could potentially be used for education, homeownership, or starting a business.",
+                            "",
+                            "**A note on the politics:**",
+                            "These types of proposals often carry political branding, and that can make people dismiss them based on party affiliation. **That is a mistake.**",
+                            "",
+                            "Regardless of who proposes it or what it's called, if the government is offering to put **free seed money** into a compounding investment account for your child, you should take it. Period.",
+                            "",
+                            "Political feelings should never override financial common sense. **Free money that compounds for 18+ years is free money that compounds for 18+ years**, no matter whose name is on the policy."
+                        ]
+                    },
+                    {
+                        title: 'Putting It All Together',
+                        content: [
+                            "Here's the action plan for investing in your kids:",
+                            "",
+                            "**Step 1: Secure your own finances first.** Fund your retirement, build your emergency fund, eliminate high-interest debt.",
+                            "",
+                            "**Step 2: Open a 529 Plan.** Start with whatever you can—even $25/month. Set it on autopilot.",
+                            "",
+                            "**Step 3: Enroll in any government-seeded programs** if and when they become available. Don't let politics leave money on the table.",
+                            "",
+                            "**Step 4: Have honest conversations** with your kids about the cost of education and the ROI of different paths.",
+                            "",
+                            "**Step 5: Let time do the work.** Small, consistent investments from birth can eliminate or dramatically reduce the burden of student loans and give your child a financial head start that lasts a lifetime.",
+                            "",
+                            "You don't need to be rich to build generational wealth. You just need to **start early and stay consistent**."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-23',
+        title: 'Estate Planning & Legacy Basics',
+        description: 'Learn the core legal and financial building blocks that protect loved ones and transfer assets cleanly.',
+        xpReward: 140,
+        lessons: [
+            {
+                id: 'lesson-23-1',
+                title: 'Wills, Guardianship, and Intestacy',
+                description: 'Understand what a will does, what happens without one, and how guardianship decisions are handled.',
+                xpReward: 45,
+                story: {
+                    character: 'Lena',
+                    scenario: 'Lena and her spouse have two young kids and a house, but no will. After a health scare, she realizes that if both parents die unexpectedly, courts and state default rules will decide major outcomes unless they document their wishes.'
+                },
+                screens: [
+                    {
+                        title: 'What a Will Actually Controls',
+                        content: [
+                            "A will states how you want your assets distributed after death and who should manage the process (called your executor).",
+                            "",
+                            "For parents, naming guardians is one of the highest-impact decisions."
+                        ]
+                    },
+                    {
+                        title: 'What Happens Without a Will',
+                        content: [
+                            "Dying without a will means state intestacy law determines asset distribution.",
+                            "",
+                            "That default may not match your wishes, your family situation, or who actually depends on you financially."
+                        ]
+                    },
+                    {
+                        title: 'Guardianship Considerations',
+                        content: [
+                            "When naming guardians, evaluate:",
+                            "• Values and parenting approach",
+                            "• Physical and financial capacity",
+                            "• Geographic stability",
+                            "• Willingness to serve",
+                            "",
+                            "Always have a primary and backup guardian."
+                        ]
+                    },
+                    {
+                        title: 'Execution and Storage',
+                        content: [
+                            "Estate documents are useful only if valid and findable.",
+                            "",
+                            "Follow your state's signing and witness requirements, store originals in a secure location, and make sure trusted people know where to find them."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-23-2',
+                title: 'Beneficiaries, POD/TOD, and Account Titling',
+                description: 'Avoid common transfer mistakes by aligning beneficiary forms, account titles, and estate documents.',
+                xpReward: 50,
+                story: {
+                    character: 'Harold',
+                    scenario: 'Harold updated his will after remarrying but never changed old beneficiary forms on retirement accounts. His estate plan says one thing, but his account designations say another.'
+                },
+                screens: [
+                    {
+                        title: 'Beneficiary Forms Often Override Wills',
+                        content: [
+                            "Retirement accounts and insurance policies typically transfer by beneficiary designation, not by will instructions.",
+                            "",
+                            "If forms are outdated, assets can go to unintended recipients."
+                        ]
+                    },
+                    {
+                        title: 'POD/TOD Basics',
+                        content: [
+                            "POD (Payable on Death) and TOD (Transfer on Death) designations allow certain assets to transfer directly outside probate.",
+                            "",
+                            "They can simplify transfers, but they must be coordinated with your broader plan."
+                        ]
+                    },
+                    {
+                        title: 'Titling and Ownership Structures',
+                        content: [
+                            "How an asset is titled affects who controls it now and who receives it later.",
+                            "",
+                            "Examples include individual ownership, joint ownership, and trust ownership.",
+                            "",
+                            "Inconsistent titling is a common source of disputes and delay."
+                        ]
+                    },
+                    {
+                        title: 'Annual Beneficiary Audit',
+                        content: [
+                            "Review every year and after major life events:",
+                            "• Marriage or divorce",
+                            "• Birth or adoption",
+                            "• Death in the family",
+                            "• Job changes affecting retirement accounts",
+                            "",
+                            "One stale form can undo an otherwise solid estate plan."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-23-3',
+                title: 'Power of Attorney and Health Directives',
+                description: 'Set up financial and medical decision-makers so critical choices can be made if you become incapacitated.',
+                xpReward: 50,
+                story: {
+                    character: 'Sonia',
+                    scenario: 'After a sudden stroke in her family, Sonia learns that even spouses can face delays accessing accounts or making medical choices without proper documents. She wants decision authority clarified before an emergency.'
+                },
+                screens: [
+                    {
+                        title: 'Capacity Risk Is a Planning Issue',
+                        content: [
+                            "Estate planning is not just about what happens after death — it also covers what happens if you become unable to make decisions for yourself.",
+                            "",
+                            "Without the right documents in place, your family may need to go through a court process just to pay your bills or make medical choices on your behalf."
+                        ]
+                    },
+                    {
+                        title: 'Financial Power of Attorney',
+                        content: [
+                            "A financial POA authorizes someone to handle defined financial actions on your behalf.",
+                            "",
+                            "Scope can include paying bills, managing accounts, filing taxes, and handling property transactions."
+                        ]
+                    },
+                    {
+                        title: 'Medical POA and Advance Directive',
+                        content: [
+                            "Medical documents identify who can make health decisions and communicate treatment preferences.",
+                            "",
+                            "This reduces family conflict and helps clinicians act according to your values."
+                        ]
+                    },
+                    {
+                        title: 'Choose Agents Carefully',
+                        content: [
+                            "Pick people with:",
+                            "• Sound judgment under pressure",
+                            "• Integrity and reliability",
+                            "• Willingness to act",
+                            "• Ability to communicate with family and professionals",
+                            "",
+                            "Name backups in case your first choice is unavailable."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-23-4',
+                title: 'Trust Fundamentals: When and Why',
+                description: 'Learn the practical differences between common trust structures and when they can simplify administration.',
+                xpReward: 55,
+                story: {
+                    character: 'Raj',
+                    scenario: 'Raj owns rental property in two states and wants privacy plus easier transfer to his children. He hears trusts can help, but he needs to understand when a trust adds value and when it only adds complexity.'
+                },
+                screens: [
+                    {
+                        title: 'What a Trust Does',
+                        content: [
+                            "A trust is a legal structure where a trustee manages assets under written rules for beneficiaries.",
+                            "",
+                            "It can be used to control timing, conditions, and management of distributions."
+                        ]
+                    },
+                    {
+                        title: 'Revocable vs Irrevocable (High Level)',
+                        content: [
+                            "**Revocable trust**: flexible during your lifetime, often used for administration efficiency and continuity.",
+                            "",
+                            "**Irrevocable trust**: generally less flexible, sometimes used for advanced asset, tax, or legacy goals."
+                        ]
+                    },
+                    {
+                        title: 'When Trusts Can Help',
+                        content: [
+                            "Common reasons:",
+                            "• Blended family complexity",
+                            "• Minor or special-needs beneficiaries",
+                            "• Multi-state property holdings",
+                            "• Desire for private, structured distribution terms"
+                        ]
+                    },
+                    {
+                        title: 'Funding the Trust Is Critical',
+                        content: [
+                            "A trust only controls assets that are properly retitled or assigned to it.",
+                            "",
+                            "Creating a trust document without actually transferring assets into it is like buying a safe but never putting anything inside — most of the benefit goes unrealized."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-23-5',
+                title: 'Estate Plan Maintenance and Legacy Communication',
+                description: 'Keep documents current, organize access information, and communicate intent to reduce future conflict.',
+                xpReward: 55,
+                story: {
+                    character: 'Daphne',
+                    scenario: 'Daphne has a basic will but no one knows where anything is: account list, passwords, insurance, or final wishes. She wants a practical system her family can actually use during a hard week.'
+                },
+                screens: [
+                    {
+                        title: 'Estate Planning Is a Living Process',
+                        content: [
+                            "Your plan should evolve with life changes, not sit untouched for a decade.",
+                            "",
+                            "Trigger updates after marriage, divorce, births, deaths, relocation, and major asset changes."
+                        ]
+                    },
+                    {
+                        title: 'Build a Legacy Binder',
+                        content: [
+                            "Organize:",
+                            "• Document index (will, POA, directives, trust)",
+                            "• Account and policy inventory",
+                            "• Contact list (attorney, CPA, advisors, executors)",
+                            "• Digital asset access instructions",
+                            "",
+                            "Store securely and share retrieval instructions with trusted people."
+                        ]
+                    },
+                    {
+                        title: 'Reduce Family Conflict Upfront',
+                        content: [
+                            "Conflicts often come from surprise, not just money.",
+                            "",
+                            "Communicate key intentions in advance: guardianship choices, distribution logic, and role assignments."
+                        ]
+                    },
+                    {
+                        title: 'Annual 30-Minute Review',
+                        content: [
+                            "Schedule one annual review date.",
+                            "",
+                            "Checklist:",
+                            "• Beneficiaries still correct",
+                            "• Agents and executors still appropriate",
+                            "• New accounts captured",
+                            "• Storage/access instructions still accurate"
+                        ]
+                    }
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-25',
+        title: 'Retirement Drawdown & Decumulation',
+        description: 'Convert savings into durable retirement income with withdrawal rules, tax sequencing, and guardrails.',
+        xpReward: 150,
+        lessons: [
+            {
+                id: 'lesson-25-1',
+                title: 'From Accumulation to Retirement Paycheck',
+                description: 'Shift from maximizing account balances to building reliable spendable income.',
+                xpReward: 45,
+                story: {
+                    character: 'Gloria',
+                    scenario: 'Gloria saved aggressively for 35 years and now has enough assets, but no clear paycheck plan. She needs to know how much she can spend each month without guessing.'
+                },
+                screens: [
+                    {
+                        title: 'Decumulation Is a Different Game',
+                        content: [
+                            "Accumulation asks: how do I grow assets?",
+                            "",
+                            "Decumulation asks: how do I turn assets into reliable income for an uncertain lifespan?"
+                        ]
+                    },
+                    {
+                        title: 'Start With Spending Tiers',
+                        content: [
+                            "Define:",
+                            "• **Essential spending** (housing, food, healthcare, insurance)",
+                            "• **Flexible spending** (travel, gifts, hobbies)",
+                            "",
+                            "Protect essentials first. Flex can adjust with market conditions."
+                        ]
+                    },
+                    {
+                        title: 'Build an Income Map',
+                        content: [
+                            "List recurring income sources and start dates:",
+                            "• Social Security",
+                            "• Pension income",
+                            "• Annuity or bond ladder cash flow",
+                            "• Portfolio withdrawals",
+                            "",
+                            "The gap between your essential expenses and your guaranteed income is what your investment portfolio must cover."
+                        ]
+                    },
+                    {
+                        title: 'Define a Monthly Paycheck Rule',
+                        content: [
+                            "Set a planned monthly transfer from investment accounts into spending accounts.",
+                            "",
+                            "Treat it as a paycheck system with periodic review, not ad hoc withdrawals."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-25-2',
+                title: 'Withdrawal Rates and Sequence Risk',
+                description: 'Understand sustainable withdrawal concepts and why early retirement market losses can permanently damage plans.',
+                xpReward: 50,
+                story: {
+                    character: 'Victor',
+                    scenario: 'Victor retired right before a market drawdown. His portfolio value dropped while he was still withdrawing the same amount, and now he worries he retired at the wrong time.'
+                },
+                screens: [
+                    {
+                        title: 'Withdrawal Rate Basics',
+                        content: [
+                            "Your withdrawal rate is the percentage of your portfolio you take out each year. For example, withdrawing $40,000 from a $1,000,000 portfolio is a 4% withdrawal rate.",
+                            "",
+                            "The higher your withdrawal rate, the greater the risk of running out of money."
+                        ]
+                    },
+                    {
+                        title: 'Sequence-of-Returns Risk',
+                        content: [
+                            "Poor market returns early in retirement can hurt more than poor returns later.",
+                            "",
+                            "Why: if you withdraw money while your portfolio is down, you lock in losses and leave fewer dollars to recover when markets bounce back."
+                        ]
+                    },
+                    {
+                        title: 'Mitigation Strategies',
+                        content: [
+                            "Common mitigations:",
+                            "• Hold a near-term cash or short-duration buffer",
+                            "• Reduce flexible spending after large drawdowns",
+                            "• Use dynamic withdrawal guardrails instead of fixed inflation-only increases"
+                        ]
+                    },
+                    {
+                        title: 'Stress Testing Mindset',
+                        content: [
+                            "Run your plan against adverse scenarios, not just average returns.",
+                            "",
+                            "A robust plan is one you can stick with when markets are uncomfortable."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-25-3',
+                title: 'Tax-Aware Withdrawal Order',
+                description: 'Coordinate taxable, tax-deferred, and Roth withdrawals to manage taxes and preserve long-term flexibility.',
+                xpReward: 55,
+                story: {
+                    character: 'Pam and Eli',
+                    scenario: 'Pam and Eli have money in taxable brokerage, traditional retirement accounts, and Roth accounts. Their first retirement year triggered a larger tax bill than expected because they withdrew in the wrong sequence.'
+                },
+                screens: [
+                    {
+                        title: 'Account Types Create Tax Strategy',
+                        content: [
+                            "Retirement income planning is partly a tax-planning problem.",
+                            "",
+                            "Different account types are taxed differently, so withdrawal order affects net spendable income."
+                        ]
+                    },
+                    {
+                        title: 'Typical Withdrawal Sequencing Logic',
+                        content: [
+                            "A common framework is to blend sources strategically rather than draining one account blindly.",
+                            "",
+                            "Goals:",
+                            "• Manage current tax bracket exposure",
+                            "• Preserve tax-free growth capacity",
+                            "• Avoid surprise premium/benefit cliffs"
+                        ]
+                    },
+                    {
+                        title: 'RMD and Bracket Management',
+                        content: [
+                            "Required minimum distributions from certain tax-deferred accounts can force taxable income later.",
+                            "",
+                            "Planning ahead across multiple years can help smooth out your taxable income and avoid a big tax spike later."
+                        ]
+                    },
+                    {
+                        title: 'Coordinate With Filing and Medicare Effects',
+                        content: [
+                            "Withdrawal choices can ripple into other costs.",
+                            "",
+                            "Each year, review your tax situation, benefit thresholds (like Medicare premiums), and expected spending together in one planning session."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-25-4',
+                title: 'Income Floor and Bucket Strategies',
+                description: 'Design a retirement income floor for essentials and use portfolio buckets for stability and flexibility.',
+                xpReward: 55,
+                story: {
+                    character: 'Anita',
+                    scenario: 'Anita can cover about 70% of essentials with Social Security and a pension. She wants a simple bucket system for the remaining 30% so she can sleep at night during market volatility.'
+                },
+                screens: [
+                    {
+                        title: 'Income Floor Concept',
+                        content: [
+                            "Income floor = recurring cash flow intended to cover essential expenses with high reliability.",
+                            "",
+                            "The stronger your floor, the less pressure on growth assets during bad markets."
+                        ]
+                    },
+                    {
+                        title: 'Three-Bucket Example',
+                        content: [
+                            "Bucket 1: 1-2 years of spending needs in cash/near-cash",
+                            "Bucket 2: intermediate horizon assets for refilling Bucket 1",
+                            "Bucket 3: long-term growth assets",
+                            "",
+                            "Buckets are a behavior tool as much as an allocation tool."
+                        ]
+                    },
+                    {
+                        title: 'Refill Rules',
+                        content: [
+                            "Define objective refill triggers.",
+                            "",
+                            "Example:",
+                            "• In strong markets, harvest gains from Bucket 3 to refill Bucket 1",
+                            "• In weak markets, draw from Bucket 1 while reducing discretionary spend"
+                        ]
+                    },
+                    {
+                        title: 'Avoid Common Bucket Mistakes',
+                        content: [
+                            "Mistakes to avoid:",
+                            "• Leaving all buckets static for years",
+                            "• Overfunding cash and underfunding long-run growth",
+                            "• Ignoring inflation impact on spending needs"
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-25-5',
+                title: 'Annual Guardrails and Spending Adjustments',
+                description: 'Use pre-set guardrails to adjust spending when markets or inflation shift, instead of reacting emotionally.',
+                xpReward: 60,
+                story: {
+                    character: 'Martha and Joel',
+                    scenario: 'Martha and Joel promised themselves they would not panic-sell in retirement, but a 20% portfolio drop made every decision feel emotional. They need objective guardrails that tell them when to cut, hold, or raise spending.'
+                },
+                screens: [
+                    {
+                        title: 'Guardrails Create Decision Discipline',
+                        content: [
+                            "Guardrails are predefined spending rules tied to portfolio and inflation conditions.",
+                            "",
+                            "They reduce emotional decision-making during stress."
+                        ]
+                    },
+                    {
+                        title: 'Sample Guardrail Framework',
+                        content: [
+                            "Example rules:",
+                            "• If withdrawal rate rises above upper threshold -> trim flexible spending",
+                            "• If withdrawal rate falls below lower threshold -> consider modest raise or gifting",
+                            "• If inflation spikes -> prioritize essentials and delay large discretionary upgrades"
+                        ]
+                    },
+                    {
+                        title: 'Annual Retirement Review Agenda',
+                        content: [
+                            "Review once per year:",
+                            "• Actual spending vs plan",
+                            "• Portfolio withdrawals and current withdrawal rate",
+                            "• Tax outcomes and next-year estimates",
+                            "• Healthcare and long-term care assumptions",
+                            "• Estate and beneficiary updates"
+                        ]
+                    },
+                    {
+                        title: 'Resilience Over Precision',
+                        content: [
+                            "No retirement plan is perfect.",
+                            "",
+                            "The goal is a plan that can adapt without panic, preserve dignity, and keep essentials funded through multiple market environments."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            }
+        ]
+    },
+    {
+        id: 'module-17',
+        title: 'Wealth & Impact',
+        description: 'Giving, legacy, and the economics of philanthropy.',
+        xpReward: 100,
+        lessons: [
+            {
+                id: 'lesson-17-1',
+                title: 'Giving and Legacy',
+                description: 'Understand non-profits, Donor Advised Funds, and how to maximize your charitable impact.',
+                xpReward: 40,
+                screens: [
+                    {
+                        title: 'The Scale of Giving',
+                        content: [
+                            "Generosity has a massive economic footprint. In the United States, charitable giving consistently hovers around **2% of the total Gross Domestic Product (GDP)** every single year.",
+                            "",
+                            "This equates to hundreds of billions of dollars voluntarily transferred from private citizens and corporations to organizations trying to solve problems.",
+                            "",
+                            "This drive to give isn't just modern philanthropy. Many religions and cultures have built-in systems of giving. For example, **tithing** is the practice of giving 10% of one's income to a religious or charitable organization—a standard that dates back millennia."
+                        ]
+                    },
+                    {
+                        title: 'How Non-Profits Work',
+                        content: [
+                            "When you donate, your money usually goes to a **501(c)(3) non-profit organization**.",
+                            "",
+                            "\"Non-profit\" doesn't mean no one gets paid. It means the organization has no *owners* or *shareholders* who receive the profits. Any surplus revenue MUST be reinvested back into the organization's mission.",
+                            "",
+                            "A healthy non-profit needs to spend money on:",
+                            "• **Program Expenses:** The actual goods and services supporting the mission.",
+                            "• **Administrative & Overhead:** Paying staff, renting office space, running the accounting.",
+                            "• **Fundraising:** Marketing to bring in the next round of donations.",
+                            "",
+                            "While you want overhead to be reasonable, starving a non-profit of administrative funds prevents them from hiring talented leaders to actually solve the problem."
+                        ]
+                    },
+                    {
+                        title: 'Donor Advised Funds (DAFs)',
+                        content: [
+                            "For those looking to structure their giving, **Donor Advised Funds (DAFs)** have become incredibly popular.",
+                            "",
+                            "Think of a DAF like a personal charitable savings account:",
+                            "1) You contribute cash or stock into the DAF and get an **immediate tax deduction** for that year.",
+                            "2) The money in the DAF is invested and grows tax-free.",
+                            "3) Whenever you're ready (months or years later), you \"advise\" the fund to send grants out to your favorite charities.",
+                            "",
+                            "They are beloved by donors because they simplify giving (one tax receipt) and allow you to separate the *timing* of the tax benefit from the *timing* of the actual charitable payout."
+                        ]
+                    },
+                    {
+                        title: 'The Tax Angle for the Wealthy',
+                        content: [
+                            "While most people give purely out of generosity, the wealthy pair giving with a highly efficient tax strategy.",
+                            "",
+                            "Instead of donating cash, wealthy individuals often donate **highly appreciated assets** (like stocks that have gone up 300% in value) directly to a charity or a DAF.",
+                            "",
+                            "By doing this, they score a double benefit:",
+                            "• They get an income tax deduction for the *full current market value* of the stock.",
+                            "• They **never have to pay capital gains tax** on the 300% growth.",
+                            "",
+                            "The charity gets the full value to sell tax-free, and the donor wiped out a massive tax liability. It's a win-win."
+                        ]
+                    },
+                    {
+                        title: 'Effective Altruism',
+                        content: [
+                            "With thousands of charities asking for money, how do you know yours is actually helping?",
+                            "",
+                            "A movement called **Effective Altruism** focuses on using evidence and careful reasoning to figure out how to benefit others as much as possible.",
+                            "",
+                            "Organizations like **GiveWell** spend thousands of hours researching charities to find the ones that save or improve lives the most per dollar spent.",
+                            "",
+                            "Instead of giving based on an emotional commercial, effective altruists seek out independently verified data—often discovering that a dollar sent to fund malaria medication or vitamin A supplements overseas prevents far more suffering than a dollar spent locally."
                         ]
                     }
                 ],
