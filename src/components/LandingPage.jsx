@@ -179,20 +179,6 @@ export default function LandingPage() {
                             </Link>
                         </div>
 
-                        <div style={{ marginTop: '0.75rem' }}>
-                            <Link to="/resources" style={{ color: 'var(--text-muted)', fontSize: '0.88rem' }}>
-                                Trusted Resources (Gov + Investopedia)
-                            </Link>
-                        </div>
-
-                        <div style={{
-                            marginTop: '1rem',
-                            color: 'var(--text-muted)',
-                            fontSize: '0.88rem',
-                            fontWeight: '500'
-                        }}>
-                            Support open financial education. Always free.
-                        </div>
                     </div>
 
                     {/* Live Widget Preview */}
