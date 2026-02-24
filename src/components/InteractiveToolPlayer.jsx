@@ -1,10 +1,12 @@
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, Navigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 import { curriculum } from '../data/curriculum';
 import SEO from './SEO';
-import { WIDGET_COMPONENTS } from './interactive/widgetRegistry';
+import { WIDGET_COMPONENTS, FREE_TOOLS } from './interactive/widgetRegistry';
 
 export default function InteractiveToolPlayer() {
     const { widgetId } = useParams();
+    const { user } = useAuth();
     const WidgetComponent = widgetId ? WIDGET_COMPONENTS[widgetId] : null;
 
     const relatedLesson = curriculum
@@ -20,25 +22,36 @@ export default function InteractiveToolPlayer() {
         );
     }
 
+    const isFree = FREE_TOOLS.includes(widgetId);
+
+    if (!isFree && !user) {
+        return <Navigate to="/login" />;
+    }
+
     return (
         <div className="container" style={{ padding: '1.2rem 1rem 2rem' }}>
             <SEO
                 title={relatedLesson?.title || 'Interactive Tool'}
                 description={relatedLesson?.description || 'Interactive financial tool'}
                 path={`/tools/${widgetId}`}
-                noindex={true}
+                noindex={!isFree}
             />
 
-            <div style={{ display: 'flex', justifyContent: 'space-between', gap: '0.8rem', flexWrap: 'wrap', marginBottom: '0.9rem' }}>
-                <div style={{ display: 'flex', gap: '0.7rem', alignItems: 'center', flexWrap: 'wrap' }}>
-                    <Link to="/tools" style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>← Tools</Link>
-                    <span style={{ color: 'var(--text-muted)' }}>/</span>
-                    <span style={{ fontWeight: '600' }}>{relatedLesson?.title || widgetId}</span>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '0.5rem', marginBottom: '0.9rem' }}>
+                <div style={{ minWidth: 0 }}>
+                    <Link to="/tools" style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>&larr; Tools</Link>
+                    <h1 style={{ fontSize: 'clamp(1rem, 3vw, 1.25rem)', fontWeight: '600', margin: '0.25rem 0 0' }}>{relatedLesson?.title || widgetId}</h1>
                 </div>
                 {relatedLesson && (
-                    <Link to={`/learn/${relatedLesson.id}`} className="btn btn-outline" style={{ fontSize: '0.8rem' }}>
-                        Open Full Lesson
-                    </Link>
+                    user ? (
+                        <Link to={`/learn/${relatedLesson.id}`} className="btn btn-outline" style={{ fontSize: '0.8rem', flexShrink: 0 }}>
+                            Open Full Lesson
+                        </Link>
+                    ) : (
+                        <Link to={`/lesson/${relatedLesson.id}`} className="btn btn-outline" style={{ fontSize: '0.8rem', flexShrink: 0 }}>
+                            Read Lesson
+                        </Link>
+                    )
                 )}
             </div>
 
@@ -48,7 +61,7 @@ export default function InteractiveToolPlayer() {
                 </p>
             )}
 
-            <div style={{ height: 'clamp(620px, 86vh, 1080px)', minWidth: 0 }}>
+            <div style={{ minHeight: 'clamp(620px, 86vh, 1080px)', minWidth: 0 }}>
                 <WidgetComponent />
             </div>
         </div>

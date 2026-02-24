@@ -12,6 +12,13 @@ import Sp500DollarVsGoldChart from './Sp500DollarVsGoldChart';
 import ChinaEconomicRiseChart from './ChinaEconomicRiseChart';
 import MoneyMultiplier from './MoneyMultiplier';
 
+export const FREE_TOOLS = [
+    'CompoundInterest',
+    'BudgetAllocator',
+    'MoneyMultiplier',
+    'EmployerMatchCalculator'
+];
+
 export const WIDGET_COMPONENTS = {
     CompoundInterest,
     BudgetAllocator,

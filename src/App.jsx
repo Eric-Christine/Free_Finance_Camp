@@ -53,16 +53,8 @@ function App() {
             <VocabReview />
           </PrivateRoute>
         } />
-        <Route path="/tools" element={
-          <PrivateRoute>
-            <InteractiveToolsPage />
-          </PrivateRoute>
-        } />
-        <Route path="/tools/:widgetId" element={
-          <PrivateRoute>
-            <InteractiveToolPlayer />
-          </PrivateRoute>
-        } />
+        <Route path="/tools" element={<InteractiveToolsPage />} />
+        <Route path="/tools/:widgetId" element={<InteractiveToolPlayer />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Suspense>

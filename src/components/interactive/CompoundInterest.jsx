@@ -189,14 +189,14 @@ export function CompoundInterestCore({ compact = false }) {
 
       {/* Graph Area */}
       <div style={{
-        height: compact ? 'clamp(320px, 44vh, 420px)' : 'clamp(390px, 52vh, 560px)',
+        height: compact ? 'clamp(320px, 44vh, 420px)' : 'clamp(300px, 48vh, 560px)',
         marginBottom: compact ? '1.5rem' : '2rem',
         minWidth: 0
       }}>
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart
             data={data}
-            margin={{ top: 8, right: compact ? 12 : 16, left: compact ? 8 : 14, bottom: 18 }}
+            margin={{ top: 8, right: compact ? 12 : 16, left: compact ? 8 : 4, bottom: 18 }}
           >
             <defs>
               <linearGradient id="colorInvested" x1="0" y1="0" x2="0" y2="1">
@@ -208,20 +208,20 @@ export function CompoundInterestCore({ compact = false }) {
             <XAxis
               dataKey="year"
               stroke="var(--text-muted)"
-              tick={{ fill: 'var(--text-muted)', fontSize: compact ? 12 : 14 }}
+              tick={{ fill: 'var(--text-muted)', fontSize: compact ? 12 : 11 }}
               tickLine={false}
               axisLine={false}
-              label={{ value: 'Years', position: 'insideBottomRight', offset: -4, fill: 'var(--text-muted)', fontSize: compact ? 12 : 14 }}
+              label={{ value: 'Years', position: 'insideBottomRight', offset: -4, fill: 'var(--text-muted)', fontSize: compact ? 12 : 11 }}
             />
             <YAxis
               stroke="var(--text-muted)"
               tickFormatter={formatYAxisTick}
-              width={compact ? 60 : 66}
+              width={compact ? 60 : 52}
               domain={[0, maxY]}
               ticks={yTicks}
-              tick={{ fill: 'var(--text-muted)', fontSize: compact ? 12 : 14 }}
+              tick={{ fill: 'var(--text-muted)', fontSize: compact ? 12 : 11 }}
               interval={0}
-              tickMargin={8}
+              tickMargin={4}
               tickLine={false}
               axisLine={false}
             />
@@ -231,7 +231,7 @@ export function CompoundInterestCore({ compact = false }) {
               formatter={(value) => [`$${value.toLocaleString()}`, '']}
               labelStyle={{ color: 'var(--text-muted)', marginBottom: '4px', fontWeight: '500' }}
             />
-            <Legend verticalAlign="top" iconType="circle" wrapperStyle={{ paddingBottom: '20px', fontSize: compact ? '0.9rem' : '1.05rem' }} />
+            <Legend verticalAlign="top" iconType="circle" wrapperStyle={{ paddingBottom: '12px', fontSize: compact ? '0.9rem' : '0.75rem' }} />
             <Area type="monotone" dataKey="Cash" stroke="#ef4444" fill="none" strokeWidth={2} name="Cash (Inflation -2%)" />
             <Area type="monotone" dataKey="Savings" stroke="#3b82f6" fill="none" strokeWidth={2} name="High Yield Savings (+1%)" />
             <Area type="monotone" dataKey="Invested" stroke="#10b981" fillOpacity={1} fill="url(#colorInvested)" strokeWidth={3} name={`Invested (+${stockRate}%)`} />

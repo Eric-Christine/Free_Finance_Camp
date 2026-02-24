@@ -163,6 +163,20 @@ export default function LandingPage() {
                             >
                                 Read Free Guides
                             </Link>
+                            <Link
+                                to="/tools"
+                                style={{
+                                    padding: '0.85rem 1.45rem',
+                                    fontSize: '0.97rem',
+                                    fontWeight: '600',
+                                    color: 'var(--text-main)',
+                                    textDecoration: 'none',
+                                    border: '1px solid var(--border)',
+                                    borderRadius: 'var(--radius)'
+                                }}
+                            >
+                                Free Tools
+                            </Link>
                         </div>
 
                         <div style={{ marginTop: '0.75rem' }}>
