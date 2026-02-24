@@ -22,14 +22,23 @@ function daysBetweenDateStrings(start, end) {
     return Math.round((endUtc - startUtc) / (1000 * 60 * 60 * 24));
 }
 
-// Level thresholds
+// Level thresholds – scaled to cover the full curriculum (~7 675 XP total)
 const LEVELS = [
-    { level: 1, title: 'Finance Newbie', minXp: 0 },
-    { level: 2, title: 'Money Manager', minXp: 50 },
-    { level: 3, title: 'Budget Boss', minXp: 150 },
-    { level: 4, title: 'Investor-in-Training', minXp: 300 },
-    { level: 5, title: 'Wealth Builder', minXp: 500 },
-    { level: 6, title: 'Financial Master', minXp: 750 },
+    { level: 1,  title: 'Finance Newbie',        minXp: 0 },
+    { level: 2,  title: 'Money Manager',         minXp: 50 },
+    { level: 3,  title: 'Budget Boss',           minXp: 150 },
+    { level: 4,  title: 'Investor-in-Training',  minXp: 300 },
+    { level: 5,  title: 'Wealth Builder',        minXp: 500 },
+    { level: 6,  title: 'Financial Strategist',  minXp: 750 },
+    { level: 7,  title: 'Portfolio Pro',         minXp: 1050 },
+    { level: 8,  title: 'Market Analyst',        minXp: 1450 },
+    { level: 9,  title: 'Retirement Planner',    minXp: 1950 },
+    { level: 10, title: 'Tax Tactician',         minXp: 2550 },
+    { level: 11, title: 'Estate Planner',        minXp: 3250 },
+    { level: 12, title: 'Wealth Advisor',        minXp: 4050 },
+    { level: 13, title: 'Investment Sage',       minXp: 5000 },
+    { level: 14, title: 'Money Maestro',         minXp: 6100 },
+    { level: 15, title: 'Financial Master',      minXp: 7500 },
 ];
 
 export function ProgressProvider({ children }) {
