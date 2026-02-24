@@ -1,7 +1,7 @@
 # Free Finance Camp Lesson Content Export
 
 Auto-generated from `src/data/curriculum.js` and `src/data/quizzes.js`.
-Generated at: 2026-02-23T22:50:25.994Z
+Generated at: 2026-02-24T01:09:37.868Z
 
 Use this file to copy lesson material into Word and edit.
 
