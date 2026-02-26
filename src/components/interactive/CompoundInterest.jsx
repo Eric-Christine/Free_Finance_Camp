@@ -163,6 +163,11 @@ export function CompoundInterestCore({ compact = false }) {
 
   const monthlyProgress = ((monthlyAmount - MONTHLY_MIN) / (MONTHLY_MAX - MONTHLY_MIN)) * 100;
   const yearsProgress = ((years - YEARS_MIN) / (YEARS_MAX - YEARS_MIN)) * 100;
+  const midpointYear = Math.max(1, Math.floor(years / 2));
+  const investedAtMidpoint = data[midpointYear]?.Invested ?? 0;
+  const investedAtEnd = data[years]?.Invested ?? 0;
+  const firstHalfGrowth = investedAtMidpoint;
+  const secondHalfGrowth = Math.max(0, investedAtEnd - investedAtMidpoint);
 
   return (
     <div style={{
@@ -305,6 +310,24 @@ export function CompoundInterestCore({ compact = false }) {
           <span style={{ color: '#ef4444' }}>Cash: <strong style={{ color: 'var(--text-main)', marginLeft: '4px' }}>${data[years]?.Cash?.toLocaleString()}</strong></span>
           <span style={{ color: '#3b82f6' }}>HYSA: <strong style={{ color: 'var(--text-main)', marginLeft: '4px' }}>${data[years]?.Savings?.toLocaleString()}</strong></span>
           <span style={{ color: '#10b981' }}>Invested: <strong style={{ color: 'var(--text-main)', marginLeft: '4px' }}>${data[years]?.Invested?.toLocaleString()}</strong></span>
+        </div>
+      </div>
+
+      <div style={{
+        marginTop: compact ? '1rem' : '1.2rem',
+        padding: compact ? '0.8rem 0.95rem' : '0.95rem 1.1rem',
+        backgroundColor: 'rgba(16, 185, 129, 0.08)',
+        border: '1px solid rgba(16, 185, 129, 0.25)',
+        borderRadius: 'var(--radius)',
+        fontSize: compact ? '0.82rem' : '0.86rem',
+        color: 'var(--text-muted)',
+        lineHeight: '1.55'
+      }}>
+        <strong style={{ color: 'var(--text-light)' }}>Key takeaway:</strong>{' '}
+        Notice how compounding really takes off in the second half of your timeline.
+        <div style={{ marginTop: '0.35rem' }}>
+          First {midpointYear} years added about <strong style={{ color: 'var(--text-main)' }}>${firstHalfGrowth.toLocaleString()}</strong>,
+          while years {midpointYear + 1}-{years} added about <strong style={{ color: 'var(--text-main)' }}>${secondHalfGrowth.toLocaleString()}</strong>.
         </div>
       </div>
     </div>

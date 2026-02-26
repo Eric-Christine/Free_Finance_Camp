@@ -8,6 +8,7 @@ const ANNUAL_RETURN = 0.07;
 const WITHDRAWAL_RATE = 0.04;
 const MEDIAN_US_INCOME = 60000;
 const DEFAULT_ALREADY_INVESTED = 0;
+const MAX_ALREADY_INVESTED = 300000;
 
 function futureValue(monthlyContribution, monthlyRate, months) {
     if (months <= 0) return 0;
@@ -103,7 +104,7 @@ export default function SavingsRateCalculator() {
     const returnProgress = ((annualReturn - 0.05) / (0.10 - 0.05)) * 100;
     const withdrawProgress = ((withdrawalRate - 0.025) / (0.05 - 0.025)) * 100;
     const retireProgress = ((retirementAge - 45) / (65 - 45)) * 100;
-    const investedProgress = (alreadyInvested / 100000) * 100;
+    const investedProgress = (alreadyInvested / MAX_ALREADY_INVESTED) * 100;
 
     const handleMouseEnter = useCallback((age, rate) => {
         setHoveredCell({ age, rate });
@@ -123,6 +124,29 @@ export default function SavingsRateCalculator() {
     const hoverData = activeCell
         ? tableData[activeCell.age]?.[activeCell.rate]
         : null;
+    const savingsRateCompareAge = visibleAges.includes(30) ? 30 : visibleAges[0];
+    const lowerSavingsRate = 0.10;
+    const higherSavingsRate = 0.20;
+    const lowerSavingsRatePct = tableData[savingsRateCompareAge]?.[lowerSavingsRate]?.replacementPct ?? null;
+    const higherSavingsRatePct = tableData[savingsRateCompareAge]?.[higherSavingsRate]?.replacementPct ?? null;
+    const savingsRateDelta = lowerSavingsRatePct !== null && higherSavingsRatePct !== null
+        ? higherSavingsRatePct - lowerSavingsRatePct
+        : null;
+    const earlyStartAge = visibleAges[0];
+    const laterStartAge = visibleAges[visibleAges.length - 1];
+    const startAgeCompareRate = 0.15;
+    const earlyStartPct = tableData[earlyStartAge]?.[startAgeCompareRate]?.replacementPct ?? null;
+    const laterStartPct = tableData[laterStartAge]?.[startAgeCompareRate]?.replacementPct ?? null;
+    const startAgeDelta = earlyStartPct !== null && laterStartPct !== null
+        ? earlyStartPct - laterStartPct
+        : null;
+    const monthsAtCompareAge = (retirementAge - savingsRateCompareAge) * 12;
+    const extraAnnualIncomeFromLumpSum = alreadyInvested > 0
+        ? alreadyInvested * Math.pow(1 + annualReturn / 12, monthsAtCompareAge) * withdrawalRate
+        : 0;
+    const lumpSumReplacementPct = salary > 0
+        ? Math.round((extraAnnualIncomeFromLumpSum / salary) * 100)
+        : 0;
 
     return (
         <div style={{
@@ -252,7 +276,7 @@ export default function SavingsRateCalculator() {
                                 type="range"
                                 className="landing-slider"
                                 min={0}
-                                max={100000}
+                                max={MAX_ALREADY_INVESTED}
                                 step={1000}
                                 value={alreadyInvested}
                                 onChange={(e) => setAlreadyInvested(Number(e.target.value))}
@@ -271,7 +295,7 @@ export default function SavingsRateCalculator() {
                                 <span style={{ fontSize: '0.72rem', fontStyle: 'italic' }}>
                                     Lump sum invested today
                                 </span>
-                                <span>$100k</span>
+                                <span>$300k</span>
                             </div>
                         </div>
 
@@ -633,6 +657,52 @@ export default function SavingsRateCalculator() {
                         <span>{item.label}</span>
                     </div>
                 ))}
+            </div>
+
+            {/* Key Takeaway */}
+            <div style={{
+                marginTop: '0.9rem',
+                padding: '0.8rem 1rem',
+                backgroundColor: 'rgba(34, 118, 58, 0.08)',
+                borderRadius: 'var(--radius)',
+                border: '1px solid rgba(61, 165, 87, 0.25)',
+                fontSize: '0.78rem',
+                color: 'var(--text-muted)',
+                lineHeight: '1.6'
+            }}>
+                <strong style={{ color: 'var(--text-light)' }}>Key takeaway:</strong>{' '}
+                Time in the market and savings rate are your strongest levers.
+                {' '}Your yearly savings rate (as a percentage of your income) is more important than your yearly savings sum (as a dollar amount).
+                <ul style={{ margin: '0.35rem 0 0 1rem', padding: 0 }}>
+                    {savingsRateDelta !== null ? (
+                        <li>
+                            At age {savingsRateCompareAge}, saving 20% instead of 10% raises income
+                            replacement from {lowerSavingsRatePct}% to {higherSavingsRatePct}% (+{savingsRateDelta} points).
+                        </li>
+                    ) : (
+                        <li>Higher savings rates consistently produce larger retirement income replacement.</li>
+                    )}
+                    {startAgeDelta !== null ? (
+                        <li>
+                            At a 15% savings rate, starting at age {earlyStartAge} instead of {laterStartAge}
+                            raises replacement from {laterStartPct}% to {earlyStartPct}% (+{startAgeDelta} points).
+                        </li>
+                    ) : (
+                        <li>Starting earlier gives your contributions far more time to compound.</li>
+                    )}
+                    {alreadyInvested > 0 ? (
+                        <li>
+                            Your {money(alreadyInvested)} starting balance can add about {lumpSumReplacementPct}%
+                            of income replacement by age {retirementAge}, but your ongoing savings rate still does
+                            most of the heavy lifting.
+                        </li>
+                    ) : (
+                        <li>
+                            A lump sum helps, but for most people the biggest wins come from starting earlier
+                            and saving a higher percent of each paycheck.
+                        </li>
+                    )}
+                </ul>
             </div>
 
             {/* Assumptions */}
