@@ -449,6 +449,68 @@ export const curriculum = [
                 ],
                 type: 'interactive',
                 widget: 'BudgetAllocator'
+            },
+            {
+                id: 'lesson-2-2',
+                title: 'Your Savings Rate and Retirement',
+                description: 'See how your savings rate determines your retirement outcome.',
+                xpReward: 25,
+                screens: [
+                    {
+                        title: 'Why Your Savings Rate Matters More Than Returns',
+                        content: [
+                            "Most people obsess over picking the right stock or timing the market. But the single biggest factor in building wealth is your **savings rate**—the percentage of your income you set aside.",
+                            "",
+                            "A person saving 25% of their income will almost always end up wealthier than someone saving 10%, regardless of investment returns.",
+                            "",
+                            "The math is simple: **you can't invest what you don't save.**"
+                        ]
+                    },
+                    {
+                        title: 'Age + Savings Rate = Your Retirement Outcome',
+                        content: [
+                            "Two variables determine how much of your income you can replace in retirement:",
+                            "",
+                            "1. **When you start saving** — earlier means more compounding time",
+                            "2. **How much you save** — a higher rate means more fuel for growth",
+                            "",
+                            "Starting at age 25 with a 20% savings rate at 6% annual returns, you could replace **133%** of your income in retirement.",
+                            "",
+                            "Wait until 40 with the same rate? Only **46%**.",
+                            "",
+                            "Use the interactive table to explore how different ages and savings rates change your retirement picture."
+                        ]
+                    },
+                    {
+                        title: 'The 4% Rule',
+                        content: [
+                            "The retirement income numbers in this tool use the **4% safe withdrawal rate** — a widely-used rule of thumb from the Trinity Study.",
+                            "",
+                            "It means: if you withdraw 4% of your portfolio each year in retirement, your money should last 30+ years.",
+                            "",
+                            "**Example:** A $1,000,000 portfolio = $40,000/year in retirement income.",
+                            "",
+                            "This assumes a diversified portfolio of stocks and bonds. It is a guideline, not a guarantee."
+                        ]
+                    },
+                    {
+                        title: 'Small Increases Make a Huge Difference',
+                        content: [
+                            "You do not need to go from 0% to 40% overnight. Small increases compound dramatically over time.",
+                            "",
+                            "**If you earn $60,000 and start at age 25:**",
+                            "• Saving 10% → replace 66% of income",
+                            "• Saving 15% → replace 100% of income",
+                            "• Saving 20% → replace 133% of income",
+                            "",
+                            "Just going from 10% to 15% could be the difference between struggling in retirement and thriving.",
+                            "",
+                            "Every 1% increase matters. Start where you are and increase by 1% every few months."
+                        ]
+                    }
+                ],
+                type: 'interactive',
+                widget: 'SavingsRateCalculator'
             }
         ]
     },
@@ -4154,6 +4216,8 @@ export const curriculum = [
                         content: [
                             "When Treasury yields rise, new government borrowing becomes more expensive.",
                             "As old debt rolls over at higher rates, total federal interest expense rises.",
+                            "",
+                            "You can check current figures at the [U.S. Treasury's National Debt Guide](https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/).",
                             "",
                             "That doesn't create an immediate household bill, but it can shape future policy choices:",
                             "• Taxes and spending tradeoffs",
