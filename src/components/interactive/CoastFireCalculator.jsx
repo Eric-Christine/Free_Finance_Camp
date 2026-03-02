@@ -98,8 +98,39 @@ function buildYAxis(maxValue, targetTicks = 6) {
 }
 
 function parseNumber(value, fallback) {
-    const parsed = Number(value);
+    const normalizedValue = typeof value === 'string'
+        ? value.replace(/,/g, '').trim()
+        : value;
+
+    if (normalizedValue === '' || normalizedValue === '-' || normalizedValue === '.') {
+        return fallback;
+    }
+
+    const parsed = Number(normalizedValue);
     return Number.isFinite(parsed) ? parsed : fallback;
+}
+
+function getFractionDigits(step) {
+    if (!Number.isFinite(step)) return 0;
+
+    const stepAsString = step.toString().toLowerCase();
+    if (stepAsString.includes('e-')) {
+        const exponent = Number(stepAsString.split('e-')[1]);
+        return Number.isFinite(exponent) ? exponent : 0;
+    }
+
+    const decimalPortion = stepAsString.split('.')[1];
+    return decimalPortion ? decimalPortion.length : 0;
+}
+
+function formatInputValue(value, step = 1) {
+    if (!Number.isFinite(value)) return '';
+
+    const fractionDigits = getFractionDigits(step);
+    return value.toLocaleString('en-US', {
+        minimumFractionDigits: 0,
+        maximumFractionDigits: fractionDigits
+    });
 }
 
 export default function CoastFireCalculator() {
@@ -321,8 +352,6 @@ export default function CoastFireCalculator() {
                     <InputRow
                         label="Current age"
                         value={currentAge}
-                        min={LIMITS.currentAge.min}
-                        max={LIMITS.currentAge.max}
                         step={LIMITS.currentAge.step}
                         onChange={(value) => setCurrentAge(
                             clamp(Math.round(value), LIMITS.currentAge.min, LIMITS.currentAge.max)
@@ -331,8 +360,6 @@ export default function CoastFireCalculator() {
                     <InputRow
                         label="Retirement age"
                         value={retirementAge}
-                        min={Math.max(currentAge + 1, LIMITS.retirementAge.min)}
-                        max={LIMITS.retirementAge.max}
                         step={LIMITS.retirementAge.step}
                         onChange={(value) => setRetirementAge(
                             clamp(Math.round(value), Math.max(currentAge + 1, LIMITS.retirementAge.min), LIMITS.retirementAge.max)
@@ -341,8 +368,6 @@ export default function CoastFireCalculator() {
                     <InputRow
                         label="Annual spending in retirement"
                         value={annualSpending}
-                        min={LIMITS.annualSpending.min}
-                        max={LIMITS.annualSpending.max}
                         step={LIMITS.annualSpending.step}
                         prefix="$"
                         onChange={(value) => setAnnualSpending(
@@ -352,8 +377,6 @@ export default function CoastFireCalculator() {
                     <InputRow
                         label="Current invested assets"
                         value={currentAssets}
-                        min={LIMITS.currentAssets.min}
-                        max={LIMITS.currentAssets.max}
                         step={LIMITS.currentAssets.step}
                         prefix="$"
                         onChange={(value) => setCurrentAssets(
@@ -363,8 +386,6 @@ export default function CoastFireCalculator() {
                     <InputRow
                         label="Monthly contribution"
                         value={monthlyContribution}
-                        min={LIMITS.monthlyContribution.min}
-                        max={LIMITS.monthlyContribution.max}
                         step={LIMITS.monthlyContribution.step}
                         prefix="$"
                         onChange={(value) => setMonthlyContribution(
@@ -535,20 +556,23 @@ export default function CoastFireCalculator() {
 function InputRow({
     label,
     value,
-    min,
-    max,
     step,
     onChange,
     prefix = ''
 }) {
-    const [draftValue, setDraftValue] = useState(String(value));
+    const [draftValue, setDraftValue] = useState(() => formatInputValue(value, step));
+    const [isFocused, setIsFocused] = useState(false);
 
     useEffect(() => {
-        setDraftValue(String(value));
-    }, [value]);
+        if (!isFocused) {
+            setDraftValue(formatInputValue(value, step));
+        }
+    }, [isFocused, step, value]);
 
     const commitDraftValue = () => {
-        onChange(parseNumber(draftValue, value));
+        const parsedValue = parseNumber(draftValue, value);
+        onChange(parsedValue);
+        setDraftValue(formatInputValue(parsedValue, step));
     };
 
     return (
@@ -571,13 +595,19 @@ function InputRow({
                     </span>
                 )}
                 <input
-                    type="number"
+                    type="text"
                     value={draftValue}
-                    min={min}
-                    max={max}
-                    step={step}
+                    inputMode={getFractionDigits(step) > 0 ? 'decimal' : 'numeric'}
+                    pattern="[0-9,.-]*"
                     onChange={(event) => setDraftValue(event.target.value)}
-                    onBlur={commitDraftValue}
+                    onFocus={() => {
+                        setIsFocused(true);
+                        setDraftValue(String(value));
+                    }}
+                    onBlur={() => {
+                        setIsFocused(false);
+                        commitDraftValue();
+                    }}
                     onKeyDown={(event) => {
                         if (event.key === 'Enter') {
                             event.currentTarget.blur();
