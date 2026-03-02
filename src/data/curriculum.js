@@ -511,6 +511,52 @@ export const curriculum = [
                 ],
                 type: 'interactive',
                 widget: 'SavingsRateCalculator'
+            },
+            {
+                id: 'lesson-2-3',
+                title: 'Coast FIRE: The Point Where Time Does the Heavy Lifting',
+                description: 'Use your age, savings, and contributions to find when you can stop contributing and still hit your FIRE goal.',
+                xpReward: 25,
+                screens: [
+                    {
+                        title: 'What Coast FIRE Means',
+                        content: [
+                            "Coast FIRE is the milestone where your existing portfolio is large enough to reach your retirement target through growth alone.",
+                            "",
+                            "After this point, you are not fully retired yet, but you can choose to reduce or stop new retirement contributions and let compounding carry you forward.",
+                            "",
+                            "It creates flexibility: career changes, part-time work, or lower-stress roles become easier to consider."
+                        ]
+                    },
+                    {
+                        title: 'FIRE Number vs Coast Number',
+                        content: [
+                            "Your **FIRE number** is the portfolio needed at retirement to fund annual spending with a safe withdrawal rate.",
+                            "",
+                            "A common shorthand is:",
+                            "• FIRE number = annual retirement spending ÷ withdrawal rate",
+                            "",
+                            "Your **Coast FIRE number** is smaller because it is measured today, then projected forward by expected real returns until retirement."
+                        ]
+                    },
+                    {
+                        title: 'How to Use This Calculator',
+                        content: [
+                            "Set your age, retirement age, annual spending target, and current invested assets.",
+                            "",
+                            "Then adjust growth, inflation, and withdrawal assumptions to test conservative vs aggressive scenarios.",
+                            "",
+                            "Watch three paths:",
+                            "• Continue contributions the whole way",
+                            "• Stop contributions after reaching Coast FIRE",
+                            "• Compare both against your FIRE target at retirement",
+                            "",
+                            "Focus on decisions you can control now: savings rate, time horizon, and contribution consistency."
+                        ]
+                    }
+                ],
+                type: 'interactive',
+                widget: 'CoastFireCalculator'
             }
         ]
     },

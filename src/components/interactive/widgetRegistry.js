@@ -12,13 +12,15 @@ import Sp500DollarVsGoldChart from './Sp500DollarVsGoldChart';
 import ChinaEconomicRiseChart from './ChinaEconomicRiseChart';
 import MoneyMultiplier from './MoneyMultiplier';
 import SavingsRateCalculator from './SavingsRateCalculator';
+import CoastFireCalculator from './CoastFireCalculator';
 
 export const FREE_TOOLS = [
     'CompoundInterest',
     'BudgetAllocator',
     'MoneyMultiplier',
     'EmployerMatchCalculator',
-    'SavingsRateCalculator'
+    'SavingsRateCalculator',
+    'CoastFireCalculator'
 ];
 
 export const WIDGET_COMPONENTS = {
@@ -35,5 +37,6 @@ export const WIDGET_COMPONENTS = {
     Sp500DollarVsGoldChart,
     ChinaEconomicRiseChart,
     MoneyMultiplier,
-    SavingsRateCalculator
+    SavingsRateCalculator,
+    CoastFireCalculator
 };
