@@ -1896,7 +1896,8 @@ export const curriculum = [
                         ]
                     }
                 ],
-                type: 'reading'
+                type: 'interactive',
+                widget: 'FourOhOneKCalculator'
             },
             {
                 id: 'lesson-401k-4',

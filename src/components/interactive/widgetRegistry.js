@@ -13,6 +13,7 @@ import ChinaEconomicRiseChart from './ChinaEconomicRiseChart';
 import MoneyMultiplier from './MoneyMultiplier';
 import SavingsRateCalculator from './SavingsRateCalculator';
 import CoastFireCalculator from './CoastFireCalculator';
+import FourOhOneKCalculator from './FourOhOneKCalculator';
 
 export const FREE_TOOLS = [
     'CompoundInterest',
@@ -20,7 +21,8 @@ export const FREE_TOOLS = [
     'MoneyMultiplier',
     'EmployerMatchCalculator',
     'SavingsRateCalculator',
-    'CoastFireCalculator'
+    'CoastFireCalculator',
+    'FourOhOneKCalculator'
 ];
 
 export const WIDGET_COMPONENTS = {
@@ -38,5 +40,6 @@ export const WIDGET_COMPONENTS = {
     ChinaEconomicRiseChart,
     MoneyMultiplier,
     SavingsRateCalculator,
-    CoastFireCalculator
+    CoastFireCalculator,
+    FourOhOneKCalculator
 };
