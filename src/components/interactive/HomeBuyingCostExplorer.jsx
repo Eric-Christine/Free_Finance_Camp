@@ -208,6 +208,7 @@ export default function HomeBuyingCostExplorer() {
                         Market preset
                     </label>
                     <select
+                        aria-label="Market preset"
                         value={marketKey}
                         onChange={(e) => {
                             const next = e.target.value;
@@ -233,6 +234,7 @@ export default function HomeBuyingCostExplorer() {
                         Property type
                     </label>
                     <select
+                        aria-label="Property type"
                         value={propertyType}
                         onChange={(e) => {
                             const next = e.target.value;
@@ -310,7 +312,7 @@ export default function HomeBuyingCostExplorer() {
                     value={repairsAnnual}
                     min={1000}
                     max={18000}
-                    step={250}
+                    step={10}
                     display={money(repairsAnnual)}
                     onChange={setRepairsAnnual}
                 />
@@ -319,7 +321,7 @@ export default function HomeBuyingCostExplorer() {
                     value={hoaMonthly}
                     min={0}
                     max={1200}
-                    step={25}
+                    step={10}
                     display={money(hoaMonthly)}
                     onChange={setHoaMonthly}
                 />
@@ -422,6 +424,7 @@ function Slider({ label, value, min, max, step, display, onChange }) {
                 <span style={{ whiteSpace: 'nowrap' }}>{display}</span>
             </label>
             <input
+                aria-label={label}
                 type="range"
                 min={min}
                 max={max}

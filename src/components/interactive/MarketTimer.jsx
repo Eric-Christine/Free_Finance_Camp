@@ -105,9 +105,9 @@ export default function MarketTimer() {
         if (gameStatus === 'finished') {
             const myReturn = ((portfolioValue - 1000) / 1000) * 100;
             if (myReturn > buyHoldReturn) {
-                setMessage(`Victory! You made ${Math.round(myReturn)}% vs Market's ${Math.round(buyHoldReturn)}%.`);
+                setMessage(`This round, your return was ${Math.round(myReturn)}% versus ${Math.round(buyHoldReturn)}% for buy and hold.`);
             } else {
-                setMessage(`Game Over. You made ${Math.round(myReturn)}%. Buy & Hold made ${Math.round(buyHoldReturn)}%.`);
+                setMessage(`This round, your return was ${Math.round(myReturn)}% versus ${Math.round(buyHoldReturn)}% for buy and hold.`);
             }
         }
     }, [gameStatus, portfolioValue, buyHoldReturn]);
@@ -217,7 +217,7 @@ export default function MarketTimer() {
 
             {gameStatus === 'finished' && (
                 <div style={{ marginTop: '1rem', fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: '1.4' }}>
-                    <strong>Lesson:</strong> "Time in the market beats timing the market." It's incredibly hard to predict short-term moves. The winning strategy is usually to buy and hold long-term.
+                    <strong>Takeaway:</strong> One round can go either way, but predicting short-term moves consistently is extremely difficult. A diversified, long-term approach avoids relying on repeated timing decisions.
                 </div>
             )}
         </div>

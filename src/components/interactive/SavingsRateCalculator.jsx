@@ -3,12 +3,14 @@ import { useState, useMemo, useCallback, useEffect } from 'react';
 const SAVINGS_RATES_FULL = [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40];
 const SAVINGS_RATES_MOBILE = [0.05, 0.10, 0.15, 0.20, 0.25];
 const START_AGES = [20, 25, 30, 35, 40, 45, 50, 55, 60];
+const MIN_RETIREMENT_AGE = 40;
+const MAX_RETIREMENT_AGE = 65;
 const RETIREMENT_AGE = 65;
 const ANNUAL_RETURN = 0.07;
 const WITHDRAWAL_RATE = 0.04;
 const MEDIAN_US_INCOME = 60000;
 const DEFAULT_ALREADY_INVESTED = 0;
-const MAX_ALREADY_INVESTED = 300000;
+const MAX_ALREADY_INVESTED = 500000;
 
 function futureValue(monthlyContribution, monthlyRate, months) {
     if (months <= 0) return 0;
@@ -103,7 +105,7 @@ export default function SavingsRateCalculator() {
     const salaryProgress = ((salary - 20000) / (200000 - 20000)) * 100;
     const returnProgress = ((annualReturn - 0.05) / (0.10 - 0.05)) * 100;
     const withdrawProgress = ((withdrawalRate - 0.025) / (0.05 - 0.025)) * 100;
-    const retireProgress = ((retirementAge - 45) / (65 - 45)) * 100;
+    const retireProgress = ((retirementAge - MIN_RETIREMENT_AGE) / (MAX_RETIREMENT_AGE - MIN_RETIREMENT_AGE)) * 100;
     const investedProgress = (alreadyInvested / MAX_ALREADY_INVESTED) * 100;
 
     const handleMouseEnter = useCallback((age, rate) => {
@@ -119,6 +121,20 @@ export default function SavingsRateCalculator() {
             prev?.age === age && prev?.rate === rate ? null : { age, rate }
         );
     }, []);
+
+    const handleRestoreDefaults = useCallback(() => {
+        setSalary(MEDIAN_US_INCOME);
+        setAlreadyInvested(DEFAULT_ALREADY_INVESTED);
+        setAnnualReturn(ANNUAL_RETURN);
+        setWithdrawalRate(WITHDRAWAL_RATE);
+        setRetirementAge(RETIREMENT_AGE);
+    }, []);
+
+    const isAtDefaultValues = salary === MEDIAN_US_INCOME
+        && alreadyInvested === DEFAULT_ALREADY_INVESTED
+        && annualReturn === ANNUAL_RETURN
+        && withdrawalRate === WITHDRAWAL_RATE
+        && retirementAge === RETIREMENT_AGE;
 
     const activeCell = hoveredCell || selectedCell;
     const hoverData = activeCell
@@ -201,6 +217,7 @@ export default function SavingsRateCalculator() {
                     </span>
                 </label>
                 <input
+                    aria-label="Annual salary"
                     type="range"
                     className="landing-slider"
                     min={20000}
@@ -227,29 +244,52 @@ export default function SavingsRateCalculator() {
                 </div>
 
                 <div style={{ marginTop: '1rem' }}>
-                    <button
-                        type="button"
-                        onClick={() => setShowMoreOptions((prev) => !prev)}
-                        style={{
-                            width: '100%',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'space-between',
-                            padding: '0.65rem 0.8rem',
-                            backgroundColor: 'rgba(255, 255, 255, 0.03)',
-                            border: '1px solid var(--border)',
-                            borderRadius: '10px',
-                            color: 'var(--text-light)',
-                            fontSize: '0.85rem',
-                            fontWeight: '600',
-                            cursor: 'pointer'
-                        }}
-                    >
-                        <span>More options</span>
-                        <span style={{ color: 'var(--text-muted)' }}>
-                            {showMoreOptions ? 'Hide' : 'Show'}
-                        </span>
-                    </button>
+                    <div style={{
+                        display: 'flex',
+                        gap: '0.6rem'
+                    }}>
+                        <button
+                            type="button"
+                            onClick={() => setShowMoreOptions((prev) => !prev)}
+                            style={{
+                                flex: 1,
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'space-between',
+                                padding: '0.65rem 0.8rem',
+                                backgroundColor: 'rgba(255, 255, 255, 0.03)',
+                                border: '1px solid var(--border)',
+                                borderRadius: '10px',
+                                color: 'var(--text-light)',
+                                fontSize: '0.85rem',
+                                fontWeight: '600',
+                                cursor: 'pointer'
+                            }}
+                        >
+                            <span>More options</span>
+                            <span style={{ color: 'var(--text-muted)' }}>
+                                {showMoreOptions ? 'Hide' : 'Show'}
+                            </span>
+                        </button>
+                        <button
+                            type="button"
+                            onClick={handleRestoreDefaults}
+                            disabled={isAtDefaultValues}
+                            style={{
+                                padding: '0.65rem 0.8rem',
+                                backgroundColor: isAtDefaultValues ? 'rgba(255, 255, 255, 0.02)' : 'rgba(56, 189, 248, 0.12)',
+                                border: `1px solid ${isAtDefaultValues ? 'var(--border)' : 'rgba(56, 189, 248, 0.4)'}`,
+                                borderRadius: '10px',
+                                color: isAtDefaultValues ? 'var(--text-muted)' : '#7dd3fc',
+                                fontSize: '0.85rem',
+                                fontWeight: '600',
+                                cursor: isAtDefaultValues ? 'not-allowed' : 'pointer',
+                                whiteSpace: 'nowrap'
+                            }}
+                        >
+                            Restore to default
+                        </button>
+                    </div>
                 </div>
 
                 {showMoreOptions && (
@@ -273,6 +313,7 @@ export default function SavingsRateCalculator() {
                                 </span>
                             </label>
                             <input
+                                aria-label="Amount already invested"
                                 type="range"
                                 className="landing-slider"
                                 min={0}
@@ -295,7 +336,7 @@ export default function SavingsRateCalculator() {
                                 <span style={{ fontSize: '0.72rem', fontStyle: 'italic' }}>
                                     Lump sum invested today
                                 </span>
-                                <span>$300k</span>
+                                <span>${Math.round(MAX_ALREADY_INVESTED / 1000)}k</span>
                             </div>
                         </div>
 
@@ -314,6 +355,7 @@ export default function SavingsRateCalculator() {
                                 </span>
                             </label>
                             <input
+                                aria-label="Annual return"
                                 type="range"
                                 className="landing-slider"
                                 min={5}
@@ -355,6 +397,7 @@ export default function SavingsRateCalculator() {
                                 </span>
                             </label>
                             <input
+                                aria-label="Withdrawal rate"
                                 type="range"
                                 className="landing-slider"
                                 min={2.5}
@@ -396,10 +439,11 @@ export default function SavingsRateCalculator() {
                                 </span>
                             </label>
                             <input
+                                aria-label="Retirement age"
                                 type="range"
                                 className="landing-slider"
-                                min={45}
-                                max={65}
+                                min={MIN_RETIREMENT_AGE}
+                                max={MAX_RETIREMENT_AGE}
                                 step={1}
                                 value={retirementAge}
                                 onChange={(e) => setRetirementAge(Number(e.target.value))}
@@ -414,11 +458,11 @@ export default function SavingsRateCalculator() {
                                 color: 'var(--text-muted)',
                                 marginTop: '0.3rem'
                             }}>
-                                <span>45</span>
+                                <span>{MIN_RETIREMENT_AGE}</span>
                                 <span style={{ fontSize: '0.72rem', fontStyle: 'italic' }}>
                                     Traditional: 65
                                 </span>
-                                <span>65</span>
+                                <span>{MAX_RETIREMENT_AGE}</span>
                             </div>
                         </div>
                     </div>
@@ -594,9 +638,18 @@ export default function SavingsRateCalculator() {
                                     return (
                                         <td
                                             key={rate}
+                                            role="button"
+                                            tabIndex={0}
+                                            aria-label={`Start at age ${age}, save ${Math.round(rate * 100)}%: ${cell.replacementPct}% estimated income replacement`}
                                             onMouseEnter={() => handleMouseEnter(age, rate)}
                                             onMouseLeave={handleMouseLeave}
                                             onClick={() => handleCellClick(age, rate)}
+                                            onKeyDown={(event) => {
+                                                if (event.key === 'Enter' || event.key === ' ') {
+                                                    event.preventDefault();
+                                                    handleCellClick(age, rate);
+                                                }
+                                            }}
                                             style={{
                                                 padding: '0.55rem 0.4rem',
                                                 backgroundColor: getColor(cell.replacementPct),

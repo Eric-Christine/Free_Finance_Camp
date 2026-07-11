@@ -212,7 +212,7 @@ export const quizzes = {
         }
     ],
 
-    // Module: Roth IRA Mastery
+    // Module: Understanding Roth IRAs
     'lesson-roth-1': [
         {
             question: "What is the core tax structure of a Roth IRA?",
@@ -282,7 +282,7 @@ export const quizzes = {
         }
     ],
 
-    // Module: 401(k) Master Plan
+    // Module: Understanding Your 401(k)
     'lesson-401k-1': [
         {
             question: "What is a 401(k)?",
@@ -948,7 +948,7 @@ export const quizzes = {
     ],
     'lesson-12-4': [
         {
-            question: "What makes the HSA the 'ultimate tax hack'?",
+            question: "What is the HSA's triple tax advantage?",
             options: ["It has no contribution limit", "Triple tax advantage: pre-tax in, tax-free growth, tax-free medical withdrawals", "It replaces your 401k", "It's only for retirees"],
             correctIndex: 1
         },
@@ -959,7 +959,7 @@ export const quizzes = {
         },
         {
             question: "An employer 401k match is best described as:",
-            options: ["A loan", "Free money", "A tax penalty", "An insurance benefit"],
+            options: ["A loan", "A contribution that is part of your employee benefits", "A tax penalty", "An insurance benefit"],
             correctIndex: 1
         }
     ],
@@ -1175,9 +1175,9 @@ export const quizzes = {
     ],
     'lesson-15-4': [
         {
-            question: "The average millionaire has how many income streams?",
-            options: ["1", "3", "7", "15"],
-            correctIndex: 2
+            question: "What should you consider before starting an additional income source?",
+            options: ["Only the potential revenue", "Time, energy, startup costs, and stability", "Whether other people are doing it", "Whether it sounds passive"],
+            correctIndex: 1
         },
         {
             question: "Which type of income requires minimal ongoing effort after initial setup?",
@@ -1185,8 +1185,8 @@ export const quizzes = {
             correctIndex: 2
         },
         {
-            question: "How long should you give a new side income before judging results?",
-            options: ["1 week", "1 month", "6 months", "5 years"],
+            question: "What is a useful way to evaluate a side income?",
+            options: ["Track only gross revenue", "Never stop once you begin", "Set a review date and track both earnings and time", "Ignore startup and ongoing costs"],
             correctIndex: 2
         }
     ],
@@ -1342,8 +1342,8 @@ export const quizzes = {
             correctIndex: 1
         },
         {
-            question: "Why does the lesson say you should NOT dismiss government-seeded children's accounts based on politics?",
-            options: ["Because politics don't exist in finance", "Because free money that compounds for 18+ years should never be left on the table", "Because the government requires enrollment", "Because only one party supports them"],
+            question: "How should you evaluate a government-seeded child account?",
+            options: ["Use the program's political branding", "Review eligibility, fees, taxes, restrictions, and your family's priorities", "Enroll without reading the rules", "Assume every family receives the same benefit"],
             correctIndex: 1
         }
     ],

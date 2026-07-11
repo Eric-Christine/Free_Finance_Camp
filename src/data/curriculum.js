@@ -1,26 +1,26 @@
 export const curriculum = [
     {
         id: 'module-1',
-        title: 'The Wealth Mindset',
-        description: 'Understand the core principles of building wealth.',
+        title: 'Financial Foundations',
+        description: 'Build a practical foundation for understanding money and long-term financial security.',
         xpReward: 50,
         lessons: [
             {
                 id: 'lesson-1-0',
                 title: 'Intro to Financial Literacy',
-                description: 'Why understanding money is no longer optional.',
+                description: 'Why financial knowledge matters—and how to begin without judgment.',
                 xpReward: 20,
                 screens: [
                     {
                         title: 'Why This Matters',
                         content: [
-                            "Welcome to Free Finance Camp. Before we dive in, let's talk about WHY this knowledge is essential.",
+                            "Welcome to Free Finance Camp. You do not need any finance experience to be here. We will start with the basics and build from there.",
                             "",
-                            "The modern economy doesn't just reward hard work—it rewards **ownership**.",
+                            "Hard work matters, but it is not the only factor that shapes financial outcomes. In the modern economy, **ownership** can also play an important role.",
                             "",
-                            "Those who own assets (stocks, real estate, businesses, co-ops) see their wealth grow alongside the economy. Those who only earn wages often fall behind as the cost of living rises faster than their paychecks.",
+                            "People who own assets—such as stocks, real estate, businesses, or co-ops—may benefit when those assets grow in value. People relying mainly on wages can face a harder path when living costs rise faster than pay.",
                             "",
-                            "This isn't about blame—it's about understanding the rules of the game so you can play it."
+                            "Many barriers to saving and investing are outside an individual's control. Learning how the system works can still help you make informed choices within your own circumstances."
                         ]
                     },
                     {
@@ -30,62 +30,62 @@ export const curriculum = [
                             "",
                             "Imagine the letter 'K'. After an economic shock (like a recession or pandemic), the economy doesn't recover equally for everyone:",
                             "",
-                            "**The Upper Arm (going up):** Asset owners, tech workers, and investors see their wealth SOAR. Stock markets hit new highs. Home values skyrocket.",
+                            "**The Upper Arm (going up):** Some asset owners, higher-paid workers, and investors see their finances improve as stock markets and home values rise.",
                             "",
-                            "**The Lower Arm (going down):** Hourly workers, renters, and those without savings fall further behind. Jobs disappear. Rent keeps rising.",
+                            "**The Lower Arm (going down):** Some hourly workers, renters, and people without savings face job losses, higher rent, and fewer financial cushions.",
                             "",
                             "The gap between these two groups is widening every year."
                         ]
                     },
                     {
-                        title: 'Where the Wealthy Keep Their Money',
+                        title: 'How Wealth Is Commonly Held',
                         content: [
-                            "Want to know the secret of the ultra-wealthy? It's not in their bank accounts.",
+                            "Households with substantial wealth usually hold much of it in assets rather than in checking or savings accounts.",
                             "",
                             "**The top 1% hold their wealth in:**",
                             "• **Stocks & Business Equity** (~50-60%) — Ownership in companies, both public and private.",
                             "• **Real Estate** (~10-15%) — Land, commercial properties, and rental income.",
                             "• **Other Investments** (~20%) — Bonds, private equity, hedge funds.",
                             "",
-                            "Meanwhile, the bottom 50% hold most of their 'wealth' in:",
+                            "Meanwhile, households in the bottom 50% tend to hold most of their wealth in:",
                             "• **Their primary home** (if they own one)",
                             "• **Cars** (which depreciate)",
-                            "• **Cash in checking/savings** (losing value to inflation)",
+                            "• **Cash in checking/savings** (useful for near-term needs, though inflation can reduce its purchasing power)",
                             "",
-                            "Here's the key insight: **When the stock market goes up 20%, the wealthy get 20% richer. When wages go up 3%, workers barely keep pace with inflation.**"
+                            "The key idea is that rising asset prices mostly benefit people who already own those assets, while wage increases may not keep pace with inflation."
                         ]
                     },
                     {
                         title: 'The Wealth Gap in Numbers',
                         content: [
-                            "The numbers are staggering:",
+                            "The gap is substantial:",
                             "",
                             "• The **top 10%** of Americans own **93%** of all stocks.",
                             "• The **bottom 50%** own just **1%** of stocks.",
                             "",
                             "This means when the S&P 500 doubles (as it did from 2019-2024), almost all of those gains went to people who were already wealthy.",
                             "",
-                            "**The rich get richer** because their assets (stocks, real estate) appreciate faster than wages grow.",
+                            "Households that already own assets can benefit when stocks and real estate appreciate faster than wages grow.",
                             "",
-                            "**The poor stay poor** because they have no assets that grow—only expenses that increase.",
+                            "Households with little room to save can find it harder to buy appreciating assets, especially as essential expenses increase.",
                             "",
-                            "Breaking this cycle starts with one decision: **becoming an owner, not just an earner.**"
+                            "Building even a small amount of ownership can help over time, when your income and essential needs leave room for it. If that is not possible right now, learning and stabilizing your finances are meaningful steps too."
                         ]
                     },
                     {
-                        title: 'The Path to Ownership',
+                        title: 'Ways to Build Ownership',
                         content: [
-                            "The good news? **You can move from the bottom arm to the top.**",
+                            "There are several ways to begin building assets, and the right starting point depends on your needs, resources, and goals.",
                             "",
-                            "It starts with financial literacy: understanding how money works, how to save, and most importantly, how to **own assets**.",
+                            "Financial literacy can help you understand how money works, create room to save when possible, and decide whether different kinds of assets fit your plan.",
                             "",
                             "Assets come in many forms:",
                             "• **Stocks & ETFs** — Own a piece of publicly traded companies.",
-                            "• **Real Estate** — From your first home to rental properties.",
+                            "• **Real Estate** — A home or rental property, when the costs and responsibilities fit your situation.",
                             "• **Co-ops & Credit Unions** — Member-owned organizations that share profits.",
                             "• **Starting a Business** — Build equity in something you control.",
                             "",
-                            "This course will teach you how to get started—no matter your current income level."
+                            "This course will help you explore these options without assuming that everyone has the same income, timeline, or starting point."
                         ]
                     },
                     {
@@ -95,9 +95,9 @@ export const curriculum = [
                             "",
                             "Meanwhile, average wages have barely kept pace with inflation.",
                             "",
-                            "If you had invested just $100/month starting at age 25, by age 65 you'd have over **$500,000**. If you only saved it in a bank account? Around **$48,000**.",
+                            "As an illustration, investing $100 per month from age 25 to 65 could grow to substantially more than the $48,000 contributed, depending on returns and fees. A savings account serves a different purpose by keeping near-term money stable and accessible.",
                             "",
-                            "The difference isn't luck. It's knowledge. And that's exactly what you're here to learn.",
+                            "Starting early can help, but starting later or with less does not mean you have failed. The goal is to understand your options and choose steps that are realistic for you.",
                             "",
                             "Let's get started."
                         ]
@@ -114,7 +114,7 @@ export const curriculum = [
                     {
                         title: 'The Core Principle',
                         content: [
-                            "Money is a finite resource. To make the most of it, you need to distinguish between what you NEED and what you WANT.",
+                            "Money is a finite resource, and separating needs from wants can make planning easier. The line is personal and can change with your health, family, culture, and circumstances.",
                             "",
                             "**Needs** are essentials:",
                             "• Shelter (rent, mortgage)",
@@ -131,7 +131,7 @@ export const curriculum = [
                     {
                         title: 'The 72-Hour Rule',
                         content: [
-                            "Pro tip: Use the **72-Hour Rule** for wants.",
+                            "One option: try the **72-Hour Rule** for nonessential purchases.",
                             "",
                             "See something you want? Wait 72 hours before buying it.",
                             "",
@@ -145,10 +145,10 @@ export const curriculum = [
                         content: [
                             "How does your country compare? Personal savings rates vary dramatically around the world.",
                             "",
-                            "**TOP SAVERS:**",
-                            "• China: ~35% — Cultural emphasis on saving",
-                            "• Singapore: ~30% — Government-mandated CPF program",
-                            "• Germany: ~11% — Fiscal discipline culture",
+                            "**HIGHER REPORTED SAVINGS RATES:**",
+                            "• China: ~35%",
+                            "• Singapore: ~30% — includes the effect of the mandatory CPF program",
+                            "• Germany: ~11%",
                             "",
                             "**MIDDLE OF THE PACK:**",
                             "• France: ~15% — Social programs reduce need",
@@ -163,9 +163,9 @@ export const curriculum = [
                             "• United Kingdom: ~5-7%",
                             "• Australia: ~3-5%",
                             "",
-                            "Why so low? Consumer culture, easy credit access, and reliance on social programs.",
+                            "National savings rates reflect many factors, including wages, housing and healthcare costs, taxes, pensions, public benefits, credit markets, demographics, and how each country measures saving.",
                             "",
-                            "**The Takeaway:** Even small increases in your savings rate can dramatically impact your wealth over time. Try to save at least 20% of your income!"
+                            "**The takeaway:** Even a small, sustainable increase in your savings rate can matter over time. There is no single percentage that fits every household."
                         ]
                     }
                 ],
@@ -414,7 +414,7 @@ export const curriculum = [
                             "**$6,000/month take-home:**",
                             "• Needs: $3,000 • Wants: $1,800 • Savings: $1,200",
                             "",
-                            "If your needs already eat more than 50%, that is a signal—not a failure. It means you should focus on either increasing income or reducing fixed costs before worrying about the other buckets."
+                            "If needs already take more than 50%, that is information—not a failure. Adjust the percentages to reflect your reality. When possible, look for changes to income or fixed costs, but recognize that many essential costs are not easy to change quickly."
                         ]
                     },
                     {
@@ -438,7 +438,7 @@ export const curriculum = [
                             "",
                             "**Step 1:** Pull your last 3 months of bank and credit card statements.",
                             "**Step 2:** Categorize every transaction as a Need, Want, or Savings/Debt payment.",
-                            "**Step 3:** Calculate the actual percentages. Most people are shocked by how much goes to wants.",
+                            "**Step 3:** Calculate the percentages without judging yourself. This is information you can use, not a grade.",
                             "**Step 4:** Set a target split and track monthly.",
                             "",
                             "Free tools that help: your bank's spending categories, spreadsheet templates, or budgeting apps.",
@@ -453,30 +453,30 @@ export const curriculum = [
             {
                 id: 'lesson-2-2',
                 title: 'Your Savings Rate and Retirement',
-                description: 'See how your savings rate determines your retirement outcome.',
+                description: 'See how savings rate can influence long-term retirement outcomes.',
                 xpReward: 25,
                 screens: [
                     {
-                        title: 'Why Your Savings Rate Matters More Than Returns',
+                        title: 'Why Your Savings Rate Matters',
                         content: [
-                            "Most people obsess over picking the right stock or timing the market. But the single biggest factor in building wealth is your **savings rate**—the percentage of your income you set aside.",
+                            "Investment returns get a lot of attention, but your **savings rate**—the percentage of income you set aside—is another important part of long-term planning.",
                             "",
-                            "A person saving 25% of their income will almost always end up wealthier than someone saving 10%, regardless of investment returns.",
+                            "A higher savings rate can create more opportunity for long-term growth. Income, essential expenses, caregiving, debt, and other circumstances all affect what is realistic.",
                             "",
-                            "The math is simple: **you can't invest what you don't save.**"
+                            "Even a modest, sustainable amount can be a useful start. Consistency matters more than comparing your percentage with someone else's."
                         ]
                     },
                     {
                         title: 'Age + Savings Rate = Your Retirement Outcome',
                         content: [
-                            "Two variables determine how much of your income you can replace in retirement:",
+                            "Two variables have a meaningful influence on how much income your savings may replace in retirement:",
                             "",
                             "1. **When you start saving** — earlier means more compounding time",
                             "2. **How much you save** — a higher rate means more fuel for growth",
                             "",
                             "Starting at age 25 with a 20% savings rate at 6% annual returns, you could replace **133%** of your income in retirement.",
                             "",
-                            "Wait until 40 with the same rate? Only **46%**.",
+                            "Starting at 40 with the same assumptions produces a lower estimate of **46%**, because the money has less time to compound.",
                             "",
                             "Use the interactive table to explore how different ages and savings rates change your retirement picture."
                         ]
@@ -578,7 +578,7 @@ export const curriculum = [
                     "",
                     "**Online-Only Banks** have no physical branches. Because they have lower overhead, they often offer the highest savings rates (**HYSA**) in the market.",
                     "",
-                    "Pro tip: Always ensure your bank is insured by the **FDIC** (for banks) or **NCUA** (for credit unions). This protects your money up to $250,000 if the institution fails."
+                    "Helpful note: Check that your bank is insured by the **FDIC** or your credit union by the **NCUA**. Deposit insurance protects eligible funds up to the applicable limit if the institution fails."
                 ],
                 type: 'reading'
             },
@@ -633,7 +633,7 @@ export const curriculum = [
                         content: [
                             "**56% of Americans** cannot cover a $1,000 emergency expense with savings.",
                             "",
-                            "That means a single car repair, medical bill, or job loss can trigger a financial spiral: credit card debt → high interest → more debt → stress → poor decisions.",
+                            "A car repair, medical bill, or job loss can trigger a difficult cycle: credit card debt → high interest → more debt → stress → fewer good options.",
                             "",
                             "An **emergency fund** breaks this cycle. It's cash set aside ONLY for true emergencies:",
                             "• Job loss",
@@ -667,7 +667,7 @@ export const curriculum = [
                             "• People with very stable employment",
                             "• Those with strong family support networks",
                             "",
-                            "Pro tip: Start with a $1,000 'starter' emergency fund. Then build to 1 month, then 3, then 6."
+                            "A manageable first milestone might be $500 or $1,000. From there, you can work toward one month of essential expenses and continue at a pace your budget allows."
                         ]
                     }
                 ],
@@ -715,7 +715,7 @@ export const curriculum = [
                             "• Can buy through TreasuryDirect.gov",
                             "• Slightly less liquid (must wait for maturity, 4-52 weeks)",
                             "",
-                            "Pro tip: Keep 1-2 months in HYSA for quick access, and the rest in T-Bills for a slightly higher effective yield."
+                            "Helpful note: Some people keep the most immediate portion in an HYSA and consider T-Bills for money they are less likely to need right away. Accessibility matters more than maximizing yield."
                         ]
                     }
                 ],
@@ -767,7 +767,7 @@ export const curriculum = [
                             "• Review and update insurance coverage",
                             "• Create systems to prevent future crises",
                             "",
-                            "**Remember**: Financial setbacks are setbacks, not endings. Most wealthy people have faced multiple financial crises. The difference is they rebuilt each time."
+                            "**Remember**: A setback is not a personal failure. Recovery may take time, and each stabilizing step counts."
                         ]
                     }
                 ],
@@ -776,32 +776,32 @@ export const curriculum = [
             {
                 id: 'lesson-15-4',
                 title: 'Building Multiple Income Streams',
-                description: 'Don\'t put all your eggs in one paycheck.',
+                description: 'Explore whether an additional income source could add flexibility or stability.',
                 xpReward: 40,
                 screens: [
                     {
                         title: 'Why One Income Is Risky',
                         content: [
-                            "Relying on a single income source is like owning just one stock — all your risk is concentrated.",
+                            "When one paycheck supports a household, a job change or loss can have an immediate impact.",
                             "",
-                            "**The average millionaire has 7 income streams.** You don't need 7, but having 2-3 dramatically improves your financial resilience.",
+                            "An additional income source can provide flexibility, but it is not a requirement or a measure of success. Consider the time, energy, startup costs, and stability involved before taking one on.",
                             "",
                             "**Types of income:**",
                             "• **Active income**: Trading time for money (your job, freelancing, consulting).",
                             "• **Portfolio income**: Returns from investments (dividends, capital gains).",
                             "• **Passive income**: Money earned with minimal ongoing effort (rental income, royalties, digital products).",
                             "",
-                            "True 'passive' income usually requires significant upfront work or capital. But the payoff is income that doesn't stop when you stop working."
+                            "So-called 'passive' income usually requires upfront work or capital and may still need ongoing maintenance."
                         ]
                     },
                     {
                         title: 'Realistic Side Income Ideas',
                         content: [
-                            "**Low Barrier (start this week):**",
+                            "**Lower startup cost:**",
                             "• Freelancing your existing skills (writing, design, coding, tutoring)",
                             "• Selling unused items (eBay, Facebook Marketplace)",
                             "• Pet sitting / dog walking (Rover, Wag)",
-                            "• Delivery driving (in a pinch, but low ROI long-term)",
+                            "• Delivery driving (after accounting for fuel, maintenance, insurance, and taxes)",
                             "",
                             "**Medium Effort (build over months):**",
                             "• Creating and selling digital products (templates, courses, ebooks)",
@@ -811,10 +811,10 @@ export const curriculum = [
                             "",
                             "**Capital Required (invest to earn):**",
                             "• Dividend-paying index funds ($100+ invested → regular payouts)",
-                            "• Real estate (house hacking: rent out spare rooms)",
+                            "• Renting out part of a home, where practical and legally permitted",
                             "• REITs (Real Estate Investment Trusts — like a real estate ETF)",
                             "",
-                            "**The key**: Pick ONE side income and give it 6 months of consistent effort before judging results. Most people quit too early."
+                            "If you try a side income, set a review date and track both money earned and time spent. It is okay to stop if the tradeoff does not work for your life."
                         ]
                     }
                 ],
@@ -825,22 +825,22 @@ export const curriculum = [
     {
         id: 'module-6',
         title: 'Credit & Debt',
-        description: 'Master the tools that can build or destroy wealth.',
+        description: 'Understand how credit and borrowing can affect your options and costs.',
         xpReward: 125,
         lessons: [
             {
                 id: 'lesson-6-1',
-                title: 'Credit Scores: Your Financial Report Card',
+                title: 'Understanding Credit Scores',
                 description: 'How they work and why they matter.',
                 xpReward: 30,
                 content: [
-                    "Your credit score is a number from 300-850 that tells lenders how risky you are.",
-                    "750+ = Excellent. 700-749 = Good. 650-699 = Fair. Below 650 = Poor.",
+                    "A credit score is a number from 300-850 that lenders use as one estimate of lending risk. It does not measure your worth or how responsible you are as a person.",
+                    "Score ranges are often labeled Excellent, Good, Fair, or Poor by the credit industry. These are lending categories, not judgments about you.",
                     "",
-                    "Pro tip: Avoid 'Hard Pulls' (checking for new loans) too often, as they can temporarily drop your score. 'Soft Pulls' (checking your own score) do NOT hurt it.",
+                    "Helpful note: Several 'hard pulls' for new credit can temporarily affect a score. Checking your own credit generally uses a 'soft pull' and does not lower it.",
                     "",
                     "WHAT AFFECTS YOUR SCORE:",
-                    "• Payment History (35%): Pay bills on time!",
+                    "• Payment History (35%): On-time payments help; if you miss one, contact the lender and focus on getting current.",
                     "• Credit Utilization (30%): Use less than 30% of your credit limit (ideally under 10% for the best score).",
                     "• Length of History (15%): Older accounts help.",
                     "• Credit Mix (10%): Having different types of credit helps.",
@@ -850,25 +850,25 @@ export const curriculum = [
             },
             {
                 id: 'lesson-6-2',
-                title: 'Good Debt vs. Bad Debt',
-                description: 'Not all borrowing is created equal.',
+                title: 'Comparing Types of Debt',
+                description: 'Compare borrowing by cost, risk, purpose, and repayment terms.',
                 xpReward: 25,
                 story: {
                     character: 'Jordan',
                     scenario: "Jordan has $10,000. Should they pay off their 20% credit card or invest in the stock market?"
                 },
                 content: [
-                    "**GOOD DEBT** makes you money or increases your earning potential.",
+                    "**Debt that may support a long-term goal** can increase earning potential or help purchase an asset, but it still carries cost and risk.",
                     "• Student loans (if they lead to higher income)",
                     "• Mortgage (you build equity, home may appreciate)",
                     "• Business loan (if the business is profitable)",
                     "",
-                    "**BAD DEBT** costs you money on things that lose value.",
+                    "**High-cost or higher-risk debt** can be especially difficult when it finances something that loses value.",
                     "• Credit card debt (high interest, often for consumption)",
                     "• Car loans (cars depreciate rapidly)",
                     "• Payday loans (predatory interest rates)",
                     "",
-                    "Rule: Always pay off high-interest debt before investing."
+                    "In many situations, paying down high-interest debt before adding investments offers a strong, predictable financial benefit. Your emergency savings, employer match, taxes, and personal circumstances can affect the order."
                 ],
                 type: 'reading'
             },
@@ -914,7 +914,7 @@ export const curriculum = [
                             "• 4-pay headphones",
                             "• 4-pay travel booking",
                             "",
-                            "Each payment looks small alone, but together they can crush cash flow and trigger missed due dates."
+                            "Each payment may look small on its own, but several at once can strain cash flow and make due dates harder to manage."
                         ]
                     },
                     {
@@ -1409,7 +1409,7 @@ export const curriculum = [
                     "",
                     "**Inflation** is another hidden cost. If prices rise by 3% and your money grows by 0%, you are actually losing purchasing power. Every day your money isn't invested, it buys slightly less.",
                     "",
-                    "Pro tip: Don't just ask 'What if I lose money?' Ask 'What if I lose the chance to build wealth?'"
+                    "A balanced decision considers both risks: the possibility of investment losses and the possibility that inflation or missed growth reduces future purchasing power."
                 ],
                 type: 'interactive',
                 widget: 'CompoundInterest'
@@ -1556,12 +1556,12 @@ export const curriculum = [
                     {
                         title: 'Catch-Up Cost',
                         content: [
-                            "Waiting often forces painful catch-up math:",
+                            "Starting later changes the planning math:",
                             "• Much higher monthly contributions",
                             "• Larger total dollars invested",
                             "• More pressure on future cash flow",
                             "",
-                            "The goal is simple: start early, automate, and stay consistent."
+                            "If you are able to start early, compounding has more time to help. If you are starting later, the tool can help you find a realistic next step without shame or panic."
                         ]
                     }
                 ],
@@ -1572,8 +1572,8 @@ export const curriculum = [
     },
     {
         id: 'module-roth-ira',
-        title: 'Roth IRA Mastery',
-        description: 'Build tax-free long-term wealth with a Roth IRA.',
+        title: 'Understanding Roth IRAs',
+        description: 'Learn how a Roth IRA can support tax-advantaged, long-term saving.',
         xpReward: 125,
         lessons: [
             {
@@ -1763,8 +1763,8 @@ export const curriculum = [
     },
     {
         id: 'module-401k',
-        title: '401(k) Master Plan',
-        description: 'Use tax-advantaged retirement accounts and capture every dollar of employer match.',
+        title: 'Understanding Your 401(k)',
+        description: 'Learn how workplace retirement accounts, tax treatment, and employer matching work.',
         xpReward: 140,
         lessons: [
             {
@@ -2323,7 +2323,7 @@ export const curriculum = [
                             "**Key concept: Leveling**",
                             "Companies have internal 'levels' (e.g., Junior, Mid, Senior, Staff). Your title might be the same, but your level determines your pay band.",
                             "",
-                            "Pro tip: Always ask about the 'pay band' for your level during negotiations. It tells you the floor and ceiling."
+                            "Helpful note: You can ask for the pay band for the role or level. It provides context for the employer's compensation range."
                         ]
                     },
                     {
@@ -2344,7 +2344,7 @@ export const curriculum = [
                             "",
                             "**Cost of living matters**: A $150k salary in San Francisco ≈ $90k in Dallas in terms of purchasing power.",
                             "",
-                            "Pro tip: Remote roles at companies that DON'T adjust for location are often the best deal."
+                            "Helpful note: For remote roles, ask whether compensation changes by location so you can compare offers accurately."
                         ]
                     }
                 ],
@@ -2387,7 +2387,7 @@ export const curriculum = [
                             "**The 'What Else' Script:**",
                             "\"If the base salary is firm, are there other areas with flexibility? I'm thinking about signing bonus, equity, PTO, or remote work options.\"",
                             "",
-                            "**Pro tips:**",
+                            "**Helpful notes:**",
                             "• Always negotiate via email (gives you time to think).",
                             "• Never say your current salary — it anchors you low.",
                             "• Ask for 10-20% more than you'd be happy with.",
@@ -2420,7 +2420,7 @@ export const curriculum = [
                             "",
                             "**Benefits (real dollar value):**",
                             "• Health insurance (employer share: $5k-$15k/year)",
-                            "• 401k match (if 50% match on 6%, that's 3% of your salary FREE)",
+                            "• 401k match (for example, a 50% match on 6% adds 3% of salary in employer contributions)",
                             "• PTO/vacation days (each day ≈ salary / 260)"
                         ]
                     },
@@ -2440,7 +2440,7 @@ export const curriculum = [
                             "",
                             "**Always compare TOTAL compensation**, not just base salary.",
                             "",
-                            "Pro tip: Ask recruiters for the 'total compensation summary' or 'offer breakdown'. Most big companies provide one."
+                            "Helpful note: Ask the recruiter for a total compensation summary or offer breakdown so you can compare each component."
                         ]
                     }
                 ],
@@ -2577,7 +2577,7 @@ export const curriculum = [
                             "• You can use a **SEP IRA** or **Solo 401k** — often with higher contribution limits.",
                             "• More control over your schedule and rates.",
                             "",
-                            "Pro tip: If you're 1099, set aside **25-30%** of every payment for taxes. Open a separate savings account just for this."
+                            "Helpful note: If you receive 1099 income, a separate savings account for estimated taxes can make planning easier. The amount to set aside depends on your income, location, deductions, and tax situation."
                         ]
                     }
                 ],
@@ -2627,7 +2627,7 @@ export const curriculum = [
             {
                 id: 'lesson-12-4',
                 title: 'Tax-Advantaged Accounts',
-                description: '401k, IRA, Roth, HSA — free money from the government.',
+                description: 'Learn how 401(k)s, IRAs, Roth accounts, and HSAs receive different tax treatment.',
                 xpReward: 40,
                 screens: [
                     {
@@ -2638,7 +2638,7 @@ export const curriculum = [
                             "**401k** (through your employer):",
                             "• 2024 contribution limit: $23,000/year.",
                             "• Many employers **match** your contributions (e.g., 50% match up to 6% of salary).",
-                            "• Employer match = **FREE MONEY**. Always contribute enough to get the full match.",
+                            "• An employer match is part of your compensation. If your budget allows, contributing enough to receive the full match can help you use that benefit.",
                             "",
                             "**Traditional IRA** (on your own):",
                             "• 2024 limit: $7,000/year ($8,000 if 50+).",
@@ -2652,18 +2652,18 @@ export const curriculum = [
                         content: [
                             "**Roth IRA / Roth 401k:**",
                             "• You contribute AFTER-TAX money (no immediate tax break).",
-                            "• But all growth and withdrawals in retirement are **100% TAX-FREE**.",
-                            "• Best for young earners who expect higher income later.",
+                            "• Qualified growth and withdrawals in retirement are tax-free.",
+                            "• This tax treatment may be useful for people who expect to be in a higher tax bracket later.",
                             "",
-                            "**Health Savings Account (HSA)** — the ULTIMATE tax hack:",
+                            "**Health Savings Account (HSA)** — a tax-advantaged account available with eligible health plans:",
                             "• ✅ Contributions are tax-deductible (pre-tax).",
                             "• ✅ Growth is tax-free.",
                             "• ✅ Withdrawals for medical expenses are tax-free.",
                             "• 2024 limit: $4,150 (individual) / $8,300 (family).",
                             "",
-                            "After age 65, you can withdraw HSA funds for ANY purpose (taxed like a Traditional IRA). It's basically a **super IRA**.",
+                            "After age 65, HSA funds used for nonmedical purposes are generally taxable, similar to withdrawals from a Traditional IRA.",
                             "",
-                            "**Priority order**: 1) 401k up to employer match → 2) Max HSA → 3) Max Roth IRA → 4) Max remaining 401k."
+                            "One common order is: 1) 401k up to the employer match → 2) HSA, if eligible → 3) Roth IRA, if eligible → 4) additional 401k contributions. Your cash flow, debt, emergency savings, health costs, and tax situation may lead to a different order."
                         ]
                     }
                 ],
@@ -2786,7 +2786,7 @@ export const curriculum = [
                             "",
                             "**FAFSA first!** Always fill out the Free Application for Federal Student Aid before considering private loans. It's free and determines your eligibility for grants, scholarships, and federal loans.",
                             "",
-                            "Pro tip: Grants and scholarships are free money. Exhaust those before borrowing anything."
+                            "Helpful note: Apply for grants and scholarships before deciding how much you need to borrow; unlike loans, these sources generally do not require repayment."
                         ]
                     }
                 ],
@@ -2833,7 +2833,7 @@ export const curriculum = [
                             "",
                             "**Which is better?** Avalanche saves more money. Snowball keeps you motivated. Pick the one you'll actually stick with.",
                             "",
-                            "Pro tip: Either method beats making only minimum payments."
+                            "Helpful note: Either method can help you make steady progress beyond minimum payments. Choose the one you are more likely to sustain."
                         ]
                     }
                 ],
@@ -2862,7 +2862,7 @@ export const curriculum = [
                             "",
                             "⚠️ **Critical warning**: Refinancing federal loans into a private loan is IRREVERSIBLE. You permanently lose all federal protections.",
                             "",
-                            "Pro tip: Only refinance federal loans if you have a very high income, strong job security, and no interest in forgiveness programs."
+                            "Helpful note: Refinancing federal loans into a private loan can permanently remove federal protections and forgiveness options. Compare those benefits carefully before refinancing."
                         ]
                     }
                 ],
@@ -2957,7 +2957,7 @@ export const curriculum = [
                     "COLLISION: Covers damage to YOUR car from accidents.",
                     "COMPREHENSIVE: Covers theft, weather damage, hitting an animal, etc.",
                     "",
-                    "Pro tip: If your car is old and not worth much, you might skip collision/comprehensive.",
+                    "Helpful note: If a car's value is low, compare the cost of collision and comprehensive coverage with what the policy would pay after the deductible.",
                     "The payout from insurance can't exceed the car's value.",
                     "",
                     "DEDUCTIBLE matters here too! Higher deductible = lower premium."
@@ -2978,7 +2978,7 @@ export const curriculum = [
                     "",
                     "**What's NOT covered?** Floods and earthquakes require separate policies. Standard policies also exclude 'maintenance issues' like mold or pest damage.",
                     "",
-                    "Pro tip: Create a **home inventory** (photos/video of your belongings). If disaster strikes, you'll have proof for your claim."
+                    "Helpful note: A **home inventory** with photos or video can make it easier to document belongings for a claim."
                 ],
                 type: 'reading'
             },
@@ -2997,7 +2997,7 @@ export const curriculum = [
                     "",
                     "**Rule of Thumb**: Get coverage worth 10-12x your annual income. A $60k earner should aim for $600k-$720k in coverage.",
                     "",
-                    "Pro tip: Buy term insurance when you're young and healthy—premiums are locked in and stay low."
+                    "Helpful note: Age and health can affect term-life premiums, so compare coverage while you are healthy if other people depend on your income."
                 ],
                 type: 'reading'
             }
@@ -3208,7 +3208,7 @@ export const curriculum = [
                             "• **Employment History**: Stable income for at least 2 years.",
                             "• **Assets**: Savings for down payment and reserves.",
                             "",
-                            "Pro tip: Get pre-approved by 2-3 lenders and compare offers. Even a 0.25% rate difference saves thousands over 30 years."
+                            "Helpful note: Comparing pre-approvals from multiple lenders can reveal meaningful differences in rates, fees, and total cost."
                         ]
                     }
                 ],
@@ -3249,7 +3249,7 @@ export const curriculum = [
                             "",
                             "**The good news**: PMI goes away once you reach 20% equity in your home. You can request removal at that point.",
                             "",
-                            "Pro tip: Some lenders offer **lender-paid PMI** in exchange for a slightly higher interest rate. Do the math to see which is cheaper over your expected time in the home."
+                            "Helpful note: Some lenders offer **lender-paid PMI** in exchange for a higher interest rate. Compare total costs over the time you expect to keep the loan."
                         ]
                     },
                     {
@@ -3267,7 +3267,7 @@ export const curriculum = [
                             "• Prepaid property taxes and homeowner's insurance",
                             "• Recording fees",
                             "",
-                            "Pro tip: You can negotiate with the seller to cover some closing costs (a 'seller concession'). This is more common in buyer's markets."
+                            "Helpful note: A seller may agree to cover some closing costs through a seller concession, depending on the market and the offer."
                         ]
                     }
                 ],
@@ -3357,7 +3357,7 @@ export const curriculum = [
                             "",
                             "**Homeowner's Insurance**: $1,500-$3,000/year depending on location and coverage.",
                             "",
-                            "Pro tip: Add up ALL these costs before deciding what you can 'afford'. A home that fits your mortgage budget might not fit your TOTAL budget."
+                            "Helpful note: Add the ongoing costs before choosing a comfortable price range. A mortgage payment may fit while the home's total monthly cost does not."
                         ]
                     }
                 ],
@@ -4410,7 +4410,7 @@ export const curriculum = [
                     "The vision was a trustless, peer-to-peer network free from banks and governments.",
                     "However, the current reality of crypto in 2026 is heavily **financialized**. The introduction of Spot ETFs, massive institutional buying, and centralized exchanges have largely defeated its original decentralized purpose.",
                     "Instead of acting as an independent currency, crypto has largely become another highly volatile, speculative asset class heavily tied to traditional markets and centralized platforms.",
-                    "Pro tip: If you buy crypto, you need a **Wallet**. Remember: 'Not your keys, not your coins'. If you don't control the private keys, you don't truly own the assets."
+                    "Helpful note: Crypto custody involves a tradeoff. Holding private keys gives you direct control but also full responsibility for security and recovery; using a custodian introduces counterparty risk."
                 ],
                 type: 'reading'
             },
@@ -4827,7 +4827,7 @@ export const curriculum = [
                     {
                         title: 'Small Amounts, Massive Results',
                         content: [
-                            "What if you set aside just **$50 per month** for your child from the day they were born?",
+                            "Here is an illustration of how **$50 per month** could grow if a family has room in its budget to begin when a child is born:",
                             "",
                             "At an average annual return of 8%:",
                             "• **$50/month for 18 years** = ~**$24,000** (vs $10,800 if you just saved cash)",
@@ -4835,9 +4835,9 @@ export const curriculum = [
                             "• **$200/month for 18 years** = ~**$96,000**",
                             "• **$300/month for 18 years** = ~**$144,000**",
                             "",
-                            "That $48,000 from just $100/month could cover **two full years** of in-state public university tuition, dramatically reducing or eliminating the need for student loans.",
+                            "In this illustration, $100 per month grows to about $48,000. Actual returns, fees, taxes, tuition, and available contribution years will vary.",
                             "",
-                            "The secret isn't a large paycheck. It's **time + consistency + compound growth**."
+                            "Time and consistency can help, but families should protect their current stability before committing money to a long-term goal."
                         ]
                     },
                     {
@@ -4944,39 +4944,37 @@ export const curriculum = [
                         ]
                     },
                     {
-                        title: 'Proposed Trump Accounts: Free Kickstarter Money',
+                        title: 'Evaluating Government-Seeded Child Accounts',
                         content: [
-                            "In recent years, there has been a proposal for government-seeded investment accounts for children, sometimes referred to as **'Trump Accounts'** or similar initiatives.",
+                            "Government-seeded investment accounts for children may be introduced under different names and with different eligibility rules.",
                             "",
-                            "The basic concept:",
-                            "• The government deposits a set amount (proposals have ranged from **$1,000 to $5,000**) into an investment account for every child born in the U.S.",
-                            "• The money is invested and grows tax-free until the child reaches adulthood.",
-                            "• Funds could potentially be used for education, homeownership, or starting a business.",
+                            "The general concept:",
+                            "• An eligible child receives an initial government contribution in an investment account.",
+                            "• The account may offer tax advantages while the money is invested.",
+                            "• Rules may limit eligibility, contributions, investments, withdrawals, or permitted uses.",
                             "",
-                            "**A note on the politics:**",
-                            "These types of proposals often carry political branding, and that can make people dismiss them based on party affiliation. **That is a mistake.**",
+                            "**How to evaluate a program:**",
+                            "Look past the program's branding and review the current rules from an official source. Consider eligibility, fees, investment choices, taxes, withdrawal restrictions, and how the account fits with your family's priorities.",
                             "",
-                            "Regardless of who proposes it or what it's called, if the government is offering to put **free seed money** into a compounding investment account for your child, you should take it. Period.",
-                            "",
-                            "Political feelings should never override financial common sense. **Free money that compounds for 18+ years is free money that compounds for 18+ years**, no matter whose name is on the policy."
+                            "A government contribution may be valuable, but enrolling is still a personal decision. Verify that participation does not conflict with benefit eligibility or other financial needs before deciding."
                         ]
                     },
                     {
                         title: 'Putting It All Together',
                         content: [
-                            "Here's the action plan for investing in your kids:",
+                            "Here is one possible planning sequence for a child's future:",
                             "",
                             "**Step 1: Secure your own finances first.** Fund your retirement, build your emergency fund, eliminate high-interest debt.",
                             "",
-                            "**Step 2: Open a 529 Plan.** Start with whatever you can—even $25/month. Set it on autopilot.",
+                            "**Step 2: Consider a 529 Plan.** If it fits your goals, start with an amount your budget can comfortably support.",
                             "",
-                            "**Step 3: Enroll in any government-seeded programs** if and when they become available. Don't let politics leave money on the table.",
+                            "**Step 3: Review government-seeded programs** if they are available. Read the current rules and decide whether enrollment fits your family's situation.",
                             "",
                             "**Step 4: Have honest conversations** with your kids about the cost of education and the ROI of different paths.",
                             "",
-                            "**Step 5: Let time do the work.** Small, consistent investments from birth can eliminate or dramatically reduce the burden of student loans and give your child a financial head start that lasts a lifetime.",
+                            "**Step 5: Use time when you can.** Small, consistent contributions may reduce future education costs and give a child more options.",
                             "",
-                            "You don't need to be rich to build generational wealth. You just need to **start early and stay consistent**."
+                            "Not every family has room to contribute, and supporting your own financial stability is valuable too. If you can save for a child, an amount that is sustainable for your household is a worthwhile start."
                         ]
                     }
                 ],

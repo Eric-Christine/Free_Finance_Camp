@@ -259,6 +259,7 @@ export function CompoundInterestCore({ compact = false }) {
             <span style={{ fontWeight: '700', color: 'var(--text-main)' }}>${monthlyAmount.toLocaleString()} / mo</span>
           </label>
           <input
+            aria-label="Monthly contribution"
             type="range"
             className="landing-slider"
             min={MONTHLY_MIN}
@@ -278,6 +279,7 @@ export function CompoundInterestCore({ compact = false }) {
             <span style={{ fontWeight: '700', color: 'var(--secondary)' }}>{years} Years</span>
           </label>
           <input
+            aria-label="Time horizon in years"
             type="range"
             className="landing-slider landing-slider-years"
             min={YEARS_MIN}

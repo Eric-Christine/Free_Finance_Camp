@@ -109,8 +109,12 @@ export default function MoneyMultiplier() {
                     step={1}
                     display={`${earlyStartAge}`}
                     onChange={(next) => {
+                        const nextLateStartAge = Math.max(lateStartAge, next + 1);
                         setEarlyStartAge(next);
-                        if (lateStartAge <= next) setLateStartAge(next + 1);
+                        if (lateStartAge !== nextLateStartAge) setLateStartAge(nextLateStartAge);
+                        if (endAge < nextLateStartAge + 5) {
+                            setEndAge(Math.min(nextLateStartAge + 5, 75));
+                        }
                     }}
                 />
                 <Slider
@@ -278,6 +282,7 @@ function Slider({ label, value, min, max, step, display, onChange }) {
                 <span style={{ whiteSpace: 'nowrap' }}>{display}</span>
             </label>
             <input
+                aria-label={label}
                 type="range"
                 min={min}
                 max={max}

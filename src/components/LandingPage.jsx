@@ -118,10 +118,10 @@ export default function LandingPage() {
                             lineHeight: '1.58',
                             fontWeight: '400'
                         }}>
-                            Free Finance Camp is a nonprofit-spirited initiative providing
-                            accessible, high-quality financial education. Master the fundamentals
-                            of budgeting, investing, and economic systems through
-                            unbiased, open-source curriculum.
+                            Free Finance Camp offers clear, practical financial education for people
+                            at every starting point. Learn budgeting, investing, and economic concepts
+                            at your own pace through a free, open-source curriculum—no prior finance
+                            experience required.
                         </p>
 
                         <div className="landing-hero-actions">
@@ -176,6 +176,20 @@ export default function LandingPage() {
                                 }}
                             >
                                 Free Tools
+                            </Link>
+                            <Link
+                                to="/resources"
+                                style={{
+                                    padding: '0.85rem 1.45rem',
+                                    fontSize: '0.97rem',
+                                    fontWeight: '600',
+                                    color: 'var(--text-main)',
+                                    textDecoration: 'none',
+                                    border: '1px solid var(--border)',
+                                    borderRadius: 'var(--radius)'
+                                }}
+                            >
+                                Resources
                             </Link>
                         </div>
 

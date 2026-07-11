@@ -2,9 +2,9 @@ import { useEffect, useMemo, useState } from 'react';
 import {
     Area,
     CartesianGrid,
+    ComposedChart,
     Legend,
     Line,
-    LineChart,
     ResponsiveContainer,
     Tooltip,
     XAxis,
@@ -14,7 +14,7 @@ import {
 const DEFAULTS = {
     currentAge: 27,
     retirementAge: 65,
-    annualSpending: 30000,
+    annualSpending: 50000,
     currentAssets: 100000,
     monthlyContribution: 500,
     growthRate: 0.07,
@@ -142,6 +142,20 @@ export default function CoastFireCalculator() {
     const [growthRate, setGrowthRate] = useState(DEFAULTS.growthRate);
     const [inflationRate, setInflationRate] = useState(DEFAULTS.inflationRate);
     const [withdrawalRate, setWithdrawalRate] = useState(DEFAULTS.withdrawalRate);
+    const [isWideLayout, setIsWideLayout] = useState(() => (
+        typeof window !== 'undefined' && window.matchMedia('(min-width: 1100px)').matches
+    ));
+
+    useEffect(() => {
+        if (typeof window === 'undefined') return undefined;
+
+        const mediaQuery = window.matchMedia('(min-width: 1100px)');
+        const handleLayoutChange = (event) => setIsWideLayout(event.matches);
+        setIsWideLayout(mediaQuery.matches);
+        mediaQuery.addEventListener('change', handleLayoutChange);
+
+        return () => mediaQuery.removeEventListener('change', handleLayoutChange);
+    }, []);
 
     const {
         data,
@@ -331,11 +345,28 @@ export default function CoastFireCalculator() {
             }}>
                 Find the point where your investments can grow to your FIRE goal without future contributions.
             </p>
+            <p style={{
+                color: 'var(--text-muted)',
+                fontSize: '0.82rem',
+                marginBottom: '1rem'
+            }}>
+                For more information, see{' '}
+                <a
+                    href="https://walletburst.com/tools/coast-fire-calc/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: 'var(--secondary)', textDecoration: 'underline' }}
+                >
+                    WalletBurst Coast FIRE Calculator
+                </a>.
+            </p>
 
             <div style={{
                 display: 'grid',
                 gap: '1rem',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(310px, 1fr))',
+                gridTemplateColumns: isWideLayout
+                    ? 'minmax(320px, 400px) minmax(0, 1fr)'
+                    : '1fr',
                 minHeight: 0,
                 flex: 1
             }}>
@@ -353,9 +384,13 @@ export default function CoastFireCalculator() {
                         label="Current age"
                         value={currentAge}
                         step={LIMITS.currentAge.step}
-                        onChange={(value) => setCurrentAge(
-                            clamp(Math.round(value), LIMITS.currentAge.min, LIMITS.currentAge.max)
-                        )}
+                        onChange={(value) => {
+                            const nextAge = clamp(Math.round(value), LIMITS.currentAge.min, LIMITS.currentAge.max);
+                            setCurrentAge(nextAge);
+                            if (retirementAge <= nextAge) {
+                                setRetirementAge(Math.min(nextAge + 1, LIMITS.retirementAge.max));
+                            }
+                        }}
                     />
                     <InputRow
                         label="Retirement age"
@@ -475,9 +510,9 @@ export default function CoastFireCalculator() {
                         <span>Coast plan: {formatCurrency(endingCoastPlan)}</span>
                     </div>
 
-                    <div style={{ height: '100%', minHeight: '460px', minWidth: 0 }}>
+                    <div style={{ height: '100%', minHeight: isWideLayout ? '540px' : '460px', minWidth: 0 }}>
                         <ResponsiveContainer width="100%" height="100%">
-                            <LineChart data={data} margin={{ top: 12, right: 8, left: 2, bottom: 8 }}>
+                            <ComposedChart data={data} margin={{ top: 12, right: 8, left: 2, bottom: 8 }}>
                                 <CartesianGrid strokeDasharray="4 4" stroke="var(--border)" />
                                 <XAxis
                                     dataKey="age"
@@ -510,15 +545,6 @@ export default function CoastFireCalculator() {
                                 />
                                 <Legend verticalAlign="top" wrapperStyle={{ paddingBottom: 8, fontSize: '0.82rem' }} />
 
-                                <Area
-                                    type="monotone"
-                                    dataKey="coastPlan"
-                                    stroke="#22c55e"
-                                    fill="rgba(34, 197, 94, 0.2)"
-                                    strokeWidth={2}
-                                    name="Net worth with no contributions after Coast FIRE milestone"
-                                    dot={false}
-                                />
                                 <Line
                                     type="monotone"
                                     dataKey="withContrib"
@@ -526,6 +552,21 @@ export default function CoastFireCalculator() {
                                     strokeWidth={2}
                                     strokeDasharray="8 6"
                                     name="Net worth with continued contributions"
+                                    dot={false}
+                                />
+                                <Area
+                                    type="monotone"
+                                    dataKey="coastPlan"
+                                    stroke="none"
+                                    fill="rgba(34, 197, 94, 0.18)"
+                                    legendType="none"
+                                />
+                                <Line
+                                    type="monotone"
+                                    dataKey="coastPlan"
+                                    stroke="#22c55e"
+                                    strokeWidth={3}
+                                    name="Net worth with no contributions after Coast FIRE milestone"
                                     dot={false}
                                 />
                                 <Line
@@ -544,7 +585,7 @@ export default function CoastFireCalculator() {
                                     name="FIRE number"
                                     dot={false}
                                 />
-                            </LineChart>
+                            </ComposedChart>
                         </ResponsiveContainer>
                     </div>
                 </div>
@@ -595,15 +636,13 @@ function InputRow({
                     </span>
                 )}
                 <input
+                    aria-label={label}
                     type="text"
                     value={draftValue}
                     inputMode={getFractionDigits(step) > 0 ? 'decimal' : 'numeric'}
                     pattern="[0-9,.-]*"
                     onChange={(event) => setDraftValue(event.target.value)}
-                    onFocus={() => {
-                        setIsFocused(true);
-                        setDraftValue(String(value));
-                    }}
+                    onFocus={() => setIsFocused(true)}
                     onBlur={() => {
                         setIsFocused(false);
                         commitDraftValue();
@@ -662,6 +701,7 @@ function RateRow({
             <div style={{ display: 'grid', gap: '0.55rem', gridTemplateColumns: '1fr 82px', alignItems: 'center' }}>
                 <div>
                     <input
+                        aria-label={label}
                         type="range"
                         className="landing-slider"
                         min={min}
@@ -686,6 +726,7 @@ function RateRow({
                 </div>
 
                 <input
+                    aria-label={`${label} percentage`}
                     type="number"
                     value={draftPercent}
                     min={min * 100}

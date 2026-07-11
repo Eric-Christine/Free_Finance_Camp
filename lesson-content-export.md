@@ -1,90 +1,90 @@
 # Free Finance Camp Lesson Content Export
 
 Auto-generated from `src/data/curriculum.js` and `src/data/quizzes.js`.
-Generated at: 2026-02-26T17:04:15.809Z
+Generated at: 2026-07-11T05:53:51.609Z
 
 Use this file to copy lesson material into Word and edit.
 
-## Module 1: The Wealth Mindset
+## Module 1: Financial Foundations
 Module ID: `module-1`
-Description: Understand the core principles of building wealth.
+Description: Build a practical foundation for understanding money and long-term financial security.
 
 ### Lesson 1: Intro to Financial Literacy
 Lesson ID: `lesson-1-0`
 Type: reading
 XP Reward: 20
-Description: Why understanding money is no longer optional.
+Description: Why financial knowledge matters—and how to begin without judgment.
 
 #### Screen 1: Why This Matters
-Welcome to Free Finance Camp. Before we dive in, let's talk about WHY this knowledge is essential.
+Welcome to Free Finance Camp. You do not need any finance experience to be here. We will start with the basics and build from there.
 
-The modern economy doesn't just reward hard work—it rewards **ownership**.
+Hard work matters, but it is not the only factor that shapes financial outcomes. In the modern economy, **ownership** can also play an important role.
 
-Those who own assets (stocks, real estate, businesses, co-ops) see their wealth grow alongside the economy. Those who only earn wages often fall behind as the cost of living rises faster than their paychecks.
+People who own assets—such as stocks, real estate, businesses, or co-ops—may benefit when those assets grow in value. People relying mainly on wages can face a harder path when living costs rise faster than pay.
 
-This isn't about blame—it's about understanding the rules of the game so you can play it.
+Many barriers to saving and investing are outside an individual's control. Learning how the system works can still help you make informed choices within your own circumstances.
 
 #### Screen 2: The K-Shaped Economy
 You may have heard of the **K-Shaped Recovery**. Here's what it means:
 
 Imagine the letter 'K'. After an economic shock (like a recession or pandemic), the economy doesn't recover equally for everyone:
 
-**The Upper Arm (going up):** Asset owners, tech workers, and investors see their wealth SOAR. Stock markets hit new highs. Home values skyrocket.
+**The Upper Arm (going up):** Some asset owners, higher-paid workers, and investors see their finances improve as stock markets and home values rise.
 
-**The Lower Arm (going down):** Hourly workers, renters, and those without savings fall further behind. Jobs disappear. Rent keeps rising.
+**The Lower Arm (going down):** Some hourly workers, renters, and people without savings face job losses, higher rent, and fewer financial cushions.
 
 The gap between these two groups is widening every year.
 
-#### Screen 3: Where the Wealthy Keep Their Money
-Want to know the secret of the ultra-wealthy? It's not in their bank accounts.
+#### Screen 3: How Wealth Is Commonly Held
+Households with substantial wealth usually hold much of it in assets rather than in checking or savings accounts.
 
 **The top 1% hold their wealth in:**
 • **Stocks & Business Equity** (~50-60%) — Ownership in companies, both public and private.
 • **Real Estate** (~10-15%) — Land, commercial properties, and rental income.
 • **Other Investments** (~20%) — Bonds, private equity, hedge funds.
 
-Meanwhile, the bottom 50% hold most of their 'wealth' in:
+Meanwhile, households in the bottom 50% tend to hold most of their wealth in:
 • **Their primary home** (if they own one)
 • **Cars** (which depreciate)
-• **Cash in checking/savings** (losing value to inflation)
+• **Cash in checking/savings** (useful for near-term needs, though inflation can reduce its purchasing power)
 
-Here's the key insight: **When the stock market goes up 20%, the wealthy get 20% richer. When wages go up 3%, workers barely keep pace with inflation.**
+The key idea is that rising asset prices mostly benefit people who already own those assets, while wage increases may not keep pace with inflation.
 
 #### Screen 4: The Wealth Gap in Numbers
-The numbers are staggering:
+The gap is substantial:
 
 • The **top 10%** of Americans own **93%** of all stocks.
 • The **bottom 50%** own just **1%** of stocks.
 
 This means when the S&P 500 doubles (as it did from 2019-2024), almost all of those gains went to people who were already wealthy.
 
-**The rich get richer** because their assets (stocks, real estate) appreciate faster than wages grow.
+Households that already own assets can benefit when stocks and real estate appreciate faster than wages grow.
 
-**The poor stay poor** because they have no assets that grow—only expenses that increase.
+Households with little room to save can find it harder to buy appreciating assets, especially as essential expenses increase.
 
-Breaking this cycle starts with one decision: **becoming an owner, not just an earner.**
+Building even a small amount of ownership can help over time, when your income and essential needs leave room for it. If that is not possible right now, learning and stabilizing your finances are meaningful steps too.
 
-#### Screen 5: The Path to Ownership
-The good news? **You can move from the bottom arm to the top.**
+#### Screen 5: Ways to Build Ownership
+There are several ways to begin building assets, and the right starting point depends on your needs, resources, and goals.
 
-It starts with financial literacy: understanding how money works, how to save, and most importantly, how to **own assets**.
+Financial literacy can help you understand how money works, create room to save when possible, and decide whether different kinds of assets fit your plan.
 
 Assets come in many forms:
 • **Stocks & ETFs** — Own a piece of publicly traded companies.
-• **Real Estate** — From your first home to rental properties.
+• **Real Estate** — A home or rental property, when the costs and responsibilities fit your situation.
 • **Co-ops & Credit Unions** — Member-owned organizations that share profits.
 • **Starting a Business** — Build equity in something you control.
 
-This course will teach you how to get started—no matter your current income level.
+This course will help you explore these options without assuming that everyone has the same income, timeline, or starting point.
 
 #### Screen 6: The Stakes Are Real
 Consider this: Over the last 40 years, the S&P 500 has returned an average of ~10% per year.
 
 Meanwhile, average wages have barely kept pace with inflation.
 
-If you had invested just $100/month starting at age 25, by age 65 you'd have over **$500,000**. If you only saved it in a bank account? Around **$48,000**.
+As an illustration, investing $100 per month from age 25 to 65 could grow to substantially more than the $48,000 contributed, depending on returns and fees. A savings account serves a different purpose by keeping near-term money stable and accessible.
 
-The difference isn't luck. It's knowledge. And that's exactly what you're here to learn.
+Starting early can help, but starting later or with less does not mean you have failed. The goal is to understand your options and choose steps that are realistic for you.
 
 Let's get started.
 
@@ -116,7 +116,7 @@ XP Reward: 15
 Description: The foundation of all financial decisions.
 
 #### Screen 1: The Core Principle
-Money is a finite resource. To make the most of it, you need to distinguish between what you NEED and what you WANT.
+Money is a finite resource, and separating needs from wants can make planning easier. The line is personal and can change with your health, family, culture, and circumstances.
 
 **Needs** are essentials:
 • Shelter (rent, mortgage)
@@ -130,7 +130,7 @@ Money is a finite resource. To make the most of it, you need to distinguish betw
 • Designer clothes & luxury items
 
 #### Screen 2: The 72-Hour Rule
-Pro tip: Use the **72-Hour Rule** for wants.
+One option: try the **72-Hour Rule** for nonessential purchases.
 
 See something you want? Wait 72 hours before buying it.
 
@@ -141,10 +141,10 @@ The first step to wealth is prioritizing needs, then smartly managing wants.
 #### Screen 3: Global Savings Rates
 How does your country compare? Personal savings rates vary dramatically around the world.
 
-**TOP SAVERS:**
-• China: ~35% — Cultural emphasis on saving
-• Singapore: ~30% — Government-mandated CPF program
-• Germany: ~11% — Fiscal discipline culture
+**HIGHER REPORTED SAVINGS RATES:**
+• China: ~35%
+• Singapore: ~30% — includes the effect of the mandatory CPF program
+• Germany: ~11%
 
 **MIDDLE OF THE PACK:**
 • France: ~15% — Social programs reduce need
@@ -156,9 +156,9 @@ How does your country compare? Personal savings rates vary dramatically around t
 • United Kingdom: ~5-7%
 • Australia: ~3-5%
 
-Why so low? Consumer culture, easy credit access, and reliance on social programs.
+National savings rates reflect many factors, including wages, housing and healthcare costs, taxes, pensions, public benefits, credit markets, demographics, and how each country measures saving.
 
-**The Takeaway:** Even small increases in your savings rate can dramatically impact your wealth over time. Try to save at least 20% of your income!
+**The takeaway:** Even a small, sustainable increase in your savings rate can matter over time. There is no single percentage that fits every household.
 
 #### Quiz
 1. Which of the following is a 'Need' vs. a 'Want'?
@@ -424,7 +424,7 @@ Here is what 50/30/20 looks like at different take-home pay levels:
 **$6,000/month take-home:**
 • Needs: $3,000 • Wants: $1,800 • Savings: $1,200
 
-If your needs already eat more than 50%, that is a signal—not a failure. It means you should focus on either increasing income or reducing fixed costs before worrying about the other buckets.
+If needs already take more than 50%, that is information—not a failure. Adjust the percentages to reflect your reality. When possible, look for changes to income or fixed costs, but recognize that many essential costs are not easy to change quickly.
 
 #### Screen 3: When 50/30/20 Does Not Fit
 This rule does not work perfectly for everyone. Common situations where you may need to adjust:
@@ -442,7 +442,7 @@ A budget only works if you know where your money goes. Here is how to start:
 
 **Step 1:** Pull your last 3 months of bank and credit card statements.
 **Step 2:** Categorize every transaction as a Need, Want, or Savings/Debt payment.
-**Step 3:** Calculate the actual percentages. Most people are shocked by how much goes to wants.
+**Step 3:** Calculate the percentages without judging yourself. This is information you can use, not a grade.
 **Step 4:** Set a target split and track monthly.
 
 Free tools that help: your bank's spending categories, spreadsheet templates, or budgeting apps.
@@ -474,24 +474,24 @@ Use the budget allocator to practice adjusting your own income into the 50/30/20
 Lesson ID: `lesson-2-2`
 Type: interactive
 XP Reward: 25
-Description: See how your savings rate determines your retirement outcome.
+Description: See how savings rate can influence long-term retirement outcomes.
 
-#### Screen 1: Why Your Savings Rate Matters More Than Returns
-Most people obsess over picking the right stock or timing the market. But the single biggest factor in building wealth is your **savings rate**—the percentage of your income you set aside.
+#### Screen 1: Why Your Savings Rate Matters
+Investment returns get a lot of attention, but your **savings rate**—the percentage of income you set aside—is another important part of long-term planning.
 
-A person saving 25% of their income will almost always end up wealthier than someone saving 10%, regardless of investment returns.
+A higher savings rate can create more opportunity for long-term growth. Income, essential expenses, caregiving, debt, and other circumstances all affect what is realistic.
 
-The math is simple: **you can't invest what you don't save.**
+Even a modest, sustainable amount can be a useful start. Consistency matters more than comparing your percentage with someone else's.
 
 #### Screen 2: Age + Savings Rate = Your Retirement Outcome
-Two variables determine how much of your income you can replace in retirement:
+Two variables have a meaningful influence on how much income your savings may replace in retirement:
 
 1. **When you start saving** — earlier means more compounding time
 2. **How much you save** — a higher rate means more fuel for growth
 
 Starting at age 25 with a 20% savings rate at 6% annual returns, you could replace **133%** of your income in retirement.
 
-Wait until 40 with the same rate? Only **46%**.
+Starting at 40 with the same assumptions produces a lower estimate of **46%**, because the money has less time to compound.
 
 Use the interactive table to explore how different ages and savings rates change your retirement picture.
 
@@ -518,6 +518,41 @@ Every 1% increase matters. Start where you are and increase by 1% every few mont
 
 ---
 
+### Lesson 3: Coast FIRE: The Point Where Time Does the Heavy Lifting
+Lesson ID: `lesson-2-3`
+Type: interactive
+XP Reward: 25
+Description: Use your age, savings, and contributions to find when you can stop contributing and still hit your FIRE goal.
+
+#### Screen 1: What Coast FIRE Means
+Coast FIRE is the milestone where your existing portfolio is large enough to reach your retirement target through growth alone.
+
+After this point, you are not fully retired yet, but you can choose to reduce or stop new retirement contributions and let compounding carry you forward.
+
+It creates flexibility: career changes, part-time work, or lower-stress roles become easier to consider.
+
+#### Screen 2: FIRE Number vs Coast Number
+Your **FIRE number** is the portfolio needed at retirement to fund annual spending with a safe withdrawal rate.
+
+A common shorthand is:
+• FIRE number = annual retirement spending ÷ withdrawal rate
+
+Your **Coast FIRE number** is smaller because it is measured today, then projected forward by expected real returns until retirement.
+
+#### Screen 3: How to Use This Calculator
+Set your age, retirement age, annual spending target, and current invested assets.
+
+Then adjust growth, inflation, and withdrawal assumptions to test conservative vs aggressive scenarios.
+
+Watch three paths:
+• Continue contributions the whole way
+• Stop contributions after reaching Coast FIRE
+• Compare both against your FIRE target at retirement
+
+Focus on decisions you can control now: savings rate, time horizon, and contribution consistency.
+
+---
+
 ## Module 3: Banking & Financial Institutions
 Module ID: `module-10`
 Description: Understand the entities that move the world's money.
@@ -535,7 +570,7 @@ Description: Where should you keep your cash?
 
 **Online-Only Banks** have no physical branches. Because they have lower overhead, they often offer the highest savings rates (**HYSA**) in the market.
 
-Pro tip: Always ensure your bank is insured by the **FDIC** (for banks) or **NCUA** (for credit unions). This protects your money up to $250,000 if the institution fails.
+Helpful note: Check that your bank is insured by the **FDIC** or your credit union by the **NCUA**. Deposit insurance protects eligible funds up to the applicable limit if the institution fails.
 
 #### Quiz
 1. What is the primary difference between a Bank and a Credit Union?
@@ -643,7 +678,7 @@ Description: Emergency stats and the safety net math.
 #### Screen 1: The Fragility Problem
 **56% of Americans** cannot cover a $1,000 emergency expense with savings.
 
-That means a single car repair, medical bill, or job loss can trigger a financial spiral: credit card debt → high interest → more debt → stress → poor decisions.
+A car repair, medical bill, or job loss can trigger a difficult cycle: credit card debt → high interest → more debt → stress → fewer good options.
 
 An **emergency fund** breaks this cycle. It's cash set aside ONLY for true emergencies:
 • Job loss
@@ -674,7 +709,7 @@ Not 3-6 months of INCOME — 3-6 months of EXPENSES (rent, food, utilities, insu
 • People with very stable employment
 • Those with strong family support networks
 
-Pro tip: Start with a $1,000 'starter' emergency fund. Then build to 1 month, then 3, then 6.
+A manageable first milestone might be $500 or $1,000. From there, you can work toward one month of essential expenses and continue at a pace your budget allows.
 
 #### Quiz
 1. What percentage of Americans cannot cover a $1,000 emergency?
@@ -734,7 +769,7 @@ Your emergency fund has THREE requirements:
 • Can buy through TreasuryDirect.gov
 • Slightly less liquid (must wait for maturity, 4-52 weeks)
 
-Pro tip: Keep 1-2 months in HYSA for quick access, and the rest in T-Bills for a slightly higher effective yield.
+Helpful note: Some people keep the most immediate portion in an HYSA and consider T-Bills for money they are less likely to need right away. Accessibility matters more than maximizing yield.
 
 #### Quiz
 1. Which is the BEST place to keep an emergency fund?
@@ -798,7 +833,7 @@ After the crisis passes, rebuild methodically:
 • Review and update insurance coverage
 • Create systems to prevent future crises
 
-**Remember**: Financial setbacks are setbacks, not endings. Most wealthy people have faced multiple financial crises. The difference is they rebuilt each time.
+**Remember**: A setback is not a personal failure. Recovery may take time, and each stabilizing step counts.
 
 #### Quiz
 1. If you lose your job, what should you do FIRST?
@@ -825,26 +860,26 @@ After the crisis passes, rebuild methodically:
 Lesson ID: `lesson-15-4`
 Type: reading
 XP Reward: 40
-Description: Don't put all your eggs in one paycheck.
+Description: Explore whether an additional income source could add flexibility or stability.
 
 #### Screen 1: Why One Income Is Risky
-Relying on a single income source is like owning just one stock — all your risk is concentrated.
+When one paycheck supports a household, a job change or loss can have an immediate impact.
 
-**The average millionaire has 7 income streams.** You don't need 7, but having 2-3 dramatically improves your financial resilience.
+An additional income source can provide flexibility, but it is not a requirement or a measure of success. Consider the time, energy, startup costs, and stability involved before taking one on.
 
 **Types of income:**
 • **Active income**: Trading time for money (your job, freelancing, consulting).
 • **Portfolio income**: Returns from investments (dividends, capital gains).
 • **Passive income**: Money earned with minimal ongoing effort (rental income, royalties, digital products).
 
-True 'passive' income usually requires significant upfront work or capital. But the payoff is income that doesn't stop when you stop working.
+So-called 'passive' income usually requires upfront work or capital and may still need ongoing maintenance.
 
 #### Screen 2: Realistic Side Income Ideas
-**Low Barrier (start this week):**
+**Lower startup cost:**
 • Freelancing your existing skills (writing, design, coding, tutoring)
 • Selling unused items (eBay, Facebook Marketplace)
 • Pet sitting / dog walking (Rover, Wag)
-• Delivery driving (in a pinch, but low ROI long-term)
+• Delivery driving (after accounting for fuel, maintenance, insurance, and taxes)
 
 **Medium Effort (build over months):**
 • Creating and selling digital products (templates, courses, ebooks)
@@ -854,17 +889,17 @@ True 'passive' income usually requires significant upfront work or capital. But 
 
 **Capital Required (invest to earn):**
 • Dividend-paying index funds ($100+ invested → regular payouts)
-• Real estate (house hacking: rent out spare rooms)
+• Renting out part of a home, where practical and legally permitted
 • REITs (Real Estate Investment Trusts — like a real estate ETF)
 
-**The key**: Pick ONE side income and give it 6 months of consistent effort before judging results. Most people quit too early.
+If you try a side income, set a review date and track both money earned and time spent. It is okay to stop if the tradeoff does not work for your life.
 
 #### Quiz
-1. The average millionaire has how many income streams?
-   - A. 1
-   - B. 3
-   - C. 7 [Correct]
-   - D. 15
+1. What should you consider before starting an additional income source?
+   - A. Only the potential revenue
+   - B. Time, energy, startup costs, and stability [Correct]
+   - C. Whether other people are doing it
+   - D. Whether it sounds passive
 
 2. Which type of income requires minimal ongoing effort after initial setup?
    - A. Active income
@@ -872,32 +907,32 @@ True 'passive' income usually requires significant upfront work or capital. But 
    - C. Passive income [Correct]
    - D. All require equal effort
 
-3. How long should you give a new side income before judging results?
-   - A. 1 week
-   - B. 1 month
-   - C. 6 months [Correct]
-   - D. 5 years
+3. What is a useful way to evaluate a side income?
+   - A. Track only gross revenue
+   - B. Never stop once you begin
+   - C. Set a review date and track both earnings and time [Correct]
+   - D. Ignore startup and ongoing costs
 
 ---
 
 ## Module 5: Credit & Debt
 Module ID: `module-6`
-Description: Master the tools that can build or destroy wealth.
+Description: Understand how credit and borrowing can affect your options and costs.
 
-### Lesson 1: Credit Scores: Your Financial Report Card
+### Lesson 1: Understanding Credit Scores
 Lesson ID: `lesson-6-1`
 Type: reading
 XP Reward: 30
 Description: How they work and why they matter.
 
 #### Content
-Your credit score is a number from 300-850 that tells lenders how risky you are.
-750+ = Excellent. 700-749 = Good. 650-699 = Fair. Below 650 = Poor.
+A credit score is a number from 300-850 that lenders use as one estimate of lending risk. It does not measure your worth or how responsible you are as a person.
+Score ranges are often labeled Excellent, Good, Fair, or Poor by the credit industry. These are lending categories, not judgments about you.
 
-Pro tip: Avoid 'Hard Pulls' (checking for new loans) too often, as they can temporarily drop your score. 'Soft Pulls' (checking your own score) do NOT hurt it.
+Helpful note: Several 'hard pulls' for new credit can temporarily affect a score. Checking your own credit generally uses a 'soft pull' and does not lower it.
 
 WHAT AFFECTS YOUR SCORE:
-• Payment History (35%): Pay bills on time!
+• Payment History (35%): On-time payments help; if you miss one, contact the lender and focus on getting current.
 • Credit Utilization (30%): Use less than 30% of your credit limit (ideally under 10% for the best score).
 • Length of History (15%): Older accounts help.
 • Credit Mix (10%): Having different types of credit helps.
@@ -924,28 +959,28 @@ WHAT AFFECTS YOUR SCORE:
 
 ---
 
-### Lesson 2: Good Debt vs. Bad Debt
+### Lesson 2: Comparing Types of Debt
 Lesson ID: `lesson-6-2`
 Type: reading
 XP Reward: 25
-Description: Not all borrowing is created equal.
+Description: Compare borrowing by cost, risk, purpose, and repayment terms.
 
 #### Story
 Character: Jordan
 Jordan has $10,000. Should they pay off their 20% credit card or invest in the stock market?
 
 #### Content
-**GOOD DEBT** makes you money or increases your earning potential.
+**Debt that may support a long-term goal** can increase earning potential or help purchase an asset, but it still carries cost and risk.
 • Student loans (if they lead to higher income)
 • Mortgage (you build equity, home may appreciate)
 • Business loan (if the business is profitable)
 
-**BAD DEBT** costs you money on things that lose value.
+**High-cost or higher-risk debt** can be especially difficult when it finances something that loses value.
 • Credit card debt (high interest, often for consumption)
 • Car loans (cars depreciate rapidly)
 • Payday loans (predatory interest rates)
 
-Rule: Always pay off high-interest debt before investing.
+In many situations, paying down high-interest debt before adding investments offers a strong, predictable financial benefit. Your emergency savings, employer match, taxes, and personal circumstances can affect the order.
 
 #### Quiz
 1. Which is an example of 'good debt'?
@@ -1025,7 +1060,7 @@ Example pattern:
 • 4-pay headphones
 • 4-pay travel booking
 
-Each payment looks small alone, but together they can crush cash flow and trigger missed due dates.
+Each payment may look small on its own, but several at once can strain cash flow and make due dates harder to manage.
 
 #### Screen 3: Why This Becomes a Trap
 When cash gets tight, people often:
@@ -1585,7 +1620,7 @@ Over 40 years, that 'safe' choice could cost you over **$400,000** in lost growt
 
 **Inflation** is another hidden cost. If prices rise by 3% and your money grows by 0%, you are actually losing purchasing power. Every day your money isn't invested, it buys slightly less.
 
-Pro tip: Don't just ask 'What if I lose money?' Ask 'What if I lose the chance to build wealth?'
+A balanced decision considers both risks: the possibility of investment losses and the possibility that inflation or missed growth reduces future purchasing power.
 
 #### Quiz
 1. What is 'Opportunity Cost' in the context of investing?
@@ -1736,12 +1771,12 @@ The chart compares:
 • How much larger the late lump sum must be just to catch up
 
 #### Screen 4: Catch-Up Cost
-Waiting often forces painful catch-up math:
+Starting later changes the planning math:
 • Much higher monthly contributions
 • Larger total dollars invested
 • More pressure on future cash flow
 
-The goal is simple: start early, automate, and stay consistent.
+If you are able to start early, compounding has more time to help. If you are starting later, the tool can help you find a realistic next step without shame or panic.
 
 #### Quiz
 1. What is usually the biggest advantage in long-term investing?
@@ -1764,9 +1799,9 @@ The goal is simple: start early, automate, and stay consistent.
 
 ---
 
-## Module 8: Roth IRA Mastery
+## Module 8: Understanding Roth IRAs
 Module ID: `module-roth-ira`
-Description: Build tax-free long-term wealth with a Roth IRA.
+Description: Learn how a Roth IRA can support tax-advantaged, long-term saving.
 
 ### Lesson 1: Roth IRA Fundamentals
 Lesson ID: `lesson-roth-1`
@@ -1987,9 +2022,9 @@ Your Roth IRA should be part of a full plan:
 
 ---
 
-## Module 9: 401(k) Master Plan
+## Module 9: Understanding Your 401(k)
 Module ID: `module-401k`
-Description: Use tax-advantaged retirement accounts and capture every dollar of employer match.
+Description: Learn how workplace retirement accounts, tax treatment, and employer matching work.
 
 ### Lesson 1: 401(k) Fundamentals
 Lesson ID: `lesson-401k-1`
@@ -2098,7 +2133,7 @@ This approach improves retirement outcomes without requiring perfect market timi
 
 ### Lesson 3: Contribution Strategy and Limits
 Lesson ID: `lesson-401k-3`
-Type: reading
+Type: interactive
 XP Reward: 25
 Description: Build a practical system you can run every year.
 
@@ -2606,7 +2641,7 @@ Most people have NO IDEA what they're worth in the job market. This is by design
 **Key concept: Leveling**
 Companies have internal 'levels' (e.g., Junior, Mid, Senior, Staff). Your title might be the same, but your level determines your pay band.
 
-Pro tip: Always ask about the 'pay band' for your level during negotiations. It tells you the floor and ceiling.
+Helpful note: You can ask for the pay band for the role or level. It provides context for the employer's compensation range.
 
 #### Screen 2: Location & Industry Premium
 The same job can pay VERY differently depending on where and who you work for.
@@ -2624,7 +2659,7 @@ The same job can pay VERY differently depending on where and who you work for.
 
 **Cost of living matters**: A $150k salary in San Francisco ≈ $90k in Dallas in terms of purchasing power.
 
-Pro tip: Remote roles at companies that DON'T adjust for location are often the best deal.
+Helpful note: For remote roles, ask whether compensation changes by location so you can compare offers accurately.
 
 #### Quiz
 1. Salary secrecy primarily benefits:
@@ -2679,7 +2714,7 @@ Maya receives a job offer for $75,000. She's excited but nervous about negotiati
 **The 'What Else' Script:**
 "If the base salary is firm, are there other areas with flexibility? I'm thinking about signing bonus, equity, PTO, or remote work options."
 
-**Pro tips:**
+**Helpful notes:**
 • Always negotiate via email (gives you time to think).
 • Never say your current salary — it anchors you low.
 • Ask for 10-20% more than you'd be happy with.
@@ -2727,7 +2762,7 @@ Your **total compensation** includes much more than your base salary:
 
 **Benefits (real dollar value):**
 • Health insurance (employer share: $5k-$15k/year)
-• 401k match (if 50% match on 6%, that's 3% of your salary FREE)
+• 401k match (for example, a 50% match on 6% adds 3% of salary in employer contributions)
 • PTO/vacation days (each day ≈ salary / 260)
 
 #### Screen 2: Comparing Two Offers
@@ -2744,7 +2779,7 @@ Offer B is worth **$40,000 more** per year.
 
 **Always compare TOTAL compensation**, not just base salary.
 
-Pro tip: Ask recruiters for the 'total compensation summary' or 'offer breakdown'. Most big companies provide one.
+Helpful note: Ask the recruiter for a total compensation summary or offer breakdown so you can compare each component.
 
 #### Quiz
 1. RSUs (Restricted Stock Units) are:
@@ -2913,7 +2948,7 @@ If you freelance or contract, you receive a **1099** form.
 • You can use a **SEP IRA** or **Solo 401k** — often with higher contribution limits.
 • More control over your schedule and rates.
 
-Pro tip: If you're 1099, set aside **25-30%** of every payment for taxes. Open a separate savings account just for this.
+Helpful note: If you receive 1099 income, a separate savings account for estimated taxes can make planning easier. The amount to set aside depends on your income, location, deductions, and tax situation.
 
 #### Quiz
 1. As a 1099 independent contractor, your total FICA self-employment tax is:
@@ -2993,7 +3028,7 @@ Always claim every credit you qualify for!
 Lesson ID: `lesson-12-4`
 Type: reading
 XP Reward: 40
-Description: 401k, IRA, Roth, HSA — free money from the government.
+Description: Learn how 401(k)s, IRAs, Roth accounts, and HSAs receive different tax treatment.
 
 #### Screen 1: Pre-Tax Accounts: 401k & Traditional IRA
 **Pre-tax** accounts let you contribute money BEFORE it's taxed. Your taxable income drops immediately.
@@ -3001,7 +3036,7 @@ Description: 401k, IRA, Roth, HSA — free money from the government.
 **401k** (through your employer):
 • 2024 contribution limit: $23,000/year.
 • Many employers **match** your contributions (e.g., 50% match up to 6% of salary).
-• Employer match = **FREE MONEY**. Always contribute enough to get the full match.
+• An employer match is part of your compensation. If your budget allows, contributing enough to receive the full match can help you use that benefit.
 
 **Traditional IRA** (on your own):
 • 2024 limit: $7,000/year ($8,000 if 50+).
@@ -3012,21 +3047,21 @@ Description: 401k, IRA, Roth, HSA — free money from the government.
 #### Screen 2: Roth Accounts & the HSA Triple Tax Advantage
 **Roth IRA / Roth 401k:**
 • You contribute AFTER-TAX money (no immediate tax break).
-• But all growth and withdrawals in retirement are **100% TAX-FREE**.
-• Best for young earners who expect higher income later.
+• Qualified growth and withdrawals in retirement are tax-free.
+• This tax treatment may be useful for people who expect to be in a higher tax bracket later.
 
-**Health Savings Account (HSA)** — the ULTIMATE tax hack:
+**Health Savings Account (HSA)** — a tax-advantaged account available with eligible health plans:
 • ✅ Contributions are tax-deductible (pre-tax).
 • ✅ Growth is tax-free.
 • ✅ Withdrawals for medical expenses are tax-free.
 • 2024 limit: $4,150 (individual) / $8,300 (family).
 
-After age 65, you can withdraw HSA funds for ANY purpose (taxed like a Traditional IRA). It's basically a **super IRA**.
+After age 65, HSA funds used for nonmedical purposes are generally taxable, similar to withdrawals from a Traditional IRA.
 
-**Priority order**: 1) 401k up to employer match → 2) Max HSA → 3) Max Roth IRA → 4) Max remaining 401k.
+One common order is: 1) 401k up to the employer match → 2) HSA, if eligible → 3) Roth IRA, if eligible → 4) additional 401k contributions. Your cash flow, debt, emergency savings, health costs, and tax situation may lead to a different order.
 
 #### Quiz
-1. What makes the HSA the 'ultimate tax hack'?
+1. What is the HSA's triple tax advantage?
    - A. It has no contribution limit
    - B. Triple tax advantage: pre-tax in, tax-free growth, tax-free medical withdrawals [Correct]
    - C. It replaces your 401k
@@ -3040,7 +3075,7 @@ After age 65, you can withdraw HSA funds for ANY purpose (taxed like a Tradition
 
 3. An employer 401k match is best described as:
    - A. A loan
-   - B. Free money [Correct]
+   - B. A contribution that is part of your employee benefits [Correct]
    - C. A tax penalty
    - D. An insurance benefit
 
@@ -3160,7 +3195,7 @@ Description: Know your protections before you borrow.
 
 **FAFSA first!** Always fill out the Free Application for Federal Student Aid before considering private loans. It's free and determines your eligibility for grants, scholarships, and federal loans.
 
-Pro tip: Grants and scholarships are free money. Exhaust those before borrowing anything.
+Helpful note: Apply for grants and scholarships before deciding how much you need to borrow; unlike loans, these sources generally do not require repayment.
 
 #### Quiz
 1. Which type of federal loan has the government pay interest while you're in school?
@@ -3219,7 +3254,7 @@ If you have multiple loans, which do you pay off first?
 
 **Which is better?** Avalanche saves more money. Snowball keeps you motivated. Pick the one you'll actually stick with.
 
-Pro tip: Either method beats making only minimum payments.
+Helpful note: Either method can help you make steady progress beyond minimum payments. Choose the one you are more likely to sustain.
 
 #### Quiz
 1. The Avalanche method prioritizes paying off loans with the:
@@ -3263,7 +3298,7 @@ Description: When refinancing helps — and when it hurts.
 
 ⚠️ **Critical warning**: Refinancing federal loans into a private loan is IRREVERSIBLE. You permanently lose all federal protections.
 
-Pro tip: Only refinance federal loans if you have a very high income, strong job security, and no interest in forgiveness programs.
+Helpful note: Refinancing federal loans into a private loan can permanently remove federal protections and forgiveness options. Compare those benefits carefully before refinancing.
 
 #### Quiz
 1. Refinancing federal loans into a private loan is:
@@ -3403,7 +3438,7 @@ LIABILITY: Covers damage YOU cause to others. Required by law in most states.
 COLLISION: Covers damage to YOUR car from accidents.
 COMPREHENSIVE: Covers theft, weather damage, hitting an animal, etc.
 
-Pro tip: If your car is old and not worth much, you might skip collision/comprehensive.
+Helpful note: If a car's value is low, compare the cost of collision and comprehensive coverage with what the policy would pay after the deductible.
 The payout from insurance can't exceed the car's value.
 
 DEDUCTIBLE matters here too! Higher deductible = lower premium.
@@ -3444,7 +3479,7 @@ Description: What does your policy actually cover?
 
 **What's NOT covered?** Floods and earthquakes require separate policies. Standard policies also exclude 'maintenance issues' like mold or pest damage.
 
-Pro tip: Create a **home inventory** (photos/video of your belongings). If disaster strikes, you'll have proof for your claim.
+Helpful note: A **home inventory** with photos or video can make it easier to document belongings for a claim.
 
 #### Quiz
 1. What does 'Dwelling Coverage' in a homeowner's policy protect?
@@ -3483,7 +3518,7 @@ Description: Protect your loved ones financially.
 
 **Rule of Thumb**: Get coverage worth 10-12x your annual income. A $60k earner should aim for $600k-$720k in coverage.
 
-Pro tip: Buy term insurance when you're young and healthy—premiums are locked in and stay low.
+Helpful note: Age and health can affect term-life premiums, so compare coverage while you are healthy if other people depend on your income.
 
 #### Quiz
 1. What is the main difference between Term Life and Whole Life insurance?
@@ -3729,7 +3764,7 @@ Pre-approval tells you exactly how much you can borrow. It also shows sellers yo
 • **Employment History**: Stable income for at least 2 years.
 • **Assets**: Savings for down payment and reserves.
 
-Pro tip: Get pre-approved by 2-3 lenders and compare offers. Even a 0.25% rate difference saves thousands over 30 years.
+Helpful note: Comparing pre-approvals from multiple lenders can reveal meaningful differences in rates, fees, and total cost.
 
 #### Quiz
 1. What are the two components of every mortgage payment?
@@ -3782,7 +3817,7 @@ On a $285,000 loan (after 5% down on a $300k home):
 
 **The good news**: PMI goes away once you reach 20% equity in your home. You can request removal at that point.
 
-Pro tip: Some lenders offer **lender-paid PMI** in exchange for a slightly higher interest rate. Do the math to see which is cheaper over your expected time in the home.
+Helpful note: Some lenders offer **lender-paid PMI** in exchange for a higher interest rate. Compare total costs over the time you expect to keep the loan.
 
 #### Screen 3: Closing Costs: The Hidden Bill
 On top of the down payment, you'll pay **closing costs** — typically **2-5% of the home price**.
@@ -3797,7 +3832,7 @@ On a $300,000 home, that's $6,000-$15,000.
 • Prepaid property taxes and homeowner's insurance
 • Recording fees
 
-Pro tip: You can negotiate with the seller to cover some closing costs (a 'seller concession'). This is more common in buyer's markets.
+Helpful note: A seller may agree to cover some closing costs through a seller concession, depending on the market and the offer.
 
 #### Quiz
 1. What is PMI?
@@ -3911,7 +3946,7 @@ On a $300,000 home in Texas, that's ~$5,100/year ($425/month).
 
 **Homeowner's Insurance**: $1,500-$3,000/year depending on location and coverage.
 
-Pro tip: Add up ALL these costs before deciding what you can 'afford'. A home that fits your mortgage budget might not fit your TOTAL budget.
+Helpful note: Add the ongoing costs before choosing a comfortable price range. A mortgage payment may fit while the home's total monthly cost does not.
 
 #### Quiz
 1. The 1% Rule suggests budgeting what amount annually for home maintenance?
@@ -5129,7 +5164,7 @@ Description: The shift from decentralized money to speculative asset.
 The vision was a trustless, peer-to-peer network free from banks and governments.
 However, the current reality of crypto in 2026 is heavily **financialized**. The introduction of Spot ETFs, massive institutional buying, and centralized exchanges have largely defeated its original decentralized purpose.
 Instead of acting as an independent currency, crypto has largely become another highly volatile, speculative asset class heavily tied to traditional markets and centralized platforms.
-Pro tip: If you buy crypto, you need a **Wallet**. Remember: 'Not your keys, not your coins'. If you don't control the private keys, you don't truly own the assets.
+Helpful note: Crypto custody involves a tradeoff. Holding private keys gives you direct control but also full responsibility for security and recovery; using a custodian introduces counterparty risk.
 
 #### Quiz
 1. What was the original vision for cryptocurrency?
@@ -5628,7 +5663,7 @@ XP Reward: 40
 Description: See how a small monthly investment from age 0 to 18 can transform your child's financial future.
 
 #### Screen 1: Small Amounts, Massive Results
-What if you set aside just **$50 per month** for your child from the day they were born?
+Here is an illustration of how **$50 per month** could grow if a family has room in its budget to begin when a child is born:
 
 At an average annual return of 8%:
 • **$50/month for 18 years** = ~**$24,000** (vs $10,800 if you just saved cash)
@@ -5636,9 +5671,9 @@ At an average annual return of 8%:
 • **$200/month for 18 years** = ~**$96,000**
 • **$300/month for 18 years** = ~**$144,000**
 
-That $48,000 from just $100/month could cover **two full years** of in-state public university tuition, dramatically reducing or eliminating the need for student loans.
+In this illustration, $100 per month grows to about $48,000. Actual returns, fees, taxes, tuition, and available contribution years will vary.
 
-The secret isn't a large paycheck. It's **time + consistency + compound growth**.
+Time and consistency can help, but families should protect their current stability before committing money to a long-term goal.
 
 #### Screen 2: Relieving the Burden of Student Loans
 The average student loan debt for a bachelor's degree is roughly **$30,000-$40,000**.
@@ -5742,35 +5777,33 @@ Beyond saving money, prepare your child to **understand** the financial side of 
 
 The goal is a child who sees college as a **strategic investment**, not an entitlement.
 
-#### Screen 4: Proposed Trump Accounts: Free Kickstarter Money
-In recent years, there has been a proposal for government-seeded investment accounts for children, sometimes referred to as **'Trump Accounts'** or similar initiatives.
+#### Screen 4: Evaluating Government-Seeded Child Accounts
+Government-seeded investment accounts for children may be introduced under different names and with different eligibility rules.
 
-The basic concept:
-• The government deposits a set amount (proposals have ranged from **$1,000 to $5,000**) into an investment account for every child born in the U.S.
-• The money is invested and grows tax-free until the child reaches adulthood.
-• Funds could potentially be used for education, homeownership, or starting a business.
+The general concept:
+• An eligible child receives an initial government contribution in an investment account.
+• The account may offer tax advantages while the money is invested.
+• Rules may limit eligibility, contributions, investments, withdrawals, or permitted uses.
 
-**A note on the politics:**
-These types of proposals often carry political branding, and that can make people dismiss them based on party affiliation. **That is a mistake.**
+**How to evaluate a program:**
+Look past the program's branding and review the current rules from an official source. Consider eligibility, fees, investment choices, taxes, withdrawal restrictions, and how the account fits with your family's priorities.
 
-Regardless of who proposes it or what it's called, if the government is offering to put **free seed money** into a compounding investment account for your child, you should take it. Period.
-
-Political feelings should never override financial common sense. **Free money that compounds for 18+ years is free money that compounds for 18+ years**, no matter whose name is on the policy.
+A government contribution may be valuable, but enrolling is still a personal decision. Verify that participation does not conflict with benefit eligibility or other financial needs before deciding.
 
 #### Screen 5: Putting It All Together
-Here's the action plan for investing in your kids:
+Here is one possible planning sequence for a child's future:
 
 **Step 1: Secure your own finances first.** Fund your retirement, build your emergency fund, eliminate high-interest debt.
 
-**Step 2: Open a 529 Plan.** Start with whatever you can—even $25/month. Set it on autopilot.
+**Step 2: Consider a 529 Plan.** If it fits your goals, start with an amount your budget can comfortably support.
 
-**Step 3: Enroll in any government-seeded programs** if and when they become available. Don't let politics leave money on the table.
+**Step 3: Review government-seeded programs** if they are available. Read the current rules and decide whether enrollment fits your family's situation.
 
 **Step 4: Have honest conversations** with your kids about the cost of education and the ROI of different paths.
 
-**Step 5: Let time do the work.** Small, consistent investments from birth can eliminate or dramatically reduce the burden of student loans and give your child a financial head start that lasts a lifetime.
+**Step 5: Use time when you can.** Small, consistent contributions may reduce future education costs and give a child more options.
 
-You don't need to be rich to build generational wealth. You just need to **start early and stay consistent**.
+Not every family has room to contribute, and supporting your own financial stability is valuable too. If you can save for a child, an amount that is sustainable for your household is a worthwhile start.
 
 #### Quiz
 1. What makes 529 Plans attractive for education savings?
@@ -5785,11 +5818,11 @@ You don't need to be rich to build generational wealth. You just need to **start
    - C. Used only for K-12 tuition
    - D. Invested only in bonds
 
-3. Why does the lesson say you should NOT dismiss government-seeded children's accounts based on politics?
-   - A. Because politics don't exist in finance
-   - B. Because free money that compounds for 18+ years should never be left on the table [Correct]
-   - C. Because the government requires enrollment
-   - D. Because only one party supports them
+3. How should you evaluate a government-seeded child account?
+   - A. Use the program's political branding
+   - B. Review eligibility, fees, taxes, restrictions, and your family's priorities [Correct]
+   - C. Enroll without reading the rules
+   - D. Assume every family receives the same benefit
 
 ---
 

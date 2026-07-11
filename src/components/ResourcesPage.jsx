@@ -96,30 +96,26 @@ export default function ResourcesPage() {
                 </p>
                 <div style={{ display: 'grid', gap: '0.85rem' }}>
                     {learningResources.map((resource) => (
-                        <article
+                        <a
                             key={resource.url}
+                            href={resource.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             style={{
+                                display: 'block',
                                 border: '1px solid var(--border)',
                                 borderRadius: '12px',
                                 padding: '1rem',
-                                backgroundColor: 'var(--bg-card)'
+                                backgroundColor: 'var(--bg-card)',
+                                textDecoration: 'none'
                             }}
                         >
-                            <h3 style={{ marginBottom: '0.35rem', fontSize: '1.05rem' }}>
-                                <a
-                                    href={resource.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    style={{ color: 'var(--text-main)' }}
-                                >
-                                    {resource.title}
-                                </a>
-                            </h3>
+                            <h3 style={{ marginBottom: '0.35rem', fontSize: '1.05rem', color: 'var(--text-main)' }}>{resource.title}</h3>
                             <div style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginBottom: '0.4rem' }}>
                                 {resource.source}
                             </div>
                             <p style={{ color: 'var(--text-muted)', margin: 0 }}>{resource.note}</p>
-                        </article>
+                        </a>
                     ))}
                 </div>
             </section>

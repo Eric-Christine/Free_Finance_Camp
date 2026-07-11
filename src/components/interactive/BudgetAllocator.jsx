@@ -8,7 +8,19 @@ export default function BudgetAllocator() {
 
     const totalExpenses = rent + food + fun;
     const savings = income - totalExpenses;
-    const savingsRate = Math.round((savings / income) * 100);
+    const savingsRate = income > 0 ? Math.round((savings / income) * 100) : null;
+
+    const updateIncome = (rawValue) => {
+        const nextIncome = Math.max(0, Number(rawValue) || 0);
+        const nextRent = Math.min(rent, nextIncome);
+        const nextFood = Math.min(food, Math.max(0, nextIncome - nextRent));
+        const nextFun = Math.min(fun, Math.max(0, nextIncome - nextRent - nextFood));
+
+        setIncome(nextIncome);
+        setRent(nextRent);
+        setFood(nextFood);
+        setFun(nextFun);
+    };
 
     return (
         <div style={{
@@ -27,11 +39,14 @@ export default function BudgetAllocator() {
 
             <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                 <div>
-                    <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>Monthly Income</label>
+                    <label htmlFor="budget-income" style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem' }}>Monthly Income</label>
                     <input
+                        id="budget-income"
                         type="number"
+                        min="0"
+                        step="50"
                         value={income}
-                        onChange={(e) => setIncome(Number(e.target.value))}
+                        onChange={(e) => updateIncome(e.target.value)}
                         style={{
                             width: '100%',
                             padding: '0.5rem',
@@ -49,6 +64,7 @@ export default function BudgetAllocator() {
                         <span>${rent}</span>
                     </label>
                     <input
+                        aria-label="Housing and utilities"
                         type="range"
                         min="0"
                         max={income}
@@ -65,6 +81,7 @@ export default function BudgetAllocator() {
                         <span>${food}</span>
                     </label>
                     <input
+                        aria-label="Food and groceries"
                         type="range"
                         min="0"
                         max={income - rent}
@@ -81,6 +98,7 @@ export default function BudgetAllocator() {
                         <span>${fun}</span>
                     </label>
                     <input
+                        aria-label="Fun and entertainment"
                         type="range"
                         min="0"
                         max={income - rent - food}
@@ -105,8 +123,11 @@ export default function BudgetAllocator() {
                     ${savings.toLocaleString()}
                 </div>
                 <div style={{ fontSize: '0.9rem', marginTop: '0.5rem' }}>
-                    Savings Rate: <strong>{savingsRate}%</strong>
-                    {savingsRate >= 20 ? ' (Great job!)' : (savings < 0 ? ' (Over budget!)' : ' (Try to save 20%)')}
+                    {savingsRate === null ? (
+                        'Add monthly income to calculate a savings rate.'
+                    ) : (
+                        <>Savings Rate: <strong>{savingsRate}%</strong></>
+                    )}
                 </div>
             </div>
         </div>

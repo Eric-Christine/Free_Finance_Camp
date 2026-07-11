@@ -22,23 +22,45 @@ function daysBetweenDateStrings(start, end) {
     return Math.round((endUtc - startUtc) / (1000 * 60 * 60 * 24));
 }
 
+function getProgressStorageKey(userId) {
+    return `ffc_progress_${userId}`;
+}
+
+function readStoredProgress(userId) {
+    const key = getProgressStorageKey(userId);
+
+    try {
+        const savedProgress = localStorage.getItem(key);
+        if (!savedProgress) return null;
+        return JSON.parse(savedProgress);
+    } catch (error) {
+        console.warn('Ignoring invalid stored progress data:', error);
+        try {
+            localStorage.removeItem(key);
+        } catch {
+            // Storage may be blocked; continue with a clean in-memory state.
+        }
+        return null;
+    }
+}
+
 // Level thresholds – scaled to cover the full curriculum (~7 675 XP total)
 const LEVELS = [
-    { level: 1,  title: 'Finance Newbie',        minXp: 0 },
+    { level: 1,  title: 'Getting Started',       minXp: 0 },
     { level: 2,  title: 'Money Manager',         minXp: 50 },
-    { level: 3,  title: 'Budget Boss',           minXp: 150 },
+    { level: 3,  title: 'Budget Builder',        minXp: 150 },
     { level: 4,  title: 'Investor-in-Training',  minXp: 300 },
     { level: 5,  title: 'Wealth Builder',        minXp: 500 },
     { level: 6,  title: 'Financial Strategist',  minXp: 750 },
-    { level: 7,  title: 'Portfolio Pro',         minXp: 1050 },
+    { level: 7,  title: 'Portfolio Planner',     minXp: 1050 },
     { level: 8,  title: 'Market Analyst',        minXp: 1450 },
     { level: 9,  title: 'Retirement Planner',    minXp: 1950 },
-    { level: 10, title: 'Tax Tactician',         minXp: 2550 },
+    { level: 10, title: 'Tax-Aware Planner',     minXp: 2550 },
     { level: 11, title: 'Estate Planner',        minXp: 3250 },
     { level: 12, title: 'Wealth Advisor',        minXp: 4050 },
-    { level: 13, title: 'Investment Sage',       minXp: 5000 },
-    { level: 14, title: 'Money Maestro',         minXp: 6100 },
-    { level: 15, title: 'Financial Master',      minXp: 7500 },
+    { level: 13, title: 'Experienced Investor',  minXp: 5000 },
+    { level: 14, title: 'Financial Guide',       minXp: 6100 },
+    { level: 15, title: 'Lifelong Learner',      minXp: 7500 },
 ];
 
 export function ProgressProvider({ children }) {
@@ -84,13 +106,17 @@ export function ProgressProvider({ children }) {
     // Save to localStorage (fallback)
     const saveToLocalStorage = useCallback((completed, userXp, quizzes, streak, lastActive) => {
         if (user) {
-            localStorage.setItem(`ffc_progress_${user.id}`, JSON.stringify({
-                completed,
-                userXp,
-                quizzes,
-                streak,
-                lastActive
-            }));
+            try {
+                localStorage.setItem(getProgressStorageKey(user.id), JSON.stringify({
+                    completed,
+                    userXp,
+                    quizzes,
+                    streak,
+                    lastActive
+                }));
+            } catch (error) {
+                console.warn('Unable to save local progress data:', error);
+            }
         }
     }, [user]);
 
@@ -115,6 +141,25 @@ export function ProgressProvider({ children }) {
             }
         } catch (error) {
             console.error('Failed to sync to Supabase:', error);
+        }
+    }, [user]);
+
+    const recordXpEvent = useCallback(async ({ source, sourceId, xpDelta, metadata = {} }) => {
+        if (!user || !isRealAuth) return;
+
+        try {
+            const { error } = await supabase.rpc('record_xp_event', {
+                p_source: source,
+                p_source_id: sourceId,
+                p_xp_delta: xpDelta,
+                p_metadata: metadata
+            });
+
+            if (error) {
+                throw error;
+            }
+        } catch (error) {
+            console.error('Failed to record XP event:', error);
         }
     }, [user]);
 
@@ -157,9 +202,9 @@ export function ProgressProvider({ children }) {
             }
 
             // Fallback to localStorage
-            const savedProgress = localStorage.getItem(`ffc_progress_${user.id}`);
+            const savedProgress = readStoredProgress(user.id);
             if (savedProgress) {
-                const { completed, userXp, quizzes, streak, lastActive } = JSON.parse(savedProgress);
+                const { completed, userXp, quizzes, streak, lastActive } = savedProgress;
                 setCompletedLessons(completed || []);
                 setXp(userXp || 0);
                 setQuizScores(quizzes || {});
@@ -218,6 +263,15 @@ export function ProgressProvider({ children }) {
             syncToSupabase(newCompleted, newXp, quizScores, finalStreak, finalDate);
 
             if (isNewLesson) {
+                void recordXpEvent({
+                    source: 'lesson_completion',
+                    sourceId: lessonId,
+                    xpDelta: xpReward,
+                    metadata: {
+                        total_xp: newXp
+                    }
+                });
+
                 void logGoalCompletion('lesson_completion', {
                     lesson_id: lessonId,
                     xp_awarded: xpReward,

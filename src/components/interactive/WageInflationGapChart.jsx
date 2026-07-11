@@ -148,6 +148,7 @@ export default function WageInflationGapChart() {
                     <span>{money(idleCash)}</span>
                 </label>
                 <input
+                    aria-label="Idle cash amount"
                     type="range"
                     min={1000}
                     max={50000}

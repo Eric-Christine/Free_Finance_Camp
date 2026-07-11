@@ -34,9 +34,22 @@ const LIMITS = {
     annualReturn: { min: 3, max: 12, step: 0.5 }
 };
 
-const IRS_LIMIT_2025 = 23500;
+const IRS_LIMIT_2026 = 24500;
 const CATCH_UP_AGE = 50;
-const CATCH_UP_AMOUNT = 7500;
+const CATCH_UP_AMOUNT_2026 = 8000;
+const HIGHER_CATCH_UP_MIN_AGE = 60;
+const HIGHER_CATCH_UP_MAX_AGE = 63;
+const HIGHER_CATCH_UP_AMOUNT_2026 = 11250;
+
+function getEmployeeContributionLimit(age) {
+    if (age >= HIGHER_CATCH_UP_MIN_AGE && age <= HIGHER_CATCH_UP_MAX_AGE) {
+        return IRS_LIMIT_2026 + HIGHER_CATCH_UP_AMOUNT_2026;
+    }
+    if (age >= CATCH_UP_AGE) {
+        return IRS_LIMIT_2026 + CATCH_UP_AMOUNT_2026;
+    }
+    return IRS_LIMIT_2026;
+}
 
 function formatCurrency(value) {
     if (!Number.isFinite(value)) return '$0';
@@ -99,16 +112,15 @@ export default function FourOhOneKCalculator() {
         data.push({
             age: safeCurrentAge,
             balance: Math.round(balance),
+            startingBalance: Math.round(currentBalance),
             employeeTotal: 0,
             employerTotal: 0,
-            growthTotal: Math.round(currentBalance)
+            growthTotal: 0
         });
 
         for (let y = 0; y < years; y++) {
             const age = safeCurrentAge + y;
-            const irsLimit = age >= CATCH_UP_AGE
-                ? IRS_LIMIT_2025 + CATCH_UP_AMOUNT
-                : IRS_LIMIT_2025;
+            const irsLimit = getEmployeeContributionLimit(age);
 
             const rawEmployeeAnnual = currentSalary * (contributionRate / 100);
             const employeeAnnual = Math.min(rawEmployeeAnnual, irsLimit);
@@ -119,7 +131,6 @@ export default function FourOhOneKCalculator() {
             const monthlyEmployee = employeeAnnual / 12;
             const monthlyEmployer = employerAnnual / 12;
 
-            let yearStartBalance = balance;
             for (let m = 0; m < 12; m++) {
                 const growth = balance * monthlyReturn;
                 balance += growth + monthlyEmployee + monthlyEmployer;
@@ -132,15 +143,19 @@ export default function FourOhOneKCalculator() {
             data.push({
                 age: age + 1,
                 balance: Math.round(balance),
+                startingBalance: Math.round(currentBalance),
                 employeeTotal: Math.round(totalEmployeeContrib),
                 employerTotal: Math.round(totalEmployerContrib),
-                growthTotal: Math.round(totalGrowth + currentBalance)
+                growthTotal: Math.round(totalGrowth)
             });
 
             currentSalary *= (1 + salaryGrowth / 100);
         }
 
-        const firstYearEmployee = Math.min(salary * (contributionRate / 100), IRS_LIMIT_2025);
+        const firstYearEmployee = Math.min(
+            salary * (contributionRate / 100),
+            getEmployeeContributionLimit(safeCurrentAge)
+        );
         const firstMatchedPct = Math.min(contributionRate, matchCap);
         const firstYearEmployer = salary * (firstMatchedPct / 100) * (matchRate / 100);
         const missedMatch = contributionRate < matchCap
@@ -214,7 +229,12 @@ export default function FourOhOneKCalculator() {
                         min={LIMITS.currentAge.min}
                         max={LIMITS.currentAge.max}
                         step={1}
-                        onChange={setCurrentAge}
+                        onChange={(nextAge) => {
+                            setCurrentAge(nextAge);
+                            if (retirementAge <= nextAge) {
+                                setRetirementAge(Math.min(nextAge + 1, LIMITS.retirementAge.max));
+                            }
+                        }}
                     />
                     <SliderRow
                         label="Retirement Age"
@@ -241,7 +261,7 @@ export default function FourOhOneKCalculator() {
                         step={LIMITS.contributionRate.step}
                         suffix="%"
                         onChange={setContributionRate}
-                        hint={`${formatCurrency(Math.min(salary * contributionRate / 100, IRS_LIMIT_2025))}/yr`}
+                        hint={`${formatCurrency(Math.min(salary * contributionRate / 100, getEmployeeContributionLimit(currentAge)))}/yr`}
                     />
                     <SliderRow
                         label="Employer Match"
@@ -327,8 +347,8 @@ export default function FourOhOneKCalculator() {
                                 fontWeight: 600,
                                 color: '#f59e0b'
                             }}>
-                                You're leaving ~{formatCurrency(results.missedMatch)}/yr of free employer match on the table.
-                                Contribute at least {matchCap}% to capture the full match.
+                                Your current settings are about {formatCurrency(results.missedMatch)}/yr below the full available employer match.
+                                If your budget allows, a {matchCap}% contribution rate would capture the full match.
                             </div>
                         )}
                         {results.missedMatch === 0 && contributionRate > 0 && (
@@ -404,6 +424,14 @@ export default function FourOhOneKCalculator() {
                                 <Legend verticalAlign="top" wrapperStyle={{ paddingBottom: 8, fontSize: '0.82rem' }} />
                                 <Area
                                     type="monotone"
+                                    dataKey="startingBalance"
+                                    stackId="breakdown"
+                                    stroke="#34d399"
+                                    fill="rgba(52, 211, 153, 0.3)"
+                                    name="Starting Balance"
+                                />
+                                <Area
+                                    type="monotone"
                                     dataKey="employeeTotal"
                                     stackId="breakdown"
                                     stroke="#60a5fa"
@@ -445,7 +473,9 @@ export default function FourOhOneKCalculator() {
             }}>
                 <strong style={{ color: 'var(--text-light)' }}>Assumptions:</strong>
                 <ul style={{ margin: '0.2rem 0 0 1rem', padding: 0 }}>
-                    <li>2025 IRS employee contribution limit: {formatCurrency(IRS_LIMIT_2025)} ({formatCurrency(IRS_LIMIT_2025 + CATCH_UP_AMOUNT)} if age 50+)</li>
+                    <li>2026 IRS employee contribution limit: {formatCurrency(IRS_LIMIT_2026)}</li>
+                    <li>2026 catch-up limit: +{formatCurrency(CATCH_UP_AMOUNT_2026)} at age 50+, or +{formatCurrency(HIGHER_CATCH_UP_AMOUNT_2026)} at ages 60–63, if the plan permits</li>
+                    <li>Current contribution limits are held constant throughout the projection</li>
                     <li>Employer match is not subject to the employee contribution limit</li>
                     <li>Returns are compounded monthly; salary grows annually</li>
                     <li>Does not account for taxes, inflation, or early withdrawal penalties</li>
@@ -480,6 +510,7 @@ function SliderRow({ label, value, min, max, step, suffix, format, hint, onChang
                 </span>
             </div>
             <input
+                aria-label={label}
                 type="range"
                 className="landing-slider"
                 min={min}

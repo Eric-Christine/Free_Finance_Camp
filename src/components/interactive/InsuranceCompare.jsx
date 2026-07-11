@@ -24,7 +24,7 @@ export default function InsuranceCompare() {
             const afterDeductible = Math.max(0, surgeryBill - plan.deductible);
             const patientShare = afterDeductible * plan.coinsurance;
             const surgeryTotal = Math.min(plan.deductible + patientShare, plan.oopMax);
-            medicalCosts += surgeryTotal;
+            medicalCosts = Math.min(medicalCosts + surgeryTotal, plan.oopMax);
         }
 
         return yearlyPremium + medicalCosts;
@@ -58,7 +58,7 @@ export default function InsuranceCompare() {
                         <label style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem' }}>
                             <span>Doctor Visits per Year</span><span>{expectedVisits}</span>
                         </label>
-                        <input type="range" min="0" max="12" value={expectedVisits}
+                        <input aria-label="Doctor visits per year" type="range" min="0" max="12" value={expectedVisits}
                             onChange={(e) => setExpectedVisits(Number(e.target.value))}
                             style={{ width: '100%', accentColor: 'var(--primary)' }} />
                     </div>
@@ -66,7 +66,7 @@ export default function InsuranceCompare() {
                         <label style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem' }}>
                             <span>Monthly Prescriptions</span><span>{prescriptions}</span>
                         </label>
-                        <input type="range" min="0" max="5" value={prescriptions}
+                        <input aria-label="Monthly prescriptions" type="range" min="0" max="5" value={prescriptions}
                             onChange={(e) => setPrescriptions(Number(e.target.value))}
                             style={{ width: '100%', accentColor: 'var(--secondary)' }} />
                     </div>
@@ -92,7 +92,7 @@ export default function InsuranceCompare() {
                     }}>
                         <div style={{ minWidth: 0 }}>
                             <div style={{ fontWeight: 'bold', fontSize: '0.9rem' }}>
-                                {plan.name} {plan.name === cheapest.name && <span style={{ color: 'var(--primary)' }}>← Best for You</span>}
+                                {plan.name} {plan.name === cheapest.name && <span style={{ color: 'var(--primary)' }}>← Lowest estimate</span>}
                             </div>
                             <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
                                 ${plan.premium}/mo premium • ${plan.deductible} deductible
@@ -107,6 +107,9 @@ export default function InsuranceCompare() {
                     </div>
                 ))}
             </div>
+            <p style={{ fontSize: '0.72rem', color: 'var(--text-muted)', marginTop: '0.85rem', lineHeight: '1.45' }}>
+                Illustration only. Actual costs depend on covered services, networks, formularies, negotiated rates, and plan rules.
+            </p>
         </div>
     );
 }

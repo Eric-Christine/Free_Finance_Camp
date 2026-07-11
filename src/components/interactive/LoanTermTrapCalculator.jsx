@@ -165,6 +165,7 @@ function Slider({ label, value, min, max, step, display, onChange }) {
                 <span style={{ whiteSpace: 'nowrap' }}>{display}</span>
             </label>
             <input
+                aria-label={label}
                 type="range"
                 min={min}
                 max={max}

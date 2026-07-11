@@ -183,7 +183,7 @@ export default function Lesson() {
                   <p key={idx} style={{
                     marginBottom: paragraph === '' ? '0.5rem' : '1rem',
                     fontWeight: paragraph.startsWith('OPTION') || paragraph.endsWith(':') ? 'bold' : 'normal',
-                    color: paragraph.startsWith('Pro tip') ? 'var(--primary)' : 'inherit',
+                    color: paragraph.startsWith('Helpful note') ? 'var(--primary)' : 'inherit',
                     paddingLeft: paragraph.startsWith('•') ? '0.5rem' : '0'
                   }}>
                     {parts.map((part, i) => {

@@ -35,7 +35,8 @@ const staticPages = [
     { path: '/privacy', changefreq: 'yearly', priority: 0.4 },
     { path: '/curriculum', changefreq: 'weekly', priority: 0.9 },
     { path: '/resources', changefreq: 'monthly', priority: 0.8 },
-    { path: '/lessons', changefreq: 'weekly', priority: 0.9 }
+    { path: '/lessons', changefreq: 'weekly', priority: 0.9 },
+    { path: '/tools', changefreq: 'weekly', priority: 0.8 }
 ];
 
 const lessonPages = curriculum.flatMap((module) =>

@@ -1,11 +1,10 @@
 User-agent: *
 Allow: /
+Allow: /tools$
 Disallow: /login
 Disallow: /map
 Disallow: /learn/
 Disallow: /vocab
-Disallow: /tools
 Disallow: /tools/
 
-Host: freefinancecamp.com
 Sitemap: https://freefinancecamp.com/sitemap.xml

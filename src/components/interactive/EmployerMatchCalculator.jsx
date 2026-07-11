@@ -10,6 +10,8 @@ import {
   ResponsiveContainer
 } from 'recharts';
 
+const EMPLOYEE_DEFERRAL_LIMIT_2026 = 24500;
+
 export default function EmployerMatchCalculator() {
   const [salary, setSalary] = useState(70000);
   const [employeeRate, setEmployeeRate] = useState(6);
@@ -20,10 +22,10 @@ export default function EmployerMatchCalculator() {
   const { data, summary } = useMemo(() => {
     const monthlyReturn = returnRate / 100 / 12;
     const salaryMonthly = salary / 12;
-    const employeeMonthly = salaryMonthly * (employeeRate / 100);
+    const annualEmployee = Math.min(salary * (employeeRate / 100), EMPLOYEE_DEFERRAL_LIMIT_2026);
+    const employeeMonthly = annualEmployee / 12;
     const matchedRate = Math.min(employeeRate, matchCap);
     const employerMonthly = salaryMonthly * (matchedRate / 100) * (matchRate / 100);
-    const annualEmployee = employeeMonthly * 12;
     const annualEmployer = employerMonthly * 12;
 
     const graph = [{ year: 0, EmployeeOnly: 0, WithMatch: 0 }];
@@ -120,7 +122,7 @@ export default function EmployerMatchCalculator() {
             <span>Salary</span>
             <span style={{ fontWeight: 'bold' }}>${salary.toLocaleString()}</span>
           </label>
-          <input type="range" min="30000" max="250000" step="5000" value={salary} onChange={(e) => setSalary(Number(e.target.value))} style={{ width: '100%' }} />
+          <input aria-label="Salary" type="range" min="30000" max="250000" step="5000" value={salary} onChange={(e) => setSalary(Number(e.target.value))} style={{ width: '100%' }} />
         </div>
 
         <div>
@@ -128,7 +130,7 @@ export default function EmployerMatchCalculator() {
             <span>Your 401(k) Contribution Rate</span>
             <span style={{ fontWeight: 'bold' }}>{employeeRate}%</span>
           </label>
-          <input type="range" min="1" max="20" step="1" value={employeeRate} onChange={(e) => setEmployeeRate(Number(e.target.value))} style={{ width: '100%' }} />
+          <input aria-label="Your 401(k) contribution rate" type="range" min="1" max="20" step="1" value={employeeRate} onChange={(e) => setEmployeeRate(Number(e.target.value))} style={{ width: '100%' }} />
         </div>
 
         <div>
@@ -136,7 +138,7 @@ export default function EmployerMatchCalculator() {
             <span>Employer Match</span>
             <span style={{ fontWeight: 'bold' }}>{matchRate}%</span>
           </label>
-          <input type="range" min="25" max="100" step="5" value={matchRate} onChange={(e) => setMatchRate(Number(e.target.value))} style={{ width: '100%' }} />
+          <input aria-label="Employer match percentage" type="range" min="25" max="100" step="5" value={matchRate} onChange={(e) => setMatchRate(Number(e.target.value))} style={{ width: '100%' }} />
         </div>
 
         <div>
@@ -144,7 +146,7 @@ export default function EmployerMatchCalculator() {
             <span>Matched Up To</span>
             <span style={{ fontWeight: 'bold' }}>{matchCap}% of salary</span>
           </label>
-          <input type="range" min="3" max="10" step="1" value={matchCap} onChange={(e) => setMatchCap(Number(e.target.value))} style={{ width: '100%' }} />
+          <input aria-label="Employer match salary cap" type="range" min="3" max="10" step="1" value={matchCap} onChange={(e) => setMatchCap(Number(e.target.value))} style={{ width: '100%' }} />
         </div>
 
         <div>
@@ -152,7 +154,7 @@ export default function EmployerMatchCalculator() {
             <span>Annual Return</span>
             <span style={{ fontWeight: 'bold' }}>{returnRate}%</span>
           </label>
-          <input type="range" min="3" max="12" step="0.5" value={returnRate} onChange={(e) => setReturnRate(Number(e.target.value))} style={{ width: '100%' }} />
+          <input aria-label="Annual return" type="range" min="3" max="12" step="0.5" value={returnRate} onChange={(e) => setReturnRate(Number(e.target.value))} style={{ width: '100%' }} />
         </div>
 
         <div>
@@ -160,7 +162,7 @@ export default function EmployerMatchCalculator() {
             <span>Time Horizon</span>
             <span style={{ fontWeight: 'bold' }}>{years} years</span>
           </label>
-          <input type="range" min="5" max="40" step="5" value={years} onChange={(e) => setYears(Number(e.target.value))} style={{ width: '100%' }} />
+          <input aria-label="Time horizon in years" type="range" min="5" max="40" step="5" value={years} onChange={(e) => setYears(Number(e.target.value))} style={{ width: '100%' }} />
         </div>
       </div>
 
@@ -173,6 +175,9 @@ export default function EmployerMatchCalculator() {
         ) : (
           <div style={{ color: '#22c55e' }}>You are contributing enough to capture the full match.</div>
         )}
+        <div style={{ marginTop: '0.45rem' }}>
+          Uses the 2026 employee deferral limit of ${EMPLOYEE_DEFERRAL_LIMIT_2026.toLocaleString()} and holds it constant for the projection.
+        </div>
       </div>
     </div>
   );

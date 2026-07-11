@@ -38,6 +38,44 @@ A gamified, interactive web application designed to teach personal finance conce
     npm run dev
     ```
 
+## iOS App (iPhone) - Shared Web + Mobile Stack
+
+This project now includes Capacitor iOS support so you can ship an iPhone app while keeping one codebase.
+
+- iOS project path: `ios/`
+- Capacitor config: `capacitor.config.ts`
+- iPhone app loads: `https://freefinancecamp.com`
+
+### Why this keeps updates easy
+
+- Content updates remain web-first (same React app + same data files).
+- After you deploy web (`npm run deploy`), iPhone users automatically see updated content because the app uses the live site URL.
+- No duplicate lesson content pipeline for iOS.
+
+### Shared login + progress between web and iPhone
+
+- Auth is handled by Supabase in `src/context/AuthContext.jsx`.
+- Progress is stored in the shared `user_progress` table in Supabase (`src/context/ProgressContext.jsx`).
+- A learner who signs in with the same account on web and iPhone will get the same progress, XP, and completed lessons.
+
+### iOS commands
+
+- Create iOS project (one-time): `npm run ios:add`
+- Sync web assets/config/plugins to iOS: `npm run ios:sync`
+- Open native project in Xcode: `npm run ios:open`
+
+### Release flow for iPhone
+
+1. Run `npm run ios:sync`.
+2. Run `npm run ios:open`.
+3. In Xcode, set your Apple Team + Bundle Identifier.
+4. Archive and distribute to TestFlight/App Store.
+
+### Notes
+
+- Keep production Supabase env vars set so iOS uses real auth/progress sync (not mock auth).
+- If you ever want fully bundled offline web assets instead of live URL loading, remove the `server.url` block in `capacitor.config.ts` and rerun `npm run ios:sync`.
+
 ### Lesson Content Export (Word Copy Helper)
 
 - Run `npm run lessons:export` to generate `/Users/ericchristine/Desktop/code_projects/Free_Finance_Camp/lesson-content-export.md`.

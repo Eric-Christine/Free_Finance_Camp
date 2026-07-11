@@ -13,38 +13,78 @@ function getAuthRedirectUrl() {
   return `${base}/map`;
 }
 
+function getStoredMockUser() {
+  try {
+    const storedUser = localStorage.getItem('ffc_user');
+    if (!storedUser) return null;
+    return JSON.parse(storedUser);
+  } catch (error) {
+    console.warn('Ignoring invalid stored user data:', error);
+    try {
+      localStorage.removeItem('ffc_user');
+    } catch {
+      // Storage may be blocked; rendering should continue without a saved user.
+    }
+    return null;
+  }
+}
+
+function setStoredMockUser(user) {
+  try {
+    localStorage.setItem('ffc_user', JSON.stringify(user));
+  } catch (error) {
+    console.warn('Unable to save mock user data:', error);
+  }
+}
+
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Check for Supabase session or fall back to localStorage mock
+    let isMounted = true;
+    let authSubscription = null;
+
     const initAuth = async () => {
-      if (supabase) {
-        // Real Supabase auth
-        const { data: { session } } = await supabase.auth.getSession();
-        setUser(session?.user ?? null);
+      try {
+        if (supabase) {
+          // Real Supabase auth
+          const { data: { session } } = await supabase.auth.getSession();
+          if (!isMounted) return;
+          setUser(session?.user ?? null);
 
-        // Listen for auth changes
-        const { data: { subscription } } = supabase.auth.onAuthStateChange(
-          (_event, session) => {
-            setUser(session?.user ?? null);
+          const { data: { subscription } } = supabase.auth.onAuthStateChange(
+            (_event, session) => {
+              setUser(session?.user ?? null);
+            }
+          );
+
+          authSubscription = subscription;
+        } else {
+          // Fall back to mock auth (for local dev without Supabase)
+          const storedUser = getStoredMockUser();
+          if (storedUser && isMounted) {
+            setUser(storedUser);
           }
-        );
-
-        setLoading(false);
-        return () => subscription.unsubscribe();
-      } else {
-        // Fall back to mock auth (for local dev without Supabase)
-        const storedUser = localStorage.getItem('ffc_user');
-        if (storedUser) {
-          setUser(JSON.parse(storedUser));
         }
-        setLoading(false);
+      } catch (error) {
+        console.error('Failed to initialize authentication:', error);
+        if (isMounted) {
+          setUser(null);
+        }
+      } finally {
+        if (isMounted) {
+          setLoading(false);
+        }
       }
     };
 
-    initAuth();
+    void initAuth();
+
+    return () => {
+      isMounted = false;
+      authSubscription?.unsubscribe();
+    };
   }, []);
 
   const signInWithOtp = async (email) => {
@@ -75,7 +115,7 @@ export function AuthProvider({ children }) {
       if (token === '123456') {
         const mockUser = { id: 'user_123', email };
         setUser(mockUser);
-        localStorage.setItem('ffc_user', JSON.stringify(mockUser));
+        setStoredMockUser(mockUser);
         return { data: { user: mockUser }, error: null };
       }
       return { error: { message: 'Invalid token' } };
@@ -101,7 +141,7 @@ export function AuthProvider({ children }) {
         app_metadata: { provider: provider }
       };
       setUser(mockUser);
-      localStorage.setItem('ffc_user', JSON.stringify(mockUser));
+      setStoredMockUser(mockUser);
       return { data: { user: mockUser }, error: null };
     }
     return { error: { message: 'Authentication is currently unavailable. Please contact support.' } };
@@ -112,7 +152,11 @@ export function AuthProvider({ children }) {
       await supabase.auth.signOut();
     }
     setUser(null);
-    localStorage.removeItem('ffc_user');
+    try {
+      localStorage.removeItem('ffc_user');
+    } catch {
+      // Storage may be blocked; the in-memory user state is already cleared.
+    }
   };
 
   // Check if we're using real auth

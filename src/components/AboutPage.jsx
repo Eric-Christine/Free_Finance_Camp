@@ -28,12 +28,13 @@ export default function AboutPage() {
             <Link to="/" style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>← Back Home</Link>
             <h1 style={{ marginTop: '1rem', marginBottom: '1rem' }}>About Free Finance Camp</h1>
             <p style={{ color: 'var(--text-muted)', lineHeight: '1.7' }}>
-                Free Finance Camp is an open education project focused on practical, high-impact money skills.
-                The curriculum is built to help learners make better day-to-day financial decisions across budgeting,
-                debt, investing, insurance, and macroeconomic literacy.
+                Free Finance Camp is an open education project for anyone who wants to feel more comfortable
+                with money. The curriculum explains budgeting, debt, investing, insurance, and the broader
+                economy in plain language, with room to learn at your own pace.
             </p>
             <p style={{ color: 'var(--text-muted)', lineHeight: '1.7' }}>
-                The goal is simple: make high-quality financial knowledge accessible without paywalls,
+                You do not need a certain income, a finance background, or a perfect financial history to
+                begin. Our goal is to make useful financial knowledge available without paywalls, pressure,
                 upsells, or product bias.
             </p>
             <SiteFooter />

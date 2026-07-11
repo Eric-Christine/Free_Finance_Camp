@@ -128,6 +128,9 @@ export default function Map() {
                 <Link to="/tools" className="btn btn-outline" style={{ fontSize: '0.85rem' }}>
                     🧰 Interactive Tools
                 </Link>
+                <a href="https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ fontSize: '0.85rem' }}>
+                    🏛️ National Debt Data
+                </a>
                 <button onClick={signOut} className="btn btn-outline" style={{ fontSize: '0.85rem' }}>
                     Sign Out
                 </button>
