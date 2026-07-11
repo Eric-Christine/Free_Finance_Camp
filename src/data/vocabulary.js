@@ -391,5 +391,77 @@ export const vocabulary = [
         term: 'Narrative Premium',
         definition: 'The extra valuation the market assigns to a stock based on its story, vision, or perceived future potential — beyond what current financial metrics alone would justify.',
         lessonId: 'lesson-26-5'
+    },
+    {
+        id: 'gross-pay',
+        term: 'Gross Pay',
+        definition: 'Your total earnings before any taxes or deductions are taken out.',
+        lessonId: 'lesson-12-6'
+    },
+    {
+        id: 'net-pay',
+        term: 'Net Pay',
+        definition: 'The "take-home" amount deposited to your bank account after all taxes and deductions.',
+        lessonId: 'lesson-12-6'
+    },
+    {
+        id: 'fica',
+        term: 'FICA',
+        definition: 'The mandatory payroll taxes that fund Social Security and Medicare, split between you and your employer.',
+        lessonId: 'lesson-12-6'
+    },
+    {
+        id: 'withholding',
+        term: 'Withholding',
+        definition: 'The estimated income tax your employer takes from each paycheck, controlled by your W-4 form.',
+        lessonId: 'lesson-12-6'
+    },
+    {
+        id: 'security-deposit',
+        term: 'Security Deposit',
+        definition: 'Money held by a landlord against damage or unpaid rent, which must generally be returned within a set window after move-out.',
+        lessonId: 'lesson-27-1'
+    },
+    {
+        id: 'joint-several-liability',
+        term: 'Joint and Several Liability',
+        definition: 'A lease clause making each tenant responsible for 100% of the rent, not just their individual share.',
+        lessonId: 'lesson-27-1'
+    },
+    {
+        id: 'renters-insurance',
+        term: 'Renters Insurance',
+        definition: 'An inexpensive policy covering a tenant\'s belongings and liability, since the landlord\'s insurance only covers the building.',
+        lessonId: 'lesson-27-1'
+    },
+    {
+        id: 'habitability',
+        term: 'Habitability',
+        definition: 'The legal requirement that a rental unit be safe and livable, with essentials like heat, plumbing, and working locks.',
+        lessonId: 'lesson-27-1'
+    },
+    {
+        id: 'prenup',
+        term: 'Prenuptial Agreement',
+        definition: 'A contract signed before marriage that sets your own rules for dividing assets and debts, instead of your state\'s defaults.',
+        lessonId: 'lesson-28-1'
+    },
+    {
+        id: 'community-property',
+        term: 'Community Property',
+        definition: 'A legal system in some states where assets and debts acquired during a marriage are generally owned 50/50 by both spouses.',
+        lessonId: 'lesson-28-1'
+    },
+    {
+        id: 'financial-infidelity',
+        term: 'Financial Infidelity',
+        definition: 'Hiding money behavior from a partner, such as secret debt, hidden accounts, or undisclosed spending.',
+        lessonId: 'lesson-28-1'
+    },
+    {
+        id: 'financial-abuse',
+        term: 'Financial Abuse',
+        definition: 'Using money as a tool of control in a relationship—restricting account access, imposing allowances, or running up debt in a partner\'s name.',
+        lessonId: 'lesson-28-1'
     }
 ];

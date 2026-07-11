@@ -474,9 +474,9 @@ export const curriculum = [
                             "1. **When you start saving** — earlier means more compounding time",
                             "2. **How much you save** — a higher rate means more fuel for growth",
                             "",
-                            "Starting at age 25 with a 20% savings rate at 6% annual returns, you could replace **133%** of your income in retirement.",
+                            "Using the tool's default assumptions—a 7% return, 3% inflation, and a 4% withdrawal rate—starting at age 25 with a 20% savings rate produces an estimate of about **75%** income replacement in today's dollars.",
                             "",
-                            "Starting at 40 with the same assumptions produces a lower estimate of **46%**, because the money has less time to compound.",
+                            "Starting at 40 with the same assumptions produces an estimate of about **33%**, because the money has less time to compound.",
                             "",
                             "Use the interactive table to explore how different ages and savings rates change your retirement picture."
                         ]
@@ -494,18 +494,18 @@ export const curriculum = [
                         ]
                     },
                     {
-                        title: 'Small Increases Make a Huge Difference',
+                        title: 'Small Increases Can Add Up',
                         content: [
-                            "You do not need to go from 0% to 40% overnight. Small increases compound dramatically over time.",
+                            "You do not need to reach a particular savings rate overnight. Small, sustainable increases can add up over time.",
                             "",
                             "**If you earn $60,000 and start at age 25:**",
-                            "• Saving 10% → replace 66% of income",
-                            "• Saving 15% → replace 100% of income",
-                            "• Saving 20% → replace 133% of income",
+                            "• Saving 10% → about 38% income replacement",
+                            "• Saving 15% → about 56% income replacement",
+                            "• Saving 20% → about 75% income replacement",
                             "",
-                            "Just going from 10% to 15% could be the difference between struggling in retirement and thriving.",
+                            "In this example, moving from 10% to 15% raises the estimate by about 18 percentage points.",
                             "",
-                            "Every 1% increase matters. Start where you are and increase by 1% every few months."
+                            "If your budget allows, consider a gradual increase that you can maintain. Starting where you are is still useful."
                         ]
                     }
                 ],
@@ -2730,6 +2730,73 @@ export const curriculum = [
                             "• Missing employer HSA contributions that are part of your compensation package.",
                             "",
                             "Action step: Review your health plan type and HSA contribution setup this week. Even small contributions can compound meaningfully over time."
+                        ]
+                    }
+                ],
+                type: 'reading'
+            },
+            {
+                id: 'lesson-12-6',
+                title: 'Decoding Your Paycheck',
+                description: 'Why your take-home pay is smaller than your salary—and how the W-4 controls it.',
+                xpReward: 35,
+                screens: [
+                    {
+                        title: 'The Shrinking Paycheck',
+                        content: [
+                            "You negotiated a salary. Then your first paycheck arrives and... it's smaller than you expected. A lot smaller.",
+                            "",
+                            "That's the difference between **Gross Pay** (what you earned) and **Net Pay** (what actually hits your bank account). Everything in between is a deduction—and most people never look at that middle section.",
+                            "",
+                            "Your pay stub is a receipt for the biggest transaction in your life: your labor. Learning to read it takes five minutes and protects you from payroll errors, over-withholding, and missing benefits for your entire career."
+                        ]
+                    },
+                    {
+                        title: 'The Mandatory Cuts: FICA',
+                        content: [
+                            "Before you see a dime, the government takes its share. The first line items are **FICA taxes**—Social Security and Medicare.",
+                            "",
+                            "• **Social Security:** Funds retirement and disability benefits. It only applies to wages up to an annual cap, which adjusts most years.",
+                            "• **Medicare:** Funds healthcare for seniors. No wage cap.",
+                            "",
+                            "Together these generally take **roughly 7-8% of your wages** as an employee (your employer pays a matching share on top). Unlike income tax, FICA is a flat rate—there's no way to reduce it with deductions, and it comes out of nearly every paycheck you'll ever earn."
+                        ]
+                    },
+                    {
+                        title: 'Pre-Tax vs. Post-Tax Deductions',
+                        content: [
+                            "Not all deductions are taxes. Some are **money you're paying yourself**—and the order they come out matters.",
+                            "",
+                            "• **Pre-tax deductions** come out *before* income tax is calculated: traditional 401(k) contributions, HSA contributions, and most health insurance premiums. Every pre-tax dollar shrinks your taxable income.",
+                            "• **Post-tax deductions** come out *after* taxes: Roth 401(k) contributions, some insurance, wage garnishments.",
+                            "",
+                            "This is why a $200 contribution to your 401(k) might only shrink your take-home pay by $150 or so—the government effectively subsidizes the difference."
+                        ]
+                    },
+                    {
+                        title: 'The W-4: Your Withholding Dial',
+                        content: [
+                            "Federal income tax isn't a fixed line item—it's an **estimate**, and YOU control it with a form called the **W-4**.",
+                            "",
+                            "When you start a job, the W-4 tells your employer how much income tax to withhold from each check. (The old \"allowances\" system was retired; the modern form uses dollar amounts and checkboxes for things like a second job or a working spouse.)",
+                            "",
+                            "• **Withhold too little:** You may owe a painful bill—and possibly penalties—at tax time.",
+                            "• **Withhold too much:** You get a big refund. Feels great, but it means you gave the government an **interest-free loan** all year.",
+                            "",
+                            "A big refund isn't a bonus. It's your own money coming back late."
+                        ]
+                    },
+                    {
+                        title: 'Audit Your Own Pay Stub',
+                        content: [
+                            "Payroll systems make mistakes, and the person who catches them is you. Once or twice a year, run this checklist:",
+                            "",
+                            "• **Gross pay:** Does it match your salary or hours worked (including overtime)?",
+                            "• **401(k) match:** Is your employer's match actually showing up?",
+                            "• **Benefits:** Are you paying for insurance you enrolled in—and nothing you didn't?",
+                            "• **Withholding:** After any raise, marriage, or side income, revisit your W-4. The IRS offers a free online withholding estimator.",
+                            "",
+                            "**The bottom line:** Your paycheck is a system you can tune. Most people set it once at orientation and never touch it again—leaving errors uncaught and money on the table."
                         ]
                     }
                 ],
@@ -5571,5 +5638,176 @@ export const curriculum = [
                 type: 'reading'
             }
         ]
-    }
+    },
+{
+    id: 'module-27',
+    title: 'Renting & Your First Apartment',
+    description: 'Practical guidance for renting: leases, deposits, roommates, and protecting yourself as a tenant.',
+    xpReward: 100,
+    lessons: [
+        {
+            id: 'lesson-27-1',
+            title: 'Renting 101: Leases, Deposits, and Roommates',
+            description: 'Master the biggest contract of your twenties before you sign it.',
+            xpReward: 35,
+            screens: [
+                {
+                    title: 'The Lease Is a Binding Contract',
+                    content: [
+                        "For most people, a lease is the first serious legal contract they ever sign—often committing them to **tens of thousands of dollars** over a year.",
+                        "",
+                        "Yet most renters skim it in the leasing office in under five minutes.",
+                        "",
+                        "Before signing, confirm in writing:",
+                        "• **The total monthly cost:** Base rent plus mandatory fees (parking, pets, utilities, \"amenity fees\").",
+                        "• **The term:** Start date, end date, and what happens after—does it auto-renew or convert to month-to-month?",
+                        "• **Early exit terms:** What does breaking the lease cost? Life changes; know the price of flexibility upfront."
+                    ]
+                },
+                {
+                    title: 'Security Deposits: Getting Your Money Back',
+                    content: [
+                        "A **security deposit** is your money held hostage against damage. Landlords in most states must return it within a set window after you move out—minus legitimate deductions.",
+                        "",
+                        "The #1 way renters lose deposits is having no proof of the apartment's original condition. Protect yourself:",
+                        "",
+                        "• **Document move-in day:** Take timestamped photos and video of every room, every scuff, every stain—before your boxes arrive.",
+                        "• **Get it in writing:** Many states require a move-in condition checklist. Fill it out even if the landlord doesn't ask.",
+                        "• **Know the difference:** Normal wear and tear (faded paint, worn carpet) generally can't be deducted. Actual damage can.",
+                        "",
+                        "Repeat the photo ritual on move-out day. Documentation turns a dispute into a receipt."
+                    ]
+                },
+                {
+                    title: 'Roommates and the Fine Print',
+                    content: [
+                        "Splitting rent with roommates is one of the most powerful savings moves available—housing is most people's biggest expense.",
+                        "",
+                        "But there's a legal catch: most leases include **joint and several liability**. That means every person on the lease is responsible for **100% of the rent**, not just their share.",
+                        "",
+                        "If your roommate ghosts, the landlord can come after *you* for the full amount—and the missed payment can hit *your* record.",
+                        "",
+                        "• Only sign leases with people you'd trust with your credit.",
+                        "• Put roommate agreements (rent split, utilities, move-out notice) in writing, even between friends.",
+                        "• Never sublet or take a subletter without checking whether the lease allows it."
+                    ]
+                },
+                {
+                    title: 'Renters Insurance: The $15 No-Brainer',
+                    content: [
+                        "Here's a fact that surprises most first-time renters: **your landlord's insurance covers the building, not your stuff.**",
+                        "",
+                        "If a fire, burst pipe, or burglary wipes out your laptop, furniture, and wardrobe, the landlord's policy pays you nothing.",
+                        "",
+                        "**Renters insurance** typically costs about as much per month as a couple of coffees and covers:",
+                        "• **Personal property:** Your belongings, often even when stolen outside your home.",
+                        "• **Liability:** If a guest is injured in your unit, or you accidentally flood the neighbor below.",
+                        "• **Loss of use:** Hotel costs if your unit becomes unlivable.",
+                        "",
+                        "It's one of the cheapest, highest-value policies in all of insurance—and many landlords now require it anyway."
+                    ]
+                },
+                {
+                    title: 'Know Your Rights, Spot the Red Flags',
+                    content: [
+                        "Tenant protections vary widely by state and city, but some principles are nearly universal:",
+                        "",
+                        "• **Habitability:** Landlords generally must keep the unit safe and livable—working heat, plumbing, and locks. This right usually can't be signed away.",
+                        "• **Notice before entry:** In most places, a landlord can't just walk in; reasonable notice is typically required.",
+                        "",
+                        "Walk away from these red flags:",
+                        "• Pressure to pay a deposit **before** you've seen the unit or signed anything.",
+                        "• Cash-only demands or a \"landlord\" who can't meet in person—classic rental scam patterns.",
+                        "• Verbal promises (\"we'll fix that before move-in\") that they refuse to put in the lease.",
+                        "",
+                        "**If it's not in writing, it doesn't exist.**"
+                    ]
+                }
+            ],
+            type: 'reading'
+        }
+    ]
+},
+{
+    id: 'module-28',
+    title: 'Money & Relationships',
+    description: 'Navigating money as a couple—combining finances, legal changes from marriage, and spotting red flags.',
+    xpReward: 100,
+    lessons: [
+        {
+            id: 'lesson-28-1',
+            title: 'Merging Money: Couples and Finances',
+            description: 'How to combine finances—fully, partially, or not at all—without wrecking your relationship.',
+            xpReward: 40,
+            screens: [
+                {
+                    title: 'The #1 Fight',
+                    content: [
+                        "Money is consistently ranked among the **top sources of conflict in relationships**—and financial stress is one of the most commonly cited factors in divorce.",
+                        "",
+                        "Here's the twist: the fights are rarely about dollars. They're about **values**. One partner sees savings as safety; the other sees spending as living. Neither is wrong—but unspoken, the mismatch becomes resentment.",
+                        "",
+                        "The fix isn't a bigger income. It's having the money conversation **early and on purpose**: debts, credit history, income, savings goals, and how each of you was raised to think about money.",
+                        "",
+                        "If you're planning to share a lease, a pet, or a life with someone—you're already sharing finances. The only question is whether you've talked about it."
+                    ]
+                },
+                {
+                    title: 'Three Models for Combining Money',
+                    content: [
+                        "There's no single \"right\" way to merge finances. Couples generally land on one of three systems:",
+                        "",
+                        "• **Fully Joint:** All income flows into shared accounts; everything is \"ours.\" Maximum simplicity and transparency—but requires deeply aligned spending values.",
+                        "• **Fully Separate:** Each partner keeps their own accounts and splits shared bills. Maximum autonomy—but can breed a \"scorekeeping\" dynamic.",
+                        "• **The Hybrid (\"Yours, Mine, Ours\"):** A joint account funds shared expenses and goals, while each partner keeps a personal account for no-questions-asked spending.",
+                        "",
+                        "The hybrid model is popular for a reason: it delivers teamwork on the big stuff and freedom on the small stuff."
+                    ]
+                },
+                {
+                    title: 'What Marriage Changes Legally',
+                    content: [
+                        "Marriage isn't just romantic—it's a **legal and financial merger**, and the rules vary by state.",
+                        "",
+                        "• **Community property states:** Assets and debts acquired *during* the marriage are generally owned 50/50, regardless of whose name is on them.",
+                        "• **Equitable distribution states (most states):** In a divorce, marital property is divided \"fairly\"—which may not mean equally.",
+                        "• **Debt:** You generally do NOT inherit your spouse's *premarital* debt—but debt taken on together, or during the marriage in community property states, can become shared.",
+                        "",
+                        "A **prenuptial agreement** simply writes your own rules instead of accepting your state's defaults. It's not planning for failure—it's the same logic as insurance: cheap clarity against an expensive worst case."
+                    ]
+                },
+                {
+                    title: 'Transparency and Red Flags',
+                    content: [
+                        "Healthy financial partnerships run on transparency. Two patterns to know:",
+                        "",
+                        "**Financial infidelity** is hiding money behavior from a partner—secret credit cards, hidden debt, undisclosed accounts. Surveys suggest it's remarkably common, and the breach of trust often hurts more than the dollars.",
+                        "",
+                        "**Financial abuse** is more serious: one partner using money as control. Warning signs include:",
+                        "• Being denied access to accounts or information about shared finances.",
+                        "• An \"allowance\" imposed without agreement, or having to justify every purchase.",
+                        "• A partner sabotaging your job, or running up debt in your name.",
+                        "",
+                        "Financial abuse appears in a large share of abusive relationships and is a major reason people feel unable to leave. Everyone—in any relationship—should maintain access to their own credit report and at least some money in their own name."
+                    ]
+                },
+                {
+                    title: 'The Practical Setup',
+                    content: [
+                        "Ready to merge? A simple starter playbook:",
+                        "",
+                        "• **Open one joint account for shared bills.** Rent, utilities, groceries—autopay everything from it.",
+                        "• **Decide the split:** 50/50 feels fair but can strain the lower earner. Many couples contribute **proportionally to income** instead (each contributes the same *percentage*, not the same dollar amount).",
+                        "• **Keep personal \"no-judgment\" money.** Each partner gets an agreed amount that's theirs alone.",
+                        "• **Check beneficiaries:** Retirement accounts and insurance pass by beneficiary form, not by who you live with—update them after major relationship changes.",
+                        "• **Hold a monthly money date:** 30 minutes, review the numbers, adjust, done.",
+                        "",
+                        "**The goal isn't identical money personalities. It's a shared system both of you actually trust.**"
+                    ]
+                }
+            ],
+            type: 'reading'
+        }
+    ]
+}
 ];
