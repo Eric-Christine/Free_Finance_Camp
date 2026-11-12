@@ -14,10 +14,12 @@ const LessonsHubPage = lazy(() => import('./components/LessonsHubPage'));
 const LessonPreviewPage = lazy(() => import('./components/LessonPreviewPage'));
 const ResourcesPage = lazy(() => import('./components/ResourcesPage'));
 const InteractiveToolsPage = lazy(() => import('./components/InteractiveToolsPage'));
-import InteractiveToolPlayer from './components/InteractiveToolPlayer';
+const InteractiveToolPlayer = lazy(() => import('./components/InteractiveToolPlayer'));
+const NotFoundPage = lazy(() => import('./components/NotFoundPage'));
 
 function PrivateRoute({ children }) {
-  const { user } = useAuth();
+  const { user, loading } = useAuth();
+  if (loading) return <div role="status">Checking sign-in…</div>;
   return user ? children : <Navigate to="/login" />;
 }
 
@@ -55,7 +57,7 @@ function App() {
         } />
         <Route path="/tools" element={<InteractiveToolsPage />} />
         <Route path="/tools/:widgetId" element={<InteractiveToolPlayer />} />
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Suspense>
   );

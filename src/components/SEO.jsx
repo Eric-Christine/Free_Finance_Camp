@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 const SITE_NAME = 'Free Finance Camp';
 const BASE_URL = 'https://freefinancecamp.com';
 const DEFAULT_DESCRIPTION = 'Free, practical financial education on budgeting, investing, debt, and macroeconomics.';
-const DEFAULT_IMAGE = '/finance-camp-og.svg';
+const DEFAULT_IMAGE = '/finance-camp-og.png';
 const DEFAULT_IMAGE_ALT = 'Free Finance Camp preview image';
 
 function absoluteUrl(path = '/') {

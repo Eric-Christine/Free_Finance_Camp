@@ -2,11 +2,11 @@
 
 A gamified, interactive web application designed to teach personal finance concepts for free. Think "Duolingo for Finance."
 
-![App Demo](https://via.placeholder.com/800x400?text=Free+Finance+Camp+Preview)
+![Free Finance Camp](public/finance-camp-og.png)
 
 ## Features
 
-*   **Interactive Curriculum**: 9 Modules covering everything from Budgeting 101 to Crypto & Options.
+*   **Interactive Curriculum**: Financial literacy modules covering everything from Budgeting 101 to Crypto & Options.
 *   **Gamified Learning**: Earn XP, level up, and unlock new content as you progress.
 *   **Simulations**:
     *   **Market Timer Game**: Try to beat the market (and learn why you probably can't).
@@ -95,22 +95,14 @@ This project now includes Capacitor iOS support so you can ship an iPhone app wh
 Copy `.env.example` to `.env` and fill in:
 
 - Supabase keys (`VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`)
-- Firebase web config values for Analytics (`VITE_FIREBASE_*`)
+- Analytics uses the GA4 tag in `index.html`; no Firebase web config is required.
 
 Analytics emits:
 - `goal_completion` when a lesson is newly completed
 
 ## Curriculum Overview
 
-1.  **Money Mindset**: Psychology of saving.
-2.  **Budgeting Basics**: The 50/30/20 Rule.
-3.  **Compound Interest**: The 8th Wonder of the World.
-4.  **Investing 101**: Stocks & Index Funds.
-5.  **Risk Management**: Insurance & Safety Nets.
-6.  **Credit & Debt**: Good Debt vs. Bad Debt.
-7.  **Investing 201**: ETFs, Options, & Volatility.
-8.  **The Economic Machine**: The Fed, Interest Rates, & Bonds.
-9.  **Future Finance**: Crypto, Prediction Markets, & Hard Assets.
+The current module and lesson list is maintained in `src/data/curriculum.js` and shown on `/curriculum`.
 
 ## Tech Stack
 
@@ -118,3 +110,7 @@ Analytics emits:
 -   Recharts (Data Visualization)
 -   Lucide React (Icons)
 -   Tailwind-inspired CSS Variables
+
+## Public-page rendering
+
+`npm run build` prerenders every sitemap URL with Playwright Chromium. Install the build browser with `npx playwright install chromium` first. Builds fail if a public page has a missing heading, duplicate headings, missing canonical metadata, or JavaScript errors. Firebase serves these static pages directly, preserves the app shell for known private routes, and returns `404.html` with an HTTP 404 for unknown paths.

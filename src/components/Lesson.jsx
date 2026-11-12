@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { curriculum } from '../data/curriculum';
 import { useProgress } from '../context/ProgressContext';
@@ -301,7 +301,7 @@ export default function Lesson() {
         {/* Right Side: Interactive Widget (Only if exists) */}
         {WidgetComponent && (
           <div className="lesson-widget-column">
-            <WidgetComponent />
+            <Suspense fallback={<p role="status">Loading tool…</p>}><WidgetComponent /></Suspense>
           </div>
         )}
       </div>

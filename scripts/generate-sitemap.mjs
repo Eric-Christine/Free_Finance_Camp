@@ -9,7 +9,6 @@ const ROOT = resolve(__dirname, '..');
 const OUTPUT_PATH = resolve(ROOT, 'public', 'sitemap.xml');
 const ROBOTS_PATH = resolve(ROOT, 'public', 'robots.txt');
 const BASE_URL = 'https://freefinancecamp.com';
-const lastmod = new Date().toISOString().slice(0, 10);
 
 function xmlEscape(value) {
     return String(value)
@@ -24,7 +23,6 @@ function buildUrlXml({ loc, changefreq, priority }) {
     return [
         '  <url>',
         `    <loc>${xmlEscape(loc)}</loc>`,
-        `    <lastmod>${lastmod}</lastmod>`,
         `    <changefreq>${changefreq}</changefreq>`,
         `    <priority>${priority.toFixed(1)}</priority>`,
         '  </url>'

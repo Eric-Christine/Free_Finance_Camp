@@ -174,7 +174,7 @@ export function AuthProvider({ children }) {
       isMockAuth,
       isAuthAvailable
     }}>
-      {!loading && children}
+      {children}
     </AuthContext.Provider>
   );
 }

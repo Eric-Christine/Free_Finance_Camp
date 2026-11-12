@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { curriculum } from '../data/curriculum';
-import { FREE_TOOLS } from './interactive/widgetRegistry';
+import { FREE_TOOLS, FREE_TOOL_METADATA } from '../data/freeTools';
 import SEO from './SEO';
 
 export default function InteractiveToolsPage() {
@@ -18,8 +18,8 @@ export default function InteractiveToolsPage() {
                 if (!byWidget.has(lesson.widget)) {
                     byWidget.set(lesson.widget, {
                         widgetId: lesson.widget,
-                        title: lesson.title,
-                        description: lesson.description || 'Interactive financial tool',
+                        title: FREE_TOOL_METADATA[lesson.widget]?.title || lesson.title,
+                        description: FREE_TOOL_METADATA[lesson.widget]?.description || lesson.description || 'Interactive financial tool',
                         modules: [module.title],
                         sampleLessonId: lesson.id
                     });

@@ -1,5 +1,5 @@
 {
-  "name": "temp_app",
+  "name": "free-finance-camp",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,13 +9,14 @@
     "xp:sql": "node scripts/generate-lesson-xp-sql.mjs",
     "lessons:export": "node scripts/export-lesson-content.mjs",
     "lessons:watch": "node scripts/export-lesson-content.mjs --watch",
-    "build": "npm run lessons:export && npm run seo:sitemap && npm run xp:sql && vite build",
+    "build": "npm run lessons:export && npm run seo:sitemap && npm run xp:sql && vite build && npm run seo:prerender",
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "npm run build && firebase deploy",
     "ios:add": "npx cap add ios",
     "ios:sync": "npm run build && npx cap sync ios",
-    "ios:open": "npx cap open ios"
+    "ios:open": "npx cap open ios",
+    "seo:prerender": "node scripts/prerender.mjs"
   },
   "dependencies": {
     "@capacitor/cli": "^8.1.0",
@@ -37,6 +38,8 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
+    "playwright": "^1.65.0",
+    "sharp": "^0.35.5",
     "typescript": "^5.9.3",
     "vite": "^7.2.4"
   }

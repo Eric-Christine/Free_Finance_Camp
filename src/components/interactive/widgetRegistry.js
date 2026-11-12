@@ -1,37 +1,22 @@
-import CompoundInterest from './CompoundInterest';
-import BudgetAllocator from './BudgetAllocator';
-import CarCalculator from './CarCalculator';
-import InsuranceCompare from './InsuranceCompare';
-import MarketTimer from './MarketTimer';
-import EmployerMatchCalculator from './EmployerMatchCalculator';
-import HomeBuyingCostExplorer from './HomeBuyingCostExplorer';
-import LoanTermTrapCalculator from './LoanTermTrapCalculator';
-import WageInflationGapChart from './WageInflationGapChart';
-import USDebtCrisisChart from './USDebtCrisisChart';
-import Sp500DollarVsGoldChart from './Sp500DollarVsGoldChart';
-import ChinaEconomicRiseChart from './ChinaEconomicRiseChart';
-import MoneyMultiplier from './MoneyMultiplier';
-import SavingsRateCalculator from './SavingsRateCalculator';
-import CoastFireCalculator from './CoastFireCalculator';
-import FourOhOneKCalculator from './FourOhOneKCalculator';
+import { lazy } from 'react';
 
 export { FREE_TOOLS } from '../../data/freeTools';
 
 export const WIDGET_COMPONENTS = {
-    CompoundInterest,
-    BudgetAllocator,
-    CarCalculator,
-    InsuranceCompare,
-    MarketTimer,
-    EmployerMatchCalculator,
-    HomeBuyingCostExplorer,
-    LoanTermTrapCalculator,
-    WageInflationGapChart,
-    USDebtCrisisChart,
-    Sp500DollarVsGoldChart,
-    ChinaEconomicRiseChart,
-    MoneyMultiplier,
-    SavingsRateCalculator,
-    CoastFireCalculator,
-    FourOhOneKCalculator
+    CompoundInterest: lazy(() => import('./CompoundInterest')),
+    BudgetAllocator: lazy(() => import('./BudgetAllocator')),
+    CarCalculator: lazy(() => import('./CarCalculator')),
+    InsuranceCompare: lazy(() => import('./InsuranceCompare')),
+    MarketTimer: lazy(() => import('./MarketTimer')),
+    EmployerMatchCalculator: lazy(() => import('./EmployerMatchCalculator')),
+    HomeBuyingCostExplorer: lazy(() => import('./HomeBuyingCostExplorer')),
+    LoanTermTrapCalculator: lazy(() => import('./LoanTermTrapCalculator')),
+    WageInflationGapChart: lazy(() => import('./WageInflationGapChart')),
+    USDebtCrisisChart: lazy(() => import('./USDebtCrisisChart')),
+    Sp500DollarVsGoldChart: lazy(() => import('./Sp500DollarVsGoldChart')),
+    ChinaEconomicRiseChart: lazy(() => import('./ChinaEconomicRiseChart')),
+    MoneyMultiplier: lazy(() => import('./MoneyMultiplier')),
+    SavingsRateCalculator: lazy(() => import('./SavingsRateCalculator')),
+    CoastFireCalculator: lazy(() => import('./CoastFireCalculator')),
+    FourOhOneKCalculator: lazy(() => import('./FourOhOneKCalculator'))
 };

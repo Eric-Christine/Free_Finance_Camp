@@ -8,9 +8,123 @@
     ],
     "rewrites": [
       {
-        "source": "**",
-        "destination": "/index.html"
+        "source": "/login",
+        "destination": "/app.html"
+      },
+      {
+        "source": "/map",
+        "destination": "/app.html"
+      },
+      {
+        "source": "/learn/**",
+        "destination": "/app.html"
+      },
+      {
+        "source": "/vocab",
+        "destination": "/app.html"
+      },
+      {
+        "source": "/tools/CompoundInterest",
+        "destination": "/app.html"
+      },
+      {
+        "source": "/tools/BudgetAllocator",
+        "destination": "/app.html"
+      },
+      {
+        "source": "/tools/CarCalculator",
+        "destination": "/app.html"
+      },
+      {
+        "source": "/tools/InsuranceCompare",
+        "destination": "/app.html"
+      },
+      {
+        "source": "/tools/MarketTimer",
+        "destination": "/app.html"
+      },
+      {
+        "source": "/tools/EmployerMatchCalculator",
+        "destination": "/app.html"
+      },
+      {
+        "source": "/tools/HomeBuyingCostExplorer",
+        "destination": "/app.html"
+      },
+      {
+        "source": "/tools/LoanTermTrapCalculator",
+        "destination": "/app.html"
+      },
+      {
+        "source": "/tools/WageInflationGapChart",
+        "destination": "/app.html"
+      },
+      {
+        "source": "/tools/USDebtCrisisChart",
+        "destination": "/app.html"
+      },
+      {
+        "source": "/tools/Sp500DollarVsGoldChart",
+        "destination": "/app.html"
+      },
+      {
+        "source": "/tools/ChinaEconomicRiseChart",
+        "destination": "/app.html"
+      },
+      {
+        "source": "/tools/MoneyMultiplier",
+        "destination": "/app.html"
+      },
+      {
+        "source": "/tools/SavingsRateCalculator",
+        "destination": "/app.html"
+      },
+      {
+        "source": "/tools/CoastFireCalculator",
+        "destination": "/app.html"
+      },
+      {
+        "source": "/tools/FourOhOneKCalculator",
+        "destination": "/app.html"
       }
-    ]
+    ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
+          },
+          {
+            "key": "Content-Security-Policy",
+            "value": "frame-ancestors 'self'"
+          },
+          {
+            "key": "Referrer-Policy",
+            "value": "strict-origin-when-cross-origin"
+          },
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=0, must-revalidate"
+          }
+        ]
+      },
+      {
+        "source": "/assets/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      }
+    ],
+    "trailingSlash": false
+  },
+  "emulators": {
+    "hosting": {
+      "port": 5187
+    }
   }
 }
