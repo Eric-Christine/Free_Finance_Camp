@@ -15,15 +15,7 @@ import SavingsRateCalculator from './SavingsRateCalculator';
 import CoastFireCalculator from './CoastFireCalculator';
 import FourOhOneKCalculator from './FourOhOneKCalculator';
 
-export const FREE_TOOLS = [
-    'CompoundInterest',
-    'BudgetAllocator',
-    'MoneyMultiplier',
-    'EmployerMatchCalculator',
-    'SavingsRateCalculator',
-    'CoastFireCalculator',
-    'FourOhOneKCalculator'
-];
+export { FREE_TOOLS } from '../../data/freeTools';
 
 export const WIDGET_COMPONENTS = {
     CompoundInterest,

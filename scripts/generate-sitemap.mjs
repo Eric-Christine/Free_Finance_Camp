@@ -2,10 +2,12 @@ import { writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { curriculum } from '../src/data/curriculum.js';
+import { FREE_TOOLS } from '../src/data/freeTools.js';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const ROOT = resolve(__dirname, '..');
 const OUTPUT_PATH = resolve(ROOT, 'public', 'sitemap.xml');
+const ROBOTS_PATH = resolve(ROOT, 'public', 'robots.txt');
 const BASE_URL = 'https://freefinancecamp.com';
 const lastmod = new Date().toISOString().slice(0, 10);
 
@@ -47,7 +49,13 @@ const lessonPages = curriculum.flatMap((module) =>
     }))
 );
 
-const allPages = [...staticPages, ...lessonPages];
+const toolPages = FREE_TOOLS.map((widgetId) => ({
+    path: `/tools/${widgetId}`,
+    changefreq: 'monthly',
+    priority: 0.8
+}));
+
+const allPages = [...staticPages, ...toolPages, ...lessonPages];
 const urlEntries = allPages.map((page) => buildUrlXml({
     loc: `${BASE_URL}${page.path}`,
     changefreq: page.changefreq,
@@ -58,3 +66,23 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.s
 
 await writeFile(OUTPUT_PATH, xml, 'utf8');
 console.log(`Generated sitemap with ${allPages.length} URLs at ${OUTPUT_PATH}`);
+
+// Free tools are crawlable; sign-in-only tools stay blocked. Crawlers apply the
+// most specific matching rule, so each Allow below overrides `Disallow: /tools/`.
+const robots = [
+    'User-agent: *',
+    'Allow: /',
+    'Allow: /tools$',
+    ...FREE_TOOLS.map((widgetId) => `Allow: /tools/${widgetId}$`),
+    'Disallow: /login',
+    'Disallow: /map',
+    'Disallow: /learn/',
+    'Disallow: /vocab',
+    'Disallow: /tools/',
+    '',
+    `Sitemap: ${BASE_URL}/sitemap.xml`,
+    ''
+].join('\n');
+
+await writeFile(ROBOTS_PATH, robots, 'utf8');
+console.log(`Generated robots.txt allowing ${FREE_TOOLS.length} free tools at ${ROBOTS_PATH}`);

@@ -1,6 +1,13 @@
 User-agent: *
 Allow: /
 Allow: /tools$
+Allow: /tools/CompoundInterest$
+Allow: /tools/BudgetAllocator$
+Allow: /tools/MoneyMultiplier$
+Allow: /tools/EmployerMatchCalculator$
+Allow: /tools/SavingsRateCalculator$
+Allow: /tools/CoastFireCalculator$
+Allow: /tools/FourOhOneKCalculator$
 Disallow: /login
 Disallow: /map
 Disallow: /learn/

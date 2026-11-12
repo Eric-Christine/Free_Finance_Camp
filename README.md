@@ -84,6 +84,12 @@ This project now includes Capacitor iOS support so you can ship an iPhone app wh
   - `src/data/quizzes.js`
 - `npm run dev` and `npm run build` also regenerate this export automatically.
 
+### Lesson XP (Leaderboard)
+
+- Leaderboard XP is awarded server-side from the `public.lesson_xp_rewards` table, not from values the browser sends.
+- After adding or re-pricing lessons, run `npm run xp:sql` (also part of `npm run build`) and paste `supabase/lesson_xp_rewards.sql` into the Supabase SQL editor. It is safe to re-run.
+- Until that SQL is applied, completing a new lesson still works in the app but earns no leaderboard XP.
+
 ### Environment Variables
 
 Copy `.env.example` to `.env` and fill in:
